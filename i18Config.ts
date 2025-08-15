@@ -40,8 +40,8 @@ const getTopDomain = (): string => {
     return 'localhost'
   }
 
-  const config = useRuntimeConfig();
-  const redirectUrl = config.public.jumpUrl as string;
+  // const config = useRuntimeConfig();
+  const redirectUrl = process.env.NUXT_JUPM_BASE_URL as string;
 
   if (redirectUrl) {
     const domain = redirectUrl.split('//')[1]
