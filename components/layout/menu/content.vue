@@ -25,7 +25,7 @@ const router = useRouter();
 const { t } = useI18n();
 const localePath = useLocalePath();
 const handleJump = () => {
-  router.push(localePath("/"));
+  router.push(localePath("/home"));
 };
 
 const emit = defineEmits(["rowClick"]);
