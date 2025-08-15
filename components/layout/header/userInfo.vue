@@ -179,7 +179,7 @@ const userNameEmailFiter = (val: string) => {
 const backHome = () => {
   unref(popoverRef).hide();
   router.push({
-    path: localePath("/home")
+    path: localePath(/)
   });
 };
 </script>

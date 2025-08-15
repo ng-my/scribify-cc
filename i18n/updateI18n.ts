@@ -255,10 +255,13 @@ async function translateTexts(texts: string[], targetLanguage: string, useAI: bo
         ? await translateBatchWithAI(batch, targetLanguage)
         : await translateBatch(batch, targetLanguage);
 
-      results.push(...batchResults);
+      const decodedResults = batchResults.map((text: any) => decodeHtmlEntities(text));
+
+      results.push(...decodedResults);
       console.log(`✅ 批次完成，已翻译 ${results.length}/${texts.length} 个文本`);
     }
     console.log(`🎉 翻译完成！总共处理了 ${results.length} 个文本`);
+
     return results;
   } catch (error: any) {
     console.error(`❌ 翻译失败:`, error.message);
@@ -266,7 +269,6 @@ async function translateTexts(texts: string[], targetLanguage: string, useAI: bo
     return texts; // 如果翻译失败，返回原文数组
   }
 }
-
 /*
 * 谷歌翻译
 *
@@ -435,26 +437,44 @@ function parseObjectLiteral(obj: ObjectLiteralExpression): any {
 // 🆕 更好的解决方案：使用 JSON.stringify 自动处理转义
 // 🆕 强制使用单引号的版本（更清晰）
 function formatSimpleValue(value: string): string {
+  // 🆕 先解码HTML实体
+  const decodedValue = decodeHtmlEntities(value);
+
   // 1. 如果包含模板字符串语法，使用反引号
-  if (value.includes('`') || value.includes('${')) {
-    return `\`${value}\``;
+  if (decodedValue.includes('`') || decodedValue.includes('${')) {
+    return `\`${decodedValue}\``;
   }
 
-  // 2. 如果包含换行符，使用反引号
-  else if (value.includes('\n') || value.includes('\r')) {
-    return `\`${value}\``;
+  // 2. 如果包含双引号但不包含单引号，使用单引号包裹
+  else if (decodedValue.includes('"') && !decodedValue.includes("'")) {
+    return `'${decodedValue}'`;
   }
 
-  // 3. 如果包含单引号但不包含双引号，使用双引号
-  else if (value.includes("'") && !value.includes('"')) {
-    return JSON.stringify(value);
+  // 3. 如果同时包含双引号和单引号，使用反引号
+  else if (decodedValue.includes('"') && decodedValue.includes("'")) {
+    return `\`${decodedValue}\``;
   }
 
-  // 4. 默认使用单引号（对包含双引号的文本更友好）
+  // 4. 默认使用双引号，但手动处理转义（不用JSON.stringify）
   else {
-    return `'${value.replace(/'/g, "\\'")}'`; // 转义单引号
+    // 手动转义双引号，但保持 \n 为 \n（不转义成 \\n）
+    const escaped = decodedValue.replace(/"/g, '\\"');
+    return `"${escaped}"`;
   }
 }
+
+// 🆕 HTML实体解码函数
+function decodeHtmlEntities(text: string): string {
+  return text
+    .replace(/&#39;/g, "'")     // &#39; → '
+    .replace(/&#x27;/g, "'")   // &#x27; → '
+    .replace(/&quot;/g, '"')   // &quot; → "
+    .replace(/&amp;/g, "&")    // &amp; → &
+    .replace(/&lt;/g, "<")     // &lt; → <
+    .replace(/&gt;/g, ">");    // &gt; → >
+}
+
+
 
 // 🆕 新增：智能更新对象字面量，保留注释
 function updateObjectLiteralWithComments(objLiteral: ObjectLiteralExpression, newObj: any): void {

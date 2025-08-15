@@ -76,7 +76,8 @@ const i18nConfig: NuxtI18nOptions = {
     cookieKey: 'i18n_localLanguage',
     fallbackLocale: i18nLocales[0].code as LocaleKey,
     redirectOn: 'root',
-    cookieDomain: getTopDomain()
+    cookieDomain: getTopDomain(),
+    cookieSecure: process.env.NODE_ENV !== "development"
   }
 }
 export default i18nConfig

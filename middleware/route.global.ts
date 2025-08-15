@@ -16,6 +16,7 @@ export default defineNuxtRouteMiddleware((to, from) => {
     ].includes(routeName)
   ) {
     window.open(`${jumpUrl}${to.fullPath}`, "_parent")
+    abortNavigation('')
     return;
   }
   const isClient = process.client;

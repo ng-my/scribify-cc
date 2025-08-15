@@ -73,7 +73,7 @@ const goToHome = () => {
     route.path.includes("accountSettings")
   ) {
     router.push({
-      path: localePath("/home")
+      path: localePath(/)
     });
   } else {
     router.push({

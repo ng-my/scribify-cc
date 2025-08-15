@@ -298,7 +298,7 @@ const handleJumpHome = () => {
   }
   setLoginData();
   setTimeout(() => {
-    router.push(localePath("/home"));
+    router.push(localePath(/));
   })
 };
 const handleTranscribe = async () => {
