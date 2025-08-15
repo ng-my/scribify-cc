@@ -293,7 +293,8 @@ const getFileNameWithoutExt = (fileName: string) => {
 };
 const handleJumpHome = () => {
   if (isNoTimes.value) {
-    localStorage.setItem("noTimes", "1");
+    const noTimes = useCrossDomainCookie("noTimes")
+    noTimes.value = "1";
   }
   setLoginData();
   setTimeout(() => {
@@ -364,7 +365,7 @@ const disabled = computed(() => {
   );
 });
 const isUploading = computed(() => {
-  return tableData.value.some((file) => file.status === "uploading");
+  return tableData.value.some((file) => ['hashing', 'pending', 'uploading'].includes(file.status));
 });
 
 const openRecord = async () => {
@@ -638,6 +639,10 @@ const handleCloseDialog = () => {
   .lang-item-wrap {
     div:hover {
       background: #1a2742;
+    }
+
+    & > div > span:first-child {
+      color: white !important;
     }
   }
 

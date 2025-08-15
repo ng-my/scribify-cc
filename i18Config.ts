@@ -33,6 +33,30 @@ if (isDev) {
   // ]
 }
 
+const getTopDomain = (): string => {
+  // 开发环境返回 localhost
+  if (process.env.NODE_ENV === 'development') {
+    // ip地址手动改
+    return 'localhost'
+  }
+
+  const config = useRuntimeConfig();
+  const redirectUrl = config.public.jumpUrl as string;
+
+  if (redirectUrl) {
+    const domain = redirectUrl.split('//')[1]
+    const parts = domain.split('.')
+    if (parts.length >= 2) {
+      // 取最后两段作为顶级域名
+      return parts.slice(-2).join('.')
+    }
+    return `.${domain}`
+  }
+
+  console.error('NUXT_JUPM_BASE_URL 未配置')
+  return ''
+}
+
 const i18nConfig: NuxtI18nOptions = {
   strategy: 'prefix_except_default',
   lazy: true,
@@ -52,6 +76,7 @@ const i18nConfig: NuxtI18nOptions = {
     cookieKey: 'i18n_localLanguage',
     fallbackLocale: i18nLocales[0].code as LocaleKey,
     redirectOn: 'root',
+    cookieDomain: getTopDomain()
   }
 }
 export default i18nConfig

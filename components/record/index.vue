@@ -4,7 +4,7 @@
       v-show="!hideRecord"
       ref="element"
       :style="style"
-      class="record fixed z-[9999] touch-none select-none rounded-[0.625rem] bg-black text-white"
+      class="record fixed z-[3900] touch-none select-none rounded-[0.625rem] bg-black text-white"
     >
       <div
         v-if="!isStopped"
