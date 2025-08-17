@@ -133,8 +133,8 @@ const saveInfoToStore = () => {
     }, 100 * times.value); // 递增延迟等待userInfo cookie
   }
 };
-saveInfoToStore()
 onMounted(() => {
+  saveInfoToStore()
   $mitt.on("signup", signup);
 });
 onUnmounted(() => {
