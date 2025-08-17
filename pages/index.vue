@@ -116,10 +116,7 @@ const saveInfoToStore = () => {
 
   if (userInfoCookie.value) {
     console.log("saveInfoToStore userInfoCookie", userInfoCookie.value);
-    setUserInfo({
-      ...userInfoCookie.value,
-      token: token.value
-    });
+    setUserInfo(JSON.parse(userInfoCookie.value));
     setTimeout(() => {
       if (!userInfo.value?.userInfoVO) {
         saveInfoToStore();
