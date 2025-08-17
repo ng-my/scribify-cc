@@ -8,13 +8,13 @@
       <div class="flex" v-show="!tableData.length">
         <img
           @click="openRecord"
-          class="mr-1.5 h-auto w-[3rem] cursor-pointer"
+          class="mr-1.5 h-auto w-[3rem] cursor-pointer no-drag"
           src="/assets/images/index_black/record.svg"
           alt=""
         />
         <img
           @click="showLinkDialog = true"
-          class="h-auto w-[3rem] cursor-pointer"
+          class="h-auto w-[3rem] cursor-pointer no-drag"
           src="/assets/images/index_black/url.svg"
           alt=""
         />
@@ -186,7 +186,7 @@ const formattedTime = ref("");
 const isTimeOver3h = computed(() => {
   // todo 要改
   const h = formattedTime.value
-    ? parseInt(formattedTime.value?.split(":")?.[0]) || 0
+    ? parseInt(formattedTime.value?.split(":")?.[1]) || 0
     : 0;
   return h >= 3;
 });
@@ -298,7 +298,7 @@ const handleJumpHome = () => {
   }
   setLoginData();
   setTimeout(() => {
-    router.push(localePath('/home');
+    router.push(localePath('/home'))
   })
 };
 const handleTranscribe = async () => {
@@ -627,6 +627,13 @@ const handleCloseDialog = () => {
 
 :deep(.el-dialog__footer) {
   @apply mt-10 pt-0;
+}
+
+.no-drag {
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 </style>
 <style>
