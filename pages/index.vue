@@ -96,6 +96,7 @@ const saveInfoToStore = () => {
   const token = useCrossDomainCookie("token");
 
   console.log("token check", { tokenValue: token.value, times: times.value });
+  console.log("userInfoFromApp check", { tokenValue: userInfoCookie.value, times: times.value });
 
   if (!token.value) {
     // 🔥 不要立即清理，先重试几次
@@ -121,6 +122,7 @@ const saveInfoToStore = () => {
       if (!userInfo.value?.userInfoVO) {
         saveInfoToStore();
       } else {
+        console.log('clear')
         userInfoCookie.value = "";
       }
     }, 100);
