@@ -201,11 +201,7 @@ export default defineNuxtConfig({
     server: {
       allowedHosts: true // 允许指定域名
     },
-    plugins: [
-      ...(process.env.NUXT_PUBLIC_ENV === "production"
-        ? [removeConsole({ includes: ["log"] })]
-        : [])
-    ],
+    plugins: [],
   },
   elementPlus: {
     /** Options */
