@@ -85,7 +85,7 @@ const signup = () => {
 const times = ref(0);
 const saveInfoToStore = () => {
   console.log("saveInfoToStoreMain", times.value);
-  if (times.value > 5) {
+  if (times.value > 3) {
     return;
   }
   times.value++;
@@ -102,9 +102,7 @@ const saveInfoToStore = () => {
     // 🔥 不要立即清理，先重试几次
     if (times.value <= 2) {
       console.log("Token not ready, retrying...", times.value);
-      setTimeout(() => {
-        saveInfoToStore();
-      }, 100 * times.value); // 递增延迟
+      saveInfoToStore();
       return;
     } else {
       // 多次重试后仍然没有token，才清理
