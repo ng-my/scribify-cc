@@ -203,7 +203,7 @@ export default defineNuxtConfig({
     },
     plugins: [
       ...(process.env.NUXT_PUBLIC_ENV === "production"
-        ? [removeConsole({ includes: ["log", "info", "warn", "error"] })]
+        ? [removeConsole({ includes: ["log"] })]
         : [])
     ],
   },
