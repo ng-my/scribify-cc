@@ -114,9 +114,12 @@ const saveInfoToStore = () => {
     }
   }
 
-  console.log("saveInfoToStore userInfoCookie", userInfoCookie.value);
   if (userInfoCookie.value) {
-    setUserInfo(userInfoCookie.value);
+    console.log("saveInfoToStore userInfoCookie", userInfoCookie.value);
+    setUserInfo({
+      ...userInfoCookie.value,
+      token: token.value
+    });
     setTimeout(() => {
       if (!userInfo.value?.userInfoVO) {
         saveInfoToStore();
