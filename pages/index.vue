@@ -89,15 +89,30 @@ const saveInfoToStore = () => {
     return;
   }
   times.value++;
+
   const { setUserInfo } = useUserStore();
-  const { userInfo } = storeToRefs(useUserStore());
   const userInfoCookie = useCrossDomainCookie("userInfoFromApp");
   const token = useCrossDomainCookie("token");
+
+  console.log("token check", { tokenValue: token.value, times: times.value });
+
   if (!token.value) {
-    setUserInfo(null);
-    userInfoCookie.value = "";
-    return;
+    // 🔥 不要立即清理，先重试几次
+    if (times.value <= 2) {
+      console.log("Token not ready, retrying...", times.value);
+      setTimeout(() => {
+        saveInfoToStore();
+      }, 100 * times.value); // 递增延迟
+      return;
+    } else {
+      // 多次重试后仍然没有token，才清理
+      console.log("Token still not available after retries, clearing...");
+      setUserInfo(null);
+      userInfoCookie.value = "";
+      return;
+    }
   }
+
   console.log("saveInfoToStore userInfoCookie", userInfoCookie.value);
   if (userInfoCookie.value) {
     setUserInfo(userInfoCookie.value);
