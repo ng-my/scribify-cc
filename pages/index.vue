@@ -85,7 +85,7 @@ const signup = () => {
 const times = ref(0);
 const saveInfoToStore = () => {
   console.log("saveInfoToStoreMain", times.value);
-  if (times.value > 3) {
+  if (times.value > 5) {
     return;
   }
   times.value++;
@@ -124,6 +124,11 @@ const saveInfoToStore = () => {
         userInfoCookie.value = "";
       }
     }, 100);
+  } else {
+    console.log("Token exists but userInfo not ready, waiting...", times.value);
+    setTimeout(() => {
+      saveInfoToStore();
+    }, 100 * times.value); // 递增延迟等待userInfo cookie
   }
 };
 saveInfoToStore()
