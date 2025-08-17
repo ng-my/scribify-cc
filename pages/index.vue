@@ -37,7 +37,7 @@
       </div>
     </main>
     <main
-      class="try-now-section relative min-h-[22.125rem] w-full bg-black text-white"
+        class="try-now-section relative min-h-[22.125rem] w-full bg-black text-white"
     >
       <div class="mx-auto max-w-[88.75rem]">
         <!-- 立即开始 -->
@@ -91,6 +91,7 @@ const saveInfoToStore = () => {
   times.value++;
 
   const { setUserInfo } = useUserStore();
+  const { userInfo } = storeToRefs(useUserStore());
   const userInfoCookie = useCrossDomainCookie("userInfoFromApp");
   const token = useCrossDomainCookie("token");
 
@@ -139,8 +140,8 @@ onUnmounted(() => {
 .hero-wrap {
   background-size: cover;
   background-image:
-    url("/assets/images/index_black/hero-bg.png"),
-    url("/assets/images/index_black/hero-bg-top.png");
+      url("/assets/images/index_black/hero-bg.png"),
+      url("/assets/images/index_black/hero-bg-top.png");
   background-repeat: no-repeat;
   background-position: center;
 }
