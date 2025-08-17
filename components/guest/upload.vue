@@ -3,36 +3,36 @@
     <div class="title flex w-full justify-center">Transcribe</div>
     <div class="mb-4 flex w-full justify-between">
       <span class="text-lg">{{
-        tableData.length ? "File" : "Audio / Video File"
-      }}</span>
+          tableData.length ? "File" : "Audio / Video File"
+        }}</span>
       <div class="flex" v-show="!tableData.length">
         <img
-          @click="openRecord"
-          class="mr-1.5 h-auto w-[3rem] cursor-pointer no-drag"
-          src="/assets/images/index_black/record.svg"
-          alt=""
+            @click="openRecord"
+            class="mr-1.5 h-auto w-[3rem] cursor-pointer no-drag"
+            src="/assets/images/index_black/record.svg"
+            alt=""
         />
         <img
-          @click="showLinkDialog = true"
-          class="h-auto w-[3rem] cursor-pointer no-drag"
-          src="/assets/images/index_black/url.svg"
-          alt=""
+            @click="showLinkDialog = true"
+            class="h-auto w-[3rem] cursor-pointer no-drag"
+            src="/assets/images/index_black/url.svg"
+            alt=""
         />
       </div>
     </div>
     <div
-      class="flex min-h-16 w-full items-center justify-between rounded-lg border border-[#6A36A2] px-2 text-base sm:px-5"
-      v-if="tableData.length > 0"
-      v-for="(item, index) in tableData"
-      :key="item.id"
+        class="flex min-h-16 w-full items-center justify-between rounded-lg border border-[#6A36A2] px-2 text-base sm:px-5"
+        v-if="tableData.length > 0"
+        v-for="(item, index) in tableData"
+        :key="item.id"
     >
       <div class="flex flex-1 flex-wrap items-center justify-between">
         <div class="flex flex-1 items-center">
           <div
-            data-no-detection="true"
-            x-ms-format-detection="none"
-            format-detection="telephone=no,date=no,address=no,email=no"
-            class="max-w-48 overflow-hidden text-ellipsis whitespace-nowrap sm:max-w-96"
+              data-no-detection="true"
+              x-ms-format-detection="none"
+              format-detection="telephone=no,date=no,address=no,email=no"
+              class="max-w-48 overflow-hidden text-ellipsis whitespace-nowrap sm:max-w-96"
           >
             {{ item.name }}
           </div>
@@ -42,14 +42,14 @@
 
         <div class="flex w-44 items-center justify-start md:justify-end">
           <div
-            v-if="item.status === 'success'"
-            class="me-4 flex h-4 items-center justify-center text-thirdColor"
+              v-if="item.status === 'success'"
+              class="me-4 flex h-4 items-center justify-center text-thirdColor"
           >
             <span class="iconfont icon-duihao text-xs text-thirdColor"></span>
           </div>
           <div
-            class="flex items-center flex-row w-full"
-            v-else-if="item.status === 'error'"
+              class="flex items-center flex-row w-full"
+              v-else-if="item.status === 'error'"
           >
             <span class="me-1 text-xs text-subColor-normal sm:text-sm">
               {{ t("FolderPage.table.failed") }}
@@ -59,48 +59,48 @@
             </el-tooltip>
           </div>
           <div
-            class="flex w-full items-center text-start"
-            v-else-if="item.uploadText"
+              class="flex w-full items-center text-start"
+              v-else-if="item.uploadText"
           >
             <span class="me-1">{{ item.uploadText }}</span>
             <el-icon class="is-loading mt-1"><Loading /></el-icon>
           </div>
           <el-progress
-            :stroke-width="8"
-            class="flex-1"
-            v-else
-            striped
-            striped-flow
-            :percentage="item.progress || 0"
+              :stroke-width="8"
+              class="flex-1"
+              v-else
+              striped
+              striped-flow
+              :percentage="item.progress || 0"
           />
         </div>
       </div>
 
       <img
-        @click="handleRemove(item, index)"
-        class="ms-1 cursor-pointer"
-        src="/assets/images/index_black/del.svg"
-        alt=""
+          @click="handleRemove(item, index)"
+          class="ms-1 cursor-pointer"
+          src="/assets/images/index_black/del.svg"
+          alt=""
       />
     </div>
     <div v-else>
       <upload-file
-        local="en-US"
-        :isMobileFromIndex="isMobileFromIndex"
-        useUploadValidate
+          local="en-US"
+          :isMobileFromIndex="isMobileFromIndex"
+          useUploadValidate
       />
     </div>
 
     <div class="mt-5">
       <lang-choose-input
-        :popperStyle="{
+          :popperStyle="{
           borderColor: '#35205A',
           borderRadius: '0.5rem',
           backgroundColor: '#0e172b'
         }"
-        customer-class="lang-choose-input-20250711-website"
-        title="Media Language"
-        v-model:lang="lang"
+          customer-class="lang-choose-input-20250711-website"
+          title="Media Language"
+          v-model:lang="lang"
       />
     </div>
 
@@ -111,40 +111,40 @@
       <client-only>
         <el-checkbox v-model="diarizeEnabled">
           <span class="max-w-full whitespace-normal break-words text-sm">{{
-            t("FileUploadAndRecording.upload.speakerLabel")
-          }}</span>
+              t("FileUploadAndRecording.upload.speakerLabel")
+            }}</span>
         </el-checkbox>
       </client-only>
     </div>
 
     <el-button
-      class="button mt-[3.125rem] w-full"
-      type="primary"
-      @click="handleTranscribe"
-      :disabled="disabled"
-      :loading="transcribing"
+        class="button mt-[3.125rem] w-full"
+        type="primary"
+        @click="handleTranscribe"
+        :disabled="disabled"
+        :loading="transcribing"
     >
       <!--      <span class="iconfont icon-bianji me-2.5"></span>-->
       {{ isUploading ? "Uploading..." : "Transcribe" }}
     </el-button>
   </div>
   <upload-dialog-link
-    v-model="showLinkDialog"
-    isGuest
-    :linkLoading="linkLoading"
-    @confirm="handleLinkConfirm"
-    @open="handleOpenDialog"
-    @close="handleCloseDialog"
+      v-model="showLinkDialog"
+      isGuest
+      :linkLoading="linkLoading"
+      @confirm="handleLinkConfirm"
+      @open="handleOpenDialog"
+      @close="handleCloseDialog"
   />
   <div class="customer-dialog">
     <el-dialog
-      v-model="showRecordDialog"
-      :close-on-click-modal="false"
-      :close-on-press-escape="false"
-      destroy-on-close
-      :show-close="false"
-      @open="handleOpenDialog"
-      @close="handleCloseDialog"
+        v-model="showRecordDialog"
+        :close-on-click-modal="false"
+        :close-on-press-escape="false"
+        destroy-on-close
+        :show-close="false"
+        @open="handleOpenDialog"
+        @close="handleCloseDialog"
     >
       <div class="flex w-full justify-center">
         <record justRecord @record="handleRecord" />
@@ -160,16 +160,13 @@ import { type UploadFile, useUpload } from "~/components/upload/useUpload";
 import { useSubscript } from "~/components/layout/header/useSubscript";
 import { useVisitor } from "~/hooks/useVisitor";
 import { useLink } from "~/components/upload/dialog/useLink";
-import { message } from "~/i18n/lang/en-US";
 import { useGuestUserStore } from "~/stores/useUserStore";
 import { Msg, isMobile } from "~/utils/tools";
 import { Loading } from "@element-plus/icons-vue";
 import SpeakerPromat from "~/components/record/dialog/speakerPromat.vue";
 import { useCrossDomainCookie } from "~/hooks/useCrossDomainCookie";
 
-const { t, locale, setLocaleMessage } = useI18n();
-// todo 删除
-setLocaleMessage(locale.value, message);
+const { t } = useI18n();
 
 const { selectRawFiles } = storeToRefs(useUploadStore());
 const { clearSelectRawFiles } = useUploadStore();
@@ -186,8 +183,8 @@ const formattedTime = ref("");
 const isTimeOver3h = computed(() => {
   // todo 要改
   const h = formattedTime.value
-    ? parseInt(formattedTime.value?.split(":")?.[1]) || 0
-    : 0;
+      ? parseInt(formattedTime.value?.split(":")?.[1]) || 0
+      : 0;
   return h >= 3;
 });
 const showSpeakerModal = ref(false);
@@ -196,17 +193,17 @@ const handleRecord = (item: any) => {
   formattedTime.value = item.formattedTime;
   tableData.value = [
     createFileObject(
-      new File([item.audioBlob!], item.recordTitle, {
-        type: "audio/mp3", // 根据实际格式调整（如 'audio/mp3'）
-        lastModified: Date.now() // 可选：设置最后修改时间
-      })
+        new File([item.audioBlob!], item.recordTitle, {
+          type: "audio/mp3", // 根据实际格式调整（如 'audio/mp3'）
+          lastModified: Date.now() // 可选：设置最后修改时间
+        })
     )
   ];
 };
 watchEffect(async () => {
   if (!tableData.value.length) {
     tableData.value = selectRawFiles.value.map((file) =>
-      createFileObject(reactive(file))
+        createFileObject(reactive(file))
     );
   }
 });
@@ -257,17 +254,17 @@ const handleLinkConfirm = async (linkData: string) => {
 };
 
 watch(
-  () => tableData.value,
-  async () => {
-    if (tableData.value.length) {
-      await guestLogin();
-    }
+    () => tableData.value,
+    async () => {
+      if (tableData.value.length) {
+        await guestLogin();
+      }
 
-    for (const file of tableData.value) {
-      if (file.status !== "pending") break;
-      initUpload(reactive(file));
+      for (const file of tableData.value) {
+        if (file.status !== "pending") break;
+        initUpload(reactive(file));
+      }
     }
-  }
 );
 
 const { fetchSubscript } = useSubscript();
@@ -319,26 +316,26 @@ const handleTranscribe = async () => {
     const { useFolderApi } = await import("~/api/folder");
     const { transcribeFile, saveFileInfo } = useFolderApi;
     const fileInfo = await saveFileInfo(
-      JSON.stringify(
-        tableData.value
-          .filter((file) => !(file.file as any)?.localFileId)
-          .map((file) => {
-            const fileExtName = file.name.split(".").pop();
-            return {
-              bucketId: file.key,
-              fileExtName: fileExtName,
-              parentId: 0,
-              fileName: getFileNameWithoutExt(file.name),
-              fileSize: file.size
-            };
-          })
-      )
+        JSON.stringify(
+            tableData.value
+                .filter((file) => !(file.file as any)?.localFileId)
+                .map((file) => {
+                  const fileExtName = file.name.split(".").pop();
+                  return {
+                    bucketId: file.key,
+                    fileExtName: fileExtName,
+                    parentId: 0,
+                    fileName: getFileNameWithoutExt(file.name),
+                    fileSize: file.size
+                  };
+                })
+        )
     );
 
     const fileIds = fileInfo.map((file: any) => file.fileId);
     const localFileIds = tableData.value
-      .filter((file) => (file.file as any)?.localFileId)
-      .map((file) => (file.file as any)?.localFileId);
+        .filter((file) => (file.file as any)?.localFileId)
+        .map((file) => (file.file as any)?.localFileId);
     fileIds.push(...localFileIds);
 
     await transcribeFile({
@@ -359,9 +356,9 @@ const handleTranscribe = async () => {
 
 const disabled = computed(() => {
   return (
-    !tableData.value.length ||
-    tableData.value.some((file) => file.status !== "success") ||
-    !lang.value.lang
+      !tableData.value.length ||
+      tableData.value.some((file) => file.status !== "success") ||
+      !lang.value.lang
   );
 });
 const isUploading = computed(() => {
