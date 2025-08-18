@@ -3,8 +3,8 @@
     <div class="title flex w-full justify-center">Transcribe</div>
     <div class="mb-4 flex w-full justify-between">
       <span class="text-lg">{{
-        tableData.length ? "File" : "Audio / Video File"
-      }}</span>
+          tableData.length ? "File" : "Audio / Video File"
+        }}</span>
       <div class="flex" v-show="!tableData.length">
         <img
           @click="openRecord"
@@ -111,8 +111,8 @@
       <client-only>
         <el-checkbox v-model="diarizeEnabled">
           <span class="max-w-full whitespace-normal break-words text-sm">{{
-            t("FileUploadAndRecording.upload.speakerLabel")
-          }}</span>
+              t("FileUploadAndRecording.upload.speakerLabel")
+            }}</span>
         </el-checkbox>
       </client-only>
     </div>
@@ -280,8 +280,7 @@ const handleRemove = async (row: UploadFile, index: number) => {
 const transcribing = ref(false);
 const lang = ref<any>({});
 
-const router = useRouter();
-const localePath = useLocalePath();
+const { $mitt } = useNuxtApp();
 
 const diarizeEnabled = ref(true);
 const getFileNameWithoutExt = (fileName: string) => {
@@ -295,7 +294,7 @@ const handleJumpHome = () => {
   }
   setLoginData();
   setTimeout(() => {
-    router.push(localePath('/home'))
+    $mitt.emit("goToEvent", { path: "/" });
   })
 };
 const handleTranscribe = async () => {
