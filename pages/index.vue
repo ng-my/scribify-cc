@@ -37,7 +37,7 @@
       </div>
     </main>
     <main
-        class="try-now-section relative min-h-[22.125rem] w-full bg-black text-white"
+      class="try-now-section relative min-h-[22.125rem] w-full bg-black text-white"
     >
       <div class="mx-auto max-w-[88.75rem]">
         <!-- 立即开始 -->
@@ -66,8 +66,6 @@ import FAQSection from "~/components/index/FAQSection.vue";
 import TryNowBottom from "~/components/index/TryNowBottom.vue";
 import FreeTrial from "~/components/index/FreeTrial.vue";
 import { useCrossDomainCookie } from "~/hooks/useCrossDomainCookie";
-const localePath = useLocalePath();
-const router = useRouter();
 const { $mitt } = useNuxtApp();
 
 const scrollIntoView = (id: string) => {
@@ -77,9 +75,7 @@ const scrollIntoView = (id: string) => {
   }
 };
 const signup = () => {
-  router.push({
-    path: localePath("/user/signup")
-  });
+  $mitt.emit("goToEvent", { path: "/user/signup" });
 };
 
 const times = ref(0);
@@ -145,8 +141,8 @@ onUnmounted(() => {
 .hero-wrap {
   background-size: cover;
   background-image:
-      url("/assets/images/index_black/hero-bg.png"),
-      url("/assets/images/index_black/hero-bg-top.png");
+    url("/assets/images/index_black/hero-bg.png"),
+    url("/assets/images/index_black/hero-bg-top.png");
   background-repeat: no-repeat;
   background-position: center;
 }

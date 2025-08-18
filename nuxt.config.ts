@@ -45,7 +45,7 @@ export default defineNuxtConfig({
     // 开发环境代理配置
     devProxy: {
       "/wapi": {
-        target: "https://dev.scribify.ai/wapi",
+        target: "https://app.scribify.cc/wapi",
         changeOrigin: true,
         prependPath: true,
         secure: false
@@ -201,7 +201,11 @@ export default defineNuxtConfig({
     server: {
       allowedHosts: true // 允许指定域名
     },
-    plugins: [],
+    plugins: [
+      ...(process.env.NUXT_PUBLIC_ENV === "production"
+        ? [removeConsole({ includes: ["log", "info", "warn", "error"] })]
+        : [])
+    ],
   },
   elementPlus: {
     /** Options */

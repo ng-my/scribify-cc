@@ -186,8 +186,7 @@ import { useSubscribeVersion } from "~/components/subscriptionUpgrade/useSubscri
 import { useRecordStore } from "~/stores/useRecordStore";
 const { t } = useI18n();
 const userStore = useUserStore();
-const localePath = useLocalePath();
-const router = useRouter();
+const { $mitt } = useNuxtApp();
 const props = defineProps({
   isMobile: {
     type: Boolean,
@@ -237,7 +236,6 @@ const userNameEmail = computed(() => {
 
 const { clearSelectRawFiles } = useUploadStore();
 const { endRecord } = useRecordStore();
-const route = useRoute();
 const subscribe = async () => {
   const { showPromatDialog } = useRecordStore();
   await showPromatDialog();
@@ -246,10 +244,7 @@ const subscribe = async () => {
     clearSelectRawFiles();
     endRecord();
     setTimeout(() => {
-      router.push({
-        path: localePath("/user/signup"),
-        query: { type: "noLogin" }
-      });
+      $mitt.emit("goToEvent", { path: "/user/signup?type=noLogin" });
     }, 300);
     return;
   }

@@ -25,7 +25,7 @@ import { useScrollTitle } from "./utils/useScrollTitle";
 import { message as en_US } from "~/i18n/lang/en-US"; // 英语（美国）
 import { runI18nCheck } from "~/i18n/check.js";
 useScrollTitle();
-
+const { jumpPage } = usePageJump();
 const route = useRoute();
 const { locale, locales, setLocaleMessage } = useI18n();
 const activeLanguage = useState("locale", () => locale.value);
@@ -95,7 +95,11 @@ watchEffect(async () => {
     localLang.value = undefined;
   }
 });
-
+// 跳转事件
+const { $mitt } = useNuxtApp();
+const goToEvent = (data) => {
+  jumpPage(data.path, data.newTab);
+};
 // 其它逻辑保持不变
 const headerShow = ref(false);
 if (process.client) {
@@ -129,6 +133,10 @@ onMounted(async () => {
   } catch (error) {
     console.error("获取构建信息失败:", error);
   }
+  $mitt.on("goToEvent", goToEvent);
+});
+onUnmounted(() => {
+  $mitt.off("goToEvent", goToEvent);
 });
 </script>
 <style>

@@ -96,8 +96,7 @@ const dailyCount = ref<{ todayCount: number; limitCount: number }>({
   todayCount: 0,
   limitCount: 0
 });
-const router = useRouter();
-const localePath = useLocalePath();
+const { $mitt } = useNuxtApp();
 const progress = ref<string>("0");
 const { fetchSubscript } = useSubscript();
 const loading = ref<boolean>(false);
@@ -180,10 +179,7 @@ const upgrade = async () => {
 
   if (!userNameEmail.value) {
     setTimeout(() => {
-      router.push({
-        path: localePath("/user/signup"),
-        query: { type: "noLogin" }
-      });
+      $mitt.emit("goToEvent", { path: "/user/signup?type=noLogin" });
     }, 300);
     return;
   }

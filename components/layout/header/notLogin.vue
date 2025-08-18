@@ -30,8 +30,7 @@ import language from "./language.vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
-const localePath = useLocalePath();
-const router = useRouter();
+const { $mitt } = useNuxtApp();
 const props = defineProps({
   showI18n: {
     type: Boolean,
@@ -41,14 +40,10 @@ const props = defineProps({
 const showLoginBtn = inject("showLoginBtn") ?? true;
 //登录
 const login = () => {
-  router.push({
-    path: localePath("/user/login")
-  });
+  $mitt.emit("goToEvent", { path: "/user/login" });
 };
 const signup = () => {
-  router.push({
-    path: localePath("/user/signup")
-  });
+  $mitt.emit("goToEvent", { path: "/user/signup" });
 };
 </script>
 <style lang="scss">

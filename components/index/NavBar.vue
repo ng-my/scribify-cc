@@ -117,6 +117,7 @@ const props = defineProps({
     default: true
   }
 });
+const { $mitt } = useNuxtApp();
 const route = useRoute();
 const router = useRouter();
 const { t } = useI18n();
@@ -148,15 +149,18 @@ const scrollIntoView = (id: string) => {
 };
 
 const goToHome = () => {
+  const path = route.path;
+  const urls = ["user/terms", "user/privacy"];
+  if (isLogin.value && urls.find((url) => path.includes(url))) {
+    return $mitt.emit("goToEvent", { path: "/" });
+  }
   router.push({
     path: localePath("/")
   });
 };
 //登录
 const login = () => {
-  router.push({
-    path: localePath("/user/login")
-  });
+  $mitt.emit("goToEvent", { path: "/user/login" });
 };
 const isShowIconPointer = computed(() => {
   return route.name && !route.name?.startsWith("index");

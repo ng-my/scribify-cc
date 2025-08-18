@@ -5,6 +5,7 @@ import { useCrossDomainCookie } from "~/hooks/useCrossDomainCookie";
 const { reportSystemError } = useErrorReporting();
 const config = useRuntimeConfig();
 const baseURL = config.public.baseUrl as string;
+const { $mitt } = useNuxtApp();
 function goToLogin() {
   if (process.client) {
     const userStore = useUserStore();
@@ -18,7 +19,7 @@ function goToLogin() {
         return;
       }
       userInfoEmailCookie.value = "";
-      navigateTo(localePath("/user/login"));
+      $mitt.emit("goToEvent", { path: "/user/login" });
     }, 50);
   }
 }

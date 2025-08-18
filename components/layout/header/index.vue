@@ -51,7 +51,7 @@ const props = defineProps({
     default: true
   }
 });
-
+const { $mitt } = useNuxtApp();
 const { t } = useI18n();
 const localePath = useLocalePath();
 const router = useRouter();
@@ -59,27 +59,14 @@ const isLogin = computed(() => !!(userInfo.value as any)?.userInfoVO?.userid);
 
 //登录
 const login = () => {
-  router.push({
-    path: localePath("/user/login")
-  });
+  $mitt.emit("goToEvent", { path: "/user/login" });
 };
 
-const route = useRoute();
 const goToHome = () => {
   (useNuxtApp().$gtagEvent as Function)("click", "LOGO_Btn", "Back to Home");
-  if (
-    route.path.includes("folder") ||
-    route.path.includes("home") ||
-    route.path.includes("accountSettings")
-  ) {
-    router.push({
-      path: localePath('/home')
-    });
-  } else {
-    router.push({
-      path: localePath("/")
-    });
-  }
+  router.push({
+    path: localePath("/")
+  });
 };
 </script>
 <style scoped lang="scss">

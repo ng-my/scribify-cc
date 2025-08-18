@@ -90,6 +90,7 @@ const { t } = useI18n();
 const localePath = useLocalePath();
 const $i = useI18nModule("AccountSettingsPage");
 const router = useRouter();
+const { $mitt } = useNuxtApp();
 const userName = computed(() => {
   try {
     return userStore.userInfo &&
@@ -142,25 +143,17 @@ const loginOut = () => {
     return;
   }
   setTimeout(() => {
-    router.push({
-      path: localePath("/user/login")
-    });
+    $mitt.emit("goToEvent", { path: "/user/login" });
   }, 10);
 };
 
 const settingAccount = () => {
   unref(popoverRef).hide();
-  router.push({
-    path: localePath("/accountSettings"),
-    query: { type: 1 }
-  });
+  $mitt.emit("goToEvent", { path: "/accountSettings?type=1" });
 };
 const upgrade = () => {
   unref(popoverRef).hide();
-  router.push({
-    path: localePath("/accountSettings"),
-    query: { type: 2 }
-  });
+  $mitt.emit("goToEvent", { path: "/accountSettings?type=2" });
 };
 const showPopover = async () => {
   loginInfoCardRef.value?.getDailyCount &&
@@ -178,9 +171,7 @@ const userNameEmailFiter = (val: string) => {
 };
 const backHome = () => {
   unref(popoverRef).hide();
-  router.push({
-    path: localePath('/home')
-  });
+  $mitt.emit("goToEvent", { path: "/" });
 };
 </script>
 

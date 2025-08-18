@@ -292,8 +292,7 @@ const { t } = useI18n();
 const subscriptionStore = useSubscriptionStore();
 const { getTime } = useTime();
 const emit = defineEmits(["change"]);
-const router = useRouter();
-const localePath = useLocalePath();
+const { $mitt } = useNuxtApp();
 // 方案数据
 type ButtonType =
   | ""
@@ -476,10 +475,7 @@ const subscribeTo = async (type: string) => {
 
   if (!userNameEmail.value) {
     setTimeout(() => {
-      router.push({
-        path: localePath("/user/signup"),
-        query: { type: "noLogin" }
-      });
+      $mitt.emit("goToEvent", { path: "/user/signup?type=noLogin" });
     }, 300);
     return;
   }
@@ -545,10 +541,7 @@ const subscribeToChangeToAnnual = async (isnew?: any) => {
 
   if (!userNameEmail.value) {
     setTimeout(() => {
-      router.push({
-        path: localePath("/user/signup"),
-        query: { type: "noLogin" }
-      });
+      $mitt.emit("goToEvent", { path: "/user/signup?type=noLogin" });
     }, 300);
     return;
   }
