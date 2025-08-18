@@ -3,8 +3,8 @@
     <div class="title flex w-full justify-center">Transcribe</div>
     <div class="mb-4 flex w-full justify-between">
       <span class="text-lg">{{
-          tableData.length ? "File" : "Audio / Video File"
-        }}</span>
+        tableData.length ? "File" : "Audio / Video File"
+      }}</span>
       <div class="flex" v-show="!tableData.length">
         <img
           @click="openRecord"
@@ -85,7 +85,6 @@
     </div>
     <div v-else>
       <upload-file
-        local="en-US"
         :isMobileFromIndex="isMobileFromIndex"
         useUploadValidate
       />
@@ -111,8 +110,8 @@
       <client-only>
         <el-checkbox v-model="diarizeEnabled">
           <span class="max-w-full whitespace-normal break-words text-sm">{{
-              t("FileUploadAndRecording.upload.speakerLabel")
-            }}</span>
+            t("FileUploadAndRecording.upload.speakerLabel")
+          }}</span>
         </el-checkbox>
       </client-only>
     </div>
