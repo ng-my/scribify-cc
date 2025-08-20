@@ -47,8 +47,10 @@
 import { useSubscript } from "~/components/layout/header/useSubscript";
 import Utils from "~/utils/tools";
 import { useRecordStore } from "~/stores/useRecordStore";
+import useJumpPage from "~/hooks/useJumpPage";
 
 const { t } = useI18n();
+const { $mitt } = useNuxtApp();
 const { todayCount, limitCount, isFreeUser } = storeToRefs(
   useSubscriptionStore()
 );
@@ -81,10 +83,7 @@ const handleClick = async () => {
 
   if (!userNameEmail.value) {
     setTimeout(() => {
-      router.push({
-        path: localePath("/user/signup"),
-        query: { type: "noLogin" }
-      });
+      $mitt.emit("goToEvent", { path: "/user/signup?type=noLogin" });
     }, 300);
     return;
   }

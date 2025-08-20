@@ -42,28 +42,11 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   nitro: {
+    // preset: 'vercel-static', // 强制 SSG 模式
     // 开发环境代理配置
     devProxy: {
       "/wapi": {
-        target: "https://dev.scribify.ai/wapi",
-        changeOrigin: true,
-        prependPath: true,
-        secure: false
-      },
-      "/domainServer": {
-        target: "https://blue.wechatsi.com/domainServer",
-        changeOrigin: true,
-        prependPath: true,
-        secure: false
-      },
-      "/userServer": {
-        target: "http://rap2api.taobao.org/app/mock/324058/userServer",
-        changeOrigin: true,
-        prependPath: true,
-        secure: false
-      },
-      "/stripeServer": {
-        target: "http://localhost:4242",
+        target: "https://app.scribify.cc/wapi",
         changeOrigin: true,
         prependPath: true,
         secure: false
@@ -85,14 +68,10 @@ export default defineNuxtConfig({
     '@element-plus/nuxt',
     '@unlok-co/nuxt-stripe',
     '@nuxtjs/i18n',
-    '@nuxtjs/sitemap',
-    'nuxt-llms',
-    '@nuxtjs/seo',
     '@pinia/nuxt',
     'pinia-plugin-persistedstate/nuxt',
     '@vueuse/nuxt',
     'dayjs-nuxt',
-    '@nuxtjs/robots',
     '@nuxt/image'
   ],
   piniaPluginPersistedstate: {
@@ -103,71 +82,11 @@ export default defineNuxtConfig({
     debug: true
   },
   i18n: i18nConfig,
-  //配置公共seo数据
-  site: {
-    url: "https://www.scribify.ai",
-    name: "Transcribe Meetings & Audio: Speaker Identification, Translate, Share | 100+ Languages - Scribify", // 后面的title
-    description:
-      "Scribify converts speech (meetings, interviews, videos, podcasts) into searchable, translatable, shareable transcripts. Identify speakers automatically, generate subtitles, & break language barriers in 100+ languages. Try Free!",
-    defaultLocale: "en-US",
-    enabled: true,
-    debug: false,
-    indexable: true,
-    trailingSlash: false,
-    rules: [
-      {
-        userAgent: "*",
-        disallow: "/private",
-        allow: "/"
-      }
-    ],
-    sitemap: "https://www.scribify.ai/sitemap.xml"
-  },
-  robots: {
-    disallow: '/', // 设置禁止访问的路径
-  },
-  //配置结构化数据
-  schemaOrg: {
-    identity: {
-      type: "Organization",
-      name: "Scribify",
-      url: "https://www.scribify.ai",
-      logo: "https://www.scribify.ai/favicon.ico"
-    },
-    defaults: true,
-    minify: true,
-    reactive: false,
-    enabled: true,
-    debug: false
-  },
-  // 大型语言模型
-  llms: {
-    domain: "https://www.scribify.ai",
-    title:
-      "Transcribe Meetings & Audio: Speaker Identification, Translate, Share | 100+ La",
-    description:
-      "Scribify converts speech (meetings, interviews, videos, podcasts) into searchable, translatable, shareable transcripts. Identify speakers automatically, generate subtitles, & break language barriers in 100+ languages. Try Free!",
-    sections: [
-      {
-        title: "YouTube to MP4 Converter | Fast, HD, Ad-Free Downloads",
-        description:
-          "Convert YouTube to HD MP4s instantly. 100% secure, ad-free tool. Download videos for offline viewing on any device. Share anywhere, no signup!",
-        links: [
-          {
-            title: "YouTube to MP4 Converter | Fast, HD, Ad-Free Downloads",
-            description:
-              "Convert YouTube to HD MP4s instantly. 100% secure, ad-free tool. Download videos for offline viewing on any device. Share anywhere, no signup!",
-            href: "https://www.scribify.ai/downloader/youtube-to-mp4"
-          }
-        ]
-      }
-    ]
-  },
   //运行时全局变量
   runtimeConfig: {
     //此处定义的属性只能在服务端获取到
     // Server
-    name: "SCRIBIFY",
+    name: "NeverCap",
     environment: process.env.NODE_ENV || "production",
     stripe: {
       key: process.env.NUXT_STRIPE_SECRET_KEY,
@@ -186,12 +105,6 @@ export default defineNuxtConfig({
         key: process.env.NUXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
         options: {}
       }
-    }
-  },
-  sitemap: {
-    defaults: {
-      changefreq: "daily",
-      priority: 0.8
     }
   },
   devServer: {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="lang-title mb-2 text-sm">
+    <div class="lang-title mb-2 text-lg font-medium">
       {{ title ? title : t("FileUploadAndRecording.upload.language") }}
     </div>
 

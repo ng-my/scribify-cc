@@ -1,4 +1,6 @@
 import COS from "cos-js-sdk-v5";
+import { useErrorReporting } from "~/utils/fsReport";
+const { reportSystemError } = useErrorReporting();
 
 export interface UploadFile {
   id: string;
@@ -65,7 +67,7 @@ const initCosInstance = async (file: UploadFile) => {
 };
 
 export const useUpload = () => {
-  const MAX_FILE_SIZE = 0.01 * 1024 * 1024 * 1024; // 5GB
+  const MAX_FILE_SIZE = 5 * 1024 * 1024 * 1024; // 5GB
   const fileTypes = useUploadStore().fileTypes; // 允许的扩展名
   const CHUNK_SIZE = 50 * 1024 * 1024; // 5MB分割
   const NOTNEEDCHUNK_SIZE = 20 * 1024 * 1024; // 5MB
@@ -103,10 +105,10 @@ export const useUpload = () => {
     return new Promise((resolve, reject) => {
       file
         .cosInstance!.headObject({
-          Bucket: file.bucket!,
-          Region: file.region!,
-          Key: file.key
-        })
+        Bucket: file.bucket!,
+        Region: file.region!,
+        Key: file.key
+      })
         .then((res) => {
           if (res) {
             resolve(true);
@@ -132,24 +134,24 @@ export const useUpload = () => {
     return new Promise((resolve) => {
       file
         .cosInstance!.uploadFile({
-          Bucket: file.bucket!,
-          Region: file.region!,
-          Key: file.key,
-          Body: file.file,
-          ChunkSize: CHUNK_SIZE,
-          AsyncLimit: 6,
-          SliceSize: NOTNEEDCHUNK_SIZE,
-          onTaskReady: (taskId) => {
-            file.taskId = taskId;
-          },
-          onProgress(progressData) {
-            let progress = Math.max(
-              parseInt(String(progressData.percent * 100)),
-              file.progress
-            );
-            file.progress = progress === 100 ? (progress = 99) : progress;
-          }
-        })
+        Bucket: file.bucket!,
+        Region: file.region!,
+        Key: file.key,
+        Body: file.file,
+        ChunkSize: CHUNK_SIZE,
+        AsyncLimit: 6,
+        SliceSize: NOTNEEDCHUNK_SIZE,
+        onTaskReady: (taskId) => {
+          file.taskId = taskId;
+        },
+        onProgress(progressData) {
+          let progress = Math.max(
+            parseInt(String(progressData.percent * 100)),
+            file.progress
+          );
+          file.progress = progress === 100 ? (progress = 99) : progress;
+        }
+      })
         .then((_) => {
           setTimeout(() => {
             file.status = "success";
@@ -158,6 +160,10 @@ export const useUpload = () => {
         })
         .catch(async (error) => {
           if (error?.toString().includes("expired")) {
+            console.log('cos过期重试');
+            reportSystemError({
+              message: 'cos 过期重试',
+            })
             auth = null;
             authPromise = null;
             await initCosInstance(reactive(file));
@@ -166,7 +172,10 @@ export const useUpload = () => {
             return;
           }
           if (times > 0) {
-            console.log("retry directUpload");
+            console.log('cos上传重试');
+            reportSystemError({
+              message: 'cos 上传重试',
+            })
             directUpload(file, times - 1);
             return;
           }
@@ -201,7 +210,8 @@ export const useUpload = () => {
       // worker.onmessage = async (e) => {
       //
       // };
-      const hash = Date.now() + "_" + Math.random().toString(36).substr(2, 9);
+      const date = new Date();
+      const hash = `${date.getFullYear()}_${date.getMonth()+1}_${date.getDate()}`;
       // worker.terminate();
       file.worker = undefined;
       file.hash = hash;

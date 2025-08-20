@@ -46,7 +46,7 @@ export const useUserStore = defineStore(
       const subscriptionStore = useSubscriptionStore();
       const { subscriptionStatus } = storeToRefs(useSubscriptionStore());
       if (user?.token) {
-        localStorage.setItem("token", user.token);
+        window?.localStorage.setItem("token", user.token);
         const token = useCrossDomainCookie("token");
         token.value = user.token; // 设置值
         subscriptionStore.getStatusUserIdFetch();
@@ -58,7 +58,7 @@ export const useUserStore = defineStore(
         });
         userInfoEmailCookie.value = user.userInfoVO?.email || "";
       } else {
-        localStorage.removeItem("token");
+        window?.localStorage.removeItem("token");
         const token = useCrossDomainCookie("token");
         token.value = "";
         emailStore.setEmail("");

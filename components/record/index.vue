@@ -4,7 +4,7 @@
       v-show="!hideRecord"
       ref="element"
       :style="style"
-      class="record fixed z-[9999] touch-none select-none rounded-[0.625rem] bg-black text-white"
+      class="record mt-[36px] mb-[10px] fixed z-[3900] touch-none select-none rounded-[0.625rem] bg-[#F9FAFC] text-black"
     >
       <div
         v-if="!isStopped"
@@ -13,11 +13,11 @@
         <div class="flex w-full flex-col items-center">
           <div class="recording flex items-center text-xl">
             <img
-              class="me-2.5"
+              class="me-2.5 w-[15px]"
               src="/assets/images/home/recording.svg"
               alt=""
             />
-            {{ t("FolderPage.buttons.recording") }}
+            <span class="text-[20px] font-medium">{{ t("FolderPage.buttons.recording") }}</span>
           </div>
           <div class="mb-4 text-base">{{ formattedTime }}</div>
 
@@ -34,13 +34,10 @@
             >
               <button
                 @click.stop.prevent="toggleRecording"
-                class="me-8 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border-2"
+                class="me-8 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border-2 border-[#64748B]"
               >
-                <span
-                  class="iconfont icon-bofang ml-0.5 text-xs"
-                  v-if="!isRecording"
-                ></span>
-                <span class="iconfont icon-zanting text-xs" v-else></span>
+                <nuxt-img v-if="!isRecording" class="ml-0.5 w-[9px]" src="/assets/images/home/play.svg" />
+                <nuxt-img v-else class="w-[8px]" src="/assets/images/home/pause.svg" />
               </button>
             </el-tooltip>
 
@@ -50,7 +47,7 @@
             >
               <button
                 @click.stop.prevent="stopRecording"
-                class="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border-2"
+                class="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border-2 border-[#64748B]"
               >
                 <div class="h-3 w-3 rounded-sm bg-subColor-normal"></div>
               </button>
@@ -135,7 +132,7 @@ dayjs.extend(utc);
 dayjs.tz.guess();
 // 最大录音时间（10小时）
 // todo 要改
-const MAX_RECORDING_TIME = 10 * 60 * 60; // 10小时，单位秒 * 60 * 60
+const MAX_RECORDING_TIME = 1 * 60 * 60; // 10小时，单位秒 * 60 * 60
 
 const options = computed(() => ({
   height: 20,

@@ -114,7 +114,7 @@ const showPro = () => {
 const isTimeOver3h = computed(() => {
   // todo 要改
   const h = props.formattedTime
-    ? parseInt(props.formattedTime?.split(":")?.[0]) || 0
+    ? parseInt(props.formattedTime?.split(":")?.[1]) || 0
     : 0;
   return h >= 3;
 });
@@ -161,7 +161,9 @@ const handleTranscribe = async () => {
       showPro();
     }
   } finally {
-    transcribing.value = false;
+    setTimeout(() => {
+      transcribing.value = false;
+    }, 10000);
   }
 };
 

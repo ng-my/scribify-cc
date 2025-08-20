@@ -109,6 +109,7 @@ import { useI18n } from "vue-i18n";
 import { useRouter } from "#vue-router";
 import { useUserStore } from "~/stores/useUserStore";
 import { storeToRefs } from "pinia";
+import useJumpPage from "~/hooks/useJumpPage";
 const userStore = useUserStore();
 const { userInfo } = storeToRefs(userStore);
 const props = defineProps({
@@ -117,6 +118,7 @@ const props = defineProps({
     default: true
   }
 });
+const { $mitt } = useNuxtApp();
 const route = useRoute();
 const router = useRouter();
 const { t } = useI18n();
@@ -136,7 +138,7 @@ const emit = defineEmits(["scrollIntoView"]);
 const scrollIntoView = (id: string) => {
   showPopup.value = false;
   const path = route.path;
-  if (path.includes("user/aboutUs")) {
+  if (path.includes("about")) {
     if (process.client) {
       window.sessionStorage.setItem("anchorId", `ID_${id}`);
     }
@@ -148,15 +150,18 @@ const scrollIntoView = (id: string) => {
 };
 
 const goToHome = () => {
+  const path = route.path;
+  const urls = ["terms-of-use", "privacy"];
+  if (isLogin.value && urls.find((url) => path.includes(url))) {
+    return $mitt.emit("goToEvent", { path: "/" });
+  }
   router.push({
     path: localePath("/")
   });
 };
 //登录
 const login = () => {
-  router.push({
-    path: localePath("/user/login")
-  });
+  $mitt.emit("goToEvent", { path: "/user/login" });
 };
 const isShowIconPointer = computed(() => {
   return route.name && !route.name?.startsWith("index");

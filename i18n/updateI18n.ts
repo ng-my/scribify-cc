@@ -4,10 +4,12 @@ import {
   Project,
   SyntaxKind,
   ObjectLiteralExpression,
-  PropertyAssignment
+  PropertyAssignment,
+  VariableDeclaration
 } from "ts-morph";
 import path from "path";
 import fs from "fs";
+import axios from "axios"; // 需要安装: npm install axios
 
 // 语言配置
 const languages = [
@@ -36,1048 +38,1436 @@ const languages = [
   "ar-SA"
 ];
 
-// 翻译映射 - 支持嵌套键路径
-const translations: Record<string, Record<string, string>> = {
-  "en-US": {
-    "FolderPage.endRecord.title": "Prompt",
-    "FolderPage.endRecord.content":
-      "You are recording. This action will end the recording. Do you want to end the recording?",
-    "FolderPage.endRecord.confirm": "Continue Recording",
-    "FolderPage.endRecord.cancel": "End Recording"
-  },
-  "es-ES": {
-    "FolderPage.endRecord.title": "Aviso",
-    "FolderPage.endRecord.content":
-      "Estás grabando. Esta acción terminará la grabación. ¿Quieres terminar la grabación?",
-    "FolderPage.endRecord.confirm": "Continuar Grabación",
-    "FolderPage.endRecord.cancel": "Terminar Grabación"
-  },
-  "it-IT": {
-    "FolderPage.endRecord.title": "Avviso",
-    "FolderPage.endRecord.content":
-      "Stai registrando. Questa azione terminerà la registrazione. Vuoi terminare la registrazione?",
-    "FolderPage.endRecord.confirm": "Continua Registrazione",
-    "FolderPage.endRecord.cancel": "Termina Registrazione"
-  },
-  "fr-FR": {
-    "FolderPage.endRecord.title": "Invite",
-    "FolderPage.endRecord.content":
-      "Vous êtes en train d'enregistrer. Cette action terminera l'enregistrement. Voulez-vous terminer l'enregistrement ?",
-    "FolderPage.endRecord.confirm": "Continuer l'Enregistrement",
-    "FolderPage.endRecord.cancel": "Terminer l'Enregistrement"
-  },
-  "de-DE": {
-    "FolderPage.endRecord.title": "Hinweis",
-    "FolderPage.endRecord.content":
-      "Sie nehmen auf. Diese Aktion beendet die Aufnahme. Möchten Sie die Aufnahme beenden?",
-    "FolderPage.endRecord.confirm": "Aufnahme Fortsetzen",
-    "FolderPage.endRecord.cancel": "Aufnahme Beenden"
-  },
-  "zh-CN": {
-    "FolderPage.endRecord.title": "提示",
-    "FolderPage.endRecord.content":
-      "您正在录音。此操作将结束录音。您要结束录音吗？",
-    "FolderPage.endRecord.confirm": "继续录音",
-    "FolderPage.endRecord.cancel": "结束录音"
-  },
-  "zh-TW": {
-    "FolderPage.endRecord.title": "提示",
-    "FolderPage.endRecord.content":
-      "您正在錄音。此操作將結束錄音。您要結束錄音嗎？",
-    "FolderPage.endRecord.confirm": "繼續錄音",
-    "FolderPage.endRecord.cancel": "結束錄音"
-  },
-  "ja-JP": {
-    "FolderPage.endRecord.title": "プロンプト",
-    "FolderPage.endRecord.content":
-      "録音中です。この操作により録音が終了します。録音を終了しますか？",
-    "FolderPage.endRecord.confirm": "録音を継続",
-    "FolderPage.endRecord.cancel": "録音を終了"
-  },
-  "ko-KR": {
-    "FolderPage.endRecord.title": "알림",
-    "FolderPage.endRecord.content":
-      "녹음 중입니다. 이 작업을 수행하면 녹음이 종료됩니다. 녹음을 종료하시겠습니까?",
-    "FolderPage.endRecord.confirm": "녹음 계속",
-    "FolderPage.endRecord.cancel": "녹음 종료"
-  },
-  "nl-NL": {
-    "FolderPage.endRecord.title": "Prompt",
-    "FolderPage.endRecord.content":
-      "Je bent aan het opnemen. Deze actie beëindigt de opname. Wil je de opname beëindigen?",
-    "FolderPage.endRecord.confirm": "Doorgaan met Opnemen",
-    "FolderPage.endRecord.cancel": "Opname Beëindigen"
-  },
-  "pl-PL": {
-    "FolderPage.endRecord.title": "Powiadomienie",
-    "FolderPage.endRecord.content":
-      "Nagrywasz. Ta akcja zakończy nagrywanie. Czy chcesz zakończyć nagrywanie?",
-    "FolderPage.endRecord.confirm": "Kontynuuj Nagrywanie",
-    "FolderPage.endRecord.cancel": "Zakończ Nagrywanie"
-  },
-  "da-DK": {
-    "FolderPage.endRecord.title": "Prompt",
-    "FolderPage.endRecord.content":
-      "Du optager. Denne handling vil afslutte optagelsen. Vil du afslutte optagelsen?",
-    "FolderPage.endRecord.confirm": "Fortsæt Optagelse",
-    "FolderPage.endRecord.cancel": "Afslut Optagelse"
-  },
-  "hu-HU": {
-    "FolderPage.endRecord.title": "Figyelmeztetés",
-    "FolderPage.endRecord.content":
-      "Felvételt készítesz. Ez a művelet befejezi a felvételt. Be szeretnéd fejezni a felvételt?",
-    "FolderPage.endRecord.confirm": "Felvétel Folytatása",
-    "FolderPage.endRecord.cancel": "Felvétel Befejezése"
-  },
-  "no-NO": {
-    "FolderPage.endRecord.title": "Varsel",
-    "FolderPage.endRecord.content":
-      "Du tar opp. Denne handlingen vil avslutte opptaket. Vil du avslutte opptaket?",
-    "FolderPage.endRecord.confirm": "Fortsett Opptak",
-    "FolderPage.endRecord.cancel": "Avslutt Opptak"
-  },
-  "pt-PT": {
-    "FolderPage.endRecord.title": "Aviso",
-    "FolderPage.endRecord.content":
-      "Está a gravar. Esta ação terminará a gravação. Quer terminar a gravação?",
-    "FolderPage.endRecord.confirm": "Continuar Gravação",
-    "FolderPage.endRecord.cancel": "Terminar Gravação"
-  },
-  "fi-FI": {
-    "FolderPage.endRecord.title": "Kehote",
-    "FolderPage.endRecord.content":
-      "Olet nauhoittamassa. Tämä toiminto lopettaa nauhoituksen. Haluatko lopettaa nauhoituksen?",
-    "FolderPage.endRecord.confirm": "Jatka Nauhoitusta",
-    "FolderPage.endRecord.cancel": "Lopeta Nauhoitus"
-  },
-  "sv-SE": {
-    "FolderPage.endRecord.title": "Meddelande",
-    "FolderPage.endRecord.content":
-      "Du spelar in. Den här åtgärden avslutar inspelningen. Vill du avsluta inspelningen?",
-    "FolderPage.endRecord.confirm": "Fortsätt Inspelning",
-    "FolderPage.endRecord.cancel": "Avsluta Inspelning"
-  },
-  "ru-RU": {
-    "FolderPage.endRecord.title": "Уведомление",
-    "FolderPage.endRecord.content":
-      "Вы записываете. Это действие завершит запись. Хотите завершить запись?",
-    "FolderPage.endRecord.confirm": "Продолжить Запись",
-    "FolderPage.endRecord.cancel": "Завершить Запись"
-  },
-  "tr-TR": {
-    "FolderPage.endRecord.title": "Uyarı",
-    "FolderPage.endRecord.content":
-      "Ses kaydı yapıyorsunuz. Bu işlem ses kaydını sonlandıracak. Ses kaydını sonlandırmak istiyor musunuz?",
-    "FolderPage.endRecord.confirm": "Ses Kaydına Devam Et",
-    "FolderPage.endRecord.cancel": "Ses Kaydını Sonlandır"
-  },
-  "el-GR": {
-    "FolderPage.endRecord.title": "Προειδοποίηση",
-    "FolderPage.endRecord.content":
-      "Κάνετε ηχογράφηση. Αυτή η ενέργεια θα τερματίσει την ηχογράφηση. Θέλετε να τερματίσετε την ηχογράφηση;",
-    "FolderPage.endRecord.confirm": "Συνέχισε την Ηχογράφηση",
-    "FolderPage.endRecord.cancel": "Τερμάτισε την Ηχογράφηση"
-  },
-  "uk-UA": {
-    "FolderPage.endRecord.title": "Попередження",
-    "FolderPage.endRecord.content":
-      "Ви записуєте аудіо. Ця дія завершить запис. Чи хочете завершити запис?",
-    "FolderPage.endRecord.confirm": "Продовжити Запис",
-    "FolderPage.endRecord.cancel": "Завершити Запис"
-  },
-  "he-IL": {
-    "FolderPage.endRecord.title": "הודעה",
-    "FolderPage.endRecord.content":
-      "אתה מקליט קול. פעולה זו תסיים את ההקלטה. האם ברצונך לסיים את ההקלטה?",
-    "FolderPage.endRecord.confirm": "המשך הקלטה",
-    "FolderPage.endRecord.cancel": "סיים הקלטה"
-  },
-  "ar-SA": {
-    "FolderPage.endRecord.title": "تنبيه",
-    "FolderPage.endRecord.content":
-      "أنت تسجل صوتيًا. هذا الإجراء سينهي التسجيل الصوتي. هل تريد إنهاء التسجيل الصوتي؟",
-    "FolderPage.endRecord.confirm": "متابعة التسجيل الصوتي",
-    "FolderPage.endRecord.cancel": "إنهاء التسجيل الصوتي"
-  }
+// 语言代码映射表
+const languageMapping: { [key: string]: string } = {
+  "en-US": "en",
+  "es-ES": "es",
+  "it-IT": "it",
+  "fr-FR": "fr",
+  "de-DE": "de",
+  "zh-CN": "zh-cn",
+  "zh-TW": "zh-tw",
+  "ja-JP": "ja",
+  "ko-KR": "ko",
+  "nl-NL": "nl",
+  "pl-PL": "pl",
+  "da-DK": "da",
+  "hu-HU": "hu",
+  "no-NO": "no",
+  "pt-PT": "pt",
+  "fi-FI": "fi",
+  "sv-SE": "sv",
+  "ru-RU": "ru",
+  "tr-TR": "tr",
+  "el-GR": "el",
+  "uk-UA": "uk",
+  "he-IL": "he",
+  "ar-SA": "ar"
 };
 
-interface NestedKeyConfig {
-  path: string[]; // 嵌套路径，如 ['a', 'b', 'c']
-  targetObject?: ObjectLiteralExpression; // 目标对象
-  targetIndex?: number; // 在目标对象中的索引
+const langPath = "./lang";
+
+/**
+ * ai翻译
+ * */
+let AI_CONFIG = {
+  url: "https://api.siliconflow.cn/v1/chat/completions",
+  apiKey: "sk-sswlyzxvwcbnxixpkznsbawlzbkltdbbezrdizyhiljbxziw", // 替换为你的 API Key
+  model: "deepseek-ai/DeepSeek-v3" // deepseek-ai/DeepSeek-v3
+};
+AI_CONFIG = {
+  url: "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
+  apiKey: "cca5560e-fa20-4b6c-aac5-88ac26d59a8b", // 替换为你的 API Key
+  model: "doubao-seed-1-6-250615" // doubao
+};
+
+// 获取目标语言的完整名称
+function getLanguageName(languageCode: string): string {
+  const languageNames: { [key: string]: string } = {
+    "zh-cn": "简体中文",
+    "zh-tw": "繁体中文",
+    en: "英语",
+    es: "西班牙语",
+    it: "意大利语",
+    fr: "法语",
+    de: "德语",
+    ja: "日语",
+    ko: "韩语",
+    nl: "荷兰语",
+    pl: "波兰语",
+    da: "丹麦语",
+    hu: "匈牙利语",
+    no: "挪威语",
+    pt: "葡萄牙语",
+    fi: "芬兰语",
+    sv: "瑞典语",
+    ru: "俄语",
+    tr: "土耳其语",
+    el: "希腊语",
+    uk: "乌克兰语",
+    he: "希伯来语",
+    ar: "阿拉伯语"
+  };
+
+  return languageNames[languageCode] || languageCode;
 }
 
-interface KeyLocation {
-  found: boolean;
-  object: ObjectLiteralExpression;
-  property?: PropertyAssignment;
-  index?: number;
-  nestedPath?: string[];
-}
+async function translateBatchWithAI(
+  textArray: string[],
+  targetLanguage = "zh-CN"
+): Promise<string[]> {
+  const googleLangCode = getGoogleTranslateCode(targetLanguage);
+  const targetLanguageName = getLanguageName(googleLangCode);
 
-type OperationType = "insert" | "replace" | "upsert";
+  // 构建翻译 prompt
+  const prompt = `你是一个专业的UI界面翻译专家。请将以下英文文本翻译成${targetLanguageName}。
+重要要求：
+1. 这些是用户界面文本，请保持简洁和用户友好
+2. 保持原文的格式，包括占位符如 {times}, {left}, {name}, {num} 等
+3. 保持适当的大小写规范（首字母大写）
+4. 不要翻译HTML实体，如 &quot; 保持原样
+5. 按钮和操作文本要简洁有力
+6. 保持专业术语的准确性
+7. 不能遗漏
+英文原文：
+${textArray.map((text, index) => `${index + 1}. ${text}`).join("\n")}
+请翻译成${targetLanguageName}，每行对应一个翻译结果：`;
+  const data = {
+    model: AI_CONFIG.model,
+    messages: [
+      {
+        role: "system",
+        content: prompt
+      },
+      {
+        role: "user",
+        content: prompt
+      }
+    ],
+    stream: false, // 不使用流式响应
+    max_tokens: 4000,
+    temperature: 0.3 // 使用较低的温度以获得更稳定的翻译结果
+  };
+  const headers = {
+    Authorization: `Bearer ${AI_CONFIG.apiKey}`,
+    "Content-Type": "application/json"
+  };
+  try {
+    console.log(
+      `🤖 使用 AI 翻译 ${textArray.length} 个文本到 ${targetLanguageName}...`
+    );
+    console.log(textArray);
 
-class NestedI18nUpdater {
-  private project: Project;
-
-  constructor() {
-    this.project = new Project({
-      useInMemoryFileSystem: false,
-      skipFileDependencyResolution: true
+    const response = await fetch(AI_CONFIG.url, {
+      method: "POST",
+      headers: headers,
+      body: JSON.stringify(data)
     });
-  }
-
-  /**
-   * 解析嵌套路径
-   */
-  private parseNestedPath(nestedKey: string): string[] {
-    return nestedKey
-      .split(".")
-      .map((key) => key.trim())
-      .filter((key) => key.length > 0);
-  }
-
-  /**
-   * 查找嵌套对象和位置
-   */
-  private findNestedTarget(
-    rootObject: ObjectLiteralExpression,
-    nestedPath: string[]
-  ): NestedKeyConfig | null {
-    let currentObject = rootObject;
-    const fullPath = [...nestedPath];
-
-    // 如果只有一个路径，直接在根对象中查找
-    if (fullPath.length === 1) {
-      const targetKey = fullPath[0];
-      const properties = currentObject.getProperties();
-      const targetIndex = properties.findIndex(
-        (prop) => this.getPropertyName(prop) === targetKey
-      );
-
-      if (targetIndex !== -1) {
-        return {
-          path: fullPath,
-          targetObject: currentObject,
-          targetIndex
-        };
-      }
-      return null;
+    if (!response.ok) {
+      throw new Error(`AI API 请求失败，状态码: ${response.status}`);
     }
+    const result = await response.json();
 
-    // 遍历嵌套路径，找到目标位置
-    const parentPath = fullPath.slice(0, -1); // 父路径
-    const targetKey = fullPath[fullPath.length - 1]; // 目标键
-
-    // 导航到父对象
-    for (let i = 0; i < parentPath.length; i++) {
-      const key = parentPath[i];
-      const property = currentObject.getProperty(key);
-
-      if (!property || property.getKind() !== SyntaxKind.PropertyAssignment) {
-        console.warn(
-          `⚠️  嵌套路径中未找到: ${parentPath.slice(0, i + 1).join(".")}`
-        );
-        return null;
-      }
-
-      const propAssignment = property as PropertyAssignment;
-      const initializer = propAssignment.getInitializer();
-
-      if (
-        !initializer ||
-        initializer.getKind() !== SyntaxKind.ObjectLiteralExpression
-      ) {
-        console.warn(`⚠️  ${key} 不是对象类型`);
-        return null;
-      }
-
-      currentObject = initializer as ObjectLiteralExpression;
+    if (!result.choices || !result.choices[0] || !result.choices[0].message) {
+      throw new Error("AI API 返回格式错误");
     }
+    const translatedContent = result.choices[0].message.content.trim();
 
-    // 在父对象中查找目标键
-    const properties = currentObject.getProperties();
-    const targetIndex = properties.findIndex(
-      (prop) => this.getPropertyName(prop) === targetKey
+    console.log("AI翻译结果", translatedContent);
+    // 解析 AI 返回的翻译结果
+    const translations = parseAITranslationResponse(
+      translatedContent,
+      textArray.length
     );
 
-    if (targetIndex !== -1) {
-      return {
-        path: fullPath,
-        targetObject: currentObject,
-        targetIndex
-      };
+    if (translations.length !== textArray.length) {
+      console.warn(
+        `⚠️  AI 翻译结果数量不匹配: 期望 ${textArray.length} 个，实际 ${translations.length} 个`
+      );
+      // 重试
+      return await translateBatchWithAI(textArray, targetLanguage);
+      // 如果数量不匹配，补齐或截断
+      // while (translations.length < textArray.length) {
+      //   translations.push(textArray[translations.length]); // 用原文填充缺失的翻译
+      // }
+      // translations.splice(textArray.length); // 移除多余的翻译
     }
 
-    console.warn(`⚠️  未找到目标键: ${fullPath.join(".")}`);
-    return null;
+    console.log(translations);
+    console.log(`✅ AI 翻译完成，共 ${translations.length} 个结果`);
+    return translations;
+  } catch (error: any) {
+    console.error("❌ AI 翻译错误:", error.message);
+    throw error;
+  }
+}
+
+// 解析 AI 返回的翻译结果
+function parseAITranslationResponse(
+  content: string,
+  expectedCount: number
+): string[] {
+  const lines = content
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line.length > 0);
+
+  // 方法1: 直接匹配数字开头的行（最准确）
+  const numberedLines = lines
+    .filter((line) => /^\d+\.\s+/.test(line)) // 匹配 "数字. " 开头的行
+    .map((line) => line.replace(/^\d+\.\s*/, "").trim()) // 移除序号
+    .slice(0, expectedCount);
+
+  if (numberedLines.length === expectedCount) {
+    return numberedLines;
   }
 
-  /**
-   * 查找现有的键位置（支持嵌套）
-   */
-  private findExistingKey(
-    rootObject: ObjectLiteralExpression,
-    key: string
-  ): KeyLocation {
-    // 检查是否是嵌套键
-    if (key.includes(".")) {
-      const nestedPath = this.parseNestedPath(key);
-      let currentObject = rootObject;
-      const pathToTarget = [...nestedPath];
+  // 方法2: 更宽松的匹配
+  const possibleTranslations = lines
+    .filter((line) => {
+      // 排除明显的说明文字，但保留翻译内容
+      return (
+        !line.includes("翻译结果") &&
+        !line.includes("原文") &&
+        !line.includes("请翻译") &&
+        !line.match(/^[一二三四五六七八九十\d]+[、．.]\s*$/)
+      ); // 排除纯序号行
+    })
+    .map((line) => line.replace(/^\d+[\.、]\s*/, "").trim())
+    .filter((line) => line.length > 10); // 翻译结果通常比较长
 
-      // 逐层导航到目标位置
-      for (let i = 0; i < pathToTarget.length; i++) {
-        const currentKey = pathToTarget[i];
-        const properties = currentObject.getProperties();
-        const propIndex = properties.findIndex(
-          (prop) => this.getPropertyName(prop) === currentKey
-        );
+  if (possibleTranslations.length >= expectedCount) {
+    return possibleTranslations.slice(0, expectedCount);
+  }
 
-        if (propIndex === -1) {
-          console.log(
-            `🔍 未找到嵌套键路径: ${pathToTarget.slice(0, i + 1).join(".")} (在 ${key} 中)`
-          );
-          return { found: false, object: rootObject };
+  // 方法3: 如果前面都失败，按顺序取前N行非空内容
+  const fallbackLines = lines
+    .filter((line) => line.length > 5)
+    .slice(0, expectedCount);
+
+  return fallbackLines;
+}
+
+// 修改原来的 translateTexts 函数，增加 AI 翻译选项
+async function translateTexts(
+  texts: string[],
+  targetLanguage: string,
+  useAI: boolean = false
+): Promise<string[]> {
+  console.log(
+    `📝 正在翻译 ${texts.length} 个文本到 ${targetLanguage} (${useAI ? "AI" : "Google"})...`
+  );
+  if (texts.length === 0) {
+    return [];
+  }
+  const BATCH_SIZE = useAI ? 500 : 500; // AI 翻译使用较小的批次
+  const results: string[] = [];
+  try {
+    // 分批处理
+    for (let i = 0; i < texts.length; i += BATCH_SIZE) {
+      const batch = texts.slice(i, i + BATCH_SIZE);
+      console.log(
+        `📦 处理批次 ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(texts.length / BATCH_SIZE)} (${batch.length} 个文本)`
+      );
+      // 添加延迟避免API限制
+      if (i > 0) {
+        const delay = useAI ? 2000 : 1000; // AI 翻译使用更长的延迟
+        console.log(`⏱️  等待 ${delay / 1000} 秒避免API限制...`);
+        await new Promise((resolve) => setTimeout(resolve, delay));
+      }
+      const batchResults = useAI
+        ? await translateBatchWithAI(batch, targetLanguage)
+        : await translateBatch(batch, targetLanguage);
+
+      const decodedResults = batchResults.map((text: any) =>
+        decodeHtmlEntities(text)
+      );
+
+      results.push(...decodedResults);
+      console.log(
+        `✅ 批次完成，已翻译 ${results.length}/${texts.length} 个文本`
+      );
+    }
+    console.log(`🎉 翻译完成！总共处理了 ${results.length} 个文本`);
+
+    return results;
+  } catch (error: any) {
+    console.error(`❌ 翻译失败:`, error.message);
+    console.log(`⚠️  返回原文本作为备用...`);
+    return texts; // 如果翻译失败，返回原文数组
+  }
+}
+/*
+ * 谷歌翻译
+ *
+ * */
+const proxyConfig = {
+  protocol: "http",
+  host: "127.0.0.1",
+  port: 7890
+};
+
+// 获取谷歌翻译语言代码
+function getGoogleTranslateCode(projectLangCode: string): string {
+  return languageMapping[projectLangCode] || projectLangCode;
+}
+
+async function translateBatch(textArray: string[], targetLanguage = "zh-CN") {
+  const googleLangCode = getGoogleTranslateCode(targetLanguage);
+
+  const data = [[textArray, "en", googleLangCode], "wt_lib"];
+
+  const config = {
+    method: "post",
+    maxBodyLength: Infinity,
+    url: "https://translate-pa.googleapis.com/v1/translateHtml",
+    headers: {
+      "x-goog-api-key": "AIzaSyATBXajvzQLTDHEQbcpq0Ihe0vWDHmO520",
+      "content-type": "application/json+protobuf"
+    },
+    data: data,
+    // proxy: proxyConfig
+  };
+
+  try {
+    const response = await axios.request(config);
+    console.log(response.data[0])
+    return response.data[0]; // 返回翻译结果数组
+  } catch (error: any) {
+    console.error("❌ 批量翻译错误:", error.message);
+    translateBatch(textArray, targetLanguage);
+    throw error; // 抛出错误让上层处理
+  }
+}
+
+// 将嵌套对象转换为平铺对象
+function flattenObject(
+  obj: any,
+  prefix: string = "",
+  result: { [key: string]: string } = {}
+): { [key: string]: string } {
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      const newKey = prefix ? `${prefix}.${key}` : key;
+      const value = obj[key];
+
+      if (Array.isArray(value)) {
+        // 🆕 处理数组：为每个元素创建索引键
+        value.forEach((item, index) => {
+          const arrayKey = `${newKey}[${index}]`;
+
+          if (typeof item === "string") {
+            // 数组中的字符串直接添加
+            result[arrayKey] = item;
+          } else if (typeof item === "object" && item !== null) {
+            // 数组中的对象需要递归处理
+            flattenObject(item, arrayKey, result);
+          } else {
+            // 其他类型转为字符串
+            result[arrayKey] = String(item);
+          }
+        });
+      } else if (
+        typeof value === "object" &&
+        value !== null &&
+        !Array.isArray(value)
+      ) {
+        // 普通对象递归处理
+        flattenObject(value, newKey, result);
+      } else {
+        // 简单值直接添加
+        result[newKey] = value;
+      }
+    }
+  }
+  return result;
+}
+
+
+// 将平铺对象转换回嵌套对象
+// 🔍 简化版调试 - 只打印关键步骤
+function unflattenObject(flatObj: { [key: string]: string }): any {
+  Object.entries(flatObj).forEach(([k, v]) => {
+    if (k.startsWith('a.')) {
+      console.log(`   ${k}: "${v}"`);
+    }
+  });
+
+  const result: any = {};
+
+  for (const key in flatObj) {
+    if (!key.startsWith('a.')) continue; // 只处理a开头的键来调试
+
+    const value = flatObj[key];
+
+    const keys = parseKeyPath(key);
+
+    let current = result;
+
+    // 遍历路径
+    for (let i = 0; i < keys.length; i++) {
+      const segment = keys[i];
+      const isLastSegment = i === keys.length - 1;
+
+      if (segment.isArray) {
+        // 当前段是数组索引，如 "b[0]" 或 "c[1]"
+        const arrayName = segment.name;
+        const arrayIndex = segment.index!;
+
+        console.log(`🔧 数组操作: ${arrayName}[${arrayIndex}]`);
+
+        if (!Array.isArray(current[arrayName])) {
+          console.log(`➕ 创建数组: ${arrayName}`);
+          current[arrayName] = [];
         }
 
-        const property = properties[propIndex] as PropertyAssignment;
-
-        // 如果是最后一个键，找到了目标
-        if (i === pathToTarget.length - 1) {
-          console.log(`✅ 找到嵌套键: ${key}`);
-          return {
-            found: true,
-            object: currentObject,
-            property,
-            index: propIndex,
-            nestedPath: nestedPath.slice(0, -1)
-          };
+        while (current[arrayName].length <= arrayIndex) {
+          current[arrayName].push(null);
         }
 
-        // 继续导航到下一层
-        const initializer = property.getInitializer();
+        if (isLastSegment) {
+          current[arrayName][arrayIndex] = value;
+          console.log(`✅ 设置 ${arrayName}[${arrayIndex}] = "${value}"`);
+        } else {
+          if (current[arrayName][arrayIndex] === null) {
+            const nextSegment = keys[i + 1];
+            current[arrayName][arrayIndex] = nextSegment.isArray ? [] : {};
+            console.log(`➕ 在 ${arrayName}[${arrayIndex}] 创建 ${nextSegment.isArray ? '数组' : '对象'}`);
+          }
+          current = current[arrayName][arrayIndex];
+        }
+      } else {
+        // 当前段是对象属性，如 "a" 或 "d"
+        const propName = segment.name;
+
+        console.log(`🔧 属性操作: ${propName}`);
+
+        if (isLastSegment) {
+          current[propName] = value;
+          console.log(`✅ 设置 ${propName} = "${value}"`);
+        } else {
+          if (!current[propName]) {
+            const nextSegment = keys[i + 1];
+            // 🚨 关键修复：如果下一段是数组段，当前属性应该是对象，不是数组！
+            // 因为 a.b[0] 中，a 是对象，a.b 才是数组
+            current[propName] = {};  // 🔥 总是创建对象！
+            console.log(`➕ 创建对象属性: ${propName}`);
+          }
+          current = current[propName];
+        }
+      }
+    }
+
+  }
+
+  console.log(`\n🎯 最终 result.a:`, JSON.stringify(result.a, null, 2));
+
+  // 处理其他键（同样的逻辑，但不打印）
+  for (const key in flatObj) {
+    if (key.startsWith('a.')) continue;
+
+    const value = flatObj[key];
+    const keys = parseKeyPath(key);
+    let current = result;
+
+    for (let i = 0; i < keys.length; i++) {
+      const segment = keys[i];
+      const isLastSegment = i === keys.length - 1;
+
+      if (segment.isArray) {
+        const arrayName = segment.name;
+        const arrayIndex = segment.index!;
+
+        if (!Array.isArray(current[arrayName])) {
+          current[arrayName] = [];
+        }
+        while (current[arrayName].length <= arrayIndex) {
+          current[arrayName].push(null);
+        }
+
+        if (isLastSegment) {
+          current[arrayName][arrayIndex] = value;
+        } else {
+          if (current[arrayName][arrayIndex] === null) {
+            const nextSegment = keys[i + 1];
+            current[arrayName][arrayIndex] = nextSegment.isArray ? [] : {};
+          }
+          current = current[arrayName][arrayIndex];
+        }
+      } else {
+        const propName = segment.name;
+
+        if (isLastSegment) {
+          current[propName] = value;
+        } else {
+          if (!current[propName]) {
+            current[propName] = {};  // 🔥 同样修复
+          }
+          current = current[propName];
+        }
+      }
+    }
+  }
+
+  return result;
+}
+
+// 创建默认的语言文件
+function createDefaultLanguageFile(filePath: string): void {
+  const defaultContent = `let message = {
+};
+
+export default defineI18nLocale(async (locale) => {
+  return message;
+});
+
+export { message };
+`;
+
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+
+  fs.writeFileSync(filePath, defaultContent, "utf-8");
+  console.log(`📄 创建默认语言文件: ${filePath}`);
+}
+
+// 从TypeScript文件解析对象
+function parseObjectFromFile(filePath: string): any {
+  if (!fs.existsSync(filePath)) {
+    console.log(`⚠️  文件不存在，创建默认文件: ${filePath}`);
+    createDefaultLanguageFile(filePath);
+    return {}; // 返回空对象，因为刚创建的文件message为空
+  }
+
+  const project = new Project();
+  const sourceFile = project.addSourceFileAtPath(filePath);
+
+  const variableStatements = sourceFile.getVariableStatements();
+
+  for (const statement of variableStatements) {
+    const declarations = statement.getDeclarations();
+    for (const declaration of declarations) {
+      const name = declaration.getName();
+      if (name === "message") {
+        const initializer = declaration.getInitializer();
         if (
-          !initializer ||
-          initializer.getKind() !== SyntaxKind.ObjectLiteralExpression
+          initializer &&
+          initializer.getKind() === SyntaxKind.ObjectLiteralExpression
         ) {
-          console.log(
-            `🔍 嵌套键路径中断: ${currentKey} 不是对象 (在 ${key} 中)`
-          );
-          return { found: false, object: rootObject };
+          return parseObjectLiteral(initializer as ObjectLiteralExpression);
         }
+      }
+    }
+  }
 
-        currentObject = initializer as ObjectLiteralExpression;
+  console.log(`⚠️  未找到 message 变量声明: ${filePath}`);
+  return {};
+}
+
+// 解析对象字面量
+function parseObjectLiteral(obj: ObjectLiteralExpression): any {
+  const result: any = {};
+
+  obj.getProperties().forEach((prop) => {
+    if (prop.getKind() === SyntaxKind.PropertyAssignment) {
+      const propAssignment = prop as PropertyAssignment;
+      const key = propAssignment.getName();
+      const value = propAssignment.getInitializer();
+
+      if (value) {
+        if (value.getKind() === SyntaxKind.ObjectLiteralExpression) {
+          // 嵌套对象
+          result[key] = parseObjectLiteral(value as ObjectLiteralExpression);
+        } else if (value.getKind() === SyntaxKind.ArrayLiteralExpression) {
+          // 🆕 新增：数组字面量支持
+          result[key] = parseArrayLiteral(value as any);
+        } else if (value.getKind() === SyntaxKind.StringLiteral) {
+          // 字符串字面量
+          result[key] = value.getText().slice(1, -1);
+        } else if (
+          value.getKind() === SyntaxKind.TemplateExpression ||
+          value.getKind() === SyntaxKind.NoSubstitutionTemplateLiteral
+        ) {
+          // 模板字符串
+          const text = value.getText();
+          result[key] = text.slice(1, -1);
+        }
+      }
+    }
+  });
+
+  return result;
+}
+
+// 🆕 新增：解析数组字面量
+function parseArrayLiteral(arr: any): any[] {
+  const result: any[] = [];
+
+  // 获取数组元素
+  arr.getElements().forEach((element: any) => {
+    if (element.getKind() === SyntaxKind.StringLiteral) {
+      // 字符串元素
+      result.push(element.getText().slice(1, -1));
+    } else if (element.getKind() === SyntaxKind.ObjectLiteralExpression) {
+      // 对象元素
+      result.push(parseObjectLiteral(element));
+    } else if (element.getKind() === SyntaxKind.ArrayLiteralExpression) {
+      // 嵌套数组
+      result.push(parseArrayLiteral(element));
+    } else if (
+      element.getKind() === SyntaxKind.TemplateExpression ||
+      element.getKind() === SyntaxKind.NoSubstitutionTemplateLiteral
+    ) {
+      // 模板字符串
+      const text = element.getText();
+      result.push(text.slice(1, -1));
+    } else if (element.getKind() === SyntaxKind.NumericLiteral) {
+      // 数字
+      result.push(Number(element.getText()));
+    } else if (element.getKind() === SyntaxKind.TrueKeyword) {
+      // 布尔值 true
+      result.push(true);
+    } else if (element.getKind() === SyntaxKind.FalseKeyword) {
+      // 布尔值 false
+      result.push(false);
+    } else if (element.getKind() === SyntaxKind.NullKeyword) {
+      // null
+      result.push(null);
+    } else {
+      // 其他类型，保留原始文本
+      result.push(element.getText());
+    }
+  });
+
+  return result;
+}
+
+// 🆕 新增：格式化数组用于输出
+function formatArray(arr: any[], indent: number = 2): string {
+  if (arr.length === 0) {
+    return "[]";
+  }
+
+  // 如果数组比较简单（只包含字符串、数字、布尔值），使用单行格式
+  const isSimpleArray = arr.every(item =>
+    typeof item === 'string' ||
+    typeof item === 'number' ||
+    typeof item === 'boolean' ||
+    item === null
+  );
+
+  if (isSimpleArray && arr.length <= 3) {
+    return "[" + arr.map(formatSimpleArrayValue).join(", ") + "]";
+  }
+
+  // 复杂数组使用多行格式
+  const spaces = " ".repeat(indent);
+  let result = "[\n";
+
+  arr.forEach((item, index) => {
+    const isLast = index === arr.length - 1;
+
+    if (typeof item === 'object' && item !== null && !Array.isArray(item)) {
+      // 对象元素
+      result += `${spaces}${formatObjectCompletely(item, indent + 2)}${isLast ? "" : ","}\n`;
+    } else if (Array.isArray(item)) {
+      // 数组元素
+      result += `${spaces}${formatArray(item, indent + 2)}${isLast ? "" : ","}\n`;
+    } else {
+      // 简单值
+      result += `${spaces}${formatSimpleArrayValue(item)}${isLast ? "" : ","}\n`;
+    }
+  });
+
+  result += " ".repeat(indent - 2) + "]";
+  return result;
+}
+
+// 🆕 格式化数组中的简单值
+function formatSimpleArrayValue(value: any): string {
+  if (typeof value === 'string') {
+    return formatSimpleValue(value);
+  } else if (typeof value === 'number') {
+    return value.toString();
+  } else if (typeof value === 'boolean') {
+    return value.toString();
+  } else if (value === null) {
+    return 'null';
+  } else {
+    return String(value);
+  }
+}
+
+
+
+// 🆕 新增：格式化简单值
+// 🆕 更好的解决方案：使用 JSON.stringify 自动处理转义
+// 🆕 强制使用单引号的版本（更清晰）
+function formatSimpleValue(value: string): string {
+  // 🆕 先解码HTML实体
+  const decodedValue = decodeHtmlEntities(value);
+
+  // 1. 如果包含模板字符串语法，使用反引号
+  if (decodedValue.includes("`") || decodedValue.includes("${")) {
+    return `\`${decodedValue}\``;
+  }
+
+  // 2. 如果包含双引号但不包含单引号，使用单引号包裹
+  else if (decodedValue.includes('"') && !decodedValue.includes("'")) {
+    return `'${decodedValue}'`;
+  }
+
+  // 3. 如果同时包含双引号和单引号，使用反引号
+  else if (decodedValue.includes('"') && decodedValue.includes("'")) {
+    return `\`${decodedValue}\``;
+  }
+
+  // 4. 默认使用双引号，但手动处理转义（不用JSON.stringify）
+  else {
+    // 手动转义双引号，但保持 \n 为 \n（不转义成 \\n）
+    const escaped = decodedValue.replace(/"/g, '\\"');
+    return `"${escaped}"`;
+  }
+}
+
+// 🆕 HTML实体解码函数
+function decodeHtmlEntities(text: string): string {
+  return text
+    .replace(/&#39;/g, "'") // &#39; → '
+    .replace(/&#x27;/g, "'") // &#x27; → '
+    .replace(/&quot;/g, '"') // &quot; → "
+    .replace(/&amp;/g, "&") // &amp; → &
+    .replace(/&lt;/g, "<") // &lt; → <
+    .replace(/&gt;/g, ">"); // &gt; → >
+}
+
+// 🆕 新增：从对象字面量中删除指定的keys
+function removeKeysFromObjectLiteral(
+  objLiteral: ObjectLiteralExpression,
+  keysToRemove: string[]
+): void {
+  const propertiesToRemove: PropertyAssignment[] = [];
+
+  // 收集需要删除的属性
+  objLiteral.getProperties().forEach((prop) => {
+    if (prop.getKind() === SyntaxKind.PropertyAssignment) {
+      const propAssignment = prop as PropertyAssignment;
+      const key = propAssignment.getName();
+
+      if (keysToRemove.includes(key)) {
+        propertiesToRemove.push(propAssignment);
+      }
+    }
+  });
+
+  // 删除收集到的属性
+  propertiesToRemove.forEach((prop) => {
+    console.log(`🗑️  删除属性: ${prop.getName()}`);
+    prop.remove();
+  });
+}
+
+interface KeySegment {
+  name: string;
+  isArray: boolean;
+  index?: number;
+}
+
+function parseKeyPath(key: string): KeySegment[] {
+  const segments: KeySegment[] = [];
+  const parts = key.split('.');
+
+  for (const part of parts) {
+    const arrayMatch = part.match(/^(.+)\[(\d+)\]$/);
+    if (arrayMatch) {
+      // 这是数组索引格式，如 "items[0]"
+      const segment = {
+        name: arrayMatch[1],
+        isArray: true,
+        index: parseInt(arrayMatch[2])
+      };
+      segments.push(segment);
+      console.log(`   数组段: ${segment.name}[${segment.index}]`);
+    } else {
+      // 这是普通属性
+      const segment = {
+        name: part,
+        isArray: false
+      };
+      segments.push(segment);
+    }
+  }
+
+  return segments;
+}
+// 🆕 新增：智能删除嵌套对象中的keys
+function removeKeysFromNestedObject(obj: any, keysToRemove: string[]): any {
+  const result = JSON.parse(JSON.stringify(obj)); // 深拷贝
+
+  keysToRemove.forEach((key) => {
+    const segments = parseKeyPath(key);
+    let current = result;
+    const path: any[] = [current];
+
+    // 找到目标路径
+    for (let i = 0; i < segments.length - 1; i++) {
+      const segment = segments[i];
+
+      if (segment.isArray) {
+        if (current[segment.name] && Array.isArray(current[segment.name]) &&
+          current[segment.name][segment.index!] !== undefined) {
+          current = current[segment.name][segment.index!];
+          path.push(current);
+        } else {
+          return; // 路径不存在
+        }
+      } else {
+        if (current[segment.name] && typeof current[segment.name] === "object") {
+          current = current[segment.name];
+          path.push(current);
+        } else {
+          return; // 路径不存在
+        }
+      }
+    }
+
+    // 删除最后的key
+    const finalSegment = segments[segments.length - 1];
+    if (finalSegment.isArray) {
+      if (current[finalSegment.name] && Array.isArray(current[finalSegment.name])) {
+        console.log(`🗑️  删除数组元素: ${key}`);
+        current[finalSegment.name].splice(finalSegment.index!, 1);
       }
     } else {
-      // 简单键，直接在根对象查找
-      const properties = rootObject.getProperties();
-      const propIndex = properties.findIndex(
-        (prop) => this.getPropertyName(prop) === key
-      );
-
-      if (propIndex !== -1) {
-        console.log(`✅ 找到根级键: ${key}`);
-        return {
-          found: true,
-          object: rootObject,
-          property: properties[propIndex] as PropertyAssignment,
-          index: propIndex
-        };
-      } else {
-        console.log(`🔍 未找到根级键: ${key}`);
+      if (finalSegment.name in current) {
+        console.log(`🗑️  删除属性: ${key}`);
+        delete current[finalSegment.name];
       }
     }
+  });
 
-    return { found: false, object: rootObject };
-  }
+  return result;
+}
 
-  /**
-   * 获取属性名称
-   */
-  private getPropertyName(property: any): string {
-    if (property.getKind() === SyntaxKind.PropertyAssignment) {
-      const nameNode = property.getNameNode();
-      const name = nameNode.getText();
-      // 去除引号
-      return name.replace(/^["']|["']$/g, "");
+// 🆕 修改 updateObjectLiteralWithCommentsAndRemoval 函数，支持数组
+function updateObjectLiteralWithCommentsAndRemoval(
+  objLiteral: ObjectLiteralExpression,
+  newObj: any,
+  keysToRemove: string[] = []
+): void {
+  const existingProps = new Map<string, PropertyAssignment>();
+
+  // 收集现有属性
+  objLiteral.getProperties().forEach((prop) => {
+    if (prop.getKind() === SyntaxKind.PropertyAssignment) {
+      const propAssignment = prop as PropertyAssignment;
+      const key = propAssignment.getName();
+      existingProps.set(key, propAssignment);
     }
-    return "";
-  }
+  });
 
-  /**
-   * 解析嵌套插入配置
-   */
-  private parseInsertConfig(referenceKey: string): {
-    insertInNested: boolean;
-    parentPath?: string[];
-    targetKey?: string;
-    flatKey?: string;
-  } {
-    if (!referenceKey.includes(".")) {
-      return {
-        insertInNested: false,
-        flatKey: referenceKey
-      };
+  // 1. 首先删除不需要的顶级keys
+  const topLevelKeysToRemove = keysToRemove.filter((key) => !key.includes("."));
+  topLevelKeysToRemove.forEach((key) => {
+    const prop = existingProps.get(key);
+    if (prop) {
+      console.log(`🗑️  删除顶级属性: ${key}`);
+      prop.remove();
+      existingProps.delete(key);
     }
+  });
 
-    const parts = this.parseNestedPath(referenceKey);
+  // 2. 更新现有属性，添加新属性
+  for (const [key, value] of Object.entries(newObj)) {
+    const existingProp = existingProps.get(key);
 
-    // 检查是否要在嵌套对象内部插入
-    // 格式: "a.b.c*" 表示在 a.b.c 对象内部插入
-    // 格式: "a.b.c" 表示在 a.b.c 键后面插入
-    if (referenceKey.endsWith("*")) {
-      const cleanPath = referenceKey.replace("*", "");
-      const pathParts = this.parseNestedPath(cleanPath);
-      return {
-        insertInNested: true,
-        parentPath: pathParts
-      };
-    }
+    if (existingProp) {
+      // 属性已存在，更新值
+      const existingValue = existingProp.getInitializer();
 
-    return {
-      insertInNested: false,
-      parentPath: parts.slice(0, -1),
-      targetKey: parts[parts.length - 1]
-    };
-  }
+      if (Array.isArray(value)) {
+        // 🆕 数组类型
+        existingProp.setInitializer(formatArray(value));
+      } else if (typeof value === "object" && value !== null) {
+        // 嵌套对象且原来也是对象，递归更新
+        if (
+          existingValue &&
+          existingValue.getKind() === SyntaxKind.ObjectLiteralExpression
+        ) {
+          const nestedKeysToRemove = keysToRemove
+            .filter((k) => k.startsWith(`${key}.`))
+            .map((k) => k.substring(key.length + 1));
 
-  /**
-   * 更新多个语言文件 (支持嵌套和替换)
-   */
-  updateMultipleLanguageFiles(
-    baseDir: string,
-    operation: OperationType = "insert",
-    insertPosition: "first" | "last" | "after" | "before" = "last",
-    referenceKey?: string
-  ) {
-    console.log(`🌍 开始批量更新多语言文件 (支持嵌套和替换)...`);
-    console.log(`📁 基础目录: ${baseDir}`);
-    console.log(`🔧 操作类型: ${operation}`);
-    console.log(`📍 插入位置: ${insertPosition}`);
-
-    if (referenceKey) {
-      const config = this.parseInsertConfig(referenceKey);
-      console.log(`🔗 参考键: ${referenceKey}`);
-      console.log(`📊 解析结果:`, {
-        嵌套插入: config.insertInNested,
-        父路径: config.parentPath?.join(".") || "无",
-        目标键: config.targetKey || config.flatKey || "无"
-      });
-    }
-    console.log();
-
-    let successCount = 0;
-    let errorCount = 0;
-
-    languages.forEach((lang) => {
-      const filePath = path.resolve(baseDir, `${lang}.ts`);
-
-      try {
-        if (!fs.existsSync(filePath)) {
-          console.warn(`⚠️  文件不存在: ${filePath}`);
-          return;
-        }
-
-        console.log(`🔄 正在处理: ${lang}`);
-
-        const sourceFile = this.project.addSourceFileAtPath(filePath);
-
-        // 查找根配置对象
-        const rootObject = this.findRootConfigObject(sourceFile);
-        if (!rootObject) {
-          console.error(`❌ 未找到根配置对象在 ${filePath}`);
-          errorCount++;
-          return;
-        }
-
-        const langTranslations = translations[lang];
-        if (!langTranslations) {
-          console.warn(`⚠️  未找到 ${lang} 的翻译配置`);
-          return;
-        }
-
-        // 批量处理所有键值对
-        const keysToProcess = Object.keys(langTranslations);
-        let processedCount = 0;
-
-        for (const key of keysToProcess) {
-          const translationText = langTranslations[key];
-
-          console.log(`🔍 处理键: ${key}`);
-
-          // 根据操作类型执行相应处理
-          const result = this.processTranslationKey(
-            rootObject,
-            key,
-            translationText,
-            operation,
-            insertPosition,
-            referenceKey,
-            lang
-          );
-
-          if (result.processed) {
-            console.log(`   ${result.action} ${key}: "${translationText}"`);
-            processedCount++;
-          } else if (result.skipped) {
-            console.log(`   ⏭️  ${result.reason}`);
-          } else {
-            console.error(`   ❌ ${key} 处理失败: ${result.error}`);
-          }
-        }
-
-        if (processedCount > 0) {
-          sourceFile.saveSync();
-          console.log(`✅ ${lang} 完成，共处理 ${processedCount} 个键`);
-          successCount++;
-        } else {
-          console.log(`⏭️  ${lang} 无需更新`);
-        }
-      } catch (error) {
-        console.error(
-          `❌ 处理文件 ${filePath} 时出错:`,
-          (error as Error).message
-        );
-        errorCount++;
-      }
-    });
-
-    console.log(`\n🎉 批量更新完成！`);
-    console.log(`✅ 成功: ${successCount} 个文件`);
-    console.log(`❌ 失败: ${errorCount} 个文件`);
-  }
-
-  /**
-   * 处理单个翻译键
-   */
-  private processTranslationKey(
-    rootObject: ObjectLiteralExpression,
-    key: string,
-    value: string,
-    operation: OperationType,
-    insertPosition: "first" | "last" | "after" | "before",
-    referenceKey: string | undefined,
-    lang: string
-  ): {
-    processed: boolean;
-    skipped: boolean;
-    action?: string;
-    reason?: string;
-    error?: string;
-  } {
-    // 查找键是否已存在
-    const keyLocation = this.findExistingKey(rootObject, key);
-
-    switch (operation) {
-      case "insert":
-        if (keyLocation.found) {
-          return {
-            processed: false,
-            skipped: true,
-            reason: `${lang} 已存在 ${key}，跳过插入`
-          };
-        }
-        // 执行插入
-        try {
-          const success = this.insertTranslationNested(
-            rootObject,
-            key,
+          updateObjectLiteralWithCommentsAndRemoval(
+            existingValue as ObjectLiteralExpression,
             value,
-            insertPosition,
-            referenceKey
+            nestedKeysToRemove
           );
-          return success
-            ? { processed: true, action: "✅ 插入" }
-            : { processed: false, skipped: false, error: "插入失败" };
-        } catch (error) {
-          return {
-            processed: false,
-            skipped: false,
-            error: (error as Error).message
-          };
-        }
-
-      case "replace":
-        if (!keyLocation.found) {
-          return {
-            processed: false,
-            skipped: true,
-            reason: `${lang} 未找到 ${key}，跳过替换`
-          };
-        }
-        // 执行替换
-        try {
-          const success = this.replaceTranslation(keyLocation, key, value);
-          return success
-            ? { processed: true, action: "🔄 替换" }
-            : { processed: false, skipped: false, error: "替换失败" };
-        } catch (error) {
-          return {
-            processed: false,
-            skipped: false,
-            error: (error as Error).message
-          };
-        }
-
-      case "upsert":
-        if (keyLocation.found) {
-          // 替换现有
-          try {
-            const success = this.replaceTranslation(keyLocation, key, value);
-            return success
-              ? { processed: true, action: "🔄 更新" }
-              : { processed: false, skipped: false, error: "更新失败" };
-          } catch (error) {
-            return {
-              processed: false,
-              skipped: false,
-              error: (error as Error).message
-            };
-          }
         } else {
-          // 插入新的
-          try {
-            const success = this.insertTranslationNested(
-              rootObject,
-              key,
-              value,
-              insertPosition,
-              referenceKey
-            );
-            return success
-              ? { processed: true, action: "✅ 新增" }
-              : { processed: false, skipped: false, error: "新增失败" };
-          } catch (error) {
-            return {
-              processed: false,
-              skipped: false,
-              error: (error as Error).message
-            };
-          }
+          // 原来不是对象，直接替换
+          existingProp.setInitializer(formatObjectForInline(value));
         }
+      } else {
+        // 简单值，直接更新
+        const quotedValue = formatSimpleValue(value as string);
+        existingProp.setInitializer(quotedValue);
+      }
 
-      default:
-        return {
-          processed: false,
-          skipped: false,
-          error: `未知操作类型: ${operation}`
-        };
-    }
-  }
-
-  /**
-   * 替换现有翻译
-   */
-  private replaceTranslation(
-    keyLocation: KeyLocation,
-    key: string,
-    newValue: string
-  ): boolean {
-    if (!keyLocation.found || !keyLocation.property) {
-      return false;
-    }
-
-    const escapedValue = newValue.replace(/"/g, '\\"');
-
-    try {
-      // 直接设置新的值
-      keyLocation.property.setInitializer(`"${escapedValue}"`);
-      console.log(`✅ 成功替换嵌套键 ${key} 的值`);
-      return true;
-    } catch (error) {
-      console.error(`❌ 替换 ${key} 失败:`, (error as Error).message);
-      return false;
-    }
-  }
-
-  /**
-   * 查找根配置对象
-   */
-  private findRootConfigObject(
-    sourceFile: any
-  ): ObjectLiteralExpression | null {
-    // 尝试找到默认导出
-    const exportAssignments = sourceFile.getExportAssignments();
-    const defaultExport = exportAssignments.find(
-      (exp: any) => !exp.isExportEquals()
-    );
-
-    if (defaultExport) {
-      const expression = defaultExport.getExpression();
-      if (expression.getKind() === SyntaxKind.ObjectLiteralExpression) {
-        return expression as ObjectLiteralExpression;
+      existingProps.delete(key); // 标记为已处理
+    } else {
+      // 新属性，添加到最后
+      if (Array.isArray(value)) {
+        // 🆕 数组
+        objLiteral.addPropertyAssignment({
+          name: key,
+          initializer: formatArray(value)
+        });
+      } else if (typeof value === "object" && value !== null) {
+        // 对象
+        objLiteral.addPropertyAssignment({
+          name: key,
+          initializer: formatObjectForInline(value)
+        });
+      } else {
+        // 简单值
+        objLiteral.addPropertyAssignment({
+          name: key,
+          initializer: formatSimpleValue(value as string)
+        });
       }
     }
+  }
+}
 
-    // 如果没有默认导出，尝试查找变量声明
-    const variableDeclarations = sourceFile.getVariableDeclarations();
-    for (const decl of variableDeclarations) {
-      const initializer = decl.getInitializer();
+// 修改原来的智能更新函数
+function updateObjectLiteralWithComments(
+  objLiteral: ObjectLiteralExpression,
+  newObj: any
+): void {
+  updateObjectLiteralWithCommentsAndRemoval(objLiteral, newObj, []);
+}
+
+// 🆕 新增：格式化对象用于内联
+function formatObjectForInline(obj: any): string {
+  return formatObjectCompletely(obj, 2);
+}
+
+// 原来的 formatObject 函数，重命名为 formatObjectCompletely
+function formatObjectCompletely(obj: any, indent: number = 2): string {
+  const spaces = " ".repeat(indent);
+  let result = "{\n";
+
+  const entries = Object.entries(obj);
+
+  entries.forEach(([key, value], index) => {
+    const isLast = index === entries.length - 1;
+
+    if (typeof value === "object" && value !== null && !Array.isArray(value)) {
+      // 嵌套对象
+      result += `${spaces}${key}: ${formatObjectCompletely(value, indent + 2)}${isLast ? "" : ","}\n`;
+    } else if (Array.isArray(value)) {
+      // 🆕 数组
+      result += `${spaces}${key}: ${formatArray(value, indent + 2)}${isLast ? "" : ","}\n`;
+    } else {
+      // 简单值
+      const quotedValue = formatSimpleValue(value as string);
+      result += `${spaces}${key}: ${quotedValue}${isLast ? "" : ","}\n`;
+    }
+  });
+
+  result += " ".repeat(indent - 2) + "}";
+  return result;
+}
+
+// 将对象写入TypeScript文件，保留原有注释和结构，支持删除keys
+async function writeObjectToFileWithRemoval(
+  filePath: string,
+  obj: any,
+  keysToRemove: string[] = []
+): Promise<void> {
+  // 检查文件是否存在
+  if (!fs.existsSync(filePath)) {
+    console.log(`⚠️  文件不存在，创建默认文件: ${filePath}`);
+    createDefaultLanguageFile(filePath);
+  }
+
+  try {
+    // 使用 ts-morph 来精确修改文件，保留注释和其他内容
+    const project = new Project();
+    const sourceFile = project.addSourceFileAtPath(filePath);
+
+    // 找到 message 变量声明
+    const variableStatements = sourceFile.getVariableStatements();
+    let messageDeclaration: VariableDeclaration | undefined;
+
+    for (const statement of variableStatements) {
+      const declarations = statement.getDeclarations();
+      for (const declaration of declarations) {
+        if (declaration.getName() === "message") {
+          messageDeclaration = declaration;
+          break;
+        }
+      }
+      if (messageDeclaration) break;
+    }
+
+    if (messageDeclaration) {
+      const initializer = messageDeclaration.getInitializer();
       if (
         initializer &&
         initializer.getKind() === SyntaxKind.ObjectLiteralExpression
       ) {
-        return initializer as ObjectLiteralExpression;
-      }
-    }
-
-    return null;
-  }
-
-  /**
-   * 插入翻译 (支持嵌套)
-   */
-  private insertTranslationNested(
-    rootObject: ObjectLiteralExpression,
-    key: string,
-    value: string,
-    position: "first" | "last" | "after" | "before",
-    referenceKey?: string
-  ): boolean {
-    // 如果键包含点号，说明是嵌套键，需要特殊处理
-    if (key.includes(".")) {
-      return this.insertNestedKey(
-        rootObject,
-        key,
-        value,
-        position,
-        referenceKey
-      );
-    }
-
-    if (!referenceKey) {
-      // 没有参考键，直接在根对象插入
-      this.insertTranslation(rootObject, key, value, position);
-      return true;
-    }
-
-    const config = this.parseInsertConfig(referenceKey);
-
-    if (config.insertInNested && config.parentPath) {
-      // 在嵌套对象内部插入
-      return this.insertInNestedObject(
-        rootObject,
-        config.parentPath,
-        key,
-        value,
-        position
-      );
-    } else if (config.flatKey) {
-      // 平级插入
-      this.insertTranslation(rootObject, key, value, position, config.flatKey);
-      return true;
-    } else if (config.parentPath && config.targetKey) {
-      // 嵌套引用插入
-      return this.insertAfterNestedReference(
-        rootObject,
-        config.parentPath,
-        config.targetKey,
-        key,
-        value,
-        position
-      );
-    }
-
-    return false;
-  }
-
-  /**
-   * 插入嵌套键
-   */
-  private insertNestedKey(
-    rootObject: ObjectLiteralExpression,
-    nestedKey: string,
-    value: string,
-    position: "first" | "last" | "after" | "before",
-    referenceKey?: string
-  ): boolean {
-    const pathParts = this.parseNestedPath(nestedKey);
-    const targetKey = pathParts[pathParts.length - 1];
-    const parentPath = pathParts.slice(0, -1);
-
-    let currentObject = rootObject;
-
-    // 导航到目标父对象，如果不存在则创建
-    for (const pathKey of parentPath) {
-      let property = currentObject.getProperty(pathKey);
-
-      if (!property || property.getKind() !== SyntaxKind.PropertyAssignment) {
-        // 创建新的嵌套对象
-        currentObject.addPropertyAssignment({
-          name: pathKey,
-          initializer: "{}"
-        });
-        property = currentObject.getProperty(pathKey);
-      }
-
-      const propAssignment = property as PropertyAssignment;
-      const initializer = propAssignment.getInitializer();
-
-      if (
-        !initializer ||
-        initializer.getKind() !== SyntaxKind.ObjectLiteralExpression
-      ) {
-        console.error(`❌ ${pathKey} 不是对象类型`);
-        return false;
-      }
-
-      currentObject = initializer as ObjectLiteralExpression;
-    }
-
-    // 在目标对象中插入
-    this.insertTranslation(currentObject, targetKey, value, position);
-    console.log(`📍 已在嵌套路径 ${parentPath.join(".")} 中插入 ${targetKey}`);
-    return true;
-  }
-
-  /**
-   * 在嵌套对象内部插入
-   */
-  private insertInNestedObject(
-    rootObject: ObjectLiteralExpression,
-    parentPath: string[],
-    key: string,
-    value: string,
-    position: "first" | "last" | "after" | "before"
-  ): boolean {
-    let currentObject = rootObject;
-
-    // 导航到目标嵌套对象
-    for (const pathKey of parentPath) {
-      const property = currentObject.getProperty(pathKey);
-
-      if (!property || property.getKind() !== SyntaxKind.PropertyAssignment) {
-        console.error(`❌ 嵌套路径中未找到: ${pathKey}`);
-        return false;
-      }
-
-      const propAssignment = property as PropertyAssignment;
-      const initializer = propAssignment.getInitializer();
-
-      if (
-        !initializer ||
-        initializer.getKind() !== SyntaxKind.ObjectLiteralExpression
-      ) {
-        console.error(`❌ ${pathKey} 不是对象类型`);
-        return false;
-      }
-
-      currentObject = initializer as ObjectLiteralExpression;
-    }
-
-    // 在目标对象中插入
-    this.insertTranslation(currentObject, key, value, position);
-    console.log(`📍 已在嵌套对象 ${parentPath.join(".")} 中插入 ${key}`);
-    return true;
-  }
-
-  /**
-   * 在嵌套引用后插入
-   */
-  private insertAfterNestedReference(
-    rootObject: ObjectLiteralExpression,
-    parentPath: string[],
-    targetKey: string,
-    newKey: string,
-    newValue: string,
-    position: "first" | "last" | "after" | "before"
-  ): boolean {
-    if (parentPath.length === 0) {
-      // 直接在根对象中查找
-      this.insertTranslation(rootObject, newKey, newValue, position, targetKey);
-      return true;
-    }
-
-    // 在父对象中查找目标并插入
-    let currentObject = rootObject;
-
-    // 导航到父对象
-    for (const pathKey of parentPath) {
-      const property = currentObject.getProperty(pathKey);
-
-      if (!property || property.getKind() !== SyntaxKind.PropertyAssignment) {
-        console.error(`❌ 嵌套路径中未找到: ${pathKey}`);
-        return false;
-      }
-
-      const propAssignment = property as PropertyAssignment;
-      const initializer = propAssignment.getInitializer();
-
-      if (
-        !initializer ||
-        initializer.getKind() !== SyntaxKind.ObjectLiteralExpression
-      ) {
-        console.error(`❌ ${pathKey} 不是对象类型`);
-        return false;
-      }
-
-      currentObject = initializer as ObjectLiteralExpression;
-    }
-
-    // 在父对象中插入（相对于目标键）
-    this.insertTranslation(
-      currentObject,
-      newKey,
-      newValue,
-      position,
-      targetKey
-    );
-    console.log(
-      `📍 已在 ${parentPath.join(".")}.${targetKey} ${position} 插入 ${newKey}`
-    );
-    return true;
-  }
-
-  /**
-   * 基础插入方法
-   */
-  private insertTranslation(
-    objectLiteral: ObjectLiteralExpression,
-    key: string,
-    value: string,
-    position: "first" | "last" | "after" | "before",
-    referenceKey?: string
-  ) {
-    const properties = objectLiteral.getProperties();
-    const escapedValue = value.replace(/"/g, '\\"');
-
-    switch (position) {
-      case "first":
-        objectLiteral.insertPropertyAssignment(0, {
-          name: key,
-          initializer: `"${escapedValue}"`
-        });
-        break;
-
-      case "last":
-        objectLiteral.addPropertyAssignment({
-          name: key,
-          initializer: `"${escapedValue}"`
-        });
-        break;
-
-      case "after":
-        if (!referenceKey) {
-          objectLiteral.addPropertyAssignment({
-            name: key,
-            initializer: `"${escapedValue}"`
-          });
-          return;
-        }
-
-        const afterIndex = properties.findIndex(
-          (prop) => this.getPropertyName(prop) === referenceKey
+        // 🆕 关键修改：使用支持删除的智能合并
+        updateObjectLiteralWithCommentsAndRemoval(
+          initializer as ObjectLiteralExpression,
+          obj,
+          keysToRemove
         );
-
-        if (afterIndex !== -1) {
-          objectLiteral.insertPropertyAssignment(afterIndex + 1, {
-            name: key,
-            initializer: `"${escapedValue}"`
-          });
-        } else {
-          console.warn(`⚠️  未找到参考键 ${referenceKey}，使用 "last"`);
-          objectLiteral.addPropertyAssignment({
-            name: key,
-            initializer: `"${escapedValue}"`
-          });
-        }
-        break;
-
-      case "before":
-        if (!referenceKey) {
-          objectLiteral.insertPropertyAssignment(0, {
-            name: key,
-            initializer: `"${escapedValue}"`
-          });
-          return;
-        }
-
-        const beforeIndex = properties.findIndex(
-          (prop) => this.getPropertyName(prop) === referenceKey
+        await sourceFile.save();
+        console.log(
+          `📝 已更新文件: ${filePath} (保留原有注释和结构, 删除了 ${keysToRemove.length} 个多余keys)`
         );
+      } else {
+        throw new Error("message 不是对象字面量");
+      }
+    } else {
+      console.error(`❌ 未找到 message 变量声明: ${filePath}`);
+    }
+  } catch (error: any) {
+    console.error(`❌ 更新文件失败: ${filePath}`, error.message);
 
-        if (beforeIndex !== -1) {
-          objectLiteral.insertPropertyAssignment(beforeIndex, {
-            name: key,
-            initializer: `"${escapedValue}"`
-          });
-        } else {
-          console.warn(`⚠️  未找到参考键 ${referenceKey}，使用 "first"`);
-          objectLiteral.insertPropertyAssignment(0, {
-            name: key,
-            initializer: `"${escapedValue}"`
-          });
-        }
-        break;
+    // 如果 ts-morph 方式失败，回退到简单的字符串替换方式
+    console.log(`⚠️  回退到对象删除+字符串替换方式...`);
+
+    try {
+      // 先从对象中删除多余的keys
+      const cleanedObj = removeKeysFromNestedObject(obj, keysToRemove);
+
+      const content = fs.readFileSync(filePath, "utf-8");
+      const objectStr = formatObjectCompletely(cleanedObj);
+
+      // 使用正则表达式找到并替换 message 对象
+      const updatedContent = content.replace(
+        /let\s+message\s*=\s*\{[\s\S]*?\};/,
+        `let message = ${objectStr};`
+      );
+
+      fs.writeFileSync(filePath, updatedContent, "utf-8");
+      console.log(
+        `📝 已通过字符串替换更新文件: ${filePath} (删除了 ${keysToRemove.length} 个多余keys)`
+      );
+    } catch (fallbackError: any) {
+      console.error(`❌ 字符串替换方式也失败了:`, fallbackError.message);
+
+      // 最后的备用方案：完全重写文件（会丢失注释）
+      const cleanedObj = removeKeysFromNestedObject(obj, keysToRemove);
+      const objectStr = formatObjectCompletely(cleanedObj);
+      const fileContent = `let message = ${objectStr};
+
+export default defineI18nLocale(async (locale) => {
+  return message;
+});
+
+export { message };
+`;
+      fs.writeFileSync(filePath, fileContent, "utf-8");
+      console.log(`⚠️  已重写文件 (可能丢失注释): ${filePath}`);
     }
   }
 }
 
-// 命令行参数解析
-function parseArgs() {
+// 原来的写入函数保持不变（向后兼容）
+async function writeObjectToFile(filePath: string, obj: any): Promise<void> {
+  return writeObjectToFileWithRemoval(filePath, obj, []);
+}
+
+// 找出缺失的键
+function findMissingKeys(
+  baseFlat: { [key: string]: string },
+  targetFlat: { [key: string]: string }
+): string[] {
+  const missingKeys: string[] = [];
+
+  for (const key in baseFlat) {
+    if (!(key in targetFlat)) {
+      missingKeys.push(key);
+    }
+  }
+
+  return missingKeys;
+}
+
+// 🆕 新增：找出多余的键（目标文件有但基准文件没有的）
+function findExtraKeys(
+  baseFlat: { [key: string]: string },
+  targetFlat: { [key: string]: string }
+): string[] {
+  const extraKeys: string[] = [];
+
+  for (const key in targetFlat) {
+    if (!(key in baseFlat)) {
+      extraKeys.push(key);
+    }
+  }
+
+  return extraKeys;
+}
+
+// 🆕 新增功能：更新指定的keys
+interface UpdateKeysOptions {
+  keys: string[]; // 要更新的key数组，支持嵌套路径如 "user.profile.name"
+  useAI?: boolean; // 是否使用AI翻译
+  targetLanguages?: string[]; // 目标语言，不传则更新所有语言
+  forceUpdate?: boolean; // 是否强制更新（即使目标key已存在）
+  baseLanguage?: string; // 🆕 基准语言文件，默认为 'zh-CN'
+}
+
+async function updateSpecificKeys(options: UpdateKeysOptions) {
+  const {
+    keys,
+    useAI = false,
+    targetLanguages,
+    forceUpdate = true,
+    baseLanguage = "en-US"
+  } = options;
+
+  console.log("🚀 开始更新指定的keys...");
+  console.log(`🎯 指定的keys: ${keys.join(", ")}`);
+  console.log(`🔄 强制更新: ${forceUpdate ? "是" : "否"}`);
+  console.log(`🤖 使用AI翻译: ${useAI ? "是" : "否"}`);
+  console.log(`📚 基准语言: ${baseLanguage}`);
+
+  const baseFilePath = path.join(langPath, `${baseLanguage}.ts`);
+  console.log(`📖 读取基准文件: ${baseFilePath}`);
+
+  const baseObj = parseObjectFromFile(baseFilePath);
+  const baseFlat = flattenObject(baseObj);
+
+  // 验证指定的keys是否存在于基准文件中
+  const validKeys: string[] = [];
+  const invalidKeys: string[] = [];
+
+  for (const key of keys) {
+    if (key in baseFlat) {
+      validKeys.push(key);
+    } else {
+      invalidKeys.push(key);
+    }
+  }
+
+  if (invalidKeys.length > 0) {
+    console.warn(`⚠️  以下keys在基准文件中不存在: ${invalidKeys.join(", ")}`);
+  }
+
+  if (validKeys.length === 0) {
+    console.log("❌ 没有有效的keys需要更新");
+    return;
+  }
+
+  console.log(`✅ 有效的keys: ${validKeys.join(", ")}`);
+
+  // 确定目标语言（排除基准语言）
+  const langs =
+    targetLanguages || languages.filter((lang) => lang !== baseLanguage);
+
+  for (const lang of langs) {
+    console.log(`\n🌍 处理语言: ${lang}`);
+
+    const targetFilePath = path.join(langPath, `${lang}.ts`);
+    const targetObj = parseObjectFromFile(targetFilePath);
+    const targetFlat = flattenObject(targetObj);
+
+    // 确定需要更新的keys
+    let keysToUpdate: string[] = [];
+
+    if (forceUpdate) {
+      keysToUpdate = validKeys;
+      console.log(
+        `🔄 强制更新模式: 将更新所有 ${keysToUpdate.length} 个指定keys`
+      );
+    } else {
+      // 只更新不存在的keys
+      keysToUpdate = validKeys.filter((key) => !(key in targetFlat));
+      console.log(`🔍 增量更新模式: 发现 ${keysToUpdate.length} 个缺失的keys`);
+
+      if (keysToUpdate.length === 0) {
+        console.log(`✅ ${lang} 文件中所有指定keys都已存在，跳过`);
+        continue;
+      }
+    }
+
+    // 🆕 重要：始终从基准语言文件获取最新的文本进行翻译
+    console.log(`📚 从基准语言 ${baseLanguage} 获取要翻译的文本...`);
+    const textsToTranslate = keysToUpdate.map((key) => baseFlat[key]);
+
+    console.log(`📝 需要翻译的keys示例:`);
+    keysToUpdate.slice(0, 3).forEach((key) => {
+      console.log(
+        `  ${key}: "${baseFlat[key]}" (来自基准语言 ${baseLanguage})`
+      );
+    });
+
+    // 调用翻译函数
+    const translatedTexts = await translateTexts(textsToTranslate, lang, useAI);
+
+    // 更新目标语言文件
+    const updatedFlat = { ...targetFlat };
+    keysToUpdate.forEach((key, index) => {
+      const originalValue = targetFlat[key] || "(不存在)";
+      const newValue = translatedTexts[index];
+
+      // 🆕 记录更新详情
+      if (forceUpdate && targetFlat[key]) {
+        console.log(`🔄 更新 ${key}: "${originalValue}" → "${newValue}"`);
+      } else {
+        console.log(`➕ 新增 ${key}: "${newValue}"`);
+      }
+
+      updatedFlat[key] = newValue;
+    });
+
+    console.log(
+      `📊 更新后 ${lang} 包含 ${Object.keys(updatedFlat).length} 个翻译键`
+    );
+
+    const updatedObj = unflattenObject(updatedFlat);
+
+    console.log(`💾 写入文件: ${targetFilePath}`);
+    await writeObjectToFile(targetFilePath, updatedObj);
+
+    console.log(`✅ ${lang} 处理完成`);
+  }
+
+  console.log("\n🎉 指定keys更新完成！");
+}
+
+// 🆕 解析命令行参数的功能
+function parseCommandLineArgs(): {
+  mode: "all" | "keys";
+  keys?: string[];
+  useAI?: boolean;
+  targetLanguages?: string[];
+  forceUpdate?: boolean;
+  baseLanguage?: string; // 🆕 基准语言参数
+} {
   const args = process.argv.slice(2);
 
+  // 检查是否指定了特定keys
+  const keysIndex = args.indexOf("--keys");
+  const useAIIndex = args.indexOf("--ai");
+  const forceUpdateIndex = args.indexOf("--force");
+  const langIndex = args.indexOf("--lang");
+  const baseIndex = args.indexOf("--base"); // 🆕 基准语言参数
+
+  // 🆕 获取基准语言参数
+  let baseLanguage: string | undefined;
+  if (baseIndex !== -1 && baseIndex + 1 < args.length) {
+    baseLanguage = args[baseIndex + 1];
+  }
+
+  if (keysIndex !== -1 && keysIndex + 1 < args.length) {
+    // 获取keys参数
+    const keysString = args[keysIndex + 1];
+    const keys = keysString.split(",").map((key) => key.trim());
+
+    let targetLanguages: string[] | undefined;
+    if (langIndex !== -1 && langIndex + 1 < args.length) {
+      const langString = args[langIndex + 1];
+      targetLanguages = langString.split(",").map((lang) => lang.trim());
+    }
+
+    return {
+      mode: "keys",
+      keys,
+      useAI: useAIIndex !== -1,
+      forceUpdate: forceUpdateIndex !== -1,
+      targetLanguages,
+      baseLanguage // 🆕 返回基准语言
+    };
+  }
+
   return {
-    mode: args[0] || "multiple",
-    operation: (args[1] as OperationType) || "insert", // 新增操作类型参数
-    insertPosition:
-      (args[2] as "first" | "last" | "after" | "before") || "last",
-    referenceKey: args[3],
-    baseDir: args[4] || "./lang"
+    mode: "all",
+    useAI: useAIIndex !== -1,
+    baseLanguage // 🆕 返回基准语言
   };
 }
 
-// 主函数
-async function main() {
-  console.log("🚀 i18n 嵌套路径批量更新工具 (支持插入/替换)\n");
+// 🆕 修改主函数，默认增加删除多余keys的功能
+async function processAllMissingKeys(
+  useAI: boolean = false,
+  baseLanguage: string = "en-US"
+) {
+  console.log("🚀 开始处理多语言文件...");
+  console.log(`📚 基准语言: ${baseLanguage}`);
 
-  const { mode, operation, insertPosition, referenceKey, baseDir } =
-    parseArgs();
+  const baseFilePath = path.join(langPath, `${baseLanguage}.ts`);
+  console.log(`📖 读取基准文件: ${baseFilePath}`);
 
-  console.log("📋 配置信息:");
-  console.log(`   模式: ${mode}`);
-  console.log(`   操作: ${operation}`);
-  console.log(`   位置: ${insertPosition}`);
-  console.log(`   参考键: ${referenceKey || "无"}`);
-  console.log(`   目录: ${baseDir}\n`);
+  const baseObj = parseObjectFromFile(baseFilePath);
+  const baseFlat = flattenObject(baseObj);
 
-  const updater = new NestedI18nUpdater();
+  console.log(`📊 基准文件包含 ${Object.keys(baseFlat).length} 个翻译键`);
+  console.log("基准文件平铺结构预览:", Object.keys(baseFlat).slice(0, 3));
 
-  try {
-    if (mode === "multiple") {
-      updater.updateMultipleLanguageFiles(
-        baseDir,
-        operation,
-        insertPosition,
-        referenceKey
+  for (const lang of languages) {
+    if (lang === baseLanguage) continue;
+
+    console.log(`\n🌍 处理语言: ${lang}`);
+
+    const targetFilePath = path.join(langPath, `${lang}.ts`);
+    const targetObj = parseObjectFromFile(targetFilePath);
+    const targetFlat = flattenObject(targetObj);
+
+    console.log(
+      `📊 ${lang} 文件当前包含 ${Object.keys(targetFlat).length} 个翻译键`
+    );
+
+    // 🆕 1. 查找缺失的keys（需要添加）
+    const missingKeys = findMissingKeys(baseFlat, targetFlat);
+
+    // 🆕 2. 查找多余的keys（需要删除）
+    const extraKeys = findExtraKeys(baseFlat, targetFlat);
+
+    console.log(
+      `🔍 发现 ${missingKeys.length} 个缺失的键，${extraKeys.length} 个多余的键`
+    );
+
+    // 显示缺失和多余的keys示例
+    if (missingKeys.length > 0) {
+      console.log(
+        "缺失键示例:",
+        missingKeys.slice(0, 3).map((key) => `${key}: "${baseFlat[key]}"`)
       );
-    } else {
-      console.error("❌ 目前只支持 multiple 模式");
-      process.exit(1);
     }
-  } catch (error) {
-    console.error("❌ 执行失败:", (error as Error).message);
-    process.exit(1);
+    if (extraKeys.length > 0) {
+      console.log(
+        "多余键示例:",
+        extraKeys.slice(0, 3).map((key) => `${key}: "${targetFlat[key]}"`)
+      );
+    }
+
+    // 🆕 3. 处理翻译（只处理缺失的keys）
+    let updatedFlat = { ...targetFlat };
+
+    if (missingKeys.length > 0) {
+      const textsToTranslate = missingKeys.map((key) => baseFlat[key]);
+
+      console.log("开始翻译缺失的keys...");
+      const translatedTexts = await translateTexts(
+        textsToTranslate,
+        lang,
+        useAI
+      );
+
+      // 添加翻译结果
+      missingKeys.forEach((key, index) => {
+        updatedFlat[key] = translatedTexts[index];
+        console.log(`➕ 新增: ${key}`);
+      });
+    }
+
+    // 🆕 4. 删除多余的keys（从平铺对象中删除）
+    if (extraKeys.length > 0) {
+      console.log("开始删除多余的keys...");
+      extraKeys.forEach((key) => {
+        console.log(`🗑️  删除: ${key}: "${updatedFlat[key]}"`);
+        delete updatedFlat[key];
+      });
+    }
+
+    console.log(
+      `📊 处理后 ${lang} 包含 ${Object.keys(updatedFlat).length} 个翻译键 (新增: ${missingKeys.length}, 删除: ${extraKeys.length})`
+    );
+
+    // 🆕 5. 转换回嵌套对象并写入文件（使用支持删除的版本）
+    const updatedObj = unflattenObject(updatedFlat);
+
+    console.log(`💾 写入文件: ${targetFilePath}`);
+    await writeObjectToFileWithRemoval(targetFilePath, updatedObj, extraKeys);
+
+    console.log(`✅ ${lang} 处理完成`);
+  }
+
+  console.log("\n🎉 所有语言文件处理完成！");
+  console.log(
+    "📈 总结：自动添加了缺失的翻译，并删除了多余的翻译，保持所有语言文件与基准文件同步。"
+  );
+}
+
+// 修改后的主函数
+async function main() {
+  const config = parseCommandLineArgs();
+
+  if (config.mode === "keys" && config.keys) {
+    // 更新指定keys模式
+    await updateSpecificKeys({
+      keys: config.keys,
+      useAI: config.useAI,
+      targetLanguages: config.targetLanguages,
+      forceUpdate: config.forceUpdate,
+      baseLanguage: config.baseLanguage // 🆕 传递基准语言参数
+    });
+  } else {
+    // 🆕 处理所有缺失keys模式（现在默认包含删除多余keys功能）
+    await processAllMissingKeys(config.useAI, config.baseLanguage || "en-US");
   }
 }
 
-/*
-使用示例:
+// 🆕 更新帮助信息
+function showHelp() {
+  console.log(`
+📖 多语言翻译工具使用说明 (现已默认包含删除多余翻译功能)
 
-# 替换现有的嵌套键值对
-tsx .\updateI18n.ts multiple replace
+# 处理所有缺失的翻译，并删除多余的翻译（默认基于 en-US）
+tsx ./updatei18n.ts
 
-# 智能更新（不存在则插入，存在则替换）
-tsx .\updateI18n.ts multiple upsert
+# 使用AI翻译处理所有缺失和多余的翻译
+tsx ./updatei18n.ts --ai
 
-# 仅插入新的嵌套键值对（如果已存在则跳过）
-tsx .\updateI18n.ts multiple insert
+# 指定基准语言文件（默认为 en-US）
+tsx ./updatei18n.ts --base zh-CN
 
-现在翻译配置支持嵌套键路径：
-- "FileUploadAndRecording.upload.pasteLink": 表示 FileUploadAndRecording.upload.pasteLink 嵌套路径
-- "FolderPage.dialog.export.select": 表示 FolderPage.dialog.export.select 嵌套路径
-- 脚本会自动导航到正确的嵌套位置进行替换或插入
-*/
+# 更新指定的keys到所有语言（不会删除多余keys）
+tsx ./updatei18n.ts --keys "user.name,user.email,settings.title"
 
-main();
+# 使用AI翻译指定的keys
+tsx ./updatei18n.ts --keys "user.name,user.email" --ai
+
+# 强制更新指定的keys（即使已存在）
+tsx ./updatei18n.ts --keys "user.name,user.email" --force
+
+# 只更新到指定语言
+tsx ./updatei18n.ts --keys "user.name,user.email" --lang "en-US,fr-FR,ja-JP"
+
+# 指定基准语言为英文，更新指定keys
+tsx ./updatei18n.ts --keys "user.profile.name,settings.theme" --base en-US
+
+# 组合使用：指定基准语言+AI翻译+强制更新+指定目标语言
+tsx ./updatei18n.ts --keys "user.profile.name,settings.theme" --base en-US --ai --force --lang "zh-CN,fr-FR"
+
+🆕 新功能说明：
+✅ 默认删除多余翻译：在处理所有缺失翻译时，会自动删除其他文件中存在但基准文件中不存在的keys
+✅ 保留注释和格式：删除操作会保留原有的注释和代码结构
+✅ 智能清理：删除key后会自动清理空的父对象
+✅ 详细日志：显示删除的具体内容和数量统计
+
+参数说明：
+--base <语言代码>     指定基准语言文件（如：zh-CN, en-US），默认处理全部时为 en-US，处理指定keys时为 zh-CN
+--keys <键列表>       指定要更新的keys，用逗号分隔（不会删除多余keys）
+--ai                 使用AI翻译替代Google翻译
+--force              强制更新（即使目标key已存在）
+--lang <语言列表>     指定目标语言，用逗号分隔
+--help, -h           显示此帮助信息
+`);
+}
+
+// 检查是否需要显示帮助
+if (process.argv.includes("--help") || process.argv.includes("-h")) {
+  showHelp();
+  process.exit(0);
+}
+
+main().catch(console.error);

@@ -4,10 +4,15 @@
       v-model="visible"
       :close-on-click-modal="false"
       :close-on-press-escape="false"
+      append-to-body
+      class="customer-dialog-link2"
       :title="t('FolderPage.endRecord.title')"
     >
       <div class="speaker-content">
-        {{ t("FileUploadAndRecording.record.dialog.speaker.content") }}
+        {{ t("FileUploadAndRecording.record.dialog.speaker.content", {
+        text: t("FileUploadAndRecording.upload.speaker")
+      })
+        }}
       </div>
 
       <template #footer>

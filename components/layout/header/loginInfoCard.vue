@@ -58,7 +58,10 @@
       }}
       <p
         class="text-subColor-normal"
-        v-if="(selectPlanStatus === 3 || selectPlanStatus === 2)&&!selectPlanStatusReal"
+        v-if="
+          (selectPlanStatus === 3 || selectPlanStatus === 2) &&
+          !selectPlanStatusReal
+        "
       >
         {{ t("AccountSettingsPage.automaticRenewal") }}
       </p>
@@ -89,6 +92,7 @@ const subscriptionStore = useSubscriptionStore();
 import { useUserStore } from "~/stores/useUserStore";
 import { useSubscribeVersion } from "~/components/subscriptionUpgrade/useSubscribeVersion";
 import { useRecordStore } from "~/stores/useRecordStore";
+import useJumpPage from "~/hooks/useJumpPage";
 const userStore = useUserStore();
 const { getTime } = useTime();
 const { paymentManageUser } = useSubscribeVersion();
@@ -96,8 +100,7 @@ const dailyCount = ref<{ todayCount: number; limitCount: number }>({
   todayCount: 0,
   limitCount: 0
 });
-const router = useRouter();
-const localePath = useLocalePath();
+const { $mitt } = useNuxtApp();
 const progress = ref<string>("0");
 const { fetchSubscript } = useSubscript();
 const loading = ref<boolean>(false);
@@ -180,10 +183,7 @@ const upgrade = async () => {
 
   if (!userNameEmail.value) {
     setTimeout(() => {
-      router.push({
-        path: localePath("/user/signup"),
-        query: { type: "noLogin" }
-      });
+      $mitt.emit("goToEvent", { path: "/user/signup?type=noLogin" });
     }, 300);
     return;
   }

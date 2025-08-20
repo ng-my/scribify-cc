@@ -45,13 +45,14 @@
 
 :deep(.el-progress-bar__inner--striped) {
   background-image: linear-gradient(45deg,
-  rgba(151, 126, 255, 0.4) 25%,
+  rgba(99, 103, 241, 0.4) 25%,
   transparent 25%,
   transparent 50%,
-  rgba(151, 126, 255, 0.4) 50%,
-  rgba(151, 126, 255, 0.4) 75%,
+  rgba(99, 103, 241, 0.4) 50%,
+  rgba(99, 103, 241, 0.4) 75%,
   transparent 75%,
   transparent
   )
 }
+
 

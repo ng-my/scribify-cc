@@ -1,13 +1,13 @@
 <template>
   <div class="flex flex-col justify-center">
     <slot></slot>
-    <div class="link-label mb-2.5 text-sm">
+    <div class="link-label mb-2.5 text-lg text-black">
       {{ t("FileUploadAndRecording.upload.link.label") }}
     </div>
     <el-input
       v-model="value"
       type="textarea"
-      :rows="4"
+      :rows="5"
       placeholder="https://www.youtube.com/watch?v=..."
       @keydown.enter.prevent="handleEnter"
     ></el-input>
@@ -45,7 +45,19 @@ const handleEnter = () => {
 :deep(.el-textarea__inner) {
   @apply rounded-lg px-3.5 py-3;
   resize: none;
+  box-shadow: unset;
+  background: #F9FAFC;
+  border: 2px dashed #E2E4E6;
+
+  &:focus {
+    box-shadow: unset !important;
+  }
 }
+
+:deep(.el-textarea) {
+  border-radius: 8px;
+}
+
 :deep(.el-textarea__inner::-webkit-scrollbar) {
   width: 0;
   height: 0;

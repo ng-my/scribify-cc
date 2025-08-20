@@ -6,6 +6,8 @@
       @closed="link = ''"
       @open="handleOpen"
       @close="handleClose"
+      class="customer-dialog-link"
+      append-to-body
       :title="t('FileUploadAndRecording.upload.link.dialogTitle')"
     >
       <upload-link

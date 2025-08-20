@@ -10,23 +10,23 @@
       :show-file-list="false"
       :on-change="handleFileChange"
     >
-      <div class="flex flex-col items-center text-center">
+      <div class="flex flex-col items-center text-center h-full">
         <span
           class="iconfont icon-shangchuan mb-5 text-2xl text-mainColor-900"
         ></span>
         <p class="tip mb-1 text-sm text-black">
-          {{ t("FileUploadAndRecording.upload.file.tip1") }}
           <span v-if="!isMobile && !isMobileFromIndex">{{
-            t("FileUploadAndRecording.upload.file.tip2")
-          }}</span>
+              t("FileUploadAndRecording.upload.file.tip1")
+            }}</span>
+          <span v-else>
+          {{ t("FileUploadAndRecording.upload.file.tip2") }}
+          </span>
         </p>
 
         <div class="type flex flex-wrap justify-center text-xs text-fontColor">
+          <span class="mr-1">{{ t("FileUploadAndRecording.upload.file.supported") }}:</span>
           <span v-for="(type, index) in fileTypes" :key="index">
-            {{ type
-            }}<span class="mr-1.5" v-show="index < fileTypes.length - 1"
-              >,</span
-            >
+            {{ type }}<span v-show="index < fileTypes.length - 1">,&nbsp;</span>
           </span>
         </div>
       </div>

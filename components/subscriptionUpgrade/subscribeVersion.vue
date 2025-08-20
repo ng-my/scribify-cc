@@ -85,7 +85,10 @@
 
           <div
             class="text-subColor-normal"
-            v-if="(selectPlanNowStatus === 3 || selectPlanNowStatus === 2)&&!selectPlanNowStatusReal"
+            v-if="
+              (selectPlanNowStatus === 3 || selectPlanNowStatus === 2) &&
+              !selectPlanNowStatusReal
+            "
           >
             {{ t("AccountSettingsPage.automaticRenewal") }}
           </div>
@@ -286,14 +289,14 @@
 import { defineEmits, ref } from "vue";
 import { useUserStore } from "~/stores/useUserStore";
 import { useSubscribeVersion } from "./useSubscribeVersion";
+import useJumpPage from "~/hooks/useJumpPage";
 const userStore = useUserStore();
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 const subscriptionStore = useSubscriptionStore();
 const { getTime } = useTime();
 const emit = defineEmits(["change"]);
-const router = useRouter();
-const localePath = useLocalePath();
+const { $mitt } = useNuxtApp();
 // 方案数据
 type ButtonType =
   | ""
@@ -446,7 +449,7 @@ const selectPlanCycle: any = computed(() => {
 const selectPlanNowStatus: any = computed(() => {
   return subscriptionStore.subscriptionDetail?.status;
 });
-const selectPlanNowStatusReal:any=computed(() => {
+const selectPlanNowStatusReal: any = computed(() => {
   return subscriptionStore.subscriptionDetail?.statusReal;
 });
 
@@ -476,10 +479,7 @@ const subscribeTo = async (type: string) => {
 
   if (!userNameEmail.value) {
     setTimeout(() => {
-      router.push({
-        path: localePath("/user/signup"),
-        query: { type: "noLogin" }
-      });
+      $mitt.emit("goToEvent", { path: "/user/signup?type=noLogin" });
     }, 300);
     return;
   }
@@ -489,9 +489,10 @@ const subscribeTo = async (type: string) => {
   try {
     loading.value = true;
     let res: any = "";
-    if (selectPlanNowStatus.value === 1 ||
+    if (
+      selectPlanNowStatus.value === 1 ||
       (selectPlanNowStatus.value === 0 && !isItDue.value)
-) {
+    ) {
       res = await upgradeSubscription();
     } else {
       res = await createSession(type);
@@ -545,17 +546,18 @@ const subscribeToChangeToAnnual = async (isnew?: any) => {
 
   if (!userNameEmail.value) {
     setTimeout(() => {
-      router.push({
-        path: localePath("/user/signup"),
-        query: { type: "noLogin" }
-      });
+      $mitt.emit("goToEvent", { path: "/user/signup?type=noLogin" });
     }, 300);
     return;
   }
   try {
     loading.value = true;
     let res: any = "";
-    if ((selectPlanNowStatus.value === 1 ||(selectPlanNowStatus.value === 0 && !isItDue.value)) &&!isnew) {
+    if (
+      (selectPlanNowStatus.value === 1 ||
+        (selectPlanNowStatus.value === 0 && !isItDue.value)) &&
+      !isnew
+    ) {
       res = await upgradeSubscription();
     } else {
       res = await paymentManageUser();

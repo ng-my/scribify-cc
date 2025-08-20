@@ -3,6 +3,7 @@
     <!--1、 标题和输入框 -->
     <h1 class="title-wrap mb-[2.125rem] text-center text-[2.8125rem] font-bold">
       Download YouTube Videos As MP4
+      {{ $i("title") }}
     </h1>
     <div
       class="relative mb-[1.5rem] flex h-[2.75rem] w-full max-w-[43.25rem] justify-center ps-[0.5rem]"
@@ -10,7 +11,7 @@
       <el-input
         v-model="link"
         class="!h-[2.75rem]"
-        placeholder="Search or paste your Youtube link here"
+        :placeholder="$i('placeholder')"
       />
       <span
         @click="link = ''"
@@ -24,7 +25,7 @@
         type="primary"
         class="download-btn relative left-[-0.125rem] !h-[2.75rem] !w-[8.125rem] cursor-pointer !bg-mainColor-900"
       >
-        Download
+        {{ $i("Download") }}
       </el-button>
     </div>
     <div
@@ -37,18 +38,20 @@
         class="me-[0.5rem] h-5 w-5 cursor-pointer align-middle"
       ></el-image>
       <el-link @click="handleHowDownload" type="primary">
-        How to download?
+        {{ $i("howToDownload") }}
       </el-link>
-      Watch the tutorial
+      {{ $i("tutorial") }}
     </div>
     <div v-if="loading" class="text-[rgba(255,255,255,0.7)]">
-      Processing the link to download. Stay on the page.
+      {{ $i("loading_text") }}
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { downloadVideo } from "./downloadVideo";
+import { useI18nModule } from "~/utils/i18n";
+const $i = useI18nModule("Resources.YouTubeToMP4.part1");
 const emit = defineEmits([
   "download-click-pre",
   "download-click",

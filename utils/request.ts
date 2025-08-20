@@ -2,9 +2,11 @@ import { ofetch } from "ofetch";
 import { Msg } from "~/utils/tools";
 import { useErrorReporting } from "~/utils/fsReport";
 import { useCrossDomainCookie } from "~/hooks/useCrossDomainCookie";
+import useJumpPage from "~/hooks/useJumpPage";
 const { reportSystemError } = useErrorReporting();
 const config = useRuntimeConfig();
 const baseURL = config.public.baseUrl as string;
+const { $mitt } = useNuxtApp();
 function goToLogin() {
   if (process.client) {
     const userStore = useUserStore();
@@ -18,7 +20,7 @@ function goToLogin() {
         return;
       }
       userInfoEmailCookie.value = "";
-      navigateTo(localePath("/user/login"));
+      $mitt.emit("goToEvent", { path: "/user/login" });
     }, 50);
   }
 }
