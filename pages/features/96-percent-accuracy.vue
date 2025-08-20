@@ -530,13 +530,19 @@
                   <strong>{{ t("Features.Accuracy.tableRow2Feature") }}</strong>
                 </td>
                 <td>
-                  <span class="check-mark">{{
-                    t("Features.Accuracy.tableRow2NeverCap")
-                  }}</span>
+                  <span class="check-mark">
+                    {{ t("Features.Accuracy.tableRow2NeverCap") }}
+                  </span>
                 </td>
-                <td>{{ t("Features.Accuracy.tableRow2Otter") }}</td>
-                <td>{{ t("Features.Accuracy.tableRow2Descript") }}</td>
-                <td>{{ t("Features.Accuracy.tableRow2Rev") }}</td>
+                <td class="check-mark">
+                  {{ t("Features.Accuracy.tableRow2Otter") }}
+                </td>
+                <td class="check-mark">
+                  {{ t("Features.Accuracy.tableRow2Descript") }}
+                </td>
+                <td class="x-mark">
+                  {{ t("Features.Accuracy.tableRow2Rev") }}
+                </td>
               </tr>
               <tr>
                 <td>
@@ -549,7 +555,9 @@
                 </td>
                 <td>{{ t("Features.Accuracy.tableRow3Otter") }}</td>
                 <td>{{ t("Features.Accuracy.tableRow3Descript") }}</td>
-                <td>{{ t("Features.Accuracy.tableRow3Rev") }}</td>
+                <td class="x-mark">
+                  {{ t("Features.Accuracy.tableRow3Rev") }}
+                </td>
               </tr>
               <tr>
                 <td>
@@ -562,19 +570,25 @@
                 </td>
                 <td>{{ t("Features.Accuracy.tableRow4Otter") }}</td>
                 <td>{{ t("Features.Accuracy.tableRow4Descript") }}</td>
-                <td>{{ t("Features.Accuracy.tableRow4Rev") }}</td>
+                <td class="x-mark">
+                  {{ t("Features.Accuracy.tableRow4Rev") }}
+                </td>
               </tr>
               <tr>
                 <td>
                   <strong>{{ t("Features.Accuracy.tableRow5Feature") }}</strong>
                 </td>
                 <td>
-                  <span class="check-mark">{{
-                    t("Features.Accuracy.tableRow5NeverCap")
-                  }}</span>
+                  <span class="check-mark">
+                    {{ t("Features.Accuracy.tableRow5NeverCap") }}
+                  </span>
                 </td>
-                <td>{{ t("Features.Accuracy.tableRow5Otter") }}</td>
-                <td>{{ t("Features.Accuracy.tableRow5Descript") }}</td>
+                <td class="check-mark">
+                  {{ t("Features.Accuracy.tableRow5Otter") }}
+                </td>
+                <td class="check-mark">
+                  {{ t("Features.Accuracy.tableRow5Descript") }}
+                </td>
                 <td>{{ t("Features.Accuracy.tableRow5Rev") }}</td>
               </tr>
               <tr>
@@ -586,9 +600,15 @@
                     t("Features.Accuracy.tableRow6NeverCap")
                   }}</span>
                 </td>
-                <td>{{ t("Features.Accuracy.tableRow6Otter") }}</td>
-                <td>{{ t("Features.Accuracy.tableRow6Descript") }}</td>
-                <td>{{ t("Features.Accuracy.tableRow6Rev") }}</td>
+                <td class="x-mark">
+                  {{ t("Features.Accuracy.tableRow6Otter") }}
+                </td>
+                <td class="x-mark">
+                  {{ t("Features.Accuracy.tableRow6Descript") }}
+                </td>
+                <td class="x-mark">
+                  {{ t("Features.Accuracy.tableRow6Rev") }}
+                </td>
               </tr>
             </tbody>
           </table>

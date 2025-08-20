@@ -13,7 +13,7 @@
           <NuxtImg
             src="/assets/logo3.png"
             alt="NeverCap"
-            class="h-6 w-auto sm:h-[1.875rem] no-drag"
+            class="no-drag h-6 w-auto sm:h-[1.875rem]"
             fit="contain"
             loading="eager"
           />
@@ -64,7 +64,10 @@
           </svg>
         </button>
         <div class="nav-links" :class="{ 'mobile-open': mobileMenuOpen }">
-          <template v-for="(menu, index) in menuList" v-if="mobileMenuOpen || isLargeScreen">
+          <template
+            v-for="(menu, index) in menuList"
+            v-if="mobileMenuOpen || isLargeScreen"
+          >
             <template v-if="menu?.children">
               <div class="dropdown" :class="{ open: dropdownOpen[index] }">
                 <router-link
@@ -96,6 +99,7 @@
                     v-for="(child, ind) in menu.children"
                     :to="$localePath(child.link)"
                     class="underline"
+                    :class="ind === acitveIdLevel2 ? 'menu-acitve' : ''"
                     @click="closeMobileMenu"
                   >
                     {{ child.name }}
@@ -125,12 +129,14 @@
 
 <script lang="ts" setup>
 import { useMediaQuery } from "@vueuse/core";
-
-const { t } = useI18n();
+import { useI18n } from "vue-i18n";
+const { t, locale } = useI18n();
+console.log("🍎🍎 ~ HeadNavbar.vue:135 ~ useI18n():", useI18n());
+console.log("🍎🍎 ~ HeadNavbar.vue:135 ~ local:", locale);
 const mobileMenuOpen = ref(false);
 const dropdownOpen = ref<Record<number, boolean>>({});
 const isShowIconPointer = computed(() => {
-  return route.name && !route.name?.startsWith("index");
+  return route.name && !(route.name as string)?.startsWith("index");
 });
 const isLargeScreen = useMediaQuery("(min-width: 768px)", { ssrWidth: 1280 });
 // 切换移动端菜单
@@ -195,7 +201,7 @@ let menuList = ref([
     children: [
       {
         name: t("HeadNavbar.AllUseCases"),
-        link: "/use-cases/"
+        link: "/use-cases"
       },
       {
         name: t("HeadNavbar.Podcasters"),
@@ -236,6 +242,7 @@ let menuList = ref([
   }
 ]);
 const route = useRoute();
+
 const acitveId = computed(() => {
   // 根据当前路径匹配激活菜单项的索引
   const currentPath = route.path;
@@ -243,6 +250,23 @@ const acitveId = computed(() => {
     const menu = menuList.value[i];
     if (currentPath.includes(menu.key)) {
       return i;
+    }
+  }
+  return -1; // 没有匹配项时返回无效索引
+});
+
+const acitveIdLevel2 = computed(() => {
+  // 根据当前路径匹配激活菜单项的索引
+  const currentPath = route.path;
+  for (let i = 0; i < menuList.value.length; i++) {
+    const menu = menuList.value[i];
+    if (menu.children) {
+      for (let j = 0; j < menu.children.length; j++) {
+        const child = menu.children[j];
+        if (currentPath === `/${locale.value}${child.link}`) {
+          return j;
+        }
+      }
     }
   }
   return -1; // 没有匹配项时返回无效索引
@@ -408,7 +432,7 @@ nav {
 }
 
 .dropdown-content a {
-  color: var(--gray) !important;
+  color: var(--gray);
   padding: 12px 20px;
   text-decoration: none;
   display: block;

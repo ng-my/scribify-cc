@@ -128,7 +128,7 @@
             <div class="feature-icon">
               <el-image
                 src="/assets/img/index/Original/Unlimited.svg"
-                class="h-[1.875rem] w-[1.875rem] no-drag"
+                class="no-drag h-[1.875rem] w-[1.875rem]"
                 fit="contain"
               ></el-image>
             </div>
@@ -143,7 +143,7 @@
             <div class="feature-icon">
               <el-image
                 src="/assets/img/index/Original/Bulk.svg"
-                class="h-[1.875rem] w-[1.875rem] no-drag"
+                class="no-drag h-[1.875rem] w-[1.875rem]"
                 fit="contain"
               ></el-image>
             </div>
@@ -158,7 +158,7 @@
             <div class="feature-icon">
               <el-image
                 src="/assets/img/index/Original/Batch.svg"
-                class="h-[1.875rem] w-[1.875rem] no-drag"
+                class="no-drag h-[1.875rem] w-[1.875rem]"
                 fit="contain"
               ></el-image>
             </div>
@@ -173,7 +173,7 @@
             <div class="feature-icon">
               <el-image
                 src="/assets/img/index/Original/Accuracy.svg"
-                class="h-[1.875rem] w-[1.875rem] no-drag"
+                class="no-drag h-[1.875rem] w-[1.875rem]"
                 fit="contain"
               ></el-image>
             </div>
@@ -188,7 +188,7 @@
             <div class="feature-icon">
               <el-image
                 src="/assets/img/index/Original/languages.svg"
-                class="h-[1.875rem] w-[1.875rem] no-drag"
+                class="no-drag h-[1.875rem] w-[1.875rem]"
                 fit="contain"
               ></el-image>
             </div>
@@ -203,7 +203,7 @@
             <div class="feature-icon">
               <el-image
                 src="/assets/img/index/Original/Professional.svg"
-                class="h-[1.875rem] w-[1.875rem] no-drag"
+                class="no-drag h-[1.875rem] w-[1.875rem]"
                 fit="contain"
               ></el-image>
             </div>
@@ -580,8 +580,8 @@ let UseCaselist = ref([
     id: 6,
     img: "🎓",
     moude: "educators",
-    tilte: t("Index.UseCases.podcasters.title"),
-    des: t("Index.UseCases.podcasters.des"),
+    tilte: t("Index.UseCases.educators.title"),
+    des: t("Index.UseCases.educators.des"),
     url: "/use-cases/educators"
   }
 ]);

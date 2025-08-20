@@ -48,30 +48,28 @@
                   t("Features.UnlimitedTranscription.comparisonBadItem1Icon")
                 }}</span>
                 <span
-                  ><strong
-                    >{{
-                      t(
-                        "Features.UnlimitedTranscription.comparisonBadItem1Strong"
-                      )
-                    }}:</strong
-                  >
+                  ><strong>{{
+                    t(
+                      "Features.UnlimitedTranscription.comparisonBadItem1Strong"
+                    )
+                  }}</strong>
                   {{
                     t("Features.UnlimitedTranscription.comparisonBadItem1Text")
                   }}</span
                 >
               </li>
               <li>
-                <span class="icon bad">{{
-                  t("Features.UnlimitedTranscription.comparisonBadItem2Icon")
-                }}</span>
+                <span class="icon bad">
+                  {{
+                    t("Features.UnlimitedTranscription.comparisonBadItem2Icon")
+                  }}
+                </span>
                 <span
-                  ><strong
-                    >{{
-                      t(
-                        "Features.UnlimitedTranscription.comparisonBadItem2Strong"
-                      )
-                    }}:</strong
-                  >
+                  ><strong>{{
+                    t(
+                      "Features.UnlimitedTranscription.comparisonBadItem2Strong"
+                    )
+                  }}</strong>
                   {{
                     t("Features.UnlimitedTranscription.comparisonBadItem2Text")
                   }}</span
@@ -82,42 +80,46 @@
                   t("Features.UnlimitedTranscription.comparisonBadItem3Icon")
                 }}</span>
                 <span
-                  ><strong
-                    >{{
-                      t(
-                        "Features.UnlimitedTranscription.comparisonBadItem3Strong"
-                      )
-                    }}:</strong
-                  >
+                  ><strong>{{
+                    t(
+                      "Features.UnlimitedTranscription.comparisonBadItem3Strong"
+                    )
+                  }}</strong>
                   {{
                     t("Features.UnlimitedTranscription.comparisonBadItem3Text")
                   }}</span
                 >
               </li>
               <li>
-                <span class="icon bad">{{
-                  t("Features.UnlimitedTranscription.comparisonBadItem4Icon")
-                }}</span>
+                <span class="icon bad">
+                  {{
+                    t("Features.UnlimitedTranscription.comparisonBadItem4Icon")
+                  }}
+                </span>
                 <span
-                  ><strong
-                    >{{
+                  ><strong>
+                    {{
                       t(
                         "Features.UnlimitedTranscription.comparisonBadItem4Strong"
                       )
-                    }}:</strong
-                  >
+                    }}
+                  </strong>
                   {{
                     t("Features.UnlimitedTranscription.comparisonBadItem4Text")
-                  }}</span
-                >
+                  }}
+                </span>
               </li>
               <li>
-                <span class="icon bad">{{
-                  t("Features.UnlimitedTranscription.comparisonBadItem5Icon")
-                }}</span>
-                <span>{{
-                  t("Features.UnlimitedTranscription.comparisonBadItem5Text")
-                }}</span>
+                <span class="icon bad">
+                  {{
+                    t("Features.UnlimitedTranscription.comparisonBadItem5Icon")
+                  }}
+                </span>
+                <span>
+                  {{
+                    t("Features.UnlimitedTranscription.comparisonBadItem5Text")
+                  }}
+                </span>
               </li>
             </ul>
           </div>

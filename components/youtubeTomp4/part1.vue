@@ -2,7 +2,6 @@
   <div class="me-auto ms-auto flex flex-col items-center px-4">
     <!--1、 标题和输入框 -->
     <h1 class="title-wrap mb-[2.125rem] text-center text-[2.8125rem] font-bold">
-      Download YouTube Videos As MP4
       {{ $i("title") }}
     </h1>
     <div
@@ -101,5 +100,8 @@ const handleHowDownload = () => {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+:deep(.el-input__inner) {
+  padding-right: 30px;
 }
 </style>
