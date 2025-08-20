@@ -77,7 +77,7 @@
       </div>
     </div>
 
-    <p
+    <!-- <p
       style="
         text-align: center;
         margin-top: 40px;
@@ -88,7 +88,7 @@
       "
     >
       {{ $i("disclaimer") }}
-    </p>
+    </p> -->
   </section>
 </template>
 
@@ -174,6 +174,7 @@ const handleClick = (type: Number) => {
 
 .plan-name {
   font-size: 24px;
+  font-weight: 600;
   margin-bottom: 20px;
   color: var(--dark);
 }

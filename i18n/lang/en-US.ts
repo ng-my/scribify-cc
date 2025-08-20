@@ -1236,7 +1236,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "Compare All Features",
+        "title": "Compare ",
         "highlighted_text": "All Features",
         "subtitle": "See exactly what you get with each plan. No hidden limitations."
       },
