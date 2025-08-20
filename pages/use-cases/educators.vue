@@ -909,8 +909,8 @@ const showDownload = () => {
 }
 
 .feature-points .check {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background: var(--secondary);
   color: white;
   border-radius: 50%;

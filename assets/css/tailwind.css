@@ -37,7 +37,7 @@ body {
     --text-gradient: linear-gradient(90deg, #3470ff 0%, #9534e6 100%);
     --danger: #ef4444;
     --warning: #f59e0b;
-    --yellow: #fbbf24;
+    --yellow: rgba(252, 191, 36, 0.21);
     --blue: #3b82f6;
     --emerald: #10b981;
     --purple: #a855f7;

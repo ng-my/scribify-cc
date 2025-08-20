@@ -67,13 +67,13 @@
           {{ $i("plans[" + i + "].cta.text") }}
         </div>
 
-        <span
+        <a
           @click="handleClick(i)"
           class="pay-button"
           :class="i > 0 ? 'btn-primary' : 'btn-secondary'"
         >
           {{ $i("plans[" + i + "].cta.button") }}
-        </span>
+        </a>
       </div>
     </div>
 
@@ -133,7 +133,7 @@ const handleClick = (type: Number) => {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
   position: relative;
   transition: all 0.3s;
-  padding-bottom: 100px;
+  // padding-bottom: 100px;
 }
 
 .pricing-card:hover {
@@ -148,7 +148,7 @@ const handleClick = (type: Number) => {
 
 .popular-badge {
   position: absolute;
-  top: -12px;
+  top: -16px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--primary);
@@ -161,7 +161,7 @@ const handleClick = (type: Number) => {
 
 .value-badge {
   position: absolute;
-  top: -12px;
+  top: -16px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--secondary);
@@ -251,13 +251,16 @@ const handleClick = (type: Number) => {
 
 .plan-description {
   border-top: 1px solid #e5e7eb;
-  padding-top: 20px;
-  margin-bottom: 30px;
+  padding: 20px 0;
+  height: 100px;
   font-size: 18px;
   line-height: 24px;
   color: var(--primary);
   font-weight: 600;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .save-indicator {
@@ -270,12 +273,16 @@ const handleClick = (type: Number) => {
   margin-left: 10px;
 }
 .pay-button {
-  cursor: pointer;
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
-  width: calc(100% - 80px);
-  text-align: center;
+  display: flex;
   justify-content: center;
+  width: 100%;
+  text-align: center;
+  // cursor: pointer;
+  // position: absolute;
+  // bottom: 40px;
+  // left: 40px;
+  // width: calc(100% - 80px);
+  // text-align: center;
+  // justify-content: center;
 }
 </style>

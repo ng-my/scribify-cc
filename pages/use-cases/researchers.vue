@@ -843,7 +843,7 @@ const handleJump = (path: string) => {
   background: rgba(99, 102, 241, 0.1);
   color: var(--primary);
   padding: 6px 12px;
-  border-radius: 6px;
+  border-radius: 60px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;

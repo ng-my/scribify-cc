@@ -385,7 +385,7 @@ const signup = () => {
 }
 
 .hero-subtitle {
-  font-size: 22px;
+  font-size: 20px;
   color: var(--gray);
   max-width: 700px;
   margin: 0 auto 40px;

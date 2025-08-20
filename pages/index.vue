@@ -7,7 +7,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <div class="badge">🔥 {{ $i("Hero.badge") }}</div>
+          <div class="badge">{{ $i("Hero.badge") }}</div>
           <h1>
             {{ $i("Hero.h1") }}
             <br />
@@ -257,7 +257,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials">
+    <section class="testimonials" style="background: var(--light-gray)">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">
@@ -431,7 +431,7 @@ useHead({
         name: "NeverCap",
         url: "https://nevercap.ai/",
         description:
-          "Truly unlimited AI transcription service with 96% accuracy. Transform hours of audio into text in minutes. No monthly caps, no hidden fees. Support 100+ languages with speaker identification.",
+          "NeverCap offers truly unlimited AI transcription to convert audio to text with 96% accuracy. Transcribe video and audio files in 100+ languages. No monthly caps, no hidden fees.",
         applicationCategory: "BusinessApplication",
         applicationSubCategory: "Transcription Software",
         operatingSystem: "All",
@@ -444,12 +444,12 @@ useHead({
         author: {
           "@type": "Organization",
           name: "NeverCap",
-          url: "https://nevercap.ai/"
+          url: "https://nevercap.ai"
         },
         publisher: {
           "@type": "Organization",
           name: "NeverCap",
-          url: "https://nevercap.ai/"
+          url: "https://nevercap.ai"
         },
         softwareVersion: "2.0",
         datePublished: "2024-01-01",
@@ -529,7 +529,7 @@ useHead({
     {
       name: "description",
       content:
-        "Transform hours of audio into 96% accurate text in minutes. No minute caps, no hidden fees. Support 100+ languages with speaker identification. Start free trial."
+        "NeverCap offers truly unlimited AI transcription to convert audio to text with 96% accuracy. Transcribe video and audio files in 100+ languages. No minute caps, no hidden fees. Try it free."
     }
   ]
 });

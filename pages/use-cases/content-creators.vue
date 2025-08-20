@@ -90,8 +90,9 @@
               :src="`/assets/images/use_cases/content_creators/${icon}.png`"
               fit="cover"
               loading="eager"
-              class="h-5 me-1"
-            /> {{ platformNames[index] }}
+              class="me-1 h-5"
+            />
+            {{ platformNames[index] }}
           </div>
         </div>
       </div>
@@ -211,16 +212,29 @@
             </ul>
           </div>
           <div class="feature-visual">
-            <div style="text-align: center;">
+            <div style="text-align: center">
               <div
-                style="font-size: 66px; font-weight: 900; margin-bottom: 20px;color: var(--primary)"
+                style="
+                  font-size: 66px;
+                  font-weight: 900;
+                  margin-bottom: 20px;
+                  color: var(--primary);
+                "
               >
                 {{ $i("ContentCreators.features.globalReach.visual.number") }}
               </div>
-              <div style="font-size: 34px; font-weight: 600;color: var(--dark)">
+              <div
+                style="font-size: 34px; font-weight: 600; color: var(--dark)"
+              >
                 {{ $i("ContentCreators.features.globalReach.visual.title") }}
               </div>
-              <div style="font-size: 18px; margin-top: 10px; color: var(var(--gray))">
+              <div
+                style="
+                  font-size: 18px;
+                  margin-top: 10px;
+                  color: var(var(--gray));
+                "
+              >
                 {{ $i("ContentCreators.features.globalReach.visual.subtitle") }}
               </div>
             </div>
@@ -244,7 +258,7 @@
             </p>
             <ul class="feature-points">
               <li v-for="(point, index) in flexibleExportPoints" :key="index">
-                <span class="check icon-duihao iconfont "></span>
+                <span class="check icon-duihao iconfont"></span>
                 <span>{{ point }}</span>
               </li>
             </ul>
@@ -709,7 +723,7 @@ const signup = () => {
   background: rgba(99, 102, 241, 0.1);
   color: var(--primary);
   padding: 6px 12px;
-  border-radius: 6px;
+  border-radius: 60px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -744,8 +758,8 @@ const signup = () => {
 }
 
 .feature-points .check {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   background: var(--secondary);
   color: white;
   border-radius: 50%;

@@ -96,8 +96,8 @@ const handleClick = () => {
 .btn-white {
   background: white;
   color: var(--primary);
-  padding: 14px 32px;
-  border-radius: 8px;
+  padding: 8px 60px;
+  border-radius: 80px;
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;

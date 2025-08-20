@@ -692,7 +692,7 @@ const handleClick = () => {
 }
 
 .hero-subtitle {
-  font-size: 22px;
+  font-size: 20px;
   color: var(--gray);
   margin-bottom: 40px;
   max-width: 700px;
@@ -832,7 +832,7 @@ const handleClick = () => {
   background: rgba(99, 102, 241, 0.1);
   color: var(--primary);
   padding: 6px 12px;
-  border-radius: 6px;
+  border-radius: 60px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -867,8 +867,8 @@ const handleClick = () => {
 }
 
 .feature-points .check {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   background: var(--secondary);
   color: white;
   border-radius: 50%;
