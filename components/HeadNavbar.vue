@@ -70,8 +70,8 @@
           >
             <template v-if="menu?.children">
               <div class="dropdown" :class="{ open: dropdownOpen[index] }">
-                <router-link
-                  :to="$localePath(menu.link)"
+                <a
+                  href="javascript:void(0)"
                   class="dropdown-toggle underline"
                   :class="index === acitveId ? 'menu-acitve' : ''"
                   @click="toggleDropdown(index)"
@@ -93,7 +93,7 @@
                       stroke-linejoin="round"
                     ></path>
                   </svg>
-                </router-link>
+                </a>
                 <div class="dropdown-content">
                   <router-link
                     v-for="(child, ind) in menu.children"
@@ -131,8 +131,6 @@
 import { useMediaQuery } from "@vueuse/core";
 import { useI18n } from "vue-i18n";
 const { t, locale } = useI18n();
-console.log("🍎🍎 ~ HeadNavbar.vue:135 ~ useI18n():", useI18n());
-console.log("🍎🍎 ~ HeadNavbar.vue:135 ~ local:", locale);
 const mobileMenuOpen = ref(false);
 const dropdownOpen = ref<Record<number, boolean>>({});
 const isShowIconPointer = computed(() => {
@@ -173,7 +171,6 @@ let menuList = ref([
   {
     name: t("HeadNavbar.Features"),
     key: "/features",
-    link: "/features/unlimited-transcription",
     children: [
       {
         name: t("HeadNavbar.UnlimitedTranscription"),
@@ -197,7 +194,6 @@ let menuList = ref([
   {
     name: t("HeadNavbar.UseCases"),
     key: "/use-cases",
-    link: "/use-cases/",
     children: [
       {
         name: t("HeadNavbar.AllUseCases"),
@@ -232,7 +228,6 @@ let menuList = ref([
   {
     name: t("HeadNavbar.Resources"),
     key: "/resources",
-    link: "/resources/youtube-to-mp4",
     children: [
       {
         name: t("HeadNavbar.YouTubetoMP4"),
@@ -263,8 +258,14 @@ const acitveIdLevel2 = computed(() => {
     if (menu.children) {
       for (let j = 0; j < menu.children.length; j++) {
         const child = menu.children[j];
-        if (currentPath === `/${locale.value}${child.link}`) {
-          return j;
+        if (locale.value === "en-US") {
+          if (currentPath === `${child.link}`) {
+            return j;
+          }
+        } else {
+          if (currentPath === `/${locale.value}${child.link}`) {
+            return j;
+          }
         }
       }
     }
