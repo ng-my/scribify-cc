@@ -131,7 +131,10 @@ async function translateBatchWithAI(
 7. 不能遗漏
 英文原文：
 ${textArray.map((text, index) => `${index + 1}. ${text}`).join("\n")}
-请翻译成${targetLanguageName}，每行对应一个翻译结果：`;
+请翻译成${targetLanguageName}，每行对应一个翻译结果：
+总共有${textArray.length}条，你得给我这么多条，绝对不能漏翻
+需要你快速输出
+`;
   const data = {
     model: AI_CONFIG.model,
     messages: [
@@ -145,8 +148,6 @@ ${textArray.map((text, index) => `${index + 1}. ${text}`).join("\n")}
       }
     ],
     stream: false, // 不使用流式响应
-    max_tokens: 4000,
-    temperature: 0.3 // 使用较低的温度以获得更稳定的翻译结果
   };
   const headers = {
     Authorization: `Bearer ${AI_CONFIG.apiKey}`,
@@ -260,7 +261,7 @@ async function translateTexts(
   if (texts.length === 0) {
     return [];
   }
-  const BATCH_SIZE = useAI ? 200 : 500; // AI 翻译使用较小的批次
+  const BATCH_SIZE = useAI ? 200 : 100; // AI 翻译使用较小的批次
   const results: string[] = [];
   try {
     // 分批处理
@@ -271,7 +272,7 @@ async function translateTexts(
       );
       // 添加延迟避免API限制
       if (i > 0) {
-        const delay = useAI ? 2000 : 1000; // AI 翻译使用更长的延迟
+        const delay = useAI ? 2000 : 2000; // AI 翻译使用更长的延迟
         console.log(`⏱️  等待 ${delay / 1000} 秒避免API限制...`);
         await new Promise((resolve) => setTimeout(resolve, delay));
       }
@@ -331,14 +332,16 @@ async function translateBatch(textArray: string[], targetLanguage = "zh-CN") {
     // proxy: proxyConfig
   };
 
+  console.log(111);
+
   try {
     const response = await axios.request(config);
     console.log(response.data[0])
     return response.data[0]; // 返回翻译结果数组
   } catch (error: any) {
     console.error("❌ 批量翻译错误:", error.message);
-    translateBatch(textArray, targetLanguage);
-    throw error; // 抛出错误让上层处理
+    await new Promise(resolve => setTimeout(resolve, 8000));
+    return translateBatch(textArray, targetLanguage);
   }
 }
 

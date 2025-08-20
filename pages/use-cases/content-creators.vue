@@ -8,7 +8,6 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-badge">
-            <span class="icon" style="margin-top: -3px">📹</span>
             <span> {{ $i("ContentCreators.hero.badge") }}</span>
           </div>
 
@@ -80,9 +79,14 @@
     <!-- Platforms Section -->
     <section class="platforms-section">
       <div class="container">
-        <h2 class="section-title" style="text-align: center; margin-bottom: 14px;">
+        <h2
+          class="section-title"
+          style="text-align: center; margin-bottom: 14px"
+        >
           {{ $i("ContentCreators.platforms.titleMax") }}
-          <span class="gradient-text"> {{ $i("ContentCreators.platforms.titleMaxHighlight") }} </span>
+          <span class="gradient-text">
+            {{ $i("ContentCreators.platforms.titleMaxHighlight") }}
+          </span>
         </h2>
         <h3 class="platforms-title">
           {{ $i("ContentCreators.platforms.title") }}
@@ -93,15 +97,15 @@
             v-for="(icon, index) in platformIcons"
             :key="index"
           >
-           <div>
-             <NuxtImg
-               :src="`/assets/images/use_cases/content_creators/${icon}.png`"
-               fit="contain"
-               loading="eager"
-               class="me-1 h-5"
-             />
-           </div>
-            <div class="leading-5"> {{ platformNames[index] }}</div>
+            <div>
+              <NuxtImg
+                :src="`/assets/images/use_cases/content_creators/${icon}.png`"
+                fit="contain"
+                loading="eager"
+                class="me-1 h-5"
+              />
+            </div>
+            <div class="leading-5">{{ platformNames[index] }}</div>
           </div>
         </div>
       </div>
@@ -430,6 +434,49 @@
       </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            {{ $i("ContentCreators.FAQSection.title") }}
+            <span class="gradient-text">
+              {{ $i("ContentCreators.FAQSection.titleHighlight") }}
+            </span>
+          </h2>
+          <p class="section-subtitle">
+            {{ $i("ContentCreators.FAQSection.subtitle") }}
+          </p>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto">
+          <details
+            v-for="(faq, index) of 4"
+            :key="index"
+            style="
+              background: white;
+              margin-bottom: 16px;
+              border-radius: 12px;
+              padding: 24px;
+              border: 1px solid #e2e4e6;
+            "
+          >
+            <summary
+              style="
+                font-weight: bold;
+                font-size: 18px;
+                cursor: pointer;
+                list-style: none;
+              "
+            >
+              {{ t("UseCases.ContentCreators.FAQSection.questions[" + index + "].question") }}
+            </summary>
+            <p style="margin-top: 16px; color: var(--gray); line-height: 22px">
+              {{ t("UseCases.ContentCreators.FAQSection.questions[" + index + "].answer") }}
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
     <!-- CTA Section -->
     <CTASection :data="ctaData"></CTASection>
 
@@ -452,7 +499,7 @@ useHead({
     }
   ]
 });
-
+const { t } = useI18n();
 const $i = useI18nModule("UseCases");
 const ctaData = ref({
   title: $i("ContentCreators.cta.title"),
@@ -576,8 +623,8 @@ const signup = () => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--yellow);
-  color: var(--dark);
+  color: var(--yellow);
+  background: var(--yellow-bg);
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 14px;
@@ -624,6 +671,7 @@ const signup = () => {
   padding: 24px;
   border-radius: 16px;
   text-align: center;
+  border: 1px solid var(--line-color);
   //box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   //transition: all 0.3s;
 }
@@ -689,7 +737,7 @@ const signup = () => {
 
 /* Features Section */
 .features-section {
-  padding: 70px 0 50px;
+  padding: 70px 0;
   background: var(--light-gray);
 }
 
@@ -830,7 +878,7 @@ const signup = () => {
 
 /* Workflow Section */
 .workflow-section {
-  padding: 70px 0 50px;
+  padding: 70px 0;
   background: white;
 }
 
@@ -886,7 +934,7 @@ const signup = () => {
 
 /* Testimonial Section */
 .testimonial-section {
-  padding: 70px 0 50px;
+  padding: 70px 0;
   background: var(--light-gray);
 }
 
@@ -996,5 +1044,20 @@ const signup = () => {
   .platforms-grid {
     gap: 20px;
   }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::after {
+  content: "+";
+  float: right;
+  font-size: 24px;
+  color: var(--primary);
+  transition: transform 0.3s;
+}
+
+details[open] summary::after {
+  transform: rotate(45deg);
 }
 </style>

@@ -177,14 +177,14 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.BusinessTeams.featuresTitle") }}
-            <span                 style="
-                  background: var(--text-gradient);
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                "
-            >{{
-              t("UseCases.BusinessTeams.featuresTitle2")
-            }}</span>
+            <span
+              style="
+                background: var(--text-gradient);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+              >{{ t("UseCases.BusinessTeams.featuresTitle2") }}</span
+            >
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.BusinessTeams.featuresSubtitle") }}
@@ -218,12 +218,6 @@
                   <span class="icon-duihao iconfont text-xs"></span>
                 </div>
                 <span>{{ t("UseCases.BusinessTeams.feature1Benefit3") }}</span>
-              </li>
-              <li>
-                <div class="check">
-                  <span class="icon-duihao iconfont text-xs"></span>
-                </div>
-                <span>{{ t("UseCases.BusinessTeams.feature1Benefit4") }}</span>
               </li>
             </ul>
           </div>
@@ -520,13 +514,14 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.BusinessTeams.workflowTitle") }}
-            <span style="
+            <span
+              style="
                 background: var(--text-gradient);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-              ">{{
-              t("UseCases.BusinessTeams.workflowTitle2")
-            }}</span>
+              "
+              >{{ t("UseCases.BusinessTeams.workflowTitle2") }}</span
+            >
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.BusinessTeams.workflowSubtitle") }}
@@ -580,13 +575,14 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.BusinessTeams.testimonialsTitle") }}
-            <span style="
+            <span
+              style="
                 background: var(--text-gradient);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-              ">{{
-              t("UseCases.BusinessTeams.testimonialsTitle2")
-            }}</span>
+              "
+              >{{ t("UseCases.BusinessTeams.testimonialsTitle2") }}</span
+            >
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.BusinessTeams.testimonialsSubtitle") }}
@@ -674,8 +670,7 @@
 <script setup lang="ts">
 /* business-teams 组件 */
 useHead({
-  title:
-    "NeverCap for Business Teams - Unlimited AI Meeting Transcription",
+  title: "NeverCap for Business Teams - Unlimited AI Meeting Transcription",
   meta: [
     {
       name: "description",
@@ -739,8 +734,8 @@ const handleJump = (path: string) => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--yellow);
-  color: var(--dark);
+  color: var(--yellow);
+  background: var(--yellow-bg);
   padding: 6px 16px;
   border-radius: 20px;
   font-size: 14px;

@@ -9,7 +9,6 @@
         <div class="hero-content">
           <div class="hero-text">
             <div class="hero-badge">
-              <span class="icon"> 📰 </span>
               <span>{{ $i("Journalists.hero.badge") }}</span>
             </div>
 
@@ -327,14 +326,6 @@
               style="text-align: center"
               class="flex flex-col items-center justify-center"
             >
-              <div style="margin-bottom: 20px">
-                <NuxtImg
-                  :src="`/assets/images/use_cases/journalists/folder.png`"
-                  fit="cover"
-                  class="h-[80px] w-[92px]"
-                  loading="eager"
-                />
-              </div>
               <div
                 style="font-size: 48px; font-weight: 900; color: var(--primary)"
               >
@@ -377,69 +368,32 @@
             </ul>
           </div>
           <div class="solution-visual">
-            <div style="background: white; border-radius: 12px; padding: 20px">
+            <div
+              style="text-align: center"
+              class="flex flex-col items-center justify-center"
+            >
               <div
-                style="
-                  display: flex;
-                  align-items: center;
-                  gap: 12px;
-                  margin-bottom: 20px;
-                "
+                style="font-size: 48px; font-weight: 900; color: var(--primary)"
               >
-                <div
-                  style="
-                    flex: 1;
-                    padding: 10px 14px;
-                    border: 1px solid #e2e4e6;
-                    border-radius: 11px;
-                    font-size: 18px;
-                  "
-                  class="flex h-[52px] items-center"
-                >
-                  <NuxtImg
-                    class="h-[20px] w-[20px]"
-                    :src="`/assets/images/use_cases/journalists/large.png`"
-                    fit="contain"
-                    loading="eager"
-                  />
-                  <span class="ms-4">{{
-                    $i(
-                      "Journalists.solution.solutions.instantSearch.searchDemo.placeholder"
-                    )
-                  }}</span>
-                </div>
+                {{
+                  $i(
+                    "Journalists.solution.solutions.instantSearch.searchDemo.placeholder"
+                  )
+                }}
               </div>
-              <div
-                style="font-size: 16px; color: var(--gray); margin-bottom: 12px"
-              >
+              <div style="font-size: 18px; color: var(--gray)">
                 {{
                   $i(
                     "Journalists.solution.solutions.instantSearch.searchDemo.resultsText"
                   )
                 }}
               </div>
-              <div style="display: flex; flex-direction: column; gap: 8px">
-                <div class="search-demo">
-                  {{
-                    $i(
-                      "Journalists.solution.solutions.instantSearch.searchDemo.results.mayorInterview"
-                    )
-                  }}
-                </div>
-                <div class="search-demo">
-                  {{
-                    $i(
-                      "Journalists.solution.solutions.instantSearch.searchDemo.results.expertPanel"
-                    )
-                  }}
-                </div>
-              </div>
             </div>
           </div>
         </div>
 
         <!-- Solution 3 -->
-        <div class="solution-grid !mb-0">
+        <div class="solution-grid ">
           <div class="solution-content">
             <span class="solution-label">{{
               $i("Journalists.solution.solutions.professionalAccuracy.label")
@@ -486,31 +440,54 @@
                   )
                 }}
               </div>
-              <div
-                style="
-                  margin-top: 20px;
-                  padding: 16px;
-                  background: white;
-                  border-radius: 8px;
-                  text-align: left;
-                  font-size: 14px;
-                  line-height: 1.8;
-                "
+            </div>
+          </div>
+        </div>
+        <!-- Solution 4 -->
+        <div class="solution-grid !mb-0">
+          <div class="solution-content">
+            <span class="solution-label">{{
+                $i("Journalists.solution.solutions.ironclad.label")
+              }}</span>
+            <h3 class="solution-title">
+              {{
+                $i("Journalists.solution.solutions.ironclad.title")
+              }}
+            </h3>
+            <p class="solution-description">
+              {{
+                $i(
+                  "Journalists.solution.solutions.ironclad.description"
+                )
+              }}
+            </p>
+            <ul class="solution-points">
+              <li
+                v-for="(point, index) in ironclad"
+                :key="index"
               >
-                <span style="color: var(--primary); font-weight: 600"
-                  >Speaker 1:</span
-                >
+                <span class="check icon-duihao iconfont"></span>
+                <span>{{ point }}</span>
+              </li>
+            </ul>
+          </div>
+          <div class="solution-visual">
+            <div style="text-align: center">
+              <div
+                style="font-size: 64px; font-weight: 900; color: var(--primary)"
+              >
                 {{
                   $i(
-                    "Journalists.solution.solutions.professionalAccuracy.visual.transcript.speaker1"
+                    "Journalists.solution.solutions.ironclad.visual.accuracy"
                   )
-                }}<br /><br />
-                <span style="color: var(--primary); font-weight: 600"
-                  >Speaker 2:</span
-                >
+                }}
+              </div>
+              <div
+                style="font-size: 18px; color: var(--gray); line-height: 22px"
+              >
                 {{
                   $i(
-                    "Journalists.solution.solutions.professionalAccuracy.visual.transcript.speaker2"
+                    "Journalists.solution.solutions.ironclad.visual.label"
                   )
                 }}
               </div>
@@ -611,12 +588,12 @@ import { computed } from "vue";
 import { useI18nModule } from "~/utils/i18n";
 useHead({
   title:
-    "AI Transcription for Journalists & Writers - No Upload Limits | NeverCap",
+    "Unlimited Interview Transcription for Journalists & Writers | NeverCap",
   meta: [
     {
       name: "description",
       content:
-        "Stop choosing which interviews to transcribe. Batch upload all recordings before deadline. Search across all transcripts instantly. True unlimited transcription for journalism."
+        "Discover why journalists choose NeverCap as the best interview transcription software. Instantly transcribe interviews, find quotes fast, and meet deadlines with unlimited, secure transcription."
     }
   ]
 });
@@ -655,8 +632,7 @@ const unlimitedUploadsPoints = computed(() => {
     $i("Journalists.solution.solutions.unlimitedUploads.points.noLimits"),
     $i(
       "Journalists.solution.solutions.unlimitedUploads.points.processWhileWrite"
-    ),
-    $i("Journalists.solution.solutions.unlimitedUploads.points.longRecordings")
+    )
   ];
 });
 
@@ -665,7 +641,6 @@ const instantSearchPoints = computed(() => {
     $i("Journalists.solution.solutions.instantSearch.points.searchAll"),
     $i("Journalists.solution.solutions.instantSearch.points.wordTimestamps"),
     $i("Journalists.solution.solutions.instantSearch.points.jumpToMoments"),
-    $i("Journalists.solution.solutions.instantSearch.points.exportCitations")
   ];
 });
 
@@ -679,9 +654,19 @@ const professionalAccuracyPoints = computed(() => {
     ),
     $i(
       "Journalists.solution.solutions.professionalAccuracy.points.smartPunctuation"
+    )
+  ];
+});
+const ironclad = computed(() => {
+  return [
+    $i(
+      "Journalists.solution.solutions.ironclad.points.accuracyGuarantee"
     ),
     $i(
-      "Journalists.solution.solutions.professionalAccuracy.points.speakerIdentification"
+      "Journalists.solution.solutions.ironclad.points.handlesAccents"
+    ),
+    $i(
+      "Journalists.solution.solutions.ironclad.points.smartPunctuation"
     )
   ];
 });
@@ -742,8 +727,8 @@ const signup = () => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--yellow);
-  color: var(--dark);
+  color: var(--yellow);
+  background: var(--yellow-bg);
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 14px;
@@ -810,7 +795,7 @@ const signup = () => {
 .hero-dashboard {
   background: white;
   border-radius: 20px;
-  //box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   padding: 24px;
   position: relative;
   // animation: float-up 4s ease-in-out infinite;
@@ -995,7 +980,7 @@ const signup = () => {
   background: rgba(99, 102, 241, 0.1);
   color: var(--primary);
   padding: 6px 12px;
-  border-radius: 6px;
+  border-radius: 60px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;

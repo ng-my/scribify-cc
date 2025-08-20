@@ -652,7 +652,7 @@ const signup = () => {
 <style scoped lang="scss">
 /* Hero Section */
 .hero {
-  padding: 140px 0 50px;
+  padding: 140px 0 70px;
   background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;
@@ -769,9 +769,9 @@ h1 {
 
 /* Stats Section */
 .stats {
-  padding: 70px 0;
+  padding-top: 70px;
   background: white;
-  border-bottom: 1px solid var(--line-color);
+  border-top: 1px solid var(--line-color);
 }
 
 .stats-grid {

@@ -480,20 +480,20 @@
     </section>
 
     <!-- Use Cases Section -->
-    <section class="problem-section mt-[70px]">
+    <section class="problem-section">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Researchers.useCasesTitle") }}
-            <span               style="
+            <span
+              style="
                 background: var(--text-gradient);
                 -webkit-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
               "
-            >{{
-              t("UseCases.Researchers.useCasesTitle2")
-            }}</span>
+              >{{ t("UseCases.Researchers.useCasesTitle2") }}</span
+            >
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.Researchers.useCasesSubtitle") }}
@@ -588,15 +588,15 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Researchers.testimonialTitle") }}
-            <span               style="
+            <span
+              style="
                 background: var(--text-gradient);
                 -webkit-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
               "
-            >{{
-              t("UseCases.Researchers.testimonialTitle2")
-            }}</span>
+              >{{ t("UseCases.Researchers.testimonialTitle2") }}</span
+            >
           </h2>
         </div>
 
@@ -606,11 +606,11 @@
             {{ t("UseCases.Researchers.testimonialText") }}
           </p>
           <div class="testimonial-author">
-              <el-avatar
-                :size="56"
-                :src="`/assets/images/index/users/Jack Turner.png`"
-                class="me-3"
-              />
+            <el-avatar
+              :size="56"
+              :src="`/assets/images/index/users/Jack Turner.png`"
+              class="me-3"
+            />
             <div class="author-info">
               <div class="author-name">
                 {{ t("UseCases.Researchers.testimonialAuthorName") }}
@@ -764,6 +764,7 @@ const handleJump = (path: string) => {
 .stats-bar {
   background: white;
   padding-bottom: 70px;
+  border-bottom: 1px solid #e2e4e6;
 }
 
 .stats-grid {
@@ -793,7 +794,7 @@ const handleJump = (path: string) => {
 
 /* Problem Section */
 .problem-section {
-  padding-bottom: 70px;
+  padding: 70px 0;
   background: white;
 }
 

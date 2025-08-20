@@ -240,7 +240,7 @@ let message = {
       speaker: "识别发言人",
       speakerLabel: "自动检测谁在说话",
       guest: {
-        transcribe: "录制",
+        transcribe: "转录",
         file: "文件",
         audio: "音频/视频文件",
         Uploading: "正在上传..."

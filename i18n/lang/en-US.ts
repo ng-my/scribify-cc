@@ -1798,62 +1798,66 @@ let message = {
         }
       },
       solution: {
-        title: `Finally,`,
-        titleHighlight: `True Freedom`,
+        title: ``,
+        titleHighlight: `Best Interview Transcription Software`,
         titleSuffix: `for Journalists`,
-        subtitle: `Upload everything. Transcribe everything. Search everything.`,
+        subtitle: `Real advantages that matter when deadlines are tight and accuracy is everything`,
         solutions: {
           unlimitedUploads: {
-            label: `Unlimited Uploads`,
-            title: `Batch Upload Your Entire Investigation`,
-            description: `No more choosing which interviews to transcribe. Upload 50 files at once. Process months of recordings overnight. Your entire investigation, transcribed.`,
+            label: `Unlimited Volume`,
+            title: `Unlimited Volume for All Your Interviews`,
+            description: `Unlike software with minute caps, you can transcribe every interview, from a quick chat to a multi-hour discussion. Never worry about running out of credits on a deadline.`,
             points: {
-              simultaneousUpload: `Upload 50 files simultaneously`,
-              noLimits: `No monthly upload limits`,
-              processWhileWrite: `Process while you write`,
+              simultaneousUpload: `No monthly minute limits`,
+              noLimits: `Support for 10-hour interviews`,
+              processWhileWrite: `Process entire investigations at once`,
               longRecordings: `10-hour recordings supported`
             },
             visual: {
-              number: `50`,
-              label: `Files at Once`
+              number: `∞`,
+              label: `No Limits. Ever.`
             }
           },
           instantSearch: {
-            label: `Instant Search`,
-            title: `Find Any Quote in Seconds`,
-            description: `Search across all your transcripts instantly. Find that perfect quote from three months ago. Never lose important statements in your notes again.`,
+            label: `Lightning Speed`,
+            title: `Speed That Matches Your News Cycle`,
+            description: `Get your interview transcription back in minutes, not days. Turn around stories faster than ever. Our AI processes hours of audio while you grab coffee.`,
             points: {
-              searchAll: `Search across all interviews`,
-              wordTimestamps: `Word-level timestamps`,
-              jumpToMoments: `Jump to exact moments`,
-              exportCitations: `Export with citations`
+              searchAll: `5-minute turnaround for 1-hour interviews`,
+              wordTimestamps: `Priority processing for urgent stories`,
+              jumpToMoments: `Real-time progress tracking`
             },
             searchDemo: {
-              placeholder: `climate policy statement`,
-              resultsText: `Found in 4 interviews:`,
-              results: {
-                mayorInterview: `Mayor Interview - "...our climate policy will transform..."`,
-                expertPanel: `Expert Panel - "...the policy statement clearly shows..."`
-              }
+              placeholder: `5min`,
+              resultsText: `Per Hour of Audio`,
             }
           },
           professionalAccuracy: {
-            label: `Professional Accuracy`,
-            title: `96% Accuracy You Can Quote`,
-            description: `Get transcripts so accurate you can quote them directly. Handles accents, technical terms, and rapid conversations. Perfect formatting that's actually readable.`,
+            label: `Quote-Ready Accuracy`,
+            title: `Accuracy You Can Quote`,
+            description: `Our AI delivers highly accurate transcripts, ensuring the quotes you publish are precise and reliable. Professional-grade transcription that editors trust.`,
             points: {
               accuracyGuarantee: `96% accuracy guarantee`,
-              handlesAccents: `Handles accents & dialects`,
-              smartPunctuation: `Smart punctuation & paragraphs`,
-              speakerIdentification: `Speaker identification`
+              handlesAccents: `Handles technical terminology`,
+              smartPunctuation: `Perfect speaker identification`
             },
             visual: {
               accuracy: `96%`,
-              label: `Accuracy Rate`,
-              transcript: {
-                speaker1: `"The investigation revealed significant discrepancies in the financial reports."`,
-                speaker2: `"Can you elaborate on those specific discrepancies?"`
-              }
+              label: `Publication-Ready Accuracy`
+            }
+          },
+          ironclad: {
+            label: `Source Protection`,
+            title: `Ironclad Source Protection`,
+            description: `We offer robust security features to protect your sensitive interview data and confidential sources. Bank-level encryption keeps your investigations secure.`,
+            points: {
+              accuracyGuarantee: `End-to-end encryption`,
+              handlesAccents: `Automatic file deletion options`,
+              smartPunctuation: `GDPR & privacy compliant`
+            },
+            visual: {
+              accuracy: `🔒`,
+              label: `Maximum Security`,
             }
           }
         }
@@ -2075,7 +2079,30 @@ let message = {
         title: `Your Entire Channel. Captioned. Today.`,
         subtitle: `Join 50,000+ creators who stopped counting minutes and started creating`,
         button: `Start Unlimited Captioning →`
-      }
+      },
+      FAQSection: {
+        "title": "Your Transcription Questions,",
+        "titleHighlight": "Answered",
+        subtitle: 'Everything you need to know about transcribing videos from different platforms',
+        "questions": [
+          {
+            "question": "Q: How do I transcribe a YouTube video with NeverCap?",
+            "answer": "It's simple. Just find the YouTube video you want to transcribe, copy its URL, and paste it into our app. Our AI will automatically fetch the video and provide a full text transcript in minutes."
+          },
+          {
+            "question": "Q: What is the best way to transcribe a Facebook video to text?",
+            "answer": "The easiest way is to use a direct link. Copy the URL of the Facebook video, and our platform will handle the rest, converting the speech to text with up to 96% accuracy, saving you from manual transcription."
+          },
+          {
+            "question": "Q: Can I transcribe TikTok and Instagram videos?",
+            "answer": "Absolutely. We support transcription for both TikTok and Instagram videos. This is perfect for content creators who want to repurpose their short-form video content into blog posts, articles, or text-based social media updates."
+          },
+          {
+            "question": "Q: How do I transcribe a Vimeo video to text?",
+            "answer": "Transcribing Vimeo videos is just as easy as any other platform. Simply copy the Vimeo video URL and paste it into NeverCap. Our AI will process the video and generate accurate text transcription that you can download in multiple formats."
+          }
+        ]
+      },
     },
     Researchers: {
       // Hero Section
@@ -2226,9 +2253,9 @@ let message = {
 
       // Stats Section
       statsMeetingMinutes: "Meeting Minutes",
-      statsLiveRecording: "Live Recording",
+      statsLiveRecording: "Recording",
       statsSpeakerID: "Speaker ID",
-      statsInstantUpload: "Instant Upload & Process",
+      statsInstantUpload: "Upload & Process",
 
       // Features Section
       featuresTitle: "Transcription for Every Business",
@@ -2239,7 +2266,7 @@ let message = {
       // Feature 1
       feature1Title: "Record Directly in Your Browser",
       feature1Desc:
-        "No downloads, no plugins. Start recording instantly with one click. Perfect audio quality, automatic speaker detection, and real-time transcription as you speak.",
+        "No downloads, no plugins. Start recording instantly with one click. Perfect audio quality, automatic speaker detection.",
       feature1Benefit1: "One-click recording start",
       feature1Benefit2: "No software installation",
       feature1Benefit3: "Works on any device",

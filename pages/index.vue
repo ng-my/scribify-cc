@@ -538,7 +538,6 @@ useHead({
 let UseCaselist = ref([
   {
     id: 1,
-    img: "🎙️",
     moude: "podcasters",
     tilte: t("Index.UseCases.podcasters.title"),
     des: t("Index.UseCases.podcasters.des"),
@@ -546,7 +545,6 @@ let UseCaselist = ref([
   },
   {
     id: 4,
-    img: "📹",
     moude: "content_creators",
     tilte: t("Index.UseCases.content_creators.title"),
     des: t("Index.UseCases.content_creators.des"),
@@ -554,7 +552,6 @@ let UseCaselist = ref([
   },
   {
     id: 2,
-    img: "📰",
     moude: "journalists",
     tilte: t("Index.UseCases.journalists.title"),
     des: t("Index.UseCases.journalists.des"),
@@ -562,7 +559,6 @@ let UseCaselist = ref([
   },
   {
     id: 3,
-    img: "🔬",
     moude: "researchers",
     tilte: t("Index.UseCases.researchers.title"),
     des: t("Index.UseCases.researchers.des"),
@@ -570,7 +566,6 @@ let UseCaselist = ref([
   },
   {
     id: 5,
-    img: "💼",
     moude: "business_teams",
     tilte: t("Index.UseCases.business_teams.title"),
     des: t("Index.UseCases.business_teams.des"),
@@ -578,7 +573,6 @@ let UseCaselist = ref([
   },
   {
     id: 6,
-    img: "🎓",
     moude: "educators",
     tilte: t("Index.UseCases.educators.title"),
     des: t("Index.UseCases.educators.des"),

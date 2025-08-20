@@ -5,7 +5,6 @@
     <section class="hero">
       <div class="container" style="position: relative; z-index: 1">
         <div class="hero-badge">
-          <span class="icon">{{ t("Features.BulkUpload.heroBadgeIcon") }}</span>
           <span>{{ t("Features.BulkUpload.heroBadgeText") }}</span>
         </div>
 
@@ -536,8 +535,8 @@ const handleClick = () => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--yellow);
-  color: var(--dark);
+  color: var(--yellow);
+  background: var(--yellow-bg);
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 14px;

@@ -7,7 +7,6 @@
     <section class="hero">
       <div class="container" style="position: relative; z-index: 1">
         <div class="hero-badge">
-          <span class="icon">{{ t("Features.Accuracy.heroBadgeIcon") }}</span>
           <span>{{ t("Features.Accuracy.heroBadgeText") }}</span>
         </div>
 
@@ -691,8 +690,8 @@ const handleClick = () => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--yellow);
-  color: var(--dark);
+  color: rgba(222, 166, 23, 1);
+  background: rgba(255, 242, 210, 1);
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 14px;

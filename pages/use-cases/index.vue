@@ -410,7 +410,6 @@ const signup = () => {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  margin-top: 60px;
 }
 
 .use-case-card {

@@ -85,15 +85,15 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Educators.featuresTitle") }}
-            <span               style="
+            <span
+              style="
                 background: var(--text-gradient);
                 -webkit-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
               "
-            >{{
-                t("UseCases.Educators.featuresTitle2")
-              }}</span>
+              >{{ t("UseCases.Educators.featuresTitle2") }}</span
+            >
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.Educators.featuresSubtitle") }}
@@ -485,7 +485,9 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Educators.workflowTitle") }}
-            <span style="color: var(--primary);">{{ t("UseCases.Educators.grid") }}</span>
+            <span style="color: var(--primary)">{{
+              t("UseCases.Educators.grid")
+            }}</span>
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.Educators.workflowSubtitle") }}
@@ -539,15 +541,15 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Educators.useCasesTitle") }}
-            <span               style="
+            <span
+              style="
                 background: var(--text-gradient);
                 -webkit-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
               "
-            >{{
-                t("UseCases.Educators.useCasesTitle2")
-              }}</span>
+              >{{ t("UseCases.Educators.useCasesTitle2") }}</span
+            >
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.Educators.useCasesSubtitle") }}
@@ -654,15 +656,15 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Educators.testimonialTitle") }}
-            <span               style="
+            <span
+              style="
                 background: var(--text-gradient);
                 -webkit-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
               "
-            >{{
-                t("UseCases.Educators.testimonialTitle2")
-              }}</span>
+              >{{ t("UseCases.Educators.testimonialTitle2") }}</span
+            >
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.Educators.testimonialSubtitle") }}
@@ -800,8 +802,8 @@ const showDownload = () => {
 
 .hero-badge {
   display: inline-block;
-  background: var(--yellow);
-  color: var(--dark);
+  color: var(--yellow);
+  background: var(--yellow-bg);
   padding: 6px 16px;
   border-radius: 20px;
   font-size: 14px;
