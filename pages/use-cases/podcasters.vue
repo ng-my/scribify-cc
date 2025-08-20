@@ -691,7 +691,7 @@ const signup = () => {
 
 .badge {
   display: inline-block;
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(230, 246, 241, 1);
   color: var(--secondary);
   padding: 6px 16px;
   border-radius: 22px;
@@ -769,9 +769,9 @@ h1 {
 
 /* Stats Section */
 .stats {
-  padding: 70px 0 50px;
+  padding: 70px 0;
   background: white;
-  border-top: 1px solid var(--line-color);
+  border-bottom: 1px solid var(--line-color);
 }
 
 .stats-grid {
@@ -781,13 +781,13 @@ h1 {
   text-align: center;
 }
 
-.stat-item {
-  transition: transform 0.3s;
-}
-
-.stat-item:hover {
-  transform: translateY(-5px);
-}
+//.stat-item {
+//  transition: transform 0.3s;
+//}
+//
+//.stat-item:hover {
+//  transform: translateY(-5px);
+//}
 
 .stat-number {
   font-size: 36px;
@@ -803,7 +803,7 @@ h1 {
 
 /* Problem Solution Section */
 .problem-solution {
-  padding: 70px 0 50px;
+  padding: 70px 0;
   background: white;
 }
 
@@ -837,13 +837,13 @@ h1 {
   padding: 30px;
   border-radius: 16px;
   border: 1px solid var(--line-color);
-  transition: all 0.3s;
+  //transition: all 0.3s;
 }
 
-.problem-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(100, 116, 139, 0.1);
-}
+//.problem-card:hover {
+//  //transform: translateY(-10px);
+//  box-shadow: 0 10px 20px rgba(100, 116, 139, 0.1);
+//}
 
 .problem-icon {
   font-size: 32px;
@@ -937,17 +937,17 @@ h1 {
   padding: 30px;
   border-radius: 16px;
   border: 1px solid var(--line-color);
-  transition: all 0.3s;
+  //transition: all 0.3s;
 }
 
-.feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(100, 116, 139, 0.1);
-}
+//.feature-card:hover {
+//  //transform: translateY(-10px);
+//  box-shadow: 0 10px 20px rgba(100, 116, 139, 0.1);
+//}
 
-.feature-card:hover::before {
-  transform: scaleX(1);
-}
+//.feature-card:hover::before {
+//  transform: scaleX(1);
+//}
 
 .feature-icon {
   width: 33px;

@@ -8,7 +8,10 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-text">
-            <div class="hero-badge">{{ $i("Journalists.hero.badge") }}</div>
+            <div class="hero-badge">
+              <span class="icon"> 📰 </span>
+              <span>{{ $i("Journalists.hero.badge") }}</span>
+            </div>
 
             <h1>
               {{ $i("Journalists.hero.title") }}<br /><span
@@ -233,7 +236,8 @@
             <div class="problem-icon">
               <NuxtImg
                 :src="`/assets/images/use_cases/journalists/${icon}`"
-                fit="cover"
+                fit="contain"
+                class="h-[30px]"
                 loading="eager"
               />
             </div>
@@ -319,11 +323,15 @@
             </ul>
           </div>
           <div class="solution-visual">
-            <div style="text-align: center">
+            <div
+              style="text-align: center"
+              class="flex flex-col items-center justify-center"
+            >
               <div style="margin-bottom: 20px">
                 <NuxtImg
                   :src="`/assets/images/use_cases/journalists/folder.png`"
                   fit="cover"
+                  class="h-[80px] w-[92px]"
                   loading="eager"
                 />
               </div>
@@ -369,14 +377,7 @@
             </ul>
           </div>
           <div class="solution-visual">
-            <div
-              style="
-                background: white;
-                border-radius: 12px;
-                padding: 20px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-              "
-            >
+            <div style="background: white; border-radius: 12px; padding: 20px">
               <div
                 style="
                   display: flex;
@@ -385,26 +386,31 @@
                   margin-bottom: 20px;
                 "
               >
-                <span style="font-size: 20px">🔍</span>
-                <input
-                  type="text"
-                  :value="
-                    $i(
-                      'Journalists.solution.solutions.instantSearch.searchDemo.placeholder'
-                    )
-                  "
+                <div
                   style="
                     flex: 1;
-                    padding: 10px;
-                    border: 1px solid #e5e7eb;
-                    border-radius: 6px;
-                    font-size: 14px;
+                    padding: 10px 14px;
+                    border: 1px solid #e2e4e6;
+                    border-radius: 11px;
+                    font-size: 18px;
                   "
-                  readonly
-                />
+                  class="flex h-[52px] items-center"
+                >
+                  <NuxtImg
+                    class="h-[20px] w-[20px]"
+                    :src="`/assets/images/use_cases/journalists/large.png`"
+                    fit="contain"
+                    loading="eager"
+                  />
+                  <span class="ms-4">{{
+                    $i(
+                      "Journalists.solution.solutions.instantSearch.searchDemo.placeholder"
+                    )
+                  }}</span>
+                </div>
               </div>
               <div
-                style="font-size: 12px; color: var(--gray); margin-bottom: 12px"
+                style="font-size: 16px; color: var(--gray); margin-bottom: 12px"
               >
                 {{
                   $i(
@@ -413,30 +419,14 @@
                 }}
               </div>
               <div style="display: flex; flex-direction: column; gap: 8px">
-                <div
-                  style="
-                    background: #f0fdf4;
-                    padding: 8px;
-                    border-radius: 6px;
-                    font-size: 13px;
-                  "
-                >
-                  <strong>Mayor Interview</strong> -
+                <div class="search-demo">
                   {{
                     $i(
                       "Journalists.solution.solutions.instantSearch.searchDemo.results.mayorInterview"
                     )
                   }}
                 </div>
-                <div
-                  style="
-                    background: #f0fdf4;
-                    padding: 8px;
-                    border-radius: 6px;
-                    font-size: 13px;
-                  "
-                >
-                  <strong>Expert Panel</strong> -
+                <div class="search-demo">
                   {{
                     $i(
                       "Journalists.solution.solutions.instantSearch.searchDemo.results.expertPanel"
@@ -479,12 +469,7 @@
           <div class="solution-visual">
             <div style="text-align: center">
               <div
-                style="
-                  font-size: 64px;
-                  font-weight: 900;
-                  color: var(--primary);
-                  margin-bottom: 10px;
-                "
+                style="font-size: 64px; font-weight: 900; color: var(--primary)"
               >
                 {{
                   $i(
@@ -492,7 +477,9 @@
                   )
                 }}
               </div>
-              <div style="font-size: 18px; color: var(--gray)">
+              <div
+                style="font-size: 18px; color: var(--gray); line-height: 22px"
+              >
                 {{
                   $i(
                     "Journalists.solution.solutions.professionalAccuracy.visual.label"
@@ -557,7 +544,8 @@
             <div class="feature-icon">
               <NuxtImg
                 :src="`/assets/images/use_cases/journalists/${icon}.png`"
-                fit="cover"
+                fit="contain"
+                class="h-[30px]"
                 loading="eager"
               />
             </div>
@@ -613,32 +601,6 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-box">
-          <h2 class="cta-title">
-            {{ $i("Journalists.cta.title") }}
-            <span class="gradient-text">{{
-              $i("Journalists.cta.titleHighlight")
-            }}</span>
-          </h2>
-          <p class="cta-subtitle">
-            {{ $i("Journalists.cta.subtitle") }}
-          </p>
-          <div class="cta-buttons">
-            <a
-              href="javascript:void(0)"
-              @click="signup"
-              class="btn-primary btn-large"
-              >{{ $i("Journalists.cta.ctaPrimary") }}</a
-            >
-            <a href="/pricing" class="btn-secondary">{{
-              $i("Journalists.cta.ctaSecondary")
-            }}</a>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Footer -->
     <Footer></Footer>
   </div>
@@ -732,7 +694,7 @@ const signup = () => {
 <style scoped lang="scss">
 /* Hero Section */
 .hero {
-  padding: 140px 0 50px;
+  padding: 140px 0 70px;
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
   position: relative;
   overflow: hidden;
@@ -782,13 +744,14 @@ const signup = () => {
   gap: 8px;
   background: var(--yellow);
   color: var(--dark);
-  padding: 6px 14px;
-  border-radius: 22px;
-  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
   font-weight: 600;
-  margin-bottom: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+.hero-badge .icon {
+  font-size: 16px;
 }
 
 .hero h1 {
@@ -815,7 +778,7 @@ const signup = () => {
 
 .hero-stats {
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
   padding-top: 24px;
   border-top: 1px solid var(--line-color);
 }
@@ -823,6 +786,8 @@ const signup = () => {
 .stat-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 4px;
 }
 
@@ -845,7 +810,7 @@ const signup = () => {
 .hero-dashboard {
   background: white;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  //box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   padding: 24px;
   position: relative;
   // animation: float-up 4s ease-in-out infinite;
@@ -899,12 +864,10 @@ const signup = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s;
 }
 
 .interview-item:hover {
   background: #f0f4ff;
-  transform: translateX(8px);
 }
 
 .interview-info {
@@ -944,7 +907,7 @@ const signup = () => {
 
 /* Problem Section */
 .problem-section {
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   background: var(--light-gray);
 }
 
@@ -977,13 +940,13 @@ const signup = () => {
   padding: 30px;
   border-radius: 16px;
   border: 1px solid #e2e4e6;
-  transition: all 0.3s;
+  //transition: all 0.3s;
 }
 
-.problem-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(100, 116, 139, 0.1);
-}
+//.problem-card:hover {
+//  //transform: translateY(-10px);
+//  box-shadow: 0 10px 20px rgba(100, 116, 139, 0.1);
+//}
 
 .problem-icon {
   font-size: 32px;
@@ -1003,7 +966,7 @@ const signup = () => {
 
 /* Solution Section */
 .solution-section {
-  padding: 70px 0 50px;
+  padding: 70px 0;
   background: white;
 }
 
@@ -1067,8 +1030,8 @@ const signup = () => {
 }
 
 .solution-points .check {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   background: var(--secondary);
   color: white;
   border-radius: 50%;
@@ -1093,7 +1056,7 @@ const signup = () => {
 
 /* Features Section */
 .features-section {
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
 }
 
@@ -1108,13 +1071,13 @@ const signup = () => {
   padding: 30px;
   border-radius: 16px;
   border: 1px solid var(--line-color);
-  transition: all 0.3s;
+  //transition: all 0.3s;
 }
 
-.feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(100, 116, 139, 0.1);
-}
+//.feature-card:hover {
+//  //transform: translateY(-10px);
+//  box-shadow: 0 10px 20px rgba(100, 116, 139, 0.1);
+//}
 
 .feature-icon {
   width: 48px;
@@ -1263,5 +1226,12 @@ const signup = () => {
     flex-direction: column;
     gap: 20px;
   }
+}
+.search-demo {
+  background: #eff0fe;
+  border-radius: 11px;
+  padding: 14px;
+  color: var(--dark);
+  font-size: 16px;
 }
 </style>

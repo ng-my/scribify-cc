@@ -7,7 +7,10 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <div class="hero-badge">{{ $i("ContentCreators.hero.badge") }}</div>
+          <div class="hero-badge">
+            <span class="icon" style="margin-top: -3px">📹</span>
+            <span> {{ $i("ContentCreators.hero.badge") }}</span>
+          </div>
 
           <h1>
             {{ $i("ContentCreators.hero.title") }}
@@ -77,22 +80,28 @@
     <!-- Platforms Section -->
     <section class="platforms-section">
       <div class="container">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 14px;">
+          {{ $i("ContentCreators.platforms.titleMax") }}
+          <span class="gradient-text"> {{ $i("ContentCreators.platforms.titleMaxHighlight") }} </span>
+        </h2>
         <h3 class="platforms-title">
           {{ $i("ContentCreators.platforms.title") }}
         </h3>
         <div class="platforms-grid">
           <div
-            class="platform-logo flex items-center"
+            class="platform-logo flex items-center justify-center"
             v-for="(icon, index) in platformIcons"
             :key="index"
           >
-            <NuxtImg
-              :src="`/assets/images/use_cases/content_creators/${icon}.png`"
-              fit="cover"
-              loading="eager"
-              class="me-1 h-5"
-            />
-            {{ platformNames[index] }}
+           <div>
+             <NuxtImg
+               :src="`/assets/images/use_cases/content_creators/${icon}.png`"
+               fit="contain"
+               loading="eager"
+               class="me-1 h-5"
+             />
+           </div>
+            <div class="leading-5"> {{ platformNames[index] }}</div>
           </div>
         </div>
       </div>
@@ -273,7 +282,8 @@
                 <div class="format-icon">
                   <NuxtImg
                     :src="`/assets/images/use_cases/content_creators/${icon}.png`"
-                    fit="cover"
+                    fit="contain"
+                    class="h-[30px] w-[30px]"
                     loading="eager"
                   />
                 </div>
@@ -433,12 +443,12 @@ import { computed } from "vue";
 import { useI18nModule } from "~/utils/i18n";
 useHead({
   title:
-    "Content Creators - Unlimited AI Transcription for Video Creators | NeverCap",
+    "Transcribe YouTube Videos - Unlimited AI Transcription for Content Creators | NeverCap",
   meta: [
     {
       name: "description",
       content:
-        "Caption your entire YouTube channel. Generate subtitles in 100+ languages. Fetch videos directly from YouTube, TikTok, Instagram & more. No limits, just create."
+        "Easily transcribe YouTube videos, TikToks, and Instagram Reels with NeverCap's AI. Learn how to transcribe Facebook and Vimeo videos to text just by pasting a link. Unlimited subtitles in 100+ languages."
     }
   ]
 });
@@ -526,7 +536,7 @@ const signup = () => {
 <style scoped lang="scss">
 /* Hero Section */
 .hero {
-  padding: 140px 0 50px;
+  padding: 140px 0 70px;
   background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;
@@ -568,11 +578,14 @@ const signup = () => {
   gap: 8px;
   background: var(--yellow);
   color: var(--dark);
-  padding: 6px 16px;
+  padding: 4px 12px;
   border-radius: 20px;
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
+}
+.hero-badge .icon {
+  font-size: 16px;
 }
 
 .hero h1 {
@@ -611,14 +624,14 @@ const signup = () => {
   padding: 24px;
   border-radius: 16px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s;
+  //box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  //transition: all 0.3s;
 }
 
-.stat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15);
-}
+//.stat-card:hover {
+//  //transform: translateY(-5px);
+//  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15);
+//}
 
 .stat-number {
   font-size: 36px;
@@ -644,7 +657,7 @@ const signup = () => {
 .platforms-title {
   font-size: 20px;
   color: var(--gray);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -661,7 +674,7 @@ const signup = () => {
   font-size: 16px;
   font-weight: 600;
   color: var(--gray);
-  transition: all 0.3s;
+  //transition: all 0.3s;
   padding: 12px 24px;
   border-radius: 8px;
   background: var(--light-gray);
@@ -669,9 +682,9 @@ const signup = () => {
 
 .platform-logo:hover {
   color: var(--primary);
-  transform: scale(1.1);
-  background: white;
-  box-shadow: 0 5px 12px rgba(99, 102, 241, 0.1);
+  //transform: scale(1.1);
+  //background: white;
+  //box-shadow: 0 5px 12px rgba(99, 102, 241, 0.1);
 }
 
 /* Features Section */
@@ -779,7 +792,7 @@ const signup = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  //box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* Export Formats */
@@ -795,14 +808,14 @@ const signup = () => {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
-  transition: all 0.3s;
+  //transition: all 0.3s;
   border: 2px solid transparent;
 }
 
 .format-card:hover {
   background: white;
   border-color: var(--primary);
-  transform: scale(1.05);
+  //transform: scale(1.05);
 }
 
 .format-icon {
@@ -890,7 +903,7 @@ const signup = () => {
   padding: 40px;
   border-radius: 20px;
   position: relative;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  //box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 .quote-icon {

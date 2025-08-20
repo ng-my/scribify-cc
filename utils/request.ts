@@ -12,6 +12,8 @@ function goToLogin() {
     const userStore = useUserStore();
     const localePath = useLocalePath();
     userStore.setUserInfo("");
+    console.log(2222, "🚀===");
+
     const userInfoEmailCookie = useCrossDomainCookie("userInfoEmail");
     setTimeout(() => {
       if (!userInfoEmailCookie.value) {

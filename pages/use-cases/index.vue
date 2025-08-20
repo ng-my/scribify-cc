@@ -42,7 +42,8 @@
               <div class="use-case-icon">
                 <NuxtImg
                   :src="`/assets/images/use_cases/all/${useCase.icon}.png`"
-                  fit="cover"
+                  fit="contain"
+                  class="h-[56px] w-[56px]"
                   loading="eager"
                 />
               </div>
@@ -339,7 +340,7 @@ const signup = () => {
 <style scoped lang="scss">
 /* Hero Section */
 .hero {
-  padding: 140px 0 50px;
+  padding: 140px 0 70px;
   background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
   text-align: center;
   position: relative;
@@ -400,7 +401,7 @@ const signup = () => {
 
 /* Use Cases Grid */
 .use-cases-section {
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   background: white;
   overflow: hidden;
 }
@@ -577,7 +578,7 @@ const signup = () => {
 
 /* Customer Quotes Section */
 .quotes-section {
-  padding: 70px 0 50px;
+  padding: 70px 0;
   background: var(--light-gray);
   overflow: hidden;
 }
@@ -613,7 +614,7 @@ const signup = () => {
   padding: 30px;
   border-radius: 16px;
   position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  //box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .quote-icon {
@@ -674,7 +675,7 @@ const signup = () => {
 
 /* Industries Section */
 .industries-section {
-  padding: 70px 0 50px;
+  padding: 70px 0;
   background: white;
   text-align: center;
 }

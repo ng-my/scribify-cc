@@ -1726,7 +1726,7 @@ let message = {
     },
     Journalists: {
       hero: {
-        badge: `📰 For Journalists & Writers`,
+        badge: `For Journalists & Writers`,
         title: `Transcribe Every Interview.`,
         titleHighlight: `Never Miss a Quote.`,
         subtitle: `Stop choosing which interviews deserve transcription. Upload all recordings at once, search across everything instantly, and meet your deadlines without the upload anxiety.`,
@@ -1832,8 +1832,8 @@ let message = {
               placeholder: `climate policy statement`,
               resultsText: `Found in 4 interviews:`,
               results: {
-                mayorInterview: `"...our climate policy will transform..."`,
-                expertPanel: `"...the policy statement clearly shows..."`
+                mayorInterview: `Mayor Interview - "...our climate policy will transform..."`,
+                expertPanel: `Expert Panel - "...the policy statement clearly shows..."`
               }
             }
           },
@@ -1914,11 +1914,11 @@ let message = {
     },
     ContentCreators: {
       hero: {
-        badge: `📹 For Content Creators`,
-        title: `Caption Your`,
-        titleHighlight: `Entire Channel`,
-        titleSuffix: `Without Counting Minutes`,
-        subtitle: `Stop choosing which videos deserve captions. Process your entire YouTube library, generate subtitles in 100+ languages, and fetch videos directly from any platform. No monthly limits, no upload restrictions – just pure creative freedom.`,
+        badge: `For Content Creators`,
+        title: `Transcribe YouTube Videos,`,
+        titleHighlight: `Limitlessly`,
+        titleSuffix: ``,
+        subtitle: `Whether you need to transcribe a YouTube video, transcribe a TikTok video for repurposing, or figure out how to transcribe a Facebook video to text, our platform handles it all seamlessly. Generate subtitles in 100+ languages with no monthly limits – just pure creative freedom.`,
         ctaPrimary: `Start Unlimited Captioning →`,
         ctaSecondary: `See How It Works`,
         stats: {
@@ -1941,6 +1941,8 @@ let message = {
         }
       },
       platforms: {
+        titleMax: `Transcribe Videos from`,
+        titleMaxHighlight: 'Any Platform',
         title: `Fetch & Transcribe From Any Platform`,
         platformNames: {
           youtube: `YouTube`,
@@ -1959,9 +1961,9 @@ let message = {
         subtitle: `Professional tools without professional limits`,
         oneClickImport: {
           label: `One-Click Import`,
-          title: `Paste Link.`,
-          titleHighlight: `Get Transcript.`,
-          description: `No more downloading and re-uploading. Just paste your YouTube, TikTok, or Instagram link and get instant transcripts. Process your entire channel's backlog in one weekend.`,
+          title: `Transcribe YouTube, TikTok & `,
+          titleHighlight: `Instagram Videos by Pasting a Link`,
+          description: `Our tool simplifies how you transcribe video content. To transcribe an Instagram video, just paste the link. To transcribe a Vimeo video to text, do the same. Process your entire channel's backlog in one weekend.`,
           points: {
             directYoutube: `Direct YouTube link transcription`,
             multiplePlatforms: `Fetch from 10+ platforms`,
