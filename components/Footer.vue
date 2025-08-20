@@ -5,8 +5,6 @@
         <div class="footer-brand">
           <h3>NeverCap</h3>
           <p>
-            The world's first truly unlimited AI transcription service. No caps,
-            no limits, just freedom to create.
             {{ $t("Footer.des") }}
           </p>
           <div

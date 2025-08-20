@@ -3,8 +3,8 @@
     <div class="title flex w-full justify-center">{{ t('FileUploadAndRecording.upload.guest.transcribe') }}</div>
     <div class="mb-4 flex w-full justify-between">
       <span class="text-lg font-medium">{{
-          tableData.length ? t('FileUploadAndRecording.upload.guest.file') : t('FileUploadAndRecording.upload.guest.audio')
-        }}</span>
+        tableData.length ? t('FileUploadAndRecording.upload.guest.file') : t('FileUploadAndRecording.upload.guest.audio')
+      }}</span>
       <div class="flex" v-show="!tableData.length">
         <div @click="openRecord" class="img-button cursor-pointer">
           <img
@@ -117,8 +117,8 @@
       <client-only>
         <el-checkbox v-model="diarizeEnabled">
           <span class="max-w-full whitespace-normal break-words text-base font-normal">{{
-              t("FileUploadAndRecording.upload.speakerLabel")
-            }}</span>
+            t("FileUploadAndRecording.upload.speakerLabel")
+          }}</span>
         </el-checkbox>
       </client-only>
     </div>

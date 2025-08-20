@@ -87,8 +87,7 @@
         padding: 0 20px;
       "
     >
-      "Unlimited" means no monthly cap and no artificial slowdown. Fair-use
-      applies to abusive automation or redistribution.
+      {{ $i("disclaimer") }}
     </p>
   </section>
 </template>
