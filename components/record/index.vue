@@ -4,7 +4,11 @@
       v-show="!hideRecord"
       ref="element"
       :style="style"
+<<<<<<< HEAD
       class="record mt-[36px] mb-[10px] fixed z-[3900] touch-none select-none rounded-[0.625rem] bg-[#F9FAFC] text-black"
+=======
+      class="record fixed z-[3900] touch-none select-none rounded-[0.625rem] bg-black text-white"
+>>>>>>> d92b314b31e4b61d06409ac2ffcd3592e0f53dea
     >
       <div
         v-if="!isStopped"

@@ -21,9 +21,15 @@ import { ref, computed, watchEffect } from "vue";
 import { useScrollTitle } from "./utils/useScrollTitle";
 import { message as en_US } from "~/i18n/lang/en-US"; // 英语（美国）
 import { runI18nCheck } from "~/i18n/check.js";
+<<<<<<< HEAD
 import { useCrossDomainCookie } from "~/hooks/useCrossDomainCookie";
 useScrollTitle();
 const { jumpPage } = usePageJump();
+=======
+import { usePageJump } from "~/composables/usePageJump";
+useScrollTitle();
+const { jumpPage } = usePageJump()
+>>>>>>> d92b314b31e4b61d06409ac2ffcd3592e0f53dea
 const route = useRoute();
 const { locale, locales, setLocaleMessage } = useI18n();
 const activeLanguage = useState("locale", () => locale.value);
@@ -98,6 +104,7 @@ const { $mitt } = useNuxtApp();
 const goToEvent = (data) => {
   jumpPage(data.path, data.newTab);
 };
+<<<<<<< HEAD
 const times = ref(0);
 const saveInfoToStore = () => {
   console.log("saveInfoToStoreMain", times.value);
@@ -127,6 +134,8 @@ const saveInfoToStore = () => {
   }
 };
 
+=======
+>>>>>>> d92b314b31e4b61d06409ac2ffcd3592e0f53dea
 // 其它逻辑保持不变
 if (process.client) {
   const config = useRuntimeConfig();
