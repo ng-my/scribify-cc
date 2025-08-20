@@ -2,7 +2,7 @@
 let message = {
   // Strona główna
   HomePage: {
-    home: "Strona główna",
+    home: "Wszystkie Transkrypcje",
     times:
       "{times} darmowych transkrypcji dziennie, {left} pozostało dzisiaj. ",
     tips: "Przejdź na Pro, aby uzyskać nieograniczone transkrypcje.",
@@ -657,8 +657,9 @@ let message = {
       "Każdy plik może trwać do 30 minut. Prześlij 1 plik na raz.",
     uploadWithinHours: "Przesyłanie w ciągu 10 godzin",
     yourSubscription: "Twoja subskrypcja zostanie anulowana {time}.",
-    save: "Oszczędzać"
-  },
+    save: "Oszczędzać",
+      freeversion2: "Plan Bezpłatny"
+},
   // Mapa języków
   LanguageMap: {
     sysLanguagesMap: {
@@ -1060,20 +1061,20 @@ let message = {
     Company: "Firma",
     featureMenus: ["Nieograniczona transkrypcja", "Przesyłanie zbiorcze", "96% dokładności"],
     useCaseMenus: [
-      "Wszystkie przypadki użycia",
-      "Podcasterzy",
-      "Dziennikarze",
-      "Twórcy treści",
-      "Badacze",
-      "Zespoły biznesowe",
-      "Nauczyciele"
-    ],
+          "Wszystkie przypadki użycia",
+          "Podcasterzy",
+          "Dziennikarze",
+          "Twórcy treści",
+          "Badacze",
+          "Zespoły biznesowe",
+          "Nauczyciele"
+        ],
     companyMenus: [
-      "O",
-      "Wycena",
-      "Prywatność",
-      "Warunki"
-    ]
+          "O",
+          "Wycena",
+          "Prywatność",
+          "Warunki"
+        ]
   },
   Index: {
     Hero: {
@@ -1173,47 +1174,47 @@ let message = {
       "title": "Często zadawane pytania",
       "titleHighlight": "Pytania",
       "questions": [
-        {
-          "q": "nieograniczona_polityka",
-          "question": "Czy to naprawdę jest nieograniczone? Gdzie jest haczyk?",
-          "answer": "Tak, to naprawdę nieograniczone! Bez miesięcznych limitów minut, bez opłat za przekroczenie limitu. Jedyne ograniczenia są natury technicznej: pojedyncze pliki mogą mieć długość do 10 godzin lub rozmiar do 5 GB, a jednocześnie można przetworzyć 50 plików. Możesz jednak przesyłać dowolną liczbę pakietów przez cały miesiąc."
-        },
-        {
-          "q": "dokładność",
-          "question": "Jak dokładna jest transkrypcja?",
-          "answer": "Gwarantujemy 96% dokładności i czysty dźwięk. Nasza sztuczna inteligencja jest wyszkolona na milionach godzin zróżnicowanych treści i wyjątkowo dobrze radzi sobie z akcentami, terminologią techniczną i wieloma mówcami. W przypadku trudnych nagrań audio, nasze inteligentne funkcje ulepszania pomagają uzyskać lepsze rezultaty."
-        },
-        {
-          "q": "języki",
-          "question": "Jakie języki są obsługiwane?",
-          "answer": "Obsługujemy transkrypcję w ponad 100 językach, w tym angielskim, hiszpańskim, mandaryńskim, hindi, arabskim, francuskim i wielu innych. Dodatkowo, transkrypcje można tłumaczyć na 249 różnych języków, co czyni je idealnym rozwiązaniem dla treści o zasięgu globalnym."
-        },
-        {
-          "q": "prędkość",
-          "question": "Jak szybka jest transkrypcja?",
-          "answer": "Błyskawiczna prędkość! Plik audio o długości godziny zazwyczaj przetwarza się w mniej niż 5 minut. Dzięki przetwarzaniu wsadowemu możesz przesłać 50 plików jednocześnie i pozwolić im przetwarzać się równolegle. Większość użytkowników budzi się i odkrywa, że cała ich biblioteka została przepisana w ciągu nocy."
-        },
-        {
-          "q": "anulowanie",
-          "question": "Czy mogę anulować w dowolnym momencie?",
-          "answer": "Oczywiście! Bez umów, bez opłat za anulowanie. Możesz w dowolnym momencie zmienić subskrypcję na wyższą, niższą lub ją anulować w panelu administracyjnym. W przypadku anulowania zachowasz dostęp do subskrypcji do końca okresu rozliczeniowego."
-        },
-        {
-          "q": "bezpieczeństwo",
-          "question": "Czy moje dane są bezpieczne?",
-          "answer": "Twoje bezpieczeństwo jest naszym priorytetem. Posiadamy certyfikat SOC 2, stosujemy 256-bitowe szyfrowanie wszystkich danych i nigdy nie wykorzystujemy Twoich treści do trenowania naszych modeli. Możesz usunąć swoje pliki w dowolnym momencie, a my automatycznie je usuniemy po 30 dniach. Zgodność z RODO i CCPA."
-        },
-        {
-          "q": "formaty_eksportu",
-          "question": "Jakie formaty eksportu są dostępne?",
-          "answer": "Pobierz transkrypty w dowolnym formacie: PDF, Word (DOCX), Excel, CSV, napisy SRT, zwykły tekst (TXT) i napisy VTT. Idealne dla każdego procesu pracy."
-        },
-        {
-          "q": "formaty_plików",
-          "question": "Jakie pliki audio i wideo mogę przesłać?",
-          "answer": "Obsługujemy praktycznie każdy format audio i wideo, jaki napotkasz: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV i wiele innych. Jeśli potrafisz coś odtworzyć, możemy to przepisać."
-        }
-      ]
+            {
+              "q": "nieograniczona_polityka",
+              "question": "Czy to naprawdę jest nieograniczone? Gdzie jest haczyk?",
+              "answer": "Tak, to naprawdę nieograniczone! Bez miesięcznych limitów minut, bez opłat za przekroczenie limitu. Jedyne ograniczenia są natury technicznej: pojedyncze pliki mogą mieć długość do 10 godzin lub rozmiar do 5 GB, a jednocześnie można przetworzyć 50 plików. Możesz jednak przesyłać dowolną liczbę pakietów przez cały miesiąc."
+            },
+            {
+              "q": "dokładność",
+              "question": "Jak dokładna jest transkrypcja?",
+              "answer": "Gwarantujemy 96% dokładności i czysty dźwięk. Nasza sztuczna inteligencja jest wyszkolona na milionach godzin zróżnicowanych treści i wyjątkowo dobrze radzi sobie z akcentami, terminologią techniczną i wieloma mówcami. W przypadku trudnych nagrań audio, nasze inteligentne funkcje ulepszania pomagają uzyskać lepsze rezultaty."
+            },
+            {
+              "q": "języki",
+              "question": "Jakie języki są obsługiwane?",
+              "answer": "Obsługujemy transkrypcję w ponad 100 językach, w tym angielskim, hiszpańskim, mandaryńskim, hindi, arabskim, francuskim i wielu innych. Dodatkowo, transkrypcje można tłumaczyć na 249 różnych języków, co czyni je idealnym rozwiązaniem dla treści o zasięgu globalnym."
+            },
+            {
+              "q": "prędkość",
+              "question": "Jak szybka jest transkrypcja?",
+              "answer": "Błyskawiczna prędkość! Plik audio o długości godziny zazwyczaj przetwarza się w mniej niż 5 minut. Dzięki przetwarzaniu wsadowemu możesz przesłać 50 plików jednocześnie i pozwolić im przetwarzać się równolegle. Większość użytkowników budzi się i odkrywa, że cała ich biblioteka została przepisana w ciągu nocy."
+            },
+            {
+              "q": "anulowanie",
+              "question": "Czy mogę anulować w dowolnym momencie?",
+              "answer": "Oczywiście! Bez umów, bez opłat za anulowanie. Możesz w dowolnym momencie zmienić subskrypcję na wyższą, niższą lub ją anulować w panelu administracyjnym. W przypadku anulowania zachowasz dostęp do subskrypcji do końca okresu rozliczeniowego."
+            },
+            {
+              "q": "bezpieczeństwo",
+              "question": "Czy moje dane są bezpieczne?",
+              "answer": "Twoje bezpieczeństwo jest naszym priorytetem. Posiadamy certyfikat SOC 2, stosujemy 256-bitowe szyfrowanie wszystkich danych i nigdy nie wykorzystujemy Twoich treści do trenowania naszych modeli. Możesz usunąć swoje pliki w dowolnym momencie, a my automatycznie je usuniemy po 30 dniach. Zgodność z RODO i CCPA."
+            },
+            {
+              "q": "formaty_eksportu",
+              "question": "Jakie formaty eksportu są dostępne?",
+              "answer": "Pobierz transkrypty w dowolnym formacie: PDF, Word (DOCX), Excel, CSV, napisy SRT, zwykły tekst (TXT) i napisy VTT. Idealne dla każdego procesu pracy."
+            },
+            {
+              "q": "formaty_plików",
+              "question": "Jakie pliki audio i wideo mogę przesłać?",
+              "answer": "Obsługujemy praktycznie każdy format audio i wideo, jaki napotkasz: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV i wiele innych. Jeśli potrafisz coś odtworzyć, możemy to przepisać."
+            }
+          ]
     },
     CTASection: {
       "title": "Gotowy na przełamanie ograniczeń?",
@@ -1602,93 +1603,93 @@ let message = {
       "highlighted_text": "Bez ukrytych wielkich liter.",
       "description": "Wybierz plan, który odpowiada Twoim potrzebom. Zmień lub zwiększ plan w dowolnym momencie. Bez umów, bez niespodzianek.",
       "plans": [
-        {
-          "name": "Bezpłatny",
-          "price": "0 zł",
-          "period": "miesiąc",
-          "discount": "Idealne do wypróbowania naszej usługi",
-          "limits": {
-            "title": "Dzienne limity",
-            "items": [
-              "3 pliki dziennie (łącznie ≈90 min dziennie)",
-              "Do 30 min na plik (≤250 MB)",
-              "Prześlij 1 plik na raz",
-              "Standardowa kolejka priorytetowa"
-            ]
-          },
-          "features": {
-            "title": "Cechy",
-            "items": [
-              "Ponad 100 języków",
-              "Etykiety głośników",
-              "Tłumaczenie",
-              "Wszystkie formaty eksportu"
-            ]
-          },
-          "cta": {
-            "text": "Zacznij za darmo. Bez karty kredytowej.",
-            "button": "Zacznij za darmo"
-          }
-        },
-        {
-          "name": "Miesięcznik Pro",
-          "price": "17,99 USD",
-          "period": "miesiąc",
-          "discount": "9,99 USD za pierwszy miesiąc",
-          "limits": {
-            "title": "Brak miesięcznego limitu",
-            "items": [
-              "Nieograniczona liczba minut",
-              "Do 10 godzin / 5 GB na plik",
-              "Prześlij 50 plików na raz",
-              "Kolejka priorytetowa"
-            ]
-          },
-          "features": {
-            "title": "Wszystko za darmo, plus",
-            "items": [
-              "Znaczniki czasu na poziomie słów",
-              "Zaawansowana identyfikacja mówcy",
-              "Sformatowane akapity i interpunkcja",
-              "Wsparcie priorytetowe"
-            ]
-          },
-          "cta": {
-            "text": "Nielimitowane minuty. Priorytetowa prędkość. Przesyłanie zbiorcze.",
-            "button": "Przejdź na tryb profesjonalny"
-          },
-          "badge": "Najpopularniejsze"
-        },
-        {
-          "name": "Pro Roczny",
-          "price": "8,99 USD",
-          "period": "miesiąc",
-          "discount": "Rocznie rozliczane w kwocie 107,88 USD",
-          "limits": {
-            "title": "Tak samo jak Pro Monthly",
-            "items": [
-              "Nieograniczona liczba minut",
-              "Do 10 godzin / 5 GB na plik",
-              "Prześlij 50 plików na raz",
-              "Kolejka priorytetowa"
-            ]
-          },
-          "features": {
-            "title": "Wszystko za darmo, plus",
-            "items": [
-              "Znaczniki czasu na poziomie słów",
-              "Zaawansowana identyfikacja mówcy",
-              "Sformatowane akapity i interpunkcja",
-              "Wsparcie priorytetowe"
-            ]
-          },
-          "cta": {
-            "text": "Nielimitowane minuty. Priorytetowa prędkość. Przesyłanie zbiorcze.",
-            "button": "Przejdź na tryb profesjonalny"
-          },
-          "badge": "Najlepsza wartość – zaoszczędź 50%"
-        }
-      ],
+            {
+              "name": "Bezpłatny",
+              "price": "0 zł",
+              "period": "miesiąc",
+              "discount": "Idealne do wypróbowania naszej usługi",
+              "limits": {
+                "title": "Dzienne limity",
+                "items": [
+                  "3 pliki dziennie (łącznie ≈90 min dziennie)",
+                  "Do 30 min na plik (≤250 MB)",
+                  "Prześlij 1 plik na raz",
+                  "Standardowa kolejka priorytetowa"
+                ]
+              },
+              "features": {
+                "title": "Cechy",
+                "items": [
+                  "Ponad 100 języków",
+                  "Etykiety głośników",
+                  "Tłumaczenie",
+                  "Wszystkie formaty eksportu"
+                ]
+              },
+              "cta": {
+                "text": "Zacznij za darmo. Bez karty kredytowej.",
+                "button": "Zacznij za darmo"
+              }
+            },
+            {
+              "name": "Miesięcznik Pro",
+              "price": "17,99 USD",
+              "period": "miesiąc",
+              "discount": "9,99 USD za pierwszy miesiąc",
+              "limits": {
+                "title": "Brak miesięcznego limitu",
+                "items": [
+                  "Nieograniczona liczba minut",
+                  "Do 10 godzin / 5 GB na plik",
+                  "Prześlij 50 plików na raz",
+                  "Kolejka priorytetowa"
+                ]
+              },
+              "features": {
+                "title": "Wszystko za darmo, plus",
+                "items": [
+                  "Znaczniki czasu na poziomie słów",
+                  "Zaawansowana identyfikacja mówcy",
+                  "Sformatowane akapity i interpunkcja",
+                  "Wsparcie priorytetowe"
+                ]
+              },
+              "cta": {
+                "text": "Nielimitowane minuty. Priorytetowa prędkość. Przesyłanie zbiorcze.",
+                "button": "Przejdź na tryb profesjonalny"
+              },
+              "badge": "Najpopularniejsze"
+            },
+            {
+              "name": "Pro Roczny",
+              "price": "8,99 USD",
+              "period": "miesiąc",
+              "discount": "Rocznie rozliczane w kwocie 107,88 USD",
+              "limits": {
+                "title": "Tak samo jak Pro Monthly",
+                "items": [
+                  "Nieograniczona liczba minut",
+                  "Do 10 godzin / 5 GB na plik",
+                  "Prześlij 50 plików na raz",
+                  "Kolejka priorytetowa"
+                ]
+              },
+              "features": {
+                "title": "Wszystko za darmo, plus",
+                "items": [
+                  "Znaczniki czasu na poziomie słów",
+                  "Zaawansowana identyfikacja mówcy",
+                  "Sformatowane akapity i interpunkcja",
+                  "Wsparcie priorytetowe"
+                ]
+              },
+              "cta": {
+                "text": "Nielimitowane minuty. Priorytetowa prędkość. Przesyłanie zbiorcze.",
+                "button": "Przejdź na tryb profesjonalny"
+              },
+              "badge": "Najlepsza wartość – zaoszczędź 50%"
+            }
+          ],
       "disclaimer": "„Nieograniczony” oznacza brak miesięcznego limitu i sztucznego spowolnienia. Zasada dozwolonego użytku dotyczy nadużyć w zakresie automatyzacji lub redystrybucji."
     },
     ComparisonTable: {
@@ -1698,115 +1699,115 @@ let message = {
         "subtitle": "Zobacz dokładnie, co otrzymasz w ramach każdego planu. Bez ukrytych ograniczeń."
       },
       "plans": [
-        "Cechy",
-        "Bezpłatny",
-        "Miesięcznik Pro",
-        "Pro Roczny"
-      ],
+              "Cechy",
+              "Bezpłatny",
+              "Miesięcznik Pro",
+              "Pro Roczny"
+            ],
       "features": [
-        {
-          "name": "Cena",
-          "values": [
-            "0 zł/miesiąc",
             {
-              "main": "17,99 USD/miesiąc",
-              "note": "9,99 USD za pierwszy miesiąc"
+              "name": "Cena",
+              "values": [
+                "0 zł/miesiąc",
+                {
+                  "main": "17,99 USD/miesiąc",
+                  "note": "9,99 USD za pierwszy miesiąc"
+                },
+                {
+                  "main": "8,99 USD/miesiąc",
+                  "note": "Wystawiono fakturę 107,88 USD/rok"
+                }
+              ]
             },
             {
-              "main": "8,99 USD/miesiąc",
-              "note": "Wystawiono fakturę 107,88 USD/rok"
+              "name": "Miesięczne minuty",
+              "values": ["~2700 (90/dzień)", "Nieograniczony", "Nieograniczony"]
+            },
+            {
+              "name": "Maksymalny czas trwania pliku",
+              "values": ["30 minut", "10 godzin", "10 godzin"]
+            },
+            {
+              "name": "Maksymalny rozmiar pliku",
+              "values": ["250 MB", "5 GB", "5 GB"]
+            },
+            {
+              "name": "Przesyłanie zbiorcze",
+              "values": ["1 plik", "50 plików", "50 plików"]
+            },
+            {
+              "name": "Prędkość przetwarzania",
+              "values": ["Standard", "Priorytet", "Priorytet"]
+            },
+            {
+              "name": "Obsługiwane języki",
+              "values": ["Ponad 100 języków", "Ponad 100 języków", "Ponad 100 języków"]
+            },
+            {
+              "name": "Tłumaczenie",
+              "values": ["PRAWDA", "PRAWDA", "PRAWDA"]
+            },
+            {
+              "name": "Identyfikacja mówcy",
+              "values": ["Podstawowy", "Zaawansowany (20 mówców)", "Zaawansowany (20 mówców)"]
+            },
+            {
+              "name": "Znaczniki czasu na poziomie słów",
+              "values": ["FAŁSZ", "PRAWDA", "PRAWDA"]
+            },
+            {
+              "name": "Sformatowane akapity",
+              "values": ["FAŁSZ", "PRAWDA", "PRAWDA"]
+            },
+            {
+              "name": "Formaty eksportu",
+              "values": ["Wszystkie formaty", "Wszystkie formaty", "Wszystkie formaty"]
+            },
+            {
+              "name": "Wsparcie",
+              "values": ["E-mail", "E-mail priorytetowy", "E-mail priorytetowy"]
+            },
+            {
+              "name": "Przechowywanie danych",
+              "values": ["30 dni", "Na zawsze", "Na zawsze"]
             }
           ]
-        },
-        {
-          "name": "Miesięczne minuty",
-          "values": ["~2700 (90/dzień)", "Nieograniczony", "Nieograniczony"]
-        },
-        {
-          "name": "Maksymalny czas trwania pliku",
-          "values": ["30 minut", "10 godzin", "10 godzin"]
-        },
-        {
-          "name": "Maksymalny rozmiar pliku",
-          "values": ["250 MB", "5 GB", "5 GB"]
-        },
-        {
-          "name": "Przesyłanie zbiorcze",
-          "values": ["1 plik", "50 plików", "50 plików"]
-        },
-        {
-          "name": "Prędkość przetwarzania",
-          "values": ["Standard", "Priorytet", "Priorytet"]
-        },
-        {
-          "name": "Obsługiwane języki",
-          "values": ["Ponad 100 języków", "Ponad 100 języków", "Ponad 100 języków"]
-        },
-        {
-          "name": "Tłumaczenie",
-          "values": ["PRAWDA", "PRAWDA", "PRAWDA"]
-        },
-        {
-          "name": "Identyfikacja mówcy",
-          "values": ["Podstawowy", "Zaawansowany (20 mówców)", "Zaawansowany (20 mówców)"]
-        },
-        {
-          "name": "Znaczniki czasu na poziomie słów",
-          "values": ["FAŁSZ", "PRAWDA", "PRAWDA"]
-        },
-        {
-          "name": "Sformatowane akapity",
-          "values": ["FAŁSZ", "PRAWDA", "PRAWDA"]
-        },
-        {
-          "name": "Formaty eksportu",
-          "values": ["Wszystkie formaty", "Wszystkie formaty", "Wszystkie formaty"]
-        },
-        {
-          "name": "Wsparcie",
-          "values": ["E-mail", "E-mail priorytetowy", "E-mail priorytetowy"]
-        },
-        {
-          "name": "Przechowywanie danych",
-          "values": ["30 dni", "Na zawsze", "Na zawsze"]
-        }
-      ]
     },
     FAQ: {
       "title": "Często zadawane pytania",
       "titleHighligt": "Pytania",
       "items": [
-        {
-          "q": "nieograniczona_polityka",
-          "question": "Czy to naprawdę jest nieograniczone?",
-          "answer": "Tak! Plany Pro nie mają miesięcznych limitów minut. Jedyne ograniczenia są natury technicznej: maksymalny czas trwania pliku to 10 godzin, a jego rozmiar to 5 GB. Możesz przetwarzać tyle plików, ile potrzebujesz."
-        },
-        {
-          "q": "zmiana_planu",
-          "question": "Czy mogę zmienić plan w dowolnym momencie?",
-          "answer": "Oczywiście! Możesz anulować subskrypcję w dowolnym momencie z poziomu panelu. Możesz zmienić wersję na wyższą lub niższą, kiedy tylko chcesz."
-        },
-        {
-          "q": "metody_płatności",
-          "question": "Jakie metody płatności akceptujecie?",
-          "answer": "Akceptujemy wszystkie główne karty kredytowe i debetowe, a także płatności przez PayPal, co zapewnia bezpieczne i bezproblemowe płatności."
-        },
-        {
-          "q": "bezpłatny_wersja_próbna",
-          "question": "Czy istnieje bezpłatna wersja próbna Pro?",
-          "answer": "Tak! Wypróbuj wersję Pro za darmo przez 7 dni, bez karty kredytowej. Dodatkowo, po wykupieniu subskrypcji, otrzymasz 45% zniżki na pierwszy miesiąc."
-        },
-        {
-          "q": "przechowywanie_plików",
-          "question": "Jak długo przechowujecie moje pliki?",
-          "answer": "Plan darmowy: 30 dni. Plany Pro: Na zawsze! Twoje transkrypty są zawsze dostępne na Twoim koncie."
-        },
-        {
-          "q": "bezpieczeństwo_danych",
-          "question": "A co z bezpieczeństwem danych?",
-          "answer": "Posiadamy certyfikat SOC 2 i stosujemy 256-bitowe szyfrowanie. Nigdy nie wykorzystujemy Twoich treści do trenowania naszych modeli. Twoje dane należą do Ciebie."
-        }
-      ]
+            {
+              "q": "nieograniczona_polityka",
+              "question": "Czy to naprawdę jest nieograniczone?",
+              "answer": "Tak! Plany Pro nie mają miesięcznych limitów minut. Jedyne ograniczenia są natury technicznej: maksymalny czas trwania pliku to 10 godzin, a jego rozmiar to 5 GB. Możesz przetwarzać tyle plików, ile potrzebujesz."
+            },
+            {
+              "q": "zmiana_planu",
+              "question": "Czy mogę zmienić plan w dowolnym momencie?",
+              "answer": "Oczywiście! Możesz anulować subskrypcję w dowolnym momencie z poziomu panelu. Możesz zmienić wersję na wyższą lub niższą, kiedy tylko chcesz."
+            },
+            {
+              "q": "metody_płatności",
+              "question": "Jakie metody płatności akceptujecie?",
+              "answer": "Akceptujemy wszystkie główne karty kredytowe i debetowe, a także płatności przez PayPal, co zapewnia bezpieczne i bezproblemowe płatności."
+            },
+            {
+              "q": "bezpłatny_wersja_próbna",
+              "question": "Czy istnieje bezpłatna wersja próbna Pro?",
+              "answer": "Tak! Wypróbuj wersję Pro za darmo przez 7 dni, bez karty kredytowej. Dodatkowo, po wykupieniu subskrypcji, otrzymasz 45% zniżki na pierwszy miesiąc."
+            },
+            {
+              "q": "przechowywanie_plików",
+              "question": "Jak długo przechowujecie moje pliki?",
+              "answer": "Plan darmowy: 30 dni. Plany Pro: Na zawsze! Twoje transkrypty są zawsze dostępne na Twoim koncie."
+            },
+            {
+              "q": "bezpieczeństwo_danych",
+              "question": "A co z bezpieczeństwem danych?",
+              "answer": "Posiadamy certyfikat SOC 2 i stosujemy 256-bitowe szyfrowanie. Nigdy nie wykorzystujemy Twoich treści do trenowania naszych modeli. Twoje dane należą do Ciebie."
+            }
+          ]
     },
     CTA: {
       "title": "Gotowy na nieograniczone możliwości?",
@@ -2803,122 +2804,122 @@ let message = {
       part2: {
         "title": "Oto jak w 3 prostych krokach przekształcić film z YouTube w plik MP4 do pobrania",
         "steps": [
-          {
-            title: "Skopiuj adres URL",
-            content: "Otwórz docelowy film w serwisie YouTube, a następnie skopiuj link z paska adresu przeglądarki."
-          },
-          {
-            title: "Wklej link",
-            content: "Przejdź do narzędzia do pobierania filmów i wklej adres URL w polu wejściowym."
-          },
-          {
-            title: "Pobierz plik MP4",
-            content: "Po przetworzeniu kliknij przycisk pobierania, aby zapisać plik MP4."
-          }
-        ]
+                {
+                  title: "Skopiuj adres URL",
+                  content: "Otwórz docelowy film w serwisie YouTube, a następnie skopiuj link z paska adresu przeglądarki."
+                },
+                {
+                  title: "Wklej link",
+                  content: "Przejdź do narzędzia do pobierania filmów i wklej adres URL w polu wejściowym."
+                },
+                {
+                  title: "Pobierz plik MP4",
+                  content: "Po przetworzeniu kliknij przycisk pobierania, aby zapisać plik MP4."
+                }
+              ]
       },
       part3: {
         content: [
-          "Czy kiedykolwiek zdarzyło Ci się chcieć oglądać filmy na YouTube w trybie offline?",
-          "Niezależnie od tego, czy dojeżdżasz metrem, lecisz samolotem, studiujesz ważny samouczek, zgłębiasz materiały rozwijające umiejętności, czy archiwizujesz ważne materiały wideo – niezawodny dostęp offline to częsta frustracja. Właśnie w tym miejscu nasz program do pobierania sprawdza się znakomicie.",
-          "Program do pobierania pozwala szybko i łatwo konwertować filmy z YouTube do formatu MP4, aby można je było pobrać. Zapisz je na swoim urządzeniu i oglądaj w dowolnym momencie.",
-          "Proces jest szybki, prosty i bezproblemowy. Po pobraniu możesz oglądać ulubione filmy, kiedy tylko chcesz i gdziekolwiek jesteś – bez dostępu do internetu."
-        ]
+                "Czy kiedykolwiek zdarzyło Ci się chcieć oglądać filmy na YouTube w trybie offline?",
+                "Niezależnie od tego, czy dojeżdżasz metrem, lecisz samolotem, studiujesz ważny samouczek, zgłębiasz materiały rozwijające umiejętności, czy archiwizujesz ważne materiały wideo – niezawodny dostęp offline to częsta frustracja. Właśnie w tym miejscu nasz program do pobierania sprawdza się znakomicie.",
+                "Program do pobierania pozwala szybko i łatwo konwertować filmy z YouTube do formatu MP4, aby można je było pobrać. Zapisz je na swoim urządzeniu i oglądaj w dowolnym momencie.",
+                "Proces jest szybki, prosty i bezproblemowy. Po pobraniu możesz oglądać ulubione filmy, kiedy tylko chcesz i gdziekolwiek jesteś – bez dostępu do internetu."
+              ]
       },
       part4: {
         content: ["Oto 5 głównych korzyści płynących z pobierania", "Filmy z YouTube jako pliki MP4"],
         list: [
-          {
-            title: "Oszczędź na kosztach danych:",
-            content: "Oglądanie filmów na YouTube zazwyczaj zużywa znaczną ilość danych mobilnych. Pobierając je do oglądania offline, możesz uniknąć tych niepotrzebnych kosztów."
-          },
-          {
-            title: "Oglądaj gdziekolwiek i kiedykolwiek:",
-            content: "Ciesz się płynnie swoimi filmami, nawet przy słabym połączeniu internetowym. Koniec z buforowaniem."
-          },
-          {
-            title: "Łatwa archiwizacja i przechowywanie:",
-            content: "Zapisywanie filmów w formacie MP4 ułatwia budowanie osobistej kolekcji, zwłaszcza jeśli zawiera ona treści, które uważasz za naprawdę wartościowe lub ważne."
-          },
-          {
-            title: "Prostsze udostępnianie:",
-            content: "Udostępnianie pliku MP4 jest znacznie wygodniejsze niż wysyłanie linku. Możesz wysłać plik wideo bezpośrednio przez aplikacje takie jak WhatsApp czy Instagram, eliminując dodatkowy krok otwierania YouTube'a."
-          },
-          {
-            title: "Natychmiastowy podgląd, wspólne chwile:",
-            content: "Z entuzjazmem pokazujesz ulubiony film znajomym lub rodzinie w pobliżu? Po pobraniu pliku MP4 możecie go wszyscy płynnie obejrzeć razem, bez krępujących przerw w oczekiwaniu na załadowanie."
-          }
-        ]
+                {
+                  title: "Oszczędź na kosztach danych:",
+                  content: "Oglądanie filmów na YouTube zazwyczaj zużywa znaczną ilość danych mobilnych. Pobierając je do oglądania offline, możesz uniknąć tych niepotrzebnych kosztów."
+                },
+                {
+                  title: "Oglądaj gdziekolwiek i kiedykolwiek:",
+                  content: "Ciesz się płynnie swoimi filmami, nawet przy słabym połączeniu internetowym. Koniec z buforowaniem."
+                },
+                {
+                  title: "Łatwa archiwizacja i przechowywanie:",
+                  content: "Zapisywanie filmów w formacie MP4 ułatwia budowanie osobistej kolekcji, zwłaszcza jeśli zawiera ona treści, które uważasz za naprawdę wartościowe lub ważne."
+                },
+                {
+                  title: "Prostsze udostępnianie:",
+                  content: "Udostępnianie pliku MP4 jest znacznie wygodniejsze niż wysyłanie linku. Możesz wysłać plik wideo bezpośrednio przez aplikacje takie jak WhatsApp czy Instagram, eliminując dodatkowy krok otwierania YouTube'a."
+                },
+                {
+                  title: "Natychmiastowy podgląd, wspólne chwile:",
+                  content: "Z entuzjazmem pokazujesz ulubiony film znajomym lub rodzinie w pobliżu? Po pobraniu pliku MP4 możecie go wszyscy płynnie obejrzeć razem, bez krępujących przerw w oczekiwaniu na załadowanie."
+                }
+              ]
       },
       part5: {
         title: "Dlaczego nasz program do pobierania wyróżnia się",
         cards: [
-          {
-            title: "Prostota za pomocą jednego kliknięcia",
-            content: "Łatwa konfiguracja i intuicyjna obsługa."
-          },
-          {
-            title: "Błyskawicznie szybki, nieograniczony",
-            content: "Konwertuj i pobieraj z maksymalną prędkością — bez limitów i ograniczeń."
-          },
-          {
-            title: "Konwertuj w locie",
-            content: "Przetwarzaj pliki natychmiast, bez czekania."
-          },
-          {
-            title: "Zero reklam, zero rozpraszaczy",
-            content: "Ciesz się przejrzystym interfejsem bez wyskakujących okienek, banerów i przerw – zapewniasz płynną konwersję wideo."
-          },
-          {
-            icon: "5",
-            color: "#DEE5FF",
-            title: "Gwarancja oryginalnej jakości",
-            content: "Pobrane pliki zachowują pełną rozdzielczość źródłowego filmu, co pozwala na ich odtwarzanie z zachowaniem doskonałej jakości obrazu."
-          },
-          {
-            icon: "6",
-            color: "#DEF6EE",
-            title: "Działa wszędzie",
-            content: "Pełna kompatybilność z dowolną przeglądarką, na dowolnym urządzeniu."
-          }
-        ]
+                {
+                  title: "Prostota za pomocą jednego kliknięcia",
+                  content: "Łatwa konfiguracja i intuicyjna obsługa."
+                },
+                {
+                  title: "Błyskawicznie szybki, nieograniczony",
+                  content: "Konwertuj i pobieraj z maksymalną prędkością — bez limitów i ograniczeń."
+                },
+                {
+                  title: "Konwertuj w locie",
+                  content: "Przetwarzaj pliki natychmiast, bez czekania."
+                },
+                {
+                  title: "Zero reklam, zero rozpraszaczy",
+                  content: "Ciesz się przejrzystym interfejsem bez wyskakujących okienek, banerów i przerw – zapewniasz płynną konwersję wideo."
+                },
+                {
+                  icon: "5",
+                  color: "#DEE5FF",
+                  title: "Gwarancja oryginalnej jakości",
+                  content: "Pobrane pliki zachowują pełną rozdzielczość źródłowego filmu, co pozwala na ich odtwarzanie z zachowaniem doskonałej jakości obrazu."
+                },
+                {
+                  icon: "6",
+                  color: "#DEF6EE",
+                  title: "Działa wszędzie",
+                  content: "Pełna kompatybilność z dowolną przeglądarką, na dowolnym urządzeniu."
+                }
+              ]
       },
       part6: {
         title: ["Zmaksymalizuj liczbę pobrań filmów z YouTube", "Z programem do pobierania"],
         content: [
-          "Bezproblemowa konwersja z YouTube do MP4: szybka, prosta i bezpłatna.",
-          "W tym się wyróżniamy. Nasz przyjazny dla użytkownika interfejs jest zaprojektowany dla każdego – nie są wymagane żadne umiejętności techniczne. Niezależnie od poziomu doświadczenia, możesz konwertować filmy natychmiast. Bez konieczności rejestracji: uzyskaj dokładnie to, czego potrzebujesz, od razu.",
-          "Nie martw się — pobrane pliki MP4 zachowają oryginalną jakość i wyrazistość obrazu, dokładnie tak, jak oglądałeś je na YouTube.",
-          "Działa wszędzie, gdzie jesteś. Pełna kompatybilność ze wszystkimi głównymi platformami i urządzeniami. Niezależnie od tego, czy korzystasz z systemu Windows, macOS, Linux, Android czy iOS — na smartfonie, tablecie czy komputerze stacjonarnym — możesz bezproblemowo pobierać filmy."
-        ]
+                "Bezproblemowa konwersja z YouTube do MP4: szybka, prosta i bezpłatna.",
+                "W tym się wyróżniamy. Nasz przyjazny dla użytkownika interfejs jest zaprojektowany dla każdego – nie są wymagane żadne umiejętności techniczne. Niezależnie od poziomu doświadczenia, możesz konwertować filmy natychmiast. Bez konieczności rejestracji: uzyskaj dokładnie to, czego potrzebujesz, od razu.",
+                "Nie martw się — pobrane pliki MP4 zachowają oryginalną jakość i wyrazistość obrazu, dokładnie tak, jak oglądałeś je na YouTube.",
+                "Działa wszędzie, gdzie jesteś. Pełna kompatybilność ze wszystkimi głównymi platformami i urządzeniami. Niezależnie od tego, czy korzystasz z systemu Windows, macOS, Linux, Android czy iOS — na smartfonie, tablecie czy komputerze stacjonarnym — możesz bezproblemowo pobierać filmy."
+              ]
       },
       part7: {
         title: "Kluczowe pytania dotyczące pobierania filmów z YouTube",
         list: [
-          {
-            question: "Czy mogę pobrać film z YouTube, jeśli jest on objęty prawami autorskimi?",
-            answer: "Pobieranie filmów z serwisu YouTube objętych prawami autorskimi bez zgody właściciela praw autorskich jest nielegalne."
-          },
-          {
-            question: "Czy to narzędzie do pobierania jest bezpieczne?",
-            answer: "Tak, jest bezpieczny i godny zaufania. Nie wymagamy od użytkowników żadnych danych osobowych i stosujemy silne środki antywirusowe. Przypominamy o zachowaniu ostrożności podczas pobierania plików z internetu: unikaj klikania podejrzanych linków i pobierania podejrzanych plików."
-          },
-          {
-            question: "Jakie języki obsługuje pobieranie plików YouTube w formacie MP4?",
-            answer: "Nasza usługa umożliwia pobieranie filmów z YouTube we wszystkich popularnych językach."
-          },
-          {
-            question: "Jakie czynniki wpływają na czas pobierania filmu z YouTube?",
-            answer: "Chociaż dbamy o jak najszybsze pobieranie, na czas pobierania wpływają również takie czynniki, jak długość filmu i szybkość połączenia internetowego."
-          },
-          {
-            question: "Gdzie jest zapisywany film w formacie MP4, który pobieram za pomocą smartfona?"
-          },
-          {
-            question: "Czy pobieranie filmu z YouTube w formacie MP4 pogarsza jakość obrazu?",
-            answer: "Nie. Pobieranie filmów z YouTube w formacie MP4 za pomocą naszego narzędzia zachowuje oryginalną jakość wideo. Proces konwersji zachowuje jakość źródłową, zapewniając takie same wrażenia wizualne jak na YouTube."
-          }
-        ]
+                {
+                  question: "Czy mogę pobrać film z YouTube, jeśli jest on objęty prawami autorskimi?",
+                  answer: "Pobieranie filmów z serwisu YouTube objętych prawami autorskimi bez zgody właściciela praw autorskich jest nielegalne."
+                },
+                {
+                  question: "Czy to narzędzie do pobierania jest bezpieczne?",
+                  answer: "Tak, jest bezpieczny i godny zaufania. Nie wymagamy od użytkowników żadnych danych osobowych i stosujemy silne środki antywirusowe. Przypominamy o zachowaniu ostrożności podczas pobierania plików z internetu: unikaj klikania podejrzanych linków i pobierania podejrzanych plików."
+                },
+                {
+                  question: "Jakie języki obsługuje pobieranie plików YouTube w formacie MP4?",
+                  answer: "Nasza usługa umożliwia pobieranie filmów z YouTube we wszystkich popularnych językach."
+                },
+                {
+                  question: "Jakie czynniki wpływają na czas pobierania filmu z YouTube?",
+                  answer: "Chociaż dbamy o jak najszybsze pobieranie, na czas pobierania wpływają również takie czynniki, jak długość filmu i szybkość połączenia internetowego."
+                },
+                {
+                  question: "Gdzie jest zapisywany film w formacie MP4, który pobieram za pomocą smartfona?"
+                },
+                {
+                  question: "Czy pobieranie filmu z YouTube w formacie MP4 pogarsza jakość obrazu?",
+                  answer: "Nie. Pobieranie filmów z YouTube w formacie MP4 za pomocą naszego narzędzia zachowuje oryginalną jakość wideo. Proces konwersji zachowuje jakość źródłową, zapewniając takie same wrażenia wizualne jak na YouTube."
+                }
+              ]
       }
     }
   },
@@ -2934,68 +2935,68 @@ let message = {
       "highlighted_text": "Uderzenie",
       "subtitle": "Wzmocnienie globalnej komunikacji dzięki najnowocześniejszej technologii sztucznej inteligencji",
       "metrics": [
-        {
-          "value": "96%+",
-          "label": "Współczynnik dokładności",
-          "description": "Najwyższa w branży dokładność transkrypcji dzięki zaawansowanej sztucznej inteligencji"
-        },
-        {
-          "value": "100+",
-          "label": "Obsługiwane języki",
-          "description": "Rozpoznawanie mowy w treściach globalnych"
-        },
-        {
-          "value": "249+",
-          "label": "Języki tłumaczenia",
-          "description": "Przetłumacz transkrybowany tekst na praktycznie każdy język"
-        }
-      ]
+            {
+              "value": "96%+",
+              "label": "Współczynnik dokładności",
+              "description": "Najwyższa w branży dokładność transkrypcji dzięki zaawansowanej sztucznej inteligencji"
+            },
+            {
+              "value": "100+",
+              "label": "Obsługiwane języki",
+              "description": "Rozpoznawanie mowy w treściach globalnych"
+            },
+            {
+              "value": "249+",
+              "label": "Języki tłumaczenia",
+              "description": "Przetłumacz transkrybowany tekst na praktycznie każdy język"
+            }
+          ]
     },
     Mission: {
       "title": "Dlaczego warto wybrać",
       "highlighted_text": "NeverCap",
       "subtitle": "Wierzymy w przełamywanie barier językowych i udostępnianie treści każdemu",
       "features": [
-        {
-          "icon": "🎯",
-          "title": "Niezrównana dokładność",
-          "description": "Nasze modele sztucznej inteligencji są stale udoskonalane, aby zapewnić dokładność transkrypcji przekraczającą 96%. W przypadku niektórych ważniejszych języków, dzięki zaawansowanej optymalizacji, dokładność transkrypcji sięga nawet 99%."
-        },
-        {
-          "icon": "🌍",
-          "title": "Globalne wsparcie językowe",
-          "description": "Obsługa ponad 100 języków w zakresie rozpoznawania mowy i możliwość tłumaczenia na ponad 249 języków, dzięki czemu Twoje treści będą miały prawdziwie globalny zasięg."
-        },
-        {
-          "icon": "⚡",
-          "title": "Błyskawiczne przetwarzanie",
-          "description": "Przetwarzaj godziny treści audio i wideo w ciągu minut, a nie godzin. Nasz zoptymalizowany proces oparty na sztucznej inteligencji gwarantuje szybkie otrzymywanie transkrypcji bez utraty jakości."
-        },
-        {
-          "icon": "🔒",
-          "title": "Bezpieczeństwo klasy korporacyjnej",
-          "description": "Bezpieczeństwo Twoich danych jest naszym priorytetem. Stosujemy standardowe szyfrowanie branżowe i przestrzegamy globalnych przepisów dotyczących prywatności, aby zapewnić bezpieczeństwo i poufność Twoich treści."
-        }
-      ]
+            {
+              "icon": "🎯",
+              "title": "Niezrównana dokładność",
+              "description": "Nasze modele sztucznej inteligencji są stale udoskonalane, aby zapewnić dokładność transkrypcji przekraczającą 96%. W przypadku niektórych ważniejszych języków, dzięki zaawansowanej optymalizacji, dokładność transkrypcji sięga nawet 99%."
+            },
+            {
+              "icon": "🌍",
+              "title": "Globalne wsparcie językowe",
+              "description": "Obsługa ponad 100 języków w zakresie rozpoznawania mowy i możliwość tłumaczenia na ponad 249 języków, dzięki czemu Twoje treści będą miały prawdziwie globalny zasięg."
+            },
+            {
+              "icon": "⚡",
+              "title": "Błyskawiczne przetwarzanie",
+              "description": "Przetwarzaj godziny treści audio i wideo w ciągu minut, a nie godzin. Nasz zoptymalizowany proces oparty na sztucznej inteligencji gwarantuje szybkie otrzymywanie transkrypcji bez utraty jakości."
+            },
+            {
+              "icon": "🔒",
+              "title": "Bezpieczeństwo klasy korporacyjnej",
+              "description": "Bezpieczeństwo Twoich danych jest naszym priorytetem. Stosujemy standardowe szyfrowanie branżowe i przestrzegamy globalnych przepisów dotyczących prywatności, aby zapewnić bezpieczeństwo i poufność Twoich treści."
+            }
+          ]
     },
     Company: {
       "title": "Firma",
       "highlighted_text": "Informacja",
       "subtitle": "Skontaktuj się z nami, jeśli masz jakiekolwiek pytania lub potrzebujesz wsparcia",
       "details": [
-        {
-          "label": "Nazwa firmy",
-          "value": "SCRIBIFY AI INC"
-        },
-        {
-          "label": "Siedziba",
-          "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "Stany Zjednoczone"]
-        },
-        {
-          "label": "Skontaktuj się z nami",
-          "value": ["e-mail", "Wsparcie dostępne 24/7"]
-        }
-      ]
+            {
+              "label": "Nazwa firmy",
+              "value": "SCRIBIFY AI INC"
+            },
+            {
+              "label": "Siedziba",
+              "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "Stany Zjednoczone"]
+            },
+            {
+              "label": "Skontaktuj się z nami",
+              "value": ["e-mail", "Wsparcie dostępne 24/7"]
+            }
+          ]
     },
     CTA: {
       "title": "Gotowy poczuć różnicę?",

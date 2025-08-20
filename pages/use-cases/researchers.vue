@@ -77,6 +77,15 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Researchers.problemTitle") }}
+            <span
+              style="
+                background: var(--text-gradient);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+              >{{ t("UseCases.Researchers.problemTitle2") }}</span
+            >
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.Researchers.problemSubtitle") }}
@@ -125,8 +134,18 @@
         </div>
 
         <div style="text-align: center; margin-top: 70px">
-          <h3 style="font-size: 32px; margin-bottom: 14px">
-            {{ t("UseCases.Researchers.solutionTitle") }}
+          <h3 style="font-size: 32px; font-weight: bold; margin-bottom: 14px">
+            {{ t("UseCases.Researchers.title") }}
+            <span
+              style="
+                background: var(--text-gradient);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              {{ t("UseCases.Researchers.solutionTitle") }}
+            </span>
           </h3>
           <p
             style="
@@ -144,7 +163,7 @@
 
     <!-- Features Section -->
     <section class="features-section" id="features">
-      <div class="container">
+      <div class="container !pt-[70px]">
         <!-- Feature 1: Unlimited Processing -->
         <div class="feature-block">
           <div class="feature-content">
@@ -461,11 +480,20 @@
     </section>
 
     <!-- Use Cases Section -->
-    <section class="problem-section">
+    <section class="problem-section mt-[70px]">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Researchers.useCasesTitle") }}
+            <span               style="
+                background: var(--text-gradient);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >{{
+              t("UseCases.Researchers.useCasesTitle2")
+            }}</span>
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.Researchers.useCasesSubtitle") }}
@@ -560,6 +588,15 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Researchers.testimonialTitle") }}
+            <span               style="
+                background: var(--text-gradient);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >{{
+              t("UseCases.Researchers.testimonialTitle2")
+            }}</span>
           </h2>
         </div>
 
@@ -569,7 +606,11 @@
             {{ t("UseCases.Researchers.testimonialText") }}
           </p>
           <div class="testimonial-author">
-            <div class="author-avatar">SC</div>
+              <el-avatar
+                :size="56"
+                :src="`/assets/images/index/users/Jack Turner.png`"
+                class="me-3"
+              />
             <div class="author-info">
               <div class="author-name">
                 {{ t("UseCases.Researchers.testimonialAuthorName") }}
@@ -644,7 +685,7 @@ const handleJump = (path: string) => {
 
 /* Hero Section */
 .hero {
-  padding: 140px 0 80px;
+  padding: 140px 0 70px;
   background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
   text-align: center;
   position: relative;
@@ -678,14 +719,14 @@ const handleJump = (path: string) => {
 
 .hero-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  background: rgba(230, 246, 241, 1);
   color: var(--secondary);
-  padding: 8px 20px;
-  border-radius: 30px;
+  padding: 6px 16px;
+  border-radius: 20px;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 20px;
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  animation: slideDown 0.6s ease;
 }
 
 .hero h1 {
@@ -878,8 +919,8 @@ const handleJump = (path: string) => {
 }
 
 .check {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background: var(--secondary);
   color: white;
   border-radius: 50%;
@@ -1004,6 +1045,7 @@ const handleJump = (path: string) => {
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   transition: all 0.3s;
+  border: 1px solid var(--line-color);
 }
 
 .use-case-item:hover {
@@ -1073,16 +1115,6 @@ const handleJump = (path: string) => {
 }
 
 .author-avatar {
-  width: 56px;
-  height: 56px;
-  background: var(--gradient);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 600;
-  font-size: 20px;
 }
 
 .author-info {

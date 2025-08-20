@@ -579,7 +579,6 @@ const handleClick = () => {
   position: relative;
   overflow: hidden;
   color: white;
-  box-shadow: 0 20px 40px rgba(71, 85, 105, 0.2);
 }
 
 .reddit-banner::before {
@@ -910,7 +909,8 @@ const handleClick = () => {
 }
 
 .use-case-card {
-  background: var(--light-gray);
+  background: #ffffff;
+  border: 1px solid var(--line-color);
   padding: 40px;
   border-radius: 16px;
   text-align: center;

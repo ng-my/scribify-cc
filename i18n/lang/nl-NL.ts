@@ -2,7 +2,7 @@
 let message = {
   // Startpagina
   HomePage: {
-    home: "Thuis",
+    home: "Alle Transcripten",
     times: "{times} gratis transcripties per dag, {left} resterend vandaag. ",
     tips: "Upgrade naar Pro voor onbeperkte transcripties.",
     update: "Nu upgraden",
@@ -661,8 +661,9 @@ let message = {
       "Elk bestand kan maximaal 30 minuten duren. Upload 1 bestand per keer.",
     uploadWithinHours: "10-uur uploads",
     yourSubscription: "Uw abonnement wordt op {time} geannuleerd.",
-    save: "Besparen"
-  },
+    save: "Besparen",
+      freeversion2: "Gratis Plan"
+},
   // Taalkaart
   LanguageMap: {
     sysLanguagesMap: {
@@ -1066,20 +1067,20 @@ let message = {
     Company: "Bedrijf",
     featureMenus: ["Onbeperkte transcriptie", "Bulkupload", "96% nauwkeurigheid"],
     useCaseMenus: [
-      "Alle use cases",
-      "Podcasters",
-      "Journalisten",
-      "Contentmakers",
-      "Onderzoekers",
-      "Bedrijfsteams",
-      "Onderwijzers"
-    ],
+          "Alle use cases",
+          "Podcasters",
+          "Journalisten",
+          "Contentmakers",
+          "Onderzoekers",
+          "Bedrijfsteams",
+          "Onderwijzers"
+        ],
     companyMenus: [
-      "Over",
-      "Prijzen",
-      "Privacy",
-      "Voorwaarden"
-    ]
+          "Over",
+          "Prijzen",
+          "Privacy",
+          "Voorwaarden"
+        ]
   },
   Index: {
     Hero: {
@@ -1179,47 +1180,47 @@ let message = {
       "title": "Veelgestelde vragen",
       "titleHighlight": "Vragen",
       "questions": [
-        {
-          "q": "onbeperkt_beleid",
-          "question": "Is het echt onbeperkt? Wat is het addertje onder het gras?",
-          "answer": "Ja, het is echt onbeperkt! Geen maandelijkse bellimieten, geen extra kosten. De enige limieten zijn technisch: individuele bestanden kunnen maximaal 10 uur lang of 5 GB groot zijn, en je kunt 50 bestanden tegelijk verwerken. Maar je kunt de hele maand zoveel batches uploaden als je wilt."
-        },
-        {
-          "q": "nauwkeurigheid",
-          "question": "Hoe nauwkeurig is de transcriptie?",
-          "answer": "We garanderen een nauwkeurigheid van 96% voor heldere audio. Onze AI is getraind met miljoenen uren aan diverse content en kan uitstekend overweg met accenten, technische termen en meerdere sprekers. Bij uitdagende audio helpen onze slimme verbeteringsfuncties de resultaten te verbeteren."
-        },
-        {
-          "q": "talen",
-          "question": "Welke talen ondersteunen jullie?",
-          "answer": "We ondersteunen transcriptie in meer dan 100 talen, waaronder Engels, Spaans, Mandarijn, Hindi, Arabisch, Frans en meer. Bovendien kunt u uw transcripties vertalen naar 249 verschillende talen, waardoor ze perfect zijn voor internationale content."
-        },
-        {
-          "q": "snelheid",
-          "question": "Hoe snel is de transcriptie?",
-          "answer": "Razendsnel! Een audiobestand van 1 uur wordt doorgaans in minder dan 5 minuten verwerkt. Met batchverwerking kun je 50 bestanden tegelijk uploaden en parallel laten verwerken. De meeste gebruikers worden 's nachts wakker en ontdekken dat hun hele bibliotheek is getranscribeerd."
-        },
-        {
-          "q": "annulering",
-          "question": "Kan ik op elk moment annuleren?",
-          "answer": "Absoluut! Geen contracten, geen annuleringskosten. Je kunt je abonnement op elk moment upgraden, downgraden of opzeggen via je dashboard. Als je opzegt, behoud je toegang tot het einde van je factureringsperiode."
-        },
-        {
-          "q": "beveiliging",
-          "question": "Zijn mijn gegevens veilig?",
-          "answer": "Uw veiligheid is onze prioriteit. We zijn SOC 2-gecertificeerd, gebruiken 256-bits encryptie voor alle gegevens en gebruiken uw content nooit om onze modellen te trainen. U kunt uw bestanden op elk moment verwijderen en we verwijderen ze automatisch na 30 dagen. Voldoet aan de AVG en CCPA."
-        },
-        {
-          "q": "export_formaten",
-          "question": "Welke exportformaten zijn beschikbaar?",
-          "answer": "Download je transcripties in elk gewenst formaat: PDF, Word (DOCX), Excel, CSV, SRT-ondertitels, platte tekst (TXT) en VTT-ondertitels. Perfect voor elke workflow."
-        },
-        {
-          "q": "bestandsformaten",
-          "question": "Welke audio- en videobestanden kan ik uploaden?",
-          "answer": "We ondersteunen vrijwel elk audio- en videoformaat dat u tegenkomt: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV en meer. Als u het kunt afspelen, kunnen wij het transcriberen."
-        }
-      ]
+            {
+              "q": "onbeperkt_beleid",
+              "question": "Is het echt onbeperkt? Wat is het addertje onder het gras?",
+              "answer": "Ja, het is echt onbeperkt! Geen maandelijkse bellimieten, geen extra kosten. De enige limieten zijn technisch: individuele bestanden kunnen maximaal 10 uur lang of 5 GB groot zijn, en je kunt 50 bestanden tegelijk verwerken. Maar je kunt de hele maand zoveel batches uploaden als je wilt."
+            },
+            {
+              "q": "nauwkeurigheid",
+              "question": "Hoe nauwkeurig is de transcriptie?",
+              "answer": "We garanderen een nauwkeurigheid van 96% voor heldere audio. Onze AI is getraind met miljoenen uren aan diverse content en kan uitstekend overweg met accenten, technische termen en meerdere sprekers. Bij uitdagende audio helpen onze slimme verbeteringsfuncties de resultaten te verbeteren."
+            },
+            {
+              "q": "talen",
+              "question": "Welke talen ondersteunen jullie?",
+              "answer": "We ondersteunen transcriptie in meer dan 100 talen, waaronder Engels, Spaans, Mandarijn, Hindi, Arabisch, Frans en meer. Bovendien kunt u uw transcripties vertalen naar 249 verschillende talen, waardoor ze perfect zijn voor internationale content."
+            },
+            {
+              "q": "snelheid",
+              "question": "Hoe snel is de transcriptie?",
+              "answer": "Razendsnel! Een audiobestand van 1 uur wordt doorgaans in minder dan 5 minuten verwerkt. Met batchverwerking kun je 50 bestanden tegelijk uploaden en parallel laten verwerken. De meeste gebruikers worden 's nachts wakker en ontdekken dat hun hele bibliotheek is getranscribeerd."
+            },
+            {
+              "q": "annulering",
+              "question": "Kan ik op elk moment annuleren?",
+              "answer": "Absoluut! Geen contracten, geen annuleringskosten. Je kunt je abonnement op elk moment upgraden, downgraden of opzeggen via je dashboard. Als je opzegt, behoud je toegang tot het einde van je factureringsperiode."
+            },
+            {
+              "q": "beveiliging",
+              "question": "Zijn mijn gegevens veilig?",
+              "answer": "Uw veiligheid is onze prioriteit. We zijn SOC 2-gecertificeerd, gebruiken 256-bits encryptie voor alle gegevens en gebruiken uw content nooit om onze modellen te trainen. U kunt uw bestanden op elk moment verwijderen en we verwijderen ze automatisch na 30 dagen. Voldoet aan de AVG en CCPA."
+            },
+            {
+              "q": "export_formaten",
+              "question": "Welke exportformaten zijn beschikbaar?",
+              "answer": "Download je transcripties in elk gewenst formaat: PDF, Word (DOCX), Excel, CSV, SRT-ondertitels, platte tekst (TXT) en VTT-ondertitels. Perfect voor elke workflow."
+            },
+            {
+              "q": "bestandsformaten",
+              "question": "Welke audio- en videobestanden kan ik uploaden?",
+              "answer": "We ondersteunen vrijwel elk audio- en videoformaat dat u tegenkomt: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV en meer. Als u het kunt afspelen, kunnen wij het transcriberen."
+            }
+          ]
     },
     CTASection: {
       "title": "Klaar om je grenzen te verleggen?",
@@ -1608,93 +1609,93 @@ let message = {
       "highlighted_text": "Geen verborgen hoofdletters.",
       "description": "Kies het abonnement dat bij je past. Upgrade of downgrade op elk gewenst moment. Geen contracten, geen verrassingen.",
       "plans": [
-        {
-          "name": "Vrij",
-          "price": "$0",
-          "period": "maand",
-          "discount": "Ideaal om onze service uit te proberen",
-          "limits": {
-            "title": "Dagelijkse limieten",
-            "items": [
-              "3 bestanden/dag (≈90 min totaal/dag)",
-              "Tot 30 min per bestand (≤250 MB)",
-              "Upload 1 bestand per keer",
-              "Standaard prioriteitswachtrij"
-            ]
-          },
-          "features": {
-            "title": "Functies",
-            "items": [
-              "100+ talen",
-              "Luidsprekerlabels",
-              "Vertaling",
-              "Alle exportformaten"
-            ]
-          },
-          "cta": {
-            "text": "Start gratis. Geen creditcard nodig.",
-            "button": "Gratis starten"
-          }
-        },
-        {
-          "name": "Pro Maandelijks",
-          "price": "$17,99",
-          "period": "maand",
-          "discount": "$ 9,99 voor de eerste maand",
-          "limits": {
-            "title": "Geen maandelijkse limiet",
-            "items": [
-              "Onbeperkt aantal minuten",
-              "Tot 10 uur / 5 GB per bestand",
-              "Upload 50 bestanden tegelijk",
-              "Prioriteitswachtrij"
-            ]
-          },
-          "features": {
-            "title": "Alles in Gratis, plus",
-            "items": [
-              "Tijdstempels op woordniveau",
-              "Geavanceerde sprekeridentificatie",
-              "Geformatteerde alinea's en leestekens",
-              "Prioritaire ondersteuning"
-            ]
-          },
-          "cta": {
-            "text": "Onbeperkt aantal minuten. Prioriteitssnelheid. Batchuploads.",
-            "button": "Ga Pro"
-          },
-          "badge": "Meest populair"
-        },
-        {
-          "name": "Pro Jaarlijks",
-          "price": "$8,99",
-          "period": "maand",
-          "discount": "Jaarlijks gefactureerd $ 107,88",
-          "limits": {
-            "title": "Hetzelfde als Pro Monthly",
-            "items": [
-              "Onbeperkt aantal minuten",
-              "Tot 10 uur / 5 GB per bestand",
-              "Upload 50 bestanden tegelijk",
-              "Prioriteitswachtrij"
-            ]
-          },
-          "features": {
-            "title": "Alles in Gratis, plus",
-            "items": [
-              "Tijdstempels op woordniveau",
-              "Geavanceerde sprekeridentificatie",
-              "Geformatteerde alinea's en leestekens",
-              "Prioritaire ondersteuning"
-            ]
-          },
-          "cta": {
-            "text": "Onbeperkt aantal minuten. Prioriteitssnelheid. Batchuploads.",
-            "button": "Ga Pro"
-          },
-          "badge": "Beste waarde - Bespaar 50%"
-        }
-      ],
+            {
+              "name": "Vrij",
+              "price": "$0",
+              "period": "maand",
+              "discount": "Ideaal om onze service uit te proberen",
+              "limits": {
+                "title": "Dagelijkse limieten",
+                "items": [
+                  "3 bestanden/dag (≈90 min totaal/dag)",
+                  "Tot 30 min per bestand (≤250 MB)",
+                  "Upload 1 bestand per keer",
+                  "Standaard prioriteitswachtrij"
+                ]
+              },
+              "features": {
+                "title": "Functies",
+                "items": [
+                  "100+ talen",
+                  "Luidsprekerlabels",
+                  "Vertaling",
+                  "Alle exportformaten"
+                ]
+              },
+              "cta": {
+                "text": "Start gratis. Geen creditcard nodig.",
+                "button": "Gratis starten"
+              }
+            },
+            {
+              "name": "Pro Maandelijks",
+              "price": "$17,99",
+              "period": "maand",
+              "discount": "$ 9,99 voor de eerste maand",
+              "limits": {
+                "title": "Geen maandelijkse limiet",
+                "items": [
+                  "Onbeperkt aantal minuten",
+                  "Tot 10 uur / 5 GB per bestand",
+                  "Upload 50 bestanden tegelijk",
+                  "Prioriteitswachtrij"
+                ]
+              },
+              "features": {
+                "title": "Alles in Gratis, plus",
+                "items": [
+                  "Tijdstempels op woordniveau",
+                  "Geavanceerde sprekeridentificatie",
+                  "Geformatteerde alinea's en leestekens",
+                  "Prioritaire ondersteuning"
+                ]
+              },
+              "cta": {
+                "text": "Onbeperkt aantal minuten. Prioriteitssnelheid. Batchuploads.",
+                "button": "Ga Pro"
+              },
+              "badge": "Meest populair"
+            },
+            {
+              "name": "Pro Jaarlijks",
+              "price": "$8,99",
+              "period": "maand",
+              "discount": "Jaarlijks gefactureerd $ 107,88",
+              "limits": {
+                "title": "Hetzelfde als Pro Monthly",
+                "items": [
+                  "Onbeperkt aantal minuten",
+                  "Tot 10 uur / 5 GB per bestand",
+                  "Upload 50 bestanden tegelijk",
+                  "Prioriteitswachtrij"
+                ]
+              },
+              "features": {
+                "title": "Alles in Gratis, plus",
+                "items": [
+                  "Tijdstempels op woordniveau",
+                  "Geavanceerde sprekeridentificatie",
+                  "Geformatteerde alinea's en leestekens",
+                  "Prioritaire ondersteuning"
+                ]
+              },
+              "cta": {
+                "text": "Onbeperkt aantal minuten. Prioriteitssnelheid. Batchuploads.",
+                "button": "Ga Pro"
+              },
+              "badge": "Beste waarde - Bespaar 50%"
+            }
+          ],
       "disclaimer": '"Onbeperkt" betekent geen maandelijkse limiet en geen kunstmatige vertraging. Fair use is van toepassing op misbruik van automatisering of herdistributie.'
     },
     ComparisonTable: {
@@ -1704,115 +1705,115 @@ let message = {
         "subtitle": "Bekijk precies wat je met elk abonnement krijgt. Geen verborgen beperkingen."
       },
       "plans": [
-        "Functies",
-        "Vrij",
-        "Pro Maandelijks",
-        "Pro Jaarlijks"
-      ],
+              "Functies",
+              "Vrij",
+              "Pro Maandelijks",
+              "Pro Jaarlijks"
+            ],
       "features": [
-        {
-          "name": "Prijs",
-          "values": [
-            "$0/maand",
             {
-              "main": "$17,99/maand",
-              "note": "$9,99 eerste maand"
+              "name": "Prijs",
+              "values": [
+                "$0/maand",
+                {
+                  "main": "$17,99/maand",
+                  "note": "$9,99 eerste maand"
+                },
+                {
+                  "main": "$8,99/maand",
+                  "note": "Gefactureerd $ 107,88/jaar"
+                }
+              ]
             },
             {
-              "main": "$8,99/maand",
-              "note": "Gefactureerd $ 107,88/jaar"
+              "name": "Maandelijkse minuten",
+              "values": ["~2.700 (90/dag)", "Onbeperkt", "Onbeperkt"]
+            },
+            {
+              "name": "Maximale bestandsduur",
+              "values": ["30 minuten", "10 uur", "10 uur"]
+            },
+            {
+              "name": "Maximale bestandsgrootte",
+              "values": ["250 MB", "5 GB", "5 GB"]
+            },
+            {
+              "name": "Batch-uploads",
+              "values": ["1 bestand", "50 bestanden", "50 bestanden"]
+            },
+            {
+              "name": "Verwerkingssnelheid",
+              "values": ["Standaard", "Prioriteit", "Prioriteit"]
+            },
+            {
+              "name": "Ondersteunde talen",
+              "values": ["100+ talen", "100+ talen", "100+ talen"]
+            },
+            {
+              "name": "Vertaling",
+              "values": ["WAAR", "WAAR", "WAAR"]
+            },
+            {
+              "name": "Sprekeridentificatie",
+              "values": ["Basis", "Geavanceerd (20 sprekers)", "Geavanceerd (20 sprekers)"]
+            },
+            {
+              "name": "Tijdstempels op woordniveau",
+              "values": ["vals", "WAAR", "WAAR"]
+            },
+            {
+              "name": "Geformatteerde alinea's",
+              "values": ["vals", "WAAR", "WAAR"]
+            },
+            {
+              "name": "Exportformaten",
+              "values": ["Alle formaten", "Alle formaten", "Alle formaten"]
+            },
+            {
+              "name": "Steun",
+              "values": ["E-mail", "Prioriteit e-mail", "Prioriteit e-mail"]
+            },
+            {
+              "name": "Gegevensretentie",
+              "values": ["30 dagen", "Voor altijd", "Voor altijd"]
             }
           ]
-        },
-        {
-          "name": "Maandelijkse minuten",
-          "values": ["~2.700 (90/dag)", "Onbeperkt", "Onbeperkt"]
-        },
-        {
-          "name": "Maximale bestandsduur",
-          "values": ["30 minuten", "10 uur", "10 uur"]
-        },
-        {
-          "name": "Maximale bestandsgrootte",
-          "values": ["250 MB", "5 GB", "5 GB"]
-        },
-        {
-          "name": "Batch-uploads",
-          "values": ["1 bestand", "50 bestanden", "50 bestanden"]
-        },
-        {
-          "name": "Verwerkingssnelheid",
-          "values": ["Standaard", "Prioriteit", "Prioriteit"]
-        },
-        {
-          "name": "Ondersteunde talen",
-          "values": ["100+ talen", "100+ talen", "100+ talen"]
-        },
-        {
-          "name": "Vertaling",
-          "values": ["WAAR", "WAAR", "WAAR"]
-        },
-        {
-          "name": "Sprekeridentificatie",
-          "values": ["Basis", "Geavanceerd (20 sprekers)", "Geavanceerd (20 sprekers)"]
-        },
-        {
-          "name": "Tijdstempels op woordniveau",
-          "values": ["vals", "WAAR", "WAAR"]
-        },
-        {
-          "name": "Geformatteerde alinea's",
-          "values": ["vals", "WAAR", "WAAR"]
-        },
-        {
-          "name": "Exportformaten",
-          "values": ["Alle formaten", "Alle formaten", "Alle formaten"]
-        },
-        {
-          "name": "Steun",
-          "values": ["E-mail", "Prioriteit e-mail", "Prioriteit e-mail"]
-        },
-        {
-          "name": "Gegevensretentie",
-          "values": ["30 dagen", "Voor altijd", "Voor altijd"]
-        }
-      ]
     },
     FAQ: {
       "title": "Veelgestelde vragen",
       "titleHighligt": "Vragen",
       "items": [
-        {
-          "q": "onbeperkt_beleid",
-          "question": "Is het echt onbeperkt?",
-          "answer": "Ja! Pro-abonnementen hebben geen maandelijkse bellimieten. De enige limieten zijn technisch van aard: maximale bestandsduur van 10 uur en bestandsgrootte van 5 GB. U kunt zoveel bestanden verwerken als u nodig hebt."
-        },
-        {
-          "q": "plan_wijziging",
-          "question": "Kan ik mijn plannen op elk moment wijzigen?",
-          "answer": "Absoluut! Je kunt je abonnement op elk moment opzeggen via je dashboard. Upgraden of downgraden wanneer je maar wilt."
-        },
-        {
-          "q": "betaalmethoden",
-          "question": "Welke betaalmethoden accepteren jullie?",
-          "answer": "Wij accepteren alle gangbare creditcards, betaalpassen en PayPal voor veilige en probleemloze betalingen."
-        },
-        {
-          "q": "gratis_proefperiode",
-          "question": "Is er een gratis proefversie voor Pro?",
-          "answer": "Ja! Probeer Pro 7 dagen gratis, geen creditcard vereist. Bovendien krijg je de eerste maand 45% korting wanneer je je abonneert."
-        },
-        {
-          "q": "bestandsretentie",
-          "question": "Hoe lang worden mijn bestanden bewaard?",
-          "answer": "Gratis abonnement: 30 dagen. Pro-abonnementen: voor altijd! Je transcripties zijn altijd beschikbaar in je account."
-        },
-        {
-          "q": "databeveiliging",
-          "question": "Hoe zit het met de gegevensbeveiliging?",
-          "answer": "We zijn SOC 2-gecertificeerd en gebruiken 256-bits encryptie. We gebruiken uw content nooit om onze modellen te trainen. Uw gegevens zijn van u."
-        }
-      ]
+            {
+              "q": "onbeperkt_beleid",
+              "question": "Is het echt onbeperkt?",
+              "answer": "Ja! Pro-abonnementen hebben geen maandelijkse bellimieten. De enige limieten zijn technisch van aard: maximale bestandsduur van 10 uur en bestandsgrootte van 5 GB. U kunt zoveel bestanden verwerken als u nodig hebt."
+            },
+            {
+              "q": "plan_wijziging",
+              "question": "Kan ik mijn plannen op elk moment wijzigen?",
+              "answer": "Absoluut! Je kunt je abonnement op elk moment opzeggen via je dashboard. Upgraden of downgraden wanneer je maar wilt."
+            },
+            {
+              "q": "betaalmethoden",
+              "question": "Welke betaalmethoden accepteren jullie?",
+              "answer": "Wij accepteren alle gangbare creditcards, betaalpassen en PayPal voor veilige en probleemloze betalingen."
+            },
+            {
+              "q": "gratis_proefperiode",
+              "question": "Is er een gratis proefversie voor Pro?",
+              "answer": "Ja! Probeer Pro 7 dagen gratis, geen creditcard vereist. Bovendien krijg je de eerste maand 45% korting wanneer je je abonneert."
+            },
+            {
+              "q": "bestandsretentie",
+              "question": "Hoe lang worden mijn bestanden bewaard?",
+              "answer": "Gratis abonnement: 30 dagen. Pro-abonnementen: voor altijd! Je transcripties zijn altijd beschikbaar in je account."
+            },
+            {
+              "q": "databeveiliging",
+              "question": "Hoe zit het met de gegevensbeveiliging?",
+              "answer": "We zijn SOC 2-gecertificeerd en gebruiken 256-bits encryptie. We gebruiken uw content nooit om onze modellen te trainen. Uw gegevens zijn van u."
+            }
+          ]
     },
     CTA: {
       "title": "Klaar voor onbeperkt?",
@@ -2809,122 +2810,122 @@ let message = {
       part2: {
         "title": "Zo zet je in 3 eenvoudige stappen een YouTube-video om in een downloadbaar MP4-bestand",
         "steps": [
-          {
-            title: "Kopieer de URL",
-            content: "Open de YouTube-video die u wilt afspelen en kopieer de link uit de adresbalk van uw browser."
-          },
-          {
-            title: "Plak de link",
-            content: "Ga naar uw videodownloadtool en plak de URL in het invoerveld."
-          },
-          {
-            title: "Download de MP4",
-            content: "Zodra het bestand is verwerkt, klikt u op de downloadknop om uw MP4-bestand op te slaan."
-          }
-        ]
+                {
+                  title: "Kopieer de URL",
+                  content: "Open de YouTube-video die u wilt afspelen en kopieer de link uit de adresbalk van uw browser."
+                },
+                {
+                  title: "Plak de link",
+                  content: "Ga naar uw videodownloadtool en plak de URL in het invoerveld."
+                },
+                {
+                  title: "Download de MP4",
+                  content: "Zodra het bestand is verwerkt, klikt u op de downloadknop om uw MP4-bestand op te slaan."
+                }
+              ]
       },
       part3: {
         content: [
-          "Heb je ooit de behoefte gehad om YouTube-video's offline te bekijken?",
-          "Of je nu in de metro reist, in het vliegtuig zit, een belangrijke tutorial bestudeert, je verdiept in content die je vaardigheden ontwikkelt of belangrijk videomateriaal archiveert: betrouwbare offline toegang is een veelvoorkomende frustratie. Dit is waar onze downloader uitblinkt.",
-          "Met de downloader kun je snel en eenvoudig YouTube-video's converteren naar MP4-formaat om te downloaden. Sla ze op je apparaat op en bekijk ze wanneer je maar wilt.",
-          "Het proces is snel, eenvoudig en probleemloos. Na het downloaden kunt u genieten van uw favoriete video's, waar en wanneer u maar wilt – geen internet nodig."
-        ]
+                "Heb je ooit de behoefte gehad om YouTube-video's offline te bekijken?",
+                "Of je nu in de metro reist, in het vliegtuig zit, een belangrijke tutorial bestudeert, je verdiept in content die je vaardigheden ontwikkelt of belangrijk videomateriaal archiveert: betrouwbare offline toegang is een veelvoorkomende frustratie. Dit is waar onze downloader uitblinkt.",
+                "Met de downloader kun je snel en eenvoudig YouTube-video's converteren naar MP4-formaat om te downloaden. Sla ze op je apparaat op en bekijk ze wanneer je maar wilt.",
+                "Het proces is snel, eenvoudig en probleemloos. Na het downloaden kunt u genieten van uw favoriete video's, waar en wanneer u maar wilt – geen internet nodig."
+              ]
       },
       part4: {
         content: ["Dit zijn de 5 belangrijkste voordelen van downloaden", "YouTube-video's als MP4-bestanden"],
         list: [
-          {
-            title: "Bespaar op datakosten:",
-            content: "Normaal gesproken verbruikt het bekijken van video's op YouTube veel mobiele data. Door ze te downloaden en offline te bekijken, kunt u deze onnodige kosten vermijden."
-          },
-          {
-            title: "Kijk waar en wanneer je maar wilt:",
-            content: "Geniet probleemloos van je video's, zelfs met een haperende internetverbinding. Geen zorgen meer over buffering."
-          },
-          {
-            title: "Eenvoudig archiveren en bewaren:",
-            content: "Door video's op te slaan als MP4's kunt u eenvoudig uw persoonlijke collectie opbouwen, vooral voor content die u echt waardevol of belangrijk vindt."
-          },
-          {
-            title: "Eenvoudiger delen:",
-            content: "Het delen van een MP4-bestand is veel handiger dan het versturen van een link. Je kunt het videobestand rechtstreeks via apps zoals WhatsApp of Instagram versturen, waardoor je niet meer naar YouTube hoeft te gaan."
-          },
-          {
-            title: "Direct bekijken, gedeelde momenten:",
-            content: "Enthousiast je favoriete video laten zien aan vrienden of familie in de buurt? Met de MP4 gedownload, kun je hem meteen samen soepel bekijken, zonder ongemakkelijke pauzes tijdens het laden."
-          }
-        ]
+                {
+                  title: "Bespaar op datakosten:",
+                  content: "Normaal gesproken verbruikt het bekijken van video's op YouTube veel mobiele data. Door ze te downloaden en offline te bekijken, kunt u deze onnodige kosten vermijden."
+                },
+                {
+                  title: "Kijk waar en wanneer je maar wilt:",
+                  content: "Geniet probleemloos van je video's, zelfs met een haperende internetverbinding. Geen zorgen meer over buffering."
+                },
+                {
+                  title: "Eenvoudig archiveren en bewaren:",
+                  content: "Door video's op te slaan als MP4's kunt u eenvoudig uw persoonlijke collectie opbouwen, vooral voor content die u echt waardevol of belangrijk vindt."
+                },
+                {
+                  title: "Eenvoudiger delen:",
+                  content: "Het delen van een MP4-bestand is veel handiger dan het versturen van een link. Je kunt het videobestand rechtstreeks via apps zoals WhatsApp of Instagram versturen, waardoor je niet meer naar YouTube hoeft te gaan."
+                },
+                {
+                  title: "Direct bekijken, gedeelde momenten:",
+                  content: "Enthousiast je favoriete video laten zien aan vrienden of familie in de buurt? Met de MP4 gedownload, kun je hem meteen samen soepel bekijken, zonder ongemakkelijke pauzes tijdens het laden."
+                }
+              ]
       },
       part5: {
         title: "Waarom onze downloader opvalt",
         cards: [
-          {
-            title: "Eenvoud met één klik",
-            content: "Eenvoudige installatie en intuïtieve bediening."
-          },
-          {
-            title: "Razendsnel, onbeperkt",
-            content: "Converteer en download op topsnelheid — geen caps, geen limieten."
-          },
-          {
-            title: "Converteer direct",
-            content: "Uw bestanden worden direct verwerkt, u hoeft niet te wachten."
-          },
-          {
-            title: "Geen advertenties, geen afleidingen",
-            content: "Geniet van een overzichtelijke interface zonder pop-ups, banners of onderbrekingen: alleen naadloze videoconversie."
-          },
-          {
-            icon: "5",
-            color: "#DEE5FF",
-            title: "Originele kwaliteit gegarandeerd",
-            content: "Uw downloads behouden de volledige resolutie van de bronvideo, zodat deze altijd tot op de pixel perfect wordt afgespeeld."
-          },
-          {
-            icon: "6",
-            color: "#DEF6EE",
-            title: "Werkt overal",
-            content: "Volledig compatibel met elke browser, op elk apparaat."
-          }
-        ]
+                {
+                  title: "Eenvoud met één klik",
+                  content: "Eenvoudige installatie en intuïtieve bediening."
+                },
+                {
+                  title: "Razendsnel, onbeperkt",
+                  content: "Converteer en download op topsnelheid — geen caps, geen limieten."
+                },
+                {
+                  title: "Converteer direct",
+                  content: "Uw bestanden worden direct verwerkt, u hoeft niet te wachten."
+                },
+                {
+                  title: "Geen advertenties, geen afleidingen",
+                  content: "Geniet van een overzichtelijke interface zonder pop-ups, banners of onderbrekingen: alleen naadloze videoconversie."
+                },
+                {
+                  icon: "5",
+                  color: "#DEE5FF",
+                  title: "Originele kwaliteit gegarandeerd",
+                  content: "Uw downloads behouden de volledige resolutie van de bronvideo, zodat deze altijd tot op de pixel perfect wordt afgespeeld."
+                },
+                {
+                  icon: "6",
+                  color: "#DEF6EE",
+                  title: "Werkt overal",
+                  content: "Volledig compatibel met elke browser, op elk apparaat."
+                }
+              ]
       },
       part6: {
         title: ["Maximaliseer uw YouTube-videodownloads", "Met de Downloader"],
         content: [
-          "Moeiteloze conversie van YouTube naar MP4: snel, eenvoudig en gratis.",
-          "Dat is waar wij in uitblinken. Onze gebruiksvriendelijke interface is ontworpen voor iedereen – geen technische vaardigheden vereist. Ongeacht je ervaringsniveau kun je video's direct converteren. Aanmelden is niet nodig: je krijgt direct precies wat je nodig hebt.",
-          "U kunt er zeker van zijn dat uw gedownloade MP4's de originele videokwaliteit en helderheid behouden, precies zoals u ze op YouTube hebt bekeken.",
-          "Werkt overal waar u bent. Volledig compatibel met alle belangrijke platforms en apparaten. Of u nu Windows, macOS, Linux, Android of iOS gebruikt – met een smartphone, tablet of desktop – u kunt video's naadloos downloaden."
-        ]
+                "Moeiteloze conversie van YouTube naar MP4: snel, eenvoudig en gratis.",
+                "Dat is waar wij in uitblinken. Onze gebruiksvriendelijke interface is ontworpen voor iedereen – geen technische vaardigheden vereist. Ongeacht je ervaringsniveau kun je video's direct converteren. Aanmelden is niet nodig: je krijgt direct precies wat je nodig hebt.",
+                "U kunt er zeker van zijn dat uw gedownloade MP4's de originele videokwaliteit en helderheid behouden, precies zoals u ze op YouTube hebt bekeken.",
+                "Werkt overal waar u bent. Volledig compatibel met alle belangrijke platforms en apparaten. Of u nu Windows, macOS, Linux, Android of iOS gebruikt – met een smartphone, tablet of desktop – u kunt video's naadloos downloaden."
+              ]
       },
       part7: {
         title: "Belangrijke vragen over het downloaden van YouTube-video's",
         list: [
-          {
-            question: "Kan ik een YouTube-video downloaden als er auteursrecht op rust?",
-            answer: "Het downloaden van auteursrechtelijk beschermde YouTube-video's zonder toestemming van de auteursrechthebbende is illegaal."
-          },
-          {
-            question: "Is deze downloadtool veilig?",
-            answer: "Ja, het is veilig en betrouwbaar. We vragen geen persoonlijke gegevens van gebruikers en nemen strenge maatregelen tegen virussen. Wees altijd voorzichtig bij het downloaden van bestanden van internet: klik niet op verdachte links en download geen dubieuze bestanden."
-          },
-          {
-            question: "Welke talen worden ondersteund door YouTube naar MP4 downloaden?",
-            answer: "Onze service ondersteunt het downloaden van YouTube-video's in alle populaire talen."
-          },
-          {
-            question: "Welke factoren beïnvloeden de downloadtijd van een YouTube-video?",
-            answer: "Hoewel wij ervoor zorgen dat u de snelst mogelijke downloadervaring krijgt, wordt de downloadtijd ook beïnvloed door factoren als de lengte van de video en de snelheid van uw internetverbinding."
-          },
-          {
-            question: "Waar wordt een MP4-video die ik met mijn smartphone download, opgeslagen?"
-          },
-          {
-            question: "Vermindert het downloaden van een YouTube-video als MP4 de videokwaliteit?",
-            answer: "Nee. Als u YouTube-video's downloadt als MP4 met onze tool, blijft de originele videokwaliteit behouden. Tijdens het conversieproces blijft de bronkwaliteit behouden, waardoor u dezelfde kijkervaring krijgt als op YouTube."
-          }
-        ]
+                {
+                  question: "Kan ik een YouTube-video downloaden als er auteursrecht op rust?",
+                  answer: "Het downloaden van auteursrechtelijk beschermde YouTube-video's zonder toestemming van de auteursrechthebbende is illegaal."
+                },
+                {
+                  question: "Is deze downloadtool veilig?",
+                  answer: "Ja, het is veilig en betrouwbaar. We vragen geen persoonlijke gegevens van gebruikers en nemen strenge maatregelen tegen virussen. Wees altijd voorzichtig bij het downloaden van bestanden van internet: klik niet op verdachte links en download geen dubieuze bestanden."
+                },
+                {
+                  question: "Welke talen worden ondersteund door YouTube naar MP4 downloaden?",
+                  answer: "Onze service ondersteunt het downloaden van YouTube-video's in alle populaire talen."
+                },
+                {
+                  question: "Welke factoren beïnvloeden de downloadtijd van een YouTube-video?",
+                  answer: "Hoewel wij ervoor zorgen dat u de snelst mogelijke downloadervaring krijgt, wordt de downloadtijd ook beïnvloed door factoren als de lengte van de video en de snelheid van uw internetverbinding."
+                },
+                {
+                  question: "Waar wordt een MP4-video die ik met mijn smartphone download, opgeslagen?"
+                },
+                {
+                  question: "Vermindert het downloaden van een YouTube-video als MP4 de videokwaliteit?",
+                  answer: "Nee. Als u YouTube-video's downloadt als MP4 met onze tool, blijft de originele videokwaliteit behouden. Tijdens het conversieproces blijft de bronkwaliteit behouden, waardoor u dezelfde kijkervaring krijgt als op YouTube."
+                }
+              ]
       }
     }
   },
@@ -2940,68 +2941,68 @@ let message = {
       "highlighted_text": "Invloed",
       "subtitle": "Wereldwijde communicatie mogelijk maken met geavanceerde AI-technologie",
       "metrics": [
-        {
-          "value": "96%+",
-          "label": "Nauwkeurigheidspercentage",
-          "description": "Toonaangevende transcriptienauwkeurigheid met geavanceerde AI"
-        },
-        {
-          "value": "100+",
-          "label": "Ondersteunde talen",
-          "description": "Herkenning van gesproken woorden voor wereldwijde content"
-        },
-        {
-          "value": "249+",
-          "label": "Vertalingstalen",
-          "description": "Vertaal getranscribeerde tekst naar vrijwel elke taal"
-        }
-      ]
+            {
+              "value": "96%+",
+              "label": "Nauwkeurigheidspercentage",
+              "description": "Toonaangevende transcriptienauwkeurigheid met geavanceerde AI"
+            },
+            {
+              "value": "100+",
+              "label": "Ondersteunde talen",
+              "description": "Herkenning van gesproken woorden voor wereldwijde content"
+            },
+            {
+              "value": "249+",
+              "label": "Vertalingstalen",
+              "description": "Vertaal getranscribeerde tekst naar vrijwel elke taal"
+            }
+          ]
     },
     Mission: {
       "title": "Waarom kiezen",
       "highlighted_text": "NeverCap",
       "subtitle": "Wij geloven in het doorbreken van taalbarrières en het toegankelijk maken van content voor iedereen",
       "features": [
-        {
-          "icon": "🎯",
-          "title": "Ongeëvenaarde nauwkeurigheid",
-          "description": "We verbeteren onze AI-modellen voortdurend om transcriptienauwkeurigheidspercentages van meer dan 96% te leveren. Sommige belangrijke talen bereiken dankzij geavanceerde optimalisatie zelfs een nauwkeurigheid van 99%."
-        },
-        {
-          "icon": "🌍",
-          "title": "Wereldwijde taalondersteuning",
-          "description": "Ondersteuning voor meer dan 100 talen in gesproken woordherkenning en vertaalmogelijkheden voor meer dan 249 talen, waardoor uw content echt wereldwijd beschikbaar is."
-        },
-        {
-          "icon": "⚡",
-          "title": "Bliksemsnelle verwerking",
-          "description": "Verwerk uren aan audio- en videocontent in minuten, niet in uren. Onze geoptimaliseerde AI-pipeline zorgt ervoor dat u uw transcripties snel ontvangt zonder dat dit ten koste gaat van de kwaliteit."
-        },
-        {
-          "icon": "🔒",
-          "title": "Beveiliging op ondernemingsniveau",
-          "description": "De veiligheid van uw gegevens is onze prioriteit. We gebruiken industriestandaard encryptie en voldoen aan de wereldwijde privacyregelgeving om uw content veilig en vertrouwelijk te houden."
-        }
-      ]
+            {
+              "icon": "🎯",
+              "title": "Ongeëvenaarde nauwkeurigheid",
+              "description": "We verbeteren onze AI-modellen voortdurend om transcriptienauwkeurigheidspercentages van meer dan 96% te leveren. Sommige belangrijke talen bereiken dankzij geavanceerde optimalisatie zelfs een nauwkeurigheid van 99%."
+            },
+            {
+              "icon": "🌍",
+              "title": "Wereldwijde taalondersteuning",
+              "description": "Ondersteuning voor meer dan 100 talen in gesproken woordherkenning en vertaalmogelijkheden voor meer dan 249 talen, waardoor uw content echt wereldwijd beschikbaar is."
+            },
+            {
+              "icon": "⚡",
+              "title": "Bliksemsnelle verwerking",
+              "description": "Verwerk uren aan audio- en videocontent in minuten, niet in uren. Onze geoptimaliseerde AI-pipeline zorgt ervoor dat u uw transcripties snel ontvangt zonder dat dit ten koste gaat van de kwaliteit."
+            },
+            {
+              "icon": "🔒",
+              "title": "Beveiliging op ondernemingsniveau",
+              "description": "De veiligheid van uw gegevens is onze prioriteit. We gebruiken industriestandaard encryptie en voldoen aan de wereldwijde privacyregelgeving om uw content veilig en vertrouwelijk te houden."
+            }
+          ]
     },
     Company: {
       "title": "Bedrijf",
       "highlighted_text": "Informatie",
       "subtitle": "Neem contact met ons op voor vragen of ondersteuning",
       "details": [
-        {
-          "label": "Bedrijfsnaam",
-          "value": "SCRIBIFY AI INC"
-        },
-        {
-          "label": "Hoofdkwartier",
-          "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "Verenigde Staten"]
-        },
-        {
-          "label": "Neem contact met ons op",
-          "value": ["e-mail", "Ondersteuning 24/7 beschikbaar"]
-        }
-      ]
+            {
+              "label": "Bedrijfsnaam",
+              "value": "SCRIBIFY AI INC"
+            },
+            {
+              "label": "Hoofdkwartier",
+              "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "Verenigde Staten"]
+            },
+            {
+              "label": "Neem contact met ons op",
+              "value": ["e-mail", "Ondersteuning 24/7 beschikbaar"]
+            }
+          ]
     },
     CTA: {
       "title": "Klaar om het verschil te ervaren?",

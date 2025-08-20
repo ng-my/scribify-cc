@@ -2,7 +2,7 @@
 let message = {
   // Ana Sayfa
   HomePage: {
-    home: "Ana Sayfa",
+    home: "Tüm Transkriptler",
     times: "Günde {times} ücretsiz transkripsiyon, bugün {left} kaldı.",
     tips: "Sınırsız transkripsiyon için Pro'ya yükseltin.",
     update: "Hemen Yükselt",
@@ -654,8 +654,9 @@ let message = {
       "Her dosya en fazla 30 dakika uzunluğunda olabilir. Bir seferde 1 dosya yükleyin.",
     uploadWithinHours: "10 Saatlik Yüklemeler",
     yourSubscription: "Aboneliğiniz {time} tarihinde iptal edilecek.",
-    save: "Tasarruf etmek"
-  },
+    save: "Tasarruf etmek",
+      freeversion2: "Ücretsiz Plan"
+},
   // Dil Eşleştirme
   LanguageMap: {
     sysLanguagesMap: {
@@ -1055,20 +1056,20 @@ let message = {
     Company: "Şirket",
     featureMenus: ["Sınırsız Transkripsiyon", "Toplu Yükleme", "%96 Doğruluk"],
     useCaseMenus: [
-      "Tüm Kullanım Örnekleri",
-      "Podcast yayıncıları",
-      "Gazeteciler",
-      "İçerik Oluşturucuları",
-      "Araştırmacılar",
-      "İş Ekipleri",
-      "Eğitimciler"
-    ],
+          "Tüm Kullanım Örnekleri",
+          "Podcast yayıncıları",
+          "Gazeteciler",
+          "İçerik Oluşturucuları",
+          "Araştırmacılar",
+          "İş Ekipleri",
+          "Eğitimciler"
+        ],
     companyMenus: [
-      "Hakkında",
-      "Fiyatlandırma",
-      "Mahremiyet",
-      "Şartlar"
-    ]
+          "Hakkında",
+          "Fiyatlandırma",
+          "Mahremiyet",
+          "Şartlar"
+        ]
   },
   Index: {
     Hero: {
@@ -1168,47 +1169,47 @@ let message = {
       "title": "Sıkça Sorulan Sorular",
       "titleHighlight": "Sorular",
       "questions": [
-        {
-          "q": "sınırsız_politika",
-          "question": "Gerçekten sınırsız mı? İşin püf noktası ne?",
-          "answer": "Evet, gerçekten sınırsız! Aylık dakika sınırı yok, aşım ücreti yok. Tek sınırlama teknik: tek tek dosyalar en fazla 10 saat uzunluğunda veya 5 GB boyutunda olabilir ve aynı anda 50 dosya işleyebilirsiniz. Ancak, tüm ay boyunca istediğiniz kadar toplu yükleme yapabilirsiniz."
-        },
-        {
-          "q": "kesinlik",
-          "question": "Transkript ne kadar doğru?",
-          "answer": "Net ses için %96 doğruluk garantisi veriyoruz. Yapay zekamız milyonlarca saatlik çeşitli içerikle eğitilmiştir ve aksanları, teknik terimleri ve birden fazla konuşmacıyı olağanüstü bir şekilde ele alır. Zorlu sesler için akıllı iyileştirme özelliklerimiz sonuçları iyileştirmeye yardımcı olur."
-        },
-        {
-          "q": "diller",
-          "question": "Hangi dilleri destekliyorsunuz?",
-          "answer": "İngilizce, İspanyolca, Mandarin, Hintçe, Arapça, Fransızca ve daha fazlası dahil olmak üzere 100'den fazla dilde transkripsiyonu destekliyoruz. Ayrıca, transkriptlerinizi 249 farklı dile çevirebilirsiniz, bu da onu küresel içerikler için mükemmel kılar."
-        },
-        {
-          "q": "hız",
-          "question": "Transkript ne kadar hızlı?",
-          "answer": "Yıldırım hızında! 1 saatlik bir ses dosyası genellikle 5 dakikadan kısa sürede işlenir. Toplu işlemeyle, 50 dosyayı aynı anda yükleyebilir ve paralel olarak işlenmelerini sağlayabilirsiniz. Çoğu kullanıcı uyandığında tüm kütüphanesinin bir gecede yazıya döküldüğünü görür."
-        },
-        {
-          "q": "iptal",
-          "question": "İstediğim zaman iptal edebilir miyim?",
-          "answer": "Kesinlikle! Sözleşme yok, iptal ücreti yok. Aboneliğinizi panonuzdan istediğiniz zaman yükseltebilir, düşürebilir veya iptal edebilirsiniz. İptal ederseniz, fatura döneminizin sonuna kadar erişiminizi korursunuz."
-        },
-        {
-          "q": "güvenlik",
-          "question": "Verilerim güvende mi?",
-          "answer": "Güvenliğiniz bizim önceliğimizdir. SOC 2 sertifikalıyız, tüm veriler için 256 bit şifreleme kullanıyoruz ve modellerimizi eğitmek için içeriğinizi asla kullanmıyoruz. Dosyalarınızı istediğiniz zaman silebilirsiniz ve biz de 30 gün sonra otomatik olarak temizliyoruz. GDPR ve CCPA uyumludur."
-        },
-        {
-          "q": "dışa_aktarma_biçimleri",
-          "question": "Hangi dışa aktarma biçimleri mevcuttur?",
-          "answer": "Transkriptlerinizi ihtiyacınız olan herhangi bir formatta indirin: PDF, Word (DOCX), Excel, CSV, SRT altyazı, düz metin (TXT) ve VTT altyazı. Her türlü iş akışınız için mükemmel."
-        },
-        {
-          "q": "dosya_biçimleri",
-          "question": "Hangi ses ve video dosyalarını yükleyebilirim?",
-          "answer": "Karşılaşabileceğiniz hemen hemen her ses ve video formatını destekliyoruz: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV ve daha fazlası. Eğer siz çalabiliyorsanız, biz de yazıya dökebiliriz."
-        }
-      ]
+            {
+              "q": "sınırsız_politika",
+              "question": "Gerçekten sınırsız mı? İşin püf noktası ne?",
+              "answer": "Evet, gerçekten sınırsız! Aylık dakika sınırı yok, aşım ücreti yok. Tek sınırlama teknik: tek tek dosyalar en fazla 10 saat uzunluğunda veya 5 GB boyutunda olabilir ve aynı anda 50 dosya işleyebilirsiniz. Ancak, tüm ay boyunca istediğiniz kadar toplu yükleme yapabilirsiniz."
+            },
+            {
+              "q": "kesinlik",
+              "question": "Transkript ne kadar doğru?",
+              "answer": "Net ses için %96 doğruluk garantisi veriyoruz. Yapay zekamız milyonlarca saatlik çeşitli içerikle eğitilmiştir ve aksanları, teknik terimleri ve birden fazla konuşmacıyı olağanüstü bir şekilde ele alır. Zorlu sesler için akıllı iyileştirme özelliklerimiz sonuçları iyileştirmeye yardımcı olur."
+            },
+            {
+              "q": "diller",
+              "question": "Hangi dilleri destekliyorsunuz?",
+              "answer": "İngilizce, İspanyolca, Mandarin, Hintçe, Arapça, Fransızca ve daha fazlası dahil olmak üzere 100'den fazla dilde transkripsiyonu destekliyoruz. Ayrıca, transkriptlerinizi 249 farklı dile çevirebilirsiniz, bu da onu küresel içerikler için mükemmel kılar."
+            },
+            {
+              "q": "hız",
+              "question": "Transkript ne kadar hızlı?",
+              "answer": "Yıldırım hızında! 1 saatlik bir ses dosyası genellikle 5 dakikadan kısa sürede işlenir. Toplu işlemeyle, 50 dosyayı aynı anda yükleyebilir ve paralel olarak işlenmelerini sağlayabilirsiniz. Çoğu kullanıcı uyandığında tüm kütüphanesinin bir gecede yazıya döküldüğünü görür."
+            },
+            {
+              "q": "iptal",
+              "question": "İstediğim zaman iptal edebilir miyim?",
+              "answer": "Kesinlikle! Sözleşme yok, iptal ücreti yok. Aboneliğinizi panonuzdan istediğiniz zaman yükseltebilir, düşürebilir veya iptal edebilirsiniz. İptal ederseniz, fatura döneminizin sonuna kadar erişiminizi korursunuz."
+            },
+            {
+              "q": "güvenlik",
+              "question": "Verilerim güvende mi?",
+              "answer": "Güvenliğiniz bizim önceliğimizdir. SOC 2 sertifikalıyız, tüm veriler için 256 bit şifreleme kullanıyoruz ve modellerimizi eğitmek için içeriğinizi asla kullanmıyoruz. Dosyalarınızı istediğiniz zaman silebilirsiniz ve biz de 30 gün sonra otomatik olarak temizliyoruz. GDPR ve CCPA uyumludur."
+            },
+            {
+              "q": "dışa_aktarma_biçimleri",
+              "question": "Hangi dışa aktarma biçimleri mevcuttur?",
+              "answer": "Transkriptlerinizi ihtiyacınız olan herhangi bir formatta indirin: PDF, Word (DOCX), Excel, CSV, SRT altyazı, düz metin (TXT) ve VTT altyazı. Her türlü iş akışınız için mükemmel."
+            },
+            {
+              "q": "dosya_biçimleri",
+              "question": "Hangi ses ve video dosyalarını yükleyebilirim?",
+              "answer": "Karşılaşabileceğiniz hemen hemen her ses ve video formatını destekliyoruz: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV ve daha fazlası. Eğer siz çalabiliyorsanız, biz de yazıya dökebiliriz."
+            }
+          ]
     },
     CTASection: {
       "title": "Sınırlardan Kurtulmaya Hazır Mısınız?",
@@ -1597,93 +1598,93 @@ let message = {
       "highlighted_text": "Gizli Kapak Yok.",
       "description": "İhtiyaçlarınıza uygun planı seçin. İstediğiniz zaman yükseltin veya düşürün. Sözleşme yok, sürpriz yok.",
       "plans": [
-        {
-          "name": "Özgür",
-          "price": "0 dolar",
-          "period": "ay",
-          "discount": "Hizmetimizi denemek için mükemmel",
-          "limits": {
-            "title": "Günlük Limitler",
-            "items": [
-              "3 dosya/gün (toplam ≈90 dk/gün)",
-              "Dosya başına 30 dakikaya kadar (≤250 MB)",
-              "Bir seferde 1 dosya yükleyin",
-              "Standart öncelikli kuyruk"
-            ]
-          },
-          "features": {
-            "title": "Özellikler",
-            "items": [
-              "100'den fazla dil",
-              "Konuşmacı etiketleri",
-              "Çeviri",
-              "Tüm dışa aktarma biçimleri"
-            ]
-          },
-          "cta": {
-            "text": "Ücretsiz başlayın. Kredi kartı gerekmez.",
-            "button": "Ücretsiz Başlayın"
-          }
-        },
-        {
-          "name": "Pro Aylık",
-          "price": "17,99 dolar",
-          "period": "ay",
-          "discount": "İlk ay için 9,99 ABD doları",
-          "limits": {
-            "title": "Aylık Sınır Yok",
-            "items": [
-              "Sınırsız toplam dakika",
-              "Dosya başına 10 saate kadar / 5 GB",
-              "Aynı anda 50 dosya yükleyin",
-              "Öncelikli sıra"
-            ]
-          },
-          "features": {
-            "title": "Ücretsiz olan her şey, artı",
-            "items": [
-              "Kelime düzeyinde zaman damgaları",
-              "Gelişmiş konuşmacı tanımlama",
-              "Biçimlendirilmiş paragraflar ve noktalama işaretleri",
-              "Öncelikli destek"
-            ]
-          },
-          "cta": {
-            "text": "Sınırsız dakika. Öncelikli hız. Toplu yüklemeler.",
-            "button": "Profesyonel Olun"
-          },
-          "badge": "En Popüler"
-        },
-        {
-          "name": "Pro Yıllık",
-          "price": "8,99 dolar",
-          "period": "ay",
-          "discount": "Yıllık 107,88 ABD doları faturalandırılır",
-          "limits": {
-            "title": "Pro Monthly ile aynı",
-            "items": [
-              "Sınırsız toplam dakika",
-              "Dosya başına 10 saate kadar / 5 GB",
-              "Aynı anda 50 dosya yükleyin",
-              "Öncelikli sıra"
-            ]
-          },
-          "features": {
-            "title": "Ücretsiz olan her şey, artı",
-            "items": [
-              "Kelime düzeyinde zaman damgaları",
-              "Gelişmiş konuşmacı tanımlama",
-              "Biçimlendirilmiş paragraflar ve noktalama işaretleri",
-              "Öncelikli destek"
-            ]
-          },
-          "cta": {
-            "text": "Sınırsız dakika. Öncelikli hız. Toplu yüklemeler.",
-            "button": "Profesyonel Olun"
-          },
-          "badge": "En İyi Değer - %50 Tasarruf Edin"
-        }
-      ],
+            {
+              "name": "Özgür",
+              "price": "0 dolar",
+              "period": "ay",
+              "discount": "Hizmetimizi denemek için mükemmel",
+              "limits": {
+                "title": "Günlük Limitler",
+                "items": [
+                  "3 dosya/gün (toplam ≈90 dk/gün)",
+                  "Dosya başına 30 dakikaya kadar (≤250 MB)",
+                  "Bir seferde 1 dosya yükleyin",
+                  "Standart öncelikli kuyruk"
+                ]
+              },
+              "features": {
+                "title": "Özellikler",
+                "items": [
+                  "100'den fazla dil",
+                  "Konuşmacı etiketleri",
+                  "Çeviri",
+                  "Tüm dışa aktarma biçimleri"
+                ]
+              },
+              "cta": {
+                "text": "Ücretsiz başlayın. Kredi kartı gerekmez.",
+                "button": "Ücretsiz Başlayın"
+              }
+            },
+            {
+              "name": "Pro Aylık",
+              "price": "17,99 dolar",
+              "period": "ay",
+              "discount": "İlk ay için 9,99 ABD doları",
+              "limits": {
+                "title": "Aylık Sınır Yok",
+                "items": [
+                  "Sınırsız toplam dakika",
+                  "Dosya başına 10 saate kadar / 5 GB",
+                  "Aynı anda 50 dosya yükleyin",
+                  "Öncelikli sıra"
+                ]
+              },
+              "features": {
+                "title": "Ücretsiz olan her şey, artı",
+                "items": [
+                  "Kelime düzeyinde zaman damgaları",
+                  "Gelişmiş konuşmacı tanımlama",
+                  "Biçimlendirilmiş paragraflar ve noktalama işaretleri",
+                  "Öncelikli destek"
+                ]
+              },
+              "cta": {
+                "text": "Sınırsız dakika. Öncelikli hız. Toplu yüklemeler.",
+                "button": "Profesyonel Olun"
+              },
+              "badge": "En Popüler"
+            },
+            {
+              "name": "Pro Yıllık",
+              "price": "8,99 dolar",
+              "period": "ay",
+              "discount": "Yıllık 107,88 ABD doları faturalandırılır",
+              "limits": {
+                "title": "Pro Monthly ile aynı",
+                "items": [
+                  "Sınırsız toplam dakika",
+                  "Dosya başına 10 saate kadar / 5 GB",
+                  "Aynı anda 50 dosya yükleyin",
+                  "Öncelikli sıra"
+                ]
+              },
+              "features": {
+                "title": "Ücretsiz olan her şey, artı",
+                "items": [
+                  "Kelime düzeyinde zaman damgaları",
+                  "Gelişmiş konuşmacı tanımlama",
+                  "Biçimlendirilmiş paragraflar ve noktalama işaretleri",
+                  "Öncelikli destek"
+                ]
+              },
+              "cta": {
+                "text": "Sınırsız dakika. Öncelikli hız. Toplu yüklemeler.",
+                "button": "Profesyonel Olun"
+              },
+              "badge": "En İyi Değer - %50 Tasarruf Edin"
+            }
+          ],
       "disclaimer": '"Sınırsız" ifadesi, aylık bir sınırlama veya yapay bir yavaşlatma olmadığı anlamına gelir. Adil kullanım, kötüye kullanılan otomasyon veya yeniden dağıtım için geçerlidir.'
     },
     ComparisonTable: {
@@ -1693,115 +1694,115 @@ let message = {
         "subtitle": "Her planla tam olarak ne elde edeceğinizi görün. Gizli sınırlamalar yok."
       },
       "plans": [
-        "Özellikler",
-        "Özgür",
-        "Pro Aylık",
-        "Pro Yıllık"
-      ],
+              "Özellikler",
+              "Özgür",
+              "Pro Aylık",
+              "Pro Yıllık"
+            ],
       "features": [
-        {
-          "name": "Fiyat",
-          "values": [
-            "0$/ay",
             {
-              "main": "17,99 ABD doları/ay",
-              "note": "İlk ay 9,99 dolar"
+              "name": "Fiyat",
+              "values": [
+                "0$/ay",
+                {
+                  "main": "17,99 ABD doları/ay",
+                  "note": "İlk ay 9,99 dolar"
+                },
+                {
+                  "main": "Aylık 8,99 ABD doları",
+                  "note": "Yılda 107,88 dolar faturalandırıldı"
+                }
+              ]
             },
             {
-              "main": "Aylık 8,99 ABD doları",
-              "note": "Yılda 107,88 dolar faturalandırıldı"
+              "name": "Aylık dakikalar",
+              "values": ["~2.700 (90/gün)", "Sınırsız", "Sınırsız"]
+            },
+            {
+              "name": "Maksimum dosya süresi",
+              "values": ["30 dakika", "10 saat", "10 saat"]
+            },
+            {
+              "name": "Maksimum dosya boyutu",
+              "values": ["250 MB", "5 GB", "5 GB"]
+            },
+            {
+              "name": "Toplu yüklemeler",
+              "values": ["1 dosya", "50 dosya", "50 dosya"]
+            },
+            {
+              "name": "İşlem hızı",
+              "values": ["Standart", "Öncelik", "Öncelik"]
+            },
+            {
+              "name": "Desteklenen diller",
+              "values": ["100'den fazla dil", "100'den fazla dil", "100'den fazla dil"]
+            },
+            {
+              "name": "Çeviri",
+              "values": ["doğru", "doğru", "doğru"]
+            },
+            {
+              "name": "Konuşmacı tanımlama",
+              "values": ["Temel", "Gelişmiş (20 hoparlör)", "Gelişmiş (20 hoparlör)"]
+            },
+            {
+              "name": "Kelime düzeyinde zaman damgaları",
+              "values": ["YANLIŞ", "doğru", "doğru"]
+            },
+            {
+              "name": "Biçimlendirilmiş paragraflar",
+              "values": ["YANLIŞ", "doğru", "doğru"]
+            },
+            {
+              "name": "Dışa aktarma biçimleri",
+              "values": ["Tüm formatlar", "Tüm formatlar", "Tüm formatlar"]
+            },
+            {
+              "name": "Destek",
+              "values": ["E-posta", "Öncelikli e-posta", "Öncelikli e-posta"]
+            },
+            {
+              "name": "Veri saklama",
+              "values": ["30 gün", "Sonsuza kadar", "Sonsuza kadar"]
             }
           ]
-        },
-        {
-          "name": "Aylık dakikalar",
-          "values": ["~2.700 (90/gün)", "Sınırsız", "Sınırsız"]
-        },
-        {
-          "name": "Maksimum dosya süresi",
-          "values": ["30 dakika", "10 saat", "10 saat"]
-        },
-        {
-          "name": "Maksimum dosya boyutu",
-          "values": ["250 MB", "5 GB", "5 GB"]
-        },
-        {
-          "name": "Toplu yüklemeler",
-          "values": ["1 dosya", "50 dosya", "50 dosya"]
-        },
-        {
-          "name": "İşlem hızı",
-          "values": ["Standart", "Öncelik", "Öncelik"]
-        },
-        {
-          "name": "Desteklenen diller",
-          "values": ["100'den fazla dil", "100'den fazla dil", "100'den fazla dil"]
-        },
-        {
-          "name": "Çeviri",
-          "values": ["doğru", "doğru", "doğru"]
-        },
-        {
-          "name": "Konuşmacı tanımlama",
-          "values": ["Temel", "Gelişmiş (20 hoparlör)", "Gelişmiş (20 hoparlör)"]
-        },
-        {
-          "name": "Kelime düzeyinde zaman damgaları",
-          "values": ["YANLIŞ", "doğru", "doğru"]
-        },
-        {
-          "name": "Biçimlendirilmiş paragraflar",
-          "values": ["YANLIŞ", "doğru", "doğru"]
-        },
-        {
-          "name": "Dışa aktarma biçimleri",
-          "values": ["Tüm formatlar", "Tüm formatlar", "Tüm formatlar"]
-        },
-        {
-          "name": "Destek",
-          "values": ["E-posta", "Öncelikli e-posta", "Öncelikli e-posta"]
-        },
-        {
-          "name": "Veri saklama",
-          "values": ["30 gün", "Sonsuza kadar", "Sonsuza kadar"]
-        }
-      ]
     },
     FAQ: {
       "title": "Sıkça Sorulan Sorular",
       "titleHighligt": "Sorular",
       "items": [
-        {
-          "q": "sınırsız_politika",
-          "question": "Gerçekten sınırsız mı?",
-          "answer": "Evet! Pro planlarında aylık dakika sınırı yoktur. Tek sınırlama tekniktir: maksimum 10 saatlik dosya süresi ve 5 GB dosya boyutu. İhtiyacınız olan kadar dosyayı işleyebilirsiniz."
-        },
-        {
-          "q": "plan_değişimi",
-          "question": "Planlarımı istediğim zaman değiştirebilir miyim?",
-          "answer": "Kesinlikle! Aboneliğinizi istediğiniz zaman panonuzdan iptal edebilirsiniz. İhtiyacınız olduğunda yükseltme veya düşürme yapabilirsiniz."
-        },
-        {
-          "q": "ödeme_yöntemleri",
-          "question": "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
-          "answer": "Güvenli ve sorunsuz ödemeler için tüm büyük kredi kartlarını, banka kartlarını ve PayPal'ı kabul ediyoruz."
-        },
-        {
-          "q": "ücretsiz_deneme",
-          "question": "Pro için ücretsiz deneme sürümü var mı?",
-          "answer": "Evet! Pro'yu 7 gün boyunca ücretsiz deneyin, kredi kartı gerekmez. Ayrıca abone olduğunuzda ilk ay %45 indirimden yararlanın."
-        },
-        {
-          "q": "dosya_saklama",
-          "question": "Dosyalarımı ne kadar süreyle saklıyorsunuz?",
-          "answer": "Ücretsiz plan: 30 gün. Pro planlar: Sonsuza kadar! Transkriptleriniz hesabınızda her zaman mevcuttur."
-        },
-        {
-          "q": "veri_güvenliği",
-          "question": "Peki ya veri güvenliği?",
-          "answer": "SOC 2 sertifikalıyız ve 256 bit şifreleme kullanıyoruz. İçeriğinizi asla modellerimizi eğitmek için kullanmıyoruz. Verileriniz size aittir."
-        }
-      ]
+            {
+              "q": "sınırsız_politika",
+              "question": "Gerçekten sınırsız mı?",
+              "answer": "Evet! Pro planlarında aylık dakika sınırı yoktur. Tek sınırlama tekniktir: maksimum 10 saatlik dosya süresi ve 5 GB dosya boyutu. İhtiyacınız olan kadar dosyayı işleyebilirsiniz."
+            },
+            {
+              "q": "plan_değişimi",
+              "question": "Planlarımı istediğim zaman değiştirebilir miyim?",
+              "answer": "Kesinlikle! Aboneliğinizi istediğiniz zaman panonuzdan iptal edebilirsiniz. İhtiyacınız olduğunda yükseltme veya düşürme yapabilirsiniz."
+            },
+            {
+              "q": "ödeme_yöntemleri",
+              "question": "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
+              "answer": "Güvenli ve sorunsuz ödemeler için tüm büyük kredi kartlarını, banka kartlarını ve PayPal'ı kabul ediyoruz."
+            },
+            {
+              "q": "ücretsiz_deneme",
+              "question": "Pro için ücretsiz deneme sürümü var mı?",
+              "answer": "Evet! Pro'yu 7 gün boyunca ücretsiz deneyin, kredi kartı gerekmez. Ayrıca abone olduğunuzda ilk ay %45 indirimden yararlanın."
+            },
+            {
+              "q": "dosya_saklama",
+              "question": "Dosyalarımı ne kadar süreyle saklıyorsunuz?",
+              "answer": "Ücretsiz plan: 30 gün. Pro planlar: Sonsuza kadar! Transkriptleriniz hesabınızda her zaman mevcuttur."
+            },
+            {
+              "q": "veri_güvenliği",
+              "question": "Peki ya veri güvenliği?",
+              "answer": "SOC 2 sertifikalıyız ve 256 bit şifreleme kullanıyoruz. İçeriğinizi asla modellerimizi eğitmek için kullanmıyoruz. Verileriniz size aittir."
+            }
+          ]
     },
     CTA: {
       "title": "Sınırsızlığa Hazır Mısınız?",
@@ -2798,122 +2799,122 @@ let message = {
       part2: {
         "title": "İşte bir YouTube videosunu 3 kolay adımda indirilebilir bir MP4 dosyasına dönüştürmenin yolu",
         "steps": [
-          {
-            title: "URL'yi kopyalayın",
-            content: "Hedef YouTube videonuzu açın, ardından tarayıcınızın adres çubuğundan bağlantıyı kopyalayın."
-          },
-          {
-            title: "Bağlantıyı yapıştırın",
-            content: "Video indirme aracınıza gidin ve URL'yi giriş alanına yapıştırın."
-          },
-          {
-            title: "MP4'ü indirin",
-            content: "İşlendikten sonra MP4 dosyanızı kaydetmek için indirme düğmesine basın."
-          }
-        ]
+                {
+                  title: "URL'yi kopyalayın",
+                  content: "Hedef YouTube videonuzu açın, ardından tarayıcınızın adres çubuğundan bağlantıyı kopyalayın."
+                },
+                {
+                  title: "Bağlantıyı yapıştırın",
+                  content: "Video indirme aracınıza gidin ve URL'yi giriş alanına yapıştırın."
+                },
+                {
+                  title: "MP4'ü indirin",
+                  content: "İşlendikten sonra MP4 dosyanızı kaydetmek için indirme düğmesine basın."
+                }
+              ]
       },
       part3: {
         content: [
-          "Hiç YouTube videolarını çevrimdışı izleme ihtiyacı hissettiniz mi?",
-          "İster metroda işe gidip gelin, ister uçakta uçun, ister önemli bir eğitim videosu izleyin, ister beceri geliştirici içeriklere derinlemesine dalın veya önemli video materyallerini arşivleyin, güvenilir çevrimdışı erişim yaygın bir sorundur. İşte indiricimizin öne çıktığı nokta tam da burası.",
-          "İndirici, YouTube videolarını hızlı ve kolay bir şekilde MP4 formatına dönüştürüp indirmenize olanak tanır. Bunları cihazınıza kaydedin ve istediğiniz zaman izleyin.",
-          "İşlem hızlı, basit ve zahmetsizdir. İndirdikten sonra, en sevdiğiniz videoların keyfini istediğiniz zaman, istediğiniz yerde çıkarın; internet bağlantısına gerek yok."
-        ]
+                "Hiç YouTube videolarını çevrimdışı izleme ihtiyacı hissettiniz mi?",
+                "İster metroda işe gidip gelin, ister uçakta uçun, ister önemli bir eğitim videosu izleyin, ister beceri geliştirici içeriklere derinlemesine dalın veya önemli video materyallerini arşivleyin, güvenilir çevrimdışı erişim yaygın bir sorundur. İşte indiricimizin öne çıktığı nokta tam da burası.",
+                "İndirici, YouTube videolarını hızlı ve kolay bir şekilde MP4 formatına dönüştürüp indirmenize olanak tanır. Bunları cihazınıza kaydedin ve istediğiniz zaman izleyin.",
+                "İşlem hızlı, basit ve zahmetsizdir. İndirdikten sonra, en sevdiğiniz videoların keyfini istediğiniz zaman, istediğiniz yerde çıkarın; internet bağlantısına gerek yok."
+              ]
       },
       part4: {
         content: ["İşte indirmenin 5 önemli faydası", "YouTube videoları MP4 dosyaları olarak"],
         list: [
-          {
-            title: "Veri Maliyetlerinden Tasarruf Edin:",
-            content: "Normalde YouTube'da video izlemek önemli miktarda mobil veri tüketir. Çevrimdışı izlemek için indirerek bu gereksiz maliyetlerden kaçınabilirsiniz."
-          },
-          {
-            title: "Her Yerde, Her Zaman İzleyin:",
-            content: "İnternet bağlantınız zayıf olsa bile videolarınızın keyfini kesintisiz çıkarın. Artık ara belleğe alma endişesi yok."
-          },
-          {
-            title: "Kolay Arşivleme ve Saklama:",
-            content: "Videoları MP4 olarak kaydetmek, özellikle gerçekten değerli veya önemli bulduğunuz içerikler için kişisel koleksiyonunuzu oluşturmanızı kolaylaştırır."
-          },
-          {
-            title: "Daha Basit Paylaşım:",
-            content: "Bir MP4 dosyasını paylaşmak, bağlantı göndermekten çok daha kullanışlıdır. Video dosyasını doğrudan WhatsApp veya Instagram gibi uygulamalar aracılığıyla gönderebilir, YouTube'u açma gibi ekstra bir adıma gerek kalmadan paylaşabilirsiniz."
-          },
-          {
-            title: "Anında Görüntüleme, Paylaşılan Anlar:",
-            content: "Sevdiğiniz bir videoyu heyecanla yakınınızdaki arkadaşlarınıza veya ailenize mi göstermek istiyorsunuz? MP4 dosyasını indirdikten sonra, yüklenmesini beklerken garip duraklamalar yaşamadan, hep birlikte hemen izleyebilirsiniz."
-          }
-        ]
+                {
+                  title: "Veri Maliyetlerinden Tasarruf Edin:",
+                  content: "Normalde YouTube'da video izlemek önemli miktarda mobil veri tüketir. Çevrimdışı izlemek için indirerek bu gereksiz maliyetlerden kaçınabilirsiniz."
+                },
+                {
+                  title: "Her Yerde, Her Zaman İzleyin:",
+                  content: "İnternet bağlantınız zayıf olsa bile videolarınızın keyfini kesintisiz çıkarın. Artık ara belleğe alma endişesi yok."
+                },
+                {
+                  title: "Kolay Arşivleme ve Saklama:",
+                  content: "Videoları MP4 olarak kaydetmek, özellikle gerçekten değerli veya önemli bulduğunuz içerikler için kişisel koleksiyonunuzu oluşturmanızı kolaylaştırır."
+                },
+                {
+                  title: "Daha Basit Paylaşım:",
+                  content: "Bir MP4 dosyasını paylaşmak, bağlantı göndermekten çok daha kullanışlıdır. Video dosyasını doğrudan WhatsApp veya Instagram gibi uygulamalar aracılığıyla gönderebilir, YouTube'u açma gibi ekstra bir adıma gerek kalmadan paylaşabilirsiniz."
+                },
+                {
+                  title: "Anında Görüntüleme, Paylaşılan Anlar:",
+                  content: "Sevdiğiniz bir videoyu heyecanla yakınınızdaki arkadaşlarınıza veya ailenize mi göstermek istiyorsunuz? MP4 dosyasını indirdikten sonra, yüklenmesini beklerken garip duraklamalar yaşamadan, hep birlikte hemen izleyebilirsiniz."
+                }
+              ]
       },
       part5: {
         title: "İndiricimiz Neden Öne Çıkıyor?",
         cards: [
-          {
-            title: "Tek tıklamayla basitlik",
-            content: "Zahmetsiz kurulum ve sezgisel kullanım."
-          },
-          {
-            title: "Yıldırım hızında, sınırsız",
-            content: "En yüksek hızda dönüştürün ve indirin; sınır yok, limit yok."
-          },
-          {
-            title: "Anında dönüştürün",
-            content: "Dosyalarınızı anında işleyin, beklemenize gerek yok."
-          },
-          {
-            title: "Sıfır Reklam, Sıfır Dikkat Dağıtıcı",
-            content: "Hiçbir açılır pencere, afiş veya kesinti olmadan temiz bir arayüzün keyfini çıkarın; yalnızca kusursuz video dönüştürme."
-          },
-          {
-            icon: "5",
-            color: "#DEE5FF",
-            title: "Orijinal Kalite Garantili",
-            content: "İndirdiğiniz videolar her seferinde piksel mükemmelliğinde oynatım için kaynak videonun tam çözünürlüğünü korur."
-          },
-          {
-            icon: "6",
-            color: "#DEF6EE",
-            title: "Her yerde çalışır",
-            content: "Herhangi bir tarayıcıyla, herhangi bir cihazla tam uyumludur."
-          }
-        ]
+                {
+                  title: "Tek tıklamayla basitlik",
+                  content: "Zahmetsiz kurulum ve sezgisel kullanım."
+                },
+                {
+                  title: "Yıldırım hızında, sınırsız",
+                  content: "En yüksek hızda dönüştürün ve indirin; sınır yok, limit yok."
+                },
+                {
+                  title: "Anında dönüştürün",
+                  content: "Dosyalarınızı anında işleyin, beklemenize gerek yok."
+                },
+                {
+                  title: "Sıfır Reklam, Sıfır Dikkat Dağıtıcı",
+                  content: "Hiçbir açılır pencere, afiş veya kesinti olmadan temiz bir arayüzün keyfini çıkarın; yalnızca kusursuz video dönüştürme."
+                },
+                {
+                  icon: "5",
+                  color: "#DEE5FF",
+                  title: "Orijinal Kalite Garantili",
+                  content: "İndirdiğiniz videolar her seferinde piksel mükemmelliğinde oynatım için kaynak videonun tam çözünürlüğünü korur."
+                },
+                {
+                  icon: "6",
+                  color: "#DEF6EE",
+                  title: "Her yerde çalışır",
+                  content: "Herhangi bir tarayıcıyla, herhangi bir cihazla tam uyumludur."
+                }
+              ]
       },
       part6: {
         title: ["YouTube Video İndirmelerinizi Maksimize Edin", "İndirici ile"],
         content: [
-          "Zahmetsiz YouTube'dan MP4'e Dönüştürme: Hızlı, Basit ve Ücretsiz.",
-          "İşte tam da bu noktada öne çıkıyoruz. Kullanıcı dostu arayüzümüz herkes için tasarlanmıştır; teknik beceri gerektirmez. Deneyim seviyeniz ne olursa olsun, videoları anında dönüştürebilirsiniz. Kayıt olmanıza gerek yok: İhtiyacınız olan her şeye anında ulaşın.",
-          "İçiniz rahat olsun; indirdiğiniz MP4'ler YouTube'da izlediğiniz orijinal video kalitesini ve netliğini koruyacaktır.",
-          "Her Yerde Çalışır. Tüm büyük platform ve cihazlarla tamamen uyumludur. İster Windows, macOS, Linux, Android veya iOS kullanıyor olun, ister akıllı telefon, tablet veya masaüstü bilgisayar kullanın, videoları sorunsuz bir şekilde indirebilirsiniz."
-        ]
+                "Zahmetsiz YouTube'dan MP4'e Dönüştürme: Hızlı, Basit ve Ücretsiz.",
+                "İşte tam da bu noktada öne çıkıyoruz. Kullanıcı dostu arayüzümüz herkes için tasarlanmıştır; teknik beceri gerektirmez. Deneyim seviyeniz ne olursa olsun, videoları anında dönüştürebilirsiniz. Kayıt olmanıza gerek yok: İhtiyacınız olan her şeye anında ulaşın.",
+                "İçiniz rahat olsun; indirdiğiniz MP4'ler YouTube'da izlediğiniz orijinal video kalitesini ve netliğini koruyacaktır.",
+                "Her Yerde Çalışır. Tüm büyük platform ve cihazlarla tamamen uyumludur. İster Windows, macOS, Linux, Android veya iOS kullanıyor olun, ister akıllı telefon, tablet veya masaüstü bilgisayar kullanın, videoları sorunsuz bir şekilde indirebilirsiniz."
+              ]
       },
       part7: {
         title: "YouTube Videolarını İndirmeye İlişkin Temel Sorular",
         list: [
-          {
-            question: "Telif hakkı olan bir YouTube videosunu indirebilir miyim?",
-            answer: "Telif hakkıyla korunan YouTube videolarını telif hakkı sahibinin izni olmadan indirmek yasadışıdır."
-          },
-          {
-            question: "Bu indirme aracı güvenli mi?",
-            answer: "Evet, güvenli ve güvenilirdir. Kullanıcılardan hiçbir kişisel bilgi talep etmiyoruz ve virüslere karşı sıkı önlemler alıyoruz. İnternetten dosya indirirken her zaman dikkatli olmanızı hatırlatırız: Şüpheli bağlantılara tıklamaktan veya şüpheli dosyalar indirmekten kaçının."
-          },
-          {
-            question: "YouTube'dan MP4'e indirme hangi dilleri destekliyor?",
-            answer: "Hizmetimiz tüm popüler dillerdeki YouTube videolarının indirilmesini destekler."
-          },
-          {
-            question: "Bir YouTube videosunun indirilme süresini etkileyen faktörler nelerdir?",
-            answer: "Mümkün olan en hızlı indirme deneyimini sağlarken, indirme süresi videonun uzunluğu ve internet bağlantı hızınız gibi faktörlerden de etkilenir."
-          },
-          {
-            question: "Akıllı telefonumla bir MP4 video indirdiğimde nereye kaydediliyor?"
-          },
-          {
-            question: "YouTube videosunu MP4 olarak indirmek video kalitesini düşürür mü?",
-            answer: "Hayır. YouTube videolarını aracımızı kullanarak MP4 formatında indirdiğinizde orijinal video kalitesi korunur. Dönüştürme işlemi kaynak kalitesini koruyarak YouTube'dakiyle aynı izleme deneyimini yaşamanızı sağlar."
-          }
-        ]
+                {
+                  question: "Telif hakkı olan bir YouTube videosunu indirebilir miyim?",
+                  answer: "Telif hakkıyla korunan YouTube videolarını telif hakkı sahibinin izni olmadan indirmek yasadışıdır."
+                },
+                {
+                  question: "Bu indirme aracı güvenli mi?",
+                  answer: "Evet, güvenli ve güvenilirdir. Kullanıcılardan hiçbir kişisel bilgi talep etmiyoruz ve virüslere karşı sıkı önlemler alıyoruz. İnternetten dosya indirirken her zaman dikkatli olmanızı hatırlatırız: Şüpheli bağlantılara tıklamaktan veya şüpheli dosyalar indirmekten kaçının."
+                },
+                {
+                  question: "YouTube'dan MP4'e indirme hangi dilleri destekliyor?",
+                  answer: "Hizmetimiz tüm popüler dillerdeki YouTube videolarının indirilmesini destekler."
+                },
+                {
+                  question: "Bir YouTube videosunun indirilme süresini etkileyen faktörler nelerdir?",
+                  answer: "Mümkün olan en hızlı indirme deneyimini sağlarken, indirme süresi videonun uzunluğu ve internet bağlantı hızınız gibi faktörlerden de etkilenir."
+                },
+                {
+                  question: "Akıllı telefonumla bir MP4 video indirdiğimde nereye kaydediliyor?"
+                },
+                {
+                  question: "YouTube videosunu MP4 olarak indirmek video kalitesini düşürür mü?",
+                  answer: "Hayır. YouTube videolarını aracımızı kullanarak MP4 formatında indirdiğinizde orijinal video kalitesi korunur. Dönüştürme işlemi kaynak kalitesini koruyarak YouTube'dakiyle aynı izleme deneyimini yaşamanızı sağlar."
+                }
+              ]
       }
     }
   },
@@ -2929,68 +2930,68 @@ let message = {
       "highlighted_text": "Darbe",
       "subtitle": "Küresel iletişimi son teknoloji yapay zeka teknolojisiyle güçlendiriyoruz",
       "metrics": [
-        {
-          "value": "%96+",
-          "label": "Doğruluk Oranı",
-          "description": "Gelişmiş yapay zeka ile sektör lideri transkripsiyon doğruluğu"
-        },
-        {
-          "value": "100+",
-          "label": "Desteklenen Diller",
-          "description": "Küresel içerik için konuşulan kelime tanıma"
-        },
-        {
-          "value": "249+",
-          "label": "Çeviri Dilleri",
-          "description": "Yazılı metni hemen hemen her dile çevirin"
-        }
-      ]
+            {
+              "value": "%96+",
+              "label": "Doğruluk Oranı",
+              "description": "Gelişmiş yapay zeka ile sektör lideri transkripsiyon doğruluğu"
+            },
+            {
+              "value": "100+",
+              "label": "Desteklenen Diller",
+              "description": "Küresel içerik için konuşulan kelime tanıma"
+            },
+            {
+              "value": "249+",
+              "label": "Çeviri Dilleri",
+              "description": "Yazılı metni hemen hemen her dile çevirin"
+            }
+          ]
     },
     Mission: {
       "title": "Neden Seçmelisiniz?",
       "highlighted_text": "NeverCap",
       "subtitle": "Dil engellerini ortadan kaldırmaya ve içeriği herkesin erişimine açık hale getirmeye inanıyoruz",
       "features": [
-        {
-          "icon": "🎯",
-          "title": "Eşsiz Doğruluk",
-          "description": "Yapay zeka modellerimiz, %96'yı aşan transkripsiyon doğruluk oranları sunmak için sürekli olarak iyileştiriliyor; bazı önemli diller, gelişmiş optimizasyon sayesinde %99'a varan doğruluk oranlarına ulaşıyor."
-        },
-        {
-          "icon": "🌍",
-          "title": "Küresel Dil Desteği",
-          "description": "Konuşulan kelime tanımada 100'den fazla dili destekler ve 249'dan fazla dil için çeviri yetenekleriyle içeriğinizi gerçek anlamda küresel hale getirir."
-        },
-        {
-          "icon": "⚡",
-          "title": "Yıldırım Hızında İşlem",
-          "description": "Saatlerce süren ses ve video içeriklerini saatler değil, dakikalar içinde işleyin. Optimize edilmiş yapay zeka hattımız, kaliteden ödün vermeden transkripsiyonlarınızı hızla almanızı sağlar."
-        },
-        {
-          "icon": "🔒",
-          "title": "Kurumsal Düzeyde Güvenlik",
-          "description": "Verilerinizin güvenliği bizim önceliğimizdir. İçeriğinizi güvende ve gizli tutmak için endüstri standardı şifreleme kullanıyor ve küresel gizlilik düzenlemelerine uyuyoruz."
-        }
-      ]
+            {
+              "icon": "🎯",
+              "title": "Eşsiz Doğruluk",
+              "description": "Yapay zeka modellerimiz, %96'yı aşan transkripsiyon doğruluk oranları sunmak için sürekli olarak iyileştiriliyor; bazı önemli diller, gelişmiş optimizasyon sayesinde %99'a varan doğruluk oranlarına ulaşıyor."
+            },
+            {
+              "icon": "🌍",
+              "title": "Küresel Dil Desteği",
+              "description": "Konuşulan kelime tanımada 100'den fazla dili destekler ve 249'dan fazla dil için çeviri yetenekleriyle içeriğinizi gerçek anlamda küresel hale getirir."
+            },
+            {
+              "icon": "⚡",
+              "title": "Yıldırım Hızında İşlem",
+              "description": "Saatlerce süren ses ve video içeriklerini saatler değil, dakikalar içinde işleyin. Optimize edilmiş yapay zeka hattımız, kaliteden ödün vermeden transkripsiyonlarınızı hızla almanızı sağlar."
+            },
+            {
+              "icon": "🔒",
+              "title": "Kurumsal Düzeyde Güvenlik",
+              "description": "Verilerinizin güvenliği bizim önceliğimizdir. İçeriğinizi güvende ve gizli tutmak için endüstri standardı şifreleme kullanıyor ve küresel gizlilik düzenlemelerine uyuyoruz."
+            }
+          ]
     },
     Company: {
       "title": "Şirket",
       "highlighted_text": "Bilgi",
       "subtitle": "Herhangi bir soru veya destek için bizimle iletişime geçin",
       "details": [
-        {
-          "label": "Firma Adı",
-          "value": "SCRIBIFY AI INC"
-        },
-        {
-          "label": "Karargah",
-          "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "Amerika Birleşik Devletleri"]
-        },
-        {
-          "label": "Bize Ulaşın",
-          "value": ["e-posta", "7/24 destek mevcuttur"]
-        }
-      ]
+            {
+              "label": "Firma Adı",
+              "value": "SCRIBIFY AI INC"
+            },
+            {
+              "label": "Karargah",
+              "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "Amerika Birleşik Devletleri"]
+            },
+            {
+              "label": "Bize Ulaşın",
+              "value": ["e-posta", "7/24 destek mevcuttur"]
+            }
+          ]
     },
     CTA: {
       "title": "Farkı Yaşamaya Hazır mısınız?",

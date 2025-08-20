@@ -2,7 +2,7 @@
 let message = {
   // 首页
   HomePage: {
-    home: "Início",
+    home: "Todas as Transcrições",
     times: "{times} transcrições gratuitas por dia, {left} restantes hoje. ",
     tips: "Atualize para Pro para transcrições ilimitadas.",
     update: "Atualizar agora",
@@ -659,8 +659,9 @@ let message = {
       "Cada ficheiro pode ter até 30 minutos de duração. Carregue 1 ficheiro de cada vez.",
     uploadWithinHours: "Carregamentos de 10 horas",
     yourSubscription: "A sua subscrição será cancelada em {time}.",
-    save: "Economizar"
-  },
+    save: "Economizar",
+      freeversion2: "Plano Gratuito"
+},
   // 语言对应关系
   LanguageMap: {
     sysLanguagesMap: {
@@ -1063,20 +1064,20 @@ let message = {
     Company: "Empresa",
     featureMenus: ["Transcrição ilimitada", "Upload em massa", "96% de precisão"],
     useCaseMenus: [
-      "Todos os casos de uso",
-      "Podcasters",
-      "Jornalistas",
-      "Criadores de conteúdo",
-      "Pesquisadores",
-      "Equipes de negócios",
-      "Educadores"
-    ],
+          "Todos os casos de uso",
+          "Podcasters",
+          "Jornalistas",
+          "Criadores de conteúdo",
+          "Pesquisadores",
+          "Equipes de negócios",
+          "Educadores"
+        ],
     companyMenus: [
-      "Sobre",
-      "Preços",
-      "Privacidade",
-      "Termos"
-    ]
+          "Sobre",
+          "Preços",
+          "Privacidade",
+          "Termos"
+        ]
   },
   Index: {
     Hero: {
@@ -1176,47 +1177,47 @@ let message = {
       "title": "Perguntas frequentes",
       "titleHighlight": "Questões",
       "questions": [
-        {
-          "q": "política_ilimitada",
-          "question": "É realmente ilimitado? Qual é o problema?",
-          "answer": "Sim, é realmente ilimitado! Sem limites mensais de minutos, sem taxas de excedente. Os únicos limites são técnicos: arquivos individuais podem ter até 10 horas de duração ou 5 GB de tamanho, e você pode processar 50 arquivos de uma vez. Mas você pode enviar quantos lotes quiser, durante todo o mês."
-        },
-        {
-          "q": "precisão",
-          "question": "Quão precisa é a transcrição?",
-          "answer": "Garantimos 96% de precisão para um áudio nítido. Nossa IA é treinada com milhões de horas de conteúdo diversificado e lida com sotaques, termos técnicos e múltiplos locutores com excepcional qualidade. Para áudios desafiadores, nossos recursos inteligentes de aprimoramento ajudam a aprimorar os resultados."
-        },
-        {
-          "q": "línguas",
-          "question": "Quais idiomas vocês oferecem suporte?",
-          "answer": "Oferecemos transcrição em mais de 100 idiomas, incluindo inglês, espanhol, mandarim, hindi, árabe, francês e outros. Além disso, você pode traduzir suas transcrições para 249 idiomas diferentes, o que as torna perfeitas para conteúdo global."
-        },
-        {
-          "q": "velocidade",
-          "question": "Quão rápida é a transcrição?",
-          "answer": "Rápido como um raio! Um arquivo de áudio de 1 hora normalmente é processado em menos de 5 minutos. Com o processamento em lote, você pode carregar 50 arquivos simultaneamente e deixá-los processar em paralelo. A maioria dos usuários acorda e encontra sua biblioteca inteira transcrita da noite para o dia."
-        },
-        {
-          "q": "cancelamento",
-          "question": "Posso cancelar a qualquer momento?",
-          "answer": "Com certeza! Sem contratos, sem taxas de cancelamento. Você pode fazer upgrade, downgrade ou cancelar sua assinatura a qualquer momento no seu painel. Se cancelar, você manterá o acesso até o final do período de cobrança."
-        },
-        {
-          "q": "segurança",
-          "question": "Meus dados estão seguros?",
-          "answer": "Sua segurança é nossa prioridade. Possuímos certificação SOC 2, usamos criptografia de 256 bits para todos os dados e nunca usamos seu conteúdo para treinar nossos modelos. Você pode excluir seus arquivos a qualquer momento, e nós os removemos automaticamente após 30 dias. Em conformidade com GDPR e CCPA."
-        },
-        {
-          "q": "formatos_de_exportação",
-          "question": "Quais formatos de exportação estão disponíveis?",
-          "answer": "Baixe suas transcrições em qualquer formato que você precisar: PDF, Word (DOCX), Excel, CSV, legendas SRT, texto simples (TXT) e legendas VTT. Perfeito para qualquer fluxo de trabalho que você tenha."
-        },
-        {
-          "q": "formatos de arquivo",
-          "question": "Quais arquivos de áudio e vídeo posso enviar?",
-          "answer": "Suportamos praticamente todos os formatos de áudio e vídeo que você encontrar: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV e muito mais. Se você consegue reproduzir, nós podemos transcrever."
-        }
-      ]
+            {
+              "q": "política_ilimitada",
+              "question": "É realmente ilimitado? Qual é o problema?",
+              "answer": "Sim, é realmente ilimitado! Sem limites mensais de minutos, sem taxas de excedente. Os únicos limites são técnicos: arquivos individuais podem ter até 10 horas de duração ou 5 GB de tamanho, e você pode processar 50 arquivos de uma vez. Mas você pode enviar quantos lotes quiser, durante todo o mês."
+            },
+            {
+              "q": "precisão",
+              "question": "Quão precisa é a transcrição?",
+              "answer": "Garantimos 96% de precisão para um áudio nítido. Nossa IA é treinada com milhões de horas de conteúdo diversificado e lida com sotaques, termos técnicos e múltiplos locutores com excepcional qualidade. Para áudios desafiadores, nossos recursos inteligentes de aprimoramento ajudam a aprimorar os resultados."
+            },
+            {
+              "q": "línguas",
+              "question": "Quais idiomas vocês oferecem suporte?",
+              "answer": "Oferecemos transcrição em mais de 100 idiomas, incluindo inglês, espanhol, mandarim, hindi, árabe, francês e outros. Além disso, você pode traduzir suas transcrições para 249 idiomas diferentes, o que as torna perfeitas para conteúdo global."
+            },
+            {
+              "q": "velocidade",
+              "question": "Quão rápida é a transcrição?",
+              "answer": "Rápido como um raio! Um arquivo de áudio de 1 hora normalmente é processado em menos de 5 minutos. Com o processamento em lote, você pode carregar 50 arquivos simultaneamente e deixá-los processar em paralelo. A maioria dos usuários acorda e encontra sua biblioteca inteira transcrita da noite para o dia."
+            },
+            {
+              "q": "cancelamento",
+              "question": "Posso cancelar a qualquer momento?",
+              "answer": "Com certeza! Sem contratos, sem taxas de cancelamento. Você pode fazer upgrade, downgrade ou cancelar sua assinatura a qualquer momento no seu painel. Se cancelar, você manterá o acesso até o final do período de cobrança."
+            },
+            {
+              "q": "segurança",
+              "question": "Meus dados estão seguros?",
+              "answer": "Sua segurança é nossa prioridade. Possuímos certificação SOC 2, usamos criptografia de 256 bits para todos os dados e nunca usamos seu conteúdo para treinar nossos modelos. Você pode excluir seus arquivos a qualquer momento, e nós os removemos automaticamente após 30 dias. Em conformidade com GDPR e CCPA."
+            },
+            {
+              "q": "formatos_de_exportação",
+              "question": "Quais formatos de exportação estão disponíveis?",
+              "answer": "Baixe suas transcrições em qualquer formato que você precisar: PDF, Word (DOCX), Excel, CSV, legendas SRT, texto simples (TXT) e legendas VTT. Perfeito para qualquer fluxo de trabalho que você tenha."
+            },
+            {
+              "q": "formatos de arquivo",
+              "question": "Quais arquivos de áudio e vídeo posso enviar?",
+              "answer": "Suportamos praticamente todos os formatos de áudio e vídeo que você encontrar: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV e muito mais. Se você consegue reproduzir, nós podemos transcrever."
+            }
+          ]
     },
     CTASection: {
       "title": "Pronto para se libertar dos limites?",
@@ -1605,93 +1606,93 @@ let message = {
       "highlighted_text": "Sem tampas ocultas.",
       "description": "Escolha o plano que se adapta às suas necessidades. Faça upgrade ou downgrade a qualquer momento. Sem contratos, sem surpresas.",
       "plans": [
-        {
-          "name": "Livre",
-          "price": "$ 0",
-          "period": "mês",
-          "discount": "Perfeito para experimentar nosso serviço",
-          "limits": {
-            "title": "Limites Diários",
-            "items": [
-              "3 arquivos/dia (≈90 min total/dia)",
-              "Até 30 min por arquivo (≤250 MB)",
-              "Carregar 1 arquivo por vez",
-              "Fila de prioridade padrão"
-            ]
-          },
-          "features": {
-            "title": "Características",
-            "items": [
-              "Mais de 100 idiomas",
-              "Etiquetas de alto-falantes",
-              "Tradução",
-              "Todos os formatos de exportação"
-            ]
-          },
-          "cta": {
-            "text": "Comece grátis. Sem cartão de crédito.",
-            "button": "Comece grátis"
-          }
-        },
-        {
-          "name": "Pro Mensal",
-          "price": "$ 17,99",
-          "period": "mês",
-          "discount": "US$ 9,99 no primeiro mês",
-          "limits": {
-            "title": "Sem limite mensal",
-            "items": [
-              "Minutos totais ilimitados",
-              "Até 10 horas / 5 GB por arquivo",
-              "Carregar 50 arquivos de uma vez",
-              "Fila de prioridade"
-            ]
-          },
-          "features": {
-            "title": "Tudo de graça, mais",
-            "items": [
-              "Carimbos de data e hora em nível de palavra",
-              "Identificação avançada de alto-falantes",
-              "Parágrafos formatados e pontuação",
-              "Suporte prioritário"
-            ]
-          },
-          "cta": {
-            "text": "Minutos ilimitados. Velocidade prioritária. Uploads em lote.",
-            "button": "Vá Pro"
-          },
-          "badge": "Mais populares"
-        },
-        {
-          "name": "Pro Anual",
-          "price": "$ 8,99",
-          "period": "mês",
-          "discount": "Faturado anualmente $ 107,88",
-          "limits": {
-            "title": "Igual ao Pro Mensal",
-            "items": [
-              "Minutos totais ilimitados",
-              "Até 10 horas / 5 GB por arquivo",
-              "Carregar 50 arquivos de uma vez",
-              "Fila de prioridade"
-            ]
-          },
-          "features": {
-            "title": "Tudo de graça, mais",
-            "items": [
-              "Carimbos de data e hora em nível de palavra",
-              "Identificação avançada de alto-falantes",
-              "Parágrafos formatados e pontuação",
-              "Suporte prioritário"
-            ]
-          },
-          "cta": {
-            "text": "Minutos ilimitados. Velocidade prioritária. Uploads em lote.",
-            "button": "Vá Pro"
-          },
-          "badge": "Melhor valor - Economize 50%"
-        }
-      ],
+            {
+              "name": "Livre",
+              "price": "$ 0",
+              "period": "mês",
+              "discount": "Perfeito para experimentar nosso serviço",
+              "limits": {
+                "title": "Limites Diários",
+                "items": [
+                  "3 arquivos/dia (≈90 min total/dia)",
+                  "Até 30 min por arquivo (≤250 MB)",
+                  "Carregar 1 arquivo por vez",
+                  "Fila de prioridade padrão"
+                ]
+              },
+              "features": {
+                "title": "Características",
+                "items": [
+                  "Mais de 100 idiomas",
+                  "Etiquetas de alto-falantes",
+                  "Tradução",
+                  "Todos os formatos de exportação"
+                ]
+              },
+              "cta": {
+                "text": "Comece grátis. Sem cartão de crédito.",
+                "button": "Comece grátis"
+              }
+            },
+            {
+              "name": "Pro Mensal",
+              "price": "$ 17,99",
+              "period": "mês",
+              "discount": "US$ 9,99 no primeiro mês",
+              "limits": {
+                "title": "Sem limite mensal",
+                "items": [
+                  "Minutos totais ilimitados",
+                  "Até 10 horas / 5 GB por arquivo",
+                  "Carregar 50 arquivos de uma vez",
+                  "Fila de prioridade"
+                ]
+              },
+              "features": {
+                "title": "Tudo de graça, mais",
+                "items": [
+                  "Carimbos de data e hora em nível de palavra",
+                  "Identificação avançada de alto-falantes",
+                  "Parágrafos formatados e pontuação",
+                  "Suporte prioritário"
+                ]
+              },
+              "cta": {
+                "text": "Minutos ilimitados. Velocidade prioritária. Uploads em lote.",
+                "button": "Vá Pro"
+              },
+              "badge": "Mais populares"
+            },
+            {
+              "name": "Pro Anual",
+              "price": "$ 8,99",
+              "period": "mês",
+              "discount": "Faturado anualmente $ 107,88",
+              "limits": {
+                "title": "Igual ao Pro Mensal",
+                "items": [
+                  "Minutos totais ilimitados",
+                  "Até 10 horas / 5 GB por arquivo",
+                  "Carregar 50 arquivos de uma vez",
+                  "Fila de prioridade"
+                ]
+              },
+              "features": {
+                "title": "Tudo de graça, mais",
+                "items": [
+                  "Carimbos de data e hora em nível de palavra",
+                  "Identificação avançada de alto-falantes",
+                  "Parágrafos formatados e pontuação",
+                  "Suporte prioritário"
+                ]
+              },
+              "cta": {
+                "text": "Minutos ilimitados. Velocidade prioritária. Uploads em lote.",
+                "button": "Vá Pro"
+              },
+              "badge": "Melhor valor - Economize 50%"
+            }
+          ],
       "disclaimer": '"Ilimitado" significa sem limite mensal e sem redução artificial de velocidade. O uso justo se aplica à automação ou redistribuição abusiva.'
     },
     ComparisonTable: {
@@ -1701,115 +1702,115 @@ let message = {
         "subtitle": "Veja exatamente o que você ganha com cada plano. Sem limitações ocultas."
       },
       "plans": [
-        "Características",
-        "Livre",
-        "Pro Mensal",
-        "Pro Anual"
-      ],
+              "Características",
+              "Livre",
+              "Pro Mensal",
+              "Pro Anual"
+            ],
       "features": [
-        {
-          "name": "Preço",
-          "values": [
-            "$ 0/mês",
             {
-              "main": "US$ 17,99/mês",
-              "note": "US$ 9,99 no primeiro mês"
+              "name": "Preço",
+              "values": [
+                "$ 0/mês",
+                {
+                  "main": "US$ 17,99/mês",
+                  "note": "US$ 9,99 no primeiro mês"
+                },
+                {
+                  "main": "US$ 8,99/mês",
+                  "note": "Faturado $ 107,88/ano"
+                }
+              ]
             },
             {
-              "main": "US$ 8,99/mês",
-              "note": "Faturado $ 107,88/ano"
+              "name": "Minutos mensais",
+              "values": ["~2.700 (90/dia)", "Ilimitado", "Ilimitado"]
+            },
+            {
+              "name": "Duração máxima do arquivo",
+              "values": ["30 minutos", "10 horas", "10 horas"]
+            },
+            {
+              "name": "Tamanho máximo do arquivo",
+              "values": ["250 MB", "5 GB", "5 GB"]
+            },
+            {
+              "name": "Uploads em lote",
+              "values": ["1 arquivo", "50 arquivos", "50 arquivos"]
+            },
+            {
+              "name": "Velocidade de processamento",
+              "values": ["Padrão", "Prioridade", "Prioridade"]
+            },
+            {
+              "name": "Idiomas suportados",
+              "values": ["Mais de 100 idiomas", "Mais de 100 idiomas", "Mais de 100 idiomas"]
+            },
+            {
+              "name": "Tradução",
+              "values": ["verdadeiro", "verdadeiro", "verdadeiro"]
+            },
+            {
+              "name": "Identificação do falante",
+              "values": ["Básico", "Avançado (20 falantes)", "Avançado (20 falantes)"]
+            },
+            {
+              "name": "Carimbos de data e hora em nível de palavra",
+              "values": ["falso", "verdadeiro", "verdadeiro"]
+            },
+            {
+              "name": "Parágrafos formatados",
+              "values": ["falso", "verdadeiro", "verdadeiro"]
+            },
+            {
+              "name": "Formatos de exportação",
+              "values": ["Todos os formatos", "Todos os formatos", "Todos os formatos"]
+            },
+            {
+              "name": "Apoiar",
+              "values": ["E-mail", "E-mail prioritário", "E-mail prioritário"]
+            },
+            {
+              "name": "Retenção de dados",
+              "values": ["30 dias", "Para sempre", "Para sempre"]
             }
           ]
-        },
-        {
-          "name": "Minutos mensais",
-          "values": ["~2.700 (90/dia)", "Ilimitado", "Ilimitado"]
-        },
-        {
-          "name": "Duração máxima do arquivo",
-          "values": ["30 minutos", "10 horas", "10 horas"]
-        },
-        {
-          "name": "Tamanho máximo do arquivo",
-          "values": ["250 MB", "5 GB", "5 GB"]
-        },
-        {
-          "name": "Uploads em lote",
-          "values": ["1 arquivo", "50 arquivos", "50 arquivos"]
-        },
-        {
-          "name": "Velocidade de processamento",
-          "values": ["Padrão", "Prioridade", "Prioridade"]
-        },
-        {
-          "name": "Idiomas suportados",
-          "values": ["Mais de 100 idiomas", "Mais de 100 idiomas", "Mais de 100 idiomas"]
-        },
-        {
-          "name": "Tradução",
-          "values": ["verdadeiro", "verdadeiro", "verdadeiro"]
-        },
-        {
-          "name": "Identificação do falante",
-          "values": ["Básico", "Avançado (20 falantes)", "Avançado (20 falantes)"]
-        },
-        {
-          "name": "Carimbos de data e hora em nível de palavra",
-          "values": ["falso", "verdadeiro", "verdadeiro"]
-        },
-        {
-          "name": "Parágrafos formatados",
-          "values": ["falso", "verdadeiro", "verdadeiro"]
-        },
-        {
-          "name": "Formatos de exportação",
-          "values": ["Todos os formatos", "Todos os formatos", "Todos os formatos"]
-        },
-        {
-          "name": "Apoiar",
-          "values": ["E-mail", "E-mail prioritário", "E-mail prioritário"]
-        },
-        {
-          "name": "Retenção de dados",
-          "values": ["30 dias", "Para sempre", "Para sempre"]
-        }
-      ]
     },
     FAQ: {
       "title": "Perguntas frequentes",
       "titleHighligt": "Questões",
       "items": [
-        {
-          "q": "política_ilimitada",
-          "question": "É realmente ilimitado?",
-          "answer": "Sim! Os planos Pro não têm limite de minutos mensais. Os únicos limites são técnicos: duração máxima de arquivo de 10 horas e tamanho de arquivo de 5 GB. Você pode processar quantos arquivos precisar."
-        },
-        {
-          "q": "mudança_de_plano",
-          "question": "Posso mudar de planos a qualquer momento?",
-          "answer": "Com certeza! Você pode cancelar sua assinatura a qualquer momento no seu painel. Faça upgrade ou downgrade quando quiser."
-        },
-        {
-          "q": "métodos de pagamento",
-          "question": "Quais métodos de pagamento vocês aceitam?",
-          "answer": "Aceitamos todos os principais cartões de crédito, cartões de débito e PayPal para pagamentos seguros e sem complicações."
-        },
-        {
-          "q": "teste_gratuito",
-          "question": "Existe um teste gratuito para o Pro?",
-          "answer": "Sim! Experimente o Pro gratuitamente por 7 dias, sem precisar de cartão de crédito. E mais: ganhe 45% de desconto no primeiro mês ao assinar."
-        },
-        {
-          "q": "retenção de arquivo",
-          "question": "Por quanto tempo vocês guardam meus arquivos?",
-          "answer": "Plano gratuito: 30 dias. Planos Pro: para sempre! Suas transcrições estarão sempre disponíveis na sua conta."
-        },
-        {
-          "q": "segurança de dados",
-          "question": "E quanto à segurança dos dados?",
-          "answer": "Temos certificação SOC 2 e usamos criptografia de 256 bits. Nunca usamos seu conteúdo para treinar nossos modelos. Seus dados são seus."
-        }
-      ]
+            {
+              "q": "política_ilimitada",
+              "question": "É realmente ilimitado?",
+              "answer": "Sim! Os planos Pro não têm limite de minutos mensais. Os únicos limites são técnicos: duração máxima de arquivo de 10 horas e tamanho de arquivo de 5 GB. Você pode processar quantos arquivos precisar."
+            },
+            {
+              "q": "mudança_de_plano",
+              "question": "Posso mudar de planos a qualquer momento?",
+              "answer": "Com certeza! Você pode cancelar sua assinatura a qualquer momento no seu painel. Faça upgrade ou downgrade quando quiser."
+            },
+            {
+              "q": "métodos de pagamento",
+              "question": "Quais métodos de pagamento vocês aceitam?",
+              "answer": "Aceitamos todos os principais cartões de crédito, cartões de débito e PayPal para pagamentos seguros e sem complicações."
+            },
+            {
+              "q": "teste_gratuito",
+              "question": "Existe um teste gratuito para o Pro?",
+              "answer": "Sim! Experimente o Pro gratuitamente por 7 dias, sem precisar de cartão de crédito. E mais: ganhe 45% de desconto no primeiro mês ao assinar."
+            },
+            {
+              "q": "retenção de arquivo",
+              "question": "Por quanto tempo vocês guardam meus arquivos?",
+              "answer": "Plano gratuito: 30 dias. Planos Pro: para sempre! Suas transcrições estarão sempre disponíveis na sua conta."
+            },
+            {
+              "q": "segurança de dados",
+              "question": "E quanto à segurança dos dados?",
+              "answer": "Temos certificação SOC 2 e usamos criptografia de 256 bits. Nunca usamos seu conteúdo para treinar nossos modelos. Seus dados são seus."
+            }
+          ]
     },
     CTA: {
       "title": "Pronto para ir sem limites?",
@@ -2806,122 +2807,122 @@ let message = {
       part2: {
         "title": "Veja como transformar um vídeo do YouTube em um arquivo MP4 para download em 3 etapas fáceis",
         "steps": [
-          {
-            title: "Copie o URL",
-            content: "Abra o vídeo desejado no YouTube e copie o link da barra de endereço do seu navegador."
-          },
-          {
-            title: "Cole o link",
-            content: "Acesse sua ferramenta de download de vídeos e cole o URL no campo de entrada."
-          },
-          {
-            title: "Baixe o MP4",
-            content: "Após o processamento, clique no botão de download para salvar seu arquivo MP4."
-          }
-        ]
+                {
+                  title: "Copie o URL",
+                  content: "Abra o vídeo desejado no YouTube e copie o link da barra de endereço do seu navegador."
+                },
+                {
+                  title: "Cole o link",
+                  content: "Acesse sua ferramenta de download de vídeos e cole o URL no campo de entrada."
+                },
+                {
+                  title: "Baixe o MP4",
+                  content: "Após o processamento, clique no botão de download para salvar seu arquivo MP4."
+                }
+              ]
       },
       part3: {
         content: [
-          "Já se viu precisando assistir a vídeos do YouTube offline?",
-          "Seja no metrô, em um avião, estudando um tutorial crucial, aprofundando-se em conteúdo para desenvolvimento de habilidades ou arquivando material de vídeo importante, ter acesso offline confiável é uma frustração comum. É aqui que nosso downloader se destaca.",
-          "O downloader permite converter vídeos do YouTube para o formato MP4 de forma rápida e fácil para download. Salve-os no seu dispositivo e assista a qualquer hora.",
-          "O processo é rápido, simples e sem complicações. Após o download, curta seus vídeos favoritos quando e onde quiser — sem precisar de internet."
-        ]
+                "Já se viu precisando assistir a vídeos do YouTube offline?",
+                "Seja no metrô, em um avião, estudando um tutorial crucial, aprofundando-se em conteúdo para desenvolvimento de habilidades ou arquivando material de vídeo importante, ter acesso offline confiável é uma frustração comum. É aqui que nosso downloader se destaca.",
+                "O downloader permite converter vídeos do YouTube para o formato MP4 de forma rápida e fácil para download. Salve-os no seu dispositivo e assista a qualquer hora.",
+                "O processo é rápido, simples e sem complicações. Após o download, curta seus vídeos favoritos quando e onde quiser — sem precisar de internet."
+              ]
       },
       part4: {
         content: ["Aqui estão os 5 principais benefícios do download", "Vídeos do YouTube como arquivos MP4"],
         list: [
-          {
-            title: "Economize em custos de dados:",
-            content: "Normalmente, assistir a vídeos no YouTube consome uma quantidade significativa de dados móveis. Ao baixar para assistir offline, você pode evitar esses custos desnecessários."
-          },
-          {
-            title: "Assista em qualquer lugar, a qualquer hora:",
-            content: "Curta seus vídeos sem interrupções, mesmo com conexões de internet instáveis. Chega de preocupações com buffering."
-          },
-          {
-            title: "Fácil arquivamento e preservação:",
-            content: "Salvar vídeos como MP4 facilita a criação de sua coleção pessoal, especialmente para conteúdo que você considera realmente valioso ou importante."
-          },
-          {
-            title: "Compartilhamento mais simples:",
-            content: "Compartilhar um arquivo MP4 é muito mais prático do que enviar um link. Você pode enviar o arquivo de vídeo diretamente por aplicativos como WhatsApp ou Instagram, eliminando a etapa extra de abrir o YouTube."
-          },
-          {
-            title: "Visualização instantânea, momentos compartilhados:",
-            content: "Quer mostrar um vídeo favorito para amigos ou familiares próximos? Com o MP4 baixado, vocês podem assistir juntos sem problemas, sem pausas constrangedoras esperando o vídeo carregar."
-          }
-        ]
+                {
+                  title: "Economize em custos de dados:",
+                  content: "Normalmente, assistir a vídeos no YouTube consome uma quantidade significativa de dados móveis. Ao baixar para assistir offline, você pode evitar esses custos desnecessários."
+                },
+                {
+                  title: "Assista em qualquer lugar, a qualquer hora:",
+                  content: "Curta seus vídeos sem interrupções, mesmo com conexões de internet instáveis. Chega de preocupações com buffering."
+                },
+                {
+                  title: "Fácil arquivamento e preservação:",
+                  content: "Salvar vídeos como MP4 facilita a criação de sua coleção pessoal, especialmente para conteúdo que você considera realmente valioso ou importante."
+                },
+                {
+                  title: "Compartilhamento mais simples:",
+                  content: "Compartilhar um arquivo MP4 é muito mais prático do que enviar um link. Você pode enviar o arquivo de vídeo diretamente por aplicativos como WhatsApp ou Instagram, eliminando a etapa extra de abrir o YouTube."
+                },
+                {
+                  title: "Visualização instantânea, momentos compartilhados:",
+                  content: "Quer mostrar um vídeo favorito para amigos ou familiares próximos? Com o MP4 baixado, vocês podem assistir juntos sem problemas, sem pausas constrangedoras esperando o vídeo carregar."
+                }
+              ]
       },
       part5: {
         title: "Por que nosso Downloader se destaca",
         cards: [
-          {
-            title: "Simplicidade de um clique",
-            content: "Configuração fácil e operação intuitiva."
-          },
-          {
-            title: "Extremamente rápido, ilimitado",
-            content: "Converta e baixe na velocidade máxima — sem limites, sem restrições."
-          },
-          {
-            title: "Converta rapidamente",
-            content: "Processe seus arquivos instantaneamente, sem necessidade de espera."
-          },
-          {
-            title: "Zero anúncios, zero distrações",
-            content: "Aproveite uma interface limpa, sem pop-ups, banners ou interrupções – apenas conversão de vídeo perfeita."
-          },
-          {
-            icon: "5",
-            color: "#DEE5FF",
-            title: "Qualidade original garantida",
-            content: "Seus downloads mantêm a resolução máxima do vídeo de origem para uma reprodução perfeita em pixels todas as vezes."
-          },
-          {
-            icon: "6",
-            color: "#DEF6EE",
-            title: "Funciona em qualquer lugar",
-            content: "Totalmente compatível com qualquer navegador, em qualquer dispositivo."
-          }
-        ]
+                {
+                  title: "Simplicidade de um clique",
+                  content: "Configuração fácil e operação intuitiva."
+                },
+                {
+                  title: "Extremamente rápido, ilimitado",
+                  content: "Converta e baixe na velocidade máxima — sem limites, sem restrições."
+                },
+                {
+                  title: "Converta rapidamente",
+                  content: "Processe seus arquivos instantaneamente, sem necessidade de espera."
+                },
+                {
+                  title: "Zero anúncios, zero distrações",
+                  content: "Aproveite uma interface limpa, sem pop-ups, banners ou interrupções – apenas conversão de vídeo perfeita."
+                },
+                {
+                  icon: "5",
+                  color: "#DEE5FF",
+                  title: "Qualidade original garantida",
+                  content: "Seus downloads mantêm a resolução máxima do vídeo de origem para uma reprodução perfeita em pixels todas as vezes."
+                },
+                {
+                  icon: "6",
+                  color: "#DEF6EE",
+                  title: "Funciona em qualquer lugar",
+                  content: "Totalmente compatível com qualquer navegador, em qualquer dispositivo."
+                }
+              ]
       },
       part6: {
         title: ["Maximize seus downloads de vídeos do YouTube", "Com o Downloader"],
         content: [
-          "Conversão fácil do YouTube para MP4: rápida, simples e gratuita.",
-          "É aí que nos destacamos. Nossa interface intuitiva foi projetada para todos — sem necessidade de conhecimentos técnicos. Independentemente do seu nível de experiência, você pode converter vídeos instantaneamente. Sem necessidade de cadastro: obtenha exatamente o que precisa, imediatamente.",
-          "Fique tranquilo — seus MP4s baixados mantêm a qualidade e a clareza do vídeo original, exatamente como você os assistiu no YouTube.",
-          "Funciona em qualquer lugar. Totalmente compatível com todas as principais plataformas e dispositivos. Seja no Windows, macOS, Linux, Android ou iOS — usando um smartphone, tablet ou desktop — você pode baixar vídeos sem problemas."
-        ]
+                "Conversão fácil do YouTube para MP4: rápida, simples e gratuita.",
+                "É aí que nos destacamos. Nossa interface intuitiva foi projetada para todos — sem necessidade de conhecimentos técnicos. Independentemente do seu nível de experiência, você pode converter vídeos instantaneamente. Sem necessidade de cadastro: obtenha exatamente o que precisa, imediatamente.",
+                "Fique tranquilo — seus MP4s baixados mantêm a qualidade e a clareza do vídeo original, exatamente como você os assistiu no YouTube.",
+                "Funciona em qualquer lugar. Totalmente compatível com todas as principais plataformas e dispositivos. Seja no Windows, macOS, Linux, Android ou iOS — usando um smartphone, tablet ou desktop — você pode baixar vídeos sem problemas."
+              ]
       },
       part7: {
         title: "Perguntas-chave sobre como baixar vídeos do YouTube",
         list: [
-          {
-            question: "Posso baixar um vídeo do YouTube se ele for protegido por direitos autorais?",
-            answer: "Baixar vídeos do YouTube protegidos por direitos autorais sem a permissão do detentor dos direitos autorais é ilegal."
-          },
-          {
-            question: "Esta ferramenta de download é segura?",
-            answer: "Sim, é seguro e confiável. Não solicitamos nenhuma informação pessoal dos usuários e tomamos medidas rigorosas contra vírus. Lembramos que você deve sempre ter cuidado ao baixar arquivos da internet: evite clicar em links suspeitos ou baixar arquivos questionáveis."
-          },
-          {
-            question: "Quais idiomas o download do YouTube para MP4 suporta?",
-            answer: "Nosso serviço oferece suporte para download de vídeos do YouTube em todos os idiomas populares."
-          },
-          {
-            question: "Quais fatores afetam o tempo que leva para baixar um vídeo do YouTube?",
-            answer: "Embora garantamos a experiência de download mais rápida possível, o tempo de download também é afetado por fatores como a duração do vídeo e a velocidade da sua conexão com a internet."
-          },
-          {
-            question: "Quando baixo um vídeo MP4 usando meu smartphone, onde ele é salvo?"
-          },
-          {
-            question: "Baixar um vídeo do YouTube como MP4 reduz a qualidade do vídeo?",
-            answer: "Não. Baixar vídeos do YouTube em MP4 usando nossa ferramenta mantém a qualidade original do vídeo. O processo de conversão preserva a qualidade original, garantindo que você tenha a mesma experiência de visualização do YouTube."
-          }
-        ]
+                {
+                  question: "Posso baixar um vídeo do YouTube se ele for protegido por direitos autorais?",
+                  answer: "Baixar vídeos do YouTube protegidos por direitos autorais sem a permissão do detentor dos direitos autorais é ilegal."
+                },
+                {
+                  question: "Esta ferramenta de download é segura?",
+                  answer: "Sim, é seguro e confiável. Não solicitamos nenhuma informação pessoal dos usuários e tomamos medidas rigorosas contra vírus. Lembramos que você deve sempre ter cuidado ao baixar arquivos da internet: evite clicar em links suspeitos ou baixar arquivos questionáveis."
+                },
+                {
+                  question: "Quais idiomas o download do YouTube para MP4 suporta?",
+                  answer: "Nosso serviço oferece suporte para download de vídeos do YouTube em todos os idiomas populares."
+                },
+                {
+                  question: "Quais fatores afetam o tempo que leva para baixar um vídeo do YouTube?",
+                  answer: "Embora garantamos a experiência de download mais rápida possível, o tempo de download também é afetado por fatores como a duração do vídeo e a velocidade da sua conexão com a internet."
+                },
+                {
+                  question: "Quando baixo um vídeo MP4 usando meu smartphone, onde ele é salvo?"
+                },
+                {
+                  question: "Baixar um vídeo do YouTube como MP4 reduz a qualidade do vídeo?",
+                  answer: "Não. Baixar vídeos do YouTube em MP4 usando nossa ferramenta mantém a qualidade original do vídeo. O processo de conversão preserva a qualidade original, garantindo que você tenha a mesma experiência de visualização do YouTube."
+                }
+              ]
       }
     }
   },
@@ -2937,68 +2938,68 @@ let message = {
       "highlighted_text": "Impacto",
       "subtitle": "Fortalecendo a comunicação global com tecnologia de IA de ponta",
       "metrics": [
-        {
-          "value": "96%+",
-          "label": "Taxa de precisão",
-          "description": "Precisão de transcrição líder do setor com IA avançada"
-        },
-        {
-          "value": "100+",
-          "label": "Idiomas suportados",
-          "description": "Reconhecimento de palavras faladas para conteúdo global"
-        },
-        {
-          "value": "249+",
-          "label": "Idiomas de tradução",
-          "description": "Traduza o texto transcrito para praticamente qualquer idioma"
-        }
-      ]
+            {
+              "value": "96%+",
+              "label": "Taxa de precisão",
+              "description": "Precisão de transcrição líder do setor com IA avançada"
+            },
+            {
+              "value": "100+",
+              "label": "Idiomas suportados",
+              "description": "Reconhecimento de palavras faladas para conteúdo global"
+            },
+            {
+              "value": "249+",
+              "label": "Idiomas de tradução",
+              "description": "Traduza o texto transcrito para praticamente qualquer idioma"
+            }
+          ]
     },
     Mission: {
       "title": "Por que escolher",
       "highlighted_text": "NeverCap",
       "subtitle": "Acreditamos em quebrar as barreiras linguísticas e tornar o conteúdo acessível a todos",
       "features": [
-        {
-          "icon": "🎯",
-          "title": "Precisão incomparável",
-          "description": "Nossos modelos de IA são continuamente refinados para fornecer taxas de precisão de transcrição superiores a 96%, com alguns idiomas principais atingindo até 99% de precisão por meio de otimização avançada."
-        },
-        {
-          "icon": "🌍",
-          "title": "Suporte global a idiomas",
-          "description": "Suporte para mais de 100 idiomas em reconhecimento de palavra falada e recursos de tradução para mais de 249 idiomas, tornando seu conteúdo verdadeiramente global."
-        },
-        {
-          "icon": "⚡",
-          "title": "Processamento extremamente rápido",
-          "description": "Processe horas de conteúdo de áudio e vídeo em minutos, não horas. Nosso pipeline de IA otimizado garante que você obtenha suas transcrições rapidamente, sem comprometer a qualidade."
-        },
-        {
-          "icon": "🔒",
-          "title": "Segurança de nível empresarial",
-          "description": "A segurança dos seus dados é nossa prioridade. Utilizamos criptografia padrão do setor e cumprimos as normas globais de privacidade para manter seu conteúdo seguro e confidencial."
-        }
-      ]
+            {
+              "icon": "🎯",
+              "title": "Precisão incomparável",
+              "description": "Nossos modelos de IA são continuamente refinados para fornecer taxas de precisão de transcrição superiores a 96%, com alguns idiomas principais atingindo até 99% de precisão por meio de otimização avançada."
+            },
+            {
+              "icon": "🌍",
+              "title": "Suporte global a idiomas",
+              "description": "Suporte para mais de 100 idiomas em reconhecimento de palavra falada e recursos de tradução para mais de 249 idiomas, tornando seu conteúdo verdadeiramente global."
+            },
+            {
+              "icon": "⚡",
+              "title": "Processamento extremamente rápido",
+              "description": "Processe horas de conteúdo de áudio e vídeo em minutos, não horas. Nosso pipeline de IA otimizado garante que você obtenha suas transcrições rapidamente, sem comprometer a qualidade."
+            },
+            {
+              "icon": "🔒",
+              "title": "Segurança de nível empresarial",
+              "description": "A segurança dos seus dados é nossa prioridade. Utilizamos criptografia padrão do setor e cumprimos as normas globais de privacidade para manter seu conteúdo seguro e confidencial."
+            }
+          ]
     },
     Company: {
       "title": "Empresa",
       "highlighted_text": "Informação",
       "subtitle": "Entre em contato conosco para qualquer dúvida ou suporte",
       "details": [
-        {
-          "label": "nome da empresa",
-          "value": "SCRIBIFY AI INC"
-        },
-        {
-          "label": "Sede",
-          "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "Estados Unidos"]
-        },
-        {
-          "label": "Contate-nos",
-          "value": ["e-mail", "Suporte disponível 24 horas por dia, 7 dias por semana"]
-        }
-      ]
+            {
+              "label": "nome da empresa",
+              "value": "SCRIBIFY AI INC"
+            },
+            {
+              "label": "Sede",
+              "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "Estados Unidos"]
+            },
+            {
+              "label": "Contate-nos",
+              "value": ["e-mail", "Suporte disponível 24 horas por dia, 7 dias por semana"]
+            }
+          ]
     },
     CTA: {
       "title": "Pronto para experimentar a diferença?",

@@ -184,7 +184,7 @@ useHead({
   );
   top: -250px;
   right: -250px;
-  animation: float 20s ease-in-out infinite;
+  // animation: float 20s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -207,8 +207,8 @@ h1 {
   font-size: 48px;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 24px;
-  animation: slideUp 0.8s ease;
+  margin-bottom: 14px;
+  // animation: slideUp 0.8s ease;
 }
 
 .gradient-text {
@@ -234,14 +234,14 @@ h1 {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  animation: slideUp 1s ease;
+  // animation: slideUp 1s ease;
 }
 
 /* Privacy Content */
 .privacy-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 20px 20px;
 }
 
 .privacy-card {

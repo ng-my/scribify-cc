@@ -413,11 +413,11 @@ const signup = () => {
 }
 
 .use-case-card {
-  background: white;
+  background: #ffffff;
+  border: 1px solid var(--line-color);
   border-radius: 24px;
   overflow: hidden;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   text-decoration: none;
   color: inherit;
@@ -426,8 +426,8 @@ const signup = () => {
 }
 
 .use-case-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
+  // transform: translateY(-10px);
+  // box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
   text-decoration: none;
   color: inherit;
 }
@@ -442,12 +442,12 @@ const signup = () => {
   font-size: 48px;
   margin-bottom: 20px;
   display: inline-block;
-  animation: bounce 2s infinite;
+  // animation: bounce 2s infinite;
 }
 
 .use-case-card:hover .use-case-icon {
   animation-play-state: paused;
-  transform: scale(1.1);
+  // transform: scale(1.1);
 }
 
 @keyframes bounce {
@@ -504,8 +504,8 @@ const signup = () => {
 }
 
 .benefit-check {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background: var(--secondary);
   color: white;
   border-radius: 50%;

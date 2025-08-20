@@ -26,9 +26,30 @@
             </a>
           </div>
           <div class="trust-badges">
-            <span>{{ $i("Podcasters.trustBadge1") }}</span>
-            <span>{{ $i("Podcasters.trustBadge2") }}</span>
-            <span>{{ $i("Podcasters.trustBadge3") }}</span>
+            <span>
+              <el-image
+                src="/assets/img/useCase/trustBadge1.svg"
+                class="relative top-[2px] me-[5px] h-[1rem] w-[1rem]"
+                fit="contain"
+              ></el-image>
+              {{ $i("Podcasters.trustBadge1") }}
+            </span>
+            <span>
+              <el-image
+                src="/assets/img/useCase/trustBadge2.svg"
+                class="relative top-[2px] me-[5px] h-[1rem] w-[1rem]"
+                fit="contain"
+              ></el-image>
+              {{ $i("Podcasters.trustBadge2") }}
+            </span>
+            <span>
+              <el-image
+                src="/assets/img/useCase/trustBadge3.svg"
+                class="relative top-[2px] me-[5px] h-[1rem] w-[1rem]"
+                fit="contain"
+              ></el-image>
+              {{ $i("Podcasters.trustBadge3") }}
+            </span>
           </div>
         </div>
       </div>
@@ -93,8 +114,9 @@
           <div class="problem-card">
             <div class="problem-icon">
               <NuxtImg
+                class="w-[1.875rem]"
                 :src="`/assets/images/use_cases/podcasters/${problemIcons[0]}`"
-                fit="cover"
+                fit="contain"
                 loading="eager"
               />
             </div>
@@ -109,8 +131,9 @@
           <div class="problem-card">
             <div class="problem-icon">
               <NuxtImg
+                class="w-[1.875rem]"
                 :src="`/assets/images/use_cases/podcasters/${problemIcons[1]}`"
-                fit="cover"
+                fit="contain"
                 loading="eager"
               />
             </div>
@@ -125,8 +148,9 @@
           <div class="problem-card">
             <div class="problem-icon">
               <NuxtImg
+                class="w-[1.875rem]"
                 :src="`/assets/images/use_cases/podcasters/${problemIcons[2]}`"
-                fit="cover"
+                fit="contain"
                 loading="eager"
               />
             </div>
@@ -139,8 +163,8 @@
           </div>
         </div>
 
-        <div style="text-align: center;">
-          <h3 style="font-size: 32px; margin-bottom: 20px">
+        <div style="text-align: center">
+          <h3 style="font-size: 32px; font-weight: bold; margin-bottom: 20px">
             {{ $i("Podcasters.solutionTitle") }}
             <span class="gradient-text">{{
               $i("Podcasters.solutionTitleHighlight")
@@ -238,8 +262,9 @@
           <div class="feature-card">
             <div class="feature-icon">
               <NuxtImg
+                class="h-[30px] w-[33px]"
                 :src="`/assets/images/use_cases/podcasters/${featureIcons[0]}`"
-                fit="cover"
+                fit="contain"
                 loading="eager"
               />
             </div>
@@ -254,8 +279,9 @@
           <div class="feature-card">
             <div class="feature-icon">
               <NuxtImg
+                class="h-[30px] w-[30px]"
                 :src="`/assets/images/use_cases/podcasters/${featureIcons[1]}`"
-                fit="cover"
+                fit="contain"
                 loading="eager"
               />
             </div>
@@ -270,8 +296,9 @@
           <div class="feature-card">
             <div class="feature-icon">
               <NuxtImg
+                class="h-[31px] w-[24px]"
                 :src="`/assets/images/use_cases/podcasters/${featureIcons[2]}`"
-                fit="cover"
+                fit="contain"
                 loading="eager"
               />
             </div>
@@ -286,8 +313,9 @@
           <div class="feature-card">
             <div class="feature-icon">
               <NuxtImg
+                class="h-[26px] w-[30px]"
                 :src="`/assets/images/use_cases/podcasters/${featureIcons[3]}`"
-                fit="cover"
+                fit="contain"
                 loading="eager"
               />
             </div>
@@ -302,8 +330,9 @@
           <div class="feature-card">
             <div class="feature-icon">
               <NuxtImg
+                class="h-[31px] w-[31px]"
                 :src="`/assets/images/use_cases/podcasters/${featureIcons[4]}`"
-                fit="cover"
+                fit="contain"
                 loading="eager"
               />
             </div>
@@ -318,8 +347,9 @@
           <div class="feature-card">
             <div class="feature-icon">
               <NuxtImg
+                class="h-[30px] w-[30px]"
                 :src="`/assets/images/use_cases/podcasters/${featureIcons[5]}`"
-                fit="cover"
+                fit="contain"
                 loading="eager"
               />
             </div>
@@ -605,7 +635,14 @@ const testimonialsList: Testimonial[] = [
 const problemIcons = ["ulk.png", "mso.png", "cewg.png"];
 
 // Define feature icons
-const featureIcons = ["msd.png", "tc.png", "sf.png", "so.png", "1l.png", "bp.png"];
+const featureIcons = [
+  "msd.png",
+  "tc.png",
+  "sf.png",
+  "so.png",
+  "1l.png",
+  "bp.png"
+];
 const { $mitt } = useNuxtApp();
 const signup = () => {
   $mitt.emit("goToEvent", { path: "/user/signup" });
@@ -827,7 +864,7 @@ h1 {
 
 /* Workflow Section */
 .workflow {
-  padding: 70px 0 50px;
+  padding: 70px 0;
   background: var(--light-gray);
 }
 
@@ -884,7 +921,7 @@ h1 {
 
 /* Features Grid */
 .features {
-  padding: 70px 0 50px;
+  padding: 70px 0;
   background: white;
   overflow: hidden;
 }
@@ -903,7 +940,6 @@ h1 {
   transition: all 0.3s;
 }
 
-
 .feature-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(100, 116, 139, 0.1);
@@ -914,8 +950,8 @@ h1 {
 }
 
 .feature-icon {
-  width: 24px;
-  height: 24px;
+  width: 33px;
+  height: 33px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -936,7 +972,7 @@ h1 {
 
 /* Testimonials */
 .testimonials {
-  padding: 70px 0 50px;
+  padding: 70px 0;
   background: var(--light-gray);
 }
 
@@ -1003,13 +1039,14 @@ h1 {
 
 /* Comparison Section */
 .comparison {
-  padding: 70px 0 50px;
+  padding: 70px 0;
   background: white;
 }
 
 .comparison-table {
   background: white;
-  border-radius: 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e4e6;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   margin-top: 50px;
@@ -1076,5 +1113,4 @@ h1 {
     display: none;
   }
 }
-
 </style>

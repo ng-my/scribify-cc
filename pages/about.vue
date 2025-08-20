@@ -90,7 +90,12 @@
         <div class="features-grid">
           <div v-for="(item, index) of 4" class="feature-card">
             <div class="feature-icon">
-              {{ $i(`Mission.features[${index}].icon`) }}
+              <!-- {{ $i(`Mission.features[${index}].icon`) }} -->
+              <el-image
+                :src="`/assets/img/about/aboutFeatrue_${index + 1}.svg`"
+                class="h-[3.5rem] w-[3.5rem] rounded-md"
+                fit="contain"
+              ></el-image>
             </div>
             <h3 class="feature-title">
               {{ $i(`Mission.features[${index}].title`) }}
@@ -494,7 +499,7 @@ const ctaData = ref({
 
 .badge {
   display: inline-block;
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(230, 246, 241, 1);
   color: var(--secondary);
   padding: 6px 16px;
   border-radius: 20px;
@@ -733,7 +738,7 @@ h1 {
 .feature-icon {
   width: 60px;
   height: 60px;
-  background: var(--gradient);
+  // background: var(--gradient);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -784,7 +789,7 @@ h1 {
   color: var(--primary);
   margin-bottom: 12px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 22px;
   letter-spacing: 1px;
 }
 

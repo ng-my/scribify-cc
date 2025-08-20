@@ -8,7 +8,7 @@
         <div class="hero-content">
           <div class="hero-badge">{{ t("UseCases.Educators.heroBadge") }}</div>
           <h1>
-            <span class="title-line">{{
+            <span class="title-line me-2">{{
               t("UseCases.Educators.heroTitle1")
             }}</span>
             <span
@@ -85,6 +85,15 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Educators.featuresTitle") }}
+            <span               style="
+                background: var(--text-gradient);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >{{
+                t("UseCases.Educators.featuresTitle2")
+              }}</span>
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.Educators.featuresSubtitle") }}
@@ -476,6 +485,7 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Educators.workflowTitle") }}
+            <span style="color: var(--primary);">{{ t("UseCases.Educators.grid") }}</span>
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.Educators.workflowSubtitle") }}
@@ -529,6 +539,15 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Educators.useCasesTitle") }}
+            <span               style="
+                background: var(--text-gradient);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >{{
+                t("UseCases.Educators.useCasesTitle2")
+              }}</span>
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.Educators.useCasesSubtitle") }}
@@ -635,6 +654,15 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.Educators.testimonialTitle") }}
+            <span               style="
+                background: var(--text-gradient);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >{{
+                t("UseCases.Educators.testimonialTitle2")
+              }}</span>
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.Educators.testimonialSubtitle") }}
@@ -647,7 +675,11 @@
             {{ t("UseCases.Educators.testimonialText") }}
           </p>
           <div class="testimonial-author">
-            <div class="author-avatar">PK</div>
+            <el-avatar
+              :size="56"
+              :src="`/assets/images/index/users/Sophia Martinez.png`"
+              class="me-3"
+            />
             <div class="author-info">
               <div class="author-name">
                 {{ t("UseCases.Educators.testimonialAuthorName") }}
@@ -674,12 +706,12 @@
 import HowToDownload from "~/components/youtubeTomp4/howToDownload.vue";
 useHead({
   title:
-    "Unlimited Transcription for Educators - YouTube Links to Instant Transcripts | NeverCap",
+    "AI Transcription for Educators - Transcribe Lectures & Create Study Guides | NeverCap",
   meta: [
     {
       name: "description",
       content:
-        "Transform educational videos into accessible content instantly. Paste YouTube links for instant transcription, auto-generate captions, transcribe entire courses. Perfect for teachers, professors, and online educators."
+        "Make lectures accessible with NeverCap. Our service helps you transcribe lectures to text and use AI to transcribe audio files to study guides. Support all learning styles."
     }
   ]
 });

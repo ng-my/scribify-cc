@@ -4,7 +4,7 @@
     v-if="isDateAndFree"
   >
     <div class="mb-[0.875rem] flex items-center font-bold">
-      <span>{{ t("AccountSettingsPage.freeversion") }}</span>
+      <span>{{ t("AccountSettingsPage.freeversion2") }}</span>
     </div>
     <div
       class="mb-[0.625rem] h-[0.5rem] w-full rounded border bg-mainColor-600"

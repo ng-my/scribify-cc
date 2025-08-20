@@ -8,7 +8,7 @@
       <div class="flex" v-show="!tableData.length">
         <div @click="openRecord" class="img-button cursor-pointer">
           <img
-            class="h-auto w-[0.9375rem]"
+            class="h-auto w-[0.9375rem] no-drag"
             src="/assets/images/index_black/record.svg"
             alt=""
           />
@@ -16,7 +16,7 @@
 
         <div @click="showLinkDialog = true" class="img-button cursor-pointer">
           <img
-            class="h-auto w-[1.125rem] cursor-pointer"
+            class="h-auto w-[1.125rem] cursor-pointer no-drag"
             src="/assets/images/index_black/url.svg"
             alt=""
           />
@@ -105,7 +105,6 @@
         :popperStyle="{
           borderRadius: '0.5rem',
         }"
-        title="Media Language"
         v-model:lang="lang"
       />
     </div>
@@ -415,6 +414,11 @@ const handleCloseDialog = () => {
 </script>
 
 <style lang="scss" scoped>
+:deep(.el-checkbox__label) {
+  padding-left: 0;
+  @apply ps-2
+}
+
 .upload {
   max-width: 48.75rem; // 780px ÷ 16
   max-height: 37.875rem; // 606px ÷ 16
@@ -693,6 +697,14 @@ const handleCloseDialog = () => {
     &:hover {
       background: #6367F1;
     }
+  }
+
+  .el-button + .el-button {
+    margin-inline-start: 8px !important;
+  }
+
+  .el-dialog__headerbtn {
+    @apply rtl:left-0 rtl:right-auto;
   }
 }
 

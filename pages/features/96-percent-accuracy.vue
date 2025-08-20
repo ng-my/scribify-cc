@@ -75,9 +75,10 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">
-            <span class="gradient-text">{{
-              t("Features.Accuracy.languageSectionTitlePart1")
-            }}</span>
+            <span class="gradient-text">
+              {{ t("Features.Accuracy.languageSectionTitlePart1") }}
+            </span>
+            {{ t("Features.Accuracy.languageSectionTitlePart2") }}
           </h2>
           <p class="section-subtitle">
             {{ t("Features.Accuracy.languageSubtitle") }}
@@ -713,17 +714,17 @@ const handleClick = () => {
 }
 
 .stat-card {
-  background: white;
+  background: #ffffff;
+  border: 1px solid var(--line-color);
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   text-align: center;
-  transition: all 0.3s;
+  // transition: all 0.3s;
 }
 
 .stat-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.15);
+  // transform: translateY(-10px);
+  // box-shadow: 0 20px 60px rgba(99, 102, 241, 0.15);
 }
 
 .stat-percentage {
@@ -770,12 +771,12 @@ const handleClick = () => {
 }
 
 .language-card {
-  background: var(--light-gray);
+  background: #ffffff;
+  border: 1px solid var(--line-color);
   padding: 20px;
   border-radius: 12px;
   text-align: center;
   transition: all 0.3s;
-  border: 2px solid transparent;
 }
 
 .language-card:hover {

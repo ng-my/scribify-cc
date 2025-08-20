@@ -117,6 +117,7 @@
             <span class="gradient-text">
               {{ $i("FeaturesGrid.no_surprises") }}
             </span>
+            {{ $i("FeaturesGrid.features") }}
           </h2>
           <p class="section-subtitle">
             {{ $i("FeaturesGrid.transparency") }}
@@ -127,7 +128,7 @@
             <div class="feature-icon">
               <el-image
                 src="/assets/img/index/Original/Unlimited.svg"
-                class="h-[1.875rem] w-[1.875rem]"
+                class="h-[1.875rem] w-[1.875rem] no-drag"
                 fit="contain"
               ></el-image>
             </div>
@@ -142,7 +143,7 @@
             <div class="feature-icon">
               <el-image
                 src="/assets/img/index/Original/Bulk.svg"
-                class="h-[1.875rem] w-[1.875rem]"
+                class="h-[1.875rem] w-[1.875rem] no-drag"
                 fit="contain"
               ></el-image>
             </div>
@@ -157,7 +158,7 @@
             <div class="feature-icon">
               <el-image
                 src="/assets/img/index/Original/Batch.svg"
-                class="h-[1.875rem] w-[1.875rem]"
+                class="h-[1.875rem] w-[1.875rem] no-drag"
                 fit="contain"
               ></el-image>
             </div>
@@ -172,7 +173,7 @@
             <div class="feature-icon">
               <el-image
                 src="/assets/img/index/Original/Accuracy.svg"
-                class="h-[1.875rem] w-[1.875rem]"
+                class="h-[1.875rem] w-[1.875rem] no-drag"
                 fit="contain"
               ></el-image>
             </div>
@@ -187,7 +188,7 @@
             <div class="feature-icon">
               <el-image
                 src="/assets/img/index/Original/languages.svg"
-                class="h-[1.875rem] w-[1.875rem]"
+                class="h-[1.875rem] w-[1.875rem] no-drag"
                 fit="contain"
               ></el-image>
             </div>
@@ -202,7 +203,7 @@
             <div class="feature-icon">
               <el-image
                 src="/assets/img/index/Original/Professional.svg"
-                class="h-[1.875rem] w-[1.875rem]"
+                class="h-[1.875rem] w-[1.875rem] no-drag"
                 fit="contain"
               ></el-image>
             </div>
@@ -429,7 +430,7 @@ useHead({
         "@context": "https://schema.org",
         "@type": "WebApplication",
         name: "NeverCap",
-        url: "https://nevercap.ai/",
+        url: "https://nevercap.ai",
         description:
           "NeverCap offers truly unlimited AI transcription to convert audio to text with 96% accuracy. Transcribe video and audio files in 100+ languages. No monthly caps, no hidden fees.",
         applicationCategory: "BusinessApplication",
@@ -748,7 +749,7 @@ nav {
 
 .badge {
   display: inline-block;
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(230, 246, 241, 1);
   color: var(--secondary);
   padding: 6px 16px;
   border-radius: 20px;
@@ -988,7 +989,8 @@ h1 {
 }
 
 .use-case-card {
-  background: white;
+  background: #ffffff;
+  border: 1px solid var(--line-color);
   border-radius: 12px;
   padding: 30px;
   text-align: center;
@@ -1142,5 +1144,12 @@ details summary::after {
 
 details[open] summary::after {
   transform: rotate(45deg);
+}
+
+:deep(.el-image img) {
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 </style>

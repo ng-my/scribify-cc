@@ -24,7 +24,7 @@
               <span class="title-line">
                 {{ t("UseCases.BusinessTeams.heroTitle1") }}
               </span>
-              &nbsp;
+              <br />
               <span
                 style="
                   background: var(--text-gradient);
@@ -79,14 +79,13 @@
                   left: 0;
                   right: 0;
                   height: 4px;
-                  width: 46px;
                   background: linear-gradient(
                     90deg,
                     var(--primary) 0%,
                     var(--primary) 100%
                   );
-                  animation: recording-progress 3s linear infinite;
                 "
+                class="recording-interface"
               ></div>
 
               <div
@@ -106,8 +105,8 @@
                     height: 12px;
                     background: #ef4444;
                     border-radius: 50%;
-                    animation: pulse 1.5s ease-in-out infinite;
                   "
+                  class="recording-dot"
                 ></span>
                 <span>{{ t("UseCases.BusinessTeams.recordingStatus") }}</span>
               </div>
@@ -178,6 +177,14 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.BusinessTeams.featuresTitle") }}
+            <span                 style="
+                  background: var(--text-gradient);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+            >{{
+              t("UseCases.BusinessTeams.featuresTitle2")
+            }}</span>
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.BusinessTeams.featuresSubtitle") }}
@@ -513,6 +520,13 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.BusinessTeams.workflowTitle") }}
+            <span style="
+                background: var(--text-gradient);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              ">{{
+              t("UseCases.BusinessTeams.workflowTitle2")
+            }}</span>
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.BusinessTeams.workflowSubtitle") }}
@@ -566,6 +580,13 @@
         <div class="section-header">
           <h2 class="section-title">
             {{ t("UseCases.BusinessTeams.testimonialsTitle") }}
+            <span style="
+                background: var(--text-gradient);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              ">{{
+              t("UseCases.BusinessTeams.testimonialsTitle2")
+            }}</span>
           </h2>
           <p class="section-subtitle">
             {{ t("UseCases.BusinessTeams.testimonialsSubtitle") }}
@@ -579,7 +600,11 @@
               {{ t("UseCases.BusinessTeams.testimonial1Text") }}
             </p>
             <div class="testimonial-author">
-              <div class="author-avatar">JK</div>
+              <el-avatar
+                :size="56"
+                :src="`/assets/images/index/users/Liam Carter.png`"
+                class="me-3"
+              />
               <div class="author-info">
                 <div class="author-name">
                   {{ t("UseCases.BusinessTeams.testimonial1AuthorName") }}
@@ -597,7 +622,11 @@
               {{ t("UseCases.BusinessTeams.testimonial2Text") }}
             </p>
             <div class="testimonial-author">
-              <div class="author-avatar">SR</div>
+              <el-avatar
+                :size="56"
+                :src="`/assets/images/index/users/Ava Wilson.png`"
+                class="me-3"
+              />
               <div class="author-info">
                 <div class="author-name">
                   {{ t("UseCases.BusinessTeams.testimonial2AuthorName") }}
@@ -615,7 +644,11 @@
               {{ t("UseCases.BusinessTeams.testimonial3Text") }}
             </p>
             <div class="testimonial-author">
-              <div class="author-avatar">ML</div>
+              <el-avatar
+                :size="56"
+                :src="`/assets/images/index/users/Emma Thompson.png`"
+                class="me-3"
+              />
               <div class="author-info">
                 <div class="author-name">
                   {{ t("UseCases.BusinessTeams.testimonial3AuthorName") }}
@@ -642,12 +675,12 @@
 /* business-teams 组件 */
 useHead({
   title:
-    "Business Teams - Unlimited Meeting Transcription & Recording | NeverCap",
+    "NeverCap for Business Teams - Unlimited AI Meeting Transcription",
   meta: [
     {
       name: "description",
       content:
-        "Record meetings directly or upload audio files instantly. Build searchable archives from unlimited conversations. No caps on recordings, no limits on collaboration."
+        "Boost team productivity. Instantly transcribe meetings from Zoom, Google Meet, and Teams. Use our free plan to transcribe a zoom recording to text free."
     }
   ]
 });
@@ -666,7 +699,7 @@ const handleJump = (path: string) => {
 <style scoped lang="scss">
 /* Hero Section */
 .hero {
-  padding: 140px 0 80px;
+  padding: 140px 0 0;
   background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;
@@ -775,10 +808,10 @@ const handleJump = (path: string) => {
 .recording-interface {
   background: #000;
   border-radius: 16px;
-  padding: 60px 40px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  animation: recording-progress 3s linear infinite;
 }
 
 .recording-interface::before {
@@ -794,7 +827,6 @@ const handleJump = (path: string) => {
     var(--secondary) 50%,
     var(--primary) 100%
   );
-  animation: recording-progress 3s linear infinite;
 }
 
 @keyframes recording-progress {
@@ -875,9 +907,8 @@ const handleJump = (path: string) => {
 
 /* Stats Section */
 .stats-section {
-  padding: 70px 0;
+  padding: 50px 0 70px;
   background: white;
-  border-bottom: 1px solid #e2e4e6;
 }
 
 .stats-grid {
@@ -900,8 +931,6 @@ const handleJump = (path: string) => {
 }
 
 .stat-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .stat-number {
@@ -999,8 +1028,8 @@ const handleJump = (path: string) => {
 }
 
 .check {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background: var(--secondary);
   color: white;
   border-radius: 50%;
@@ -1098,6 +1127,9 @@ const handleJump = (path: string) => {
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .quote-icon {

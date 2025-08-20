@@ -12,8 +12,8 @@
         class="flex h-[2rem] w-[2rem] cursor-pointer items-center justify-center rounded-full bg-mainColor-900 text-white hover:bg-mainColor-990"
       >
         <span class="text-base font-semibold" v-if="userNameEmail">{{
-          firstLetter
-        }}</span>
+            firstLetter
+          }}</span>
         <span class="iconfont icon-jiangyanzhe text-xl" v-else></span>
       </div>
     </template>
@@ -26,8 +26,8 @@
             {{ t(`${firstLetter}`) }}
           </div>
           <span class="font-bold" v-if="userNameEmail?.length < 15">{{
-            userNameEmail
-          }}</span>
+              userNameEmail
+            }}</span>
           <el-popover
             placement="top-start"
             trigger="hover"
@@ -36,8 +36,8 @@
           >
             <template #reference>
               <span class="font-bold">{{
-                userNameEmailFiter(userNameEmail)
-              }}</span>
+                  userNameEmailFiter(userNameEmail)
+                }}</span>
             </template>
             <template #default>
               <div class="whitespace-nowrap font-medium">
@@ -51,7 +51,7 @@
           class="mt-[0.5rem] flex w-full items-center py-[0.5rem] hover:text-mainColor-900"
           @click="backHome"
         >
-          <i class="iconfont icon-home ng-shezhi iconfont-common-class"></i>
+          <i class="iconfont icon-a-wenjian7 ng-shezhi iconfont-common-class"></i>
           {{ t("HomePage.home") }}
         </button>
         <hr class="my-[0.5rem]" />

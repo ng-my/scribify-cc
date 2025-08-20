@@ -48,6 +48,7 @@ import { useRoute, useRouter } from "vue-router";
 import { useI18n, useLocalePath, useSwitchLocalePath } from "#imports";
 import { useIPLanguage } from "~/utils/useIPLanguage";
 import { type LocaleKey } from "~/i18n/index";
+import { useCrossDomainCookie } from "~/hooks/useCrossDomainCookie";
 
 const route = useRoute();
 const router = useRouter();
@@ -127,17 +128,18 @@ getLocaleOptions();
 
 // 组件挂载时的处理
 onMounted(async () => {
+  const cookie = useCrossDomainCookie('i18n_localLanguage')
+
   if (LanguageFixRoute.value) {
     let savedLocale =
       activeLanguage.value ||
-      window?.localStorage?.getItem("i18n_localLanguage");
-    window?.localStorage?.setItem("i18n_localLanguage", savedLocale);
+      cookie.value
     locale.value = savedLocale as LocaleKey;
     return;
   }
   // 从 URL 或 localStorage 恢复语言设置
   let savedLocale =
-    window?.localStorage?.getItem("i18n_localLanguage") || activeLanguage.value;
+    cookie.value || activeLanguage.value;
 
   let isSame = true;
   if (savedLocale !== activeLanguage.value) {
@@ -157,7 +159,6 @@ const switchLanguage = async (newLocale: any) => {
   window?.localStorage?.setItem("languageInitStatus", "changed");
   activeLanguage.value = newLocale;
   locale.value = newLocale;
-  window?.localStorage?.setItem("i18n_localLanguage", newLocale);
   unref(popoverRef)?.hide();
 
   const path = switchLocalePath(newLocale);

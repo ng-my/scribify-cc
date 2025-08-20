@@ -2,7 +2,7 @@
 let message = {
   // 首页
   HomePage: {
-    home: "Hjem",
+    home: "Alle Transkripsjoner",
     times: "{times} gratis transkripsjoner per dag, {left} igjen i dag. ",
     tips: "Oppgrader til Pro for ubegrenset transkripsjon.",
     update: "Oppgrader nå",
@@ -657,8 +657,9 @@ let message = {
       "Hver fil kan være opptil 30 minutter lang. Last opp 1 fil om gangen.",
     uploadWithinHours: "10-timers opplastinger",
     yourSubscription: "Abonnementet ditt vil bli avsluttet {time}.",
-    save: "Spare"
-  },
+    save: "Spare",
+      freeversion2: "Gratis Plan"
+},
   // 语言对应关系
   LanguageMap: {
     sysLanguagesMap: {
@@ -1059,20 +1060,20 @@ let message = {
     Company: "Bedrift",
     featureMenus: ["Ubegrenset transkripsjon", "Masseopplasting", "96 % nøyaktighet"],
     useCaseMenus: [
-      "Alle brukstilfeller",
-      "Podkastere",
-      "Journalister",
-      "Innholdsskapere",
-      "Forskere",
-      "Forretningsteam",
-      "Lærere"
-    ],
+          "Alle brukstilfeller",
+          "Podkastere",
+          "Journalister",
+          "Innholdsskapere",
+          "Forskere",
+          "Forretningsteam",
+          "Lærere"
+        ],
     companyMenus: [
-      "Om",
-      "Prissetting",
-      "Privatliv",
-      "Vilkår"
-    ]
+          "Om",
+          "Prissetting",
+          "Privatliv",
+          "Vilkår"
+        ]
   },
   Index: {
     Hero: {
@@ -1172,47 +1173,47 @@ let message = {
       "title": "Ofte stilte",
       "titleHighlight": "Spørsmål",
       "questions": [
-        {
-          "q": "ubegrenset_policy",
-          "question": "Er det virkelig ubegrenset? Hva er haken?",
-          "answer": "Ja, det er virkelig ubegrenset! Ingen månedlige minuttbegrensninger, ingen gebyrer for overforbruk. De eneste begrensningene er tekniske: individuelle filer kan være opptil 10 timer lange eller 5 GB store, og du kan behandle 50 filer samtidig. Men du kan laste opp så mange grupper du vil, hele måneden."
-        },
-        {
-          "q": "nøyaktighet",
-          "question": "Hvor nøyaktig er transkripsjonen?",
-          "answer": "Vi garanterer 96 % nøyaktighet for klar lyd. Vår AI er trent på millioner av timer med variert innhold og håndterer aksenter, tekniske termer og flere talere eksepsjonelt bra. For utfordrende lyd bidrar våre smarte forbedringsfunksjoner til å forbedre resultatene."
-        },
-        {
-          "q": "språk",
-          "question": "Hvilke språk støtter dere?",
-          "answer": "Vi støtter transkripsjon på over 100 språk, inkludert engelsk, spansk, mandarin, hindi, arabisk, fransk og mer. I tillegg kan du oversette transkripsjonene dine til 249 forskjellige språk, noe som gjør det perfekt for globalt innhold."
-        },
-        {
-          "q": "fart",
-          "question": "Hvor rask er transkripsjonen?",
-          "answer": "Lynraskt! En lydfil på 1 time behandles vanligvis på under 5 minutter. Med batchbehandling kan du laste opp 50 filer samtidig og la dem behandles parallelt. De fleste brukere våkner opp og finner at hele biblioteket deres er transkribert over natten."
-        },
-        {
-          "q": "kansellering",
-          "question": "Kan jeg avbestille når som helst?",
-          "answer": "Absolutt! Ingen kontrakter, ingen avbestillingsgebyrer. Du kan oppgradere, nedgradere eller avbryte abonnementet ditt når som helst fra dashbordet ditt. Hvis du avbryter, beholder du tilgangen frem til slutten av faktureringsperioden."
-        },
-        {
-          "q": "sikkerhet",
-          "question": "Er dataene mine sikre?",
-          "answer": "Din sikkerhet er vår prioritet. Vi er SOC 2-sertifiserte, bruker 256-bit kryptering for alle data, og bruker aldri innholdet ditt til å trene modellene våre. Du kan slette filene dine når som helst, og vi sletter dem automatisk etter 30 dager. GDPR- og CCPA-kompatibel."
-        },
-        {
-          "q": "eksportformater",
-          "question": "Hvilke eksportformater er tilgjengelige?",
-          "answer": "Last ned transkripsjonene dine i alle formater du trenger: PDF, Word (DOCX), Excel, CSV, SRT-tekster, ren tekst (TXT) og VTT-tekster. Perfekt for enhver arbeidsflyt du har."
-        },
-        {
-          "q": "filformater",
-          "question": "Hvilke lyd- og videofiler kan jeg laste opp?",
-          "answer": "Vi støtter så godt som alle lyd- og videoformater du kommer til å støte på: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV og mer. Hvis du kan spille det av, kan vi transkribere det."
-        }
-      ]
+            {
+              "q": "ubegrenset_policy",
+              "question": "Er det virkelig ubegrenset? Hva er haken?",
+              "answer": "Ja, det er virkelig ubegrenset! Ingen månedlige minuttbegrensninger, ingen gebyrer for overforbruk. De eneste begrensningene er tekniske: individuelle filer kan være opptil 10 timer lange eller 5 GB store, og du kan behandle 50 filer samtidig. Men du kan laste opp så mange grupper du vil, hele måneden."
+            },
+            {
+              "q": "nøyaktighet",
+              "question": "Hvor nøyaktig er transkripsjonen?",
+              "answer": "Vi garanterer 96 % nøyaktighet for klar lyd. Vår AI er trent på millioner av timer med variert innhold og håndterer aksenter, tekniske termer og flere talere eksepsjonelt bra. For utfordrende lyd bidrar våre smarte forbedringsfunksjoner til å forbedre resultatene."
+            },
+            {
+              "q": "språk",
+              "question": "Hvilke språk støtter dere?",
+              "answer": "Vi støtter transkripsjon på over 100 språk, inkludert engelsk, spansk, mandarin, hindi, arabisk, fransk og mer. I tillegg kan du oversette transkripsjonene dine til 249 forskjellige språk, noe som gjør det perfekt for globalt innhold."
+            },
+            {
+              "q": "fart",
+              "question": "Hvor rask er transkripsjonen?",
+              "answer": "Lynraskt! En lydfil på 1 time behandles vanligvis på under 5 minutter. Med batchbehandling kan du laste opp 50 filer samtidig og la dem behandles parallelt. De fleste brukere våkner opp og finner at hele biblioteket deres er transkribert over natten."
+            },
+            {
+              "q": "kansellering",
+              "question": "Kan jeg avbestille når som helst?",
+              "answer": "Absolutt! Ingen kontrakter, ingen avbestillingsgebyrer. Du kan oppgradere, nedgradere eller avbryte abonnementet ditt når som helst fra dashbordet ditt. Hvis du avbryter, beholder du tilgangen frem til slutten av faktureringsperioden."
+            },
+            {
+              "q": "sikkerhet",
+              "question": "Er dataene mine sikre?",
+              "answer": "Din sikkerhet er vår prioritet. Vi er SOC 2-sertifiserte, bruker 256-bit kryptering for alle data, og bruker aldri innholdet ditt til å trene modellene våre. Du kan slette filene dine når som helst, og vi sletter dem automatisk etter 30 dager. GDPR- og CCPA-kompatibel."
+            },
+            {
+              "q": "eksportformater",
+              "question": "Hvilke eksportformater er tilgjengelige?",
+              "answer": "Last ned transkripsjonene dine i alle formater du trenger: PDF, Word (DOCX), Excel, CSV, SRT-tekster, ren tekst (TXT) og VTT-tekster. Perfekt for enhver arbeidsflyt du har."
+            },
+            {
+              "q": "filformater",
+              "question": "Hvilke lyd- og videofiler kan jeg laste opp?",
+              "answer": "Vi støtter så godt som alle lyd- og videoformater du kommer til å støte på: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV og mer. Hvis du kan spille det av, kan vi transkribere det."
+            }
+          ]
     },
     CTASection: {
       "title": "Klar til å bryte fri fra begrensninger?",
@@ -1601,93 +1602,93 @@ let message = {
       "highlighted_text": "Ingen skjulte bokstaver.",
       "description": "Velg abonnementet som passer dine behov. Oppgrader eller nedgrader når som helst. Ingen kontrakter, ingen overraskelser.",
       "plans": [
-        {
-          "name": "Gratis",
-          "price": "0 kr",
-          "period": "måned",
-          "discount": "Perfekt for å prøve ut tjenesten vår",
-          "limits": {
-            "title": "Daglige grenser",
-            "items": [
-              "3 filer/dag (≈90 min totalt/dag)",
-              "Opptil 30 min per fil (≤250 MB)",
-              "Last opp én fil om gangen",
-              "Standard prioritetskø"
-            ]
-          },
-          "features": {
-            "title": "Funksjoner",
-            "items": [
-              "100+ språk",
-              "Høyttaleretiketter",
-              "Oversettelse",
-              "Alle eksportformater"
-            ]
-          },
-          "cta": {
-            "text": "Start gratis. Ingen kredittkort.",
-            "button": "Start gratis"
-          }
-        },
-        {
-          "name": "Pro Månedlig",
-          "price": "17,99 dollar",
-          "period": "måned",
-          "discount": "9,99 dollar for den første måneden",
-          "limits": {
-            "title": "Ingen månedlig grense",
-            "items": [
-              "Ubegrenset antall minutter",
-              "Opptil 10 timer / 5 GB per fil",
-              "Last opp 50 filer samtidig",
-              "Prioritert kø"
-            ]
-          },
-          "features": {
-            "title": "Alt gratis, pluss",
-            "items": [
-              "Tidsstempler på ordnivå",
-              "Avansert høyttaleridentifikasjon",
-              "Formaterte avsnitt og tegnsetting",
-              "Prioritert støtte"
-            ]
-          },
-          "cta": {
-            "text": "Ubegrensede minutter. Prioritert hastighet. Batchopplastinger.",
-            "button": "Bli proff"
-          },
-          "badge": "Mest populær"
-        },
-        {
-          "name": "Pro Årlig",
-          "price": "8,99 dollar",
-          "period": "måned",
-          "discount": "Faktureres årlig $107,88",
-          "limits": {
-            "title": "Samme som Pro Monthly",
-            "items": [
-              "Ubegrenset antall minutter",
-              "Opptil 10 timer / 5 GB per fil",
-              "Last opp 50 filer samtidig",
-              "Prioritert kø"
-            ]
-          },
-          "features": {
-            "title": "Alt gratis, pluss",
-            "items": [
-              "Tidsstempler på ordnivå",
-              "Avansert høyttaleridentifikasjon",
-              "Formaterte avsnitt og tegnsetting",
-              "Prioritert støtte"
-            ]
-          },
-          "cta": {
-            "text": "Ubegrensede minutter. Prioritert hastighet. Batchopplastinger.",
-            "button": "Bli proff"
-          },
-          "badge": "Beste verdi - Spar 50 %"
-        }
-      ],
+            {
+              "name": "Gratis",
+              "price": "0 kr",
+              "period": "måned",
+              "discount": "Perfekt for å prøve ut tjenesten vår",
+              "limits": {
+                "title": "Daglige grenser",
+                "items": [
+                  "3 filer/dag (≈90 min totalt/dag)",
+                  "Opptil 30 min per fil (≤250 MB)",
+                  "Last opp én fil om gangen",
+                  "Standard prioritetskø"
+                ]
+              },
+              "features": {
+                "title": "Funksjoner",
+                "items": [
+                  "100+ språk",
+                  "Høyttaleretiketter",
+                  "Oversettelse",
+                  "Alle eksportformater"
+                ]
+              },
+              "cta": {
+                "text": "Start gratis. Ingen kredittkort.",
+                "button": "Start gratis"
+              }
+            },
+            {
+              "name": "Pro Månedlig",
+              "price": "17,99 dollar",
+              "period": "måned",
+              "discount": "9,99 dollar for den første måneden",
+              "limits": {
+                "title": "Ingen månedlig grense",
+                "items": [
+                  "Ubegrenset antall minutter",
+                  "Opptil 10 timer / 5 GB per fil",
+                  "Last opp 50 filer samtidig",
+                  "Prioritert kø"
+                ]
+              },
+              "features": {
+                "title": "Alt gratis, pluss",
+                "items": [
+                  "Tidsstempler på ordnivå",
+                  "Avansert høyttaleridentifikasjon",
+                  "Formaterte avsnitt og tegnsetting",
+                  "Prioritert støtte"
+                ]
+              },
+              "cta": {
+                "text": "Ubegrensede minutter. Prioritert hastighet. Batchopplastinger.",
+                "button": "Bli proff"
+              },
+              "badge": "Mest populær"
+            },
+            {
+              "name": "Pro Årlig",
+              "price": "8,99 dollar",
+              "period": "måned",
+              "discount": "Faktureres årlig $107,88",
+              "limits": {
+                "title": "Samme som Pro Monthly",
+                "items": [
+                  "Ubegrenset antall minutter",
+                  "Opptil 10 timer / 5 GB per fil",
+                  "Last opp 50 filer samtidig",
+                  "Prioritert kø"
+                ]
+              },
+              "features": {
+                "title": "Alt gratis, pluss",
+                "items": [
+                  "Tidsstempler på ordnivå",
+                  "Avansert høyttaleridentifikasjon",
+                  "Formaterte avsnitt og tegnsetting",
+                  "Prioritert støtte"
+                ]
+              },
+              "cta": {
+                "text": "Ubegrensede minutter. Prioritert hastighet. Batchopplastinger.",
+                "button": "Bli proff"
+              },
+              "badge": "Beste verdi - Spar 50 %"
+            }
+          ],
       "disclaimer": "«Ubegrenset» betyr ingen månedlig grense og ingen kunstig nedbremsing. Lovlig bruk gjelder misbruk av automatisering eller omdistribusjon."
     },
     ComparisonTable: {
@@ -1697,115 +1698,115 @@ let message = {
         "subtitle": "Se nøyaktig hva du får med hver plan. Ingen skjulte begrensninger."
       },
       "plans": [
-        "Funksjoner",
-        "Gratis",
-        "Pro Månedlig",
-        "Pro Årlig"
-      ],
+              "Funksjoner",
+              "Gratis",
+              "Pro Månedlig",
+              "Pro Årlig"
+            ],
       "features": [
-        {
-          "name": "Pris",
-          "values": [
-            "0 kr/måned",
             {
-              "main": "17,99 dollar/måned",
-              "note": "9,99 dollar første måned"
+              "name": "Pris",
+              "values": [
+                "0 kr/måned",
+                {
+                  "main": "17,99 dollar/måned",
+                  "note": "9,99 dollar første måned"
+                },
+                {
+                  "main": "8,99 dollar/måned",
+                  "note": "Fakturert $107,88/år"
+                }
+              ]
             },
             {
-              "main": "8,99 dollar/måned",
-              "note": "Fakturert $107,88/år"
+              "name": "Månedlige minutter",
+              "values": ["~2700 (90/dag)", "Ubegrenset", "Ubegrenset"]
+            },
+            {
+              "name": "Maksimal filvarighet",
+              "values": ["30 minutter", "10 timer", "10 timer"]
+            },
+            {
+              "name": "Maksimal filstørrelse",
+              "values": ["250 MB", "5 GB", "5 GB"]
+            },
+            {
+              "name": "Batchopplastinger",
+              "values": ["1 fil", "50 filer", "50 filer"]
+            },
+            {
+              "name": "Behandlingshastighet",
+              "values": ["Standard", "Prioritet", "Prioritet"]
+            },
+            {
+              "name": "Språk som støttes",
+              "values": ["100+ språk", "100+ språk", "100+ språk"]
+            },
+            {
+              "name": "Oversettelse",
+              "values": ["ekte", "ekte", "ekte"]
+            },
+            {
+              "name": "Høyttaleridentifikasjon",
+              "values": ["Grunnleggende", "Avansert (20 høyttalere)", "Avansert (20 høyttalere)"]
+            },
+            {
+              "name": "Tidsstempler på ordnivå",
+              "values": ["falsk", "ekte", "ekte"]
+            },
+            {
+              "name": "Formaterte avsnitt",
+              "values": ["falsk", "ekte", "ekte"]
+            },
+            {
+              "name": "Eksportformater",
+              "values": ["Alle formater", "Alle formater", "Alle formater"]
+            },
+            {
+              "name": "Støtte",
+              "values": ["E-post", "Prioritert e-post", "Prioritert e-post"]
+            },
+            {
+              "name": "Datalagring",
+              "values": ["30 dager", "For alltid", "For alltid"]
             }
           ]
-        },
-        {
-          "name": "Månedlige minutter",
-          "values": ["~2700 (90/dag)", "Ubegrenset", "Ubegrenset"]
-        },
-        {
-          "name": "Maksimal filvarighet",
-          "values": ["30 minutter", "10 timer", "10 timer"]
-        },
-        {
-          "name": "Maksimal filstørrelse",
-          "values": ["250 MB", "5 GB", "5 GB"]
-        },
-        {
-          "name": "Batchopplastinger",
-          "values": ["1 fil", "50 filer", "50 filer"]
-        },
-        {
-          "name": "Behandlingshastighet",
-          "values": ["Standard", "Prioritet", "Prioritet"]
-        },
-        {
-          "name": "Språk som støttes",
-          "values": ["100+ språk", "100+ språk", "100+ språk"]
-        },
-        {
-          "name": "Oversettelse",
-          "values": ["ekte", "ekte", "ekte"]
-        },
-        {
-          "name": "Høyttaleridentifikasjon",
-          "values": ["Grunnleggende", "Avansert (20 høyttalere)", "Avansert (20 høyttalere)"]
-        },
-        {
-          "name": "Tidsstempler på ordnivå",
-          "values": ["falsk", "ekte", "ekte"]
-        },
-        {
-          "name": "Formaterte avsnitt",
-          "values": ["falsk", "ekte", "ekte"]
-        },
-        {
-          "name": "Eksportformater",
-          "values": ["Alle formater", "Alle formater", "Alle formater"]
-        },
-        {
-          "name": "Støtte",
-          "values": ["E-post", "Prioritert e-post", "Prioritert e-post"]
-        },
-        {
-          "name": "Datalagring",
-          "values": ["30 dager", "For alltid", "For alltid"]
-        }
-      ]
     },
     FAQ: {
       "title": "Ofte stilte",
       "titleHighligt": "Spørsmål",
       "items": [
-        {
-          "q": "ubegrenset_policy",
-          "question": "Er det virkelig ubegrenset?",
-          "answer": "Ja! Pro-abonnementer har ingen månedlige grenser for antall minutter. De eneste begrensningene er tekniske: maks filvarighet på 10 timer og 5 GB filstørrelse. Du kan behandle så mange filer du trenger."
-        },
-        {
-          "q": "planendring",
-          "question": "Kan jeg endre planer når som helst?",
-          "answer": "Absolutt! Du kan når som helst kansellere abonnementet ditt fra dashbordet. Oppgrader eller nedgrader når du trenger det."
-        },
-        {
-          "q": "betalingsmåter",
-          "question": "Hvilke betalingsmåter aksepterer dere?",
-          "answer": "Vi aksepterer alle større kredittkort, debetkort og PayPal for sikre og problemfrie betalinger."
-        },
-        {
-          "q": "gratis_prøveperiode",
-          "question": "Finnes det en gratis prøveperiode for Pro?",
-          "answer": "Ja! Prøv Pro gratis i 7 dager, uten behov for kredittkort. I tillegg får du 45 % rabatt på den første måneden når du abonnerer."
-        },
-        {
-          "q": "filbevaring",
-          "question": "Hvor lenge oppbevarer dere filene mine?",
-          "answer": "Gratisabonnement: 30 dager. Pro-abonnement: For alltid! Transkripsjonene dine er alltid tilgjengelige i kontoen din."
-        },
-        {
-          "q": "datasikkerhet",
-          "question": "Hva med datasikkerhet?",
-          "answer": "Vi er SOC 2-sertifiserte og bruker 256-bit kryptering. Vi bruker aldri innholdet ditt til å trene modellene våre. Dataene dine er dine."
-        }
-      ]
+            {
+              "q": "ubegrenset_policy",
+              "question": "Er det virkelig ubegrenset?",
+              "answer": "Ja! Pro-abonnementer har ingen månedlige grenser for antall minutter. De eneste begrensningene er tekniske: maks filvarighet på 10 timer og 5 GB filstørrelse. Du kan behandle så mange filer du trenger."
+            },
+            {
+              "q": "planendring",
+              "question": "Kan jeg endre planer når som helst?",
+              "answer": "Absolutt! Du kan når som helst kansellere abonnementet ditt fra dashbordet. Oppgrader eller nedgrader når du trenger det."
+            },
+            {
+              "q": "betalingsmåter",
+              "question": "Hvilke betalingsmåter aksepterer dere?",
+              "answer": "Vi aksepterer alle større kredittkort, debetkort og PayPal for sikre og problemfrie betalinger."
+            },
+            {
+              "q": "gratis_prøveperiode",
+              "question": "Finnes det en gratis prøveperiode for Pro?",
+              "answer": "Ja! Prøv Pro gratis i 7 dager, uten behov for kredittkort. I tillegg får du 45 % rabatt på den første måneden når du abonnerer."
+            },
+            {
+              "q": "filbevaring",
+              "question": "Hvor lenge oppbevarer dere filene mine?",
+              "answer": "Gratisabonnement: 30 dager. Pro-abonnement: For alltid! Transkripsjonene dine er alltid tilgjengelige i kontoen din."
+            },
+            {
+              "q": "datasikkerhet",
+              "question": "Hva med datasikkerhet?",
+              "answer": "Vi er SOC 2-sertifiserte og bruker 256-bit kryptering. Vi bruker aldri innholdet ditt til å trene modellene våre. Dataene dine er dine."
+            }
+          ]
     },
     CTA: {
       "title": "Klar til å gå ubegrenset?",
@@ -2802,122 +2803,122 @@ let message = {
       part2: {
         "title": "Slik gjør du om en YouTube-video til en nedlastbar MP4-fil i tre enkle trinn",
         "steps": [
-          {
-            title: "Kopier URL-en",
-            content: "Åpne den ønskede YouTube-videoen, og kopier deretter lenken fra adressefeltet i nettleseren."
-          },
-          {
-            title: "Lim inn lenken",
-            content: "Gå til videonedlastingsverktøyet ditt og lim inn URL-en i inndatafeltet."
-          },
-          {
-            title: "Last ned MP4-filen",
-            content: "Når den er behandlet, trykker du på nedlastingsknappen for å lagre MP4-filen."
-          }
-        ]
+                {
+                  title: "Kopier URL-en",
+                  content: "Åpne den ønskede YouTube-videoen, og kopier deretter lenken fra adressefeltet i nettleseren."
+                },
+                {
+                  title: "Lim inn lenken",
+                  content: "Gå til videonedlastingsverktøyet ditt og lim inn URL-en i inndatafeltet."
+                },
+                {
+                  title: "Last ned MP4-filen",
+                  content: "Når den er behandlet, trykker du på nedlastingsknappen for å lagre MP4-filen."
+                }
+              ]
       },
       part3: {
         content: [
-          "Har du noen gang hatt behov for å se YouTube-videoer offline?",
-          "Enten du pendler med t-banen, flyr, studerer en viktig veiledning, dykker ned i ferdighetsbyggende innhold eller arkiverer viktig videomateriale – det er en vanlig frustrasjon å ha pålitelig offline-tilgang. Det er her nedlastingsprogrammet vårt skinner.",
-          "Nedlasteren lar deg raskt og enkelt konvertere YouTube-videoer til MP4-format for nedlasting. Lagre dem på enheten din, og se dem når som helst.",
-          "Prosessen er rask, enkel og problemfri. Når den er nedlastet, kan du nyte favorittvideoene dine når og hvor du enn er – uten behov for internett."
-        ]
+                "Har du noen gang hatt behov for å se YouTube-videoer offline?",
+                "Enten du pendler med t-banen, flyr, studerer en viktig veiledning, dykker ned i ferdighetsbyggende innhold eller arkiverer viktig videomateriale – det er en vanlig frustrasjon å ha pålitelig offline-tilgang. Det er her nedlastingsprogrammet vårt skinner.",
+                "Nedlasteren lar deg raskt og enkelt konvertere YouTube-videoer til MP4-format for nedlasting. Lagre dem på enheten din, og se dem når som helst.",
+                "Prosessen er rask, enkel og problemfri. Når den er nedlastet, kan du nyte favorittvideoene dine når og hvor du enn er – uten behov for internett."
+              ]
       },
       part4: {
         content: ["Her er de 5 største fordelene med nedlasting", "YouTube-videoer som MP4-filer"],
         list: [
-          {
-            title: "Spar på datakostnader:",
-            content: "Vanligvis bruker det å se videoer på YouTube mye mobildata. Ved å laste ned for visning uten nett kan du unngå disse unødvendige kostnadene."
-          },
-          {
-            title: "Se hvor som helst, når som helst:",
-            content: "Nyt videoene dine sømløst, selv med ustabile internettforbindelser. Ikke flere bekymringer om buffering."
-          },
-          {
-            title: "Enkel arkivering og bevaring:",
-            content: "Å lagre videoer som MP4-filer gjør det enkelt å bygge din personlige samling, spesielt for innhold du synes er virkelig verdifullt eller viktig."
-          },
-          {
-            title: "Enklere deling:",
-            content: "Det er mye enklere å dele en MP4-fil enn å sende en lenke. Du kan sende videofilen direkte via apper som WhatsApp eller Instagram, og dermed slipper du det ekstra trinnet med å åpne YouTube."
-          },
-          {
-            title: "Øyeblikkelig visning, delte øyeblikk:",
-            content: "Spent på å vise en favorittvideo til venner eller familie i nærheten? Med MP4-filen nedlastet kan dere alle se den sammen uten vanskelige pauser mens dere venter på at den skal lastes inn."
-          }
-        ]
+                {
+                  title: "Spar på datakostnader:",
+                  content: "Vanligvis bruker det å se videoer på YouTube mye mobildata. Ved å laste ned for visning uten nett kan du unngå disse unødvendige kostnadene."
+                },
+                {
+                  title: "Se hvor som helst, når som helst:",
+                  content: "Nyt videoene dine sømløst, selv med ustabile internettforbindelser. Ikke flere bekymringer om buffering."
+                },
+                {
+                  title: "Enkel arkivering og bevaring:",
+                  content: "Å lagre videoer som MP4-filer gjør det enkelt å bygge din personlige samling, spesielt for innhold du synes er virkelig verdifullt eller viktig."
+                },
+                {
+                  title: "Enklere deling:",
+                  content: "Det er mye enklere å dele en MP4-fil enn å sende en lenke. Du kan sende videofilen direkte via apper som WhatsApp eller Instagram, og dermed slipper du det ekstra trinnet med å åpne YouTube."
+                },
+                {
+                  title: "Øyeblikkelig visning, delte øyeblikk:",
+                  content: "Spent på å vise en favorittvideo til venner eller familie i nærheten? Med MP4-filen nedlastet kan dere alle se den sammen uten vanskelige pauser mens dere venter på at den skal lastes inn."
+                }
+              ]
       },
       part5: {
         title: "Hvorfor nedlasteren vår skiller seg ut",
         cards: [
-          {
-            title: "Enkelhet med ett klikk",
-            content: "Enkel oppsett og intuitiv betjening."
-          },
-          {
-            title: "Lynraskt, ubegrenset",
-            content: "Konverter og last ned i topphastighet – ingen grenser, ingen innstillinger."
-          },
-          {
-            title: "Konverter på farten",
-            content: "Behandle filene dine umiddelbart, uten behov for venting."
-          },
-          {
-            title: "Null annonser, null distraksjoner",
-            content: "Nyt et rent grensesnitt uten popup-vinduer, bannere eller avbrudd – bare sømløs videokonvertering."
-          },
-          {
-            icon: "5",
-            color: "#DEE5FF",
-            title: "Original kvalitet garantert",
-            content: "Nedlastingene dine beholder kildevideoens fulle oppløsning for pikselperfekt avspilling hver gang."
-          },
-          {
-            icon: "6",
-            color: "#DEF6EE",
-            title: "Fungerer hvor som helst",
-            content: "Fullt kompatibel med alle nettlesere, på alle enheter."
-          }
-        ]
+                {
+                  title: "Enkelhet med ett klikk",
+                  content: "Enkel oppsett og intuitiv betjening."
+                },
+                {
+                  title: "Lynraskt, ubegrenset",
+                  content: "Konverter og last ned i topphastighet – ingen grenser, ingen innstillinger."
+                },
+                {
+                  title: "Konverter på farten",
+                  content: "Behandle filene dine umiddelbart, uten behov for venting."
+                },
+                {
+                  title: "Null annonser, null distraksjoner",
+                  content: "Nyt et rent grensesnitt uten popup-vinduer, bannere eller avbrudd – bare sømløs videokonvertering."
+                },
+                {
+                  icon: "5",
+                  color: "#DEE5FF",
+                  title: "Original kvalitet garantert",
+                  content: "Nedlastingene dine beholder kildevideoens fulle oppløsning for pikselperfekt avspilling hver gang."
+                },
+                {
+                  icon: "6",
+                  color: "#DEF6EE",
+                  title: "Fungerer hvor som helst",
+                  content: "Fullt kompatibel med alle nettlesere, på alle enheter."
+                }
+              ]
       },
       part6: {
         title: ["Maksimer nedlastingene av YouTube-videoer", "Med nedlasteren"],
         content: [
-          "Enkel konvertering fra YouTube til MP4: Raskt, enkelt og gratis.",
-          "Det er der vi utmerker oss. Vårt brukervennlige grensesnitt er designet for alle – ingen tekniske ferdigheter kreves. Uansett erfaringsnivå kan du konvertere videoer umiddelbart. Ingen registrering nødvendig: Få akkurat det du trenger, med en gang.",
-          "Du kan være trygg på at de nedlastede MP4-filene dine beholder den opprinnelige videokvaliteten og klarheten, akkurat slik du så dem på YouTube.",
-          "Fungerer overalt. Fullt kompatibel på tvers av alle større plattformer og enheter. Enten du bruker Windows, macOS, Linux, Android eller iOS – og bruker en smarttelefon, et nettbrett eller en datamaskin – kan du laste ned videoer sømløst."
-        ]
+                "Enkel konvertering fra YouTube til MP4: Raskt, enkelt og gratis.",
+                "Det er der vi utmerker oss. Vårt brukervennlige grensesnitt er designet for alle – ingen tekniske ferdigheter kreves. Uansett erfaringsnivå kan du konvertere videoer umiddelbart. Ingen registrering nødvendig: Få akkurat det du trenger, med en gang.",
+                "Du kan være trygg på at de nedlastede MP4-filene dine beholder den opprinnelige videokvaliteten og klarheten, akkurat slik du så dem på YouTube.",
+                "Fungerer overalt. Fullt kompatibel på tvers av alle større plattformer og enheter. Enten du bruker Windows, macOS, Linux, Android eller iOS – og bruker en smarttelefon, et nettbrett eller en datamaskin – kan du laste ned videoer sømløst."
+              ]
       },
       part7: {
         title: "Viktige spørsmål om nedlasting av YouTube-videoer",
         list: [
-          {
-            question: "Kan jeg laste ned en YouTube-video hvis den er opphavsrettsbeskyttet?",
-            answer: "Det er ulovlig å laste ned opphavsrettsbeskyttede YouTube-videoer uten tillatelse fra opphavsrettseieren."
-          },
-          {
-            question: "Er dette nedlastingsverktøyet trygt?",
-            answer: "Ja, det er trygt og pålitelig. Vi krever ingen personlig informasjon fra brukere og tar strenge tiltak mot virus. Vi minner deg om å alltid være forsiktig når du laster ned filer fra internett: unngå å klikke på mistenkelige lenker eller laste ned tvilsomme filer."
-          },
-          {
-            question: "Hvilke språk støttes av nedlasting av YouTube til MP4?",
-            answer: "Tjenesten vår støtter nedlasting av YouTube-videoer på alle populære språk."
-          },
-          {
-            question: "Hvilke faktorer påvirker tiden det tar å laste ned en YouTube-video?",
-            answer: "Selv om vi sørger for den raskest mulige nedlastingsopplevelsen, påvirkes nedlastingstiden også av faktorer som videoens lengde og internettforbindelsens hastighet."
-          },
-          {
-            question: "Når jeg laster ned en MP4-video med smarttelefonen min, hvor lagres den?"
-          },
-          {
-            question: "Reduserer nedlasting av YouTube-video som MP4 videokvaliteten?",
-            answer: "Nei. Nedlasting av YouTube-videoer som MP4 med verktøyet vårt beholder den opprinnelige videokvaliteten. Konverteringsprosessen bevarer kildekvaliteten, slik at du får den samme seeropplevelsen som på YouTube."
-          }
-        ]
+                {
+                  question: "Kan jeg laste ned en YouTube-video hvis den er opphavsrettsbeskyttet?",
+                  answer: "Det er ulovlig å laste ned opphavsrettsbeskyttede YouTube-videoer uten tillatelse fra opphavsrettseieren."
+                },
+                {
+                  question: "Er dette nedlastingsverktøyet trygt?",
+                  answer: "Ja, det er trygt og pålitelig. Vi krever ingen personlig informasjon fra brukere og tar strenge tiltak mot virus. Vi minner deg om å alltid være forsiktig når du laster ned filer fra internett: unngå å klikke på mistenkelige lenker eller laste ned tvilsomme filer."
+                },
+                {
+                  question: "Hvilke språk støttes av nedlasting av YouTube til MP4?",
+                  answer: "Tjenesten vår støtter nedlasting av YouTube-videoer på alle populære språk."
+                },
+                {
+                  question: "Hvilke faktorer påvirker tiden det tar å laste ned en YouTube-video?",
+                  answer: "Selv om vi sørger for den raskest mulige nedlastingsopplevelsen, påvirkes nedlastingstiden også av faktorer som videoens lengde og internettforbindelsens hastighet."
+                },
+                {
+                  question: "Når jeg laster ned en MP4-video med smarttelefonen min, hvor lagres den?"
+                },
+                {
+                  question: "Reduserer nedlasting av YouTube-video som MP4 videokvaliteten?",
+                  answer: "Nei. Nedlasting av YouTube-videoer som MP4 med verktøyet vårt beholder den opprinnelige videokvaliteten. Konverteringsprosessen bevarer kildekvaliteten, slik at du får den samme seeropplevelsen som på YouTube."
+                }
+              ]
       }
     }
   },
@@ -2933,68 +2934,68 @@ let message = {
       "highlighted_text": "Påvirkning",
       "subtitle": "Styrker global kommunikasjon med banebrytende AI-teknologi",
       "metrics": [
-        {
-          "value": "96%+",
-          "label": "Nøyaktighet",
-          "description": "Bransjeledende transkripsjonsnøyaktighet med avansert AI"
-        },
-        {
-          "value": "100+",
-          "label": "Støttede språk",
-          "description": "Talt ordgjenkjenning for globalt innhold"
-        },
-        {
-          "value": "249+",
-          "label": "Oversettelsesspråk",
-          "description": "Oversett transkribert tekst til så godt som alle språk"
-        }
-      ]
+            {
+              "value": "96%+",
+              "label": "Nøyaktighet",
+              "description": "Bransjeledende transkripsjonsnøyaktighet med avansert AI"
+            },
+            {
+              "value": "100+",
+              "label": "Støttede språk",
+              "description": "Talt ordgjenkjenning for globalt innhold"
+            },
+            {
+              "value": "249+",
+              "label": "Oversettelsesspråk",
+              "description": "Oversett transkribert tekst til så godt som alle språk"
+            }
+          ]
     },
     Mission: {
       "title": "Hvorfor velge",
       "highlighted_text": "NeverCap",
       "subtitle": "Vi tror på å bryte ned språkbarrierer og gjøre innhold tilgjengelig for alle",
       "features": [
-        {
-          "icon": "🎯",
-          "title": "Uovertruffen nøyaktighet",
-          "description": "AI-modellene våre forbedres kontinuerlig for å levere transkripsjonsnøyaktighet på over 96 %, og noen større språk når opptil 99 % nøyaktighet gjennom avansert optimalisering."
-        },
-        {
-          "icon": "🌍",
-          "title": "Global språkstøtte",
-          "description": "Støtte for over 100 språk innen talegjenkjenning og oversettelsesmuligheter for mer enn 249 språk, noe som gjør innholdet ditt virkelig globalt."
-        },
-        {
-          "icon": "⚡",
-          "title": "Lynrask behandling",
-          "description": "Behandle timevis med lyd- og videoinnhold på minutter, ikke timer. Vår optimaliserte AI-pipeline sikrer at du får transkripsjonene dine raskt uten at det går på bekostning av kvaliteten."
-        },
-        {
-          "icon": "🔒",
-          "title": "Sikkerhet i bedriftsklassen",
-          "description": "Din datasikkerhet er vår prioritet. Vi bruker kryptering i henhold til bransjestandard og overholder globale personvernregler for å holde innholdet ditt trygt og konfidensielt."
-        }
-      ]
+            {
+              "icon": "🎯",
+              "title": "Uovertruffen nøyaktighet",
+              "description": "AI-modellene våre forbedres kontinuerlig for å levere transkripsjonsnøyaktighet på over 96 %, og noen større språk når opptil 99 % nøyaktighet gjennom avansert optimalisering."
+            },
+            {
+              "icon": "🌍",
+              "title": "Global språkstøtte",
+              "description": "Støtte for over 100 språk innen talegjenkjenning og oversettelsesmuligheter for mer enn 249 språk, noe som gjør innholdet ditt virkelig globalt."
+            },
+            {
+              "icon": "⚡",
+              "title": "Lynrask behandling",
+              "description": "Behandle timevis med lyd- og videoinnhold på minutter, ikke timer. Vår optimaliserte AI-pipeline sikrer at du får transkripsjonene dine raskt uten at det går på bekostning av kvaliteten."
+            },
+            {
+              "icon": "🔒",
+              "title": "Sikkerhet i bedriftsklassen",
+              "description": "Din datasikkerhet er vår prioritet. Vi bruker kryptering i henhold til bransjestandard og overholder globale personvernregler for å holde innholdet ditt trygt og konfidensielt."
+            }
+          ]
     },
     Company: {
       "title": "Bedrift",
       "highlighted_text": "Informasjon",
       "subtitle": "Ta kontakt med oss for eventuelle spørsmål eller støtte",
       "details": [
-        {
-          "label": "Firmanavn",
-          "value": "SCRIBIFY AI INC"
-        },
-        {
-          "label": "Hovedkvarter",
-          "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "USA"]
-        },
-        {
-          "label": "Kontakt oss",
-          "value": ["e-post", "Støtte tilgjengelig døgnet rundt"]
-        }
-      ]
+            {
+              "label": "Firmanavn",
+              "value": "SCRIBIFY AI INC"
+            },
+            {
+              "label": "Hovedkvarter",
+              "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "USA"]
+            },
+            {
+              "label": "Kontakt oss",
+              "value": ["e-post", "Støtte tilgjengelig døgnet rundt"]
+            }
+          ]
     },
     CTA: {
       "title": "Klar til å oppleve forskjellen?",

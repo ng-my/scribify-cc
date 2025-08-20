@@ -260,7 +260,7 @@ async function translateTexts(
   if (texts.length === 0) {
     return [];
   }
-  const BATCH_SIZE = useAI ? 500 : 500; // AI 翻译使用较小的批次
+  const BATCH_SIZE = useAI ? 200 : 500; // AI 翻译使用较小的批次
   const results: string[] = [];
   try {
     // 分批处理
@@ -293,8 +293,10 @@ async function translateTexts(
     return results;
   } catch (error: any) {
     console.error(`❌ 翻译失败:`, error.message);
-    console.log(`⚠️  返回原文本作为备用...`);
-    return texts; // 如果翻译失败，返回原文数组
+    console.error(`重试:`);
+    return translateTexts(texts, targetLanguage, useAI);
+    // console.log(`⚠️  返回原文本作为备用...`);
+    // return texts; // 如果翻译失败，返回原文数组
   }
 }
 /*
@@ -352,21 +354,23 @@ function flattenObject(
       const value = obj[key];
 
       if (Array.isArray(value)) {
-        // 🆕 处理数组：为每个元素创建索引键
-        value.forEach((item, index) => {
-          const arrayKey = `${newKey}[${index}]`;
+        // 🔥 修复：空数组的特殊处理
+        if (value.length === 0) {
+          result[newKey] = "[]"; // 为空数组创建一个特殊值
+        } else {
+          // 🆕 处理数组：为每个元素创建索引键
+          value.forEach((item, index) => {
+            const arrayKey = `${newKey}[${index}]`;
 
-          if (typeof item === "string") {
-            // 数组中的字符串直接添加
-            result[arrayKey] = item;
-          } else if (typeof item === "object" && item !== null) {
-            // 数组中的对象需要递归处理
-            flattenObject(item, arrayKey, result);
-          } else {
-            // 其他类型转为字符串
-            result[arrayKey] = String(item);
-          }
-        });
+            if (typeof item === "string") {
+              result[arrayKey] = item;
+            } else if (typeof item === "object" && item !== null) {
+              flattenObject(item, arrayKey, result);
+            } else {
+              result[arrayKey] = String(item);
+            }
+          });
+        }
       } else if (
         typeof value === "object" &&
         value !== null &&
@@ -387,86 +391,32 @@ function flattenObject(
 // 将平铺对象转换回嵌套对象
 // 🔍 简化版调试 - 只打印关键步骤
 function unflattenObject(flatObj: { [key: string]: string }): any {
-  Object.entries(flatObj).forEach(([k, v]) => {
-    if (k.startsWith('a.')) {
-      console.log(`   ${k}: "${v}"`);
-    }
-  });
-
   const result: any = {};
 
   for (const key in flatObj) {
-    if (!key.startsWith('a.')) continue; // 只处理a开头的键来调试
-
     const value = flatObj[key];
 
-    const keys = parseKeyPath(key);
+    // 🔥 修复：处理空数组的特殊情况
+    if (value === "[]") {
+      const keys = parseKeyPath(key);
+      let current = result;
 
-    let current = result;
-
-    // 遍历路径
-    for (let i = 0; i < keys.length; i++) {
-      const segment = keys[i];
-      const isLastSegment = i === keys.length - 1;
-
-      if (segment.isArray) {
-        // 当前段是数组索引，如 "b[0]" 或 "c[1]"
-        const arrayName = segment.name;
-        const arrayIndex = segment.index!;
-
-        console.log(`🔧 数组操作: ${arrayName}[${arrayIndex}]`);
-
-        if (!Array.isArray(current[arrayName])) {
-          console.log(`➕ 创建数组: ${arrayName}`);
-          current[arrayName] = [];
+      // 创建路径直到最后一个键
+      for (let i = 0; i < keys.length - 1; i++) {
+        const segment = keys[i];
+        if (!current[segment.name]) {
+          current[segment.name] = {};
         }
-
-        while (current[arrayName].length <= arrayIndex) {
-          current[arrayName].push(null);
-        }
-
-        if (isLastSegment) {
-          current[arrayName][arrayIndex] = value;
-          console.log(`✅ 设置 ${arrayName}[${arrayIndex}] = "${value}"`);
-        } else {
-          if (current[arrayName][arrayIndex] === null) {
-            const nextSegment = keys[i + 1];
-            current[arrayName][arrayIndex] = nextSegment.isArray ? [] : {};
-            console.log(`➕ 在 ${arrayName}[${arrayIndex}] 创建 ${nextSegment.isArray ? '数组' : '对象'}`);
-          }
-          current = current[arrayName][arrayIndex];
-        }
-      } else {
-        // 当前段是对象属性，如 "a" 或 "d"
-        const propName = segment.name;
-
-        console.log(`🔧 属性操作: ${propName}`);
-
-        if (isLastSegment) {
-          current[propName] = value;
-          console.log(`✅ 设置 ${propName} = "${value}"`);
-        } else {
-          if (!current[propName]) {
-            const nextSegment = keys[i + 1];
-            // 🚨 关键修复：如果下一段是数组段，当前属性应该是对象，不是数组！
-            // 因为 a.b[0] 中，a 是对象，a.b 才是数组
-            current[propName] = {};  // 🔥 总是创建对象！
-            console.log(`➕ 创建对象属性: ${propName}`);
-          }
-          current = current[propName];
-        }
+        current = current[segment.name];
       }
+
+      // 设置空数组
+      const finalSegment = keys[keys.length - 1];
+      current[finalSegment.name] = [];
+      continue;
     }
 
-  }
-
-  console.log(`\n🎯 最终 result.a:`, JSON.stringify(result.a, null, 2));
-
-  // 处理其他键（同样的逻辑，但不打印）
-  for (const key in flatObj) {
-    if (key.startsWith('a.')) continue;
-
-    const value = flatObj[key];
+    // 原有的处理逻辑...
     const keys = parseKeyPath(key);
     let current = result;
 
@@ -481,6 +431,7 @@ function unflattenObject(flatObj: { [key: string]: string }): any {
         if (!Array.isArray(current[arrayName])) {
           current[arrayName] = [];
         }
+
         while (current[arrayName].length <= arrayIndex) {
           current[arrayName].push(null);
         }
@@ -501,7 +452,7 @@ function unflattenObject(flatObj: { [key: string]: string }): any {
           current[propName] = value;
         } else {
           if (!current[propName]) {
-            current[propName] = {};  // 🔥 同样修复
+            current[propName] = {};
           }
           current = current[propName];
         }
@@ -1115,6 +1066,39 @@ function findExtraKeys(
   return extraKeys;
 }
 
+// 🆕 新增：展开顶级keys为所有子keys
+function expandTopLevelKeys(keys: string[], baseFlat: { [key: string]: string }): string[] {
+  const expandedKeys: string[] = [];
+
+  for (const key of keys) {
+    // 检查是否为顶级key（不包含点）
+    if (!key.includes('.')) {
+      // 查找所有以这个key开头的子keys
+      const subKeys = Object.keys(baseFlat).filter(flatKey =>
+        flatKey.startsWith(key + '.') || flatKey === key
+      );
+
+      if (subKeys.length > 0) {
+        console.log(`🔄 展开顶级key "${key}" 为 ${subKeys.length} 个子keys`);
+        console.log(`   子keys: ${subKeys.slice(0, 5).join(', ')}${subKeys.length > 5 ? '...' : ''}`);
+        expandedKeys.push(...subKeys);
+      } else {
+        // 如果没找到子keys，保留原key
+        console.log(`⚠️  顶级key "${key}" 没有找到匹配的子keys，保留原key`);
+        expandedKeys.push(key);
+      }
+    } else {
+      // 非顶级key，直接添加
+      expandedKeys.push(key);
+    }
+  }
+
+  // 去重
+  const uniqueKeys = [...new Set(expandedKeys)];
+  console.log(`📊 展开后总共 ${uniqueKeys.length} 个唯一keys`);
+  return uniqueKeys;
+}
+
 // 🆕 新增功能：更新指定的keys
 interface UpdateKeysOptions {
   keys: string[]; // 要更新的key数组，支持嵌套路径如 "user.profile.name"
@@ -1134,7 +1118,7 @@ async function updateSpecificKeys(options: UpdateKeysOptions) {
   } = options;
 
   console.log("🚀 开始更新指定的keys...");
-  console.log(`🎯 指定的keys: ${keys.join(", ")}`);
+  console.log(`🎯 原始指定keys: ${keys.join(", ")}`);
   console.log(`🔄 强制更新: ${forceUpdate ? "是" : "否"}`);
   console.log(`🤖 使用AI翻译: ${useAI ? "是" : "否"}`);
   console.log(`📚 基准语言: ${baseLanguage}`);
@@ -1145,11 +1129,14 @@ async function updateSpecificKeys(options: UpdateKeysOptions) {
   const baseObj = parseObjectFromFile(baseFilePath);
   const baseFlat = flattenObject(baseObj);
 
-  // 验证指定的keys是否存在于基准文件中
+  // 🆕 展开顶级keys
+  const expandedKeys = expandTopLevelKeys(keys, baseFlat);
+
+  // 验证展开后的keys是否存在于基准文件中
   const validKeys: string[] = [];
   const invalidKeys: string[] = [];
 
-  for (const key of keys) {
+  for (const key of expandedKeys) {
     if (key in baseFlat) {
       validKeys.push(key);
     } else {
@@ -1166,11 +1153,40 @@ async function updateSpecificKeys(options: UpdateKeysOptions) {
     return;
   }
 
-  console.log(`✅ 有效的keys: ${validKeys.join(", ")}`);
+  console.log(`✅ 有效的keys: ${validKeys.length} 个`);
+  console.log(`   前5个: ${validKeys.slice(0, 5).join(", ")}${validKeys.length > 5 ? '...' : ''}`);
 
-  // 确定目标语言（排除基准语言）
-  const langs =
-    targetLanguages || languages.filter((lang) => lang !== baseLanguage);
+  // 🆕 修复：确定目标语言（排除基准语言，并且只处理存在的语言）
+  let langs: string[];
+
+  if (targetLanguages) {
+    // 用户指定了目标语言，需要过滤掉基准语言，并验证语言代码
+    langs = targetLanguages
+      .filter((lang) => lang !== baseLanguage)
+      .filter((lang) => {
+        if (languages.includes(lang)) {
+          return true;
+        } else {
+          console.warn(`⚠️  未知语言代码: ${lang}，跳过`);
+          return false;
+        }
+      });
+
+    if (targetLanguages.includes(baseLanguage)) {
+      console.log(`🔄 跳过基准语言 ${baseLanguage}，只处理其他语言`);
+    }
+
+    console.log(`🎯 指定目标语言: ${langs.join(", ")}`);
+  } else {
+    // 未指定目标语言，处理所有语言（除了基准语言）
+    langs = languages.filter((lang) => lang !== baseLanguage);
+    console.log(`🌍 处理所有语言 (除基准语言 ${baseLanguage}): ${langs.length} 个`);
+  }
+
+  if (langs.length === 0) {
+    console.log("❌ 没有有效的目标语言需要处理");
+    return;
+  }
 
   for (const lang of langs) {
     console.log(`\n🌍 处理语言: ${lang}`);
@@ -1433,14 +1449,20 @@ tsx ./updatei18n.ts --base zh-CN
 # 更新指定的keys到所有语言（不会删除多余keys）
 tsx ./updatei18n.ts --keys "user.name,user.email,settings.title"
 
+# 🆕 更新指定顶级key下的所有子keys（自动展开）
+tsx ./updatei18n.ts --keys "user,settings"
+
+# 🆕 混合使用：既可以指定具体keys，也可以指定顶级keys
+tsx ./updatei18n.ts --keys "user,settings.theme,profile.email"
+
 # 使用AI翻译指定的keys
 tsx ./updatei18n.ts --keys "user.name,user.email" --ai
 
 # 强制更新指定的keys（即使已存在）
 tsx ./updatei18n.ts --keys "user.name,user.email" --force
 
-# 只更新到指定语言
-tsx ./updatei18n.ts --keys "user.name,user.email" --lang "en-US,fr-FR,ja-JP"
+# 🆕 修复：只更新到指定语言（现在会正确排除基准语言）
+tsx ./updatei18n.ts --keys "user.name,user.email" --lang "fr-FR,ja-JP"
 
 # 指定基准语言为英文，更新指定keys
 tsx ./updatei18n.ts --keys "user.profile.name,settings.theme" --base en-US
@@ -1448,19 +1470,30 @@ tsx ./updatei18n.ts --keys "user.profile.name,settings.theme" --base en-US
 # 组合使用：指定基准语言+AI翻译+强制更新+指定目标语言
 tsx ./updatei18n.ts --keys "user.profile.name,settings.theme" --base en-US --ai --force --lang "zh-CN,fr-FR"
 
+# 🆕 展开顶级keys示例：
+tsx ./updatei18n.ts --keys "user" --lang "fr-FR"
+# 这会自动找到并翻译所有以 "user." 开头的keys，如：
+# user.name, user.email, user.profile.avatar, user.settings.theme 等
+
 🆕 新功能说明：
-✅ 默认删除多余翻译：在处理所有缺失翻译时，会自动删除其他文件中存在但基准文件中不存在的keys
-✅ 保留注释和格式：删除操作会保留原有的注释和代码结构
-✅ 智能清理：删除key后会自动清理空的父对象
-✅ 详细日志：显示删除的具体内容和数量统计
+✅ 顶级keys自动展开：指定 "user" 会自动翻译 user.name, user.email 等所有子keys
+✅ 混合指定：可以同时指定顶级keys和具体keys，如 --keys "user,settings.theme"
+✅ 修复语言过滤：--lang 参数现在会正确排除基准语言，避免重复处理
+✅ 详细日志：显示展开的keys数量和处理详情
+✅ 智能去重：展开后的keys会自动去重
 
 参数说明：
 --base <语言代码>     指定基准语言文件（如：zh-CN, en-US），默认处理全部时为 en-US，处理指定keys时为 zh-CN
---keys <键列表>       指定要更新的keys，用逗号分隔（不会删除多余keys）
+--keys <键列表>       指定要更新的keys，支持顶级keys自动展开，用逗号分隔（不会删除多余keys）
 --ai                 使用AI翻译替代Google翻译
 --force              强制更新（即使目标key已存在）
---lang <语言列表>     指定目标语言，用逗号分隔
+--lang <语言列表>     指定目标语言，用逗号分隔（会自动排除基准语言）
 --help, -h           显示此帮助信息
+
+🔧 修复内容：
+✅ --lang 参数现在会正确过滤掉基准语言
+✅ 添加了语言代码验证，无效语言会被跳过并警告
+✅ 改进了日志显示，更清楚地显示处理的语言列表
 `);
 }
 

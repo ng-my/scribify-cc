@@ -82,8 +82,9 @@
                   <div class="interview-info">
                     <div class="interview-icon">
                       <NuxtImg
+                        class="h-[18px] w-[20px]"
                         :src="`/assets/images/use_cases/journalists/ccm.png`"
-                        fit="cover"
+                        fit="contain"
                         loading="eager"
                       />
                     </div>
@@ -112,8 +113,9 @@
                   <div class="interview-info">
                     <div class="interview-icon">
                       <NuxtImg
+                        class="h-[18px] w-[18px]"
                         :src="`/assets/images/use_cases/journalists/ei.png`"
-                        fit="cover"
+                        fit="contain"
                         loading="eager"
                       />
                     </div>
@@ -142,8 +144,9 @@
                   <div class="interview-info">
                     <div class="interview-icon">
                       <NuxtImg
+                        class="h-[18px] w-[18px]"
                         :src="`/assets/images/use_cases/journalists/pc.png`"
-                        fit="cover"
+                        fit="contain"
                         loading="eager"
                       />
                     </div>
@@ -172,8 +175,9 @@
                   <div class="interview-info">
                     <div class="interview-icon">
                       <NuxtImg
+                        class="h-[19px] w-[13px]"
                         :src="`/assets/images/use_cases/journalists/pi.png`"
-                        fit="cover"
+                        fit="contain"
                         loading="eager"
                       />
                     </div>
@@ -249,7 +253,7 @@
         </div>
 
         <div style="text-align: center; margin-top: 50px">
-          <h3 style="font-size: 32px; margin-bottom: 20px">
+          <h3 style="font-size: 32px; font-weight: bold; margin-bottom: 20px">
             {{ $i("Journalists.problem.solution.title") }}
             <span
               style="
@@ -776,8 +780,8 @@ const signup = () => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-  color: #92400e;
+  background: var(--yellow);
+  color: var(--dark);
   padding: 6px 14px;
   border-radius: 22px;
   font-size: 13px;
@@ -844,7 +848,7 @@ const signup = () => {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   padding: 24px;
   position: relative;
-  animation: float-up 4s ease-in-out infinite;
+  // animation: float-up 4s ease-in-out infinite;
 }
 
 @keyframes float-up {
@@ -874,8 +878,8 @@ const signup = () => {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: #dcfce7;
-  color: #15803d;
+  background: rgba(230, 246, 241, 1);
+  color: var(--secondary);
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 13px;

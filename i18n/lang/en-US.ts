@@ -4,7 +4,7 @@ import type Part6 from "~/components/youtubeTomp4/part6.vue";
 let message = {
   // 首页
   HomePage: {
-    home: "Home",
+    home: "All Transcripts",
     times: "{times} free transcriptions per day, {left} remaining today. ",
     tips: "Upgrade to Pro for unlimited transcriptions.",
     update: "Upgrade Now",
@@ -429,6 +429,7 @@ let message = {
   AccountSettingsPage: {
     subscription: "Subscription plan",
     freeversion: "Free",
+    freeversion2: "Free Plan",
     transcribeTimesDay: "3 Transcripts Daily",
     uploadMinutes: "30 Minute Uploads",
     lowerPriority: "Lower Priority",
@@ -557,7 +558,7 @@ let message = {
       h1: "Stop Paying for Limits:",
       gradient: "Truly Unlimited AI Transcription",
       subtitle:
-        "Upload your entire podcast archive. Transcribe all your interviews. Process 50 files at once. No monthly caps, no upload limits. Finally, transcription that scales with your actual needs.",
+        "Our AI transcribes video and converts audio to text, processing 50 files at once with no monthly caps. Transcription that truly scales with you.",
       FreeTrial: "Try It Free - No Credit Card",
       HowWorks: "See How It Works",
       Unlimited: "Unlimited File Uploads",
@@ -576,13 +577,14 @@ let message = {
       no_signup: "No Sign-up Required",
       experience_unltd: "Experience truly unlimited transcription",
       upload_50: "Upload up to 50 files at once, right here",
-      no_limits: "No More Hidden Limits",
-      no_surprises: "No More Surprises",
+      no_limits: "Advanced",
+      no_surprises: "AI Transcription",
+      features: 'Features',
       transparency:
-        "While others quietly reduce your minutes or hide caps in fine print, we believe in radical transparency",
+        "No More Hidden Limits, No More Surprises - While others quietly reduce your minutes or hide caps in fine print, we believe in radical transparency",
       feat_unltd: "Actually Unlimited",
       feat_unltd_desc:
-        'No "fair use policy" buried in terms. No storage caps disguised as "unlimited." Upload your entire archive, transcribe everything. We mean it.',
+        'No "fair use policy" buried in terms. No storage caps disguised as "unlimited." Upload your entire archive, transcribe everything for all your audio transcribe needs. We mean it.',
       feat_bulk: "Bulk Upload Freedom",
       feat_bulk_desc:
         'Tired of "3 lifetime imports" or "10 files per month"? Upload 50 files at once, as many times as you need. Perfect for processing backlogs.',
@@ -591,25 +593,25 @@ let message = {
         "Process your entire podcast season overnight. Upload 50 interviews at once. Let our AI work while you sleep. Wake up to completed transcripts.",
       feat_accuracy: "96% Accuracy",
       feat_accuracy_desc:
-        "Industry-leading AI with smart punctuation, speaker diarization for up to 20 speakers, and handles accents, technical terms flawlessly.",
+        "Our industry-leading AI transcribes audio with smart punctuation, speaker diarization for up to 20 speakers, and handles accents, technical terms flawlessly.",
       feat_langs: "100+ Languages",
       feat_langs_desc:
-        "Transcribe in 100+ languages, translate to 249+. No extra charges for different languages. Global content, one simple price.",
+        "Transcribe video and audio in 100+ languages, translate to 249+. No extra charges for different languages. Global content, one simple price.",
       feat_pro: "Professional Features",
       feat_pro_desc:
         "Word-level timestamps for precise audio/video positioning, accurate speaker identification even during rapid conversation switches, and perfectly formatted text with paragraphs, sentences, and punctuation for easy reading."
     },
     UseCases: {
-      built_for: "Built for",
-      "heavy_users": "Heavy Users Like You",
-      "join_users": "Join YouTubers, content creators, and podcasters who switched from \"shrinkflation\" services",
+      built_for: "Bulk",
+      "heavy_users": "Audio & Video Transcription",
+      "join_users": 'Built for Heavy Users Like You - Join YouTubers, content creators, and podcasters who switched from "shrinkflation" services',
       "podcasters": {
         "title": "Podcasters",
         "des": "Upload your entire back catalog. Create show notes for every episode. No more choosing which episodes to transcribe."
       },
       "content_creators": {
         "title": "Content Creators",
-        "des": "Turn your video library into searchable text. Generate captions for everything. No counting minutes, just creating."
+        "des": "Turn your video library into searchable text by using our service to transcribe video files automatically. Generate captions for everything. No counting minutes, just creating."
       },
       "journalists": {
         "title": "Journalists",
@@ -657,6 +659,11 @@ let message = {
       "title": "Frequently Asked",
       "titleHighlight": "Questions",
       "questions": [
+        {
+          "q": "AI transcription",
+          "question": "What is AI transcription and how does it work?",
+          "answer": "AI transcription is the process of automatically converting audio to text using advanced artificial intelligence. At NeverCap, you simply upload your files, and our AI transcribes the content with up to 96% accuracy. Our service is designed to transcribe video files (like MP4, MOV) and audio files (like MP3, WAV) into readable, editable text, complete with speaker labels and timestamps."
+        },
         {
           "q": "unlimited_policy",
           "question": "Is it really unlimited? What's the catch?",
@@ -978,7 +985,8 @@ let message = {
       statCard3DescriptionLine1: "Word-Level",
       statCard3DescriptionLine2: "Timestamp Precision",
 
-      languageSectionTitlePart1: "96% Accuracy in 12 Main Languages",
+      languageSectionTitlePart1: "96% Accuracy ",
+      languageSectionTitlePart2: "in 12 Main Languages",
       languageSubtitle: "Professional-grade transcription for global content",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "English",
@@ -1521,16 +1529,16 @@ let message = {
     },
     Podcasters: {
       // Hero Section
-      badge: "🎙️ Built for Podcasters",
+      badge: "Built for Podcasters",
       heroTitle: "Transcribe Your",
       heroTitleHighlight: "Entire Podcast Archive",
       heroSubtitle:
-        "Upload your entire back catalog. Create show notes for every episode. No more choosing which episodes to transcribe. Process 50 episodes at once, unlimited times per month.",
+        "Upload your entire back catalog. Create show notes for every episode. No more choosing which episodes to audio transcribe.",
       ctaPrimary: "Start Transcribing Free",
       ctaSecondary: "See How It Works",
-      trustBadge1: "🎙️ 10,000+ Podcasters",
-      trustBadge2: "∞ Unlimited Episodes",
-      trustBadge3: "📝 SEO-Ready Transcripts",
+      trustBadge1: "10,000+ Podcasters",
+      trustBadge2: "Unlimited Episodes",
+      trustBadge3: "SEO-Ready Transcripts",
 
       // Stats Section
       stats: {
@@ -2083,7 +2091,8 @@ let message = {
       statsCompliant: "Compliant",
 
       // Problem Section
-      problemTitle: "The Research Transcription Problem",
+      problemTitle: "The",
+      problemTitle2: "Research Transcription Problem",
       problemSubtitle:
         'Other services make you choose which data is "worth" transcribing',
 
@@ -2099,7 +2108,8 @@ let message = {
       problemCard3Desc:
         "As your dataset grows, transcription costs explode. $500 per focus group makes scaling impossible.",
 
-      solutionTitle: "The NeverCap Solution",
+      title: "The ",
+      solutionTitle: "NeverCap Solution",
       solutionDesc:
         "True unlimited transcription. Upload your entire study. Transcribe every interview. Analyze all your data. No caps, no limits, just research.",
 
@@ -2158,7 +2168,8 @@ let message = {
       feature4Point4: "Secure team collaboration",
 
       // Use Cases Section
-      useCasesTitle: "Perfect for Every Research Method",
+      useCasesTitle: "Perfect for",
+      useCasesTitle2: "Every Research Method",
       useCasesSubtitle: "From ethnography to clinical trials",
 
       useCase1Title: "Focus Groups",
@@ -2186,7 +2197,8 @@ let message = {
         "Student-friendly pricing with full features. Process your entire dataset affordably. Meet tight deadlines with batch processing.",
 
       // Testimonial Section
-      testimonialTitle: "Trusted by Leading Researchers",
+      testimonialTitle: "Trusted by",
+      testimonialTitle2: "Leading Researchers",
       testimonialText:
         "Our research team had 200 hours of focus group recordings from our community health study. Other services wanted us to pick and choose which sessions to transcribe because of the cost. NeverCap let us process everything over a weekend. The 20-speaker identification actually worked—even during our messiest discussions where everyone was talking at once. This tool has completely changed how we handle qualitative data.",
       testimonialAuthorName: "Dr. Sarah Chen",
@@ -2200,8 +2212,8 @@ let message = {
     BusinessTeams: {
       // Hero Section
       heroBadge: "For Business Teams",
-      heroTitle1: "Meeting Recording Made",
-      heroTitle2: "Effortless",
+      heroTitle1: "Meeting Recording",
+      heroTitle2: "Made Effortless",
       heroSubtitle:
         "Record meetings directly in your browser or upload audio files instantly. Build searchable archives from unlimited conversations. Never lose important discussions again with truly unlimited transcription.",
       heroCtaPrimary: "Start Recording Now →",
@@ -2217,7 +2229,8 @@ let message = {
       statsInstantUpload: "Instant Upload & Process",
 
       // Features Section
-      featuresTitle: "Everything Teams Need to Capture Knowledge",
+      featuresTitle: "Transcription for Every Business",
+      featuresTitle2: "Meeting",
       featuresSubtitle:
         "From live recording to instant uploads, we've eliminated every friction point",
 
@@ -2269,15 +2282,16 @@ let message = {
       feature4Meeting2Text: '"...Q4 revenue projections..."',
 
       // Workflow Section
-      workflowTitle: "From Recording to Actionable Insights",
+      workflowTitle: "How to Transcribe a",
+      workflowTitle2: "Zoom Recording to Text",
       workflowSubtitle:
         "A seamless workflow that captures every important moment",
 
       workflowStep1Title: "Record or Upload",
-      workflowStep1Desc: "Start recording live or upload existing audio files",
+      workflowStep1Desc: "Start recording live or simply download meeting recording from Zoom, Google Meet, or Microsoft Teams",
 
       workflowStep2Title: "Auto-Transcribe",
-      workflowStep2Desc: "AI transcribes with 96% accuracy in minutes",
+      workflowStep2Desc: "Our AI will automatically transcribe the recording to text with 96% accuracy in minutes",
 
       workflowStep3Title: "Collaborate",
       workflowStep3Desc: "Share, comment, and extract action items",
@@ -2286,7 +2300,8 @@ let message = {
       workflowStep4Desc: "Find insights across all your meetings",
 
       // Testimonials Section
-      testimonialsTitle: "Teams Love NeverCap",
+      testimonialsTitle: "Teams Love",
+      testimonialsTitle2: "NeverCap",
       testimonialsSubtitle:
         "See how businesses transform their meeting culture",
 
@@ -2314,8 +2329,8 @@ let message = {
     Educators: {
       // Hero Section
       heroBadge: "For Educators & Teachers",
-      heroTitle1: "Turn Any Educational Video Into",
-      heroTitle2: "Accessible Content",
+      heroTitle1: "Make Learning",
+      heroTitle2: "Accessible for Everyone",
       heroSubtitle: "Simply paste YouTube links to get instant transcripts with auto-generated captions. Transform lectures, tutorials, and educational videos into searchable, accessible content that every student can learn from.",
       heroCtaPrimary: "Try It Free - No Credit Card",
       heroCtaSecondary: "Watch Demo",
@@ -2331,7 +2346,8 @@ let message = {
       stats4Label: "Accuracy Rate",
 
       // Features Section
-      featuresTitle: "Everything Educators Need for Video Transcription",
+      featuresTitle: "Everything Educators Need for",
+      featuresTitle2: "Video Transcription",
       featuresSubtitle:
         "From YouTube lectures to recorded classes, make all your content accessible",
 
@@ -2371,32 +2387,34 @@ let message = {
       feature3Folder5: "Language Learning",
 
       // Feature 4
-      feature4Title: "Export in Any Format You Need",
+      feature4Title: "AI Transcribe Audio File to Study Guide",
       feature4Desc:
-        "Download transcripts in TXT, DOCX, or PDF formats. Perfect for creating study guides, lecture notes, or accessible course materials. Share with students or integrate into your learning management system.",
+        "Don't just share recordings. Automatically transcribe lectures to text and other audio files into detailed study guides, complete with summaries and key concepts for effective student revision. Export in TXT, DOCX, or PDF formats.",
       feature4Point1: "TXT for simple text editing",
       feature4Point2: "DOCX for formatted documents",
       feature4Point3: "PDF for easy sharing and printing",
       feature4Point4: "Bulk export multiple files at once",
 
       // Workflow Section
-      workflowTitle: "How It Works",
-      workflowSubtitle: "From video link to accessible transcript in minutes",
+      workflowTitle: "How It Works:",
+      grid: "Audio File to Study Guide",
+      workflowSubtitle: "From video link to accessible transcript and study materials in minutes",
 
-      workflowStep1Title: "Paste Link",
-      workflowStep1Desc: "Copy any educational video URL and paste it",
+      workflowStep1Title: "Upload Your Lecture",
+      workflowStep1Desc: "Upload any audio or video file (MP3, MP4, WAV) or paste a YouTube link",
 
-      workflowStep2Title: "Auto-Transcribe",
-      workflowStep2Desc: "AI transcribes with 96% accuracy",
+      workflowStep2Title: "AI Transcription",
+      workflowStep2Desc: "Our AI transcribes the audio, separates speakers, and identifies key topics",
 
       workflowStep3Title: "Generate Captions",
       workflowStep3Desc: "Auto-create perfectly synced subtitles",
 
-      workflowStep4Title: "Share & Export",
-      workflowStep4Desc: "Download or share with students",
+      workflowStep4Title: "Export Study Guide",
+      workflowStep4Desc: "Download the text, summary, or export it to create your final study guide",
 
       // Use Cases Section
-      useCasesTitle: "Perfect for Every Educational Need",
+      useCasesTitle: "Perfect for Every",
+      useCasesTitle2: "Educational Need",
       useCasesSubtitle:
         "See how educators are using NeverCap to enhance learning",
 
@@ -2410,7 +2428,7 @@ let message = {
 
       useCase3Title: "Study Materials",
       useCase3Text:
-        "Convert video tutorials into readable study guides. Perfect for students who prefer reading or need to review content quickly.",
+        "Use AI to transcribe audio files to study guides from video tutorials and lectures. Perfect for students who prefer reading or need to review content quickly with searchable text.",
 
       useCase4Title: "Accessibility Compliance",
       useCase4Text:
@@ -2425,7 +2443,8 @@ let message = {
         "Help students cite video sources accurately with timestamps. Perfect for research projects and academic papers.",
 
       // Testimonial Section
-      testimonialTitle: "Trusted by 50,000+ Educators",
+      testimonialTitle: "Trusted by",
+      testimonialTitle2: "50,000+ Educators",
       testimonialSubtitle: "See why teachers worldwide choose NeverCap",
       testimonialText:
         '"I\'ve been using NeverCap to transcribe my entire YouTube channel of math tutorials. What used to take weeks with other services now takes hours. The ability to paste links directly and get instant transcripts has transformed how I create accessible content. My international students especially love the multi-language captions!"',
@@ -2599,7 +2618,7 @@ let message = {
   },
   About: {
     Hero: {
-      "badge": "🚀 Industry-Leading AI Technology",
+      "badge": "Industry-Leading AI Technology",
       "title": "About ",
       "highlighted_text": "NeverCap",
       "description": "Our mission is to provide the most accurate audio and video transcription services. Leveraging industry-leading AI technology, we achieve transcription accuracy rates of over 96%. For some major languages, through technical optimization, we can even reach 99% accuracy."

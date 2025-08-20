@@ -2,7 +2,7 @@
 let message = {
   // Etusivu
   HomePage: {
-    home: "Koti",
+    home: "Kaikki Transkriptit",
     times: "{times} ilmaista litterointia päivässä, {left} jäljellä tänään. ",
     tips: "Päivitä Pro-versioon saadaksesi rajattomasti litterointeja.",
     update: "Päivitä nyt",
@@ -655,8 +655,9 @@ let message = {
       "Jokainen tiedosto voi olla enintään 30 minuuttia pitkä. Lataa 1 tiedosto kerrallaan.",
     uploadWithinHours: "10 tunnin lataukset",
     yourSubscription: "Tilauksesi peruutetaan {time}.",
-    save: "Säästää"
-  },
+    save: "Säästää",
+      freeversion2: "Ilmainen Suunnitelma"
+},
   // Kielen vastaavuussuhteet
   LanguageMap: {
     sysLanguagesMap: {
@@ -1055,20 +1056,20 @@ let message = {
     Company: "Yritys",
     featureMenus: ["Rajoittamaton transkriptio", "Joukkolataus", "96 % tarkkuus"],
     useCaseMenus: [
-      "Kaikki käyttötapaukset",
-      "Podcastien tekijät",
-      "Toimittajat",
-      "Sisällöntuottajat",
-      "Tutkijat",
-      "Liiketoimintatiimit",
-      "Opettajat"
-    ],
+          "Kaikki käyttötapaukset",
+          "Podcastien tekijät",
+          "Toimittajat",
+          "Sisällöntuottajat",
+          "Tutkijat",
+          "Liiketoimintatiimit",
+          "Opettajat"
+        ],
     companyMenus: [
-      "Noin",
-      "Hinnoittelu",
-      "Tietosuoja",
-      "Ehdot"
-    ]
+          "Noin",
+          "Hinnoittelu",
+          "Tietosuoja",
+          "Ehdot"
+        ]
   },
   Index: {
     Hero: {
@@ -1168,47 +1169,47 @@ let message = {
       "title": "Usein kysytyt kysymykset",
       "titleHighlight": "Kysymykset",
       "questions": [
-        {
-          "q": "rajoittamaton_käytäntö",
-          "question": "Onko se todella rajaton? Mikä on juju?",
-          "answer": "Kyllä, se on todella rajaton! Ei kuukausittaisia minuuttirajoituksia tai ylitysmaksuja. Ainoat rajoitukset ovat teknisiä: yksittäiset tiedostot voivat olla jopa 10 tuntia pitkiä tai 5 Gt:n kokoisia, ja voit käsitellä 50 tiedostoa kerralla. Mutta voit ladata niin monta erää kuin haluat, koko kuukauden ajan."
-        },
-        {
-          "q": "tarkkuus",
-          "question": "Kuinka tarkka transkriptio on?",
-          "answer": "Takaamme 96 %:n tarkkuuden selkeän äänentoiston takaamiseksi. Tekoälymme on koulutettu miljoonien tuntien monipuolisen sisällön parissa ja käsittelee aksentteja, teknisiä termejä ja useita puhujia poikkeuksellisen hyvin. Haastavassa äänessä älykkäät parannusominaisuutemme auttavat parantamaan tuloksia."
-        },
-        {
-          "q": "kielet",
-          "question": "Mitä kieliä tuette?",
-          "answer": "Tuemme transkriptiota yli 100 kielellä, mukaan lukien englanti, espanja, mandariinikiina, hindi, arabia, ranska ja paljon muuta. Lisäksi voit kääntää transkriptiosi 249 eri kielelle, mikä tekee siitä täydellisen vaihtoehdon globaalille sisällölle."
-        },
-        {
-          "q": "nopeus",
-          "question": "Kuinka nopea transkriptio on?",
-          "answer": "Salamannopeasti! Tunnin mittainen äänitiedosto käsitellään tyypillisesti alle viidessä minuutissa. Eräkäsittelyllä voit ladata 50 tiedostoa samanaikaisesti ja antaa niiden käsitellä rinnakkain. Useimmat käyttäjät heräävät ja huomaavat koko kirjastonsa litteroituna yön aikana."
-        },
-        {
-          "q": "peruutus",
-          "question": "Voinko peruuttaa milloin tahansa?",
-          "answer": "Ehdottomasti! Ei sopimuksia, ei peruutusmaksuja. Voit päivittää, alentaa tai peruuttaa tilauksesi milloin tahansa hallintapaneelistasi. Jos peruutat, säilytät käyttöoikeutesi laskutusjaksosi loppuun asti."
-        },
-        {
-          "q": "turvallisuus",
-          "question": "Ovatko tietoni turvassa?",
-          "answer": "Turvallisuutesi on meille ensisijaisen tärkeää. Olemme SOC 2 -sertifioituja, käytämme 256-bittistä salausta kaikessa datassa emmekä koskaan käytä sisältöäsi malliemme kouluttamiseen. Voit poistaa tiedostosi milloin tahansa, ja tyhjennämme ne automaattisesti 30 päivän kuluttua. GDPR- ja CCPA-yhteensopiva."
-        },
-        {
-          "q": "vientimuodot",
-          "question": "Mitä vientimuotoja on saatavilla?",
-          "answer": "Lataa tekstitiedostosi missä tahansa tarvitsemassasi muodossa: PDF, Word (DOCX), Excel, CSV, SRT-tekstitykset, pelkkä teksti (TXT) ja VTT-tekstitykset. Täydellinen mihin tahansa työnkulkuusi."
-        },
-        {
-          "q": "tiedostomuodot",
-          "question": "Mitä ääni- ja videotiedostoja voin ladata?",
-          "answer": "Tuemme käytännössä kaikkia kohtaamiasi ääni- ja videoformaatteja: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV ja paljon muuta. Jos osaat toistaa sen, voimme litteroida sen."
-        }
-      ]
+            {
+              "q": "rajoittamaton_käytäntö",
+              "question": "Onko se todella rajaton? Mikä on juju?",
+              "answer": "Kyllä, se on todella rajaton! Ei kuukausittaisia minuuttirajoituksia tai ylitysmaksuja. Ainoat rajoitukset ovat teknisiä: yksittäiset tiedostot voivat olla jopa 10 tuntia pitkiä tai 5 Gt:n kokoisia, ja voit käsitellä 50 tiedostoa kerralla. Mutta voit ladata niin monta erää kuin haluat, koko kuukauden ajan."
+            },
+            {
+              "q": "tarkkuus",
+              "question": "Kuinka tarkka transkriptio on?",
+              "answer": "Takaamme 96 %:n tarkkuuden selkeän äänentoiston takaamiseksi. Tekoälymme on koulutettu miljoonien tuntien monipuolisen sisällön parissa ja käsittelee aksentteja, teknisiä termejä ja useita puhujia poikkeuksellisen hyvin. Haastavassa äänessä älykkäät parannusominaisuutemme auttavat parantamaan tuloksia."
+            },
+            {
+              "q": "kielet",
+              "question": "Mitä kieliä tuette?",
+              "answer": "Tuemme transkriptiota yli 100 kielellä, mukaan lukien englanti, espanja, mandariinikiina, hindi, arabia, ranska ja paljon muuta. Lisäksi voit kääntää transkriptiosi 249 eri kielelle, mikä tekee siitä täydellisen vaihtoehdon globaalille sisällölle."
+            },
+            {
+              "q": "nopeus",
+              "question": "Kuinka nopea transkriptio on?",
+              "answer": "Salamannopeasti! Tunnin mittainen äänitiedosto käsitellään tyypillisesti alle viidessä minuutissa. Eräkäsittelyllä voit ladata 50 tiedostoa samanaikaisesti ja antaa niiden käsitellä rinnakkain. Useimmat käyttäjät heräävät ja huomaavat koko kirjastonsa litteroituna yön aikana."
+            },
+            {
+              "q": "peruutus",
+              "question": "Voinko peruuttaa milloin tahansa?",
+              "answer": "Ehdottomasti! Ei sopimuksia, ei peruutusmaksuja. Voit päivittää, alentaa tai peruuttaa tilauksesi milloin tahansa hallintapaneelistasi. Jos peruutat, säilytät käyttöoikeutesi laskutusjaksosi loppuun asti."
+            },
+            {
+              "q": "turvallisuus",
+              "question": "Ovatko tietoni turvassa?",
+              "answer": "Turvallisuutesi on meille ensisijaisen tärkeää. Olemme SOC 2 -sertifioituja, käytämme 256-bittistä salausta kaikessa datassa emmekä koskaan käytä sisältöäsi malliemme kouluttamiseen. Voit poistaa tiedostosi milloin tahansa, ja tyhjennämme ne automaattisesti 30 päivän kuluttua. GDPR- ja CCPA-yhteensopiva."
+            },
+            {
+              "q": "vientimuodot",
+              "question": "Mitä vientimuotoja on saatavilla?",
+              "answer": "Lataa tekstitiedostosi missä tahansa tarvitsemassasi muodossa: PDF, Word (DOCX), Excel, CSV, SRT-tekstitykset, pelkkä teksti (TXT) ja VTT-tekstitykset. Täydellinen mihin tahansa työnkulkuusi."
+            },
+            {
+              "q": "tiedostomuodot",
+              "question": "Mitä ääni- ja videotiedostoja voin ladata?",
+              "answer": "Tuemme käytännössä kaikkia kohtaamiasi ääni- ja videoformaatteja: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV ja paljon muuta. Jos osaat toistaa sen, voimme litteroida sen."
+            }
+          ]
     },
     CTASection: {
       "title": "Valmis irrottautumaan rajoituksista?",
@@ -1597,93 +1598,93 @@ let message = {
       "highlighted_text": "Ei piilotettuja korkkeja.",
       "description": "Valitse tarpeisiisi sopiva paketti. Voit päivittää tai alentaa pakettia milloin tahansa. Ei sopimuksia, ei yllätyksiä.",
       "plans": [
-        {
-          "name": "Ilmainen",
-          "price": "0 dollaria",
-          "period": "kuukausi",
-          "discount": "Täydellinen paikka kokeilla palveluitamme",
-          "limits": {
-            "title": "Päivittäiset rajoitukset",
-            "items": [
-              "3 tiedostoa/päivä (yhteensä ≈90 min/päivä)",
-              "Jopa 30 minuuttia tiedostoa kohden (≤250 Mt)",
-              "Lataa yksi tiedosto kerrallaan",
-              "Normaali prioriteettijono"
-            ]
-          },
-          "features": {
-            "title": "Ominaisuudet",
-            "items": [
-              "Yli 100 kieltä",
-              "Kaiuttimien nimikkeet",
-              "Käännös",
-              "Kaikki vientimuodot"
-            ]
-          },
-          "cta": {
-            "text": "Aloita ilmaiseksi. Ei luottokorttia.",
-            "button": "Aloita ilmaiseksi"
-          }
-        },
-        {
-          "name": "Pro Kuukausittain",
-          "price": "17,99 dollaria",
-          "period": "kuukausi",
-          "discount": "9,99 dollaria ensimmäiseltä kuukaudelta",
-          "limits": {
-            "title": "Ei kuukausittaista ylärajaa",
-            "items": [
-              "Rajoittamaton kokonaisminuuttimäärä",
-              "Jopa 10 tuntia / 5 Gt tiedostoa kohden",
-              "Lataa 50 tiedostoa kerralla",
-              "Prioriteettijono"
-            ]
-          },
-          "features": {
-            "title": "Kaikki ilmaiseksi, plus",
-            "items": [
-              "Sanatason aikaleimat",
-              "Edistynyt puhujan tunnistus",
-              "Muotoillut kappaleet ja välimerkit",
-              "Prioriteettituki"
-            ]
-          },
-          "cta": {
-            "text": "Rajoittamaton määrä minuutteja. Ensisijainen nopeus. Erälataukset.",
-            "button": "Siirry ammattilaiseksi"
-          },
-          "badge": "Suosituimmat"
-        },
-        {
-          "name": "Pro Annual",
-          "price": "8,99 dollaria",
-          "period": "kuukausi",
-          "discount": "Laskutetaan vuosittain 107,88 dollaria",
-          "limits": {
-            "title": "Sama kuin Pro Monthly",
-            "items": [
-              "Rajoittamaton kokonaisminuuttimäärä",
-              "Jopa 10 tuntia / 5 Gt tiedostoa kohden",
-              "Lataa 50 tiedostoa kerralla",
-              "Prioriteettijono"
-            ]
-          },
-          "features": {
-            "title": "Kaikki ilmaiseksi, plus",
-            "items": [
-              "Sanatason aikaleimat",
-              "Edistynyt puhujan tunnistus",
-              "Muotoillut kappaleet ja välimerkit",
-              "Prioriteettituki"
-            ]
-          },
-          "cta": {
-            "text": "Rajoittamaton määrä minuutteja. Ensisijainen nopeus. Erälataukset.",
-            "button": "Siirry ammattilaiseksi"
-          },
-          "badge": "Paras hinta-laatusuhde - Säästä 50 %"
-        }
-      ],
+            {
+              "name": "Ilmainen",
+              "price": "0 dollaria",
+              "period": "kuukausi",
+              "discount": "Täydellinen paikka kokeilla palveluitamme",
+              "limits": {
+                "title": "Päivittäiset rajoitukset",
+                "items": [
+                  "3 tiedostoa/päivä (yhteensä ≈90 min/päivä)",
+                  "Jopa 30 minuuttia tiedostoa kohden (≤250 Mt)",
+                  "Lataa yksi tiedosto kerrallaan",
+                  "Normaali prioriteettijono"
+                ]
+              },
+              "features": {
+                "title": "Ominaisuudet",
+                "items": [
+                  "Yli 100 kieltä",
+                  "Kaiuttimien nimikkeet",
+                  "Käännös",
+                  "Kaikki vientimuodot"
+                ]
+              },
+              "cta": {
+                "text": "Aloita ilmaiseksi. Ei luottokorttia.",
+                "button": "Aloita ilmaiseksi"
+              }
+            },
+            {
+              "name": "Pro Kuukausittain",
+              "price": "17,99 dollaria",
+              "period": "kuukausi",
+              "discount": "9,99 dollaria ensimmäiseltä kuukaudelta",
+              "limits": {
+                "title": "Ei kuukausittaista ylärajaa",
+                "items": [
+                  "Rajoittamaton kokonaisminuuttimäärä",
+                  "Jopa 10 tuntia / 5 Gt tiedostoa kohden",
+                  "Lataa 50 tiedostoa kerralla",
+                  "Prioriteettijono"
+                ]
+              },
+              "features": {
+                "title": "Kaikki ilmaiseksi, plus",
+                "items": [
+                  "Sanatason aikaleimat",
+                  "Edistynyt puhujan tunnistus",
+                  "Muotoillut kappaleet ja välimerkit",
+                  "Prioriteettituki"
+                ]
+              },
+              "cta": {
+                "text": "Rajoittamaton määrä minuutteja. Ensisijainen nopeus. Erälataukset.",
+                "button": "Siirry ammattilaiseksi"
+              },
+              "badge": "Suosituimmat"
+            },
+            {
+              "name": "Pro Annual",
+              "price": "8,99 dollaria",
+              "period": "kuukausi",
+              "discount": "Laskutetaan vuosittain 107,88 dollaria",
+              "limits": {
+                "title": "Sama kuin Pro Monthly",
+                "items": [
+                  "Rajoittamaton kokonaisminuuttimäärä",
+                  "Jopa 10 tuntia / 5 Gt tiedostoa kohden",
+                  "Lataa 50 tiedostoa kerralla",
+                  "Prioriteettijono"
+                ]
+              },
+              "features": {
+                "title": "Kaikki ilmaiseksi, plus",
+                "items": [
+                  "Sanatason aikaleimat",
+                  "Edistynyt puhujan tunnistus",
+                  "Muotoillut kappaleet ja välimerkit",
+                  "Prioriteettituki"
+                ]
+              },
+              "cta": {
+                "text": "Rajoittamaton määrä minuutteja. Ensisijainen nopeus. Erälataukset.",
+                "button": "Siirry ammattilaiseksi"
+              },
+              "badge": "Paras hinta-laatusuhde - Säästä 50 %"
+            }
+          ],
       "disclaimer": '\"Rajaton\" tarkoittaa, ettei kuukausittaista ylärajaa ole eikä keinotekoista hidastusta ole. Kohtuullinen käyttö koskee väärinkäyttöä automatisoinnissa tai uudelleenjakelussa.'
     },
     ComparisonTable: {
@@ -1693,115 +1694,115 @@ let message = {
         "subtitle": "Katso tarkalleen, mitä saat kullakin paketilla. Ei piilotettuja rajoituksia."
       },
       "plans": [
-        "Ominaisuudet",
-        "Ilmainen",
-        "Pro Kuukausittain",
-        "Pro Annual"
-      ],
+              "Ominaisuudet",
+              "Ilmainen",
+              "Pro Kuukausittain",
+              "Pro Annual"
+            ],
       "features": [
-        {
-          "name": "Hinta",
-          "values": [
-            "0 €/kk",
             {
-              "main": "17,99 $/kk",
-              "note": "9,99 dollaria ensimmäinen kuukausi"
+              "name": "Hinta",
+              "values": [
+                "0 €/kk",
+                {
+                  "main": "17,99 $/kk",
+                  "note": "9,99 dollaria ensimmäinen kuukausi"
+                },
+                {
+                  "main": "8,99 $/kk",
+                  "note": "Laskutus 107,88 dollaria/vuosi"
+                }
+              ]
             },
             {
-              "main": "8,99 $/kk",
-              "note": "Laskutus 107,88 dollaria/vuosi"
+              "name": "Kuukausittaiset minuutit",
+              "values": ["~2 700 (90/päivä)", "Rajoittamaton", "Rajoittamaton"]
+            },
+            {
+              "name": "Tiedoston enimmäiskesto",
+              "values": ["30 minuuttia", "10 tuntia", "10 tuntia"]
+            },
+            {
+              "name": "Tiedoston enimmäiskoko",
+              "values": ["250 Mt", "5 Gt", "5 Gt"]
+            },
+            {
+              "name": "Erälataukset",
+              "values": ["1 tiedosto", "50 tiedostoa", "50 tiedostoa"]
+            },
+            {
+              "name": "Käsittelynopeus",
+              "values": ["Standardi", "Prioriteetti", "Prioriteetti"]
+            },
+            {
+              "name": "Tuetut kielet",
+              "values": ["Yli 100 kieltä", "Yli 100 kieltä", "Yli 100 kieltä"]
+            },
+            {
+              "name": "Käännös",
+              "values": ["totta", "totta", "totta"]
+            },
+            {
+              "name": "Kaiuttimen tunnistus",
+              "values": ["Perus", "Edistynyt (20 kaiutinta)", "Edistynyt (20 kaiutinta)"]
+            },
+            {
+              "name": "Sanatason aikaleimat",
+              "values": ["väärä", "totta", "totta"]
+            },
+            {
+              "name": "Muotoillut kappaleet",
+              "values": ["väärä", "totta", "totta"]
+            },
+            {
+              "name": "Vientimuodot",
+              "values": ["Kaikki muodot", "Kaikki muodot", "Kaikki muodot"]
+            },
+            {
+              "name": "Tukea",
+              "values": ["Sähköposti", "Tärkeä sähköposti", "Tärkeä sähköposti"]
+            },
+            {
+              "name": "Tietojen säilytys",
+              "values": ["30 päivää", "Ikuisesti", "Ikuisesti"]
             }
           ]
-        },
-        {
-          "name": "Kuukausittaiset minuutit",
-          "values": ["~2 700 (90/päivä)", "Rajoittamaton", "Rajoittamaton"]
-        },
-        {
-          "name": "Tiedoston enimmäiskesto",
-          "values": ["30 minuuttia", "10 tuntia", "10 tuntia"]
-        },
-        {
-          "name": "Tiedoston enimmäiskoko",
-          "values": ["250 Mt", "5 Gt", "5 Gt"]
-        },
-        {
-          "name": "Erälataukset",
-          "values": ["1 tiedosto", "50 tiedostoa", "50 tiedostoa"]
-        },
-        {
-          "name": "Käsittelynopeus",
-          "values": ["Standardi", "Prioriteetti", "Prioriteetti"]
-        },
-        {
-          "name": "Tuetut kielet",
-          "values": ["Yli 100 kieltä", "Yli 100 kieltä", "Yli 100 kieltä"]
-        },
-        {
-          "name": "Käännös",
-          "values": ["totta", "totta", "totta"]
-        },
-        {
-          "name": "Kaiuttimen tunnistus",
-          "values": ["Perus", "Edistynyt (20 kaiutinta)", "Edistynyt (20 kaiutinta)"]
-        },
-        {
-          "name": "Sanatason aikaleimat",
-          "values": ["väärä", "totta", "totta"]
-        },
-        {
-          "name": "Muotoillut kappaleet",
-          "values": ["väärä", "totta", "totta"]
-        },
-        {
-          "name": "Vientimuodot",
-          "values": ["Kaikki muodot", "Kaikki muodot", "Kaikki muodot"]
-        },
-        {
-          "name": "Tukea",
-          "values": ["Sähköposti", "Tärkeä sähköposti", "Tärkeä sähköposti"]
-        },
-        {
-          "name": "Tietojen säilytys",
-          "values": ["30 päivää", "Ikuisesti", "Ikuisesti"]
-        }
-      ]
     },
     FAQ: {
       "title": "Usein kysytyt kysymykset",
       "titleHighligt": "Kysymykset",
       "items": [
-        {
-          "q": "rajoittamaton_käytäntö",
-          "question": "Onko se todella rajaton?",
-          "answer": "Kyllä! Pro-paketeissa ei ole kuukausittaisia minuuttirajoituksia. Ainoat rajoitukset ovat teknisiä: tiedostojen enimmäiskesto on 10 tuntia ja tiedostokoko 5 Gt. Voit käsitellä niin monta tiedostoa kuin tarvitset."
-        },
-        {
-          "q": "suunnitelman_muutos",
-          "question": "Voinko muuttaa suunnitelmia milloin tahansa?",
-          "answer": "Ehdottomasti! Voit peruuttaa tilauksesi milloin tahansa hallintapaneelistasi. Voit päivittää tai alentaa tilausta milloin tahansa."
-        },
-        {
-          "q": "maksutavat",
-          "question": "Mitä maksutapoja hyväksytte?",
-          "answer": "Hyväksymme kaikki yleisimmät luotto- ja pankkikortit sekä PayPalin turvallisia ja vaivattomia maksuja varten."
-        },
-        {
-          "q": "ilmainen_kokeilu",
-          "question": "Onko Prolle ilmaista kokeiluversiota?",
-          "answer": "Kyllä! Kokeile Prota ilmaiseksi 7 päivää, luottokorttia ei tarvita. Saat myös ensimmäisen kuukauden 45 % alennuksella, kun tilaat."
-        },
-        {
-          "q": "tiedostojen_säilytys",
-          "question": "Kuinka kauan säilytätte tiedostojani?",
-          "answer": "Ilmainen paketti: 30 päivää. Pro-paketit: Ikuisesti! Opintotodistuksesi ovat aina saatavilla tililläsi."
-        },
-        {
-          "q": "tietoturva",
-          "question": "Entä tietoturva?",
-          "answer": "Olemme SOC 2 -sertifioituja ja käytämme 256-bittistä salausta. Emme koskaan käytä sisältöäsi malliemme kouluttamiseen. Tietosi ovat sinun."
-        }
-      ]
+            {
+              "q": "rajoittamaton_käytäntö",
+              "question": "Onko se todella rajaton?",
+              "answer": "Kyllä! Pro-paketeissa ei ole kuukausittaisia minuuttirajoituksia. Ainoat rajoitukset ovat teknisiä: tiedostojen enimmäiskesto on 10 tuntia ja tiedostokoko 5 Gt. Voit käsitellä niin monta tiedostoa kuin tarvitset."
+            },
+            {
+              "q": "suunnitelman_muutos",
+              "question": "Voinko muuttaa suunnitelmia milloin tahansa?",
+              "answer": "Ehdottomasti! Voit peruuttaa tilauksesi milloin tahansa hallintapaneelistasi. Voit päivittää tai alentaa tilausta milloin tahansa."
+            },
+            {
+              "q": "maksutavat",
+              "question": "Mitä maksutapoja hyväksytte?",
+              "answer": "Hyväksymme kaikki yleisimmät luotto- ja pankkikortit sekä PayPalin turvallisia ja vaivattomia maksuja varten."
+            },
+            {
+              "q": "ilmainen_kokeilu",
+              "question": "Onko Prolle ilmaista kokeiluversiota?",
+              "answer": "Kyllä! Kokeile Prota ilmaiseksi 7 päivää, luottokorttia ei tarvita. Saat myös ensimmäisen kuukauden 45 % alennuksella, kun tilaat."
+            },
+            {
+              "q": "tiedostojen_säilytys",
+              "question": "Kuinka kauan säilytätte tiedostojani?",
+              "answer": "Ilmainen paketti: 30 päivää. Pro-paketit: Ikuisesti! Opintotodistuksesi ovat aina saatavilla tililläsi."
+            },
+            {
+              "q": "tietoturva",
+              "question": "Entä tietoturva?",
+              "answer": "Olemme SOC 2 -sertifioituja ja käytämme 256-bittistä salausta. Emme koskaan käytä sisältöäsi malliemme kouluttamiseen. Tietosi ovat sinun."
+            }
+          ]
     },
     CTA: {
       "title": "Valmiina rajattomaan käyttöön?",
@@ -2798,122 +2799,122 @@ let message = {
       part2: {
         "title": "Näin muutat YouTube-videon ladattavaksi MP4-tiedostoksi kolmessa helpossa vaiheessa",
         "steps": [
-          {
-            title: "Kopioi URL-osoite",
-            content: "Avaa haluamasi YouTube-video ja kopioi linkki selaimesi osoiteriviltä."
-          },
-          {
-            title: "Liitä linkki",
-            content: "Siirry videoiden lataustyökaluusi ja liitä URL-osoite sen syöttökenttään."
-          },
-          {
-            title: "Lataa MP4-tiedosto",
-            content: "Kun tiedosto on käsitelty, tallenna se painamalla latauspainiketta."
-          }
-        ]
+                {
+                  title: "Kopioi URL-osoite",
+                  content: "Avaa haluamasi YouTube-video ja kopioi linkki selaimesi osoiteriviltä."
+                },
+                {
+                  title: "Liitä linkki",
+                  content: "Siirry videoiden lataustyökaluusi ja liitä URL-osoite sen syöttökenttään."
+                },
+                {
+                  title: "Lataa MP4-tiedosto",
+                  content: "Kun tiedosto on käsitelty, tallenna se painamalla latauspainiketta."
+                }
+              ]
       },
       part3: {
         content: [
-          "Oletko koskaan huomannut, että sinun täytyy katsoa YouTube-videoita offline-tilassa?",
-          "Olitpa sitten menossa metrolla, lentämässä lentokoneella, opiskelemassa tärkeää tutoriaalia, syventymässä taitoja kehittävään sisältöön tai arkistoimassa tärkeää videomateriaalia, luotettavan offline-yhteyden saaminen on yleinen turhauttava ongelma. Tässä latausohjelmamme loistaa.",
-          "Latausohjelman avulla voit muuntaa YouTube-videoita nopeasti ja helposti MP4-muotoon ladattavaksi. Tallenna ne laitteellesi ja katso niitä milloin tahansa.",
-          "Prosessi on nopea, yksinkertainen ja vaivaton. Kun olet ladannut videon, voit nauttia suosikkivideoistasi milloin ja missä tahansa – internetiä ei tarvita."
-        ]
+                "Oletko koskaan huomannut, että sinun täytyy katsoa YouTube-videoita offline-tilassa?",
+                "Olitpa sitten menossa metrolla, lentämässä lentokoneella, opiskelemassa tärkeää tutoriaalia, syventymässä taitoja kehittävään sisältöön tai arkistoimassa tärkeää videomateriaalia, luotettavan offline-yhteyden saaminen on yleinen turhauttava ongelma. Tässä latausohjelmamme loistaa.",
+                "Latausohjelman avulla voit muuntaa YouTube-videoita nopeasti ja helposti MP4-muotoon ladattavaksi. Tallenna ne laitteellesi ja katso niitä milloin tahansa.",
+                "Prosessi on nopea, yksinkertainen ja vaivaton. Kun olet ladannut videon, voit nauttia suosikkivideoistasi milloin ja missä tahansa – internetiä ei tarvita."
+              ]
       },
       part4: {
         content: ["Tässä ovat viisi tärkeintä lataamisen etua", "YouTube-videot MP4-tiedostoina"],
         list: [
-          {
-            title: "Säästä datakuluissa:",
-            content: "YouTube-videoiden katselu kuluttaa yleensä huomattavasti mobiilidataa. Lataamalla videon offline-katselua varten voit välttää nämä tarpeettomat kustannukset."
-          },
-          {
-            title: "Katso missä ja milloin tahansa:",
-            content: "Nauti videoistasi saumattomasti, jopa katkonaisella internetyhteydellä. Ei enää puskurointihuolia."
-          },
-          {
-            title: "Helppo arkistointi ja säilytys:",
-            content: "Videoiden tallentaminen MP4-muotoon helpottaa oman kokoelman rakentamista, erityisesti sisällölle, jota pidät todella arvokkaana tai tärkeänä."
-          },
-          {
-            title: "Yksinkertaisempi jakaminen:",
-            content: "MP4-tiedoston jakaminen on paljon kätevämpää kuin linkin lähettäminen. Voit lähettää videotiedoston suoraan sovellusten, kuten WhatsAppin tai Instagramin, kautta, jolloin YouTuben avaamisen ei tarvitse ylimääräistä vaihetta."
-          },
-          {
-            title: "Välitön katselu, jaetut hetket:",
-            content: "Haluatko innolla näyttää suosikkivideosi lähellä oleville ystäville tai perheenjäsenille? Ladatun MP4-tiedoston avulla voitte kaikki katsoa sen sujuvasti yhdessä heti, ilman kiusallisia taukoja latautumista odotellessa."
-          }
-        ]
+                {
+                  title: "Säästä datakuluissa:",
+                  content: "YouTube-videoiden katselu kuluttaa yleensä huomattavasti mobiilidataa. Lataamalla videon offline-katselua varten voit välttää nämä tarpeettomat kustannukset."
+                },
+                {
+                  title: "Katso missä ja milloin tahansa:",
+                  content: "Nauti videoistasi saumattomasti, jopa katkonaisella internetyhteydellä. Ei enää puskurointihuolia."
+                },
+                {
+                  title: "Helppo arkistointi ja säilytys:",
+                  content: "Videoiden tallentaminen MP4-muotoon helpottaa oman kokoelman rakentamista, erityisesti sisällölle, jota pidät todella arvokkaana tai tärkeänä."
+                },
+                {
+                  title: "Yksinkertaisempi jakaminen:",
+                  content: "MP4-tiedoston jakaminen on paljon kätevämpää kuin linkin lähettäminen. Voit lähettää videotiedoston suoraan sovellusten, kuten WhatsAppin tai Instagramin, kautta, jolloin YouTuben avaamisen ei tarvitse ylimääräistä vaihetta."
+                },
+                {
+                  title: "Välitön katselu, jaetut hetket:",
+                  content: "Haluatko innolla näyttää suosikkivideosi lähellä oleville ystäville tai perheenjäsenille? Ladatun MP4-tiedoston avulla voitte kaikki katsoa sen sujuvasti yhdessä heti, ilman kiusallisia taukoja latautumista odotellessa."
+                }
+              ]
       },
       part5: {
         title: "Miksi latausohjelmamme erottuu joukosta",
         cards: [
-          {
-            title: "Yhden napsautuksen helppous",
-            content: "Vaivaton asennus ja intuitiivinen käyttö."
-          },
-          {
-            title: "Salamannopea – rajaton",
-            content: "Muunna ja lataa huippunopeudella – ei ylärajoja, ei rajoituksia."
-          },
-          {
-            title: "Muunna lennossa",
-            content: "Käsittele tiedostosi välittömästi, ei odottelua."
-          },
-          {
-            title: "Ei mainoksia, ei häiriötekijöitä",
-            content: "Nauti selkeästä käyttöliittymästä ilman ponnahdusikkunoita, bannereita tai keskeytyksiä – vain saumatonta videoiden muuntamista."
-          },
-          {
-            icon: "5",
-            color: "#DEE5FF",
-            title: "Alkuperäinen laatu taattu",
-            content: "Latauksesi säilyttävät lähdevideon täyden resoluution pikselintarkkaa toistoa varten joka kerta."
-          },
-          {
-            icon: "6",
-            color: "#DEF6EE",
-            title: "Toimii missä tahansa",
-            content: "Täysin yhteensopiva minkä tahansa selaimen kanssa, millä tahansa laitteella."
-          }
-        ]
+                {
+                  title: "Yhden napsautuksen helppous",
+                  content: "Vaivaton asennus ja intuitiivinen käyttö."
+                },
+                {
+                  title: "Salamannopea – rajaton",
+                  content: "Muunna ja lataa huippunopeudella – ei ylärajoja, ei rajoituksia."
+                },
+                {
+                  title: "Muunna lennossa",
+                  content: "Käsittele tiedostosi välittömästi, ei odottelua."
+                },
+                {
+                  title: "Ei mainoksia, ei häiriötekijöitä",
+                  content: "Nauti selkeästä käyttöliittymästä ilman ponnahdusikkunoita, bannereita tai keskeytyksiä – vain saumatonta videoiden muuntamista."
+                },
+                {
+                  icon: "5",
+                  color: "#DEE5FF",
+                  title: "Alkuperäinen laatu taattu",
+                  content: "Latauksesi säilyttävät lähdevideon täyden resoluution pikselintarkkaa toistoa varten joka kerta."
+                },
+                {
+                  icon: "6",
+                  color: "#DEF6EE",
+                  title: "Toimii missä tahansa",
+                  content: "Täysin yhteensopiva minkä tahansa selaimen kanssa, millä tahansa laitteella."
+                }
+              ]
       },
       part6: {
         title: ["Maksimoi YouTube-videoiden latausmääräsi", "Lataajan kanssa"],
         content: [
-          "Vaivaton YouTube-muunnos MP4-muotoon: nopea, yksinkertainen ja ilmainen.",
-          "Siinä me olemme erinomaisia. Käyttäjäystävällinen käyttöliittymämme on suunniteltu kaikille – teknisiä taitoja ei tarvita. Kokemustasostasi riippumatta voit muuntaa videoita välittömästi. Rekisteröitymistä ei vaadita: Saat juuri sen, mitä tarvitset, heti.",
-          "Voit olla varma – lataamasi MP4-tiedostot säilyttävät alkuperäisen videolaadun ja -selkeyden, täsmälleen sellaisena kuin katsoit ne YouTubessa.",
-          "Toimii kaikkialla, missä sinäkin. Täysin yhteensopiva kaikkien tärkeimpien alustojen ja laitteiden kanssa. Käytitpä sitten Windowsia, macOS:ää, Linuxia, Androidia tai iOS:ää – älypuhelinta, tablettia tai pöytätietokonetta – voit ladata videoita saumattomasti."
-        ]
+                "Vaivaton YouTube-muunnos MP4-muotoon: nopea, yksinkertainen ja ilmainen.",
+                "Siinä me olemme erinomaisia. Käyttäjäystävällinen käyttöliittymämme on suunniteltu kaikille – teknisiä taitoja ei tarvita. Kokemustasostasi riippumatta voit muuntaa videoita välittömästi. Rekisteröitymistä ei vaadita: Saat juuri sen, mitä tarvitset, heti.",
+                "Voit olla varma – lataamasi MP4-tiedostot säilyttävät alkuperäisen videolaadun ja -selkeyden, täsmälleen sellaisena kuin katsoit ne YouTubessa.",
+                "Toimii kaikkialla, missä sinäkin. Täysin yhteensopiva kaikkien tärkeimpien alustojen ja laitteiden kanssa. Käytitpä sitten Windowsia, macOS:ää, Linuxia, Androidia tai iOS:ää – älypuhelinta, tablettia tai pöytätietokonetta – voit ladata videoita saumattomasti."
+              ]
       },
       part7: {
         title: "Keskeisiä kysymyksiä YouTube-videoiden lataamisesta",
         list: [
-          {
-            question: "Voinko ladata YouTube-videon, jos se on tekijänoikeuksin suojattu?",
-            answer: "Tekijänoikeuksilla suojattujen YouTube-videoiden lataaminen ilman tekijänoikeuden omistajan lupaa on laitonta."
-          },
-          {
-            question: "Onko tämä lataustyökalu turvallinen?",
-            answer: "Kyllä, se on turvallinen ja luotettava. Emme vaadi käyttäjiltä mitään henkilökohtaisia tietoja ja ryhdymme tehokkaisiin toimiin viruksia vastaan. Muistutamme sinua aina olemaan varovainen ladatessasi tiedostoja internetistä: vältä napsauttamasta epäilyttäviä linkkejä tai lataamasta kyseenalaisia tiedostoja."
-          },
-          {
-            question: "Mitä kieliä YouTube MP4-tiedostoiksi lataaminen tukee?",
-            answer: "Palvelumme tukee YouTube-videoiden lataamista kaikilla suosituilla kielillä."
-          },
-          {
-            question: "Mitkä tekijät vaikuttavat YouTube-videon lataamiseen kuluvaan aikaan?",
-            answer: "Vaikka varmistammekin nopeimman mahdollisen latauskokemuksen, latausaikaan vaikuttavat myös tekijät, kuten videon pituus ja internetyhteytesi nopeus."
-          },
-          {
-            question: "Kun lataan MP4-videon älypuhelimellani, minne se tallennetaan?"
-          },
-          {
-            question: "Heikentääkö YouTube-videon lataaminen MP4-muodossa videon laatua?",
-            answer: "Ei. YouTube-videoiden lataaminen MP4-muodossa työkalumme avulla säilyttää alkuperäisen videon laadun. Muunnosprosessi säilyttää lähteen laadun, mikä varmistaa, että katselukokemuksesi on sama kuin YouTubessa."
-          }
-        ]
+                {
+                  question: "Voinko ladata YouTube-videon, jos se on tekijänoikeuksin suojattu?",
+                  answer: "Tekijänoikeuksilla suojattujen YouTube-videoiden lataaminen ilman tekijänoikeuden omistajan lupaa on laitonta."
+                },
+                {
+                  question: "Onko tämä lataustyökalu turvallinen?",
+                  answer: "Kyllä, se on turvallinen ja luotettava. Emme vaadi käyttäjiltä mitään henkilökohtaisia tietoja ja ryhdymme tehokkaisiin toimiin viruksia vastaan. Muistutamme sinua aina olemaan varovainen ladatessasi tiedostoja internetistä: vältä napsauttamasta epäilyttäviä linkkejä tai lataamasta kyseenalaisia tiedostoja."
+                },
+                {
+                  question: "Mitä kieliä YouTube MP4-tiedostoiksi lataaminen tukee?",
+                  answer: "Palvelumme tukee YouTube-videoiden lataamista kaikilla suosituilla kielillä."
+                },
+                {
+                  question: "Mitkä tekijät vaikuttavat YouTube-videon lataamiseen kuluvaan aikaan?",
+                  answer: "Vaikka varmistammekin nopeimman mahdollisen latauskokemuksen, latausaikaan vaikuttavat myös tekijät, kuten videon pituus ja internetyhteytesi nopeus."
+                },
+                {
+                  question: "Kun lataan MP4-videon älypuhelimellani, minne se tallennetaan?"
+                },
+                {
+                  question: "Heikentääkö YouTube-videon lataaminen MP4-muodossa videon laatua?",
+                  answer: "Ei. YouTube-videoiden lataaminen MP4-muodossa työkalumme avulla säilyttää alkuperäisen videon laadun. Muunnosprosessi säilyttää lähteen laadun, mikä varmistaa, että katselukokemuksesi on sama kuin YouTubessa."
+                }
+              ]
       }
     }
   },
@@ -2929,68 +2930,68 @@ let message = {
       "highlighted_text": "Vaikutus",
       "subtitle": "Huippuluokan tekoälyteknologian avulla tehostetaan globaalia viestintää",
       "metrics": [
-        {
-          "value": "96%+",
-          "label": "Tarkkuusaste",
-          "description": "Alan johtavaa transkriptiotarkkuutta edistyneen tekoälyn avulla"
-        },
-        {
-          "value": "yli 100",
-          "label": "Tuetut kielet",
-          "description": "Puhutun sanan tunnistus globaalille sisällölle"
-        },
-        {
-          "value": "249+",
-          "label": "Käännöskielet",
-          "description": "Käännä litteroitu teksti käytännössä mille tahansa kielelle"
-        }
-      ]
+            {
+              "value": "96%+",
+              "label": "Tarkkuusaste",
+              "description": "Alan johtavaa transkriptiotarkkuutta edistyneen tekoälyn avulla"
+            },
+            {
+              "value": "yli 100",
+              "label": "Tuetut kielet",
+              "description": "Puhutun sanan tunnistus globaalille sisällölle"
+            },
+            {
+              "value": "249+",
+              "label": "Käännöskielet",
+              "description": "Käännä litteroitu teksti käytännössä mille tahansa kielelle"
+            }
+          ]
     },
     Mission: {
       "title": "Miksi valita",
       "highlighted_text": "NeverCap",
       "subtitle": "Uskomme kielimuurien murtamiseen ja sisällön saavutettavuuden varmistamiseen kaikille",
       "features": [
-        {
-          "icon": "🎯",
-          "title": "Vertaansa vailla oleva tarkkuus",
-          "description": "Tekoälymallejamme parannetaan jatkuvasti, jotta ne tuottaisivat yli 96 %:n transkriptiotarkkuuden. Jotkin tärkeimmät kielet saavuttavat jopa 99 %:n tarkkuuden edistyneen optimoinnin avulla."
-        },
-        {
-          "icon": "🌍",
-          "title": "Globaali kielituki",
-          "description": "Tuki yli 100 kielelle puhutun sanan tunnistuksessa ja käännösominaisuudet yli 249 kielelle, mikä tekee sisällöstäsi todella globaalia."
-        },
-        {
-          "icon": "⚡",
-          "title": "Salamannopea käsittely",
-          "description": "Käsittele tuntikausia ääni- ja videosisältöä minuuteissa, ei tunneissa. Optimoitu tekoälyprosessimme varmistaa, että saat transkriptiosi nopeasti laadusta tinkimättä."
-        },
-        {
-          "icon": "🔒",
-          "title": "Yritystason tietoturva",
-          "description": "Tietoturvasi on meille ensisijaisen tärkeää. Käytämme alan standardien mukaista salausta ja noudatamme maailmanlaajuisia tietosuojamääräyksiä pitääksemme sisältösi turvassa ja luottamuksellisena."
-        }
-      ]
+            {
+              "icon": "🎯",
+              "title": "Vertaansa vailla oleva tarkkuus",
+              "description": "Tekoälymallejamme parannetaan jatkuvasti, jotta ne tuottaisivat yli 96 %:n transkriptiotarkkuuden. Jotkin tärkeimmät kielet saavuttavat jopa 99 %:n tarkkuuden edistyneen optimoinnin avulla."
+            },
+            {
+              "icon": "🌍",
+              "title": "Globaali kielituki",
+              "description": "Tuki yli 100 kielelle puhutun sanan tunnistuksessa ja käännösominaisuudet yli 249 kielelle, mikä tekee sisällöstäsi todella globaalia."
+            },
+            {
+              "icon": "⚡",
+              "title": "Salamannopea käsittely",
+              "description": "Käsittele tuntikausia ääni- ja videosisältöä minuuteissa, ei tunneissa. Optimoitu tekoälyprosessimme varmistaa, että saat transkriptiosi nopeasti laadusta tinkimättä."
+            },
+            {
+              "icon": "🔒",
+              "title": "Yritystason tietoturva",
+              "description": "Tietoturvasi on meille ensisijaisen tärkeää. Käytämme alan standardien mukaista salausta ja noudatamme maailmanlaajuisia tietosuojamääräyksiä pitääksemme sisältösi turvassa ja luottamuksellisena."
+            }
+          ]
     },
     Company: {
       "title": "Yritys",
       "highlighted_text": "Tiedot",
       "subtitle": "Ota meihin yhteyttä, jos sinulla on kysyttävää tai tarvitset tukea",
       "details": [
-        {
-          "label": "Yrityksen nimi",
-          "value": "SCRIBIFY AI INC"
-        },
-        {
-          "label": "Pääkonttori",
-          "value": ["30 N Gould St, Ste R", "Sheridan, WY 82801", "Yhdysvallat"]
-        },
-        {
-          "label": "Ota yhteyttä",
-          "value": ["sähköposti", "Tuki saatavilla 24/7"]
-        }
-      ]
+            {
+              "label": "Yrityksen nimi",
+              "value": "SCRIBIFY AI INC"
+            },
+            {
+              "label": "Pääkonttori",
+              "value": ["30 N Gould St, Ste R", "Sheridan, WY 82801", "Yhdysvallat"]
+            },
+            {
+              "label": "Ota yhteyttä",
+              "value": ["sähköposti", "Tuki saatavilla 24/7"]
+            }
+          ]
     },
     CTA: {
       "title": "Oletko valmis kokemaan eron?",

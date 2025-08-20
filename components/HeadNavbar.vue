@@ -13,7 +13,7 @@
           <NuxtImg
             src="/assets/logo3.png"
             alt="NeverCap"
-            class="h-6 w-auto sm:h-[1.875rem]"
+            class="h-6 w-auto sm:h-[1.875rem] no-drag"
             fit="contain"
             loading="eager"
           />
