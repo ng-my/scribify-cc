@@ -418,7 +418,7 @@
           <div class="use-case-card">
             <div class="use-case-icon">
               <el-image
-                src="/assets/img/features/useCase_5.svg"
+                src="/assets/img/features/useCase_4.svg"
                 class="h-[35px] w-[40px] rounded-md"
                 fit="contain"
               ></el-image>
