@@ -412,7 +412,6 @@
 </template>
 
 <script setup lang="ts">
-<<<<<<< HEAD
 /* index 组件 */
 import HowToDownload from "~/components/youtubeTomp4/howToDownload.vue";
 import { useI18nModule } from "~/utils/i18n";
@@ -602,89 +601,6 @@ const showHowToDownload = ref(false);
 const showDownload = () => {
   showHowToDownload.value = !showHowToDownload.value;
 };
-=======
-import NavBar from "~/components/index/NavBar.vue";
-import Hero from "~/components/index/Hero.vue";
-import Unlimited from "~/components/index/Unlimited.vue";
-import Accuracy from "~/components/index/Accuracy.vue";
-import Effortless from "~/components/index/Effortless.vue";
-import Language from "~/components/index/Language.vue";
-import PricingSection from "~/components/index/PricingSection.vue";
-import ReviewSection from "~/components/index/ReviewSection.vue";
-import FAQSection from "~/components/index/FAQSection.vue";
-import TryNowBottom from "~/components/index/TryNowBottom.vue";
-import FreeTrial from "~/components/index/FreeTrial.vue";
-import { useCrossDomainCookie } from "~/hooks/useCrossDomainCookie";
-const { $mitt } = useNuxtApp();
-
-const scrollIntoView = (id: string) => {
-  const el = document.getElementById(id);
-  if (el) {
-    el.scrollIntoView({ behavior: "smooth" });
-  }
-};
-const signup = () => {
-  $mitt.emit("goToEvent", { path: "/user/signup" });
-};
-
-const times = ref(0);
-const saveInfoToStore = () => {
-  console.log("saveInfoToStoreMain", times.value);
-  if (times.value > 3) {
-    return;
-  }
-  times.value++;
-
-  const { setUserInfo } = useUserStore();
-  const { userInfo } = storeToRefs(useUserStore());
-  const userInfoCookie = useCrossDomainCookie("userInfoFromApp");
-  const token = useCrossDomainCookie("token");
-
-  console.log("token check", { tokenValue: token.value, times: times.value });
-  console.log("userInfoFromApp check", { tokenValue: userInfoCookie.value, times: times.value });
-
-  if (!token.value) {
-    // 🔥 不要立即清理，先重试几次
-    if (times.value <= 2) {
-      console.log("Token not ready, retrying...", times.value);
-      saveInfoToStore();
-      return;
-    } else {
-      // 多次重试后仍然没有token，才清理
-      console.log("Token still not available after retries, clearing...");
-      setUserInfo(null);
-      userInfoCookie.value = "";
-      return;
-    }
-  }
-
-  if (userInfoCookie.value) {
-    console.log("saveInfoToStore userInfoCookie", userInfoCookie.value);
-    setUserInfo(userInfoCookie.value);
-    setTimeout(() => {
-      if (!userInfo.value?.userInfoVO) {
-        saveInfoToStore();
-      } else {
-        console.log('clear')
-        userInfoCookie.value = "";
-      }
-    }, 100);
-  } else {
-    console.log("Token exists but userInfo not ready, waiting...", times.value);
-    setTimeout(() => {
-      saveInfoToStore();
-    }, 100 * times.value); // 递增延迟等待userInfo cookie
-  }
-};
-onMounted(() => {
-  saveInfoToStore()
-  $mitt.on("signup", signup);
-});
-onUnmounted(() => {
-  // 在组件卸载时移除事件监听
-  $mitt.off("signup", signup);
-});
->>>>>>> d92b314b31e4b61d06409ac2ffcd3592e0f53dea
 </script>
 
 <style scoped lang="scss">

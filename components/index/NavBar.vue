@@ -151,11 +151,7 @@ const scrollIntoView = (id: string) => {
 
 const goToHome = () => {
   const path = route.path;
-<<<<<<< HEAD
   const urls = ["terms-of-use", "privacy"];
-=======
-  const urls = ["user/terms", "user/privacy"];
->>>>>>> d92b314b31e4b61d06409ac2ffcd3592e0f53dea
   if (isLogin.value && urls.find((url) => path.includes(url))) {
     return $mitt.emit("goToEvent", { path: "/" });
   }

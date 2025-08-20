@@ -6,7 +6,6 @@
         tableData.length ? t('FileUploadAndRecording.upload.guest.file') : t('FileUploadAndRecording.upload.guest.audio')
       }}</span>
       <div class="flex" v-show="!tableData.length">
-<<<<<<< HEAD
         <div @click="openRecord" class="img-button cursor-pointer">
           <img
             class="h-auto w-[0.9375rem]"
@@ -22,20 +21,6 @@
             alt=""
           />
         </div>
-=======
-        <img
-          @click="openRecord"
-          class="mr-1.5 h-auto w-[3rem] cursor-pointer no-drag"
-          src="/assets/images/index_black/record.svg"
-          alt=""
-        />
-        <img
-          @click="showLinkDialog = true"
-          class="h-auto w-[3rem] cursor-pointer no-drag"
-          src="/assets/images/index_black/url.svg"
-          alt=""
-        />
->>>>>>> d92b314b31e4b61d06409ac2ffcd3592e0f53dea
       </div>
     </div>
     <div
@@ -109,6 +94,7 @@
     </div>
     <div v-else>
       <upload-file
+        local="en-US"
         :isMobileFromIndex="isMobileFromIndex"
         useUploadValidate
       />
@@ -182,19 +168,16 @@ import { type UploadFile, useUpload } from "~/components/upload/useUpload";
 import { useSubscript } from "~/components/layout/header/useSubscript";
 import { useVisitor } from "~/hooks/useVisitor";
 import { useLink } from "~/components/upload/dialog/useLink";
-<<<<<<< HEAD
 import { message } from "~/i18n/lang/en-US";
 import Utils, { Msg, isMobile } from "~/utils/tools";
-=======
-import { useGuestUserStore } from "~/stores/useUserStore";
-import { Msg, isMobile } from "~/utils/tools";
->>>>>>> d92b314b31e4b61d06409ac2ffcd3592e0f53dea
 import { Loading } from "@element-plus/icons-vue";
 import SpeakerPromat from "~/components/record/dialog/speakerPromat.vue";
 import { useCrossDomainCookie } from "~/hooks/useCrossDomainCookie";
 import useJumpPage from "~/hooks/useJumpPage";
 
-const { t } = useI18n();
+const { t, locale, setLocaleMessage } = useI18n();
+// todo 删除
+setLocaleMessage(locale.value, message);
 
 const { selectRawFiles } = storeToRefs(useUploadStore());
 const { clearSelectRawFiles } = useUploadStore();
@@ -317,21 +300,13 @@ const getFileNameWithoutExt = (fileName: string) => {
 };
 const handleJumpHome = () => {
   if (isNoTimes.value) {
-<<<<<<< HEAD
     const noTimes = useCrossDomainCookie("noTimes");
-=======
-    const noTimes = useCrossDomainCookie("noTimes")
->>>>>>> d92b314b31e4b61d06409ac2ffcd3592e0f53dea
     noTimes.value = "1";
   }
   setLoginData();
   setTimeout(() => {
     $mitt.emit("goToEvent", { path: "/" });
-<<<<<<< HEAD
   });
-=======
-  })
->>>>>>> d92b314b31e4b61d06409ac2ffcd3592e0f53dea
 };
 const handleTranscribe = async () => {
   if (disabled.value) return;
@@ -397,13 +372,9 @@ const disabled = computed(() => {
   );
 });
 const isUploading = computed(() => {
-<<<<<<< HEAD
   return tableData.value.some((file) =>
     ["hashing", "pending", "uploading"].includes(file.status)
   );
-=======
-  return tableData.value.some((file) => ['hashing', 'pending', 'uploading'].includes(file.status));
->>>>>>> d92b314b31e4b61d06409ac2ffcd3592e0f53dea
 });
 
 const openRecord = async () => {
@@ -624,7 +595,6 @@ const handleCloseDialog = () => {
   @apply mt-10 pt-0;
 }
 
-<<<<<<< HEAD
 .img-button {
   width: 2.875rem;
   height: 2rem;
@@ -635,13 +605,6 @@ const handleCloseDialog = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-=======
-.no-drag {
-  -webkit-user-drag: none;
-  user-drag: none;
-  -webkit-user-select: none;
-  user-select: none;
->>>>>>> d92b314b31e4b61d06409ac2ffcd3592e0f53dea
 }
 </style>
 <style>
