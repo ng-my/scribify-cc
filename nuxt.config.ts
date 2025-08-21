@@ -119,6 +119,20 @@ export default defineNuxtConfig({
         ? [removeConsole({ includes: ["log", "info", "warn", "error"] })]
         : [])
     ],
+    build: {
+      target: "es2015",  // 指定 ES 版本兼容 Safari 11+ [6](@ref)
+      rollupOptions: {
+        output: {
+          manualChunks: (id) => {
+            if (id.includes("node_modules")) return "vendor"; // 合并依赖减少分块
+          },
+        },
+      },
+    },
+  },
+  experimental: {
+    asyncEntry: true,  // 启用异步入口加载，避免阻塞
+    payloadExtraction: true,  // 提取静态数据优化加载
   },
   elementPlus: {
     /** Options */
