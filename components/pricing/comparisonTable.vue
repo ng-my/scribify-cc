@@ -112,7 +112,7 @@ const $i = useI18nModule("Pricing.ComparisonTable");
 
 .section-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .section-title {
@@ -133,7 +133,7 @@ const $i = useI18nModule("Pricing.ComparisonTable");
   border-radius: 16px;
   border: 1px solid #e2e4e6;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  // box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
 
 .comparison-table table {

@@ -639,7 +639,7 @@ const handleClick = () => {
 
 .limit-card {
   background: white;
-  border: 2px solid #f1f5f9;
+  border: 1px solid var(--line-color);
   border-radius: 16px;
   padding: 30px;
   text-align: center;
@@ -647,7 +647,7 @@ const handleClick = () => {
   transition: all 0.3s;
 }
 
-.limit-card:hover {
+.limit-card1:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(100, 116, 139, 0.1);
 }
@@ -773,7 +773,8 @@ const handleClick = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--line-color);
+  // box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
 }
 
 /* Upload Animation */
@@ -913,12 +914,12 @@ const handleClick = () => {
   padding: 40px;
   border-radius: 16px;
   text-align: center;
-  transition: all 0.3s;
+  // transition: all 0.3s;
   position: relative;
   overflow: hidden;
 }
 
-.use-case-card::before {
+.use-case-card1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -930,12 +931,12 @@ const handleClick = () => {
   transition: transform 0.3s;
 }
 
-.use-case-card:hover {
+.use-case-card1:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-.use-case-card:hover::before {
+.use-case-card1:hover::before {
   transform: scaleX(1);
 }
 

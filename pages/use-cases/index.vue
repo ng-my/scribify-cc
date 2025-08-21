@@ -613,6 +613,7 @@ const signup = () => {
   padding: 30px;
   border-radius: 16px;
   position: relative;
+  border: 1px solid var(--line-color);
   //box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 

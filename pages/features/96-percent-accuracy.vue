@@ -798,7 +798,7 @@ const handleClick = () => {
   transition: all 0.3s;
 }
 
-.language-card:hover {
+.language-card1:hover {
   background: white;
   border-color: var(--primary);
   transform: translateY(-5px);
@@ -933,7 +933,7 @@ const handleClick = () => {
   transition: all 0.3s;
 }
 
-.transcript-line:hover {
+.transcript-line1:hover {
   background: #f0fdf4;
   transform: translateX(10px);
 }
@@ -972,9 +972,9 @@ const handleClick = () => {
 .comparison-table {
   background: white;
   border-radius: 16px;
-  border: 1px solid #e2e4e6;
+  border: 1px solid var(--line-color);
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  // box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
 
 .comparison-table table {

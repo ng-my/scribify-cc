@@ -893,13 +893,14 @@ h1 {
   background: white;
   padding: 24px;
   border-radius: 16px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s;
+  border: 1px solid var(--line-color);
+  // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  // transition: all 0.3s;
   position: relative;
   overflow: hidden;
 }
 
-.feature-card::before {
+.feature-card1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -912,11 +913,11 @@ h1 {
 }
 
 .feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  // transform: translateY(-10px);
+  // box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-.feature-card:hover::before {
+.feature-card1:hover::before {
   transform: scaleX(1);
 }
 
@@ -988,14 +989,14 @@ h1 {
   border-radius: 12px;
   padding: 30px;
   text-align: center;
-  transition: all 0.3s;
+  // transition: all 0.3s;
   cursor: pointer;
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
-.use-case-card:hover {
+.use-case-card1:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   text-decoration: none;
@@ -1032,6 +1033,7 @@ h1 {
 }
 
 .testimonial-card {
+  border: 1px solid var(--line-color);
   position: relative;
   background: white;
   padding: 30px;

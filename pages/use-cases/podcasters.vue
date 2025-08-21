@@ -769,9 +769,9 @@ h1 {
 
 /* Stats Section */
 .stats {
-  padding-top: 70px;
+  padding-bottom: 70px;
   background: white;
-  border-top: 1px solid var(--line-color);
+  border-bottom: 1px solid var(--line-color);
 }
 
 .stats-grid {
@@ -988,6 +988,7 @@ h1 {
   padding: 30px;
   border-radius: 12px;
   position: relative;
+  border: 1px solid var(--line-color);
 }
 
 .quote-icon {
@@ -1046,9 +1047,9 @@ h1 {
 .comparison-table {
   background: white;
   border-radius: 16px;
-  border: 1px solid #e2e4e6;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--line-color);
+  // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   margin-top: 50px;
 }
 

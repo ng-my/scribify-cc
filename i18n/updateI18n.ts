@@ -75,11 +75,11 @@ let AI_CONFIG = {
   apiKey: "sk-sswlyzxvwcbnxixpkznsbawlzbkltdbbezrdizyhiljbxziw", // 替换为你的 API Key
   model: "deepseek-ai/DeepSeek-v3" // deepseek-ai/DeepSeek-v3
 };
-AI_CONFIG = {
-  url: "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
-  apiKey: "cca5560e-fa20-4b6c-aac5-88ac26d59a8b", // 替换为你的 API Key
-  model: "doubao-seed-1-6-250615" // doubao
-};
+// AI_CONFIG = {
+//   url: "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
+//   apiKey: "cca5560e-fa20-4b6c-aac5-88ac26d59a8b", // 替换为你的 API Key
+//   model: "doubao-seed-1-6-250615" // doubao
+// };
 
 // 获取目标语言的完整名称
 function getLanguageName(languageCode: string): string {
@@ -205,48 +205,73 @@ ${textArray.map((text, index) => `${index + 1}. ${text}`).join("\n")}
 
 // 解析 AI 返回的翻译结果
 function parseAITranslationResponse(
-  content: string,
-  expectedCount: number
+    content: string,
+    expectedCount: number
 ): string[] {
   const lines = content
-    .split("\n")
-    .map((line) => line.trim())
-    .filter((line) => line.length > 0);
+      .split("\n")
+      .map((line) => line.trim())
+      .filter((line) => line.length > 0);
 
-  // 方法1: 直接匹配数字开头的行（最准确）
-  const numberedLines = lines
-    .filter((line) => /^\d+\.\s+/.test(line)) // 匹配 "数字. " 开头的行
-    .map((line) => line.replace(/^\d+\.\s*/, "").trim()) // 移除序号
-    .slice(0, expectedCount);
+  let result: string[] = [];
 
-  if (numberedLines.length === expectedCount) {
-    return numberedLines;
+  // 方法1: 匹配数字开头的行（改进正则，允许序号后为空）
+  const numberedLines = lines.filter((line) => /^\d+\./.test(line)); // 只要求"数字."
+
+  if (numberedLines.length >= expectedCount) {
+    // 按序号提取，保持位置关系
+    for (let i = 1; i <= expectedCount; i++) {
+      const found = numberedLines.find((line) =>
+          line.startsWith(`${i}.`)
+      );
+
+      if (found) {
+        const content = found.replace(/^\d+\.\s*/, "").trim();
+        // 如果内容为空，用233填补
+        result.push(content.length > 0 ? content : "233");
+      } else {
+        result.push("233"); // 序号缺失，用233填补
+      }
+    }
+    return result;
   }
 
-  // 方法2: 更宽松的匹配
+  // 方法2和3保持不变...
   const possibleTranslations = lines
-    .filter((line) => {
-      // 排除明显的说明文字，但保留翻译内容
-      return (
-        !line.includes("翻译结果") &&
-        !line.includes("原文") &&
-        !line.includes("请翻译") &&
-        !line.match(/^[一二三四五六七八九十\d]+[、．.]\s*$/)
-      ); // 排除纯序号行
-    })
-    .map((line) => line.replace(/^\d+[\.、]\s*/, "").trim())
-    .filter((line) => line.length > 10); // 翻译结果通常比较长
+      .filter((line) => {
+        return (
+            !line.includes("翻译结果") &&
+            !line.includes("原文") &&
+            !line.includes("请翻译") &&
+            !line.match(/^[一二三四五六七八九十\d]+[、．.]\s*$/)
+        );
+      })
+      .map((line) => line.replace(/^\d+[\.、]\s*/, "").trim());
 
   if (possibleTranslations.length >= expectedCount) {
-    return possibleTranslations.slice(0, expectedCount);
+    for (let i = 0; i < expectedCount; i++) {
+      const translation = possibleTranslations[i];
+      if (translation && translation.length > 10) {
+        result.push(translation);
+      } else {
+        result.push("233");
+      }
+    }
+    return result;
   }
 
-  // 方法3: 如果前面都失败，按顺序取前N行非空内容
-  const fallbackLines = lines
-    .filter((line) => line.length > 5)
-    .slice(0, expectedCount);
+  // 方法3: fallback
+  const fallbackLines = lines.filter((line) => line.length > 5);
 
-  return fallbackLines;
+  for (let i = 0; i < expectedCount; i++) {
+    if (i < fallbackLines.length && fallbackLines[i]) {
+      result.push(fallbackLines[i]);
+    } else {
+      result.push("233");
+    }
+  }
+
+  return result;
 }
 
 // 修改原来的 translateTexts 函数，增加 AI 翻译选项
@@ -261,7 +286,7 @@ async function translateTexts(
   if (texts.length === 0) {
     return [];
   }
-  const BATCH_SIZE = useAI ? 200 : 100; // AI 翻译使用较小的批次
+  const BATCH_SIZE = useAI ? 50 : 100; // AI 翻译使用较小的批次
   const results: string[] = [];
   try {
     // 分批处理

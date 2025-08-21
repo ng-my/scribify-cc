@@ -468,10 +468,22 @@
                 list-style: none;
               "
             >
-              {{ t("UseCases.ContentCreators.FAQSection.questions[" + index + "].question") }}
+              {{
+                t(
+                  "UseCases.ContentCreators.FAQSection.questions[" +
+                    index +
+                    "].question"
+                )
+              }}
             </summary>
             <p style="margin-top: 16px; color: var(--gray); line-height: 22px">
-              {{ t("UseCases.ContentCreators.FAQSection.questions[" + index + "].answer") }}
+              {{
+                t(
+                  "UseCases.ContentCreators.FAQSection.questions[" +
+                    index +
+                    "].answer"
+                )
+              }}
             </p>
           </details>
         </div>
@@ -951,6 +963,7 @@ const signup = () => {
   padding: 40px;
   border-radius: 20px;
   position: relative;
+  border: 1px solid var(--line-color);
   //box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 

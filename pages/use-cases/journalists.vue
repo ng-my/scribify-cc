@@ -393,7 +393,7 @@
         </div>
 
         <!-- Solution 3 -->
-        <div class="solution-grid ">
+        <div class="solution-grid">
           <div class="solution-content">
             <span class="solution-label">{{
               $i("Journalists.solution.solutions.professionalAccuracy.label")
@@ -447,25 +447,16 @@
         <div class="solution-grid !mb-0">
           <div class="solution-content">
             <span class="solution-label">{{
-                $i("Journalists.solution.solutions.ironclad.label")
-              }}</span>
+              $i("Journalists.solution.solutions.ironclad.label")
+            }}</span>
             <h3 class="solution-title">
-              {{
-                $i("Journalists.solution.solutions.ironclad.title")
-              }}
+              {{ $i("Journalists.solution.solutions.ironclad.title") }}
             </h3>
             <p class="solution-description">
-              {{
-                $i(
-                  "Journalists.solution.solutions.ironclad.description"
-                )
-              }}
+              {{ $i("Journalists.solution.solutions.ironclad.description") }}
             </p>
             <ul class="solution-points">
-              <li
-                v-for="(point, index) in ironclad"
-                :key="index"
-              >
+              <li v-for="(point, index) in ironclad" :key="index">
                 <span class="check icon-duihao iconfont"></span>
                 <span>{{ point }}</span>
               </li>
@@ -476,20 +467,19 @@
               <div
                 style="font-size: 64px; font-weight: 900; color: var(--primary)"
               >
-                {{
-                  $i(
-                    "Journalists.solution.solutions.ironclad.visual.accuracy"
-                  )
-                }}
+                <!-- {{
+                  $i("Journalists.solution.solutions.ironclad.visual.accuracy")
+                }} -->
+                <el-image
+                  src="/assets/img/useCase/Security.svg"
+                  class="h-[84px] w-[72px]"
+                  fit="contain"
+                ></el-image>
               </div>
               <div
                 style="font-size: 18px; color: var(--gray); line-height: 22px"
               >
-                {{
-                  $i(
-                    "Journalists.solution.solutions.ironclad.visual.label"
-                  )
-                }}
+                {{ $i("Journalists.solution.solutions.ironclad.visual.label") }}
               </div>
             </div>
           </div>
@@ -640,7 +630,7 @@ const instantSearchPoints = computed(() => {
   return [
     $i("Journalists.solution.solutions.instantSearch.points.searchAll"),
     $i("Journalists.solution.solutions.instantSearch.points.wordTimestamps"),
-    $i("Journalists.solution.solutions.instantSearch.points.jumpToMoments"),
+    $i("Journalists.solution.solutions.instantSearch.points.jumpToMoments")
   ];
 });
 
@@ -659,15 +649,9 @@ const professionalAccuracyPoints = computed(() => {
 });
 const ironclad = computed(() => {
   return [
-    $i(
-      "Journalists.solution.solutions.ironclad.points.accuracyGuarantee"
-    ),
-    $i(
-      "Journalists.solution.solutions.ironclad.points.handlesAccents"
-    ),
-    $i(
-      "Journalists.solution.solutions.ironclad.points.smartPunctuation"
-    )
+    $i("Journalists.solution.solutions.ironclad.points.accuracyGuarantee"),
+    $i("Journalists.solution.solutions.ironclad.points.handlesAccents"),
+    $i("Journalists.solution.solutions.ironclad.points.smartPunctuation")
   ];
 });
 const { $mitt } = useNuxtApp();
@@ -795,7 +779,8 @@ const signup = () => {
 .hero-dashboard {
   background: white;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--line-color);
   padding: 24px;
   position: relative;
   // animation: float-up 4s ease-in-out infinite;

@@ -130,7 +130,8 @@ const handleClick = (type: Number) => {
   background: white;
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--line-color);
+  // box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
   position: relative;
   transition: all 0.3s;
   // padding-bottom: 100px;
@@ -138,12 +139,12 @@ const handleClick = (type: Number) => {
 
 .pricing-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-card.featured {
   border: 2px solid var(--primary);
-  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.15);
+  // box-shadow: 0 20px 60px rgba(99, 102, 241, 0.15);
 }
 
 .popular-badge {

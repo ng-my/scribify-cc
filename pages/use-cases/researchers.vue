@@ -942,7 +942,8 @@ const handleJump = (path: string) => {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--line-color);
+  // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* Multi-speaker Conversation Demo */
@@ -1044,12 +1045,12 @@ const handleJump = (path: string) => {
   background: white;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   transition: all 0.3s;
   border: 1px solid var(--line-color);
 }
 
-.use-case-item:hover {
+.use-case-item1:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -1085,6 +1086,7 @@ const handleJump = (path: string) => {
   border-radius: 24px;
   padding: 40px;
   position: relative;
+  border: 1px solid var(--line-color);
 }
 
 .quote-icon {

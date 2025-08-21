@@ -1039,7 +1039,8 @@ const handleJump = (path: string) => {
   background: white;
   border-radius: 24px;
   padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--line-color);
+  // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   min-height: 400px;
   display: flex;
   align-items: center;
@@ -1120,7 +1121,8 @@ const handleJump = (path: string) => {
   background: white;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--line-color);
+  // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   position: relative;
   display: flex;
   flex-direction: column;

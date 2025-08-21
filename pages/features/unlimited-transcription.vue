@@ -618,7 +618,7 @@ const handleClick = () => {
   background: white;
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  // box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   position: relative;
   overflow: hidden;
 }
@@ -823,7 +823,8 @@ const handleClick = () => {
   background: white;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--line-color);
+  // box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .table-row {

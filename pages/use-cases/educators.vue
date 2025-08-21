@@ -313,7 +313,7 @@
                 padding: 30px;
                 background: white;
                 border-radius: 12px;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                border: 1px solid var(--line-color);
               "
             >
               <div
@@ -433,7 +433,7 @@
                   background: white;
                   padding: 30px;
                   border-radius: 12px;
-                  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                  border: 1px solid var(--line-color);
                   text-align: center;
                 "
               >
@@ -448,7 +448,7 @@
                   background: white;
                   padding: 30px;
                   border-radius: 12px;
-                  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                  border: 1px solid var(--line-color);
                   text-align: center;
                 "
               >
@@ -463,7 +463,7 @@
                   background: white;
                   padding: 30px;
                   border-radius: 12px;
-                  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                  border: 1px solid var(--line-color);
                   text-align: center;
                 "
               >
@@ -965,6 +965,7 @@ const showDownload = () => {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  // border: 1px solid var(--line-color);
 }
 
 /* Platform Links Visual */
@@ -981,7 +982,8 @@ const showDownload = () => {
   border-radius: 12px;
   text-align: center;
   transition: all 0.3s;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--line-color);
+  // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   height: 120px;
   flex-direction: column;
@@ -989,7 +991,7 @@ const showDownload = () => {
   align-items: center;
 }
 
-.platform-card:hover {
+.platform-card1:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -1073,11 +1075,12 @@ const showDownload = () => {
   background: white;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--line-color);
+  // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   transition: all 0.3s;
 }
 
-.use-case-item:hover {
+.use-case-item1:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
@@ -1113,6 +1116,7 @@ const showDownload = () => {
   max-width: 900px;
   margin: 0 auto;
   position: relative;
+  border: 1px solid var(--line-color);
 }
 
 .quote-icon {

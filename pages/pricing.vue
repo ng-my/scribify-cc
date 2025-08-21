@@ -528,4 +528,13 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-title {
+  font-size: 42px;
+  font-weight: bold;
+  // margin-bottom: 16px;
+}
 </style>
