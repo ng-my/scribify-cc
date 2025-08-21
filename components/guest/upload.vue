@@ -544,7 +544,7 @@ const handleCloseDialog = () => {
 }
 
 :deep(.el-progress__text) {
-  @apply me-3 !text-sm text-white;
+  @apply me-3 !text-sm text-black;
 }
 
 :deep(.el-checkbox__label) {

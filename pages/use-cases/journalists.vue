@@ -739,9 +739,10 @@ const signup = () => {
 }
 
 .hero-cta {
-  // display: flex;
-  // gap: 16px;
-  // align-items: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 

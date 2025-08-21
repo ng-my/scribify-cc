@@ -540,7 +540,7 @@ const ctaData = ref({
 
 const { $mitt } = useNuxtApp();
 const handleClick = () => {
-  $mitt.emit("goToEvent", { path: "/user/login" });
+  $mitt.emit("goToEvent", { path: "/user/signup" });
 };
 </script>
 

@@ -275,7 +275,7 @@
           <div class="testimonial-card">
             <span class="quote-icon">"</span>
             <p class="testimonial-text">
-              {{ $i("Testimonials.Mike.text") }}
+              "{{ $i("Testimonials.Mike.text") }}"
             </p>
             <div class="testimonial-author">
               <div class="author-avatar">
@@ -298,7 +298,7 @@
           <div class="testimonial-card">
             <span class="quote-icon">"</span>
             <p class="testimonial-text">
-              {{ $i("Testimonials.Sarah.text") }}
+              "{{ $i("Testimonials.Sarah.text") }}"
             </p>
             <div class="testimonial-author">
               <div class="author-avatar">
@@ -321,7 +321,7 @@
           <div class="testimonial-card">
             <span class="quote-icon">"</span>
             <p class="testimonial-text">
-              {{ $i("Testimonials.Jessica.text") }}
+              "{{ $i("Testimonials.Jessica.text") }}"
             </p>
             <div class="testimonial-author">
               <div class="author-avatar">
