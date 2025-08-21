@@ -228,7 +228,7 @@ let message = {
       addMore: "הוסף עוד",
       language: "שפת המדיה",
       failed: "נכשל",
-      tooLarge: "הקובץ חורג מהמגבלה (5G).",
+      tooLarge: "הקובץ חורג מהמגבלה (5 ג'יגה).",
       linkUpload: "מעלה",
       fileFormat: "פורמט הקובץ אינו מורשה",
       localFiles: "קבצים מקומיים",
@@ -1012,8 +1012,8 @@ let message = {
   },
   HeadNavbar: {
     Features: "תכונות",
-    UnlimitedTranscription: "תמלול ללא הגבלה",
-    BulkUpload: "העלאה בכמות גדולה",
+    UnlimitedTranscription: "תמלול בלתי מוגבל",
+    BulkUpload: "העלאה מרובה",
     Accuracy: "דיוק של 96%",
     Pricing: "תמחור",
     UseCases: "מקרי שימוש",
@@ -1022,281 +1022,281 @@ let message = {
     Journalists: "עיתונאים",
     ContentCreators: "יוצרי תוכן",
     Researchers: "חוקרים",
-    BusinessTeams: "צוותי עסקים",
+    BusinessTeams: "צוותים עסקיים",
     Educators: "מחנכים",
-    Resources: "אֶמְצָעִי",
-    YouTubetoMP4: "יוטיוב ל-MP4",
-    StartFreeTrial: "נסה את זה בחינם"
+    Resources: "משאבים",
+    YouTubetoMP4: "YouTube ל-MP4",
+    StartFreeTrial: "נסה בחינם"
   },
   Footer: {
-    des: "שירות התמלול הראשון בעולם באמצעות בינה מלאכותית ללא הגבלה. ללא מגבלות, ללא הגבלות, רק חופש יצירה.",
+    des: "שירות התמלול הבינה מלאכותית הראשון בעולם באמת בלתי מוגבל. אין הגבלות, אין מגבלות, רק חופש ליצור.",
     Features: "תכונות",
     UseCases: "מקרי שימוש",
-    Company: "חֶברָה",
-    featureMenus: ["תמלול ללא הגבלה", "העלאה בכמות גדולה", "דיוק של 96%"],
+    Company: "חברה",
+    featureMenus: ["תמלול בלתי מוגבל", "העלאה מרובה", "דיוק של 96%"],
     useCaseMenus: [
           "כל מקרי השימוש",
           "פודקאסטרים",
           "עיתונאים",
           "יוצרי תוכן",
           "חוקרים",
-          "צוותי עסקים",
+          "צוותים עסקיים",
           "מחנכים"
         ],
     companyMenus: [
-          "אוֹדוֹת",
+          "אודות",
           "תמחור",
-          "פְּרָטִיוּת",
+          "פרטיות",
           "תנאים"
         ]
   },
   Index: {
     Hero: {
-      badge: 'לא עוד "התכווצות אינפלציה" - למעשה ללא הגבלה',
-      h1: "תפסיקו לשלם עבור מגבלות:",
-      gradient: "תמלול AI בלתי מוגבל באמת",
-      subtitle: "הבינה המלאכותית שלנו מתמללת וידאו וממירה אודיו לטקסט, ומעבדת 50 קבצים בו זמנית ללא הגבלת נפח חודשית. תמלול שמתפתח יחד איתך.",
-      FreeTrial: "נסה את זה בחינם - ללא כרטיס אשראי",
-      HowWorks: "ראה איך זה עובד",
-      Unlimited: "העלאות קבצים ללא הגבלה",
-      NoCap: "אין מגבלת דקות חודשיות",
-      Hour: "קבצים נתמכים תוך 10 שעות",
+      badge: 'לא עוד "הקטנת שירות" - באמת ללא הגבלה',
+      h1: "הפסיקו לשלם עבור הגבלות:",
+      gradient: "תמלול AI באמת ללא הגבלה",
+      subtitle: "ה-AI שלנו מתמלל סרטונים וממיר אודיו לטקסט, מעבד 50 קבצים בבת אחת ללא מגבלות חודשיות. תמלול שמתאים עצמו אליכם באמת.",
+      FreeTrial: "נסו בחינם - ללא כרטיס אשראי",
+      HowWorks: "ראה כיצד זה עובד",
+      Unlimited: "העלאת קבצים ללא הגבלה",
+      NoCap: "ללא מגבלת דקות חודשית",
+      Hour: "קבצים של עד 10 שעות נתמכים",
       ExploreUseCases: "חקור מקרי שימוש"
     },
     Stats: {
       monthlyMinutes: "דקות חודשיות",
-      fileUploads: "העלאות קבצים",
-      batchProcessing: "עיבוד אצווה",
+      fileUploads: "העלאת קבצים",
+      batchProcessing: "עיבוד קבוצתי",
       maxFileLength: "אורך קובץ מקסימלי"
     },
     FeaturesGrid: {
-      try_now: "נסה את זה עכשיו",
-      no_signup: "אין צורך ברישום",
-      experience_unltd: "חוו תמלול בלתי מוגבל באמת",
-      upload_50: "העלה עד 50 קבצים בו זמנית, ממש כאן",
-      no_limits: "מִתקַדֵם",
-      no_surprises: "תמלול בינה מלאכותית",
-      transparency: "אין עוד מגבלות נסתרות, אין עוד הפתעות - בעוד שאחרים מקצצים בשקט את הדקות שלכם או מסתירים את המגבלות באותיות הקטנות, אנו מאמינים בשקיפות קיצונית",
-      feat_unltd: "למעשה ללא הגבלה",
-      feat_unltd_desc: 'אין "מדיניות שימוש הוגן" קבורה במונחים. אין מגבלות אחסון במסווה של "בלתי מוגבל". העלו את כל הארכיון שלכם, תמללו הכל עבור כל צרכי תמלול האודיו שלכם. אנחנו רציניים.',
-      feat_bulk: "חופש העלאה בכמות גדולה",
-      feat_bulk_desc: 'נמאס לכם מ"3 ייבואים לכל החיים" או "10 קבצים בחודש"? העלו 50 קבצים בבת אחת, כמה פעמים שאתם צריכים. מושלם לעיבוד רשומות חסכוניות.',
-      feat_batch: "עיבוד אצווה",
-      feat_batch_desc: "עבדו את כל עונת הפודקאסטים שלכם בן לילה. העלו 50 ראיונות בבת אחת. תנו לבינה המלאכותית שלנו לעבוד בזמן שאתם ישנים. התעוררו עם תמלולים גמורים.",
+      try_now: "נסו עכשיו",
+      no_signup: "אין צורך בהרשמה",
+      experience_unltd: "חוו תמלול באמת ללא הגבלה",
+      upload_50: "העלו עד 50 קבצים בבת אחת, ממש כאן",
+      no_limits: "מתקדם",
+      no_surprises: "תמלול AI",
+      transparency: "לא עוד הגבלות נסתרות, לא עוד הפתעות - בעוד אחרים מצמצמים לכם את הדקות או מחביאים הגבלות בכתב קטן, אנחנו מאמינים בשקיפות מוחלטת",
+      feat_unltd: "באמת ללא הגבלה",
+      feat_unltd_desc: 'אין "מדיניות שימוש הוגן" קבורה בתנאים. אין הגבלות אחסון שמתחפשות ל"ללא הגבלה". העלו את כל הארכיון שלכם, תמללו הכל לכל צרכי התמלול שלכם. אנחנו מתכוונים לזה.',
+      feat_bulk: "חופש העלאה קבוצתית",
+      feat_bulk_desc: 'נמאס לכם מ"3 יבוא לכל החיים" או "10 קבצים לחודש"? העלו 50 קבצים בבת אחת, כמה פעמים שאתם צריכים. מושלם לעיבוד פיגורים.',
+      feat_batch: "עיבוד קבוצתי",
+      feat_batch_desc: "עבדו על כל עונה של הפודקאסט שלכם בין לילה. העלו 50 ראיונות בבת אחת. תנו ל-AI שלנו לעבוד בזמן שאתם ישנים. התעוררו לתמלולים מוכנים.",
       feat_accuracy: "דיוק של 96%",
-      feat_accuracy_desc: "הבינה המלאכותית המובילה בתעשייה שלנו מתמללת אודיו עם סימני פיסוק חכמים, יומן דוברים עבור עד 20 דוברים, ומטפלת במבטאים ומונחים טכניים בצורה מושלמת.",
+      feat_accuracy_desc: "ה-AI המוביל בתעשייה שלנו מתמלל אודיו עם פיסוק חכם, זיהוי דוברים עבור עד 20 דוברים, ומתמודד עם מבטאים ומונחים טכניים בצורה מושלמת.",
       feat_langs: "100+ שפות",
-      feat_langs_desc: "תמלול וידאו ואודיו ביותר מ-100 שפות, תרגום ליותר מ-249. ללא חיובים נוספים עבור שפות שונות. תוכן גלובלי, מחיר אחד פשוט.",
+      feat_langs_desc: "תמללו סרטונים ואודיו ב-100+ שפות, תרגמו ל-249+. אין תשלום נוסף עבור שפות שונות. תוכן גלובלי, מחיר אחד פשוט.",
       feat_pro: "תכונות מקצועיות",
-      feat_pro_desc: "חותמות זמן ברמת המילה למיקום מדויק של אודיו/וידאו, זיהוי דובר מדויק אפילו במהלך החלפות שיחה מהירות, וטקסט מעוצב בצורה מושלמת עם פסקאות, משפטים ופיסוק לקריאה קלה.",
+      feat_pro_desc: "חותמות זמן ברמת מילה למיקום מדויק באודיו/וידאו, זיהוי דוברים מדויק גם במעברים מהירים בין שיחות, וטקסט מעוצב בצורה מושלמת עם פסקאות, משפטים ופיסוק לקריאה קלה.",
         features: "תכונות"
     },
     UseCases: {
-      built_for: "תִפזוֹרֶת",
+      built_for: "קבוצתי",
       "heavy_users": "תמלול אודיו ווידאו",
-      "join_users": 'נבנה עבור משתמשים כבדים כמוך - הצטרפו ליוטיוברים, יוצרי תוכן ופודקאסטים שעברו משירותי "צמצום קצב" (shrinkinflation).',
+      "join_users": 'בנוי למשתמשים כבדים כמוכם - הצטרפו ליוטיוברים, יוצרי תוכן ומגישי פודקאסטים שעברו משירותי "הקטנת שירות"',
       "podcasters": {
-        "title": "פודקאסטרים",
-        "des": "העלו את כל קטלוג התוכניות שלכם. צרו הערות לכל פרק. אין צורך עוד לבחור אילו פרקים לתמלל."
+        "title": "מגישי פודקאסטים",
+        "des": "העלו את כל הקטלוג הרטרוספקטיבי שלכם. צרו הערות מופע לכל פרק. לא עוד בחירה אילו פרקים לתמלל."
       },
       "content_creators": {
         "title": "יוצרי תוכן",
-        "des": "הפכו את ספריית הווידאו שלכם לטקסט הניתן לחיפוש באמצעות השירות שלנו לתמלול קבצי וידאו באופן אוטומטי. צרו כתוביות לכל דבר. בלי ספירת דקות, רק יצירה."
+        "des": "הפכו את ספריית הסרטונים שלכם לטקסט הניתן לחיפוש על ידי שימוש בשירות שלנו לתמלול קבצי וידאו אוטומטית. צרו כתוביות עבור הכל. לא לספור דקות, פשוט ליצור."
       },
       "journalists": {
         "title": "עיתונאים",
-        "des": 'העלו את כל הראיונות שלכם בבת אחת. אין עוד מכשולים של "10 קבצים בחודש" כשאתם מגיעים לדדליין. עבדו הכל.'
+        "des": 'העלו את כל הראיונות שלכם בבת אחת. לא עוד מכשולים של "10 קבצים לחודש" כשאתם בדדליין. עבדו על הכל.'
       },
       researchers: {
         title: "חוקרים",
-        des: "תמלול שעות של קבוצות מיקוד וראיונות. העלה את כל המחקר שלך בבת אחת. קבל זיהוי מדויק של הדוברים."
+        des: "תמללו שעות של קבוצות מיקוד וראיונות. העלו את כל המחקר שלכם בבת אחת. קבלו זיהוי דוברים מדויק."
       },
       business_teams: {
-        title: "צוותי עסקים",
-        des: "הקלט כל שיחה מבלי לדאוג לגבי מגבלות. קבל תובנות בינה מלאכותית על כל השיחות, לא רק על קומץ נבחרים."
+        title: "צוותים עסקיים",
+        des: "הקליטו כל שיחה מבלי לדאוג להגבלות. קבלו תובנות AI על כל השיחות, לא רק על כמה נבחרות."
       },
       educators: {
         title: "מחנכים",
-        des: "לתמלל סדרת הרצאות שלמה. להפוך את כל התוכן לנגיש. אין צורך לבחור בין קורסים עקב מגבלת דקות."
+        des: "תמללו סדרות הרצאות שלמות. הפכו את כל התוכן לנגיש. לא עוד בחירה בין קורסים בגלל מגבלות דקות."
       }
     },
     Testimonials: {
       title: "אהוב על ידי",
       highlighted_users: "50,000+ משתמשים",
-      subtitle: "ראה מדוע אנשי מקצוע בוחרים ב-NeverCap על פני חלופות מוגבלות",
+      subtitle: "גלה מדוע אנשי מקצוע בוחרים ב-NeverCap על פני חלופות מוגבלות",
       Mike: {
-        "text": "אלוהים אדירים, הדבר הזה באמת עובד! אני עושה פודקאסט כבר 3 שנים ותמללתי הכל ידנית כמו אידיוט. העליתי 6 פרקים בבת אחת וזה הפריד ביני לבין המנחה שלי בצורה מושלמת. פרק בית הקפה שחשבתי שנהרס? תמלול ברור כשמש. אני אף פעם לא אחזור להקליד את הדברים האלה בעצמי.",
+        "text": "וואו, הדבר הזה באמת עובד! עשיתי פודקאסט במשך 3 שנים ורשמתי הכל ידנית כמו אידיוט. העליתי 6 פרקים בבת אחת וזה הפריד ביני לבין המארח המשותף שלי בצורה מושלמת. הפרק בבית הקפה שחשבתי שהיה הרוס? תמליל ברור כבדולח. אני לעולם לא אחזור להקליד את הדברים האלה בעצמי.",
         "author": "מייק רודריגז",
-        "role": "מנחה פודקאסט"
+        "role": "מארח פודקאסט"
       },
       Sarah: {
-        "text": "אני מלמד אונליין והייתי צריך כתוביות לסרטונים שלי. ניסיתי 3 כלים אחרים שהיו להם מגבלות מוזרות או שלקח להם נצח. זה פשוט... עובד? העליתי את ההרצאה שלי בספרדית, קיבלתי כתוביות מושלמות תוך בערך 2 דקות. התלמידים שלי עם בעיות שמיעה כל כך מרוצים. הלוואי והייתי מוצא את זה מוקדם יותר!",
+        "text": "אני מלמדת באינטרנט והייתי זקוקה לכיתובים לסרטונים שלי. ניסיתי 3 כלים אחרים שהיו להם מגבלות מוזרות או לקחו נצח. זה פשוט... עובד? העליתי את ההרצאה שלי בספרדית, קיבלתי כתוביות מושלמות תוך בערך 2 דקות. התלמידים שלי עם בעיות שמיעה כל כך שמחים. הלוואי שהייתי מוצאת את זה קודם!",
         "author": "שרה צ'ן",
-        "role": "מורה מקוון"
+        "role": "מורה מקוונת"
       },
       Jessica: {
-        "text": "אני משתמש בזה לראיונות וזה מטורף כמה שזה מדויק. עשיתי ראיון של שעתיים באנגלית וספרדית רצוצה והכל היה נכון, אפילו חותמות הזמן. נהגתי לשלם למתמחה שלי 200 דולר לחודש רק כדי לתמלל דברים. זה פשוט חוסך לי כסף כל חודש.",
+        "text": "השתמשתי בזה לראיונות שלי וזה מטורף כמה שזה מדויק. היה לי ראיון של שעתיים באנגלית שבורה + ספרדית וזה קלט הכל נכון, אפילו חותמי הזמן. נהגתי לשלם למתמחה שלי 200$ בחודש רק כדי לתמלל דברים. זה ממש חוסך לי כסף כל חודש.",
         "author": "ג'סיקה פארק",
-        "role": "עיתונאי עצמאי"
+        "role": "עיתונאית פרילנסרית"
       }
     },
     PricingPreview: {
       "title": "תמחור שקוף",
-      "highlighted_text": "אין אותיות גדולות נסתרות",
-      "subtitle": "בחרו את התוכנית שלכם. בלי כוכביות, בלי אותיות קטנות, בלי הפתעות"
+      "highlighted_text": "אין מגבלות נסתרות",
+      "subtitle": "בחר את התוכנית שלך. אין כוכביות, אין כתב קטן, אין הפתעות"
     },
     FAQSection: {
-      "title": "שאלות נפוצות",
-      "titleHighlight": "שאלות",
+      "title": "שאלות",
+      "titleHighlight": "נפוצות",
       "questions": [
             {
-              "q": "תמלול בינה מלאכותית",
-              "question": "מהו תמלול באמצעות בינה מלאכותית וכיצד הוא פועל?",
-              "answer": "תמלול באמצעות בינה מלאכותית הוא תהליך של המרת אודיו לטקסט באופן אוטומטי באמצעות בינה מלאכותית מתקדמת. ב-NeverCap, אתם פשוט מעלים את הקבצים שלכם, והבינה המלאכותית שלנו מתמללת את התוכן בדיוק של עד 96%. השירות שלנו נועד לתמלל קבצי וידאו (כגון MP4, MOV) וקבצי אודיו (כגון MP3, WAV) לטקסט קריא וניתן לעריכה, כולל תוויות דובר וחותמות זמן."
+              "q": "תמלול AI",
+              "question": "מהו תמלול AI ואיך זה עובד?",
+              "answer": "תמלול AI הוא תהליך של המרת אודיו לטקסט אוטומטית באמצעות בינה מלאכותית מתקדמת. ב-NeverCap, אתה פשוט מעלה את הקבצים שלך, וה-AI שלנו מתמלל את התוכן עם דיוק של עד 96%. השירות שלנו מיועד לתמלל קבצי וידאו (כמו MP4, MOV) וקבצי אודיו (כמו MP3, WAV) לטקסט קריא וניתן לעריכה, כולל תוויות דוברים וחותמי זמן."
             },
             {
-              "q": "מדיניות_בלתי_מוגבלת",
-              "question": "האם זה באמת בלתי מוגבל? מה הקאץ'?",
-              "answer": "כן, זה באמת ללא הגבלה! אין הגבלת דקות חודשיות, אין דמי שימוש חריגים. המגבלות היחידות הן טכניות: קבצים בודדים יכולים להיות באורך של עד 10 שעות או בגודל של 5 ג'יגה-בייט, וניתן לעבד 50 קבצים בבת אחת. אבל ניתן להעלות כמה אצוות שתרצו, לאורך כל החודש."
+              "q": "unlimited_policy",
+              "question": "האם זה באמת בלתי מוגבל? מה התפס?",
+              "answer": "כן, זה באמת בלתי מוגבל! אין מגבלות דקות חודשיות, אין עמלות נוספות. המגבלות היחידות הן טכניות: קבצים בודדים יכולים להיות באורך של עד 10 שעות או בגודל של 5GB, ואתה יכול לעבד 50 קבצים בבת אחת. אבל אתה יכול להעלות כמה קבוצות שאתה רוצה, כל החודש."
             },
             {
-              "q": "דִיוּק",
-              "question": "עד כמה מדויק התמלול?",
-              "answer": "אנו מבטיחים דיוק של 96% לאודיו צלול. הבינה המלאכותית שלנו מאומנת על מיליוני שעות של תוכן מגוון ומטפלת בצורה יוצאת דופן במבטאים, מונחים טכניים ודוברים מרובים. עבור אודיו מאתגר, תכונות השיפור החכמות שלנו עוזרות לשפר את התוצאות."
+              "q": "accuracy",
+              "question": "כמה מדויק התמלול?",
+              "answer": "אנו מבטיחים דיוק של 96% לאודיו ברור. ה-AI שלנו מאומן על מיליוני שעות של תוכן מגוון ומתמודד עם מבטאים, מונחים טכניים ומרובי דוברים בצורה יוצאת מן הכלל. עבור אודיו מאתגר, תכונות השיפור החכמות שלנו עוזרות לשפר את התוצאות."
             },
             {
-              "q": "שפות",
-              "question": "אילו שפות אתם תומכים?",
-              "answer": "אנו תומכים בתמלול ביותר מ-100 שפות, כולל אנגלית, ספרדית, מנדרינית, הינדית, ערבית, צרפתית ועוד. בנוסף, ניתן לתרגם את התמלולים שלכם ל-249 שפות שונות, מה שהופך אותם למושלמים עבור תוכן גלובלי."
+              "q": "languages",
+              "question": "אילו שפות אתם תומכים בהן?",
+              "answer": "אנו תומכים בתמלול בלמעלה מ-100 שפות כולל אנגלית, ספרדית, מנדרינית, הינדי, ערבית, צרפתית ועוד. בנוסף, אתה יכול לתרגם את התמלולים שלך ל-249 שפות שונות, מה שהופך את זה למושלם לתוכן גלובלי."
             },
             {
-              "q": "מְהִירוּת",
+              "q": "speed",
               "question": "כמה מהיר התמלול?",
-              "answer": "מהירות הבזק! קובץ אודיו של שעה עובר בדרך כלל עיבוד בפחות מ-5 דקות. בעזרת עיבוד אצווה, ניתן להעלות 50 קבצים בו זמנית ולאפשר להם לעבד במקביל. רוב המשתמשים מתעוררים ומגלים שכל הספרייה שלהם מתועתקת בן לילה."
+              "answer": "מהיר כבזק! קובץ אודיו של שעה בדרך כלל מעובד בפחות מ-5 דקות. עם עיבוד קבוצתי, אתה יכול להעלות 50 קבצים בו זמנית ולאפשר להם להעובד במקביל. רוב המשתמשים מתעוררים וגילו שכל הספרייה שלהם תומללה במהלך הלילה."
             },
             {
-              "q": "ביטול",
+              "q": "cancellation",
               "question": "האם אני יכול לבטל בכל עת?",
-              "answer": "בהחלט! ללא חוזים, ללא דמי ביטול. ניתן לשדרג, לשדרג לאחור או לבטל את המנוי בכל עת דרך לוח המחוונים. אם תבטלו, תישמר הגישה עד סוף תקופת החיוב."
+              "answer": "בהחלט! אין חוזים, אין דמי ביטול. אתה יכול לשדרג, להוריד דרגה או לבטל את המנוי שלך בכל עת מהלוח שלך. אם תבטל, תישאר עם גישה עד סוף תקופת החיוב שלך."
             },
             {
-              "q": "בִּטָחוֹן",
+              "q": "security",
               "question": "האם הנתונים שלי מאובטחים?",
-              "answer": "האבטחה שלך היא בראש סדר העדיפויות שלנו. אנו מוסמכים לתקן SOC 2, משתמשים בהצפנה של 256 סיביות עבור כל הנתונים, ולעולם לא משתמשים בתוכן שלך כדי לאמן את המודלים שלנו. באפשרותך למחוק את הקבצים שלך בכל עת, ואנו נמחק אותם אוטומטית לאחר 30 יום. תואם לתקנות GDPR ו-CCPA."
+              "answer": "האבטחה שלך היא העדיפות שלנו. אנו בעלי הסמכת SOC 2, משתמשים בהצפנת 256-ביט לכל הנתונים ולעולם לא משתמשים בתוכן שלך כדי לאמן את המודלים שלנו. אתה יכול למחוק את הקבצים שלך בכל עת, ואנו מוחקים אותם אוטומטית לאחר 30 יום. תואם ל-GDPR ו-CCPA."
             },
             {
-              "q": "פורמטי_יצוא",
-              "question": "אילו פורמטי ייצוא זמינים?",
-              "answer": "הורידו את התמלילים שלכם בכל פורמט שתצטרכו: PDF, Word (DOCX), Excel, CSV, כתוביות SRT, טקסט רגיל (TXT) וכתוביות VTT. מושלם לכל תהליך עבודה שיש לכם."
+              "q": "export_formats",
+              "question": "אילו פורמטים של ייצוא זמינים?",
+              "answer": "הורד את התמלולים שלך בכל פורמט שאתה צריך: PDF, Word (DOCX), Excel, CSV, כתוביות SRT, טקסט רגיל (TXT) וכיתובים VTT. מושלם לכל זרימת העבודה שלך."
             },
             {
-              "q": "פורמטי_קבצים",
+              "q": "file_formats",
               "question": "אילו קבצי אודיו ווידאו אני יכול להעלות?",
-              "answer": "אנו תומכים כמעט בכל פורמט אודיו ווידאו שתיתקלו בו: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV ועוד. אם אתם יכולים להשמיע את זה, נוכל לתמלל את זה."
+              "answer": "אנו תומכים כמעט בכל פורמט אודיו ווידאו שתיתקל בו: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV ועוד. אם אתה יכול לנגן את זה, אנחנו יכולים לתמלל את זה."
             }
           ]
     },
     CTASection: {
-      "title": "מוכנים להשתחרר ממגבלות?",
-      "subtitle": "הצטרפו ליותר מ-50,000 אנשי מקצוע שעברו לתמלול ללא הגבלה באמת",
+      "title": "מוכן להשתחרר ממגבלות?",
+      "subtitle": "הצטרף ל-50,000+ אנשי מקצוע שעשו את המעבר לתמלול באמת בלתי מוגבל",
       "button": "נסה את NeverCap בחינם",
-      "disclaimer": "אין צורך בכרטיס אשראי עבור התוכנית החינמית • שדרגו בכל עת לגישה בלתי מוגבלת"
+      "disclaimer": "אין צורך בכרטיס אשראי לתוכנית החינמית • שדרג בכל עת לגישה בלתי מוגבלת"
     }
   },
   Features: {
     UnlimitedTranscription: {
       heroBadgeIcon: "⚡",
-      heroBadgeText: 'לא עוד "התכווצות אינפלציה"',
+      heroBadgeText: 'לא עוד "הצטמקות"',
       heroTitleLine1: "באמת בלתי מוגבל",
-      heroTitleLine2: "תמלול בינה מלאכותית",
-      heroSubtitle: "בעוד שטרינט מגבילה אתכם ל-50 שעות ואוטר ל-10 קבצים בחודש, אנו מספקים את מה שאנחנו באמת מבטיחים: תמלול ללא הגבלה וללא מגבלות נסתרות.",
-      primaryCta: "נסה את זה בחינם - ללא כרטיס אשראי",
-      secondaryCta: "ראה את האמת",
+      heroTitleLine2: "תמלול AI",
+      heroSubtitle: "בעוד Trint מגביל אתכם ל-50 שעות ו-Otter מגביל אתכם ל-10 קבצים בחודש, אנחנו מספקים מה שאנחנו באמת מבטיחים: תמלול בלתי מוגבל ללא הגבלות נסתרות.",
+      primaryCta: "נסו בחינם - ללא כרטיס אשראי",
+      secondaryCta: "ראו את האמת",
       comparisonBadLabel: "מה שאחרים עושים",
-      comparisonBadTitle: "גבולות נסתרים בכל מקום",
+      comparisonBadTitle: "הגבלות נסתרות בכל מקום",
       comparisonBadItem1Icon: "✕",
-      comparisonBadItem1Strong: "טרינט:",
-      comparisonBadItem1Text: '"ללא הגבלה" = מגבלה של 50 שעות לחודש',
+      comparisonBadItem1Strong: "Trint:",
+      comparisonBadItem1Text: '"בלתי מוגבל" = הגבלה של 50 שעות בחודש',
       comparisonBadItem2Icon: "✕",
-      comparisonBadItem2Strong: "לוּטרָה:",
-      comparisonBadItem2Text: "3 ייבוא לכל החיים (חינם), 10 לחודש (Pro)",
+      comparisonBadItem2Strong: "Otter:",
+      comparisonBadItem2Text: "3 יבואים לכל החיים (חינם), 10 בחודש (Pro)",
       comparisonBadItem3Icon: "✕",
-      comparisonBadItem3Strong: "גחליליות:",
-      comparisonBadItem3Text: "מגבלת אחסון של 800 דקות",
+      comparisonBadItem3Strong: "Fireflies:",
+      comparisonBadItem3Text: "הגבלת אחסון של 800 דקות",
       comparisonBadItem4Icon: "✕",
-      comparisonBadItem4Strong: "תיאור:",
-      comparisonBadItem4Text: "מקסימום 30 שעות/חודש",
+      comparisonBadItem4Strong: "Descript:",
+      comparisonBadItem4Text: "מקסימום 30 שעות בחודש",
       comparisonBadItem5Icon: "✕",
       comparisonBadItem5Text: "מוסתר בתנאים וההגבלות",
-      comparisonGoodLabel: "מה אנחנו עושים",
-      comparisonGoodTitle: "למעשה ללא הגבלה",
+      comparisonGoodLabel: "מה שאנחנו עושים",
+      comparisonGoodTitle: "בלתי מוגבל באמת",
       comparisonGoodItem1Icon: "✓",
-      comparisonGoodItem1Strong: "אין מגבלות דקות חודשיות",
-      comparisonGoodItem1Text: "אֵיִ פַּעַם",
+      comparisonGoodItem1Strong: "אין הגבלות דקות חודשיות",
+      comparisonGoodItem1Text: "לעולם",
       comparisonGoodItem2Icon: "✓",
-      comparisonGoodItem2Strong: "העלאות קבצים ללא הגבלה",
-      comparisonGoodItem2Text: "תָמִיד",
+      comparisonGoodItem2Strong: "העלאת קבצים בלתי מוגבלת",
+      comparisonGoodItem2Text: "תמיד",
       comparisonGoodItem3Icon: "✓",
-      comparisonGoodItem3Strong: "אין מגבלות אחסון",
-      comparisonGoodItem3Text: "בִּכלָל",
+      comparisonGoodItem3Strong: "אין הגבלות אחסון",
+      comparisonGoodItem3Text: "בכלל",
       comparisonGoodItem4Icon: "✓",
-      comparisonGoodItem4Strong: "העלאת קבצים בכמות אצווה של 50",
-      comparisonGoodItem4Text: "בכל עת",
+      comparisonGoodItem4Strong: "העלאת 50 קבצים בקבוצה",
+      comparisonGoodItem4Text: "בכל זמן",
       comparisonGoodItem5Icon: "✓",
       comparisonGoodItem5Strong: "מדיניות שקופה",
       comparisonGoodItem5Text: "מראש",
-      feature1Label: "אין גבולות",
+      feature1Label: "ללא הגבלות",
       feature1TitlePart1: "לתמלל 1,000 שעות?",
       feature1TitlePart2: "אותו מחיר.",
-      feature1Description: "תפסיקו לספור דקות. תפסיקו לצפות באותיות גדולות. בין אם אתם מתמללים 10 שעות או 10,000 שעות בחודש, אתם משלמים את אותו תעריף קבוע. אין דמי שימוש חריגים. אין חשבונות מפתיעים.",
+      feature1Description: "הפסיקו לספור דקות. הפסיקו לעקוב אחר הגבלות. בין אם אתם מתמללים 10 שעות או 10,000 שעות בחודש, אתם משלמים את אותו תעריף קבוע. אין עמלות נוספות. אין חשבונות מפתיעים.",
       feature1Point1Icon: "✓",
       feature1Point1Text: 'אין טריקים של מדיניות "שימוש הוגן"',
       feature1Point2Icon: "✓",
-      feature1Point2Text: "אין צריכת ויסות לאחר X שעות",
+      feature1Point2Text: "אין האטה אחרי X שעות",
       feature1Point3Icon: "✓",
-      feature1Point3Text: "אין חרדה של סוף חודש",
+      feature1Point3Text: "אין חרדה בסוף החודש",
       feature1Stat1Number: "∞",
       feature1Stat1Label: "שעות חודשיות",
-      feature1Stat2Number: "0 דולר",
-      feature1Stat2Label: "דמי חריגה",
+      feature1Stat2Number: "$0",
+      feature1Stat2Label: "עמלות עודף",
       feature1Stat3Number: "24/7",
       feature1Stat3Label: "העלאה בכל עת",
       feature1Stat4Number: "100%",
-      feature1Stat4Label: "שָׁקוּף",
-      feature2Label: "חופש בכמות גדולה",
-      feature2TitlePart1: "העלה את שלך",
-      feature2TitlePart2: "ארכיון שלם",
-      feature2Description: "Otter מעניקה לך 3 קבצי ייבוא בחינם לכל החיים, ו-10 לחודש ב-Pro. אנחנו נותנים לך קבצים ללא הגבלה. העלה את רשימת הפודקאסטים שלך, את כל הראיונות שלך, שנות הקלטות. ללא הגבלות.",
+      feature1Stat4Label: "שקוף",
+      feature2Label: "חופש להעלאה מרובה",
+      feature2TitlePart1: "העלה את",
+      feature2TitlePart2: "הארכיון המלא שלך",
+      feature2Description: "Otter נותן לך 3 יבואים לכל החיים בחינם, 10 בחודש ב-Pro. אנחנו נותנים לך בלי הגבלה. העלה את הגיבוי של הפודקאסט שלך, כל הראיונות שלך, שנים של הקלטות. בלי הגבלות.",
       feature2Point1Icon: "✓",
-      feature2Point1Text: "50 קבצים לכל אצווה",
+      feature2Point1Text: "50 קבצים בכל אצווה",
       feature2Point2Icon: "✓",
-      feature2Point2Text: "קבצים בני 10 שעות נתמכים",
+      feature2Point2Text: "קבצים של 10 שעות נתמכים",
       feature2Point3Icon: "✓",
-      feature2Point3Text: "תהליך בזמן השינה",
-      feature2TableRow1Label: "ללא לוטרות",
-      feature2TableRow1Value: "3 ייבוא לכל החיים",
-      feature2TableRow2Label: "אוטר פרו",
+      feature2Point3Text: "עיבוד בזמן שאתה ישן",
+      feature2TableRow1Label: "Otter חינם",
+      feature2TableRow1Value: "3 יבואים לכל החיים",
+      feature2TableRow2Label: "Otter Pro",
       feature2TableRow2Value: "10 קבצים/חודש",
-      feature2TableRow3Label: "טרינט",
-      feature2TableRow3Value: "תקרת 50 שעות/חודש",
-      feature2TableRow4Label: "לעולם לא",
-      feature2TableRow4Value: "באמת בלתי מוגבל ✓",
+      feature2TableRow3Label: "Trint",
+      feature2TableRow3Value: "מגבלה של 50 שעות/חודש",
+      feature2TableRow4Label: "NeverCap",
+      feature2TableRow4Value: "באמת בלי הגבלה ✓",
       feature3Label: "הוכחה חברתית",
-      feature3TitlePart1: "משתמשים הם",
-      feature3TitlePart2: "החלפה יומית",
-      feature3Description: '"אני משלם 100 דולר לשנה עבור Otter והם מגבילים אותי ל-10 ייבוא קבצים בחודש. ברגע שיש אלטרנטיבה עם ייבוא בלתי מוגבל, אני הולך!" - משתמש אמיתי של Reddit',
+      feature3TitlePart1: "משתמשים",
+      feature3TitlePart2: "עוברים מדי יום",
+      feature3Description: '"אני משלם $100 לשנה עבור Otter והם מגבילים אותי ל-10 יבואי קבצים בחודש. ברגע שיהיה חלופה עם יבוא בלתי מוגבל, אני עוזב!" - משתמש אמיתי ב-Reddit',
       feature3Point1Icon: "✓",
-      feature3Point1Text: "מעל 50,000 משתמשים עברו",
+      feature3Point1Text: "50,000+ משתמשים עברו",
       feature3Point2Icon: "✓",
-      feature3Point2Text: 'מתוך "הצטמקות האינפלציה" של אוטר',
+      feature3Point2Text: 'מה"הצטמקות" של Otter',
       feature3Point3Icon: "✓",
-      feature3Point3Text: "לעולם לא אחזור",
-      feature3Stat1Number: "50 אלף+",
+      feature3Point3Text: "לעולם לא חוזרים",
+      feature3Stat1Number: "50K+",
       feature3Stat1Label: "משתמשים מרוצים",
-      feature3Stat2Number: "מיליון+",
+      feature3Stat2Number: "1M+",
       feature3Stat2Label: "קבצים שעובדו",
       feature3Stat3Number: "96%",
-      feature3Stat3Label: "דִיוּק",
+      feature3Stat3Label: "דיוק",
       feature3Stat4Number: "∞",
       feature3Stat4Label: "אין עמלות נסתרות",
       trustBadge1Number: "∞",
@@ -1304,74 +1304,74 @@ let message = {
       trustBadge2Number: "100+",
       trustBadge2Label: "שפות",
       trustBadge3Number: "96%",
-      trustBadge3Label: "דִיוּק",
+      trustBadge3Label: "דיוק",
       trustBadge4Number: "50",
-      trustBadge4Label: "העלאה קבוצתית",
-      ctaTitle: "תפסיקו לשלם עבור Fake Unlimited",
-      ctaSubtitle: "הצטרפו לאלפים שעברו לתמלול ללא הגבלה באמת",
-      finalCta: "נסה את NeverCap בחינם"
+      trustBadge4Label: "העלאת אצווה",
+      ctaTitle: "תפסיק לשלם עבור בלי הגבלה מזויף",
+      ctaSubtitle: "הצטרפו לאלפים שעברו לתמלול באמת בלתי מוגבל",
+      finalCta: "נסו את NeverCap בחינם"
     },
     BulkUpload: {
       heroBadgeIcon: "📁",
-      heroBadgeText: "חופש העלאה בכמות גדולה",
-      heroTitleLine1: "העלה 50 קבצים.",
-      heroTitleHighlight: "לעבד הכל.",
-      heroSubtitle: "Otter נותנת לך 3 קבצים לכל החיים. שלוש. לכל החיים. אנו נותנים לך העלאות ללא הגבלה, 50 קבצים בכל פעם, מתי שתצטרך.",
-      primaryCta: "התחל העלאה בכמות גדולה →",
-      secondaryCta: "ראה את הגבולות",
-      redditQuote: '"יש לי 3 שנים של פרקי פודקאסט לתמלל. אוטר אומר לי שאני מקבל 3 ייבוא לכל החיים. שלושה. זה מעליב."',
+      heroBadgeText: "חופש העלאה מרובה",
+      heroTitleLine1: "העלו 50 קבצים.",
+      heroTitleHighlight: "обработать הכל.",
+      heroSubtitle: "Otter נותן לך 3 יבואים לכל החיים. שלושה. לכל חייך. אנחנו נותנים לך העלאות בלתי מוגבלות, 50 קבצים בכל פעם, מתי שאתה צריך.",
+      primaryCta: "התחל העלאה מרובה →",
+      secondaryCta: "ראה את המגבלות",
+      redditQuote: '"יש לי 3 שנים של פרקי פודקאסט לתמלל. Otter אומר לי שאקבל 3 יבואים לכל החיים. שלושה. זה מעליב."',
       redditAuthorIcon: "📍",
-      redditAuthorText: "תסכול אמיתי מ-r/פודקאסטים",
+      redditAuthorText: "תסכול אמיתי מ-r/podcasting",
       comparisonSectionTitlePart1: "ה",
-      comparisonSectionTitleHighlight: "גבולות מגוחכים",
-      comparisonSectionTitlePart2: "הם מטילים",
-      comparisonSubtitle: "כיצד מתחרים מגבילים את יכולתך לעבד תוכן",
-      limitCard1Service: "ללא לוטרות",
+      comparisonSectionTitleHighlight: "מגבלות מגוחכות",
+      comparisonSectionTitlePart2: "שהם מטילים",
+      comparisonSubtitle: "איך מתחרים מגבילים את היכולת שלך לעבד תוכן",
+      limitCard1Service: "Otter חינם",
       limitCard1Number: "3",
-      limitCard1DescriptionLine1: "יבוא לכל החיים",
+      limitCard1DescriptionLine1: "יבואים לכל החיים",
       limitCard1DescriptionLine2: "(כן, לכל חייך)",
-      limitCard2Service: "אוטר פרו",
+      limitCard2Service: "Otter Pro",
       limitCard2Number: "10",
       limitCard2DescriptionLine1: "קבצים לחודש",
-      limitCard2DescriptionLine2: "(תוכנית של 100 דולר לשנה)",
-      limitCard3Service: "תיאור",
+      limitCard2DescriptionLine2: "(תוכנית של $100 לשנה)",
+      limitCard3Service: "Descript",
       limitCard3Number: "1",
       limitCard3DescriptionLine1: "קובץ בכל פעם",
       limitCard3DescriptionLine2: "(העלאה סדרתית)",
-      limitCard4Service: "לעולם לא",
+      limitCard4Service: "NeverCap",
       limitCard4Number: "∞",
-      limitCard4DescriptionLine1: "העלאות ללא הגבלה",
-      limitCard4DescriptionLine2: "50 קבצים לכל אצווה",
+      limitCard4DescriptionLine1: "העלאות בלתי מוגבלות",
+      limitCard4DescriptionLine2: "50 קבצים בכל אצווה",
       feature1Label: "כוח אצווה",
-      feature1TitlePart1: "עבד את שלך",
-      feature1TitleHighlight: "ארכיון שלם",
-      feature1TitlePart2: "בֵּין לַיְלָה",
-      feature1Description: 'העלה 50 קבצים לפני השינה. התעורר כדי להשלים תמלולים. בלי תורים, בלי המתנה, בלי הודעות "אנא שדרג". רק כוח עיבוד טהור בהישג ידך.',
+      feature1TitlePart1: "עבד את",
+      feature1TitleHighlight: "הארכיון המלא שלך",
+      feature1TitlePart2: "בין לילה",
+      feature1Description: 'העלה 50 קבצים לפני השינה. התעורר לתמלולים מוכנים. ללא תור, ללא המתנה, ללא הודעות "אנא שדרג". רק כוח עיבוד טהור בהישג ידך.',
       feature1Point1Icon: "✓",
-      feature1Point1Text: "50 העלאות בו זמנית",
+      feature1Point1Text: "50 העלאות בו-זמנית",
       feature1Point2Icon: "✓",
       feature1Point2Text: "עיבוד מקבילי",
       feature1Point3Icon: "✓",
-      feature1Point3Text: "קבצים בני 10 שעות נתמכים",
+      feature1Point3Text: "קבצים של 10 שעות נתמכים",
       feature1Point4Icon: "✓",
-      feature1Point4Text: "5 ג'יגה-בייט לכל קובץ מקסימום",
+      feature1Point4Text: "מקסימום 5GB לקובץ",
       uploadAnimationText1: "50 קבצים",
-      uploadAnimationText2: "שחרור ועיבוד",
-      fileBadge1: "פודקאסט_פרק_001.mp3",
-      fileBadge2: "ראיון_raw.mp4",
-      fileBadge3: "מפגש_2024.wav",
-      fileBadge4: "הרצאה_מלאה.mov",
-      fileBadge5: "+ עוד 46 קבצים...",
-      feature2Label: "מְהִירוּת",
-      feature2TitlePart1: "מהעלאה אל",
-      feature2TitleHighlight: "בוצע תוך שעות",
-      feature2Description: "תשתית העיבוד המקבילה שלנו מאפשרת ל-50 הקבצים שלכם לא להמתין בתור. כולם מתועתקים בו זמנית. מה שלקח שבועות לוקח היום שעות.",
+      uploadAnimationText2: "שחרר & עבד",
+      fileBadge1: "podcast_ep_001.mp3",
+      fileBadge2: "interview_raw.mp4",
+      fileBadge3: "meeting_2024.wav",
+      fileBadge4: "lecture_full.mov",
+      fileBadge5: "+ 46 קבצים נוספים...",
+      feature2Label: "מהירות",
+      feature2TitlePart1: "מהעלאה ל",
+      feature2TitleHighlight: "מוכן תוך שעות",
+      feature2Description: "התשתית המקבילית שלנו מבטיחה ש-50 הקבצים שלך לא ממתינים בתור. כולם מעובדים בו-זמנית. מה שלקח בעבר שבועות, לוקח כעת שעות.",
       feature2Point1Icon: "✓",
       feature2Point1Text: "קובץ של שעה: 5 דקות",
       feature2Point2Icon: "✓",
       feature2Point2Text: "50 קבצים: מעובדים במקביל",
       feature2Point3Icon: "✓",
-      feature2Point3Text: 'התראה בדוא"ל לאחר סיום',
+      feature2Point3Text: "הודעת אימייל בסיום",
       timelineStep1Icon: "1",
       timelineStep1Title: "העלאה",
       timelineStep1Time: "0 דקות",
@@ -1379,16 +1379,16 @@ let message = {
       timelineStep2Title: "עיבוד",
       timelineStep2Time: "5-30 דקות",
       timelineStep3Icon: "3",
-      timelineStep3Title: "קסם בינה מלאכותית",
+      timelineStep3Title: "קסם AI",
       timelineStep3Time: "30-60 דקות",
       timelineStep4Icon: "✓",
-      timelineStep4Title: "לְהַשְׁלִים",
-      timelineStep4Time: "< שעתיים",
-      feature3Label: "חוֹפֶשׁ",
+      timelineStep4Title: "הושלם",
+      timelineStep4Time: "< 2 שעות",
+      feature3Label: "חופש",
       feature3TitlePart1: "אין תורים.",
       feature3TitleHighlight: "אין המתנה.",
-      feature3TitlePart2: "אין גבולות.",
-      feature3Description: 'בעוד שאחרים גורמים לכם להמתין בתורים וירטואליים או לשדרג לצורך "עיבוד עדיפות", אנו מתייחסים לכל העלאה בדחיפות. התוכן שלכם חשוב, והוא לא אמור לחכות.',
+      feature3TitlePart2: "אין הגבלות.",
+      feature3Description: 'בזמן שאחרים גורמים לך להמתין בתורים וירטואליים או דורשים שדרוג ל"עיבוד מועדף", אנחנו מתייחסים לכל העלאה בדחיפות. התוכן שלך חשוב, והוא לא צריך לחכות.',
       feature3Point1Icon: "✓",
       feature3Point1Text: "אין רמות עדיפות",
       feature3Point2Icon: "✓",
@@ -1397,32 +1397,32 @@ let message = {
       feature3Point3Text: "העלאה בכל עת, 24/7",
       feature3VisualNumber: "24/7",
       feature3VisualTitle: "תמיד מוכן",
-      feature3VisualSubtext: "העלה בכל פעם שההשראה מציצה",
+      feature3VisualSubtext: "העלה מתי שההשראה פוגעת",
       useCasesTitlePart1: "מושלם עבור",
-      useCasesTitleHighlight: "מעלי קבצים כבדים",
-      useCasesSubtitle: "תרחישים אמיתיים שבהם העלאה בכמות גדולה מצילה את המצב",
-      useCase1Title: "ארכיון פודקאסטים",
-      useCase1Description: "העלה 3 שנים של פרקים בבת אחת. צור תמלולים לכל הקטלוג האחורי שלך. צור תוכן SEO לכל פרק.",
-      useCase2Title: "יצירת קורס",
-      useCase2Description: "עבדו את כל סרטוני ההרצאות שלכם בו זמנית. צרו תמלולים נגישים לסטודנטים. בנו חומרי קורס הניתנים לחיפוש.",
-      useCase3Title: "צבר ראיונות",
-      useCase3Description: "נקו את הר הראיונות הלא מתועתקים. עבדו שבועות של מחקר תוך שעות. עמדו בדד-ליין שלכם בלי פאניקה.",
-      useCase4Title: "ספריית יוטיוב",
-      useCase4Description: "צור כתוביות לכל הערוץ שלך. צור פוסטים בבלוג מתוכן וידאו. שפר את קידום האתרים (SEO) בכל הסרטונים.",
-      useCase5Title: "ארכיון פגישות",
-      useCase5Description: "העלה חודשים של פגישות מוקלטות. צור סיכומי פגישה הניתנים לחיפוש. לעולם לא תאבד החלטות חשובות שוב.",
+      useCasesTitleHighlight: "מעלים כבדים",
+      useCasesSubtitle: "תרחישים אמיתיים שבהם העלאה מרובת קבצים מצילה את המצב",
+      useCase1Title: "ארכיוני פודקאסטים",
+      useCase1Description: "העלה 3 שנות פרקים בבת אחת. צור תמלילים לכל הקטלוג הקודם שלך. צור תוכן SEO לכל פרק.",
+      useCase2Title: "יצירת קורסים",
+      useCase2Description: "עבד את כל סרטוני ההרצאות שלך בו-זמנית. צור תמלילים נגישים לסטודנטים. בנה חומרי קורס הניתנים לחיפוש.",
+      useCase3Title: "עומס ראיונות",
+      useCase3Description: "נקה את ההר של ראיונות שלא תומללו. עבד שבועות של מחקר תוך שעות. עמד במועד האחרון ללא פאניקה.",
+      useCase4Title: "ספריית YouTube",
+      useCase4Description: "צור כתוביות לכל הערוץ שלך. צור פוסטים בבלוג מתוכן וידאו. שפר את ה-SEO בכל הסרטונים.",
+      useCase5Title: "ארכיוני פגישות",
+      useCase5Description: "העלה חודשים של פגישות מוקלטות. צור הערות פגישות הניתנות לחיפוש. לעולם אל תאבד החלטות חשובות שוב.",
       useCase6Title: "נתוני מחקר",
-      useCase6Description: "עיבוד קבוצות מיקוד בכמות גדולה. תמלול כל ראיונות המשתתפים. ניתוח נתונים איכותניים ביעילות.",
-      ctaTitle: "תפסיקו להתחנן לעוד העלאות",
-      ctaSubtitle: "קבל עיבוד בכמות גדולה ללא הגבלה שבאמת עובד",
+      useCase6Description: "עבד קבוצות מיקוד בכמות גדולה. תמלל כל ראיונות המשתתפים. נתח נתונים איכותיים ביעילות.",
+      ctaTitle: "תפסיקו לבקש עוד העלאות",
+      ctaSubtitle: "קבלו עיבוד כמותי בלתי מוגבל שבאמת עובד",
       finalCta: "העלה 50 קבצים עכשיו →"
     },
     Accuracy: {
       heroBadgeIcon: "🎯",
       heroBadgeText: "דיוק מוביל בתעשייה",
-      heroTitleLine1: "דיוק של 96%.",
+      heroTitleLine1: "96% דיוק.",
       heroTitleHighlight: "כל מילה חשובה.",
-      heroSubtitle: "דיוק מוביל בתעשייה ב-12 שפות עיקריות. חותמות זמן ברמת מילים לסנכרון מושלם. זיהוי דובר חכם המטפל בשיחות מהירות. עיצוב מקצועי וקריא בפועל.",
+      heroSubtitle: "דיוק מוביל בתעשייה ב-12 שפות עיקריות. חותמות זמן ברמת מילה לסנכרון מושלם. זיהוי דוברים חכם שמטפל בשיחות מהירות. עיצוב מקצועי שבאמת ניתן לקריאה.",
       primaryCta: "בדוק את הדיוק שלנו →",
       secondaryCta: "ראה שפות",
       statCard1Percentage: "96%",
@@ -1430,170 +1430,170 @@ let message = {
       statCard1DescriptionLine2: "12 שפות עיקריות",
       statCard2Percentage: "95%+",
       statCard2DescriptionLine1: "דיוק עם",
-      statCard2DescriptionLine2: "מבטאים וניבים",
+      statCard2DescriptionLine2: "מבטאים ודיאלקטים",
       statCard3Percentage: "100ms",
-      statCard3DescriptionLine1: "ברמת המילה",
+      statCard3DescriptionLine1: "ברמת מילה",
       statCard3DescriptionLine2: "דיוק חותמת זמן",
-      languageSectionTitlePart1: "דיוק של 96%",
+      languageSectionTitlePart1: "96% דיוק",
       languageSubtitle: "תמלול ברמה מקצועית לתוכן גלובלי",
       languageCard1Flag: "🇺🇸",
-      languageCard1Name: "אַנגְלִית",
-      languageCard1Accuracy: "דיוק של 96%",
+      languageCard1Name: "אנגלית",
+      languageCard1Accuracy: "96% דיוק",
       languageCard2Flag: "🇪🇸",
-      languageCard2Name: "סְפָרַדִית",
-      languageCard2Accuracy: "דיוק של 96%",
+      languageCard2Name: "ספרדית",
+      languageCard2Accuracy: "96% דיוק",
       languageCard3Flag: "🇨🇳",
-      languageCard3Name: "מַנדָרִין",
-      languageCard3Accuracy: "דיוק של 96%",
+      languageCard3Name: "מנדרינית",
+      languageCard3Accuracy: "96% דיוק",
       languageCard4Flag: "🇫🇷",
-      languageCard4Name: "צָרְפָתִית",
-      languageCard4Accuracy: "דיוק של 96%",
+      languageCard4Name: "צרפתית",
+      languageCard4Accuracy: "96% דיוק",
       languageCard5Flag: "🇩🇪",
-      languageCard5Name: "גֶרמָנִיָת",
-      languageCard5Accuracy: "דיוק של 96%",
+      languageCard5Name: "גרמנית",
+      languageCard5Accuracy: "96% דיוק",
       languageCard6Flag: "🇯🇵",
-      languageCard6Name: "יַפָּנִית",
-      languageCard6Accuracy: "דיוק של 96%",
+      languageCard6Name: "יפנית",
+      languageCard6Accuracy: "96% דיוק",
       languageCard7Flag: "🇰🇷",
       languageCard7Name: "קוריאנית",
-      languageCard7Accuracy: "דיוק של 96%",
+      languageCard7Accuracy: "96% דיוק",
       languageCard8Flag: "🇵🇹",
       languageCard8Name: "פורטוגזית",
-      languageCard8Accuracy: "דיוק של 96%",
+      languageCard8Accuracy: "96% דיוק",
       languageCard9Flag: "🇷🇺",
-      languageCard9Name: "רוּסִי",
+      languageCard9Name: "רוסית",
       languageCard9Accuracy: "דיוק של 96%",
       languageCard10Flag: "🇮🇹",
-      languageCard10Name: "אִיטַלְקִית",
+      languageCard10Name: "איטלקית",
       languageCard10Accuracy: "דיוק של 96%",
       languageCard11Flag: "🇳🇱",
-      languageCard11Name: "הוֹלַנדִי",
+      languageCard11Name: "הולנדית",
       languageCard11Accuracy: "דיוק של 96%",
       languageCard12Flag: "🇸🇦",
-      languageCard12Name: "עֲרָבִית",
+      languageCard12Name: "ערבית",
       languageCard12Accuracy: "דיוק של 96%",
-      moreLanguagesText: "+ 88 שפות נוספות נתמכות עם דיוק של 95%+",
-      feature1Label: "דִיוּק",
+      moreLanguagesText: "+ 88 שפות נוספות נתמכות עם דיוק של 95% ומעלה",
+      feature1Label: "דיוק",
       feature1TitlePart1: "ברמת המילה",
       feature1TitleHighlight: "חותמות זמן",
-      feature1Description: "כל מילה מסונכרנת בצורה מושלמת עם מיקום האודיו שלה. צרו תמלולים הניתנים ללחיצה, צור כתוביות מדויקות או קפצו לרגעים מדויקים בהקלטות שלכם. דיוק של 100ms שמקצוענים סומכים עליו.",
+      feature1Description: "כל מילה מסונכרנת בצורה מושלמת עם המיקום השמיעתי שלה. צרו תמלילים ניתנים ללחיצה, צרו כתוביות מדויקות או קפצו לרגעים ספציפיים בהקלטות שלכם. דיוק של 100 מילישניות שמקצוענים סומכים עליו.",
       feature1Point1Icon: "✓",
-      feature1Point1Text: "דיוק חותמת זמן של 100ms",
+      feature1Point1Text: "דיוק חותמת זמן של 100 מילישניות",
       feature1Point2Icon: "✓",
       feature1Point2Text: "מושלם לעריכת וידאו",
       feature1Point3Icon: "✓",
-      feature1Point3Text: "תמלילים אינטראקטיביים הניתנים ללחיצה",
+      feature1Point3Text: "תמלילים אינטראקטיביים ניתנים ללחיצה",
       feature1Point4Icon: "✓",
-      feature1Point4Text: "כתוביות מדויקות לפי פריימים",
+      feature1Point4Text: "כתוביות מדויקות לפי פריים",
       transcriptLine1Timestamp: "00:12.450",
       transcriptLine1Speaker: "דובר 1",
       transcriptLine1Text: "ברוכים הבאים לפרק הפודקאסט של היום.",
       transcriptLine2Timestamp: "00:15.230",
       transcriptLine2Speaker: "דובר 2",
-      transcriptLine2Text: "תודה שהזמנתם אותי לתוכנית!",
+      transcriptLine2Text: "תודה שהזמנת אותי לתוכנית!",
       transcriptLine3Timestamp: "00:17.890",
       transcriptLine3Speaker: "דובר 1",
-      transcriptLine3Text: "בואו נתעמק בנושא המרכזי שלנו...",
+      transcriptLine3Text: "בואו נצלול לנושא המרכזי שלנו...",
       transcriptLine4Timestamp: "00:20.120",
       transcriptLine4Speaker: "דובר 2",
-      transcriptLine4Text: "בהחלט, אני מתרגש לדון על זה.",
+      transcriptLine4Text: "בהחלט, אני מתרגש לדון בזה.",
       feature2Label: "בינה מלאכותית חכמה",
-      feature2TitlePart1: "ידיות",
-      feature2TitleHighlight: "שיחות מהירות",
-      feature2Description: "הבינה המלאכותית שלנו מזהה במדויק דוברים אפילו במהלך דיבור חופף, הפרעות ושיחות מהירות הלוך ושוב. מושלם לראיונות, פודקאסטים ופגישות שבהן דוברים מתערבים לעתים קרובות.",
+      feature2TitlePart1: "מתמודדת",
+      feature2TitleHighlight: "עם שיחות מהירות",
+      feature2Description: "הבינה המלאכותית שלנו מזהה דוברים במדויק גם בזמן דיבור חופף, הפרעות ושיחות מהירות הלוך ושוב. מושלם לראיונות, פודקאסטים ופגישות שבהן דוברים מתערבים לעיתים קרובות.",
       feature2Point1Icon: "✓",
       feature2Point1Text: "מזהה עד 20 דוברים",
       feature2Point2Icon: "✓",
-      feature2Point2Text: "מטפל בהפרעות בצורה מושלמת",
+      feature2Point2Text: "מתמודדת עם הפרעות בצורה מושלמת",
       feature2Point3Icon: "✓",
-      feature2Point3Text: "עובד עם דיבור חופף",
+      feature2Point3Text: "עובדת עם דיבור חופף",
       feature2Point4Icon: "✓",
-      feature2Point4Text: "שומר על דיוק במעבר בין-שיחות",
+      feature2Point4Text: "שומרת על דיוק בשיחות צולבות",
       feature2VisualNumber: "20",
       feature2VisualTitle: "דוברים זוהו",
       feature2VisualSubtext: "אפילו בשיחות מהירות",
-      feature3Label: "קְרִיאוּת",
+      feature3Label: "קריאות",
       feature3TitlePart1: "בצורה מושלמת",
       feature3TitleHighlight: "טקסט מעוצב",
-      feature3Description: "לא עוד קירות של טקסט. הבינה המלאכותית שלנו מוסיפה אוטומטית פסקאות, משפטים ופיסוק בדיוק למקום שאליו הם שייכים. התוצאה? תמלולים שנעים לקריאה וקלים לסריקה.",
+      feature3Description: "לא עוד קירות של טקסט. הבינה המלאכותית שלנו מוסיפה פסקאות, משפטים וסימני פיסוק בדיוק במקום הנכון. התוצאה? תמלילים שבאמת נעים לקרוא וקלים לסריקה.",
       feature3Point1Icon: "✓",
-      feature3Point1Text: "מעברי פסקה חכמים",
+      feature3Point1Text: "מעברים חכמים בין פסקאות",
       feature3Point2Icon: "✓",
       feature3Point2Text: "פיסוק מדויק",
       feature3Point3Icon: "✓",
-      feature3Point3Text: "אותיות גדולות וגדולות (CAT) נכונות",
+      feature3Point3Text: "שימוש נכון באותיות גדולות",
       feature3Point4Icon: "✓",
-      feature3Point4Text: "פלט נקי וניתן לסריקה",
+      feature3Point4Text: "פלט נקי וקל לסריקה",
       formattingTitle: "לפני ואחרי",
       formattingBeforeLabel: "❌ אחרים:",
-      formattingBeforeText: "אז היום נדבר על התכונות החדשות שעבדנו עליהן. אני חושב שתאהבו אותן מאוד. משתמשים ביקשו אותן כבר הרבה זמן וסוף סוף סיימנו אותן.",
-      formattingAfterLabel: "✓ לעולם לא:",
-      formattingAfterText: "אז היום, אנחנו הולכים לדבר על התכונות החדשות שעבדנו עליהן. אני חושב שתאהבו אותן מאוד. הן התבקשו על ידי משתמשים במשך זמן רב, וסוף סוף הצלחנו לפתח אותן.",
-      comparisonSubtitle: "דִיוּק",
+      formattingBeforeText: "אז היום נדבר על התכונות החדשות שאנחנו עובדים עליהן אני חושב שתאהבו אותן הן מבוקשות על ידי משתמשים כבר הרבה זמן סוף סוף סיימנו אותן",
+      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterText: "אז היום, אנחנו נדבר על התכונות החדשות שאנחנו עובדים עליהן. אני חושב שתאהבו אותן. הן מבוקשות על ידי משתמשים כבר הרבה זמן, וסוף סוף סיימנו אותן.",
+      comparisonSubtitle: "דיוק",
       comparisonSectionTitle: "השוואה",
-      comparisonDes: "ראו איך אנחנו עומדים מול המתחרים",
+      comparisonDes: "ראה איך אנחנו ביחס למתחרים",
       tableHeader1: "תכונה",
-      tableHeader2: "לעולם לא",
-      tableHeader3: "אוטרה.איי",
-      tableHeader4: "תיאור",
-      tableHeader5: "לְהַאִיץ",
-      tableRow1Feature: "דיוק (שמע צלול)",
+      tableHeader2: "NeverCap",
+      tableHeader3: "Otter.ai",
+      tableHeader4: "Descript",
+      tableHeader5: "Rev",
+      tableRow1Feature: "דיוק (אודיו ברור)",
       tableRow1NeverCap: "96%",
       tableRow1Otter: "95%",
       tableRow1Descript: "94%",
       tableRow1Rev: "94%",
-      tableRow2Feature: "חותמות זמן ברמת המילה",
+      tableRow2Feature: "חותמות זמן ברמת מילה",
       tableRow2NeverCap: "✓",
       tableRow2Otter: "✓",
       tableRow2Descript: "✓",
       tableRow2Rev: "✕",
-      tableRow3Feature: "זיהוי דובר",
-      tableRow3NeverCap: "20 רמקולים",
-      tableRow3Otter: "16 רמקולים",
-      tableRow3Descript: "10 רמקולים",
+      tableRow3Feature: "זיהוי דוברים",
+      tableRow3NeverCap: "20 דוברים",
+      tableRow3Otter: "16 דוברים",
+      tableRow3Descript: "10 דוברים",
       tableRow3Rev: "✕",
-      tableRow4Feature: "מטפל ב-Crosstalk",
+      tableRow4Feature: "מתמודד עם דיבור חופף",
       tableRow4NeverCap: "✓",
-      tableRow4Otter: "מוּגבָּל",
-      tableRow4Descript: "מוּגבָּל",
+      tableRow4Otter: "מוגבל",
+      tableRow4Descript: "מוגבל",
       tableRow4Rev: "✕",
       tableRow5Feature: "עיצוב חכם",
       tableRow5NeverCap: "✓",
       tableRow5Otter: "✓",
       tableRow5Descript: "✓",
-      tableRow5Rev: "בְּסִיסִי",
+      tableRow5Rev: "בסיסי",
       tableRow6Feature: "12 שפות ב-96%",
       tableRow6NeverCap: "✓",
       tableRow6Otter: "✕",
       tableRow6Descript: "✕",
       tableRow6Rev: "✕",
-      ctaTitle: "ניסיון של 96% דיוק",
-      ctaSubtitle: "העלו את האודיו המאתגר ביותר שלכם ותראו את ההבדל",
-      finalCta: "בדקו את הדיוק שלנו עכשיו →",
+      ctaTitle: "חוו דיוק של 96%",
+      ctaSubtitle: "העלה את הקובץ האודיו הכי מאתגר שלך ותראה את ההבדל",
+      finalCta: "בדוק את הדיוק שלנו עכשיו →",
         languageSectionTitlePart2: "ב-12 שפות עיקריות"
     }
   },
   Pricing: {
     Hero: {
       "title": "תמחור פשוט ושקוף",
-      "highlighted_text": "אין אותיות גדולות נסתרות",
-      "description": "בחרו את התוכנית שמתאימה לצרכים שלכם. שדרגו או שדרגו לאחור בכל עת. ללא חוזים, ללא הפתעות."
+      "highlighted_text": "אין מגבלות נסתרות",
+      "description": "בחר את התוכנית שמתאימה לצרכים שלך. שדרג או הורד רמה מתי שתרצה. בלי חוזים, בלי הפתעות."
     },
     Cards: {
       "title": "תמחור פשוט ושקוף.",
-      "highlighted_text": "אין אותיות נסתרות.",
-      "description": "בחרו את התוכנית שמתאימה לצרכים שלכם. שדרגו או שדרגו לאחור בכל עת. ללא חוזים, ללא הפתעות.",
+      "highlighted_text": "אין מגבלות נסתרות.",
+      "description": "בחר את התוכנית שמתאימה לצרכים שלך. שדרג או הורד רמה מתי שתרצה. בלי חוזים, בלי הפתעות.",
       "plans": [
             {
-              "name": "לְשַׁחְרֵר",
-              "price": "0 דולר",
-              "period": "חוֹדֶשׁ",
-              "discount": "מושלם להתנסות בשירות שלנו",
+              "name": "חינם",
+              "price": "$0",
+              "period": "חודש",
+              "discount": "מושלם לנסיון השירות שלנו",
               "limits": {
                 "title": "מגבלות יומיות",
                 "items": [
-                  '3 קבצים/יום (סה"כ כ-90 דקות/יום)',
-                  "עד 30 דקות לכל קובץ (≤250 MB)",
+                  '3 קבצים/יום (≈90 דקות סה"כ/יום)',
+                  "עד 30 דקות לקובץ (≤250 MB)",
                   "העלה קובץ אחד בכל פעם",
                   "תור עדיפות סטנדרטי"
                 ]
@@ -1602,216 +1602,216 @@ let message = {
                 "title": "תכונות",
                 "items": [
                   "100+ שפות",
-                  "תוויות רמקולים",
-                  "תִרגוּם",
+                  "תיוג דוברים",
+                  "תרגום",
                   "כל פורמטי הייצוא"
                 ]
               },
               "cta": {
-                "text": "התחל בחינם. ללא כרטיס אשראי.",
+                "text": "התחל בחינם. בלי כרטיס אשראי.",
                 "button": "התחל בחינם"
               }
             },
             {
-              "name": "פרו חודשי",
-              "price": "17.99 דולר",
-              "period": "חוֹדֶשׁ",
-              "discount": "9.99 דולר לחודש הראשון",
+              "name": "Pro חודשי",
+              "price": "$17.99",
+              "period": "חודש",
+              "discount": "$9.99 לחודש הראשון",
               "limits": {
-                "title": "אין תקרת גובה חודשית",
+                "title": "אין מגבלה חודשית",
                 "items": [
-                  'סה"כ דקות ללא הגבלה',
-                  "עד 10 שעות / 5 ג'יגה-בייט לקובץ",
-                  "העלאת 50 קבצים בבת אחת",
+                  "דקות בלתי מוגבלות",
+                  "עד 10 שעות / 5 GB לקובץ",
+                  "העלה 50 קבצים בבת אחת",
                   "תור עדיפות"
                 ]
               },
               "features": {
-                "title": "הכל בחינם, בנוסף",
+                "title": "הכל בחינם, ועוד",
                 "items": [
-                  "חותמות זמן ברמת המילה",
+                  "חותמות זמן ברמת מילה",
                   "זיהוי דוברים מתקדם",
-                  "פסקאות מעוצבים ופיסוק",
-                  "תמיכה בעדיפות"
+                  "פסקאות מפורמטות וסימני פיסוק",
+                  "תמיכה מועדפת"
                 ]
               },
               "cta": {
-                "text": "דקות ללא הגבלה. מהירות עדיפות. העלאות קבוצתיות.",
-                "button": "גו פרו"
+                "text": "דקות בלתי מוגבלות. מהירות עדיפות. העלאה מרובה.",
+                "button": "שדרג ל-Pro"
               },
               "badge": "הכי פופולרי"
             },
             {
-              "name": "פרו שנתי",
-              "price": "8.99 דולר",
-              "period": "חוֹדֶשׁ",
-              "discount": "מחויב מדי שנה 107.88 דולר",
+              "name": "Pro שנתי",
+              "price": "$8.99",
+              "period": "חודש",
+              "discount": "חיוב שנתי 107.88$",
               "limits": {
-                "title": "כמו Pro Monthly",
+                "title": "זהה ל-Pro Monthly",
                 "items": [
-                  'סה"כ דקות ללא הגבלה',
-                  "עד 10 שעות / 5 ג'יגה-בייט לקובץ",
-                  "העלאת 50 קבצים בבת אחת",
+                  "דקות בלתי מוגבלות",
+                  "עד 10 שעות / 5 GB לקובץ",
+                  "העלה 50 קבצים בבת אחת",
                   "תור עדיפות"
                 ]
               },
               "features": {
-                "title": "הכל בחינם, בנוסף",
+                "title": "כל מה שבחינם, ועוד",
                 "items": [
-                  "חותמות זמן ברמת המילה",
+                  "חותמות זמן ברמת מילה",
                   "זיהוי דוברים מתקדם",
-                  "פסקאות מעוצבים ופיסוק",
+                  "פסקאות מפורמטות וסימני פיסוק",
                   "תמיכה בעדיפות"
                 ]
               },
               "cta": {
-                "text": "דקות ללא הגבלה. מהירות עדיפות. העלאות קבוצתיות.",
-                "button": "גו פרו"
+                "text": "דקות בלתי מוגבלות. מהירות עדיפות. העלאה מרובה.",
+                "button": "Go Pro"
               },
-              "badge": "התמורה הטובה ביותר - חסכו 50%"
+              "badge": "הערך הטוב ביותר - חסכו 50%"
             }
           ],
-      "disclaimer": '"ללא הגבלה" פירושו ללא הגבלה חודשית וללא האטה מלאכותית. שימוש הוגן חל על אוטומציה או הפצה מחדש לרעה.'
+      "disclaimer": '"בלתי מוגבל" משמעו ללא תקרה חודשית וללא האטה מלאכותית. שימוש הוגן חל על אוטומציה או הפצה לא הוגנת.'
     },
     ComparisonTable: {
       "header": {
-        "title": "לְהַשְׁווֹת",
+        "title": "השווה",
         "highlighted_text": "כל התכונות",
-        "subtitle": "ראה בדיוק מה אתה מקבל עם כל תוכנית. אין מגבלות נסתרות."
+        "subtitle": "ראה בדיוק מה אתה מקבל עם כל תוכנית. ללא מגבלות נסתרות."
       },
       "plans": [
               "תכונות",
-              "לְשַׁחְרֵר",
-              "פרו חודשי",
-              "פרו שנתי"
+              "חינם",
+              "Pro Monthly",
+              "Pro Annual"
             ],
       "features": [
             {
-              "name": "מְחִיר",
+              "name": "מחיר",
               "values": [
-                "0 דולר לחודש",
+                "0$/חודש",
                 {
-                  "main": "17.99 דולר לחודש",
-                  "note": "9.99 דולר לחודש הראשון"
+                  "main": "17.99$/חודש",
+                  "note": "9.99$ לחודש הראשון"
                 },
                 {
-                  "main": "8.99 דולר לחודש",
-                  "note": "חיוב של 107.88 דולר לשנה"
+                  "main": "8.99$/חודש",
+                  "note": "חיוב שנתי 107.88$"
                 }
               ]
             },
             {
               "name": "דקות חודשיות",
-              "values": ["~2,700 (90/יום)", "בִּלתִי מוּגבָּל", "בִּלתִי מוּגבָּל"]
+              "values": ["~2,700 (90/יום)", "בלתי מוגבל", "בלתי מוגבל"]
             },
             {
-              "name": "משך זמן מקסימלי של קובץ",
+              "name": "משך קובץ מקסימלי",
               "values": ["30 דקות", "10 שעות", "10 שעות"]
             },
             {
               "name": "גודל קובץ מקסימלי",
-              "values": ["250 מגה-בייט", "5 ג'יגה-בייט", "5 ג'יגה-בייט"]
+              "values": ["250 MB", "5 GB", "5 GB"]
             },
             {
-              "name": "העלאות קבוצתיות",
-              "values": ["קובץ אחד", "50 קבצים", "50 קבצים"]
+              "name": "העלאה מרובה",
+              "values": ["קובץ 1", "50 קבצים", "50 קבצים"]
             },
             {
               "name": "מהירות עיבוד",
-              "values": ["תֶקֶן", "עֲדִיפוּת", "עֲדִיפוּת"]
+              "values": ["סטנדרטי", "עדיפות", "עדיפות"]
             },
             {
               "name": "שפות נתמכות",
               "values": ["100+ שפות", "100+ שפות", "100+ שפות"]
             },
             {
-              "name": "תִרגוּם",
-              "values": ["נָכוֹן", "נָכוֹן", "נָכוֹן"]
+              "name": "תרגום",
+              "values": ["true", "true", "true"]
             },
             {
               "name": "זיהוי דובר",
-              "values": ["בְּסִיסִי", "מתקדם (20 דוברים)", "מתקדם (20 דוברים)"]
+              "values": ["בסיסי", "מתקדם (20 דוברים)", "מתקדם (20 דוברים)"]
             },
             {
-              "name": "חותמות זמן ברמת המילה",
-              "values": ["שֶׁקֶר", "נָכוֹן", "נָכוֹן"]
+              "name": "חותמות זמן ברמת מילה",
+              "values": ["false", "true", "true"]
             },
             {
               "name": "פסקאות מעוצבות",
-              "values": ["שֶׁקֶר", "נָכוֹן", "נָכוֹן"]
+              "values": ["false", "true", "true"]
             },
             {
-              "name": "פורמטי ייצוא",
+              "name": "פורמטים לייצוא",
               "values": ["כל הפורמטים", "כל הפורמטים", "כל הפורמטים"]
             },
             {
-              "name": "תְמִיכָה",
-              "values": ["אֶלֶקטרוֹנִי", 'דוא"ל בעדיפות', 'דוא"ל בעדיפות']
+              "name": "תמיכה",
+              "values": ["אימייל", "אימייל בדחיפות", "אימייל בדחיפות"]
             },
             {
               "name": "שמירת נתונים",
-              "values": ["30 ימים", "לָנֶצַח", "לָנֶצַח"]
+              "values": ["30 ימים", "לנצח", "לנצח"]
             }
           ]
     },
     FAQ: {
-      "title": "שאלות נפוצות",
-      "titleHighligt": "שאלות",
+      "title": "שאלות",
+      "titleHighligt": "נפוצות",
       "items": [
             {
-              "q": "מדיניות_בלתי_מוגבלת",
+              "q": "unlimited_policy",
               "question": "האם זה באמת בלתי מוגבל?",
-              "answer": "כן! לתוכניות Pro אין מגבלת דקות חודשיות. המגבלות היחידות הן טכניות: משך קובץ מקסימלי של 10 שעות וגודל קובץ של 5GB. ניתן לעבד כמה קבצים שתצטרכו."
+              "answer": "כן! תוכניות Pro אינן כוללות מגבלות דקות חודשיות. המגבלות היחידות הן טכניות: משך קובץ מקסימלי של 10 שעות וגודל קובץ של 5GB. תוכלו לעבד כמה קבצים שאתם צריכים."
             },
             {
-              "q": "שינוי_תוכנית",
-              "question": "האם אני יכול לשנות תוכניות בכל עת?",
-              "answer": "בהחלט! ניתן לבטל את המנוי בכל עת דרך לוח המחוונים. ניתן לשדרג או לשדרג לאחור בכל עת שתצטרכו."
+              "q": "plan_change",
+              "question": "האם אוכל לשנות תוכניות בכל עת?",
+              "answer": "בהחלט! תוכלו לבטל את המנוי שלכם בכל עת מהלוח האישי. שדרגו או הורידו רמה מתי שתצטרכו."
             },
             {
-              "q": "שיטות_תשלום",
-              "question": "אילו אמצעי תשלום אתם מקבלים?",
-              "answer": "אנו מקבלים את כל כרטיסי האשראי, כרטיסי החיוב ו-PayPal העיקריים לתשלומים מאובטחים וללא טרחה."
+              "q": "payment_methods",
+              "question": "אילו שיטות תשלום אתם מקבלים?",
+              "answer": "אנו מקבלים את כל כרטיסי האשראי והחיוב המובילים, וכן PayPal, לתשלומים מאובטחים וללא טרחה."
             },
             {
-              "q": "ניסיון_חינם",
-              "question": "האם יש גרסת ניסיון בחינם ל-Pro?",
-              "answer": "כן! נסו את Pro בחינם למשך 7 ימים, ללא צורך בכרטיס אשראי. בנוסף, קבלו את החודש הראשון בהנחה של 45% עם ההרשמה."
+              "q": "free_trial",
+              "question": "האם יש ניסיון חינם ל-Pro?",
+              "answer": "כן! נסו את Pro בחינם למשך 7 ימים, ללא צורך בכרטיס אשראי. בנוסף, קבלו את החודש הראשון בהנחה של 45% כשאתם נרשמים."
             },
             {
-              "q": "שמירת_קבצים",
+              "q": "file_retention",
               "question": "כמה זמן אתם שומרים את הקבצים שלי?",
-              "answer": "תוכנית חינמית: 30 יום. תוכניות מקצוענים: לתמיד! התמלילים שלך זמינים תמיד בחשבונך."
+              "answer": "תוכנית חינם: 30 ימים. תוכניות Pro: לנצח! התמלילים שלכם תמיד זמינים בחשבון שלכם."
             },
             {
-              "q": "אבטחת_נתונים",
-              "question": "מה לגבי אבטחת מידע?",
-              "answer": "אנחנו בעלי הסמכת SOC 2 ומשתמשים בהצפנה של 256 סיביות. אנחנו אף פעם לא משתמשים בתוכן שלכם כדי לאמן את המודלים שלנו. הנתונים שלכם הם שלכם."
+              "q": "data_security",
+              "question": "מה לגבי אבטחת נתונים?",
+              "answer": "אנו בעלי אישור SOC 2 ומשתמשים בהצפנת 256-ביט. לעולם לא נשתמש בתוכן שלך כדי לאמן את המודלים שלנו. הנתונים שלך שייכים רק לך."
             }
           ]
     },
     CTA: {
-      "title": "מוכנים ללכת ללא הגבלה?",
-      "subtitle": "הצטרפו ליותר מ-50,000 אנשי מקצוע המתמללים ללא הגבלה",
-      "button": "נסה את NeverCap בחינם →",
-      "disclaimer": "אין צורך בכרטיס אשראי • התחל לתמלל תוך שניות"
+      "title": "מוכנים לעבור ללא הגבלה?",
+      "subtitle": "הצטרפו ל-50,000+ מקצוענים שמבצעים תמלול ללא הגבלות",
+      "button": "נסו את NeverCap בחינם →",
+      "disclaimer": "אין צורך בכרטיס אשראי • התחילו לתמלל בתוך שניות"
     }
   },
   UseCases: {
     AllUseCases: {
       builtFor: "נבנה עבור",
       heavyUsers: "משתמשים כבדים",
-      whoActuallyNeed: "מי באמת צריך ללא הגבלה",
-      heroSubtitle: "מפודקאסטרים עם שנים של צבר הזמנות ועד חוקרים עם מאות ראיונות. ראו כיצד אנשי מקצוע משתמשים ב-NeverCap כדי להשתחרר ממגבלות העלאה ומגבלות דקות.",
+      whoActuallyNeed: "שבאמת צריכים בלתי מוגבל",
+      heroSubtitle: "ממפיקי פודקאסטים עם שנים של חומר מצטבר ועד חוקרים עם מאות ראיונות. ראה כיצד אנשי מקצוע משתמשים ב-NeverCap כדי להשתחרר ממגבלות העלאה ומכסות דקות.",
       podcasters: {
         title: "פודקאסטרים",
         pain: '"תפסיקו לבחור אילו פרקים ראויים לתמלול"',
-        description: "העלו את כל ארכיון הפודקאסטים שלכם בבת אחת. צרו הערות לתוכנית, שפרו את קידום האתרים שלכם (SEO) וחזרו לשימוש מחדש של התוכן מבלי לספור דקות.",
+        description: "העלו את כל ארכיון הפודקאסט שלכם בבת אחת. צרו תקצירי פרקים, שפרו את ה-SEO והפיקו תוכן מחדש מבלי לספור דקות.",
         benefits: {
-          benefit1: "תעלה את כל הפרקים, לא רק 3",
-          benefit2: "צור הערות תוכנית ידידותיות לקידום אתרים (SEO)",
-          benefit3: "צור ארכיונים הניתנים לחיפוש",
-          benefit4: "שימוש חוזר בתוכן בבלוג"
+          benefit1: "העלו את כל הפרקים, לא רק 3",
+          benefit2: "צרו תקצירי פרקים ידידותיים ל-SEO",
+          benefit3: "צרו ארכיונים ניתנים לחיפוש",
+          benefit4: "הפיקו תוכן מחדש לבלוג"
         },
         stats: {
           stat1: {
@@ -1820,23 +1820,23 @@ let message = {
           },
           stat2: {
             number: "200 שעות",
-            label: "נשמר"
+            label: "נחסך"
           },
           stat3: {
             number: "פי 3",
-            label: "תנועת קידום אתרים (SEO)"
+            label: "תנועת SEO"
           }
         }
       },
       journalists: {
         title: "עיתונאים וסופרים",
-        pain: '"לחץ דד-ליין עומד במגבלות העלאה"',
-        description: "העלה את כל הראיונות בקבוצות לפני המועד האחרון. חפש באופן מיידי בין תמלולים ולעולם אל תפספסו ציטוט חשוב.",
+        pain: '"לחץ של דדליין פוגש הגבלות העלאה"',
+        description: "העלו בקבוצות את כל הראיונות לפני הדדליין. חפשו בתמלולים באופן מיידי ולעולם אל תפספסו ציטוט קריטי.",
         benefits: {
-          benefit1: "העלאה קבוצתית לפני מועדי היעד",
-          benefit2: "חיפוש בכל הראיונות בבת אחת",
+          benefit1: "העלאה קבוצתית לפני דדליינים",
+          benefit2: "חפשו בכל הראיונות בבת אחת",
           benefit3: "ציטוטים מדויקים עם חותמות זמן",
-          benefit4: "טיפול במבטאים ובשפות"
+          benefit4: "התמודדות עם מבטאים ושפות"
         },
         stats: {
           stat1: {
@@ -1845,23 +1845,23 @@ let message = {
           },
           stat2: {
             number: "96%",
-            label: "דִיוּק"
+            label: "דיוק"
           },
           stat3: {
             number: "5 דקות",
-            label: "לְשָׁעָה"
+            label: "לשעה"
           }
         }
       },
       contentCreators: {
         title: "יוצרי תוכן",
         pain: '"נגישות לא צריכה להיות יקרה"',
-        description: "צור כתוביות לכל ערוץ היוטיוב שלך. צור כתוביות במספר שפות ושדרג את קידום האתרים (SEO) שלך לסרטונים באופן מיידי.",
+        description: "הוסיפו כתוביות לכל ערוץ היוטיוב שלכם. צרו כתוביות במגוון שפות ושפרו את ה-SEO של הסרטונים באופן מיידי.",
         benefits: {
-          benefit1: "הוספת כתוביות לכל הסרטונים בבת אחת",
-          benefit2: "249 תרגומים לשפות",
+          benefit1: "הוסיפו כתוביות לכל הסרטונים בבת אחת",
+          benefit2: "249 תרגומי שפות",
           benefit3: "קבצי SRT מוכנים ליוטיוב",
-          benefit4: "שיפור דירוג SEO של וידאו"
+          benefit4: "שפרו את דירוג ה-SEO של הסרטונים"
         },
         stats: {
           stat1: {
@@ -1879,19 +1879,19 @@ let message = {
         }
       },
       researchers: {
-        title: "חוקרים ואנשי אקדמיה",
-        pain: '"נתונים איכותיים לא צריכים לחכות בתור"',
-        description: "עבדו מחקרי מחקר שלמים בבת אחת. טפלו בקבוצות מיקוד, ראיונות ודיוני פאנל עם זיהוי דוברים מושלם.",
+        title: "חוקרים ואקדמאים",
+        pain: '"נתונים איכותיים לא צריכים לעמוד בתור"',
+        description: "עיבדו מחקרים שלמים בבת אחת. התמודדו עם קבוצות מיקוד, ראיונות ודיונים עם זיהוי דוברים מושלם.",
         benefits: {
-          benefit1: "קבוצות מיקוד תהליכיות בכמות גדולה",
-          benefit2: "זיהוי של 20 דוברים",
-          benefit3: "ייצוא לתוכנת ניתוח",
+          benefit1: "עיבוד קבוצות מיקוד בתפזורת",
+          benefit2: "זיהוי 20 דוברים",
+          benefit3: "ייצוא לתוכנות ניתוח",
           benefit4: "אבטחה תואמת GDPR"
         },
         stats: {
           stat1: {
             number: "100+",
-            label: "לִלמוֹד"
+            label: "מחקר"
           },
           stat2: {
             number: "96%",
@@ -1904,44 +1904,44 @@ let message = {
         }
       },
       businessTeams: {
-        title: "צוותי עסקים",
-        pain: '"הקלטות פגישות צריכות להיות קלות ללא מאמץ"',
-        description: "הקלט פגישות ישירות או העלה קבצי שמע לתמלול מיידי. בנה ארכיונים הניתנים לחיפוש משיחות ללא הגבלה ולעולם לא תאבד דיונים חשובים שוב.",
+        title: "צוותים עסקיים",
+        pain: '"הקלטת פגישות צריכה להיות ללא מאמץ"',
+        description: "הקלט פגישות ישירות או העלה קבצי אודיו לתמלול מיידי. בנה ארכיונים ניתנים לחיפוש משיחות בלתי מוגבלות ולעולם אל תאבד דיונים חשובים שוב.",
         benefits: {
-          benefit1: "הקלטת שמע ישירה ותמלול",
-          benefit2: "הקלטות פגישות ללא הגבלה",
-          benefit3: "ארכיון פגישות הניתן לחיפוש",
-          benefit4: "העלאת קבצי אודיו באופן מיידי"
+          benefit1: "הקלטת אודיו ותמלול ישירים",
+          benefit2: "הקלטות פגישות בלתי מוגבלות",
+          benefit3: "ארכיון פגישות ניתן לחיפוש",
+          benefit4: "העלה קבצי אודיו באופן מיידי"
         },
         stats: {
           stat1: {
-            number: "לִחיוֹת",
-            label: "הַקלָטָה"
+            number: "חי",
+            label: "הקלטה"
           },
           stat2: {
-            number: "רֶגַע",
+            number: "מיידי",
             label: "העלאה"
           },
           stat3: {
             number: "20+",
-            label: "רמקולים"
+            label: "דוברים"
           }
         }
       },
       educators: {
         title: "מחנכים",
-        pain: '"סרטוני יוטיוב זקוקים לתמלול מיידי"',
-        description: "פשוט הדביקו קישורי יוטיוב כדי לקבל תמלולים מיידיים וכתוביות שנוצרו אוטומטית. הפכו כל סרטון חינוכי לתוכן נגיש וניתן לחיפוש.",
+        pain: '"סרטוני YouTube זקוקים לתמלול מיידי"',
+        description: "פשוט הדבק קישורי YouTube כדי לקבל תמלולים מיידיים וכיתובים אוטומטיים. הפוך כל סרטון חינוכי לתוכן נגיש וניתן לחיפוש.",
         benefits: {
-          benefit1: "תמלול קישור ישיר ליוטיוב",
-          benefit2: "יצירה אוטומטית של כתוביות וידאו",
-          benefit3: "לתמלל קורסים שלמים",
-          benefit4: "ארכיון הרצאות הניתן לחיפוש"
+          benefit1: "תמלול קישורי YouTube ישיר",
+          benefit2: "יצירת כיתובים אוטומטית לסרטונים",
+          benefit3: "תמלול קורסים שלמים",
+          benefit4: "ארכיוני הרצאות ניתנים לחיפוש"
         },
         stats: {
           stat1: {
-            number: "קליק אחד",
-            label: "הדבקת יוטיוב"
+            number: "לחיצה אחת",
+            label: "הדבקת YouTube"
           },
           stat2: {
             number: "אוטומטי",
@@ -1956,67 +1956,67 @@ let message = {
       quotes: {
         title: "משתמשים אמיתיים,",
         titleHighlight: "חופש אמיתי",
-        subtitle: "שמעו מאנשי מקצוע שהשתחררו ממגבלות מלאכותיות",
+        subtitle: "שמע מאנשי מקצוע שפרצו את המגבלות המלאכותיות",
         testimonials: {
           mike: {
-            textBefore: '"היה לי',
+            textBefore: '"היו לי',
             highlight: "3 שנים של פרקים",
-            textAfter: 'יושב ללא תמלול. אוטר רצה שאבחר 3. שלוש. NeverCap תן לי להעלות את כל 150 הפרקים בסוף שבוע אחד."',
+            textAfter: 'שלא תומללו. Otter ביקשו ממני לבחור 3. שלושה. NeverCap אפשרו לי להעלות את כל 150 הפרקים בסוף שבוע אחד."',
             name: "מייק רודריגז",
-            role: "מנחה פודקאסט"
+            role: "מארח פודקאסט"
           },
           jessica: {
-            textBefore: `"כעיתונאי עצמאי, אני לא יכול להרשות לעצמי את טרינט'ס"`,
-            highlight: "100 דולר לחודש",
-            textAfter: ', אבל אני גם לא יכול לעבוד עם המגבלה של 10 קבצים לחודש של אוטר. NeverCap הציל את הקריירה שלי."',
+            textBefore: '"כעיתונאית פרילנסרית, אני לא יכולה להרשות לעצמי את Trint ב-',
+            highlight: "$100 לחודש",
+            textAfter: ', אבל גם לא יכולה לעבוד עם מגבלת 10 קבצים בחודש של Otter. NeverCap הצילו את הקריירה שלי."',
             name: "ג'סיקה פארק",
-            role: "עיתונאי עצמאי"
+            role: "עיתונאית פרילנסרית"
           },
           sarah: {
-            textBefore: '"לצוות המחקר שלנו היה',
+            textBefore: '"לצוות המחקר שלנו היו',
             highlight: "200 שעות",
-            textAfter: 'של הקלטות קבוצות מיקוד. עיבדנו הכל במהלך סוף שבוע במקום לקצוב דקות חודשיות."',
+            textAfter: 'של הקלטות קבוצות מיקוד. עיבדנו הכל במהלך סוף שבוע אחד במקום להגביל דקות חודשיות."',
             name: `ד"ר שרה צ'ן`,
-            role: "חוקר ראשי"
+            role: "חוקרת ראשית"
           },
           carlos: {
-            textBefore: "אני יוצר תוכן חינוכי בספרדית. NeverCap מתמלל בצורה מושלמת ו",
+            textBefore: '"אני יוצר תוכן חינוכי בספרדית. NeverCap מתמלל בצורה מושלמת ו-',
             highlight: "מתרגם לאנגלית",
-            textAfter: '"להישג יד רחב יותר. אין גבולות, רק צמיחה."',
-            name: "קרלוס מרטינז",
-            role: "מחנך יוטיוב"
+            textAfter: 'להגעה רחבה יותר. בלי מגבלות, רק צמיחה."',
+            name: "קרלוס מרטינס",
+            role: "מחנך YouTube"
           }
         }
       },
       industries: {
         title: "מהימן ברחבי",
         titleHighlight: "תעשיות",
-        subtitle: "אנשי מקצוע בכל מקום עוברים לשירותים בלתי מוגבלים באמת",
+        subtitle: "אנשי מקצוע בכל מקום עוברים לבלתי מוגבל באמת",
         list: {
-          media: "מדיה והוצאה לאור",
-          education: "הַשׂכָּלָה",
-          healthcare: "שירותי בריאות",
-          technology: "טֶכנוֹלוֹגִיָה",
-          finance: "לְמַמֵן",
-          legal: "מִשׁפָּטִי"
+          media: "מדיה ופרסום",
+          education: "חינוך",
+          healthcare: "בריאות",
+          technology: "טכנולוגיה",
+          finance: "פיננסים",
+          legal: "משפטי"
         }
       },
       cta: {
-        title: "מקרה השימוש שלך זקוק גם ללא הגבלה",
-        subtitle: "הצטרפו ליותר מ-50,000 אנשי מקצוע שהפסיקו לספור דקות והתחילו ליצור",
-        button: "התחל את המסע הבלתי מוגבל שלך →"
+        title: "גם המקרה שלך זקוק לבלתי מוגבל",
+        subtitle: "הצטרפו ל-50,000+ אנשי מקצוע שהפסיקו לספור דקות והתחילו ליצור",
+        button: "התחילו את המסע הבלתי מוגבל שלכם →"
       }
     },
     Podcasters: {
-      badge: "🎙️ נבנה עבור פודקאסטים",
-      heroTitle: "תמלול את שלך",
-      heroTitleHighlight: "ארכיון הפודקאסטים המלא",
-      heroSubtitle: "העלו את כל קטלוג התוכניות שלכם. צרו הערות לכל פרק. אין צורך עוד לבחור אילו פרקים לתמלל. עבדו 50 פרקים בו זמנית, ללא הגבלת זמן בחודש.",
-      ctaPrimary: "התחל לתמלל בחינם",
-      ctaSecondary: "ראה איך זה עובד",
-      trustBadge1: "🎙️ 10,000+ פודקאסטרים",
-      trustBadge2: "∞ פרקים ללא הגבלה",
-      trustBadge3: "📝 תמלולים מוכנים לקידום אתרים (SEO)",
+      badge: "בנוי עבור פודקאסטרים",
+      heroTitle: "תמללו את",
+      heroTitleHighlight: "הארכיון המלא של הפודקאסט",
+      heroSubtitle: "העלו את כל הקטלוג האחורי שלכם. צרו הערות פרקים לכל פרק. לא עוד בחירה אילו פרקים לתמלל.",
+      ctaPrimary: "התחילו לתמלל בחינם",
+      ctaSecondary: "ראו איך זה עובד",
+      trustBadge1: "10,000+ פודקאסטרים",
+      trustBadge2: "פרקים בלתי מוגבלים",
+      trustBadge3: "תמלילים מוכנים ל-SEO",
       stats: {
         stat1: {
           number: "∞",
@@ -2024,124 +2024,124 @@ let message = {
         },
         stat2: {
           number: "50",
-          label: "העלאה קבוצתית"
+          label: "העלאה מרוכזת"
         },
         stat3: {
           number: "10 שעות",
-          label: "אורך פרק מקסימלי"
+          label: "אורך מקסימלי לפרק"
         },
         stat4: {
           number: "96%",
-          label: "דִיוּק"
+          label: "דיוק"
         }
       },
-      problemTitle: "ה",
-      problemTitleHighlight: "בעיה בתמלול פודקאסט",
-      problemSubtitle: 'שירותים אחרים גורמים לך לבחור אילו פרקים "שווים" תמלול',
+      problemTitle: "הבעיה",
+      problemTitleHighlight: "בתמלול פודקאסטים",
+      problemSubtitle: 'שירותים אחרים גורמים לכם לבחור אילו פרקים "שווים" לתמלול',
       problems: {
         problem1: {
-          title: "מגבלות העלאה הרג את הארכיון",
-          description: "Otter נותנת לך 3 קבצי ייבוא לכל החיים בחינם, 10 לחודש ב-Pro. איך מתמללים 3 שנים של פרקים?"
+          title: "מגבלות העלאה הורסות ארכיונים",
+          description: "Otter נותן לכם 3 יבואים לכל החיים בחינם, 10 בחודש ב-Pro. איך אתם מתמללים 3 שנים של פרקים?"
         },
         problem2: {
-          title: "הזדמנויות SEO שהוחמצו",
-          description: "כל פרק שלא מתועתק הוא תנועה שאבדה מקידום אתרים. אבל Descript מגביל אותך ל-30 שעות בחודש במקרה הטוב."
+          title: "מפסידים הזדמנויות SEO",
+          description: "כל פרק שלא תומלל הוא תנועת SEO אבודה. אבל Descript מגביל אתכם ל-30 שעות בחודש לכל היותר."
         },
         problem3: {
-          title: "העלויות מתפוצצות עם הצמיחה",
-          description: "ככל שהפודקאסט שלכם גדל, עלויות התמלול מרקיעות שחקים. דמי התמלול של 2 דולר לשעה הופכים את ההרחבה לבלתי אפשרית."
+          title: "עלויות מתפוצצות עם הצמיחה",
+          description: "כשהפודקאסט שלכם גדל, עלויות התמלול מרקיעות שחקים. דמי חריגה של $2 לשעה הופכים את ההתרחבות לבלתי אפשרית."
         }
       },
-      solutionTitle: "ה",
-      solutionTitleHighlight: "NeverCap פתרון",
-      solutionDescription: "תמלול אמיתי ללא הגבלה. העלה את כל הארכיון שלך. תמלל כל פרק חדש. צור הערות תוכנית בקנה מידה גדול. ללא מגבלות, ללא הגבלות, רק צמיחה.",
-      workflowTitle: "תהליך העבודה שלך בפודקאסט,",
-      workflowTitleHighlight: "מְפוּשָׁט",
-      workflowSubtitle: "מהקלטה ועד הערות תוכנית מותאמות לקידום אתרים תוך דקות",
+      solutionTitle: "הפתרון",
+      solutionTitleHighlight: "NeverCap",
+      solutionDescription: "תמלול בלתי מוגבל באמת. העלו את כל הארכיון שלכם. תמללו כל פרק חדש. צרו הערות פרקים בקנה מידה. ללא הגבלות, ללא מגבלות, רק צמיחה.",
+      workflowTitle: "תהליך העבודה של הפודקאסט שלכם,",
+      workflowTitleHighlight: "מפושט",
+      workflowSubtitle: "מהקלטה להערות פרקים מותאמות SEO בתוך דקות",
       workflow: {
         step1: {
-          title: "העלאת פרקים",
-          description: "הורד 50 פרקים בבת אחת. MP3, MP4, WAV - אנחנו מטפלים בכולם."
+          title: "העלו פרקים",
+          description: "שחררו 50 פרקים בבת אחת. MP3, MP4, WAV - אנחנו מטפלים בכולם."
         },
         step2: {
-          title: "תמלולים של בינה מלאכותית",
-          description: "דיוק של 96% עם זיהוי דובר. מושלם לראיונות."
+          title: "AI מתמלל",
+          description: "96% דיוק עם זיהוי דוברים. מושלם לראיונות."
         },
         step3: {
           title: "עיצוב חכם",
-          description: "בינה מלאכותית מוסיפה פסקאות, משפטים ופיסוק באופן אוטומטי."
+          description: "בינה מלאכותית מוסיפה פסקאות, משפטים וסימני פיסוק אוטומטית."
         },
         step4: {
-          title: "פרסום ודירוג",
-          description: "ייצא לאתר שלך. ראה את תנועת ה-SEO שלך גדלה."
+          title: "פרסם ודרג",
+          description: "ייצא לאתר שלך. צפה בתנועת ה-SEO שלך גדלה."
         }
       },
-      featuresTitle: "תכונות פודקאסטרים",
-      featuresTitleHighlight: "באמת צריך",
+      featuresTitle: "פיצ'רים שפודקאסטרים",
+      featuresTitleHighlight: "באמת צריכים",
       featuresSubtitle: "נבנה על ידי פודקאסטרים, עבור פודקאסטרים",
       features: {
         feature1: {
-          title: "זיהוי ריבוי רמקולים",
-          description: "מזהה ותייג אוטומטית עד 20 דוברים. מושלם לדיוני פאנל, ראיונות ותוכניות בהנחיית שותפים."
+          title: "זיהוי מרובה דוברים",
+          description: "מזהה ומתייג אוטומטית עד 20 דוברים. מושלם לדיוני פאנל, ראיונות ותוכניות משותפות."
         },
         feature2: {
           title: "פרקי חותמת זמן",
-          description: "צור חותמות זמן הניתנות ללחיצה עבור תיאורי YouTube. תן למאזינים לקפוץ לקטעים המועדפים עליהם באופן מיידי."
+          description: "צור חותמות זמן ניתנות ללחיצה לתיאורי YouTube. אפשר למאזינים לקפוץ לקטעים האהובים עליהם מייד."
         },
         feature3: {
           title: "עיצוב חכם",
-          description: "מוסיף אוטומטית פסקאות, משפטים ופיסוק. קבל תמלולים נקיים וקריאים. חסוך שעות בפוסט-פרודקשן."
+          description: "מוסיף אוטומטית פסקאות, משפטים וסימני פיסוק. קבל תמלילים נקיים וקריאים. חסך שעות בעריכה."
         },
         feature4: {
-          title: "אופטימיזציה של קידום אתרים (SEO)",
-          description: "תמלולים מעוצבים למנועי חיפוש. שפרו את נראות הפודקאסט שלכם והגיעו לקהלים חדשים."
+          title: "אופטימיזציית SEO",
+          description: "תמלילים מעוצבים למנועי חיפוש. הגדל את הגילוי של הפודקאסט שלך והגיע לקהלים חדשים."
         },
         feature5: {
           title: "100+ שפות",
-          description: "תמלול בכל שפה. תרגם ליותר מ-249 שפות. הגע לקהל עולמי בקלות."
+          description: "תמלל בכל שפה. תרגם ל-249+ שפות. הגיע לקהלים גלובליים ללא מאמץ."
         },
         feature6: {
           title: "עיבוד אצווה",
-          description: "העלה 50 פרקים לפני השינה. התעורר כדי להשלים תמלולים. עבד את כל הארכיון שלך בן לילה."
+          description: "העלה 50 פרקים לפני השינה. התעורר לתמלילים מוכנים. עבד על כל הארכיון שלך במהלך הלילה."
         }
       },
       testimonialsTitle: "פודקאסטרים שעשו",
-      testimonialsTitleHighlight: "המתג",
+      testimonialsTitleHighlight: "את המעבר",
       testimonialsSubtitle: "סיפורים אמיתיים מפודקאסטרים אמיתיים",
       testimonials: {
         mike: {
-          text: '"אני עושה פודקאסט כבר 3 שנים ותמללתי הכל ידנית כמו אידיוט. העליתי 6 פרקים בבת אחת וזה הפריד ביני לבין המנחה שלי בצורה מושלמת. פרק בית הקפה שחשבתי שנהרס? תמלול ברור כשמש. אני אף פעם לא אחזור להקליד את הדברים האלה בעצמי."',
+          text: '"עשיתי פודקאסט במשך 3 שנים ותמללתי הכל ידנית כמו אידיוט. העליתי 6 פרקים בבת אחת וזה הפריד ביני לבין השותף שלי בצורה מושלמת. הפרק בבית הקפה שחשבתי שהיה הרוס? תמליל ברור כבדולח. אני לעולם לא אחזור להקליד את הדברים האלה בעצמי."',
           name: "מייק רודריגז",
-          role: 'מנחה הפודקאסט "The Daily Grind"'
+          role: 'מארח הפודקאסט "The Daily Grind"'
         },
         sarah: {
-          text: '"אוטר הגביל אותי ל-10 ייבוא קבצים בחודש. יש לי 150 פרקים בתקופה שלא בוצעה. NeverCap אפשר לי להעלות הכל ב-3 קבוצות. התנועה האורגנית שלי גדלה ב-300% מאז שהוספתי תמלולים לפרקים ישנים. זה פשוט משלם על עצמו."',
+          text: '"Otter הגביל אותי ל-10 יבואי קבצים בחודש. יש לי 150 פרקים בהמתנה. NeverCap אפשר לי להעלות הכל ב-3 אצוות. התנועה האורגנית שלי גדלה ב-300% מאז שהוספתי תמלילים לפרקים ישנים. זה ממש משלם על עצמו."',
           name: "שרה צ'ן",
-          role: 'יוצר "שיחות טכנולוגיה היום"'
+          role: 'יוצרת "Tech Talks Today"'
         }
       },
       comparisonTitle: "למה פודקאסטרים בוחרים",
       comparisonTitleHighlight: "NeverCap",
-      comparisonSubtitle: "ראו איך אנחנו עומדים מול המתחרים",
+      comparisonSubtitle: "ראה איך אנחנו משתווים למתחרים",
       comparison: {
         headers: {
-          feature: "תכונה",
+          feature: "פיצ'ר",
           nevercap: "NeverCap",
           otter: "Otter.ai Pro",
-          descript: "יוצר תיאורים"
+          descript: "Descript Creator"
         },
         rows: {
           monthlyLimit: {
             feature: "מגבלת פרקים חודשית",
-            nevercap: "בִּלתִי מוּגבָּל",
+            nevercap: "ללא הגבלה",
             otter: "~13 פרקים (1200 דקות)",
             descript: "~30 פרקים (30 שעות)"
           },
           uploadLimit: {
             feature: "מגבלת העלאת קבצים",
-            nevercap: "בִּלתִי מוּגבָּל",
-            otter: "10 לחודש",
-            descript: "אחד בכל פעם"
+            nevercap: "ללא הגבלה",
+            otter: "10 בחודש",
+            descript: "1 בכל פעם"
           },
           batchProcessing: {
             feature: "עיבוד אצווה",
@@ -2153,13 +2153,13 @@ let message = {
             feature: "אורך פרק מקסימלי",
             nevercap: "10 שעות",
             otter: "90 דקות",
-            descript: "בִּלתִי מוּגבָּל"
+            descript: "ללא הגבלה"
           },
           speakerDetection: {
-            feature: "זיהוי רמקולים",
-            nevercap: "20 רמקולים",
-            otter: "16 רמקולים",
-            descript: "10 רמקולים"
+            feature: "זיהוי דוברים",
+            nevercap: "20 דוברים",
+            otter: "16 דוברים",
+            descript: "10 דוברים"
           },
           smartFormatting: {
             feature: "עיצוב חכם",
@@ -2168,125 +2168,125 @@ let message = {
             descript: "✓"
           },
           price: {
-            feature: "מְחִיר",
-            nevercap: "17.99 דולר לחודש",
-            otter: "16.99 דולר לחודש",
-            descript: "30 דולר לחודש"
+            feature: "מחיר",
+            nevercap: "$17.99/חודש",
+            otter: "$16.99/חודש",
+            descript: "$30/חודש"
           }
         }
       },
       ctaTitle: "התחל לתמלל כל פרק",
-      ctaSubtitle: "הצטרפו ליותר מ-10,000 פודקאסטרים שלעולם לא דואגים למגבלות",
+      ctaSubtitle: "הצטרף ל-10,000+ פודקאסטרים שלעולם לא דואגים ממגבלות",
       ctaButton: "העלה את 50 הפרקים הראשונים שלך בחינם →",
-      ctaDisclaimer: "• אין צורך בכרטיס אשראי • עבד פרקים ללא הגבלה • בטלו בכל עת"
+      ctaDisclaimer: "לא נדרש כרטיס אשראי • עיבוד פרקים בלתי מוגבל • ביטול בכל עת"
     },
     Journalists: {
       hero: {
-        badge: "📰 לעיתונאים וסופרים",
-        title: "לתמלל כל ראיון.",
-        titleHighlight: "לעולם אל תפספסו ציטוט.",
-        subtitle: "הפסיקו לבחור אילו ראיונות ראויים לתמלול. העלו את כל ההקלטות בבת אחת, חפשו בכל דבר באופן מיידי ועמדו בלוחות הזמנים שלכם ללא חרדת העלאה.",
-        ctaPrimary: "התחל העלאות ללא הגבלה →",
+        badge: "עבור עיתונאים וכותבים",
+        title: "תמלל כל ראיון.",
+        titleHighlight: "אל תפספס אף ציטוט.",
+        subtitle: "הפסק לבחור איזה ראיונות ראויים לתמלול. העלה את כל ההקלטות בבת אחת, חפש בכל הראיונות מיידית, ועמוד ביעדים שלך ללא חרדה מהעלאה.",
+        ctaPrimary: "התחל העלאות בלתי מוגבלות →",
         ctaSecondary: "ראה איך זה עובד",
         stats: {
           uploads: {
             number: "∞",
-            label: "העלאות קבצים"
+            label: "העלאת קבצים"
           },
           accuracy: {
             number: "96%",
-            label: "דִיוּק"
+            label: "דיוק"
           },
           speed: {
             number: "5 דקות",
-            label: "לְשָׁעָה"
+            label: "לשעה"
           }
         },
         dashboard: {
-          title: "תור לראיונות",
+          title: "תור ראיונות",
           status: "• כל העיבוד",
           interviews: {
             cityCouncil: {
               title: "ישיבת מועצת העיר",
               duration: "שעתיים ו-15 דקות • מעלה...",
-              action: "עיבוד"
+              action: "בעיבוד"
             },
             expertInterview: {
-              title: `ראיון עם מומחה - ד"ר צ'ן`,
-              duration: "45 דקות • תמלול...",
-              action: "96% בוצע"
+              title: 'ראיון מומחה - ד"ר צ׳ן',
+              duration: "45 דקות • בתמלול...",
+              action: "96% הושלם"
             },
             pressConference: {
               title: "מסיבת עיתונאים",
-              duration: "שעה וחצי • מוכן",
-              action: "הצג →"
+              duration: "שעה ו-30 דקות • מוכן",
+              action: "צפה →"
             },
             phoneInterview: {
               title: "ראיון טלפוני - מקור",
               duration: "35 דקות • מוכן",
-              action: "הצג →"
+              action: "צפה →"
             }
           }
         }
       },
       problem: {
-        title: "ה",
-        titleHighlight: "בעיית תמלול עיתונאי",
-        subtitle: 'שירותים אחרים גורמים לך לבחור אילו ראיונות "שווים" את תמלולם',
+        title: "הבעיה",
+        titleHighlight: "בתמלול לעיתונאים",
+        subtitle: 'שירותים אחרים מכריחים אותך לבחור איזה ראיונות "שווים" תמלול',
         problems: {
           uploadLimits: {
             title: "מגבלות העלאה הורגות חקירות",
-            description: "Otter נותנת לך 10 ייבוא קבצים לחודש ב-Pro. איך מתמללים 3 שבועות של ראיונות חקירה?"
+            description: "Otter נותן לך 10 יבואי קבצים בחודש בגרסת Pro. איך אתה מתמלל 3 שבועות של ראיונות חקירה?"
           },
           missingQuotes: {
-            title: "ציטוטים חיוניים חסרים",
-            description: "כל ראיון לא מתומלל יכול להכיל את הציטוט המרכזי מהסיפור. אבל טרינט מגביל אותך ל-50 שעות בחודש במקרה הטוב."
+            title: "מפספס ציטוטים קריטיים",
+            description: "כל ראיון שלא תומלל יכול להכיל את הציטוט המרכזי בסיפור. אבל Trint מגביל אותך ל-50 שעות בחודש לכל היותר."
           },
           costExplosion: {
-            title: "עלויות מתפוצצות עם מועדים",
-            description: "ככל שהחקירה שלך מעמיקה, עלויות התמלול מרקיעות שחקים. דמי התמלול החודשיים של 100 דולר הופכים את העברת חדשות מתפרצות לבלתי אפשרית."
+            title: "עלויות מתפוצצות עם דדליינים",
+            description: "ככל שהחקירה מעמיקה, עלויות התמלול מרקיעות שחקים. דמי חריגה של $100 לחודש הופכים חדשות דחופות לבלתי אפשריות."
           }
         },
         solution: {
           title: "ה",
-          titleHighlight: "NeverCap פתרון",
-          description: "תמלול אמיתי ללא הגבלה. העלה את כל החקירה שלך. תמלל כל ראיון. חפש את כל הציטוטים באופן מיידי. ללא אותיות גדולות, ללא הגבלות, רק עיתונות."
+          titleHighlight: "פתרון NeverCap",
+          description: "תמלול בלתי מוגבל באמת. העלה את כל החקירה שלך. תמלל כל ראיון. חפש כל ציטוט מיידי. ללא הגבלות, ללא תקרות, רק עיתונאות."
         }
       },
       solution: {
-        title: "לְבָסוֹף,",
-        titleHighlight: "חופש אמיתי",
-        titleSuffix: "לעיתונאים",
-        subtitle: "העלה הכל. תמלל הכל. חפש הכל.",
+        title: "1",
+        titleHighlight: "תוכנת התמלול הטובה ביותר לראיונות",
+        titleSuffix: "עבור עיתונאים",
+        subtitle: "יתרונות אמיתיים שחשובים כשהמועדים לחוצים והדיוק הוא הכל",
         solutions: {
           unlimitedUploads: {
-            label: "העלאות ללא הגבלה",
-            title: "העלאת קבוצתית של כל החקירה שלך",
-            description: "לא עוד צורך לבחור אילו ראיונות לתמלל. העלה 50 קבצים בבת אחת. עבד חודשים של הקלטות בן לילה. כל החקירה שלך, מתומללת.",
+            label: "נפח בלתי מוגבל",
+            title: "נפח בלתי מוגבל לכל הראיונות שלך",
+            description: "בשונה מתוכנות עם הגבלות דקות, אתה יכול לתמלל כל ראיון, משיחה קצרה ועד דיון בן שעות. לעולם אל תדאג שיגמרו לך נקודות בזמן דדליין.",
             points: {
-              simultaneousUpload: "העלאת 50 קבצים בו זמנית",
-              noLimits: "אין מגבלות העלאה חודשיות",
-              processWhileWrite: "תהליך תוך כדי כתיבה",
-              longRecordings: "תמיכה בהקלטות של 10 שעות"
+              simultaneousUpload: "ללא הגבלת דקות חודשית",
+              noLimits: "תמיכה בראיונות של 10 שעות",
+              processWhileWrite: "עיבוד חקירות שלמות בבת אחת",
+              longRecordings: "הקלטות של 10 שעות נתמכות"
             },
             visual: {
-              number: "50",
-              label: "קבצים בבת אחת"
+              number: "∞",
+              label: "ללא הגבלות. לעולם."
             }
           },
           instantSearch: {
-            label: "חיפוש מיידי",
-            title: "מצא כל הצעת מחיר תוך שניות",
-            description: "חפשו בכל התמלילים שלכם באופן מיידי. מצאו את הציטוט המושלם מלפני שלושה חודשים. לעולם לא תאבדו שוב הצהרות חשובות ברשימות שלכם.",
+            label: "מהירות ברק",
+            title: "מהירות שמתאימה למחזור החדשות שלך",
+            description: "קבל את תמלול הראיון שלך תוך דקות, לא ימים. סיים סיפורים מהר מתמיד. הבינה המלאכותית שלנו מעבדת שעות של אודיו בזמן שאתה שותה קפה.",
             points: {
-              searchAll: "חיפוש בכל הראיונות",
-              wordTimestamps: "חותמות זמן ברמת המילה",
-              jumpToMoments: "קפיצה לרגעים מדויקים",
+              searchAll: "עיבוד תוך 5 דקות לראיונות של שעה",
+              wordTimestamps: "עיבוד עדיפות לסיפורים דחופים",
+              jumpToMoments: "מעקב אחר התקדמות בזמן אמת",
               exportCitations: "ייצוא עם ציטוטים"
             },
             searchDemo: {
-              placeholder: "הצהרת מדיניות אקלים",
-              resultsText: "נמצא ב-4 ראיונות:",
+              placeholder: "5 דקות",
+              resultsText: "לכל שעת אודיו",
               results: {
                 mayorInterview: '"...מדיניות האקלים שלנו תשתנה..."',
                 expertPanel: '"...הצהרת המדיניות מראה בבירור..."'
@@ -2294,88 +2294,102 @@ let message = {
             }
           },
           professionalAccuracy: {
-            label: "דיוק מקצועי",
-            title: "דיוק של 96% ניתן לצטט",
-            description: "קבל תמלולים מדויקים כל כך שתוכל לצטט אותם ישירות. מטפל במבטאים, מונחים טכניים ושיחות מהירות. עיצוב מושלם וקריא באמת.",
+            label: "דיוק מוכן לציטוט",
+            title: "דיוק שאפשר לצטט",
+            description: "הבינה המלאכותית שלנו מספקת תמלולים מדויקים ביותר, ומבטיחה שהציטוטים שאתה מפרסם מדויקים ואמינים. תמלול ברמה מקצועית שאנשי העריכה סומכים עליו.",
             points: {
               accuracyGuarantee: "אחריות לדיוק של 96%",
-              handlesAccents: "מטפל במבטאים ובדיאלקטים",
-              smartPunctuation: "פיסוק חכם ופסקאות",
+              handlesAccents: "מתמודד עם מונחים טכניים",
+              smartPunctuation: "זיהוי דוברים מושלם",
               speakerIdentification: "זיהוי דובר"
             },
             visual: {
               accuracy: "96%",
-              label: "שיעור דיוק",
+              label: "דיוק מוכן לפרסום",
               transcript: {
                 speaker1: '"החקירה חשפה פערים משמעותיים בדוחות הכספיים."',
                 speaker2: '"תוכל לפרט על הפערים הספציפיים הללו?"'
               }
             }
-          }
+          },
+            ironclad: {
+                  label: "הגנה על מקורות",
+                  title: "הגנה ברזלית על מקורות",
+                  description: "אנו מציעים תכונות אבטחה חזקות להגנה על נתוני הראיונות הרגישים שלך ועל מקורות סודיים. הצפנה ברמת בנק שומרת על החקירות שלך מאובטחות.",
+                  points: {
+                    accuracyGuarantee: "הצפנה מקצה לקצה",
+                    handlesAccents: "אפשרויות מחיקת קבצים אוטומטית",
+                    smartPunctuation: "תואם ל-GDPR ולפרטיות"
+                  },
+                  visual: {
+                    accuracy: "🔒",
+                    label: "אבטחה מקסימלית"
+                  }
+                }
         }
       },
       features: {
-        title: "הכל א",
-        titleHighlight: "צרכי עיתונאים",
-        subtitle: "כלים מקצועיים שמכבדים את תהליך העבודה שלך",
+        title: "כל מה ש",
+        titleHighlight: "עיתונאי צריך",
+        subtitle: "כלים מקצועיים שמכבדים את זרימת העבודה שלך",
         featuresList: {
           languages: {
             title: "100+ שפות",
-            description: "ראיונות עם מקורות מידע ברחבי העולם ב-12 שפות עיקריות עם דיוק של 96%."
+            description: "ראיין מקורות ברחבי העולם ב-12 שפות עיקריות עם דיוק של 96%."
           },
           exportFormats: {
-            title: "פורמטי ייצוא",
-            description: "Word, PDF, SRT, TXT. תואם לכל תהליך עבודה."
+            title: "פורמטים לייצוא",
+            description: "Word, PDF, SRT, TXT. תואם לכל זרימת עבודה."
           },
           sourceProtection: {
-            title: "הגנת מקורות",
-            description: "הצפנה ברמת הבנק. המקורות שלך נשארים חסויים."
+            title: "הגנה על מקורות",
+            description: "הצפנה ברמת בנק. המקורות שלך נשארים חסויים."
           },
           timestamps: {
             title: "חותמות זמן",
-            description: "לחץ על כל ציטוט כדי לקפוץ לרגע המדויק של השמע."
+            description: "לחץ על כל ציטוט כדי לקפוץ לרגע המדויק באודיו."
           },
           teamSharing: {
-            title: "שיתוף צוות",
-            description: "שתפו פעולה עם עורכים. שתפו תמלולים בצורה מאובטחת."
+            title: "שיתוף צוותי",
+            description: "שתף תמלילים בצורה מאובטחת. שתף פעולה עם עורכים."
           },
           mobileReady: {
-            title: "מוכן למובייל",
+            title: "מוכן לנייד",
             description: "העלה מהטלפון. עיין בתמלילים מכל מקום."
           },
           smartFormatting: {
             title: "עיצוב חכם",
-            description: "פסקאות ופיסוק אוטומטיים לתמלולים קריאים."
+            description: "פסקאות וסימני פיסוק אוטומטיים לתמלילים קריאים."
           },
           batchProcessing: {
             title: "עיבוד אצווה",
-            description: "העלה 50 קבצים בבת אחת. עבד אותם בן לילה בזמן שאתה ישן."
+            description: "העלה 50 קבצים בבת אחת. עיבוד במהלך הלילה בזמן שאתה ישן."
           }
         }
       },
       testimonials: {
         jessica: {
-          quote: "היו לי 3 שנים של ראיונות לא מתועתקים בגלל מגבלות העלאה. NeverCap תן לי לעבד הכל בסוף שבוע אחד. משנה את כללי המשחק.",
+          quote: "היו לי 3 שנים של ראיונות שלא תומללו בגלל מגבלות העלאה. NeverCap איפשר לי לעבד הכל בסוף שבוע אחד. מהפך של ממש.",
           name: "ג'סיקה פארק",
-          role: "עיתונאי עצמאי, משתמש לוטרות לשעבר"
+          role: "עיתונאית פרילנסרית, משתמשת לשעבר ב-Otter"
         }
       },
       cta: {
         title: "התחל לתמלל",
-        titleHighlight: "ללא גבולות",
-        subtitle: "הצטרפו לאלפי עיתונאים שהפסיקו לספור העלאות והחלו להתמקד בסיפורים",
+        titleHighlight: "ללא מגבלות",
+        subtitle: "הצטרף לאלפי עיתונאים שהפסיקו לספור העלאות והתחילו להתמקד בסיפורים",
         ctaPrimary: "נסה ללא הגבלה בחינם →",
-        ctaSecondary: "הצג תמחור"
+        ctaSecondary: "צפה במחירים"
       }
     },
     ContentCreators: {
       hero: {
-        badge: "📹 ליוצרי תוכן",
-        title: "כתוביות",
-        titleHighlight: "הערוץ כולו",
-        titleSuffix: "בלי לספור דקות",
-        subtitle: "הפסיקו לבחור אילו סרטונים ראויים לכתוביות. עבדו את כל ספריית היוטיוב שלכם, צרו כתוביות ביותר מ-100 שפות, והביאו סרטונים ישירות מכל פלטפורמה. ללא מגבלות חודשיות, ללא הגבלות העלאה - רק חופש יצירתי טהור.",
-        ctaPrimary: "התחל כתוביות ללא הגבלה →",
+        badge: "ליוצרי תוכן",
+        title: "תמלול סרטוני YouTube,",
+        titleHighlight: "ללא הגבלה",
+        titleSuffix: "1",
+        subtitle: "בין אם אתה צריך לתמלל סרטון YouTube, לתמלל סרטון TikTok לשימוש חוזר, או להבין איך לתמלל סרטון פייסבוק לטקסט, הפלטפורמה שלנו מתמודדת עם הכל בצורה חלקה. צור כתוביות ב-100+ שפות ללא מגבלות חודשיות – רק חופש יצירתי טהור.",
+        ctaPrimary: "התחל בכתוביות ללא הגבלה →",
         ctaSecondary: "ראה איך זה עובד",
         stats: {
           videos: {
@@ -2388,7 +2402,7 @@ let message = {
           },
           accuracy: {
             number: "96%",
-            label: "דִיוּק"
+            label: "דיוק"
           },
           platforms: {
             number: "10+",
@@ -2399,92 +2413,94 @@ let message = {
       platforms: {
         title: "אחזור ותמלול מכל פלטפורמה",
         platformNames: {
-          youtube: "יוטיוב",
-          facebook: "פייסבוק",
-          twitter: "איקס (טוויטר)",
-          dropbox: "דרופבוקס",
-          googleDrive: "גוגל דרייב",
+          youtube: "YouTube",
+          facebook: "Facebook",
+          twitter: "X (Twitter)",
+          dropbox: "Dropbox",
+          googleDrive: "Google Drive",
           vimeo: "Vimeo",
-          tiktok: "טיקטוק",
-          instagram: "אינסטגרם"
-        }
-      },
+          tiktok: "TikTok",
+          instagram: "Instagram"
+        },
+          titleMax: "תמלול סרטונים מ",
+          titleMaxHighlight: "כל פלטפורמה"
+    },
       features: {
         title: "כל מה שאתה צריך כדי",
-        titleHighlight: "קנה מידה של תוכן",
-        subtitle: "כלים מקצועיים ללא גבולות מקצועיים",
+        titleHighlight: "להגדיל תוכן",
+        subtitle: "כלים מקצועיים ללא מגבלות מקצועיות",
         oneClickImport: {
           label: "ייבוא בלחיצה אחת",
-          title: "הדבק קישור.",
-          titleHighlight: "קבל תמלול.",
-          description: "לא עוד הורדה והעלאה מחדש. פשוט הדביקו את קישור היוטיוב, טיקטוק או אינסטגרם שלכם וקבלו תמלולים מיידיים. עבדו את כל צבר ההזמנות של הערוץ שלכם בסוף שבוע אחד.",
+          title: "תמלול סרטוני YouTube, TikTok ו",
+          titleHighlight: "Instagram על ידי הדבקת קישור",
+          description: "הכלי שלנו מפשט את תהליך התמלול של תוכן וידאו. לתמלול סרטון מאינסטגרם, פשוט הדבק את הקישור. לתמלול סרטון מ-Vimeo לטקסט, בצע את אותו הדבר. עבד את כל החומר המצטבר בערוץ שלך בסוף שבוע אחד.",
           points: {
-            directYoutube: "תמלול קישור ישיר ליוטיוב",
+            directYoutube: "תמלול ישיר מקישורי YouTube",
             multiplePlatforms: "אחזור מ-10+ פלטפורמות",
-            batchPlaylists: "עיבוד אצווה של רשימות השמעה שלמות",
+            batchPlaylists: "עיבוד קבוצתי של רשימות השמעה שלמות",
             autoSync: "סנכרון אוטומטי עם הערוצים שלך"
           },
           demo: {
-            instruction: "הדבק את כתובת ה-URL של הסרטון שלך:",
+            instruction: "הדבק את כתובת הווידאו שלך:",
             url: "https://youtube.com/watch?v=...",
-            status: "אחזור ותמלול..."
+            status: "אוחזר ומתמלל..."
           }
         },
         globalReach: {
-          label: "טווח הגעה גלובלי",
+          label: "הגעה גלובלית",
           title: "100+ שפות.",
-          titleHighlight: "אפס גבולות.",
-          description: "הגיעו לקהל עולמי עם תרגום אוטומטי ליותר מ-100 שפות. צור כתוביות במספר שפות בו זמנית. ללא חיובים נוספים, ללא מגבלות חודשיות על תרגומים.",
+          titleHighlight: "ללא הגבלות.",
+          description: "הגיע לקהל גלובלי עם תרגום אוטומטי ל-100+ שפות. צור כתוביות במספר שפות בו זמנית. ללא תשלום נוסף, ללא מגבלות חודשיות על תרגומים.",
           points: {
             highAccuracy: "דיוק של 96% ב-12 שפות עיקריות",
-            unlimitedTranslations: "תרגומים ללא הגבלה כלולים",
-            multicultural: "מושלם לתוכן רב-תרבותי",
+            unlimitedTranslations: "תרגומים בלתי מוגבלים כלולים",
+            multicultural: "מושלם לתוכן רב תרבותי",
             autoDetect: "זיהוי אוטומטי של שפת המקור"
           },
           visual: {
             number: "100+",
             title: "שפות נתמכות",
-            subtitle: "תרגם פעם אחת, הגע לכולם"
+            subtitle: "תרגם פעם אחת, הגיע לכולם"
           }
         },
         flexibleExport: {
           label: "ייצוא גמיש",
           title: "כל פורמט",
-          titleHighlight: "אתה צריך",
-          description: "ייצוא בפורמט שמתאים לתהליך העבודה שלך. מקבצי SRT עבור YouTube ועד VTT עבור נגני אינטרנט, או מסמכים הניתנים לעריכה עבור סקריפטים. כל הייצוא ללא הגבלה, הכל כלול בכל תוכנית.",
+          titleHighlight: "שאתה צריך",
+          description: "ייצא בפורמט שמתאים לזרימת העבודה שלך. מקובצי SRT עבור YouTube ל-VTT עבור נגני אינטרנט, או מסמכים הניתנים לעריכה לתסריטים. כל הייצוא בלתי מוגבל, כלול בכל תוכנית.",
           points: {
-            videoFormats: "SRT ו-VTT לפלטפורמות וידאו",
-            editingFormats: "DOCX ו-PDF לעריכה",
+            videoFormats: "SRT & VTT עבור פלטפורמות וידאו",
+            editingFormats: "DOCX & PDF לעריכה",
             dataAnalysis: "CSV לניתוח נתונים",
-            simpleScripts: "TXT עבור סקריפטים פשוטים"
+            simpleScripts: "TXT לתסריטים פשוטים"
           },
           formats: {
             srt: "SRT",
             vtt: "VTT",
-            txt: "טקסט",
+            txt: "TXT",
             docx: "DOCX",
-            pdf: "קובץ PDF",
+            pdf: "PDF",
             csv: "CSV"
           }
         }
       },
       workflow: {
-        title: "מהעלאה אל",
-        titleHighlight: "פורסם",
-        titleSuffix: "בדקות",
-        subtitle: "הדרך המהירה ביותר להוסיף כתוביות לכל ספריית התוכן שלך",
+        title: "מהעלאה ל",
+        titleHighlight: "פרסום",
+        titleSuffix: "בתוך דקות",
+        subtitle: "הדרך המהירה ביותר להוספת כתוביות לכל ספריית התוכן שלך",
         steps: {
           pasteLinks: {
-            title: "הדבקת קישורים",
-            description: "הורידו קישורים ליוטיוב, טיקטוק או כל קישור אחר לסרטון. או העלו קבצים ישירות."
+            title: "הדבק קישורים",
+            description: "השלך קישורי YouTube, TikTok או כל קישור וידאו. או העלה קבצים ישירות."
           },
           autoTranscribe: {
             title: "תמלול אוטומטי",
-            description: "עיבודי בינה מלאכותית בדיוק של 96%. מטפל במבטאים ובמספר דוברים."
+            description: "AI מעבד עם דיוק של 96%. מתמודד עם מבטאים ומספר דוברים."
           },
           editTranslate: {
             title: "עריכה ותרגום",
-            description: "שלמו את הכתוביות שלכם. תרגמו ליותר מ-100 שפות באופן מיידי."
+            description: "שפר את הכתוביות שלך. תרגם ל-100+ שפות באופן מיידי."
           },
           exportPublish: {
             title: "ייצוא ופרסום",
@@ -2493,412 +2509,446 @@ let message = {
         }
       },
       testimonials: {
-        title: "יוצרים הם",
-        titleHighlight: "החלפה יומית",
+        title: "יוצרים",
+        titleHighlight: "עוברים מדי יום",
         subtitle: "מתוכניות מוגבלות לחופש בלתי מוגבל",
         carlos: {
           textBefore: "אני יוצר תוכן חינוכי בספרדית. NeverCap מתמלל בצורה מושלמת ו",
-          textAfter: "להגעה רחבה יותר. אין מגבלות, רק צמיחה. הצפיות בערוץ שלי גדלו פי 3 לאחר הוספת כתוביות רב-לשוניות.",
-          highlight: "מתרגם לאנגלית",
+          textAfter: "להגעה רחבה יותר. ללא הגבלות, רק צמיחה. צפיות הערוץ שלי גדלו פי 3 לאחר הוספת כתוביות רב-לשוניות.",
+          highlight: "מתורגם לאנגלית",
           name: "קרלוס מרטינז",
-          role: "יוטיוב אדוקטור • 250 אלף מנויים"
+          role: "מחנך ביוטיוב • 250 אלף מנויים"
         },
         sarah: {
-          textBefore: "תיאור מבוקש 30 דולר לחודש עבור",
-          textAfter: "יש לי יותר מ-500 סרטונים בציפיות. NeverCap תן לי לעבד הכל בסוף שבוע אחד. שיפור ה-SEO מהכתוביות השתלם בחודש הראשון.",
+          textBefore: "Descript רצו 30$/חודש עבור",
+          textAfter: ". יש לי מעל 500 סרטונים שממתינים. NeverCap איפשר לי לעבד הכל בסוף שבוע אחד. השיפור ב-SEO כתוצאה מהכתוביות החזיר את ההשקעה כבר בחודש הראשון.",
           highlight: "30 שעות",
           name: "שרה לי",
-          role: "ולוגרית לייף סטייל • 180 אלף מנויים"
+          role: "וולוגרית אורח חיים • 180 אלף מנויים"
         },
         jake: {
           textBefore: "ה",
-          textAfter: "התכונה משנה את כללי המשחק. אני כבר לא מוריד כלום. פשוט מדביק, מתמלל, סיימתי. עיבוד קטעי הפודקאסט שלי עבור טיקטוק מעולם לא היה קל יותר.",
-          highlight: "אחזור ישיר של יוטיוב",
+          textAfter: "פיצ'ר הוא מהפכני. אני כבר לא מורידה שום דבר. פשוט מדביקים, מעבירים לתמלול, וסיימנו. עיבוד קטעי הפודקאסט שלי לטיקטוק מעולם לא היה קל יותר.",
+          highlight: "אחזור ישיר מיוטיוב",
           name: "ג'ייק וילסון",
-          role: "מנחה פודקאסט • יוצר באחוזון המובילים"
+          role: "מארח פודקאסט • יוצר מוביל ב-1% העליון"
         },
         yuki: {
-          textBefore: "אני יוצר תוכן ב-5 שפות. שירותים אחרים כרוכים בתשלום.",
-          textAfter: "NeverCap נותן לי תרגומים ללא הגבלה. הקהל הבינלאומי שלי גדל ב-400% מאז שהתחלתי להשתמש בכתוביות ילידיות נכונות.",
+          textBefore: "אני יוצר תוכן ב-5 שפות. שירותים אחרים גובים",
+          textAfter: ". NeverCap נותן לי תרגומים בלתי מוגבלים. הקהל הבינלאומי שלי גדל ב-400% מאז שהתחלתי להשתמש בכתוביות מקוריות נכונות.",
           highlight: "לכל תרגום",
           name: "יוקי טנאקה",
-          role: "יוצר משחקים • 500 אלף מנויים"
+          role: "יוצר גיימינג • 500 אלף מנויים"
         }
       },
       cta: {
         title: "כל הערוץ שלך. עם כתוביות. היום.",
-        subtitle: "הצטרפו ליותר מ-50,000 יוצרים שהפסיקו לספור דקות והתחילו ליצור",
-        button: "התחל כתוביות ללא הגבלה →"
-      }
+        subtitle: "הצטרפו ל-50,000+ יוצרים שהפסיקו לספור דקות והתחילו ליצור",
+        button: "התחל תמלול בלתי מוגבל →"
+      },
+        FAQSection: {
+              "title": "שאלות התמלול שלך,",
+              "titleHighlight": "נענו",
+              subtitle: "כל מה שאתה צריך לדעת על תמלול סרטונים מפלטפורמות שונות",
+              "questions": [
+                {
+                  "question": "ש: איך אני מתמלל סרטון יוטיוב עם NeverCap?",
+                  "answer": "זה פשוט. פשוט מצא את סרטון היוטיוב שברצונך לתמלל, העתק את ה-URL שלו והדבק באפליקציה שלנו. הבינה המלאכותית שלנו תאחזר אוטומטית את הסרטון ותספק תמלול טקסט מלא תוך דקות."
+                },
+                {
+                  "question": "ש: מה הדרך הטובה ביותר לתמלל סרטון פייסבוק לטקסט?",
+                  "answer": "הדרך הקלה ביותר היא להשתמש בקישור ישיר. העתק את ה-URL של סרטון הפייסבוק, והפלטפורמה שלנו תטפל בשאר, תמיר את הדיבור לטקסט עם דיוק של עד 96%, ותחסוך ממך תמלול ידני."
+                },
+                {
+                  "question": "ש: האם אני יכול לתמלל סרטוני טיקטוק ואינסטגרם?",
+                  "answer": "בהחלט. אנו תומכים בתמלול הן של סרטוני טיקטוק והן של אינסטגרם. זה מושלם עבור יוצרי תוכן שרוצים למחזר את תוכן הווידאו הקצר שלהם לפוסטים בבלוג, מאמרים או עדכוני מדיה חברתית מבוססי טקסט."
+                },
+                {
+                  "question": "ש: איך אני מתמלל סרטון Vimeo לטקסט?",
+                  "answer": "תמלול סרטוני Vimeo הוא קל כמו בכל פלטפורמה אחרת. פשוט העתק את ה-URL של סרטון ה-Vimeo והדבק ב-NeverCap. הבינה המלאכותית שלנו תעבד את הסרטון ותייצר תמלול טקסט מדויק שתוכל להוריד במספר פורמטים."
+                }
+              ]
+            }
     },
     Researchers: {
-      heroBadge: "נבנה למצוינות אקדמית",
-      heroTitle1: "לתמלל כל ראיון.",
+      heroBadge: "בנוי למצוינות אקדמית",
+      heroTitle1: "תמלל כל ראיון.",
       heroTitle2: "נתח את כל הנתונים שלך.",
-      heroSubtitle: "הפסיקו לבחור אילו קבוצות מיקוד לתמלל. עבדו את כל הנתונים האיכותניים שלכם בדיוק של 96% וזיהוי דוברים ללא רבב - אפילו עם 20 משתתפים שמדברים זה עם זה.",
-      heroCtaPrimary: "נסה את זה בחינם - ללא כרטיס אשראי",
+      heroSubtitle: "הפסק לבחור אילו קבוצות מיקוד לתמלל. עבד את כל הנתונים האיכותיים שלך עם דיוק של 96% וזיהוי דוברים ללא רבב - אפילו עם 20 משתתפים שמדברים בו-זמנית.",
+      heroCtaPrimary: "נסה בחינם - אין צורך בכרטיס אשראי",
       heroCtaSecondary: "ראה איך זה עובד",
       statsInterviewHours: "שעות ראיון",
-      statsAccuracy: "דִיוּק",
-      statsSpeakersId: "מזהה דוברים",
+      statsAccuracy: "דיוק",
+      statsSpeakersId: "זיהוי דוברים",
       statsCompliant: "תואם",
-      problemTitle: "בעיית תמלול המחקר",
-      problemSubtitle: 'שירותים אחרים גורמים לך לבחור אילו נתונים "שווים" תמלול',
+      problemTitle: "ה",
+      problemSubtitle: 'שירותים אחרים גורמים לך לבחור אילו נתונים "שווים" לתמלול',
       problemCard1Title: "מגבלות העלאה הורגות מחקרים",
-      problemCard1Desc: "אוטר נותנת לך 3 ייבואים לכל החיים. איך מתמללים 200 שעות של קבוצות מיקוד?",
+      problemCard1Desc: "Otter נותן לך 3 יבואים לכל החיים. איך אתה מתמלל 200 שעות של קבוצות מיקוד?",
       problemCard2Title: "נתונים קריטיים חסרים",
-      problemCard2Desc: "כל ראיון לא מתומלל יכול להכיל תובנות פורצות דרך. אבל Rev גובה מינימום של 2 דולר לדקה.",
+      problemCard2Desc: "כל ראיון שלא תומלל יכול להכיל תובנות פורצות דרך. אבל Rev גובה מינימום 2$ לדקה.",
       problemCard3Title: "כספי המענק נעלמים",
-      problemCard3Desc: "ככל שקבוצת הנתונים שלכם גדלה, עלויות התמלול מתפוצצות. 500 דולר לקבוצת מיקוד הופכות את ההרחבה לבלתי אפשרית.",
+      problemCard3Desc: "ככל שמערך הנתונים שלך גדל, עלויות התמלול מזנקות. 500$ לקבוצת מיקוד הופכים את ההתרחבות לבלתי אפשרית.",
       solutionTitle: "הפתרון NeverCap",
-      solutionDesc: "תמלול אמיתי ללא הגבלה. העלה את כל המחקר שלך. תמלל כל ראיון. נתח את כל הנתונים שלך. בלי תקלות, בלי הגבלות, רק מחקר.",
-      feature1Label: "אין גבולות",
-      feature1Title: "עבדו את כל המחקר שלכם בבת אחת",
-      feature1Desc: 'העלו את כל 200 שעות הראיונות הלילה. התעוררו לתמלולים מלאים וניתנים לחיפוש. ללא מגבלות חודשיות, ללא מגבלות על מספר קובץ, ללא שטויות של "שימוש הוגן".',
-      feature1Point1: "העלאה קבוצתית של 50 קבצים בו זמנית",
-      feature1Point2: "עיבוד מלא של מחקרי אורך",
-      feature1Point3: "אין מגבלות אחסון על תמלילים",
+      solutionDesc: "תמלול בלתי מוגבל באמת. העלה את כל המחקר שלך. תמלל כל ראיון. נתח את כל הנתונים שלך. ללא הגבלות, ללא תקרות, רק מחקר.",
+      feature1Label: "ללא הגבלות",
+      feature1Title: "עבד את כל המחקר שלך בפעם אחת",
+      feature1Desc: 'העלה כל 200 שעות הראיונות הלילה. התעורר לתמלולים מלאים וניתנים לחיפוש. ללא הגבלות חודשיות, ללא מגבלות לקובץ, בלי שטויות של "שימוש הוגן".',
+      feature1Point1: "העלאה מרובת קבצים - 50 קבצים בו זמנית",
+      feature1Point2: "עיבוד מלא של מחקרים אורכיים",
+      feature1Point3: "ללא מגבלות אחסון על תמלולים",
       feature1Point4: "ייצוא ל-NVivo, MAXQDA, Atlas.ti",
-      feature1Visual1: "שעות ללא הגבלה",
-      feature1Visual2: "אותו מחיר בין אם 10 או 10,000 שעות",
+      feature1Visual1: "שעות בלתי מוגבלות",
+      feature1Visual2: "אותו מחיר בין 10 ל-10,000 שעות",
       feature2Label: "בינה מלאכותית חכמה",
-      feature2Title: "קבוצות מיקוד לציפורניים בכל פעם",
-      feature2Desc: "הבינה המלאכותית שלנו עוקבת אחר עד 20 דוברים, אפילו כשהם מדברים אחד מעל השני, חותכים אחד את השני, או כולם משתתפים בו זמנית. כל קול נקלט ומתויג בצורה נכונה.",
-      feature2Point1: "זיהוי של 20 דוברים",
-      feature2Point2: "מטפל בדיבור והפרעות",
-      feature2Point3: "תוויות רמקולים שניתן לשנות את שמם",
+      feature2Title: "מצליח בקבוצות מיקוד בכל פעם",
+      feature2Desc: "הבינה המלאכותית שלנו עוקבת אחרי עד 20 דוברים גם כשהם מדברים אחד מעל השני, קוטעים זה את זה או מדברים בבת אחת. כל קול נקלט ומתויג בצורה נכונה.",
+      feature2Point1: "זיהוי 20 דוברים",
+      feature2Point2: "מתמודד עם דיבור חופף והפרעות",
+      feature2Point3: "תוויות דוברים שניתן לשנות",
       feature2Point4: "חותמת זמן לכל מילה",
       conversationParticipant1: "משתתף 1",
       conversationText1: "המכשול העיקרי שאנו מתמודדים איתו הוא ללא ספק עלות הטיפול...",
       conversationParticipant2: "משתתף 2",
-      conversationText2: "בהחלט, אבל הייתי מוסיף שהגישה היא—",
+      conversationText2: "בהחלט, אבל אוסיף שגם נגישות היא—",
       conversationParticipant3: "משתתף 3",
-      conversationText3: "—סליחה על ההפרעה, אבל גם התחבורה היא עניין ענק.",
-      conversationText4: "כן! זה בדיוק מה שרציתי לומר.",
+      conversationText3: "—סליחה שהפרעתי, אבל גם תחבורה היא עניין גדול.",
+      conversationText4: "כן! בדיוק מה שעמדתי לומר.",
       conversationParticipant4: "משתתף 4",
-      conversationText5: "באזורים כפריים, מדובר בשלושתם: עלות, גישה ותחבורה.",
-      feature3Label: "דִיוּק",
-      feature3Title: "דיוק של 96% שמחזיק מעמד",
-      feature3Desc: "מטפל בז'רגון טכני, במבטאים עבים ובטרמינולוגיה ספציפית לתחום כמו מקצוען. מדויק מספיק לפרסום, לביקורת עמיתים ולוועדת הדיסרטציה שלך.",
-      feature3Point1: "טרמינולוגיה רפואית ומדעית",
-      feature3Point2: "100+ שפות ודיאלקטים",
-      feature3Point3: "מצבי קריאה מילה במילה וקריאה נקייה",
+      conversationText5: "באזורים כפריים, כל השלושה: עלות, נגישות, וגם תחבורה.",
+      feature3Label: "דיוק",
+      feature3Title: "96% דיוק שעומד במבחן",
+      feature3Desc: "מתמודד עם ז'רגון טכני, מבטאים כבדים ומונחים ספציפיים לתחום כמו מקצוען. מדויק מספיק לפרסום, ביקורת עמיתים וועדת הדוקטורט שלך.",
+      feature3Point1: "מונחים רפואיים ומדעיים",
+      feature3Point2: "100+ שפות וניבים",
+      feature3Point3: "מצבי קריאה מילולית ומעודנת",
       feature3Point4: "עריכה וייצוא בכל פורמט",
-      feature3Visual1: "דיוק ברמה מחקרית",
-      feature3Visual2: "זוכה לאמון של יותר מ-50,000 חוקרים",
-      feature4Label: "בִּטָחוֹן",
-      feature4Title: "אבטחה מוכנה ל-IRB",
-      feature4Desc: "נתוני המחקר הרגישים שלך מוגנים באמצעות אבטחה ברמה ארגונית. אפשרויות תאימות ל-GDPR, מוכנות ל-HIPAA ונותנות מעקב ביקורת מלא לדרישות IRB.",
+      feature3Visual1: "דיוק ברמת מחקר",
+      feature3Visual2: "נתמך על ידי 50,000+ חוקרים",
+      feature4Label: "אבטחה",
+      feature4Title: "אבטחה תואמת IRB",
+      feature4Desc: "נתוני המחקר הרגישים שלך מוגנים באבטחה ברמת ארגון. תואם GDPR, אפשרויות תואמות HIPAA, ונתיבי ביקורת מלאים לדרישות IRB.",
       feature4Point1: "הצפנה מקצה לקצה",
-      feature4Point2: "תאימות ל-GDPR ול-CCPA",
+      feature4Point2: "תואם GDPR & CCPA",
       feature4Point3: "מדיניות מחיקה אוטומטית",
-      feature4Point4: "שיתוף פעולה מאובטח בצוות",
-      useCasesTitle: "מושלם לכל שיטת מחקר",
+      feature4Point4: "שיתוף פעולה צוותי מאובטח",
+      useCasesTitle: "מושלם עבור",
       useCasesSubtitle: "מאתנוגרפיה ועד ניסויים קליניים",
       useCase1Title: "קבוצות מיקוד",
-      useCase1Desc: "טיפול בדיבור חופף של 8-20 משתתפים. זיהוי דוברים מושלם גם במהלך דיונים סוערים. ייצוא ישיר לתוכנת ניתוח איכותני.",
+      useCase1Desc: "התמודדות עם 8-20 משתתפים עם דיבור חופף. זיהוי דוברים מושלם אפילו בדיונים סוערים. ייצוא ישיר לתוכנת ניתוח איכותני.",
       useCase2Title: "ראיונות עומק",
-      useCase2Desc: "עבדו מאות ראיונות אישיים בו זמנית. שמרו על עקביות בכל מערך הנתונים שלכם. חפשו בכל התמלילים באופן מיידי.",
+      useCase2Desc: "עיבוד מאות ראיונות אחד על אחד בו-זמנית. שמירה על עקביות בכל מערך הנתונים שלך. חיפוש מיידי בכל התמלילים.",
       useCase3Title: "מחקר קליני",
-      useCase3Desc: "אפשרויות תואמות HIPAA לראיונות מטופלים. תמלול מדויק של טרמינולוגיה רפואית. טיפול מאובטח בנתוני בריאות רגישים.",
-      useCase4Title: "לימודים אתנוגרפיים",
-      useCase4Desc: "הקלטות שטח בסביבה טבעית. התמודדות עם רעשי רקע ועם מספר דוברים. תמיכה ביותר מ-100 שפות ודיאלקטים.",
-      useCase5Title: "פרויקטים של היסטוריה בעל פה",
-      useCase5Desc: "שמור ארכיונים שלמים ללא הגבלה. צור רשומות היסטוריות הניתנות לחיפוש. מושלם למחקרים אורכיים ודוריים.",
-      useCase6Title: "מחקר דיסרטציה",
-      useCase6Desc: "תמחור ידידותי לסטודנטים עם כל התכונות. עבדו את כל מערך הנתונים שלכם במחיר סביר. עמדו בלוחות זמנים צפופים עם עיבוד אצווה.",
-      testimonialTitle: "זוכה לאמון מצד חוקרים מובילים",
-      testimonialText: "לצוות המחקר שלנו היו 200 שעות של הקלטות קבוצות מיקוד ממחקר בריאות הקהילה שלנו. שירותים אחרים רצו שנבחר אילו מפגשים לתמלל בגלל העלות. NeverCap אפשר לנו לעבד הכל במהלך סוף שבוע. זיהוי 20 דוברים למעשה עבד - אפילו במהלך הדיונים הכי מבולגנים שלנו שבהם כולם דיברו בבת אחת. כלי זה שינה לחלוטין את האופן שבו אנו מטפלים בנתונים איכותניים.",
+      useCase3Desc: "אפשרויות תואמות HIPAA לראיונות עם מטופלים. תמלול מדויק של מונחים רפואיים. טיפול מאובטח בנתוני בריאות רגישים.",
+      useCase4Title: "מחקרים אתנוגרפיים",
+      useCase4Desc: "הקלטות שטח בסביבות טבעיות. התמודדות עם רעשי רקע ומספר דוברים. תמיכה בלמעלה מ-100 שפות וניבים.",
+      useCase5Title: "פרויקטים של היסטוריה שבעל פה",
+      useCase5Desc: "שמירת ארכיונים שלמים ללא הגבלה. יצירת רשומות היסטוריות הניתנות לחיפוש. מושלם למחקרים אורכיים ובין-דוריים.",
+      useCase6Title: "מחקר לתזות",
+      useCase6Desc: "מחירים ידידותיים לסטודנטים עם כל התכונות. עיבוד כל מערך הנתונים שלך בעלות סבירה. עמידה בלוחות זמנים צפופים עם עיבוד קבוצתי.",
+      testimonialTitle: "נתמך על ידי",
+      testimonialText: "לצוות המחקר שלנו היו 200 שעות של הקלטות קבוצות מיקוד ממחקר הבריאות הקהילתי שלנו. שירותים אחרים ביקשו מאיתנו לבחור אילו מפגשים לתמלל בגלל העלות. NeverCap איפשר לנו לעבד הכל בסוף שבוע אחד. זיהוי 20 הדוברים אכן עבד – אפילו בדיונים הכי מבולבלים שלנו כשכולם דיברו בו-זמנית. הכלי הזה שינה לחלוטין את האופן שבו אנו מטפלים בנתונים איכותיים.",
       testimonialAuthorName: `ד"ר שרה צ'ן`,
-      testimonialAuthorRole: "חוקר ראשי, מכון בריאות הציבור",
-      ctaTitle: "תפסיקו לבחור אילו נתונים לנתח",
-      ctaSubtitle: "הצטרפו ליותר מ-50,000 חוקרים שמתמללים הכל",
-      ctaButton: "נסה NeverCap בחינם"
+      testimonialAuthorRole: "חוקרת ראשית, המכון לבריאות הציבור",
+      ctaTitle: "הפסיקו לבחור אילו נתונים לנתח",
+      ctaSubtitle: "הצטרפו ל-50,000+ חוקרים שמתמללים הכל",
+      ctaButton: "נסו את NeverCap בחינם",
+        problemTitle2: "בעיית תמלול המחקר",
+      title: "ה ",
+        useCasesTitle2: "כל שיטת מחקר",
+        testimonialTitle2: "חוקרים מובילים"
     },
     BusinessTeams: {
       heroBadge: "לצוותים עסקיים",
-      heroTitle1: "הקלטת פגישה בוצעה",
-      heroTitle2: "לְלֹא מַאֲמָץ",
-      heroSubtitle: "הקלט פגישות ישירות בדפדפן שלך או העלה קבצי שמע באופן מיידי. צור ארכיונים הניתנים לחיפוש משיחות ללא הגבלה. לעולם אל תאבד דיונים חשובים שוב עם תמלול בלתי מוגבל באמת.",
+      heroTitle1: "הקלטת פגישות",
+      heroTitle2: "מוכן בקלות",
+      heroSubtitle: "הקליטו פגישות ישירות בדפדפן או העלו קבצי אודיו מייד. בנו ארכיונים ניתנים לחיפוש משיחות בלתי מוגבלות. לעולם אל תאבדו שוב דיונים חשובים עם תמלול באמת בלתי מוגבל.",
       heroCtaPrimary: "התחל להקליט עכשיו →",
       heroCtaSecondary: "ראה איך זה עובד",
-      recordingStatus: "הַקלָטָה...",
+      recordingStatus: "מקליט...",
       statsMeetingMinutes: "פרוטוקול פגישה",
-      statsLiveRecording: "הקלטה חיה",
-      statsSpeakerID: "מזהה דובר",
-      statsInstantUpload: "העלאה מיידית ותהליך",
-      featuresTitle: "כל מה שצוותים צריכים כדי לאסוף ידע",
-      featuresSubtitle: "מהקלטה חיה ועד העלאות מיידיות, ביטלנו כל נקודת חיכוך",
-      feature1Title: "הקלטה ישירות בדפדפן שלך",
-      feature1Desc: "ללא הורדות, ללא תוספים. התחילו להקליט באופן מיידי בלחיצה אחת. איכות שמע מושלמת, זיהוי דובר אוטומטי ותמלול בזמן אמת תוך כדי דיבור.",
-      feature1Benefit1: "התחלת הקלטה בלחיצה אחת",
-      feature1Benefit2: "אין התקנת תוכנה",
-      feature1Benefit3: "עובד על כל מכשיר",
+      statsLiveRecording: "הקלטה",
+      statsSpeakerID: "זיהוי דובר",
+      statsInstantUpload: "העלאה ועיבוד",
+      featuresTitle: "תמלול לכל עסק",
+      featuresSubtitle: "מהקלטה חיה להעלאה מיידית, ביטלנו כל נקודת חיכוך",
+      feature1Title: "הקלטה ישירה בדפדפן",
+      feature1Desc: "אין הורדות, אין תוספים. התחל להקליט מייד בלחיצה אחת. איכות שמע מושלמת, זיהוי דוברים אוטומטי.",
+      feature1Benefit1: "הקלטה בלחיצה אחת",
+      feature1Benefit2: "אין צורך בהתקנת תוכנה",
+      feature1Benefit3: "עובד בכל מכשיר",
       feature1Benefit4: "תמלול בזמן אמת",
       feature1Visual1: "לחץ והקלט",
-      feature1Visual2: "אין צורך בהתקנה",
-      feature2Title: "העלה כל קובץ אודיו באופן מיידי",
-      feature2Desc: "יש לכם הקלטות מ-Zoom, Teams או מהטלפון שלכם? העלו אותן באופן מיידי. תמיכה בכל פורמטי האודיו והווידאו העיקריים. עבדו קבצים מרובים בו זמנית ללא המתנה.",
-      feature2Benefit1: "תמיכה ב: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV, FLAC",
+      feature1Visual2: "אין צורך בהגדרה",
+      feature2Title: "העלה כל קובץ אודיו מייד",
+      feature2Desc: "יש לך הקלטות מ-Zoom, Teams או מהטלפון? העלה אותן מייד. תמיכה בכל פורמטי האודיו והווידאו העיקריים. עיבוד מספר קבצים בו-זמנית ללא המתנה.",
+      feature2Benefit1: "תומך ב: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV, FLAC",
       feature2Benefit2: "יכולת העלאה קבוצתית",
-      feature2Benefit3: "קבצים בני 10 שעות נתמכים",
-      feature2Benefit4: "תהליך תוך כדי עבודה",
+      feature2Benefit3: "קבצים של 10 שעות נתמכים",
+      feature2Benefit4: "עיבוד תוך כדי עבודה",
       feature2Visual1: "גרור ושחרר קבצים",
-      feature3Title: "בנוי לשיתוף פעולה צוותי",
-      feature3Desc: "שתפו תמלולים עם הצוות שלכם באופן מיידי. האזינו להקלטות יחד, ייצוא תמלולים בפורמטים מרובים וודאו שכולם נשארים מעודכנים בעזרת ארכיוני פגישות הניתנים לחיפוש.",
-      feature3Benefit1: "שתף תמלולים עם כל אחד",
-      feature3Benefit2: "האזינו להקלטות מקוריות",
-      feature3Benefit3: "ייצוא תמלילים בפורמטים מרובים",
-      feature3Benefit4: "ארכיונים הניתנים לחיפוש ברחבי הצוות",
-      feature3Visual1: "חברי הצוות",
+      feature3Title: "בנוי לשיתוף פעולה בצוות",
+      feature3Desc: "שתף תמלילים עם הצוות שלך מייד. האזן להקלטות יחד, ייצא תמלילים במספר פורמטים וודא שכולם מתואמים עם ארכיוני פגישות ניתנים לחיפוש.",
+      feature3Benefit1: "שתף תמלילים עם כל אחד",
+      feature3Benefit2: "האזן להקלטות מקוריות",
+      feature3Benefit3: "ייצא תמלילים בפורמטים מרובים",
+      feature3Benefit4: "ארכיונים ניתנים לחיפוש לכל הצוות",
+      feature3Visual1: "חברי צוות",
       feature3Visual2: "שיתוף פעולה בלתי מוגבל",
       feature4Title: "מצא כל שיחה באופן מיידי",
-      feature4Desc: "חפשו בכל הפגישות שלכם בבת אחת. מצאו את ההחלטה המכרעת מהרבעון האחרון או את דרישת הלקוח מלפני חודשים. חיפוש המופעל על ידי בינה מלאכותית מבין הקשר, לא רק מילות מפתח.",
-      feature4Benefit1: "חפש את כל הפגישות בבת אחת",
-      feature4Benefit2: "בינה מלאכותית מבינה את ההקשר",
+      feature4Desc: "חפש בכל הפגישות שלך בבת אחת. מצא את ההחלטה החשובה מהרבעון האחרון או את דרישת הלקוח מלפני חודשים. חיפוש מבוסס בינה מלאכותית מבין הקשר, לא רק מילות מפתח.",
+      feature4Benefit1: "חפש בכל הפגישות בבת אחת",
+      feature4Benefit2: "בינה מלאכותית מבינה הקשר",
       feature4Benefit3: "סנן לפי דובר או תאריך",
-      feature4SearchPlaceholder: "🔍 חיפוש: 'יעדי הכנסות לרבעון הרביעי'",
+      feature4SearchPlaceholder: "🔍 חיפוש: 'יעדי הכנסה לרבעון הרביעי'",
       feature4SearchResults: "נמצא ב-3 פגישות:",
       feature4Meeting1: "תכנון מכירות - 15 באוקטובר",
-      feature4Meeting1Text: '"...יעדי הרבעון הרביעי נקבעו על 2 מיליון דולר..."',
-      feature4Meeting2: "ישיבת דירקטוריון - 20 באוקטובר",
-      feature4Meeting2Text: '"...תחזיות הכנסות לרבעון הרביעי..."',
-      workflowTitle: "מהקלטה לתובנות מעשיות",
-      workflowSubtitle: "זרימת עבודה חלקה שלוכדת כל רגע חשוב",
-      workflowStep1Title: "הקלטה או העלאה",
-      workflowStep1Desc: "התחל להקליט בשידור חי או העלה קבצי אודיו קיימים",
+      feature4Meeting1Text: '"...יעדים לרבעון הרביעי נקבעו ל-2 מיליון דולר..."',
+      feature4Meeting2: "ישיבת הנהלה - 20 באוקטובר",
+      feature4Meeting2Text: '"...תחזיות הכנסה לרבעון הרביעי..."',
+      workflowTitle: "כיצד לתמלל",
+      workflowSubtitle: "תהליך עבודה חלק שתופס כל רגע חשוב",
+      workflowStep1Title: "הקלט או העלה",
+      workflowStep1Desc: "התחל להקליט בשידור חי או פשוט הורד הקלטת פגישה מ-Zoom, Google Meet או Microsoft Teams",
       workflowStep2Title: "תמלול אוטומטי",
-      workflowStep2Desc: "בינה מלאכותית מתמללת בדיוק של 96% תוך דקות",
-      workflowStep3Title: "לְשַׁתֵף פְּעוּלָה",
-      workflowStep3Desc: "שתף, הוסף תגובה וחילץ פעולות לפעולה",
-      workflowStep4Title: "חיפוש וניתוח",
+      workflowStep2Desc: "הבינה המלאכותית שלנו תעתיק אוטומטית את ההקלטה לטקסט בדיוק של 96% תוך דקות",
+      workflowStep3Title: "שתף פעולה",
+      workflowStep3Desc: "שתף, הגיב וחלץ משימות לביצוע",
+      workflowStep4Title: "חפש ונתח",
       workflowStep4Desc: "מצא תובנות מכל הפגישות שלך",
-      testimonialsTitle: "אהבת קבוצות NeverCap",
-      testimonialsSubtitle: "ראו כיצד עסקים משנים את תרבות הפגישות שלהם",
-      testimonial1Text: '"עברנו מהיעדר פרטים מכריעים לארכיון שניתן לחפש בו של כל שיחה. תכונת ההקלטה הישירה מאפשרת לנו אף פעם לא לשכוח לתעד דיונים חשובים."',
+      testimonialsTitle: "צוותים אוהבים",
+      testimonialsSubtitle: "ראה כיצד עסקים משנים את תרבות הפגישות שלהם",
+      testimonial1Text: '"עברנו מפספוס פרטים קריטיים לארכיון בר-חיפוש של כל שיחה. תכונת ההקלטה הישירה מבטיחה שלעולם לא נשכח לתפוס דיונים חשובים."',
       testimonial1AuthorName: "ג'יימס קים",
-      testimonial1AuthorRole: "מנהל מוצר, טקקורפ",
-      testimonial2Text: '"אוטר הגבילה אותנו ל-10 העלאות קבצים בחודש. כעת אנו מעלים את כל שיחות הלקוחות שלנו באופן מיידי. זה שינה את כללי המשחק עבור מעקבי המכירות שלנו."',
+      testimonial1AuthorRole: "מנהל מוצר, TechCorp",
+      testimonial2Text: '"Otter הגביל אותנו ל-10 העלאות קבצים בחודש. כעת אנו מעלים את כל שיחות הלקוחות שלנו באופן מיידי. שינוי משחק לצוות המכירות שלנו במעקבים."',
       testimonial2AuthorName: "שרה רודריגז",
-      testimonial2AuthorRole: "מנהל מכירות, ConsultPro",
-      testimonial3Text: '"היכולת לחפש פגישות לאורך חודשים חסכה לנו את הביקורת שלנו. מצאנו כל החלטה ואישור תוך שניות."',
+      testimonial2AuthorRole: "מנהלת מכירות, ConsultPro",
+      testimonial3Text: '"היכולת לחפש לאורך חודשים של פגישות הצילה אותנו במהלך הביקורת. מצאנו כל החלטה ואישור בתוך שניות."',
       testimonial3AuthorName: "מארק ליו",
       testimonial3AuthorRole: "מנהל תפעול ראשי, FinanceHub",
-      ctaTitle: "תפסיקו לאבד שיחות חשובות",
-      ctaSubtitle: "הצטרפו לאלפי צוותים שמקליטים כל פגישה עם תמלול ללא הגבלה",
-      ctaButton: "התחל להקליט בחינם →"
+      ctaTitle: "הפסיקו לאבד שיחות חשובות",
+      ctaSubtitle: "הצטרפו לאלפי צוותים שתופסים כל פגישה עם תמלול בלתי מוגבל",
+      ctaButton: "התחל להקליט בחינם →",
+        featuresTitle2: "פגישה",
+        workflowTitle2: "הקלטת Zoom לטקסט",
+        testimonialsTitle2: "NeverCap"
     },
     Educators: {
       heroBadge: "למחנכים ומורים",
-      heroTitle1: "הפכו כל סרטון חינוכי ל",
-      heroTitle2: "תוכן נגיש",
-      heroSubtitle: "פשוט הדביקו קישורי יוטיוב כדי לקבל תמלולים מיידיים עם כתוביות שנוצרות אוטומטית. הפכו הרצאות, הדרכות וסרטונים חינוכיים לתוכן נגיש וניתן לחיפוש שכל תלמיד יוכל ללמוד ממנו.",
-      heroCtaPrimary: "נסה את זה בחינם - ללא כרטיס אשראי",
+      heroTitle1: "הפוך למידה",
+      heroTitle2: "נגישה לכולם",
+      heroSubtitle: "פשוט הדבק קישורי YouTube כדי לקבל תמלילים מיידיים עם כתוביות שנוצרו אוטומטית. הפוך הרצאות, הדרכות וסרטונים חינוכיים לתוכן נגיש ובר-חיפוש שכל תלמיד יכול ללמוד ממנו.",
+      heroCtaPrimary: "נסה בחינם - ללא כרטיס אשראי",
       heroCtaSecondary: "צפה בהדגמה",
-      stats1Number: "קליק אחד",
-      stats1Label: "תמלול ביוטיוב",
+      stats1Number: "לחיצה אחת",
+      stats1Label: "תמלול YouTube",
       stats2Number: "100+",
       stats2Label: "שפות נתמכות",
       stats3Number: "∞",
       stats3Label: "סרטונים ללא הגבלה",
       stats4Number: "96%",
       stats4Label: "שיעור דיוק",
-      featuresTitle: "כל מה שמחנכים צריכים לתמלול וידאו",
-      featuresSubtitle: "מהרצאות ביוטיוב ועד שיעורים מוקלטים, הפכו את כל התוכן שלכם לנגיש",
-      feature1Title: "קישורים מיידיים ליוטיוב ולפלטפורמה",
-      feature1Desc: "פשוט הדבק קישור לסרטון וקבל תמלול מיידי. עובד עם YouTube, Vimeo, Facebook, X (טוויטר), TikTok, Instagram, Dropbox, Google Drive ועוד. ללא הורדה, ללא המתנה.",
-      feature1Point1: "תמלול בקישור ישיר - אין צורך בהורדות",
-      feature1Point2: "תמיכה בכל הפלטפורמות העיקריות",
-      feature1Point3: "עבד רשימות השמעה שלמות בבת אחת",
-      feature1Point4: "עובד עם סרטונים פרטיים (עם אישור)",
-      feature2Title: "צור אוטומטית כתוביות",
-      feature2Desc: "צור באופן מיידי כתוביות מדויקות לכל סרטוני הלימוד שלך. הפוך את התוכן לנגיש לתלמידים עם לקויות שמיעה, דוברי שפת אם שאינם ילידיים, או כאלה שמעדיפים לקרוא יחד.",
-      feature2Point1: "פורמטי ייצוא SRT, VTT ו-TXT",
+      featuresTitle: "כל מה שמחנכים צריכים עבור",
+      featuresSubtitle: "מהרצאות ביוטיוב ועד שיעורים מוקלטים - הפוך את כל התוכן שלך לנגיש",
+      feature1Title: "קישורים מיידיים ליוטיוב ולפלטפורמות",
+      feature1Desc: "פשוט הדבק קישור וידאו כלשהו וקבל תמלול מיידי. עובד עם YouTube, Vimeo, Facebook, X (Twitter), TikTok, Instagram, Dropbox, Google Drive ועוד. אין צורך בהורדה או בהמתנה.",
+      feature1Point1: "תמלול מקישור ישיר - אין צורך בהורדות",
+      feature1Point2: "תמיכה בכל הפלטפורמות המובילות",
+      feature1Point3: "עיבוד רשימות השמעה שלמות בבת אחת",
+      feature1Point4: "עובד עם סרטונים פרטיים (באישור)",
+      feature2Title: "יצירת כיתובים וכתוביות אוטומטית",
+      feature2Desc: "צור כיתובים מדויקים באופן מיידי לכל הסרטונים החינוכיים שלך. הפוך תוכן לנגיש עבור תלמידים עם לקויות שמיעה, דוברים לא מקומיים או אלה שמעדיפים לקרוא במקביל.",
+      feature2Point1: "פורמטים לייצוא: SRT, VTT ו-TXT",
       feature2Point2: "חותמות זמן ברמת המילה לסנכרון מושלם",
-      feature2Point3: "עריכה והתאמת כתוביות בקלות",
-      feature2Point4: "העלאה ישירה חזרה ליוטיוב",
-      feature2Visual1: "תרגומי שפות",
-      feature2Visual2: "הפכו את התוכן שלכם לנגיש ברחבי העולם",
-      feature3Title: "ארגון לפי קורסים וקטגוריות",
-      feature3Desc: "צרו תיקיות לארגון התמלילים שלכם לפי קורס, נושא או סמסטר. שמרו על כל התוכן החינוכי שלכם מסווג בצורה מסודרת וניתן לחיפוש בקלות. בנו ספרייה מקיפה של חומרי קורס נגישים.",
+      feature2Point3: "ערוך והתאם כיתובים בקלות",
+      feature2Point4: "העלה ישירות בחזרה ליוטיוב",
+      feature2Visual1: "תרגומי שפה",
+      feature2Visual2: "הפוך את התוכן שלך לנגיש גלובלית",
+      feature3Title: "ארגן לפי קורסים וקטגוריות",
+      feature3Desc: "צור תיקיות כדי לארגן את התמלולים שלך לפי קורס, נושא או סמסטר. שמור את כל התוכן החינוכי שלך מסודר בקטגוריות וקל לחיפוש. בנה ספרייה מקיפה של חומרי קורס נגישים.",
       feature3Point1: "צור תיקיות ותיקיות משנה ללא הגבלה",
-      feature3Point2: "תיוג סרטונים לפי נושא או רמת קושי",
-      feature3Point3: "ארגון בכמות גדולה של תמלולים מרובים",
+      feature3Point2: "תג סרטונים לפי נושא או רמת קושי",
+      feature3Point3: "ארגן מספר תמלולים בבת אחת",
       feature3Point4: "חפש בכל התוכן שלך באופן מיידי",
       feature3VisualTitle: "ספריית הקורסים שלך",
       feature3Folder1: "מתמטיקה 101",
       feature3Folder2: "הרצאות פיזיקה",
-      feature3Folder3: "סרטוני מעבדה לביולוגיה",
-      feature3Folder4: "סרטים דוקומנטריים היסטוריים",
-      feature3Folder5: "לימוד שפה",
-      feature4Title: "ייצוא בכל פורמט שתצטרך",
-      feature4Desc: "הורד תמלילים בפורמטים TXT, DOCX או PDF. מושלם ליצירת מדריכי לימוד, סיכומי הרצאות או חומרי קורס נגישים. שתף עם סטודנטים או שלב במערכת ניהול הלמידה שלך.",
+      feature3Folder3: "סרטוני מעבדה בביולוגיה",
+      feature3Folder4: "סרטים תיעודיים בהיסטוריה",
+      feature3Folder5: "לימוד שפות",
+      feature4Title: "AI מתמלל קובץ אודיו להדרכת לימוד",
+      feature4Desc: "אל תסתפק בשיתוף הקלטות. תמלל הרצאות לטקסט וקבצי אודיו אחרים להדרכות לימוד מפורטות, כולל סיכומים ומושגי מפתח לתרגול אפקטיבי של תלמידים. ייצא בפורמטים TXT, DOCX או PDF.",
       feature4Point1: "TXT לעריכת טקסט פשוטה",
-      feature4Point2: "DOCX עבור מסמכים מעוצבים",
+      feature4Point2: "DOCX למסמכים מעוצבים",
       feature4Point3: "PDF לשיתוף והדפסה קלים",
-      feature4Point4: "ייצוא בכמות גדולה של קבצים מרובים בו זמנית",
-      workflowTitle: "איך זה עובד",
-      workflowSubtitle: "מקישור וידאו לתמליל נגיש תוך דקות",
-      workflowStep1Title: "הדבק קישור",
-      workflowStep1Desc: "העתיקו כל כתובת URL של סרטון חינוכי והדביקו אותה",
-      workflowStep2Title: "תמלול אוטומטי",
-      workflowStep2Desc: "בינה מלאכותית מתמללת בדיוק של 96%",
+      feature4Point4: "ייצא מספר קבצים בבת אחת",
+      workflowTitle: "איך זה עובד:",
+      workflowSubtitle: "מקישור וידאו לתמלול נגיש וחומרי לימוד בתוך דקות",
+      workflowStep1Title: "העלה את ההרצאה שלך",
+      workflowStep1Desc: "העלה כל קובץ אודיו או וידאו (MP3, MP4, WAV) או הדבק קישור יוטיוב",
+      workflowStep2Title: "תמלול AI",
+      workflowStep2Desc: "ה-AI שלנו מתמלל את האודיו, מפריד בין דוברים ומזהה נושאים מרכזיים",
       workflowStep3Title: "צור כיתובים",
-      workflowStep3Desc: "יצירה אוטומטית של כתוביות מסונכרנות בצורה מושלמת",
-      workflowStep4Title: "שתף וייצוא",
-      workflowStep4Desc: "הורד או שתף עם תלמידים",
-      useCasesTitle: "מושלם לכל צורך חינוכי",
-      useCasesSubtitle: "ראה כיצד מחנכים משתמשים ב- NeverCap כדי לשפר את הלמידה",
+      workflowStep3Desc: "צור כתוביות מסונכרנות באופן מושלם אוטומטית",
+      workflowStep4Title: "ייצא מדריך לימוד",
+      workflowStep4Desc: "הורד את הטקסט, סיכום או ייצא אותו כדי ליצור את מדריך הלימוד הסופי שלך",
+      useCasesTitle: "מושלם לכל",
+      useCasesSubtitle: "ראה כיצד מחנכים משתמשים ב-NeverCap כדי לשפר למידה",
       useCase1Title: "הרצאות מוקלטות",
-      useCase1Text: "תמלל סמסטרים שלמים של הרצאות מוקלטות. סטודנטים יכולים לחפש נושאים ספציפיים, לסקור מושגים מרכזיים ולעולם לא לפספס מידע חשוב.",
+      useCase1Text: "תמלל סמסטרים שלמים של הרצאות מוקלטות. סטודנטים יכולים לחפש נושאים ספציפיים, לסקור מושגי מפתח ולעולם לא לפספס מידע חשוב.",
       useCase2Title: "קורסים מקוונים",
-      useCase2Text: "הפכו את הקורסים המקוונים שלכם לנגישים לסטודנטים בינלאומיים עם תרגומים ביותר מ-100 שפות. הגדילו את ההרשמה ואת שביעות הרצון.",
+      useCase2Text: "הפוך את הקורסים המקוונים שלך נגישים לסטודנטים בינלאומיים עם תרגומים ב-100+ שפות. הגדל הרשמה ושביעות רצון.",
       useCase3Title: "חומרי לימוד",
-      useCase3Text: "המירו סרטוני הדרכה למדריכי לימוד קריאים. מושלם לתלמידים שמעדיפים לקרוא או צריכים לסקור תוכן במהירות.",
-      useCase4Title: "תאימות נגישות",
-      useCase4Text: "לעמוד בדרישות הנגישות על ידי מתן כתוביות ותמלילים לכל תוכן הווידאו. להבטיח גישה שווה לכל התלמידים.",
+      useCase3Text: "השתמש בבינה מלאכותית כדי לתמלל קבצי אודיו למדריכי לימוד מהדרכות וידאו והרצאות. מושלם לסטודנטים שמעדיפים קריאה או צריכים לסקור תוכן במהירות עם טקסט הניתן לחיפוש.",
+      useCase4Title: "עמידה בדרישות נגישות",
+      useCase4Text: "עמד בדרישות נגישות על ידי מתן כתוביות ותמלולים לכל תוכן וידאו. הבטח גישה שווה לכל הסטודנטים.",
       useCase5Title: "כיתה הפוכה",
-      useCase5Text: "שתפו הרצאות וידאו עם תמלולים לפני השיעור. התלמידים יכולים לחזור על הרצאותיהם בקצב שלהם ולהגיע מוכנים לדיונים.",
+      useCase5Text: "שתף הרצאות וידאו עם תמלולים לפני השיעור. סטודנטים יכולים לסקור בקצב שלהם ולהגיע מוכנים לדיונים.",
       useCase6Title: "מחקר וציטוטים",
-      useCase6Text: "עזרו לתלמידים לצטט מקורות וידאו במדויק עם חותמות זמן. מושלם לפרויקטים מחקריים ועבודות אקדמיות.",
-      testimonialTitle: "זוכה לאמון של יותר מ-50,000 מחנכים",
-      testimonialSubtitle: "ראה מדוע מורים ברחבי העולם בוחרים ב- NeverCap",
-      testimonialText: '"אני משתמש ב-NeverCap כדי לתמלל את כל ערוץ היוטיוב שלי של מדריכי מתמטיקה. מה שהיה לוקח שבועות עם שירותים אחרים לוקח עכשיו שעות. היכולת להדביק קישורים ישירות ולקבל תמלולים מיידיים שינתה את האופן שבו אני יוצר תוכן נגיש. התלמידים הבינלאומיים שלי אוהבים במיוחד את הכתוביות הרב-לשוניות!"',
+      useCase6Text: "עזור לסטודנטים לצטט מקורות וידאו במדויק עם חותמי זמן. מושלם לפרויקטי מחקר ועבודות אקדמיות.",
+      testimonialTitle: "סומכים עלינו",
+      testimonialSubtitle: "גלה מדוע מורים ברחבי העולם בוחרים ב-NeverCap",
+      testimonialText: '"אני משתמשת ב-NeverCap כדי לתמלל את כל ערוץ היוטיוב שלי להדרכות מתמטיקה. מה שלקח שבועות עם שירותים אחרים עכשיו לוקח שעות. היכולת להדביק קישורים ישירות ולקבל תמלולים מיידיים שינתה את האופן שבו אני יוצרת תוכן נגיש. הסטודנטים הבינלאומיים שלי במיוחד אוהבים את הכתוביות הרב-לשוניות!"',
       testimonialAuthorName: "פרופ' קארן מיטשל",
       testimonialAuthorRole: "פרופסור למתמטיקה, מחנך מקוון",
-      ctaTitle: "הפכו את כל התוכן החינוכי שלכם לנגיש",
-      ctaSubtitle: "הצטרפו לאלפי מורים המשתמשים בתמלול בלתי מוגבל באמת",
-      ctaButton: "נסה NeverCap בחינם"
+      ctaTitle: "הפוך את כל התוכן החינוכי שלך לנגיש",
+      ctaSubtitle: "הצטרף לאלפי מחנכים המשתמשים בתמלול באמת בלתי מוגבל",
+      ctaButton: "נסה את NeverCap בחינם",
+        featuresTitle2: "תמלול וידאו",
+        grid: "קובץ אודיו להדרכת לימוד",
+        useCasesTitle2: "צורך חינוכי",
+        testimonialTitle2: "50,000+ מחנכים"
     }
   },
   Resources: {
     YouTubeToMP4: {
       part1: {
-        "title": "הורד סרטוני יוטיוב בפורמט MP4",
+        "title": "הורד סרטוני YouTube כ-MP4",
         "placeholder": "חפש או הדבק את קישור היוטיוב שלך כאן",
         "clear_icon": "נקה קלט",
-        "Download": "הורדה",
+        "Download": "הורד",
         "loading_text": "מעבד את הקישור להורדה. הישאר בדף.",
         "howToDownload": "איך להוריד?",
-        "tutorial": "צפו במדריך"
+        "tutorial": "צפה בהדרכה"
       },
       part2: {
-        "title": "כך תהפוך סרטון יוטיוב לקובץ MP4 להורדה בשלושה שלבים פשוטים",
+        "title": "כך תוכל להפוך סרטון YouTube לקובץ MP4 להורדה ב-3 שלבים פשוטים",
         "steps": [
                 {
-                  title: "העתק את כתובת האתר",
-                  content: "פתחו את סרטון היוטיוב הרצוי, ולאחר מכן העתיקו את הקישור משורת הכתובת של הדפדפן."
+                  title: "העתק את ה-URL",
+                  content: "פתח את סרטון ה-YouTube הרצוי, ואז העתק את הקישור משורת הכתובת בדפדפן שלך."
                 },
                 {
                   title: "הדבק את הקישור",
-                  content: "עבור אל כלי הורדת הווידאו שלך והדבק את כתובת האתר בשדה הקלט שלו."
+                  content: "עבור לכלי ההורדה והדבק את ה-URL בשדה הקלט שלו."
                 },
                 {
-                  title: "הורד את קובץ ה-MP4",
-                  content: "לאחר העיבוד, לחצו על כפתור ההורדה כדי לשמור את קובץ ה-MP4 שלכם."
+                  title: "הורד את ה-MP4",
+                  content: "לאחר העיבוד, לחץ על כפתור ההורדה כדי לשמור את קובץ ה-MP4 שלך."
                 }
               ]
       },
       part3: {
         content: [
-                "האם אי פעם מצאתם את עצמכם צריכים לצפות בסרטוני יוטיוב במצב לא מקוון?",
-                "בין אם אתם נוסעים ברכבת התחתית, טסים במטוס, לומדים מדריך חשוב, צוללים לעומק תוכן לבניית מיומנויות או מאחסנים חומרי וידאו חשובים - גישה אמינה במצב לא מקוון היא תסכול נפוץ. כאן זורחת תוכנת ההורדה שלנו.",
-                "המוריד מאפשר לך להמיר סרטוני YouTube לפורמט MP4 להורדה במהירות ובקלות. שמור אותם במכשיר שלך וצפה בהם בכל עת.",
-                "התהליך מהיר, פשוט וללא טרחה. לאחר ההורדה, תהנו מהסרטונים האהובים עליכם בכל זמן ובכל מקום – ללא צורך באינטרנט."
+                "האם אי פעם מצאת את עצמך צריך לצפות בסרטוני YouTube במצב לא מקוון?",
+                "בין אם אתה נוסע ברכבת התחתית, טס במטוס, לומד הדרכה חשובה, צולל לתוכן לבניית מיומנויות או ארכוב חומרי וידאו חשובים - גישה אמינה לא מקוונת היא תסכול נפוץ. כאן ההורדה שלנו בולטת.",
+                "ההורדה מאפשרת לך להמיר במהירות ובקלות סרטוני YouTube לפורמט MP4 להורדה. שמור אותם במכשיר שלך וצפה בהם מתי שתרצה.",
+                "התהליך מהיר, פשוט וללא טרחה. לאחר ההורדה, תוכל ליהנות מהסרטונים האהובים עליך בכל זמן ובכל מקום - ללא צורך באינטרנט."
               ]
       },
       part4: {
-        content: ["הנה 5 היתרונות העיקריים של הורדה", "סרטוני יוטיוב כקבצי MP4"],
+        content: ["הנה 5 היתרונות העיקריים של הורדת", "סרטוני YouTube כקבצי MP4"],
         list: [
                 {
-                  title: "חסכו בעלויות נתונים:",
-                  content: "בדרך כלל, צפייה בסרטונים ביוטיוב צורכת כמות משמעותית של נתונים ניידים. על ידי הורדה לצפייה במצב לא מקוון, תוכלו להימנע מעלויות מיותרות אלה."
+                  title: "חסכון בעלויות נתונים:",
+                  content: "בדרך כלל, צפייה בסרטונים ב-YouTube צורכת נתונים סלולריים משמעותיים. על ידי הורדה לצפייה לא מקוונת, תוכל להימנע מעלויות מיותרות אלה."
                 },
                 {
                   title: "צפה בכל מקום, בכל זמן:",
-                  content: "תהנו מהסרטונים שלכם בצורה חלקה, אפילו עם חיבורי אינטרנט לא יציבים. אין יותר דאגות לגבי אחסון במאגר נתונים."
+                  content: "תיהנה מהסרטונים שלך בצורה חלקה, גם עם חיבור אינטרנט לא יציב. לא עוד דאגות לגבי טעינה."
                 },
                 {
-                  title: "אחסון ושימור קלים:",
-                  content: "שמירת סרטונים כקבצי MP4 מאפשרת לך לבנות בקלות את האוסף האישי שלך, במיוחד עבור תוכן שאתה מוצא בעל ערך או חשיבות אמיתית."
+                  title: "ארכוב ושימור קלים:",
+                  content: "שמירת סרטונים כ-MP4 הופכת את בניית האוסף האישי שלך לפשוטה, במיוחד עבור תוכן שאתה מוצא בעל ערך או חשוב באמת."
                 },
                 {
                   title: "שיתוף פשוט יותר:",
-                  content: "שיתוף קובץ MP4 נוח הרבה יותר משליחת קישור. ניתן לשלוח את קובץ הווידאו ישירות דרך אפליקציות כמו וואטסאפ או אינסטגרם, ובכך לבטל את השלב הנוסף של פתיחת יוטיוב."
+                  content: "שיתוף קובץ MP4 נוח הרבה יותר מאשר שליחת קישור. אתה יכול לשלוח את קובץ הווידאו ישירות דרך אפליקציות כמו WhatsApp או Instagram, וכך לחסוך את הצורך לפתוח את YouTube."
                 },
                 {
                   title: "צפייה מיידית, רגעים משותפים:",
-                  content: "בהתרגשות מראים סרטון אהוב לחברים או משפחה בקרבת מקום? לאחר הורדת קובץ ה-MP4, תוכלו לצפות בו יחד בצורה חלקה באופן מיידי, ללא הפסקות מביכות בהמתנה לטעינה."
+                  content: "מתרגל להראות סרטון אהוב לחברים או למשפחה בסביבה? עם ה-MP4 שהורדת, תוכלו כולכם לצפות בו בצורה חלקה מיד, ללא הפסקות מביכות בהמתנה לטעינה."
                 }
               ]
       },
       part5: {
-        title: "למה המורד שלנו בולט",
+        title: "למה ההורדה שלנו בולטת",
         cards: [
                 {
                   title: "פשטות בלחיצה אחת",
                   content: "התקנה קלה ותפעול אינטואיטיבי."
                 },
                 {
-                  title: "מהיר – בזק, ללא הגבלה",
-                  content: "המרה והורדה במהירות שיא - ללא הגבלות, ללא גבולות."
+                  title: "מהיר במיוחד, ללא הגבלה",
+                  content: "המר והורד במהירות גבוהה - ללא הגבלות."
                 },
                 {
-                  title: "המרה תוך כדי תנועה",
-                  content: "עבד את הקבצים שלך באופן מיידי, ללא צורך בהמתנה."
+                  title: "המרה על המקום",
+                  content: "עבד את הקבצים שלך מיידית, ללא צורך בהמתנה."
                 },
                 {
-                  title: "אפס פרסומות, אפס הסחות דעת",
-                  content: "תיהנו מממשק נקי ללא חלונות קופצים, באנרים או הפרעות - רק המרת וידאו חלקה."
+                  title: "ללא פרסומות, ללא הסחות",
+                  content: "תיהנה מממשק נקי ללא חלונות קופצים, באנרים או הפרעות - רק המרת וידאו חלקה."
                 },
                 {
                   icon: "5",
                   color: "#DEE5FF",
                   title: "איכות מקורית מובטחת",
-                  content: "ההורדות שלך שומרות על הרזולוציה המלאה של סרטון המקור להפעלה מושלמת לפיקסלים בכל פעם."
+                  content: "ההורדות שלך שומרות על הרזולוציה המלאה של הסרטון המקורי לצפייה מושלמת בכל פעם."
                 },
                 {
                   icon: "6",
                   color: "#DEF6EE",
                   title: "עובד בכל מקום",
-                  content: "תאימות מלאה לכל דפדפן, בכל מכשיר."
+                  content: "תואם מלא לכל דפדפן, בכל מכשיר."
                 }
               ]
       },
       part6: {
-        title: ["הגדל את הורדות הסרטונים שלך ביוטיוב", "עם המורד"],
+        title: ["מקסם את הורדות סרטוני ה-YouTube שלך", "עם ההורדה"],
         content: [
-                "המרה קלה מיוטיוב ל-MP4: מהיר, פשוט וחינמי.",
-                "שם אנחנו מצטיינים. הממשק הידידותי למשתמש שלנו נועד לכולם - אין צורך בכישורים טכניים. ללא קשר לרמת הניסיון שלכם, תוכלו להמיר סרטונים באופן מיידי. אין צורך בהרשמה: קבלו בדיוק את מה שאתם צריכים, באופן מיידי.",
-                "היו סמוכים ובטוחים - קבצי ה-MP4 שהורדתם שומרים על איכות ובהירות הווידאו המקוריים, בדיוק כפי שצפיתם בהם ביוטיוב.",
-                "עובד בכל מקום. תואם לחלוטין לכל הפלטפורמות והמכשירים העיקריים. בין אם אתם משתמשים ב-Windows, macOS, Linux, Android או iOS - באמצעות סמארטפון, טאבלט או מחשב שולחני - תוכלו להוריד סרטונים בצורה חלקה."
+                "המרת YouTube ל-MP4 ללא מאמץ: מהירה, פשוטה וחינמית.",
+                "כאן אנחנו מצטיינים. הממשק הידידותי למשתמש שלנו תוכנן עבור כולם - אין צורך בכישורים טכניים. ללא קשר לרמת הניסיון שלך, תוכל להמיר סרטונים מיידית. אין צורך בהרשמה: קבל בדיוק מה שאתה צריך, מיד.",
+                "היה סמוך ובטוח - קבצי ה-MP4 שהורדת שומרים על איכות וידאו מקורית ובהירות, בדיוק כפי שצפית בהם ב-YouTube.",
+                "עובד בכל מקום שאתה נמצא. תואם מלא לכל הפלטפורמות והמכשירים העיקריים. בין אם אתה משתמש ב-Windows, macOS, Linux, Android או iOS - באמצעות סמארטפון, טאבלט או מחשב שולחני - תוכל להוריד סרטונים בצורה חלקה."
               ]
       },
       part7: {
-        title: "שאלות מפתח על הורדת סרטוני יוטיוב",
+        title: "שאלות מפתח בנושא הורדת סרטוני YouTube",
         list: [
                 {
-                  question: "האם ניתן להוריד סרטון מיוטיוב אם הוא מוגן בזכויות יוצרים?",
-                  answer: "הורדת סרטוני יוטיוב המוגנים בזכויות יוצרים ללא אישור בעל זכויות היוצרים היא עבירה על החוק."
+                  question: "האם אני יכול להוריד סרטון YouTube אם הוא מוגן בזכויות יוצרים?",
+                  answer: "הורדת סרטוני YouTube המוגנים בזכויות יוצרים ללא רשות בעלי הזכויות היא בלתי חוקית."
                 },
                 {
                   question: "האם כלי ההורדה הזה בטוח?",
-                  answer: "כן, זה בטוח ואמין. איננו דורשים מידע אישי ממשתמשים ונוקטים באמצעים נחרצים נגד וירוסים. אנו מזכירים לכם תמיד לנקוט משנה זהירות בעת הורדת קבצים מהאינטרנט: הימנעו מלחיצה על קישורים חשודים או הורדת קבצים מפוקפקים."
+                  answer: "כן, הוא בטוח ואמין. אנחנו לא דורשים שום מידע אישי מהמשתמשים ונוקטים בצעדים חזקים נגד וירוסים. אנו מזכירים לך להפעיל תמיד זהירות בעת הורדת קבצים מהאינטרנט: הימנע מלחיצה על קישורים חשודים או הורדת קבצים מפוקפקים."
                 },
                 {
-                  question: "אילו שפות תומכות בהורדת סרטונים מיוטיוב לפורמט MP4?",
-                  answer: "השירות שלנו תומך בהורדת סרטוני יוטיוב בכל השפות הפופולריות."
+                  question: "אילו שפות תומכות בהורדת YouTube ל-MP4?",
+                  answer: "השירות שלנו תומך בהורדת סרטוני YouTube בכל השפות הפופולריות."
                 },
                 {
-                  question: "אילו גורמים משפיעים על הזמן שלוקח להוריד סרטון מיוטיוב?",
-                  answer: "למרות שאנו מבטיחים את חוויית ההורדה המהירה ביותר האפשרית, זמן ההורדה מושפע גם מגורמים כמו אורך הסרטון ומהירות חיבור האינטרנט שלך."
+                  question: "אילו גורמים משפיעים על הזמן שלוקח להוריד סרטון YouTube?",
+                  answer: "בעוד שאנו מבטיחים את חוויית ההורדה המהירה ביותר, זמן ההורדה מושפע גם מגורמים כמו אורך הסרטון ומהירות חיבור האינטרנט שלך."
                 },
                 {
-                  question: "כשאני מוריד סרטון MP4 באמצעות הסמארטפון שלי, היכן הוא נשמר?"
+                  question: "כשאני מוריד סרטון MP4 באמצעות הסמארטפון שלי, איפה הוא נשמר?"
                 },
                 {
-                  question: "האם הורדת סרטון יוטיוב כקובץ MP4 מפחיתה את איכות הסרטון?",
-                  answer: "לא. הורדת סרטוני יוטיוב בפורמט MP4 באמצעות הכלי שלנו שומרת על איכות הווידאו המקורית. תהליך ההמרה שומר על איכות המקור, ומבטיח שתקבלו את אותה חוויית צפייה כמו ביוטיוב."
+                  question: "האם הורדת סרטון YouTube כ-MP4 מפחיתה את איכות הווידאו?",
+                  answer: "לא. הורדת סרטוני YouTube כ-MP4 באמצעות הכלי שלנו שומרת על איכות הווידאו המקורית. תהליך ההמרה שומר על איכות המקור, ומבטיח לך חוויית צפייה זהה לזו שב-YouTube."
                 }
               ]
       }
@@ -2906,63 +2956,63 @@ let message = {
   },
   About: {
     Hero: {
-      "badge": "🚀 טכנולוגיית בינה מלאכותית מובילה בתעשייה",
-      "title": "אוֹדוֹת",
+      "badge": "טכנולוגיית AI מובילה בתעשייה",
+      "title": "אודות",
       "highlighted_text": "NeverCap",
-      "description": "המשימה שלנו היא לספק את שירותי תמלול האודיו והווידאו המדויקים ביותר. באמצעות טכנולוגיית בינה מלאכותית מובילה בתעשייה, אנו משיגים שיעורי דיוק תמלול של מעל 96%. עבור חלק מהשפות העיקריות, באמצעות אופטימיזציה טכנית, אנו יכולים להגיע אפילו לדיוק של 99%."
+      "description": "המשימה שלנו היא לספק שירותי תמלול אודיו ווידאו המדויקים ביותר. בעזרת טכנולוגיית AI מובילה, אנו משיגים דיוק תמלול של מעל 96%. בשפות מרכזיות מסוימות, באמצעות אופטימיזציה טכנית, אנו יכולים להגיע אפילו ל-99% דיוק."
     },
     Stats: {
-      "title": "שֶׁלָנוּ",
-      "highlighted_text": "פְּגִיעָה",
-      "subtitle": "העצמת תקשורת עולמית בעזרת טכנולוגיית בינה מלאכותית מתקדמת",
+      "title": "ההשפעה",
+      "highlighted_text": "שלנו",
+      "subtitle": "העצמת תקשורת גלובלית עם טכנולוגיית AI מתקדמת",
       "metrics": [
             {
               "value": "96%+",
-              "label": "שיעור דיוק",
-              "description": "דיוק תמלול מוביל בתעשייה עם בינה מלאכותית מתקדמת"
+              "label": "דיוק",
+              "description": "דיוק תמלול מוביל בתעשייה עם AI מתקדם"
             },
             {
               "value": "100+",
               "label": "שפות נתמכות",
-              "description": "זיהוי מילים מדוברות עבור תוכן גלובלי"
+              "description": "זיהוי דיבור לתוכן גלובלי"
             },
             {
               "value": "249+",
               "label": "שפות תרגום",
-              "description": "תרגם טקסט מתועתק כמעט לכל שפה"
+              "description": "תרגום טקסט מתומלל כמעט לכל שפה"
             }
           ]
     },
     Mission: {
-      "title": "למה לבחור",
+      "title": "למה לבחור ב-",
       "highlighted_text": "NeverCap",
-      "subtitle": "אנו מאמינים בשבירת מחסומי שפה ובהנגשת תוכן לכולם",
+      "subtitle": "אנו מאמינים בפירוק מחסומי שפה והנגשת תוכן לכולם",
       "features": [
             {
               "icon": "🎯",
-              "title": "דיוק ללא תחרות",
-              "description": "מודלי הבינה המלאכותית שלנו עוברים שיפור מתמיד כדי לספק שיעורי דיוק תמלול העולים על 96%, כאשר חלק מהשפות העיקריות מגיעות לדיוק של עד 99% באמצעות אופטימיזציה מתקדמת."
+              "title": "דיוק חסר תקדים",
+              "description": "מודלי ה-AI שלנו משוכללים ברציפות כדי לספק דיוק תמלול העולה על 96%, עם שפות מרכזיות מסוימות שמגיעות עד ל-99% דיוק באמצעות אופטימיזציה מתקדמת."
             },
             {
               "icon": "🌍",
-              "title": "תמיכה בשפה גלובלית",
-              "description": "תמיכה ביותר מ-100 שפות בזיהוי מילים מדוברות וביכולות תרגום עבור יותר מ-249 שפות, מה שהופך את התוכן שלך לגלובלי באמת."
+              "title": "תמיכה בשפות גלובליות",
+              "description": "תמיכה בלמעלה מ-100 שפות בזיהוי דיבור ויכולות תרגום ליותר מ-249 שפות, מה שהופך את התוכן שלך לגלובלי באמת."
             },
             {
               "icon": "⚡",
-              "title": "עיבוד מהיר כברק",
-              "description": "עבדו שעות של תוכן אודיו ווידאו בדקות, לא בשעות. מערכת הבינה המלאכותית המותאמת שלנו מבטיחה שתקבלו את התמלולים שלכם במהירות מבלי להתפשר על האיכות."
+              "title": "עיבוד מהיר כבזק",
+              "description": "עיבוד שעות של תוכן אודיו ווידאו בדקות, לא בשעות. צינור ה-AI המאופטמל שלנו מבטיח שתקבלו את התמלולים במהירות ללא פשרה על איכות."
             },
             {
               "icon": "🔒",
-              "title": "אבטחה ברמה ארגונית",
-              "description": "אבטחת הנתונים שלך היא בראש סדר העדיפויות שלנו. אנו משתמשים בהצפנה סטנדרטית בתעשייה ועומדים בתקנות פרטיות גלובליות כדי לשמור על התוכן שלך בטוח וסודי."
+              "title": "אבטחה ברמת ארגון",
+              "description": "אבטחת הנתונים שלך היא העדיפות שלנו. אנו משתמשים בהצפנה לפי תקני התעשייה ועומדים בתקנות פרטיות גלובליות כדי לשמור על התוכן שלך בטוח וחסוי."
             }
           ]
     },
     Company: {
-      "title": "חֶברָה",
-      "highlighted_text": "מֵידָע",
+      "title": "מידע",
+      "highlighted_text": "על החברה",
       "subtitle": "צרו איתנו קשר לכל שאלה או תמיכה",
       "details": [
             {
@@ -2970,168 +3020,168 @@ let message = {
               "value": "SCRIBIFY AI INC"
             },
             {
-              "label": "מַטֶה",
-              "value": ["רחוב גולד צפון 30, סטי ר", "שרידן, ויומינג 82801", "אַרצוֹת הַבְּרִית"]
+              "label": "מטה ראשי",
+              "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "ארצות הברית"]
             },
             {
               "label": "צרו קשר",
-              "value": ["אֶלֶקטרוֹנִי", "תמיכה זמינה 24/7"]
+              "value": ["אימייל", "תמיכה זמינה 24/7"]
             }
           ]
     },
     CTA: {
       "title": "מוכנים לחוות את ההבדל?",
-      "subtitle": "הצטרפו לאלפי אנשי מקצוע שסומכים על NeverCap עבור צרכי התמלול שלהם",
-      "button": "נסה NeverCap בחינם →",
-      "disclaimer": "אין צורך בכרטיס אשראי • התחל לתמלל תוך שניות"
+      "subtitle": "הצטרפו לאלפי מקצוענים שסומכים על NeverCap לצרכי התמלול שלהם",
+      "button": "נסו את NeverCap בחינם →",
+      "disclaimer": "אין צורך בכרטיס אשראי • התחילו לתמלל בתוך שניות"
     }
   },
   Privacy: {
-    title: "פְּרָטִיוּת",
-    titleGradient: "מְדִינִיוּת",
-    subtitle: "למד כיצד אנו אוספים, משתמשים ומגנים על המידע האישי שלך",
+    title: "פרטיות",
+    titleGradient: "מדיניות",
+    subtitle: "למדו כיצד אנו אוספים, משתמשים ומגנים על המידע האישי שלכם",
     "lastUpdated": "עודכן לאחרונה: {date}",
-    "lastUpdatedDate": "21 ביולי, 2025",
+    "lastUpdatedDate": "21 ביולי 2025",
     "privacyPolicyTitle": "מדיניות פרטיות",
-    "policyDescription": 'מדיניות זו מתארת כיצד NeverCap (להלן "NeverCap", "שלנו", "אנחנו", "אותנו") אוספת, משתמשת וחושפת את המידע האישי שלך כאשר אתה משתמש בשירותים, באתרי האינטרנט (https://www.nevercap.ai/) ובתוכנה שלנו (ביחד, "השירותים").',
-    "policyAgreement": "אנא קרא בעיון את מדיניות הפרטיות הזו וודא שאתה מבין אותה. על ידי שימוש בכל אחד מהשירותים שלנו, הנך מסכים למדיניות פרטיות זו. אם אינך מסכים לשימוש שלנו בנתונים האישיים שלך בהתאם למדיניות זו, עליך להפסיק את השימוש בשירותים שלנו באופן מיידי.",
-    "policyOverview": "במדיניות זו, אנו מפרטים: אילו נתונים אנו אוספים ומדוע; כיצד הנתונים שלך מטופלים; וזכויותיך ביחס לנתונים שלך. איננו מוכרים את הנתונים שלך.",
-    "scopeTitle": "1. היקף מדיניות פרטיות זו",
-    "scopeDescription": "מדיניות פרטיות זו חלה רק על איסוף ועיבוד מידע על ידינו אודות משתמשי השירותים. מדיניות פרטיות זו אינה חלה על שירותים, אתרי אינטרנט או תוכנה המופעלים על ידי צדדים שלישיים המקושרים אלינו (בין אם אנו מספקים קישורים אלה ובין אם משתמשים אחרים משתפים אותם), והיא אינה חלה על תוכן, נתונים, יישומים או חומרים מצדדים שלישיים. אנו ממליצים לך לבדוק את מדיניות הפרטיות של כל אתר אינטרנט או תוכנה של צד שלישי לפני שתספק להם מידע כלשהו.",
-    "collectionTitle": "2. מה אנו אוספים ומדוע",
+    "policyDescription": 'מדיניות זו מתארת כיצד NeverCap (להלן "NeverCap", "אנחנו", "שלנו") אוספת, משתמשת ומפרסמת את המידע האישי שלכם בעת השימוש בשירותים שלנו, באתרים (https://www.nevercap.ai/) ובתכנה (יחדיו, "השירותים").',
+    "policyAgreement": "אנא קראו מדיניות פרטיות זו בעיון וודאו שהבנתם אותה. בשימוש באחד מהשירותים שלנו, אתם מסכימים למדיניות פרטיות זו. אם אינכם מסכימים לשימוש שלנו במידע האישי שלכם בהתאם למדיניות זו, עליכם להפסיק את השימוש בשירותים שלנו מיידית.",
+    "policyOverview": "במדיניות זו אנו מפרטים: אילו נתונים אנו אוספים ולמה; כיצד הנתונים שלכם מטופלים; וזכויותיכם ביחס לנתונים שלכם. אנו לא מוכרים את הנתונים שלכם.",
+    "scopeTitle": "1. היקף מדיניות הפרטיות הזו",
+    "scopeDescription": "מדיניות פרטיות זו חלה רק על איסוף ועיבוד המידע שלנו אודות משתמשי השירותים. מדיניות פרטיות זו לא חלה על שירותים, אתרים או תכנה המופעלים על ידי צדדים שלישיים המקושרים אלינו (בין אם אנו מספקים קישורים אלה או שמשתמשים אחרים משתפים אותם) ולא על תוכן, נתונים, יישומים או חומרים מצדדים שלישיים. אנו ממליצים לכם לבדוק את מדיניות הפרטיות של כל אתר או תכנה של צד שלישי לפני מסירת כל מידע אליהם.",
+    "collectionTitle": "2. מה אנחנו אוספים ולמה",
     "collectionPrinciple": "העיקרון המנחה שלנו הוא לאסוף רק את מה שאנחנו צריכים. הנה מה שזה אומר בפועל:",
     "identityTitle": "2.1 זהות וגישה",
-    "identityDescription": 'כאשר אתם נרשמים לאחד מהמוצרים שלנו, אנו מבקשים מידע מזהה כגון שמכם וכתובת הדוא"ל שלכם. זאת על מנת לספק פונקציונליות חיונית של המוצר וכדי שנוכל לשלוח לכם עדכוני מוצר ומידע חיוני אחר.',
-    "billingTitle": "2.2 פרטי חיוב",
-    "billingDescription": "אם תירשמו למוצר בתשלום, תתבקשו לספק את פרטי התשלום שלכם וכתובת החיוב. פרטי התשלום נשלחים ישירות למעבד התשלומים שלנו ואינם מגיעים לשרתים שלנו.",
-    "productInteractionsTitle": "2.3 אינטראקציות עם מוצרים",
-    "productInteractionsDescription": "אנו מאחסנים בשרתים שלנו את התוכן שאתה מעלה, מקבל או מתחזק בחשבונות המוצר שלך. אלא אם כן תמחק תוכן זה, אנו עשויים לשמור תוכן זה כל עוד חשבונך פעיל.",
-    "websiteInteractionsTitle": "2.4 אינטראקציות באתר",
-    "websiteInteractionsDescription": "אנו אוספים מידע על פעילות הגלישה שלך למטרות ניתוח וסטטיסטיקה כגון בדיקת שיעורי המרה וניסויים בעיצובים חדשים של מוצרים. זה כולל, לדוגמה, את גרסאות הדפדפן ומערכת ההפעלה שלך, כתובת ה-IP שלך, אילו דפי אינטרנט ביקרת וכמה זמן לקח להם להיטען, ואיזה אתר אינטרנט הפנה אותך אלינו. אם יש לך חשבון ואתה מחובר, נתוני ניתוח האינטרנט הללו מקושרים לכתובת ה-IP ולחשבון המשתמש שלך עד שהחשבון שלך כבר לא יהיה פעיל.",
+    "identityDescription": "כאשר אתם נרשמים לאחד מהמוצרים שלנו, אנו מבקשים פרטים מזהים כמו שמכם וכתובת האימייל שלכם. זה נועד לספק פונקציונליות בסיסית של המוצר ולאפשר לנו לשלוח לכם עדכוני מוצר ומידע חיוני אחר.",
+    "billingTitle": "2.2 מידע חיוב",
+    "billingDescription": "אם אתם נרשמים למוצר בתשלום, תתבקשו לספק את פרטי התשלום וכתובת החיוב שלכם. פרטי התשלום מועברים ישירות למעבד התשלומים שלנו ולא מגיעים לשרתים שלנו.",
+    "productInteractionsTitle": "2.3 אינטראקציות עם המוצר",
+    "productInteractionsDescription": "אנו מאחסנים בשרתים שלנו את התוכן שאתם מעלים, מקבלים או שומרים בחשבונות המוצר שלכם. אלא אם תמחקו תוכן זה, אנו עשויים לשמור אותו כל עוד החשבון שלכם פעיל.",
+    "websiteInteractionsTitle": "2.4 אינטראקציות עם האתר",
+    "websiteInteractionsDescription": "אנו אוספים מידע על פעילות הגלישה שלכם למטרות אנליטיקה וסטטיסטיקה כמו בדיקת שיעורי המרה וניסויים בעיצובי מוצר חדשים. זה כולל, לדוגמה, את גרסאות הדפדפן ומערכת ההפעלה שלכם, כתובת ה-IP שלכם, אילו דפי אינטרנט ביקרתם וכמה זמן לקח להם להיטען, ואיזה אתר הפנה אתכם אלינו. אם יש לכם חשבון ואתם מחוברים, נתוני אנליטיקה אלה משויכים לכתובת ה-IP ולחשבון המשתמש שלכם עד שהחשבון שלכם כבר לא פעיל.",
     "cookiesTitle": "2.5 עוגיות",
-    "cookiesDescription1": "אנו משתמשים גם בקובצי Cookie קבועים של צד ראשון ובקובצי Cookie מסוימים של צד שלישי כדי לאחסן העדפות מסוימות, להקל עליך את השימוש באפליקציות שלנו, לבצע בדיקות A/B וכן לתמוך בניתוחים מסוימים.",
-    "cookiesDescription2": "קובץ Cookie הוא קטע טקסט המאוחסן על ידי הדפדפן שלך. הוא עשוי לעזור לזכור פרטי התחברות והעדפות אתר. הוא עשוי גם לאסוף מידע כגון סוג הדפדפן שלך, מערכת ההפעלה, דפי אינטרנט שבהם ביקרת, משך הביקור, תוכן שנצפה ונתוני קליקים אחרים. באפשרותך להתאים את הגדרות שמירת קובצי Cookie ולקבל או לחסום קובצי Cookie בודדים בהגדרות הדפדפן שלך, אם כי האפליקציות שלנו לא יעבדו והיבטים אחרים של השירות שלנו עשויים לא לפעול כראוי אם תכבה קובצי Cookie.",
+    "cookiesDescription1": "אנו גם משתמשים בעוגיות מתמשכות מצד ראשון ובחלק מעוגיות צד שלישי כדי לאחסן העדפות מסוימות, להקל על השימוש ביישומים שלנו, לבצע בדיקות A/B ולספק תמיכה באנליטיקה מסוימת.",
+    "cookiesDescription2": "עוגייה היא פיסת טקסט שנשמרת על ידי הדפדפן שלך. היא עשויה לעזור לזכור פרטי התחברות והעדפות אתר. היא עשויה גם לאסוף מידע כמו סוג הדפדפן, מערכת ההפעלה, דפי אינטרנט שביקרתם בהם, משך הביקור, תוכן שנצפה ונתוני זרם לחיצות אחרים. ניתן להתאים הגדרות שמירת עוגיות ולקבל או לחסום עוגיות בודדות בהגדרות הדפדפן שלך, אם כי היישומים שלנו לא יעבדו והיבטים אחרים של השירות שלנו עשויים לא לתפקד כראוי אם תכבו עוגיות.",
     "correspondenceTitle": "2.6 התכתבות מרצון",
-    "correspondenceDescription": 'כאשר אתם שולחים לנו דוא"ל עם שאלה או כדי לבקש עזרה, אנו שומרים את ההתכתבויות הללו, כולל כתובת הדוא"ל שלכם, כך שתהיה לנו היסטוריה של התכתבויות קודמות לעיון אם תפנו אלינו בעתיד.',
-    "accessTitle": "3. מתי אנו ניגשים למידע שלך או משתפים אותו",
-    "accessDescription1": "כדי לספק מוצרים או שירותים שביקשת. אנו משתמשים בכמה מעבדי משנה של צד שלישי כדי לסייע בהפעלת היישומים שלנו ובמתן השירותים לך. זה כולל ספקי ענן ואנליטיקה.",
-    "accessDescription2": "לחקור, למנוע או לנקוט פעולה בנוגע לניצול לרעה. גישה לחשבון של לקוח בעת חקירת ניצול לרעה אפשרי היא אמצעי אחרון. אנו רוצים להגן על הפרטיות והבטיחות של לקוחותינו ושל האנשים המדווחים לנו על בעיות, ואנו עושים כמיטב יכולתנו לאזן בין אחריות זו לאורך התהליך. אם נגלה שאתם משתמשים במוצרים שלנו למטרה מוגבלת, ננקוט פעולה כנדרש, כולל הודעה לרשויות המתאימות במידת הצורך.",
-    "accessDescription3": "כאשר הדבר נדרש על פי החוק החל.",
-    "dataRequests": 'בקשות לנתוני משתמשים. המדיניות שלנו היא לא להגיב לבקשות ממשלתיות לנתוני משתמשים אלא אם כן אנו מחויבים על ידי הליך משפטי או בנסיבות מוגבלות במקרה של בקשה דחופה. עם זאת, אם לרשויות אכיפת החוק בארה"ב יש את הצו, הזימון הפלילי או צו בית משפט המחייבים אותנו לשתף נתונים, עלינו לציית. באופן דומה, נענה לבקשות מרשויות ממשלתיות מחוץ לארה"ב רק אם ממשלת ארה"ב מחויבת לכך באמצעות נהלים המפורטים באמנה או הסכם סיוע משפטי הדדי. מדיניותנו היא להודיע למשתמשים המושפעים לפני שאנו משתפים נתונים אלא אם כן אנו מנועים מכך על פי חוק, ולמעט במקרי חירום מסוימים.',
-    "preservationRequests": 'בקשות לשימור. באופן דומה, המדיניות שלנו היא להיענות לבקשות לשימור נתונים רק אם הדבר נדרש על פי חוק התקשורת המאוחסנת הפדרלי של ארה"ב, סעיף 2703(f) לחוק 18 USC, או על פי זימון אמריקאי שהוגש כדין לעניינים אזרחיים. איננו משתפים נתונים שמורים אלא אם כן הדבר נדרש על פי חוק או מחויב על פי צו בית משפט שאנו בוחרים לא לערער עליו. יתר על כן, אלא אם כן נקבל צו, צו בית משפט או זימון מתאימים לפני תום תקופת השימור הנדרשת, נשמיד כל עותק שנשמר של נתוני הלקוח בתום תקופת השימור.',
-    "taxAudits": "אם רשות המס מבקרת אותנו, ייתכן שנידרש לשתף מידע הקשור לחיוב. אם זה יקרה, נשתף רק את המינימום הנדרש, כגון כתובות לחיוב ומידע על פטור ממס.",
+    "correspondenceDescription": "כאשר אתם שולחים לנו אימייל עם שאלה או בקשה לעזרה, אנו שומרים את ההתכתבות הזו, כולל כתובת האימייל שלכם, כדי שתהיה לנו היסטוריה של התכתבויות קודמות להתייחסות אם תפנו אלינו בעתיד.",
+    "accessTitle": "3. מתי אנו ניגשים או משתפים את המידע שלך",
+    "accessDescription1": "לספק מוצרים או שירותים שביקשת. אנו משתמשים בכמה מעבדי משנה מצד שלישי כדי לסייע בהפעלת היישומים שלנו ולספק לך את השירותים. זה כולל ספקי ענן ואנליטיקה.",
+    "accessDescription2": "לחקור, למנוע או לנקוט פעולה בנושא שימוש לרעה. גישה לחשבון של לקוח בעת חקירת שימוש לרעה אפשרי היא אמצעי אחרון. אנו רוצים להגן על הפרטיות והבטיחות של הלקוחות שלנו ושל האנשים המדווחים על בעיות אלינו, ואנו עושים כמיטב יכולתנו לאזן בין אחריות אלה לאורך התהליך. אם נגלה שאתה משתמש במוצרים שלנו למטרה מוגבלת, ננקוט את הפעולות הנדרשות, כולל הודעה לרשויות המתאימות במקרה הצורך.",
+    "accessDescription3": "כאשר נדרש על פי החוק החל.",
+    "dataRequests": 'בקשות לנתוני משתמש. המדיניות שלנו היא לא להגיב לבקשות ממשלתיות לנתוני משתמש אלא אם אנו מחויבים בהליך משפטי או בנסיבות מוגבלות במקרה של בקשת חירום. עם זאת, אם לרשויות אכיפת החוק בארה"ב יש צו חיפוש, הזמנה פלילית או צו בית משפט הדורשים מאיתנו לשתף נתונים, עלינו לציית. כמו כן, נגיב רק לבקשות מרשויות מחוץ לארה"ב אם נדרש על ידי ממשלת ארה"ב באמצעות הליכים המפורטים בהסכם סיוע משפטי הדדי. המדיניות שלנו היא להודיע למשתמשים שנפגעו לפני שאנו משתפים נתונים אלא אם אנו אסורים על פי חוק מלעשות זאת, למעט במקרי חירום מסוימים.',
+    "preservationRequests": 'בקשות שימור. באופן דומה, המדיניות שלנו היא להיענות לבקשות לשימור נתונים רק אם נדרש על פי חוק התקשורת האגורה הפדרלי של ארה"ב, 18 U.S.C. סעיף 2703(f), או על ידי הזמנה אמריקאית כשרה לעניינים אזרחיים. אנו לא משתפים נתונים שנשמרו אלא אם נדרש על פי חוק או על ידי צו בית משפט שאנו בוחרים לא לערער עליו. יתרה מכך, אלא אם נקבל צו חיפוש, צו בית משפט או הזמנה תקינים לפני תום תקופת השימור הנדרשת, נשמיד כל עותק שמור של נתוני לקוח בסוף תקופת השימור.',
+    "taxAudits": "אם ניבדק על ידי רשות מס, אנו עשויים להיות מחויבים לשתף מידע הקשור לחיוב. אם זה יקרה, נשתף רק את המינימום הנדרש, כמו כתובות חיוב ומידע על פטור ממס.",
     "securityTitle": "4. כיצד אנו מאבטחים את הנתונים שלך",
     "securityDescription": "כל הנתונים מוצפנים באמצעות SSL/TLS כאשר הם מועברים מהשרתים שלנו לדפדפן שלך.",
-    "deletionTitle": "5. מה קורה כשאתה מוחק את התוכן שלך",
-    "deletionDescription": "אם תמחק תוכן כלשהו, הוא יהיה בלתי נגיש באופן מיידי.",
+    "deletionTitle": "5. מה קורה כשמוחקים תוכן",
+    "deletionDescription": "אם תמחקו כל תוכן, הוא יהפוך מייד לבלתי נגיש.",
     "locationTitle": "6. מיקום האתר והנתונים",
-    "locationDescription": "המוצרים שלנו ונכסי אינטרנט אחרים מופעלים בארצות הברית. אם אתם נמצאים באיחוד האירופי, בבריטניה או במקום אחר מחוץ לארצות הברית, אנא שימו לב שכל מידע שתספקו לנו יועבר לארצות הברית ויאוחסן בה. על ידי שימוש באתרי האינטרנט או בשירותים שלנו ו/או מתן המידע האישי שלכם לנו, הנכם מסכימים להעברה זו.",
+    "locationDescription": "המוצרים שלנו ונכסי רשת אחרים מנוהלים בארצות הברית. אם אתם נמצאים באיחוד האירופי, בריטניה או במקום אחר מחוץ לארצות הברית, אנא שימו לב שכל מידע שתספקו לנו יועבר ויאוחסן בארצות הברית. בשימוש באתרים או בשירותים שלנו ו/או במסירת המידע האישי שלכם לנו, אתם מסכימים להעברה זו.",
     "childrenTitle": "7. פרטיות ילדים",
-    "childrenDescription": "השירותים אינם מיועדים לילדים, ואיננו אוספים ביודעין מידע אישי מילדים מתחת לגיל 13. אם אתה מתחת לגיל 13, אנא אל תגיש מידע אישי כלשהו דרך השירותים. אם אתה מאמין שילד מסר לנו מידע אישי תוך הפרת מדיניות זו, אנא צור איתנו קשר כמצוין להלן.",
-    "updatesTitle": "8. עדכונים למדיניות פרטיות זו",
-    "updatesDescription": "אנו עשויים לעדכן מדיניות זו לפי הצורך כדי לעמוד בתקנות הרלוונטיות ולשקף כל נוהג חדש. בכל פעם שנבצע שינוי משמעותי במדיניות שלנו, נעדכן את התאריך בראש עמוד זה.",
+    "childrenDescription": "השירותים אינם מיועדים לילדים, ואנו לא אוספים במודע מידע אישי מילדים מתחת לגיל 13. אם אתה מתחת לגיל 13, אנא אל תגיש כל מידע אישי דרך השירותים. אם אתה מאמין שילד סיפק לנו מידע אישי בניגוד למדיניות זו, אנא צור איתנו קשר כפי שמצוין להלן.",
+    "updatesTitle": "8. עדכונים למדיניות הפרטיות הזו",
+    "updatesDescription": "אנו עשויים לעדכן מדיניות זו לפי הצורך כדי לעמוד בתקנות רלוונטיות ולשקף פרקטיקות חדשות. בכל פעם שאנו מבצעים שינוי משמעותי במדיניות שלנו, נעדכן את התאריך בראש דף זה.",
     "contactTitle": "9. צרו קשר",
-    "contactDescription": "אם יש לכם שאלות, הערות או תלונות בנוגע למדיניות הפרטיות שלנו, אנא צרו עמנו קשר ואנו נעשה כמיטב יכולתנו לטפל בתלונתכם בהקדם האפשרי.",
+    "contactDescription": "אם יש לכם שאלות, הערות או תלונות לגבי מדיניות הפרטיות שלנו, אנא צרו איתנו קשר ונשתדל לטפל בתלונתכם בהקדם האפשרי.",
     "websiteUrl": "https://www.nevercap.ai/",
     "neverCap": "NeverCap"
   },
   TermsOfUse: {
     title: "תנאי",
-    titleGradient: "שֵׁרוּת",
-    subtitle: "אנא קראו בעיון את התנאים הללו לפני השימוש בשירותינו",
+    titleGradient: "שירות",
+    subtitle: "אנא קרא את התנאים הללו בעיון לפני השימוש בשירותים שלנו",
     "lastUpdated": "עודכן לאחרונה: {date}",
-    "lastUpdatedDate": "21 ביולי, 2025",
+    "lastUpdatedDate": "21 ביולי 2025",
     "termsOfServiceTitle": "תנאי השירות",
-    "thankYou": "תודה שהשתמשתם במוצרים שלנו!",
-    "companyDefinition": 'כאשר אנו אומרים "חברה", "אנחנו", "שלנו" או "אותנו" במסמך זה, אנו מתייחסים ל- NeverCap.',
-    "servicesDefinition": 'כשאנו אומרים "שירותים", אנו מתכוונים לכל מוצר שנוצר ומתוחזק על ידי NeverCap, בין אם מסופק בדפדפן אינטרנט, אפליקציית שולחן עבודה, אפליקציית מובייל או פורמט אחר.',
-    "termsUpdate": "אנו עשויים לעדכן את תנאי השירות הללו בעתיד. בדרך כלל שינויים אלה נועדו להבהיר חלק מהתנאים הללו על ידי קישור למדיניות רלוונטית מורחבת. בכל פעם שנבצע שינוי משמעותי במדיניות שלנו, נרענן את התאריך בראש עמוד זה וננקוט בכל צעד מתאים אחר כדי להודיע לבעלי החשבונות.",
+    "thankYou": "תודה שהשתמשת במוצרים שלנו!",
+    "companyDefinition": 'כאשר אנו מתייחסים ל-"חברה", "אנחנו", "שלנו" או "אותנו" במסמך זה, הכוונה היא ל-NeverCap.',
+    "servicesDefinition": 'כאשר אנו אומרים "שירותים", הכוונה היא לכל מוצר שנוצר ומתוחזק על ידי NeverCap, בין אם הוא מסופק בדפדפן אינטרנט, יישום שולחני, יישום נייד או בפורמט אחר.',
+    "termsUpdate": "אנו עשויים לעדכן את תנאי השירות בעתיד. בדרך כלל השינויים נועדו להבהיר חלק מהתנאים על ידי קישור למדיניות מורחבת. בכל פעם שנבצע שינוי משמעותי במדיניות שלנו, נעדכן את התאריך בראש הדף וניקח את הצעדים המתאימים להודיע למחזיקי החשבונות.",
     "acceptanceTitle": "1. קבלת ההסכם",
-    "acceptanceDescription1": "על ידי שימוש בשירותים שלנו, הנך מצהיר על קבלתך להסכם זה, אשר הופך בכך לחוזה מחייב בינך לבין NeverCap. הנך מצהיר כי הנך רשאי מבחינה חוקית לקבל תנאים אלה, ומאשר כי הגעת לגיל החוקי לכריתת חוזה מחייב. קבלתה של NeverCap מותנית במפורש בהסכמתך לכל התנאים וההגבלות של הסכם זה.",
-    "eligibilityRequirement": 'השירותים אינם מיועדים ואין להשתמש בהם על ידי אדם מתחת לגיל 18. על ידי שימוש בשירותים, הנך מצהיר ומתחייב כי אתה עומד בדרישות הזכאות הנ"ל.',
-    "userResponsibility": 'המונחים "אתה", "שלך", "עצמך" יכללו גם את עובדיך, סוכניך, נציגי העסקים שלך וכל אדם אחר שאתה מספק לו גישה לשירותים דרך חשבונך (כהגדרתו להלן). אתה אחראי לוודא שכל האנשים שניגשים לשירותים דרך חשבונך מודעים לתנאים אלה ומצייתים להם.',
-    "termsRevision": "NeverCap שומרת לעצמה את הזכות לשנות ולעדכן תנאים אלה מעת לעת על פי שיקול דעתה הבלעדי. כל השינויים נכנסים לתוקף באופן מיידי עם פרסומם. המשך השימוש שלך בשירותים לאחר פרסום התנאים המתוקנים פירושו שאתה מקבל ומסכים לשינויים. עליך לבדוק דף זה מעת לעת כדי להיות מודע לכל שינוי, שכן הם מחייבים אותך.",
-    "servicesTitle": "2. שירותי NeverCap",
-    "servicesDescription1": "השירותים שלנו מאפשרים למשתמשים להפוך שיחות קוליות לטקסט מתועתק שניתן לחפש, לתרגם ולשתף עם אחרים.",
-    "servicesOptions": 'באפשרותך לבחור האם להשתמש בגרסה החינמית של השירותים ("שירותים בחינם") או בגרסה בתשלום מבוססת מנוי של השירותים, עבורה ייתכן שתידרש לשלם עמלות ("השירותים בתשלום").',
-    "servicesAccess": "אנו ננגיש לך את השירותים. אתה אחראי לבצע את כל הסידורים הנדרשים כדי שתהיה לך גישה לשירותים.",
+    "acceptanceDescription1": "בשימוש בשירותים שלנו, אתה מצהיר כי אתה מקבל את ההסכם הזה, אשר הופך לחוזה מחייב בינך לבין NeverCap. אתה מצהיר כי אתה כשיר משפטית לקבל תנאים אלו, ומאשר כי אתה בגיל חוקי לחתום על חוזה מחייב. קבלת NeverCap מותנית בהסכמך לכל התנאים וההגבלות בהסכם זה.",
+    "eligibilityRequirement": 'השירותים אינם מיועדים ואין להשתמש בהם על ידי anyone מתחת לגיל 18. בשימוש בשירותים, אתה מצהיר ומתחייב כי אתה עומד בדרישות הזכאות הנ"ל.',
+    "userResponsibility": 'המונחים "אתה", "שלך", "עצמך" כוללים גם את העובדים, הסוכנים, הנציגים העסקיים וכל אדם אחר שאתה מספק לו גישה לשירותים דרך החשבון שלך (כפי שמוגדר להלן). אתה אחראי לוודא שכל אדם שמקבל גישה לשירותים דרך החשבון שלך מודע לתנאים אלו ומקיים אותם.',
+    "termsRevision": "ל-NeverCap שמורה הזכות לעדכן ולשנות תנאים אלו מעת לעת לפי שיקול דעתה הבלעדי. כל השינויים ייכנסו לתוקף מייד עם פרסומם. המשך השימוש בשירותים לאחר פרסום התנאים המעודכנים משמעו כי אתה מקבל ומסכים לשינויים. מצופה ממך לבדוק דף זה מעת לעת כדי להיות מודע לכל שינוי, שכן הם מחייבים אותך.",
+    "servicesTitle": "2. השירותים של NeverCap",
+    "servicesDescription1": "השירותים שלנו מאפשרים למשתמשים להמיר שיחות קוליות לטקסט מוקלד שניתן לחפש, לתרגם ולשתף עם אחרים.",
+    "servicesOptions": 'אתה יכול לבחור האם להשתמש בגרסה החינמית של השירותים ("שירותים חינמיים") או בגרסה בתשלום המבוססת על מנוי, שעבורה ייתכן שתצטרך לשלם ("שירותים בתשלום").',
+    "servicesAccess": "אנו נספק לך את השירותים. אתה אחראי להכין את כל הסידורים הנדרשים כדי שתהיה לך גישה לשירותים.",
     "accountTermsTitle": "3. תנאי חשבון",
-    "accountSecurity": "אתה אחראי לשמירה על אבטחת חשבונך. החברה לא יכולה ולא תהיה אחראית לכל אובדן או נזק כתוצאה מאי עמידה בחובת אבטחה זו.",
-    "lawfulUse": "אינך רשאי להשתמש בשירותים לכל מטרה בלתי חוקית, לא אתית או בלתי מוסרית.",
-    "contentResponsibility": "אתה אחראי לכל התוכן המתפרסם והפעילות המתרחשת במסגרת חשבונך. זה כולל תוכן המתפרסם על ידי אחרים אשר: (א) יש להם גישה לפרטי ההתחברות שלך; או (ב) יש להם פרטי התחברות משלהם בחשבונך.",
-    "humanRequirement": 'עליך להיות בן אדם. חשבונות הרשומים על ידי "בוטים" או שיטות אוטומטיות אחרות אינם מותרים.',
-    "paymentTitle": "4. תשלום, החזרים ושינויים בתוכנית",
-    "freeTrial": "עבור שירותים בתשלום המציעים תקופת ניסיון בחינם, אנו מסבירים את משך תקופת הניסיון בעת ההרשמה. לאחר תקופת הניסיון, עליך לשלם מראש כדי להמשיך להשתמש בשירות. אם לא תשלם, שירותים אלה יסתיימו.",
-    "upgradePolicy": "אם אתם משדרגים מתוכנית חינמית לתוכנית בתשלום, נחייב את כרטיס האשראי שלכם באופן מיידי ומחזור החיוב שלכם יתחיל ביום השדרוג.",
-    "taxes": "כל העמלות אינן כוללות את כל המסים, ההיטלים או המכסים המוטלים על ידי רשויות המס. במידת הצורך, נגבה את המסים הללו מטעם רשות המס ונעביר אותם לרשויות המס. אחרת, אתה אחראי לתשלום כל המסים, ההיטלים או המכסים.",
-    "refunds": "כל הרכישות אינן ניתנות להחזר כספי. באפשרותך לבטל כל שירות בתשלום בכל עת על ידי כניסה לחשבונך. עבור מנויים בתשלום, הביטול ייכנס לתוקף בסוף התקופה הנוכחית בתשלום, אלא אם כן צוין אחרת.",
-    "cancellationTitle": "5. ביטול וסיום עסקה",
-    "cancellationPolicy": "אם תבטל את השירות לפני תום תקופת התשלום, הביטול ייכנס לתוקף באופן מיידי, ולא תחויב שוב. איננו מבצעים חישוב יחסי אוטומטי של זמן שלא נוצל במחזור החיוב האחרון.",
-    "terminationRights": "יש לנו את הזכות להשעות או לסגור את חשבונך ולסרב לכל שימוש נוכחי או עתידי בשירותים שלנו מכל סיבה ובכל עת. השעיה פירושה שלא תוכל לגשת לחשבון או לכל תוכן בחשבון. סגירה תביא בנוסף למחיקת חשבונך או לגישתך לחשבונך, ולחילוט וויתור על כל התוכן בחשבונך. אנו שומרים לעצמנו את הזכות לסרב את השימוש בשירותים לכל אחד מכל סיבה ובכל עת. סעיף זה קיים משום שמבחינה סטטיסטית, מתוך מאות אלפי חשבונות בשירותים שלנו, יש לפחות אחד שעושה משהו מרושע.",
-    "abusePolicy": "התעללות מילולית, פיזית, בכתב או אחרת (לרבות איומי התעללות או גמול) של עובד או נושא משרה בחברה עלולה לגרום לסגירת חשבון באופן מיידי.",
+    "accountSecurity": "אתה אחראי לשמירת האבטחה של החשבון שלך. החברה לא תהיה אחראית לכל נזק או הפסד הנובע מאי-עמידה בחובה זו.",
+    "lawfulUse": "אסור להשתמש בשירותים לכל מטרה בלתי חוקית, לא אתית או לא מוסרית.",
+    "contentResponsibility": "אתה אחראי לכל התוכן והפעילות שמתבצעים תחת החשבון שלך. זה כולל תוכן שפורסם על ידי אחרים שיש להם: (א) גישה לפרטי הכניסה שלך; או (ב) חשבונות משלהם תחת החשבון שלך.",
+    "humanRequirement": 'אתה חייב להיות אדם. אסור לרשום חשבונות באמצעות "בוטים" או שיטות אוטומטיות אחרות.',
+    "paymentTitle": "4. תשלום, החזרים ושינויי תוכנית",
+    "freeTrial": "עבור שירותים בתשלום המציעים תקופת ניסיון חינם, אנו מסבירים את אורך תקופת הניסיון בעת ההרשמה. לאחר תקופת הניסיון, יהיה עליך לשלם מראש כדי להמשיך להשתמש בשירות. אם לא תשלם, שירותים אלו ייפסקו.",
+    "upgradePolicy": "אם אתה משדרג מתוכנית חינמית לתוכנית בתשלום, נחייב את הכרטיס שלך מיום השדרוג ומחזור החיוב יתחיל מאותו יום.",
+    "taxes": "כל העמלות אינן כוללות מסים, היטלים או חובות המוטלים על ידי רשויות המס. במקרים הנדרשים, נגבה מסים אלו בשם רשויות המס ונעביר אותם לרשויות המס. אחרת, אתה אחראי לתשלום כל המסים, ההיטלים או החובות.",
+    "refunds": "כל הרכישות אינן ניתנות להחזר. אתה יכול לבטל כל שירות בתשלום בכל עת על ידי כניסה לחשבון שלך. עבור מנויים בתשלום, הביטול ייכנס לתוקף בסוף תקופת החיוב הנוכחית, אלא אם צוין אחרת.",
+    "cancellationTitle": "5. ביטול וסיום",
+    "cancellationPolicy": "אם תבטל את השירות לפני תום תקופת החיוב, הביטול ייכנס לתוקף מיידי ולא תחויב שוב. אנו לא מחשבים אוטומטית זמן שאינו מנוצל במחזור החיוב האחרון.",
+    "terminationRights": "אנו שומרים לעצמנו את הזכות להשעות או לסיים את החשבון שלך ולסרב לכל שימוש נוכחי או עתידי בשירותים שלנו מכל סיבה ובכל עת. השעיה משמעה שלא תוכל לגשת לחשבון או לכל תוכן בחשבון. סיום יגרום למחיקת החשבון או הגישה לחשבון שלך, ואובדן כל התוכן בחשבון. אנו גם שומרים את הזכות לסרב לשימוש בשירותים לכל אדם מכל סיבה ובכל עת. סעיף זה קיים כי סטטיסטית, מתוך מאות אלפי חשבונות בשירותים שלנו, יש לפחות אחד שעושה משהו זדוני.",
+    "abusePolicy": "התעללות מילולית, פיזית, כתובה או אחרת (כולל איומי התעללות או נקמה) בעובד או בהנהלה של החברה עלולה לגרום לסיום מיידי של החשבון.",
     "submissionsTitle": "6. הגשות",
-    "submissionsDescription": 'הנך מאשר ומסכים כי כל שאלה, הערה, הצעה, רעיון, משוב או מידע אחר בנוגע לאתר ("הגשות") שתספק לנו אינם סודיים ויהפכו לרכושנו הבלעדי. אנו הבעלים של זכויות בלעדיות, לרבות כל זכויות הקניין הרוחני, ונהיה זכאים לשימוש והפצה בלתי מוגבלים של הגשות אלה לכל מטרה חוקית, מסחרית או אחרת, ללא הכרה או פיצוי כלפיך. בזאת הנך מוותר על כל הזכויות המוסריות לכל הגשות כאמור, ואתה מתחייב בזאת שכל הגשות כאמור הן מקוריות שלך או שיש לך את הזכות להגיש הגשות כאמור. הנך מסכים שלא תהיה כל עילה נגדנו בגין כל הפרה או שימוש לרעה לכאורה או בפועל של כל זכות קניינית בהגשות שלך.',
-    "uptimeTitle": "7. זמן פעילות ואבטחה",
-    "serviceAvailability": 'השימוש שלך בשירותים הוא על אחריותך הבלעדית. אנו מספקים שירותים אלה "כפי שהם" ו"כפי שהם זמינים". איננו מציעים הסכמי רמת שירות עבור רוב השירותים שלנו, אך אנו מתייחסים ברצינות לזמן הפעילות של היישומים שלנו.',
-    "throttlingPolicy": "אנו שומרים לעצמנו את הזכות להגביל או להגביל זמנית את הגישה לחשבון במקרים נדירים שבהם פעילות של משתמש מאומתת כמשפיעה לרעה על היציבות והביצועים של השירות עבור משתמשים אחרים. בכל המקרים מלבד המקרים הקריטיים ביותר, ניצור עמך קשר כדי למצוא פתרון לפני נקיטת פעולה.",
-    "dataSecurity": "אנו נוקטים באמצעים רבים כדי להגן ולאבטח את הנתונים שלך באמצעות גיבויים, יתירות והצפנה. אנו אוכפים הצפנה להעברת נתונים דרך האינטרנט הציבורי.",
-    "thirdPartyVendors": "אנו משתמשים בספקי צד שלישי ובשותפי אירוח כדי לספק את החומרה, התוכנה, הרשתות, האחסון והטכנולוגיה הקשורה הנדרשים להפעלת השירותים.",
-    "siteManagementTitle": "8. ניהול אתר",
-    "siteManagementDescription": "אנו שומרים לעצמנו את הזכות, אך לא את החובה, ל: (1) לנטר את האתר בגין הפרות של תנאי שירות אלה; (2) לנקוט בצעדים משפטיים מתאימים נגד כל מי אשר, לפי שיקול דעתנו הבלעדי, מפר את החוק או את תנאי השירות הללו, לרבות, בין היתר, דיווח על משתמש כזה לרשויות אכיפת החוק; (3) לפי שיקול דעתנו הבלעדי וללא הגבלה, לסרב, להגביל את הגישה, להגביל את הזמינות של, או להשבית (במידה שהדבר אפשרי מבחינה טכנולוגית) כל אחת מהתרומות שלך או כל חלק מהן; (4) לפי שיקול דעתנו הבלעדי וללא הגבלה, הודעה או אחריות, להסיר מהאתר או להשבית בכל דרך אחרת את כל הקבצים והתכנים שהם בגודלם מופרז או מכבידים בכל דרך שהיא על המערכות שלנו; ו-(5) לנהל את האתר באופן אחר באופן שנועד להגן על זכויותינו ורכושנו ולהקל על תפקודו התקין של האתר.",
+    "submissionsDescription": 'אתה מכיר ומסכים שכל שאלה, הערה, הצעה, רעיון, משוב או מידע אחר ("הגשות") שאתה מספק לנו אינם חסויים והופכים לרכושנו הבלעדי. יהיו לנו זכויות בלעדיות, כולל כל זכויות קניין רוחני, ונוכל להשתמש ולהפיץ הגשות אלו לכל מטרה חוקית, מסחרית או אחרת, ללא הכרה או פיצוי. אתה מוותר על כל זכויות מוסריות בהגשות אלו, ומצהיר כי הגשות אלו הן מקוריות שלך או שיש לך זכות להגישן. אתה מסכים שלא תהיה לך כל תביעה נגדנו בגין הפרה או שימוש לא הולם בזכויות קניין רוחני בהגשות שלך.',
+    "uptimeTitle": "7. זמינות ואבטחה",
+    "serviceAvailability": 'השימוש בשירותים הוא על אחריותך הבלעדית. אנו מספקים שירותים אלו "כפי שהם" ו"כפי שזמינים". איננו מציעים הסכמי רמת שירות לרוב השירותים שלנו, אך אנו מתייחסים ברצינות לזמינות היישומים שלנו.',
+    "throttlingPolicy": "אנו שומרים לעצמנו את הזכות להגביל גישה לחשבון במקרים נדירים בהם פעילות המשתמש פוגעת ביציבות וביצועי השירות עבור משתמשים אחרים. בכל המקרים למעט הקריטיים ביותר, ניצור איתך קשר כדי למצוא פתרון לפני נקיטת פעולה.",
+    "dataSecurity": "אנו נוקטים בצעדים רבים להגן ולאבטח את הנתונים שלך באמצעות גיבויים, יתירות והצפנה. אנו מחייבים הצפנה להעברת נתונים באינטרנט הציבורי.",
+    "thirdPartyVendors": "אנו משתמשים בספקים צד שלישי ובשותפי אירוח כדי לספק את החומרה, התוכנה, הרשת, האחסון והטכנולוגיה הנדרשים להפעלת השירותים.",
+    "siteManagementTitle": "8. ניהול האתר",
+    "siteManagementDescription": "אנו שומרים לעצמנו את הזכות, אך לא את החובה, ל: (1) לפקח על האתר להפרות של תנאי שירות אלו; (2) לנקוט בפעולה משפטית נגד כל מי שמפר את החוק או תנאי שירות אלו, לרבות דיווח למשטרה; (3) לסרב, להגביל גישה, להגביל זמינות או להשבית (ככל שהדבר אפשרי טכנולוגית) כל תרומה שלך או חלק ממנה; (4) להסיר מהאתר או להשבית קבצים ותוכן גדולים מדי או שמעמיסים על המערכות שלנו; ו-(5) לנהל את האתר באופן שמגן על זכויותינו ומאפשר את תפקודו התקין.",
     "copyrightTitle": "9. זכויות יוצרים ובעלות על תוכן",
-    "copyrightCompliance": 'כל התוכן המתפרסם בשירותים חייב לעמוד בחוק זכויות היוצרים של ארה"ב.',
-    "ipRights": "איננו טוענים לזכויות קניין רוחני על החומר שאתה מספק לשירותים. כל החומרים המועלים נשארים שלך.",
-    "contentModeration": "איננו מבצעים סינון מוקדם של תוכן, אך שומרים לעצמנו את הזכות (אך לא את החובה) לפי שיקול דעתנו הבלעדי לסרב או להסיר כל תוכן הזמין דרך השירות.",
-    "trademarkProtection": 'השמות, המראה והתחושה של השירותים הינם זכויות יוצרים © לחברה. כל הזכויות שמורות. אינך רשאי לשכפל, להעתיק או לעשות שימוש חוזר בכל חלק מ-HTML, CSS, JavaScript או אלמנטים עיצוביים חזותיים ללא אישור מפורש בכתב מהחברה. עליך לבקש אישור להשתמש בלוגו של החברה או בכל לוגו של השירות למטרות קידום מכירות. אנא שלח לנו בקשות לשימוש בלוגואים בדוא"ל. אנו שומרים לעצמנו את הזכות לבטל אישור זה אם תפר את תנאי השירות הללו.',
-    "prohibitedExploitation": "הנך מסכים שלא לשכפל, לשכפל, להעתיק, למכור, למכור מחדש או לנצל כל חלק מהשירותים, שימוש בשירותים או גישה לשירותים ללא אישור מפורש בכתב מאת החברה.",
-    "impersonationProhibition": "אסור לך לשנות אתר אינטרנט אחר באופן שירמוז באופן שקרי שהוא קשור לשירותים או לחברה.",
-    "dmcaPolicy": "אנו מכבדים את זכויות הקניין הרוחני של אחרים. אם אתם סבורים כי חומר כלשהו הזמין באתר או דרכו מפר זכויות יוצרים שבבעלותכם או בשליטתכם, אנא צרו עמנו קשר באופן מיידי. עותק של ההודעה שלכם יישלח לאדם שפרסם או אחסן את החומר הנדון בהודעה. שימו לב כי בהתאם לחוק החל, אתם עשויים להיות אחראים לפיצויים אם תמסרו מצגי שווא מהותיים בהודעה. לכן, אם אינכם בטוחים שחומר הנמצא באתר או שאליו מקושר האתר מפר את זכויות היוצרים שלכם, עליכם לשקול תחילה לפנות לעורך דין.",
-    "prohibitedActivitiesTitle": "10. פעילויות אסורות",
-    "generalProhibition": "אינך רשאי לגשת לאתר או להשתמש בו לכל מטרה אחרת מלבד זו שלשמה אנו מעמידים את האתר לרשותך. אין להשתמש באתר בקשר למאמצים מסחריים כלשהם מלבד אלו שאושרו או אושרו על ידינו במפורש.",
-    "userObligations": "כמשתמש באתר, הנך מסכים שלא:",
-    "dataScraping": "לאחזר באופן שיטתי נתונים או תוכן אחר מהאתר כדי ליצור או לקמפל, באופן ישיר או עקיף, אוסף, קומפילציה, מסד נתונים או ספרייה ללא אישור בכתב מאיתנו.",
-    "fraud": "להערים, להונות או להטעות אותנו ואת משתמשים אחרים, במיוחד בכל ניסיון ללמוד מידע רגיש על החשבון כגון סיסמאות משתמשים.",
-    "securityInterference": "לעקוף, להשבית או להפריע בדרך אחרת לתכונות הקשורות לאבטחה של האתר, לרבות תכונות המונעות או מגבילות את השימוש או ההעתקה של כל תוכן או או אוכפות מגבלות על השימוש באתר ו/או בתוכן הכלול בו.",
-    "defamation": "לזלזל, להכתים או לפגוע בכל דרך אחרת, לדעתנו, בנו ו/או באתר.",
-    "harassment": "להשתמש בכל מידע שהתקבל מהאתר על מנת להטריד, להתעלל או לפגוע באדם אחר.",
-    "supportAbuse": "לעשות שימוש לא ראוי בשירותי התמיכה שלנו או להגיש דיווחים כוזבים על שימוש לרעה או התנהגות בלתי הולמת.",
-    "legalCompliance": "להשתמש באתר באופן שאינו עולה בקנה אחד עם כל חוק או תקנות רלוונטיים.",
-    "framingProhibition": "לעסוק במסגור או קישור בלתי מורשה לאתר.",
-    "malware": "להעלות או לשדר (או לנסות להעלות או לשדר) וירוסים, סוסים טרויאניים או חומר אחר, לרבות שימוש מופרז באותיות גדולות וספאם (פרסום רציף של טקסט חוזר), אשר מפריעים לשימוש ולהנאה רצופים של צד כלשהו מהאתר או משנים, פוגעים, משבשים, משנה או מפריע לשימוש, לתכונות, לתפקודים, לתפעול או לתחזוקה של האתר.",
-    "automation": "לעסוק בכל שימוש אוטומטי במערכת, כגון שימוש בסקריפטים לשליחת תגובות או הודעות, או שימוש בכלי כריית נתונים, רובוטים או כלי איסוף וחילוץ נתונים דומים.",
-    "copyrightRemoval": "מחק את הודעת זכויות היוצרים או זכויות קניין אחרות מכל תוכן.",
-    "impersonation": "ניסיון להתחזות למשתמש או אדם אחר או להשתמש בשם המשתמש של משתמש אחר.",
-    "spyware": 'להעלות או לשדר (או לנסות להעלות או לשדר) כל חומר הפועל כמנגנון איסוף או שידור מידע פסיבי או אקטיבי, לרבות, בין היתר, פורמטי חילופי גרפיקה שקופים ("gifs"), פיקסלים בגודל 1×1, באגים ברשת, קובצי Cookie או התקנים דומים אחרים (המכונים לעיתים "תוכנות ריגול" או "מנגנוני איסוף פסיביים" או "pcms").',
+    "copyrightCompliance": 'כל התוכן שפורסם בשירותים חייב לעמוד בחוקי זכויות היוצרים של ארה"ב.',
+    "ipRights": "אנו לא תובעים זכויות קניין רוחני על החומר שאתה מספק לשירותים. כל החומרים שאתה מעלה נשארים בבעלותך.",
+    "contentModeration": "אנו לא סורקים תוכן מראש, אך שומרים לעצמנו את הזכות (אך לא את החובה) לסרב או להסיר כל תוכן הזמין דרך השירות.",
+    "trademarkProtection": 'השמות, המראה והתחושה של השירותים מוגנים בזכויות יוצרים© של החברה. כל הזכויות שמורות. אסור לשכפל, להעתיק או לעשות שימוש חוזר בכל חלק מה-HTML, CSS, JavaScript או אלמנטים עיצוביים ללא אישור בכתב מהחברה. עליך לבקש אישור לשימוש בלוגו של החברה או לוגואים של השירותים למטרות פרסום. נא לשלוח לנו בקשות לשימוש בלוגואים בדוא"ל. אנו שומרים את הזכות לבטל אישור זה אם תפר תנאי שירות אלו.',
+    "prohibitedExploitation": "אתה מסכים לא לשכפל, להעתיק, למכור, למכור מחדש או לנצל כל חלק מהשירותים, השימוש בהם או הגישה אליהם ללא אישור בכתב מהחברה.",
+    "impersonationProhibition": "אסור לשנות אתר אחר כדי לרמוז בצורה מטעה שיש לו קשר לשירותים או לחברה.",
+    "dmcaPolicy": "אנו מכבדים את זכויות הקניין הרוחני של אחרים. אם אתה מאמין שחומר כלשהו באתר מפר זכויות יוצרים שלך, אנא צור איתנו קשר מיידי. עותק מההודעה שלך יישלח לאדם שפרסם או איחסן את החומר. שים לב כי לפי החוק, אתה עלול להיות אחראי לנזקים אם ההודעה שלך מכילה הצהרות כוזבות. אם אינך בטוח שהחומר מפר זכויות יוצרים, שקול להתייעץ עם עורך דין.",
+    "prohibitedActivitiesTitle": "10. פעולות אסורות",
+    "generalProhibition": "אין לך גישה או שימוש באתר למטרה אחרת מלבד זו שלשמה אנו מספקים את האתר. האתר לא ישמש בקשר לכל יוזמה מסחרית למעט אלו שאושרו או אושרו על ידינו במפורש.",
+    "userObligations": "כמשתמש באתר, אתה מסכים שלא:",
+    "dataScraping": "לאחזר נתונים או תוכן אחר מהאתר בצורה שיטתית כדי ליצור או להרכיב, באופן ישיר או עקיף, אוסף, הרכבה, מסד נתונים או מדריך ללא אישור בכתב מאיתנו.",
+    "fraud": "לרמות, להונות או להטעות אותנו ומשתמשים אחרים, במיוחד בכל ניסיון ללמוד מידע חשבון רגיש כמו סיסמאות משתמש.",
+    "securityInterference": "לעקוף, להשבית או להפריע בדרך אחרת לתכונות אבטחה של האתר, כולל תכונות המונעות או מגבילות את השימוש או ההעתקה של כל תוכן או אוכפות מגבלות על השימוש באתר ו/או בתוכן הכלול בו.",
+    "defamation": "להשפיל, להכתים או לפגוע בדרך אחרת, לדעתנו, בנו ו/או באתר.",
+    "harassment": "להשתמש בכל מידע שהתקבל מהאתר כדי להטריד, להתעלל או לפגוע באדם אחר.",
+    "supportAbuse": "לעשות שימוש לא הולם בשירותי התמיכה שלנו או להגיש דיווחים כוזבים על התעללות או התנהגות לא הולמת.",
+    "legalCompliance": "להשתמש באתר באופן שאינו עולה בקנה אחד עם כל חוק או תקנה חלים.",
+    "framingProhibition": "לעסוק במסגור או קישור לא מורשה לאתר.",
+    "malware": "להעלות או להעביר (או לנסות להעלות או להעביר) וירוסים, סוסים טרויאניים או חומר אחר, כולל שימוש מוגזם באותיות גדולות וספאם (פרסום טקסט חוזר ברציפות), שמפריע לשימוש וליהנות מהאתר ללא הפרעה של כל צד או משנה, פוגע, מפריע, משנה או מפריע לשימוש, תכונות, פונקציות, פעולה או תחזוקה של האתר.",
+    "automation": "לעסוק בכל שימוש אוטומטי של המערכת, כגון שימוש בסקריפטים לשליחת תגובות או הודעות, או שימוש בכל כלי כריית נתונים, רובוטים או כלים דומים לאיסוף וחילוץ נתונים.",
+    "copyrightRemoval": "למחוק את ההודעה על זכויות יוצרים או זכויות קניין רוחני אחרות מכל תוכן.",
+    "impersonation": "לנסות להתחזות למשתמש או אדם אחר או להשתמש בשם המשתמש של משתמש אחר.",
+    "spyware": 'להעלות או להעביר (או לנסות להעלות או להעביר) כל חומר הפועל כמנגנון איסוף או שידור מידע פסיבי או פעיל, כולל אך לא限于, פורמטים ברורים להחלפת גרפיקה (\"gifs\"), פיקסלים 1×1, באגי רשת, עוגיות או מכשירים דומים אחרים (המכונים לעתים \"רוגלות\" או \"מנגנוני איסוף פסיבי\" או \"pcms\").',
     "disruption": "להפריע, לשבש או ליצור עומס בלתי סביר על האתר או על הרשתות או השירותים המחוברים לאתר.",
-    "employeeHarassment": "להטריד, להרגיז, להפחיד או לאיים על כל אחד מעובדינו או סוכנינו המעורבים במתן כל חלק מהאתר לך.",
-    "accessCircumvention": "לנסות לעקוף כל אמצעי של האתר שנועדו למנוע או להגביל את הגישה לאתר, או לכל חלק ממנו.",
-    "codeCopying": "להעתיק או להתאים את תוכנת האתר, לרבות אך לא רק Flash, PHP, HTML, JavaScript או קוד אחר.",
-    "reverseEngineering": "למעט כפי שמותר על פי חוק, לפענח, לפרק, להרכיב מחדש או לבצע הנדסה הפוכה של כל תוכנה המרכיבה או בכל דרך שהיא חלק מהאתר.",
-    "bots": "למעט ככל שיהיו כתוצאה משימוש רגיל במנוע חיפוש או בדפדפן אינטרנט, להשתמש, להפעיל, לפתח או להפיץ כל מערכת אוטומטית, לרבות, בין היתר, כל עכביש, רובוט, כלי רמאות, סקרייפר או קורא לא מקוון שניגשים לאתר, או שימוש או הפעלה של כל סקריפט או תוכנה אחרת לא מורשים.",
-    "buyingAgents": "השתמשו בסוכן קנייה או סוכן רכש לביצוע רכישות באתר.",
-    "unauthorizedUse": 'לעשות כל שימוש בלתי מורשה באתר, לרבות איסוף שמות משתמש ו/או כתובות דוא"ל של משתמשים באמצעים אלקטרוניים או אחרים לצורך שליחת דוא"ל לא רצוי, או יצירת חשבונות משתמש באמצעים אוטומטיים או בתואנות שווא.',
-    "competition": "להשתמש באתר כחלק מכל מאמץ להתחרות בנו או להשתמש באתר ו/או בתוכן לכל מאמץ להפקת הכנסות או מיזם מסחרי.",
-    "advertising": "השתמש באתר כדי לפרסם או להציע למכור סחורות ושירותים.",
+    "employeeHarassment": "להטריד, להציק, לאיים או לאיים על כל אחד מעובדינו או סוכנינו המעורבים במתן כל חלק מהאתר לך.",
+    "accessCircumvention": "לנסות לעקוף כל אמצעי של האתר שנועד למנוע או להגביל את הגישה לאתר, או לכל חלק מהאתר.",
+    "codeCopying": "להעתיק או להתאים את התוכנה של האתר, כולל אך לא限于 Flash, PHP, HTML, JavaScript או קוד אחר.",
+    "reverseEngineering": "למעט כפי שמותר על פי החוק החל, לפענח, לפרק, להרכיב או להנדס לאחור כל תוכנה המרכיבה או מהווה חלק מהאתר בכל דרך.",
+    "bots": "למעט אם כתוצאה משימוש סטנדרטי במנוע חיפוש או בדפדפן אינטרנט, להשתמש, להפעיל, לפתח או להפיץ כל מערכת אוטומטית, כולל אך לא限于, כל עכביש, רובוט, כלי רמאות, מחטף או קורא לא מקוון הגישה לאתר, או להשתמש או להפעיל כל סקריפט לא מורשה או תוכנה אחרת.",
+    "buyingAgents": "להשתמש בסוכן קנייה או רכש כדי לבצע רכישות באתר.",
+    "unauthorizedUse": 'לעשות כל שימוש לא מורשה באתר, כולל איסוף שמות משתמש ו/או כתובות דוא"ל של משתמשים באמצעים אלקטרוניים או אחרים למטרת שליחת דוא"ל לא רצוי, או יצירת חשבונות משתמש באמצעים אוטומטיים או תחת תירוצים כוזבים.',
+    "competition": "להשתמש באתר כחלק מכל מאמץ להתחרות בנו או להשתמש באתר ו/או בתוכן לכל יוזמה מייצרת הכנסה או מיזם מסחרי.",
+    "advertising": "להשתמש באתר לפרסם או להציע למכור סחורות ושירותים.",
     "profileTransfer": "למכור או להעביר את הפרופיל שלך בדרך אחרת.",
     "featuresTitle": "11. תכונות ובאגים",
-    "featuresDescription": "אנו מעצבים את השירותים שלנו בקפידה, בהתבסס על ניסיוננו האישי ועל חוויותיהם של לקוחות שחולקים את זמנם ומשובם. עם זאת, אין דבר כזה שירות שמשמח את כולם. איננו מתחייבים שהשירותים שלנו יעמדו בדרישות או בציפיות הספציפיות שלכם.",
-    "bugsDescription": "אנו בודקים גם את כל התכונות שלנו לפני משלוחן. כמו בכל תוכנה, גם בשירותים שלנו יש באופן בלתי נמנע כמה באגים. אנו עוקבים אחר הבאגים המדווחים לנו ועובדים עליהם, במיוחד כל אלה הקשורים לאבטחה או פרטיות. לא כל הבאגים המדווחים יתוקנו ואנחנו לא מבטיחים שירותים נקיים לחלוטין משגיאות.",
+    "featuresDescription": "אנו מעצבים את השירותים שלנו בקפידה, בהתבסס על הניסיון שלנו וניסיון הלקוחות שחולקים את זמנם ומשוביהם. עם זאת, אין דבר כזה שירות שמשביע את רצון כולם. אנו לא נותנים כל ערבות שהשירותים שלנו יענו על הדרישות או הציפיות הספציפיות שלך.",
+    "bugsDescription": "אנו גם בודקים את כל התכונות שלנו לפני השקתן. כמו בכל תוכנה, לשירותים שלנו יש בהכרח כמה באגים. אנו עוקבים אחר הבאגים המדווחים לנו ועובדים עליהם, במיוחד כאלו הקשורים לאבטחה או פרטיות. לא כל הבאגים המדווחים יתוקנו ואנו לא מבטיחים שירותים נטולי שגיאות לחלוטין.",
     "correctionsTitle": "12. תיקונים",
-    "informationAccuracy": "ייתכן שיהיה מידע באתר המכיל שגיאות דפוס, אי דיוקים או השמטות, לרבות תיאורים, תמחור, זמינות ומידע מגוון אחר. אנו שומרים לעצמנו את הזכות לתקן כל שגיאה, אי דיוק או השמטה ולשנות או לעדכן את המידע באתר בכל עת, ללא הודעה מוקדמת.",
-    "siteAvailability": "איננו יכולים להבטיח שהאתר יהיה זמין בכל עת. אנו עשויים להיתקל בבעיות חומרה, תוכנה או בעיות אחרות, או שנצטרך לבצע תחזוקה הקשורה לאתר, מה שיוביל להפרעות, עיכובים או שגיאות. אנו שומרים לעצמנו את הזכות לשנות, לתקן, לעדכן, להשעות, להפסיק או לשנות בכל דרך אחרת את האתר בכל עת או מכל סיבה שהיא ללא הודעה מוקדמת אליך. הנך מסכים כי איננו נושאים באחריות כלשהי לכל אובדן, נזק או אי נוחות שייגרמו עקב חוסר היכולת שלך לגשת לאתר או להשתמש בו במהלך כל השבתה או הפסקה של האתר. שום דבר בתנאי שירות אלה לא יתפרש כמחייב אותנו לתחזק ולתמוך באתר או לספק תיקונים, עדכונים או שחרורים בקשר לכך.",
+    "informationAccuracy": "עשויה להיות מידע באתר המכיל טעויות דפוס, אי דיוקים או השמטות, כולל תיאורים, תמחור, זמינות ומידע מגוון אחר. אנו שומרים לעצמנו את הזכות לתקן כל טעויות, אי דיוקים או השמטות ולשנות או לעדכן את המידע באתר בכל עת, ללא הודעה מוקדמת.",
+    "siteAvailability": "איננו יכולים להבטיח שהאתר יהיה זמין בכל עת. אנו עשויים לחוות בעיות חומרה, תוכנה או אחרות או צורך לבצע תחזוקה הקשורה לאתר, שיגרמו להפרעות, עיכובים או שגיאות. אנו שומרים לעצמנו את הזכות לשנות, לעדכן, להשעות, להפסיק או לשנות את האתר בכל דרך אחרת בכל עת או מכל סיבה ללא הודעה לך. אתה מסכים שאין לנו כל אחריות לכל אובדן, נזק או אי נוחות הנגרמים עקב חוסר היכולת שלך לגשת או להשתמש באתר במהלך כל זמן השבתה או הפסקה של האתר. שום דבר בתנאי שירות אלה לא יפורש כמחייב אותנו לתחזק ולתמוך באתר או לספק כל תיקונים, עדכונים או גרסאות בקשר לכך.",
     "userDataTitle": "13. נתוני משתמש",
-    "userDataDescription": "אנו נשמור נתונים מסוימים שתעביר לאתר לצורך ניהול ביצועי האתר, כמו גם נתונים הקשורים לשימושך באתר. למרות שאנו מבצעים גיבויים שוטפים של נתונים, אתה האחראי הבלעדי לכל הנתונים שתעביר או הקשורים לכל פעילות שביצעת באמצעות האתר. אתה מסכים כי לא נהיה אחראים כלפיך בגין כל אובדן או פגיעה של נתונים כאלה, ואתה מוותר בזאת על כל זכות תביעה נגדנו הנובעת מכל אובדן או פגיעה של נתונים כאלה.",
+    "userDataDescription": "נשמור על נתונים מסוימים שאתה משדר לאתר למטרת ניהול ביצועי האתר, כמו גם נתונים הקשורים לשימוש שלך באתר. למרות שאנו מבצעים גיבויים שגרתיים של נתונים, אתה אחראי בלבד לכל הנתונים שאתה משדר או הקשורים לכל פעילות שביצעת באמצעות האתר. אתה מסכים שלא תהיה לנו כל אחריות כלפיך על כל אובדן או השחתה של נתונים כאלה, ובכך אתה מוותר על כל זכות תביעה נגדינו הנובעת מאובדן או השחתה כזו של נתונים.",
     "privacyPolicyTitle": "14. מדיניות פרטיות",
-    "privacyPolicyDescription": "אנו דואגים לפרטיות ואבטחת מידע. אנא עיין במדיניות הפרטיות שלנו. על ידי שימוש באתר, הנך מסכים להיות כפוף למדיניות הפרטיות שלנו, המשולבת בתנאי שירות אלה. שימו לב שהאתר מתארח בארצות הברית. אם אתה ניגש לאתר מכל אזור אחר בעולם שבו חוקים או דרישות אחרות המסדירות איסוף, שימוש או גילוי של מידע אישי השונים מהחוקים החלים בארצות הברית, אזי באמצעות המשך השימוש שלך באתר, אתה מעביר את הנתונים שלך לארצות הברית, ואתה מסכים שהנתונים שלך יועברו ויעובדו בארצות הברית.",
+    "privacyPolicyDescription": "אנו דואגים לפרטיות ואבטחת נתונים. אנא עיין במדיניות הפרטיות שלנו. בשימוש באתר, אתה מסכים להיות כפוף למדיניות הפרטיות שלנו, המשולבת בתנאי שירות אלה. שים לב שהאתר מארח בארצות הברית. אם אתה ניגש לאתר מכל אזור אחר בעולם עם חוקים או דרישות אחרים השולטים באיסוף, שימוש או גילוי של נתונים אישיים השונים מהחוקים החל בארצות הברית, אזי בהמשך השימוש שלך באתר, אתה מעביר את הנתונים שלך לארצות הברית, ואתה מסכים שהנתונים שלך יועברו ויעובדו בארצות הברית.",
     "liabilityTitle": "15. אחריות",
-    "liabilityIntroduction": "אנו מזכירים אחריות לאורך כל תנאים אלה, אך כדי לרכז את הכל בסעיף אחד:",
-    "liabilityWaiver": "הנך מבין ומסכים במפורש כי החברה לא תהיה אחראית, על פי חוק או על פי יושר, כלפיך או כלפי צד שלישי כלשהו, בגין כל נזק ישיר, עקיף, מקרי, אובדן רווחים, נזקים מיוחדים, תוצאתיים, עונשיים או נזקים לדוגמה, לרבות, אך לא רק, נזקים בגין אובדן רווחים, מוניטין, שימוש, נתונים או הפסדים בלתי מוחשיים אחרים (גם אם החברה קיבלה הודעה על האפשרות של נזקים כאלה), הנובעים מ: (1) השימוש או חוסר היכולת להשתמש בשירותים; (2) שגיאות, טעויות או אי דיוקים בתוכן ובחומרים; (3) פגיעה אישית או נזק לרכוש, מכל סוג שהוא, הנובעים מגישתך לאתר ושימושך בו; (4) עלות רכישת סחורות ושירותים חלופיים הנובעים מכל סחורה, נתונים, מידע או שירותים שנרכשו או התקבלו או הודעות שהתקבלו או עסקאות שבוצעו באמצעות השירותים או מהם; (5) כל גישה בלתי מורשית או שימוש בשרתים המאובטחים שלנו ו/או בכל מידע אישי ו/או מידע פיננסי המאוחסן בהם; (6) כל הפרעה או הפסקה של שידור אל האתר או ממנו; (7) כל באגים, וירוסים, סוסים טרויאניים או דברים דומים אשר עשויים להיות מועברים לאתר או דרכו על ידי צד שלישי כלשהו, ו/או; (8) כל שגיאה או השמטה בכל תוכן וחומר או כל אובדן או נזק מכל סוג שהוא שנגרם כתוצאה משימוש בכל תוכן שפורסם, מועבר או זמין בדרך אחרת דרך האתר; (9) הצהרות או התנהגות של צד שלישי כלשהו בשירות; (10) או כל עניין אחר הקשור לתנאי שירות אלה או לשירותים, בין אם כהפרת חוזה, נזיקין (לרבות רשלנות אקטיבית או פסיבית), או כל תיאוריה אחרת של אחריות.",
+    "liabilityIntroduction": "אנו מזכירים אחריות לאורך כל התנאים הללו, אך כדי לסכם הכל בקטע אחד:",
+    "liabilityWaiver": "אתה מבין ומסכים במפורש שהחברה לא תהיה אחראית, בחוק או בצדק, כלפיך או כלפי כל צד שלישי לכל נזק ישיר, עקיף, מקרי, רווחים אבודים, מיוחד, תוצאתי, עונשי או דוגמתי, כולל אך לא限于, נזקים בגין אובדן רווחים, מוניטין, שימוש, נתונים או הפסדים בלתי מוחשיים אחרים (גם אם החברה יידעה על האפשרות לנזקים כאלה), הנובעים מ: (1) השימוש או חוסר היכולת להשתמש בשירותים; (2) שגיאות, טעויות או אי דיוקים בתוכן וחומרים; (3) פציעה אישית או נזק לרכוש, מכל סוג שהוא, הנובעים מהגישה והשימוש שלך באתר; (4) עלות הרכש של סחורות ושירותים חלופיים הנובעים מכל סחורות, נתונים, מידע או שירותים שנרכשו או התקבלו או הודעות שהתקבלו או עסקאות שנערכו באמצעות או מהשירותים; (5) כל גישה לא מורשית או שימוש בשרתים המאובטחים שלנו ו/או כל וכל המידע האישי ו/או הפיננסי המאוחסן בהם; (6) כל הפרעה או הפסקה של שידור אל או מהאתר; (7) כל באגים, וירוסים, סוסים טרויאניים או דומים העשויים להיות מועברים אל או דרך האתר על ידי כל צד שלישי, ו/או; (8) כל שגיאות או השמטות בכל תוכן וחומרים או לכל אובדן או נזק מכל סוג שנגרם כתוצאה מהשימוש בכל תוכן שפורסם, הועבר או הופך זמין אחרת דרך האתר; (9) הצהרות או התנהגות של כל צד שלישי בשירות; (10) או כל עניין אחר הקשור לתנאי שירות אלה או לשירותים, בין כהפרת חוזה, עוולה (כולל רשלנות פעילה או פסיבית), או כל תיאוריה אחרת של אחריות.",
     "miscellaneousTitle": "16. שונות",
-    "miscellaneousDescription": "תנאי שירות אלה וכל מדיניות או כללי הפעלה שפורסמו על ידינו באתר או ביחס לאתר מהווים את ההסכם וההבנה המלאים בינך לבינינו. אי-מימוש או אכיפה של כל זכות או הוראה מתנאי שירות אלה לא יהווה ויתור על זכות או הוראה כאמור. תנאי שירות אלה פועלים במידה המלאה ביותר המותרת על פי חוק. אנו רשאים להמחות את כל זכויותינו וחובותינו לאחרים בכל עת. לא נהיה אחראים לכל אובדן, נזק, עיכוב או אי-פעולה שנגרמו מכל סיבה שאינה בשליטתנו הסבירה. אם הוראה כלשהי או חלק מהוראה מתנאי שירות אלה ייקבע כבלתי חוקית, בטל או בלתי ניתנת לאכיפה, הוראה זו או חלק מהוראה ייחשבו כניפרדים מתנאי שירות אלה ואינם משפיעים על תוקפן ואכיפתם של כל הוראה שנותרה. לא נוצרו יחסי מיזם משותף, שותפות, העסקה או סוכנות בינך לבינינו כתוצאה מתנאי שירות אלה או משימוש באתר. הנך מסכים כי תנאי שירות אלה לא יתפרשו כנגדנו מכוח ניסוחם. בזאת הנך מוותר על כל הגנה שעשויה להיות לך המבוססת על הטופס האלקטרוני של תנאי שירות אלה ועל היעדר חתימה מצד הצדדים לתנאי שירות אלה.",
-    "contactTitle": "17. צרו קשר",
-    "contactDescription": "אם יש לך שאלה בנוגע לתנאי השירות, אנא צור איתנו קשר.",
+    "miscellaneousDescription": "תנאי שירות אלה וכל מדיניות או כללי הפעלה שפרסמנו באתר או ביחס לאתר מהווים את ההסכם וההבנה המלאים בינך לבינינו. אי מימוש או אכיפה של כל זכות או הוראה מתנאי שירות אלה לא יפעלו כהתחייבות לאותה זכות או הוראה. תנאי שירות אלה פועלים בהיקף המירבי המותר על פי החוק. אנו רשאים להעביר כל או כל הזכויות והחובות שלנו לאחרים בכל עת. לא נהיה אחראים לכל אובדן, נזק, עיכוב או כשל לפעול הנגרם מסיבה כלשהי שמעבר לשליטתנו הסבירה. אם הוראה כלשהי או חלק מהוראה מתנאי שירות אלה נקבע כבלתי חוקי, בטל או בלתי ניתן לאכיפה, הוראה או חלק זה ייחשב מנותק מתנאי שירות אלה ולא ישפיע על התוקף והאכיפות של כל ההוראות הנותרות. אין כל שותפות, יחסי עבודה או יחסי סוכנות הנוצרים בינך לבינינו כתוצאה מתנאי שירות אלה או השימוש באתר. אתה מסכים שתנאי שירות אלה לא יפורשו לרעתנו בשל העובדה שניסחנו אותם. בכך אתה מוותר על כל הגנות שיש לך המבוססות על הצורה האלקטרונית של תנאי שירות אלה וחוסר החתימה של הצדדים לביצוע תנאי שירות אלה.",
+    "contactTitle": "17. צור קשר",
+    "contactDescription": "אם יש לך שאלה לגבי כל אחד מתנאי השירות, אנא צור איתנו קשר.",
     "neverCap": "NeverCap",
-    "site": "אֲתַר",
+    "site": "אתר",
     "services": "שירותים"
   }
 };

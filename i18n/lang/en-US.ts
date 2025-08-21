@@ -1798,7 +1798,7 @@ let message = {
         }
       },
       solution: {
-        title: ``,
+        title: `1`,
         titleHighlight: `Best Interview Transcription Software`,
         titleSuffix: `for Journalists`,
         subtitle: `Real advantages that matter when deadlines are tight and accuracy is everything`,
@@ -1921,7 +1921,7 @@ let message = {
         badge: `For Content Creators`,
         title: `Transcribe YouTube Videos,`,
         titleHighlight: `Limitlessly`,
-        titleSuffix: ``,
+        titleSuffix: `1`,
         subtitle: `Whether you need to transcribe a YouTube video, transcribe a TikTok video for repurposing, or figure out how to transcribe a Facebook video to text, our platform handles it all seamlessly. Generate subtitles in 100+ languages with no monthly limits – just pure creative freedom.`,
         ctaPrimary: `Start Unlimited Captioning →`,
         ctaSecondary: `See How It Works`,

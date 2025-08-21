@@ -228,7 +228,7 @@ let message = {
       addMore: "さらに追加",
       language: "メディア言語",
       failed: "失敗",
-      tooLarge: "ファイルが制限を超えています（5G）。",
+      tooLarge: "ファイルが制限を超えています（5GB）。",
       linkUpload: "アップロード中",
       fileFormat: "ファイル形式が許可されていません",
       localFiles: "ローカルファイル",
@@ -1192,8 +1192,8 @@ let message = {
     contactUsContent2: "。"
   },
   HeadNavbar: {
-    Features: "特徴",
-    UnlimitedTranscription: "無制限の転写",
+    Features: "機能",
+    UnlimitedTranscription: "無制限文字起こし",
     BulkUpload: "一括アップロード",
     Accuracy: "96%の精度",
     Pricing: "価格",
@@ -1207,14 +1207,14 @@ let message = {
     Educators: "教育者",
     Resources: "リソース",
     YouTubetoMP4: "YouTubeからMP4へ",
-    StartFreeTrial: "無料でお試しください"
+    StartFreeTrial: "無料で試す"
   },
   Footer: {
-    des: "世界初の、真に無制限のAI文字起こしサービス。制限も制限もなく、創造の自由だけを。",
-    Features: "特徴",
+    des: "世界初の真に無制限なAI文字起こしサービス。上限なし、制限なし、ただ創造の自由を。",
+    Features: "機能",
     UseCases: "ユースケース",
     Company: "会社",
-    featureMenus: ["無制限の転写", "一括アップロード", "96%の精度"],
+    featureMenus: ["無制限文字起こし", "一括アップロード", "96%の精度"],
     useCaseMenus: [
           "すべてのユースケース",
           "ポッドキャスター",
@@ -1225,398 +1225,398 @@ let message = {
           "教育者"
         ],
     companyMenus: [
-          "について",
-          "価格",
+          "会社概要",
+          "料金",
           "プライバシー",
-          "条項"
+          "利用規約"
         ]
   },
   Index: {
     Hero: {
-      badge: "「シュリンクフレーション」はもう終わり - 実際には無制限",
-      h1: "制限料金の支払いはもうやめましょう:",
-      gradient: "真に無制限のAI文字起こし",
-      subtitle: "当社のAIは、動画を文字起こしし、音声をテキストに変換します。月額利用制限なしで、一度に50ファイルまで処理できます。お客様のニーズに合わせて拡張可能な文字起こしサービスです。",
-      FreeTrial: "無料でお試しください - クレジットカード不要",
+      badge: "「シュリンクフレーション」にサヨナラ - 真の無制限",
+      h1: "制限にお金を払うのは終わり：",
+      gradient: "真の無制限AI文字起こし",
+      subtitle: "当社のAIは動画を文字起こしし、音声をテキストに変換。月間制限なしで50ファイルを同時処理。あなたの成長に合わせて拡張する文字起こし。",
+      FreeTrial: "無料で試す - クレジットカード不要",
       HowWorks: "仕組みを見る",
-      Unlimited: "無制限のファイルアップロード",
-      NoCap: "月間通話時間制限なし",
+      Unlimited: "無制限ファイルアップロード",
+      NoCap: "月間分数制限なし",
       Hour: "10時間ファイル対応",
-      ExploreUseCases: "ユースケースを見る"
+      ExploreUseCases: "ユースケースを探る"
     },
     Stats: {
       monthlyMinutes: "月間分数",
-      fileUploads: "ファイルのアップロード",
+      fileUploads: "ファイルアップロード",
       batchProcessing: "バッチ処理",
       maxFileLength: "最大ファイル長"
     },
     FeaturesGrid: {
       try_now: "今すぐ試す",
-      no_signup: "サインアップ不要",
-      experience_unltd: "真に無制限のトランスクリプションを体験",
-      upload_50: "一度に最大50個のファイルをアップロードできます。",
+      no_signup: "登録不要",
+      experience_unltd: "真の無制限文字起こしを体験",
+      upload_50: "ここで最大50ファイルを一度にアップロード",
       no_limits: "高度な",
-      no_surprises: "AIによる文字起こし",
-      transparency: "隠れた制限はもうありません。驚きもありません。他社では通話時間をひっそりと減らしたり、細かい文字で上限を隠したりしますが、当社は徹底した透明性を信じています。",
-      feat_unltd: "実際には無制限",
-      feat_unltd_desc: "利用規約に「フェアユースポリシー」は不要。「無制限」と偽装したストレージ容量の上限もありません。アーカイブ全体をアップロードし、あらゆる音声文字変換ニーズに合わせて文字起こしできます。本気です。",
+      no_surprises: "AI文字起こし",
+      transparency: "隠れた制限もサプライズもなし - 他社が細則で分数を減らしたり制限を隠す中、私たちは徹底的な透明性を信じています",
+      feat_unltd: "真の無制限",
+      feat_unltd_desc: "利用規約に埋もれた「公正使用ポリシー」なし。「無制限」を装ったストレージ制限なし。アーカイブ全体をアップロードし、全ての音声文字起こしニーズに対応。本気です。",
       feat_bulk: "一括アップロードの自由",
-      feat_bulk_desc: "「生涯3回のインポート」や「毎月10ファイル」といった制限にうんざりしていませんか？必要な回数だけ、一度に50ファイルをアップロードできます。バックログ処理に最適です。",
+      feat_bulk_desc: "「生涯3回インポート」や「月10ファイル」に疲れていませんか？必要なだけ何度でも50ファイルを一度にアップロード。バックログ処理に最適。",
       feat_batch: "バッチ処理",
-      feat_batch_desc: "ポッドキャストシーズン全体を一晩で処理。50件のインタビューを一度にアップロード。あなたが寝ている間にAIが作業。朝起きたら完成したトランスクリプトが届いています。",
+      feat_batch_desc: "ポッドキャストシーズン全体を一晩で処理。50のインタビューを一度にアップロード。あなたが寝ている間にAIが作業。完成した文字起こしで目覚めましょう。",
       feat_accuracy: "96%の精度",
-      feat_accuracy_desc: "業界をリードする当社の AI は、スマートな句読点、最大 20 人の話者の話者ダイアライゼーションを使用して音声を書き起こし、アクセントや技術用語を完璧に処理します。",
-      feat_langs: "100以上の言語",
-      feat_langs_desc: "100以上の言語で動画と音声を文字起こし、249以上の言語に翻訳できます。言語変更による追加料金はかかりません。グローバルコンテンツ、シンプルな価格。",
+      feat_accuracy_desc: "業界をリードするAIがスマートな句読点、最大20話者の話者分離、アクセントや専門用語を完璧に処理。",
+      feat_langs: "100+言語",
+      feat_langs_desc: "100+言語で動画・音声を文字起こし、249+言語に翻訳。言語による追加料金なし。グローバルコンテンツ、シンプルな1価格。",
       feat_pro: "プロフェッショナル機能",
-      feat_pro_desc: "単語レベルのタイムスタンプにより、正確なオーディオ/ビデオの位置付け、急速な会話の切り替え中でも正確な話者識別、段落、文章、句読点を含む完璧にフォーマットされたテキストにより読みやすくなります。",
-        features: "特徴"
+      feat_pro_desc: "正確な音声/動画位置特定のための単語レベルタイムスタンプ、急速な会話切り替え時でも正確な話者識別、読みやすい段落・文・句読点で完璧にフォーマットされたテキスト。",
+        features: "機能"
     },
     UseCases: {
-      built_for: "バルク",
-      "heavy_users": "音声とビデオの文字起こし",
-      "join_users": "あなたのようなヘビーユーザーのために構築されました - 「シュリンクフレーション」サービスから切り替えたYouTuber、コンテンツクリエイター、ポッドキャスターに参加しましょう",
+      built_for: "一括",
+      "heavy_users": "音声＆動画文字起こし",
+      "join_users": "あなたのようなヘビーユーザー向けに構築 - 「シュリンクフレーション」サービスから乗り換えたYouTuber、コンテンツクリエイター、ポッドキャスターに参加しよう",
       "podcasters": {
         "title": "ポッドキャスター",
-        "des": "過去の番組カタログをすべてアップロード。各エピソードの番組ノートを作成。もう、どのエピソードを書き起こすか選ぶ必要はありません。"
+        "des": "バックカタログ全体をアップロード。全エピソードのショーノートを作成。どのエピソードを文字起こしするか選ぶ必要はもうありません。"
       },
       "content_creators": {
         "title": "コンテンツクリエイター",
-        "des": "動画ファイルを自動的に書き起こす当社のサービスで、動画ライブラリを検索可能なテキストに変換しましょう。あらゆる動画にキャプションを自動生成します。時間を数える必要はなく、作成するだけです。"
+        "des": "動画ライブラリを検索可能なテキストに自動変換。全てにキャプションを生成。分数を気にせず、ただ創作に集中。"
       },
       "journalists": {
         "title": "ジャーナリスト",
-        "des": "インタビューをすべて一度にアップロードしましょう。締め切りが迫っているときに「毎月10ファイル」のような制限に悩まされることはもうありません。すべてを処理しましょう。"
+        "des": "全てのインタビューを一度にアップロード。締切時に「月10ファイル」の壁に悩まされず、全てを処理。"
       },
       researchers: {
         title: "研究者",
-        des: "何時間にも及ぶフォーカスグループやインタビューを書き起こします。調査全体を一度にアップロードし、正確な話者識別を実現します。"
+        des: "長時間のフォーカスグループやインタビューを文字起こし。研究全体を一度にアップロード。正確な話者識別を取得。"
       },
       business_teams: {
         title: "ビジネスチーム",
-        des: "制限を気にせず、すべての通話を録音できます。一部の会話だけでなく、すべての会話からAIの洞察を得ることができます。"
+        des: "制限を気にせず全ての通話を記録。選ばれた会話だけでなく、全ての会話からAIインサイトを取得。"
       },
       educators: {
         title: "教育者",
-        des: "講義シリーズ全体を書き起こします。すべてのコンテンツにアクセスできるようにします。分数制限があるため、コース間の選択は不要です。"
+        des: "講義シリーズ全体を文字起こし。全てのコンテンツをアクセシブルに。分数制限でコースを選ぶ必要はありません。"
       }
     },
     Testimonials: {
       title: "愛されている",
       highlighted_users: "50,000人以上のユーザー",
-      subtitle: "プロフェッショナルが限られた選択肢の中からNeverCapを選ぶ理由をご覧ください",
+      subtitle: "プロが制限のある他社製品ではなくNeverCapを選ぶ理由",
       Mike: {
-        "text": "やったー、これ本当に使えるんだ！ポッドキャストを3年間続けてるんだけど、全部手作業で文字起こししてて、まるでバカみたいだった。6エピソードを一気にアップロードしたら、私と共同司会者の音声が完璧に分離できた。台無しになったと思っていたコーヒーショップのエピソードも、こんなに鮮明な文字起こし。もう二度と自分で文字起こしすることはないわ。",
+        "text": "すごい！これ本当に使える！3年間ポッドキャストをやってて、バカみたいに全部手書きで書き起こしてた。6エピソード一気にアップロードしたら、共同ホストと私の発言を完璧に分けてくれた。駄目だと思ったカフェの回も？クリアな文字起こし。もう二度と自分で打たない！",
         "author": "マイク・ロドリゲス",
         "role": "ポッドキャストホスト"
       },
       Sarah: {
-        "text": "オンラインで教えているのですが、動画に字幕が必要でした。他のツールを3つ試してみましたが、どれも妙な制限があったり、時間がかかりすぎたりしました。でも、これは…とにかくすごい！スペイン語の講義をアップロードしたら、2分くらいで完璧な字幕ができました。聴覚に障がいのある生徒たちも大喜びです。もっと早く見つけたかったです！",
+        "text": "オンライン講師で動画に字幕が必要だった。変な制限のあるツール3つ試して時間ばかりかかった。これは…ただ動く？スペイン語の講義をアップしたら2分で完璧な字幕が。聴覚障害のある学生が喜んでる。もっと早く知りたかった！",
         "author": "サラ・チェン",
-        "role": "オンライン教師"
+        "role": "オンライン講師"
       },
       Jessica: {
-        "text": "面接で使っていますが、その正確さには驚かされます。片言の英語とスペイン語で2時間面接しましたが、タイムスタンプまですべて正確に記録してくれました。以前はインターン生に文字起こしだけで毎月200ドル支払っていましたが、おかげで毎月の節約になっています。",
+        "text": "インタビューに使ってるけど精度がヤバい。英語とスペイン語混じりの2時間インタビューも完璧、タイムスタンプも正確。以前はインターンに月$200払って書き起こさせてた。これで毎月確実に節約できてる。",
         "author": "ジェシカ・パーク",
         "role": "フリーランスジャーナリスト"
       }
     },
     PricingPreview: {
-      "title": "透明な価格設定",
-      "highlighted_text": "隠しキャップなし",
-      "subtitle": "プランをお選びください。アスタリスク、細則、驚きはありません"
+      "title": "透明な料金体系",
+      "highlighted_text": "隠し制限なし",
+      "subtitle": "プランを選べます。アスタリスクも細字の注意書きもサプライズも一切なし"
     },
     FAQSection: {
-      "title": "よくある質問",
+      "title": "よくある",
       "titleHighlight": "質問",
       "questions": [
             {
-              "q": "AIによる文字起こし",
-              "question": "AI トランスクリプションとは何ですか? また、どのように機能しますか?",
-              "answer": "AIトランスクリプションとは、高度な人工知能を用いて音声をテキストに自動変換するプロセスです。NeverCapでは、ファイルをアップロードするだけで、AIが最大96%の精度でコンテンツをトランスクリプションします。当社のサービスは、動画ファイル（MP4、MOVなど）と音声ファイル（MP3、WAVなど）を、発言者ラベルとタイムスタンプ付きの読みやすく編集可能なテキストにトランスクリプションするように設計されています。"
+              "q": "AI文字起こし",
+              "question": "AI文字起こしとは？どう機能するの？",
+              "answer": "AI文字起こしは高度な人工知能で音声を自動的にテキスト化する技術です。NeverCapではファイルをアップロードするだけで、最大96%の精度でコンテンツを変換。MP4、MOVなどの動画ファイルやMP3、WAVなどの音声ファイルを、話者識別とタイムスタンプ付きの編集可能なテキストに変換します。"
             },
             {
-              "q": "無制限ポリシー",
-              "question": "本当に無制限ですか？何か落とし穴があるんですか？",
-              "answer": "はい、本当に無制限です！月間通信時間制限や超過料金はありません。制限は技術的なもののみで、個々のファイルは最大10時間または5GBまで、一度に処理できるファイルは50個までです。ただし、バッチアップロードは月を通して好きなだけ可能です。"
+              "q": "unlimited_policy",
+              "question": "本当に無制限？裏は？",
+              "answer": "はい、真に無制限です！月間分数制限も超過料金もなし。技術的な制限のみ：個別ファイルは最大10時間または5GB、同時処理50ファイルまで。ただし月を通していくつでもバッチアップロード可能。"
             },
             {
-              "q": "正確さ",
-              "question": "転写の精度はどのくらいですか?",
-              "answer": "クリアな音声を96%の精度で保証します。当社のAIは数百万時間にわたる多様なコンテンツでトレーニングされており、アクセント、専門用語、複数の話者を非常に正確に処理します。難しい音声の場合は、スマートエンハンスメント機能が結果の向上をサポートします。"
+              "q": "accuracy",
+              "question": "文字起こしの精度は？",
+              "answer": "クリアな音声なら96%の精度を保証。何百万時間もの多様なコンテンツで訓練されたAIは、アクセント・専門用語・複数話者にも対応。難解な音声にはスマート補正機能で精度向上。"
             },
             {
-              "q": "言語",
-              "question": "どの言語をサポートしていますか?",
-              "answer": "英語、スペイン語、中国語、ヒンディー語、アラビア語、フランス語など、100以上の言語での文字起こしに対応しています。さらに、文字起こしは249の言語に翻訳できるため、グローバルコンテンツに最適です。"
+              "q": "languages",
+              "question": "対応言語は？",
+              "answer": "英語、スペイン語、中国語、ヒンディー語、アラビア語、フランス語など100言語以上に対応。さらに249言語への翻訳も可能で、グローバルコンテンツに最適。"
             },
             {
-              "q": "スピード",
-              "question": "転写の速度はどのくらいですか?",
-              "answer": "超高速！1時間の音声ファイルは通常5分以内で処理されます。バッチ処理機能を使えば、50個のファイルを同時にアップロードし、並列処理できます。ほとんどのユーザーは、ライブラリ全体が一晩で書き起こされているのに気づくでしょう。"
+              "q": "speed",
+              "question": "処理速度は？",
+              "answer": "超高速！1時間の音声ファイルは通常5分未満。バッチ処理で50ファイル同時アップロード可能。多くのユーザーが朝にはライブラリ全体が文字起こし済みに。"
             },
             {
-              "q": "キャンセル",
-              "question": "いつでもキャンセルできますか？",
-              "answer": "もちろんです！契約や解約料は一切かかりません。ダッシュボードからいつでもアップグレード、ダウングレード、またはサブスクリプションのキャンセルが可能です。キャンセルした場合でも、請求期間の終了までアクセスは継続されます。"
+              "q": "cancellation",
+              "question": "いつでも解約できる？",
+              "answer": "もちろん！契約縛りも解約料もなし。ダッシュボードからいつでもプラン変更・解約可能。解約後も課金期間終了までは利用できます。"
             },
             {
-              "q": "安全",
-              "question": "私のデータは安全ですか?",
-              "answer": "お客様のセキュリティは私たちの最優先事項です。SOC 2認証を取得し、すべてのデータに256ビット暗号化を採用しています。また、お客様のコンテンツをモデルの学習に使用することは一切ありません。ファイルはいつでも削除でき、30日後に自動的に消去されます。GDPRおよびCCPAに準拠しています。"
+              "q": "security",
+              "question": "データは安全？",
+              "answer": "セキュリティ最優先。SOC 2認証取得、256ビット暗号化、モデル訓練にコンテンツを一切使用しません。ファイルはいつでも削除可能、30日後に自動消去。GDPR/CCPA準拠。"
             },
             {
-              "q": "エクスポート形式",
-              "question": "どのようなエクスポート形式が利用可能ですか?",
-              "answer": "トランスクリプトは、PDF、Word（DOCX）、Excel、CSV、SRT字幕、プレーンテキスト（TXT）、VTTキャプションなど、必要な形式でダウンロードできます。あらゆるワークフローに最適です。"
+              "q": "export_formats",
+              "question": "出力形式は？",
+              "answer": "必要な形式でダウンロード：PDF、Word（DOCX）、Excel、CSV、SRT字幕、プレーンテキスト（TXT）、VTTキャプション。あらゆるワークフローに対応。"
             },
             {
-              "q": "ファイル形式",
-              "question": "どのようなオーディオファイルやビデオファイルをアップロードできますか?",
-              "answer": "MP3、MP4、M4A、MOV、AAC、WAV、OGG、OPUS、MPEG、WMA、WMVなど、ほぼすべての音声・動画形式に対応しています。再生可能な形式であれば、文字起こしも可能です。"
+              "q": "file_formats",
+              "question": "対応音声/動画形式は？",
+              "answer": "MP3、MP4、M4A、MOV、AAC、WAV、OGG、OPUS、MPEG、WMA、WMVなどほぼ全ての形式に対応。再生可能なら文字起こし可能。"
             }
           ]
     },
     CTASection: {
-      "title": "制限から解放される準備はできていますか?",
-      "subtitle": "50,000人以上のプロフェッショナルが、本当に無制限の文字起こしサービスに切り替えました。",
-      "button": "NeverCapを無料でお試しください",
-      "disclaimer": "無料プランではクレジットカードは不要です。いつでもアップグレードして無制限にアクセスできます。"
+      "title": "制限から解放される準備は？",
+      "subtitle": "真に無制限の文字起こしに切り替えた50,000人以上のプロに参加しよう",
+      "button": "NeverCap無料体験",
+      "disclaimer": "無料プランはクレジットカード不要・いつでも無制限アクセスにアップグレード可能"
     }
   },
   Features: {
     UnlimitedTranscription: {
       heroBadgeIcon: "⚡",
-      heroBadgeText: "「シュリンクフレーション」はもう終わり",
-      heroTitleLine1: "真に無限",
-      heroTitleLine2: "AIによる文字起こし",
-      heroSubtitle: "Trint では 50 時間まで、Otter では 1 か月あたり 10 ファイルまでという制限がありますが、当社は実際に約束しているとおり、隠れた制限のない無制限のトランスクリプションを提供します。",
-      primaryCta: "無料でお試しください - クレジットカード不要",
-      secondaryCta: "真実を見よ",
-      comparisonBadLabel: "他の人が何をするか",
-      comparisonBadTitle: "あらゆるところに隠れた限界",
+      heroBadgeText: "「シュリンクフレーション」終わり",
+      heroTitleLine1: "真の無制限",
+      heroTitleLine2: "AI文字起こし",
+      heroSubtitle: "Trintは50時間、Otterは月10ファイルの制限がありますが、私たちは約束を守ります：隠れた制限のない本当の無制限文字起こし",
+      primaryCta: "無料で試す - クレジットカード不要",
+      secondaryCta: "真実を見る",
+      comparisonBadLabel: "他社の対応",
+      comparisonBadTitle: "至る所に隠れた制限",
       comparisonBadItem1Icon: "✕",
-      comparisonBadItem1Strong: "トリント：",
-      comparisonBadItem1Text: "「無制限」 = 月50時間まで",
+      comparisonBadItem1Strong: "Trint:",
+      comparisonBadItem1Text: "「無制限」= 月50時間制限",
       comparisonBadItem2Icon: "✕",
-      comparisonBadItem2Strong: "カワウソ：",
-      comparisonBadItem2Text: "生涯 3 回のインポート（無料）、月額 10 回（Pro）",
+      comparisonBadItem2Strong: "Otter:",
+      comparisonBadItem2Text: "3回の生涯インポート（無料）、月10回（Pro）",
       comparisonBadItem3Icon: "✕",
-      comparisonBadItem3Strong: "ホタル：",
+      comparisonBadItem3Strong: "Fireflies:",
       comparisonBadItem3Text: "800分の保存制限",
       comparisonBadItem4Icon: "✕",
-      comparisonBadItem4Strong: "説明:",
-      comparisonBadItem4Text: "月最大30時間",
+      comparisonBadItem4Strong: "Descript:",
+      comparisonBadItem4Text: "最大月30時間",
       comparisonBadItem5Icon: "✕",
       comparisonBadItem5Text: "利用規約に隠されている",
-      comparisonGoodLabel: "私たちの活動",
-      comparisonGoodTitle: "実際には無制限",
+      comparisonGoodLabel: "私たちの対応",
+      comparisonGoodTitle: "本当に無制限",
       comparisonGoodItem1Icon: "✓",
-      comparisonGoodItem1Strong: "月間通話時間制限なし",
-      comparisonGoodItem1Text: "これまで",
+      comparisonGoodItem1Strong: "月間分数制限なし",
+      comparisonGoodItem1Text: "永遠に",
       comparisonGoodItem2Icon: "✓",
-      comparisonGoodItem2Strong: "無制限のファイルアップロード",
-      comparisonGoodItem2Text: "いつも",
+      comparisonGoodItem2Strong: "無制限ファイルアップロード",
+      comparisonGoodItem2Text: "常に",
       comparisonGoodItem3Icon: "✓",
-      comparisonGoodItem3Strong: "ストレージ制限なし",
-      comparisonGoodItem3Text: "まったく",
+      comparisonGoodItem3Strong: "保存制限なし",
+      comparisonGoodItem3Text: "一切",
       comparisonGoodItem4Icon: "✓",
-      comparisonGoodItem4Strong: "50ファイルの一括アップロード",
+      comparisonGoodItem4Strong: "50ファイル一括アップロード",
       comparisonGoodItem4Text: "いつでも",
       comparisonGoodItem5Icon: "✓",
       comparisonGoodItem5Strong: "透明なポリシー",
-      comparisonGoodItem5Text: "前払い",
+      comparisonGoodItem5Text: "事前に",
       feature1Label: "制限なし",
-      feature1TitlePart1: "1,000 時間を書き起こしますか?",
-      feature1TitlePart2: "同じ価格。",
-      feature1Description: "もう時間を数える必要はありません。上限を気にする必要もありません。月間10時間でも1万時間でも、同じ定額料金でご利用いただけます。超過料金や予期せぬ請求もありません。",
+      feature1TitlePart1: "1,000時間文字起こし？",
+      feature1TitlePart2: "同じ価格",
+      feature1Description: "分数を数えるのをやめましょう。制限を気にするのをやめましょう。月10時間でも10,000時間でも、同じ定額料金。超過料金なし。予想外の請求なし。",
       feature1Point1Icon: "✓",
-      feature1Point1Text: "「フェアユース」ポリシーのトリックはなし",
+      feature1Point1Text: "「公平使用」ポリシーのトリックなし",
       feature1Point2Icon: "✓",
-      feature1Point2Text: "X時間後にスロットルなし",
+      feature1Point2Text: "X時間後の速度制限なし",
       feature1Point3Icon: "✓",
       feature1Point3Text: "月末の不安なし",
       feature1Stat1Number: "∞",
-      feature1Stat1Label: "月間時間",
-      feature1Stat2Number: "0ドル",
+      feature1Stat1Label: "月間時間数",
+      feature1Stat2Number: "$0",
       feature1Stat2Label: "超過料金",
-      feature1Stat3Number: "24時間年中無休",
+      feature1Stat3Number: "24/7",
       feature1Stat3Label: "いつでもアップロード",
       feature1Stat4Number: "100%",
-      feature1Stat4Label: "透明",
-      feature2Label: "バルクフリーダム",
-      feature2TitlePart1: "アップロード",
+      feature1Stat4Label: "透明性",
+      feature2Label: "一括処理の自由",
+      feature2TitlePart1: "あなたの",
       feature2TitlePart2: "アーカイブ全体",
-      feature2Description: "Otterでは、無料で生涯3件、Pro版では毎月10件のインポートが可能です。無制限でご利用いただけます。ポッドキャストのバックログ、すべてのインタビュー、何年分もの録音をアップロードできます。制限はありません。",
+      feature2Description: "Otterの無料プランでは3回、Proでは月10回のインポート制限があります。私たちは無制限です。ポッドキャストのバックログ、すべてのインタビュー、何年分もの録音をアップロードできます。制限なし。",
       feature2Point1Icon: "✓",
       feature2Point1Text: "1バッチあたり50ファイル",
       feature2Point2Icon: "✓",
-      feature2Point2Text: "10時間のファイルをサポート",
+      feature2Point2Text: "10時間ファイル対応",
       feature2Point3Icon: "✓",
-      feature2Point3Text: "寝ている間に処理する",
-      feature2TableRow1Label: "オッターフリー",
-      feature2TableRow1Value: "生涯輸入3件",
-      feature2TableRow2Label: "オッタープロ",
+      feature2Point3Text: "睡眠中に処理",
+      feature2TableRow1Label: "Otter Free",
+      feature2TableRow1Value: "3回のインポート（生涯）",
+      feature2TableRow2Label: "Otter Pro",
       feature2TableRow2Value: "10ファイル/月",
-      feature2TableRow3Label: "トリント",
-      feature2TableRow3Value: "月50時間上限",
-      feature2TableRow4Label: "ネバーキャップ",
-      feature2TableRow4Value: "真の無制限✓",
-      feature3Label: "社会的証明",
-      feature3TitlePart1: "ユーザーは",
-      feature3TitlePart2: "毎日切り替え",
-      feature3Description: "「Otterに年間100ドル払っているのに、月間10ファイルしかインポートできない。無制限にインポートできる代替ソフトが出てきたら、もうやめます！」 - 本物のRedditユーザー",
+      feature2TableRow3Label: "Trint",
+      feature2TableRow3Value: "50時間/月上限",
+      feature2TableRow4Label: "NeverCap",
+      feature2TableRow4Value: "真の無制限 ✓",
+      feature3Label: "ソーシャルプルーフ",
+      feature3TitlePart1: "ユーザーが",
+      feature3TitlePart2: "毎日乗り換え",
+      feature3Description: "「Otterに年$100払ってるのに月10ファイルしかインポートできない。無制限の代替手段が出たら即乗り換える！」- 実際のRedditユーザー",
       feature3Point1Icon: "✓",
-      feature3Point1Text: "5万人以上のユーザーが切り替え",
+      feature3Point1Text: "50,000+ ユーザーが乗り換え",
       feature3Point2Icon: "✓",
-      feature3Point2Text: "オッターの「シュリンクフレーション」より",
+      feature3Point2Text: "Otterの「シュリンクフレーション」から",
       feature3Point3Icon: "✓",
-      feature3Point3Text: "決して後戻りしない",
-      feature3Stat1Number: "5万件以上",
-      feature3Stat1Label: "満足したユーザー",
-      feature3Stat2Number: "100万以上",
-      feature3Stat2Label: "処理されたファイル",
+      feature3Point3Text: "二度と戻らない",
+      feature3Stat1Number: "50K+",
+      feature3Stat1Label: "満足ユーザー",
+      feature3Stat2Number: "1M+",
+      feature3Stat2Label: "処理済みファイル",
       feature3Stat3Number: "96%",
-      feature3Stat3Label: "正確さ",
+      feature3Stat3Label: "正確性",
       feature3Stat4Number: "∞",
-      feature3Stat4Label: "隠れた手数料なし",
+      feature3Stat4Label: "隠れた料金なし",
       trustBadge1Number: "∞",
-      trustBadge1Label: "月間分数",
-      trustBadge2Number: "100以上",
+      trustBadge1Label: "分/月",
+      trustBadge2Number: "100+",
       trustBadge2Label: "言語",
       trustBadge3Number: "96%",
-      trustBadge3Label: "正確さ",
+      trustBadge3Label: "正確性",
       trustBadge4Number: "50",
       trustBadge4Label: "一括アップロード",
-      ctaTitle: "偽の無制限プランにお金を払うのはやめましょう",
-      ctaSubtitle: "無制限のトランスクリプションに切り替えた何千人もの仲間に加わりましょう",
-      finalCta: "NeverCapを無料でお試しください"
+      ctaTitle: "偽の無制限にお金を払うのをやめよう",
+      ctaSubtitle: "真の無制限文字起こしに切り替えた数千人に参加しよう",
+      finalCta: "NeverCap無料版を試す"
     },
     BulkUpload: {
       heroBadgeIcon: "📁",
       heroBadgeText: "一括アップロードの自由",
-      heroTitleLine1: "50 個のファイルをアップロードします。",
-      heroTitleHighlight: "すべてを処理します。",
-      heroSubtitle: "Otterは生涯3回のインポートを提供します。3回です。生涯を通じて。必要なときにいつでも、一度に50ファイルまで無制限にアップロードできます。",
+      heroTitleLine1: "50ファイルをアップロード",
+      heroTitleHighlight: "すべてを処理",
+      heroSubtitle: "Otterは生涯3回のインポートを提供。たったの3回。一生涯です。私たちは無制限のアップロードを提供し、必要な時に50ファイルずつ処理できます。",
       primaryCta: "一括アップロードを開始 →",
-      secondaryCta: "限界を見極める",
-      redditQuote: "「3年分のポッドキャストのエピソードを書き起こさないといけないのに、オッターは生涯で3回輸入できるって言ってる。3回だって。侮辱的だわ。」",
+      secondaryCta: "制限を確認",
+      redditQuote: '"3年分のポッドキャストエピソードを文字起こししたい。Otterは生涯3回のインポートしか許可しない。3回だ。これは侮辱的だ。"',
       redditAuthorIcon: "📍",
-      redditAuthorText: "r/podcastingからの本当のフラストレーション",
-      comparisonSectionTitlePart1: "その",
+      redditAuthorText: "r/podcastingからの本音の不満",
+      comparisonSectionTitlePart1: "The",
       comparisonSectionTitleHighlight: "ばかげた制限",
-      comparisonSectionTitlePart2: "彼らは押し付ける",
-      comparisonSubtitle: "競合他社がコンテンツ処理能力をどのように制限するか",
-      limitCard1Service: "オッターフリー",
+      comparisonSectionTitlePart2: "彼らが課すもの",
+      comparisonSubtitle: "競合他社がコンテンツ処理能力を制限する方法",
+      limitCard1Service: "Otter無料版",
       limitCard1Number: "3",
-      limitCard1DescriptionLine1: "生涯輸入",
-      limitCard1DescriptionLine2: "（はい、あなたの生涯を通じて）",
-      limitCard2Service: "オッタープロ",
+      limitCard1DescriptionLine1: "生涯インポート回数",
+      limitCard1DescriptionLine2: "(はい、一生涯です)",
+      limitCard2Service: "Otter Pro",
       limitCard2Number: "10",
-      limitCard2DescriptionLine1: "月あたりのファイル数",
-      limitCard2DescriptionLine2: "（年間100ドルプラン）",
-      limitCard3Service: "説明",
+      limitCard2DescriptionLine1: "月間ファイル数",
+      limitCard2DescriptionLine2: "($100/年プラン)",
+      limitCard3Service: "Descript",
       limitCard3Number: "1",
-      limitCard3DescriptionLine1: "一度に1つのファイル",
-      limitCard3DescriptionLine2: "（順次アップロード）",
-      limitCard4Service: "ネバーキャップ",
+      limitCard3DescriptionLine1: "1ファイルずつ",
+      limitCard3DescriptionLine2: "(順次アップロード)",
+      limitCard4Service: "NeverCap",
       limitCard4Number: "∞",
-      limitCard4DescriptionLine1: "無制限のアップロード",
-      limitCard4DescriptionLine2: "1バッチあたり50ファイル",
-      feature1Label: "バッチパワー",
-      feature1TitlePart1: "処理する",
-      feature1TitleHighlight: "アーカイブ全体",
-      feature1TitlePart2: "一晩",
-      feature1Description: "寝る前に50個のファイルをアップロード。朝起きたらトランスクリプトが完成。待ち時間も待ち時間も「アップグレードしてください」というメッセージもありません。指先一つで、ピュアな処理能力を実感できます。",
+      limitCard4DescriptionLine1: "無制限アップロード",
+      limitCard4DescriptionLine2: "1バッチ50ファイル",
+      feature1Label: "バッチ処理の力",
+      feature1TitlePart1: "あなたの",
+      feature1TitleHighlight: "全アーカイブを処理",
+      feature1TitlePart2: "一晩で",
+      feature1Description: '寝る前に50ファイルをアップロード。起きれば完成した文字起こしが。待ち行列なし、待機なし、"アップグレードしてください"メッセージなし。ただ純粋な処理能力が手の届くところに。',
       feature1Point1Icon: "✓",
-      feature1Point1Text: "50件の同時アップロード",
+      feature1Point1Text: "50ファイル同時アップロード",
       feature1Point2Icon: "✓",
       feature1Point2Text: "並列処理",
       feature1Point3Icon: "✓",
-      feature1Point3Text: "10時間のファイルをサポート",
+      feature1Point3Text: "10時間ファイル対応",
       feature1Point4Icon: "✓",
-      feature1Point4Text: "ファイルあたり最大5GB",
+      feature1Point4Text: "ファイル最大5GB",
       uploadAnimationText1: "50ファイル",
-      uploadAnimationText2: "ドロップ＆プロセス",
-      fileBadge1: "ポッドキャスト_ep_001.mp3",
-      fileBadge2: "インタビュー生.mp4",
-      fileBadge3: "会議_2024.wav",
-      fileBadge4: "講義全編.mov",
-      fileBadge5: "+ 46 以上のファイル...",
+      uploadAnimationText2: "ドロップして処理",
+      fileBadge1: "podcast_ep_001.mp3",
+      fileBadge2: "interview_raw.mp4",
+      fileBadge3: "meeting_2024.wav",
+      fileBadge4: "lecture_full.mov",
+      fileBadge5: "+ 46 more files...",
       feature2Label: "スピード",
       feature2TitlePart1: "アップロードから",
-      feature2TitleHighlight: "数時間で完了",
-      feature2Description: "当社の並列処理インフラストラクチャにより、50個のファイルを順番待ちさせる必要がありません。すべて同時に文字起こしされます。以前は数週間かかっていた作業が、今では数時間で完了します。",
+      feature2TitleHighlight: "完了まで数時間",
+      feature2Description: "当社の並列処理インフラにより、50ファイルも順番待ちなし。すべて同時に文字起こしされます。以前は数週間かかっていた処理が、今では数時間で完了します。",
       feature2Point1Icon: "✓",
-      feature2Point1Text: "1時間のファイル：5分",
+      feature2Point1Text: "1時間のファイル: 5分",
       feature2Point2Icon: "✓",
       feature2Point2Text: "50ファイル: 並列処理",
       feature2Point3Icon: "✓",
-      feature2Point3Text: "完了時にメール通知",
+      feature2Point3Text: "完了時メール通知",
       timelineStep1Icon: "1",
       timelineStep1Title: "アップロード",
-      timelineStep1Time: "0分",
+      timelineStep1Time: "0 分",
       timelineStep2Icon: "2",
-      timelineStep2Title: "処理",
-      timelineStep2Time: "5～30分",
+      timelineStep2Title: "処理中",
+      timelineStep2Time: "5-30 分",
       timelineStep3Icon: "3",
       timelineStep3Title: "AIマジック",
-      timelineStep3Time: "30～60分",
+      timelineStep3Time: "30-60 分",
       timelineStep4Icon: "✓",
       timelineStep4Title: "完了",
-      timelineStep4Time: "2時間未満",
+      timelineStep4Time: "< 2 時間",
       feature3Label: "自由",
-      feature3TitlePart1: "待ち行列はありません。",
-      feature3TitleHighlight: "待つ必要はありません。",
-      feature3TitlePart2: "制限はありません。",
-      feature3Description: "他のサービスでは仮想の列に並んだり、「優先処理」のためにアップグレードしたりする必要がありますが、私たちはすべてのアップロードを迅速に処理します。お客様のコンテンツは重要であり、待つべきではありません。",
+      feature3TitlePart1: "待ち行列なし。",
+      feature3TitleHighlight: "待機時間なし。",
+      feature3TitlePart2: "制限なし。",
+      feature3Description: "他社では仮想待ち行列や「優先処理」のアップグレードを要求されますが、当社はすべてのアップロードを緊急処理します。あなたのコンテンツは重要であり、待つ必要はありません。",
       feature3Point1Icon: "✓",
-      feature3Point1Text: "優先階層なし",
+      feature3Point1Text: "優先階級なし",
       feature3Point2Icon: "✓",
-      feature3Point2Text: "誰にでも同じスピード",
+      feature3Point2Text: "全員同じ速度",
       feature3Point3Icon: "✓",
-      feature3Point3Text: "いつでも、24時間365日アップロード可能",
-      feature3VisualNumber: "24時間年中無休",
-      feature3VisualTitle: "いつでも準備万端",
-      feature3VisualSubtext: "インスピレーションが湧いたらすぐにアップロード",
-      useCasesTitlePart1: "最適です",
-      useCasesTitleHighlight: "ヘビーアップローダー",
+      feature3Point3Text: "24時間いつでもアップロード",
+      feature3VisualNumber: "24/7",
+      feature3VisualTitle: "常時準備完了",
+      feature3VisualSubtext: "インスピレーションが湧いたらいつでもアップロード",
+      useCasesTitlePart1: "最適な用途",
+      useCasesTitleHighlight: "大量アップロードユーザー",
       useCasesSubtitle: "一括アップロードが役立つ実際のシナリオ",
       useCase1Title: "ポッドキャストアーカイブ",
-      useCase1Description: "3年分のエピソードを一括アップロード。過去の全エピソードのトランスクリプトを作成。各エピソードのSEOコンテンツも生成。",
+      useCase1Description: "3年分のエピソードを一括アップロード。過去の全カタログの文字起こしを作成。各エピソードのSEOコンテンツを生成。",
       useCase2Title: "コース作成",
-      useCase2Description: "すべての講義ビデオを同時に処理し、学生がアクセスしやすいトランスクリプトを作成します。検索可能なコース教材を作成します。",
-      useCase3Title: "面接バックログ",
-      useCase3Description: "書き起こされていないインタビューの山を片付け、数週間分の調査を数時間で処理し、慌てることなく締め切りに間に合わせましょう。",
+      useCase2Description: "講義動画を同時処理。学生向けアクセシブルな文字起こしを作成。検索可能な教材を構築。",
+      useCase3Title: "インタビューバックログ",
+      useCase3Description: "未文字起こしのインタビュー山を解消。数週間分のリサーチを数時間で処理。締切を慌てずに達成。",
       useCase4Title: "YouTubeライブラリ",
-      useCase4Description: "チャンネル全体のキャプションを生成。動画コンテンツからブログ投稿を作成。すべての動画のSEOを改善。",
+      useCase4Description: "チャンネル全体の字幕を生成。動画コンテンツからブログ記事を作成。全動画のSEOを改善。",
       useCase5Title: "会議アーカイブ",
-      useCase5Description: "数か月分の会議録画をアップロード。検索可能な会議メモを作成。重要な決定事項を二度と失うことはありません。",
-      useCase6Title: "研究データ",
-      useCase6Description: "フォーカスグループを一括処理し、参加者のインタビューをすべて書き起こします。定性データを効率的に分析します。",
-      ctaTitle: "もっとアップロードを懇願するのはやめましょう",
-      ctaSubtitle: "実際に機能する無制限の一括処理を実現",
-      finalCta: "今すぐ50個のファイルをアップロード →"
+      useCase5Description: "数か月分の会議録をアップロード。検索可能な議事録を作成。重要な決定を見失うことはありません。",
+      useCase6Title: "調査データ",
+      useCase6Description: "フォーカスグループを一括処理。参加者インタビューを全て文字起こし。定性データを効率的に分析。",
+      ctaTitle: "アップロード制限にサヨナラ",
+      ctaSubtitle: "実際に機能する無制限の一括処理を手に入れよう",
+      finalCta: "今すぐ50ファイルをアップロード →"
     },
     Accuracy: {
       heroBadgeIcon: "🎯",
-      heroBadgeText: "業界をリードする精度",
+      heroBadgeText: "業界トップレベルの精度",
       heroTitleLine1: "96%の精度。",
-      heroTitleHighlight: "すべての言葉が重要です。",
-      heroSubtitle: "業界最高水準の精度を誇る12の主要言語に対応。単語レベルのタイムスタンプで完璧な同期を実現。スマートスピーカー識別機能で素早い会話にも対応。読みやすいプロフェッショナルなフォーマット。",
-      primaryCta: "精度をテストする→",
-      secondaryCta: "言語を見る",
+      heroTitleHighlight: "一言一句が重要。",
+      heroSubtitle: "12の主要言語で業界トップレベルの精度。完璧な同期のための単語レベルのタイムスタンプ。速い会話にも対応するスマートな話者識別。実際に読みやすいプロフェッショナルなフォーマット。",
+      primaryCta: "精度を試す →",
+      secondaryCta: "対応言語を見る",
       statCard1Percentage: "96%",
-      statCard1DescriptionLine1: "精度",
-      statCard1DescriptionLine2: "12の主要言語",
-      statCard2Percentage: "95%以上",
-      statCard2DescriptionLine1: "精度",
-      statCard2DescriptionLine2: "アクセントと方言",
-      statCard3Percentage: "100ミリ秒",
+      statCard1DescriptionLine1: "精度（",
+      statCard1DescriptionLine2: "12の主要言語）",
+      statCard2Percentage: "95%+",
+      statCard2DescriptionLine1: "精度（",
+      statCard2DescriptionLine2: "アクセント＆方言対応）",
+      statCard3Percentage: "100ms",
       statCard3DescriptionLine1: "単語レベル",
-      statCard3DescriptionLine2: "タイムスタンプの精度",
+      statCard3DescriptionLine2: "のタイムスタンプ精度",
       languageSectionTitlePart1: "96%の精度",
-      languageSubtitle: "グローバルコンテンツ向けのプロフェッショナルグレードの文字起こし",
+      languageSubtitle: "グローバルコンテンツ向けのプロフェッショナル級文字起こし",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "英語",
       languageCard1Accuracy: "96%の精度",
@@ -1624,7 +1624,7 @@ let message = {
       languageCard2Name: "スペイン語",
       languageCard2Accuracy: "96%の精度",
       languageCard3Flag: "🇨🇳",
-      languageCard3Name: "北京語",
+      languageCard3Name: "中国語（北京語）",
       languageCard3Accuracy: "96%の精度",
       languageCard4Flag: "🇫🇷",
       languageCard4Name: "フランス語",
@@ -1642,7 +1642,7 @@ let message = {
       languageCard8Name: "ポルトガル語",
       languageCard8Accuracy: "96%の精度",
       languageCard9Flag: "🇷🇺",
-      languageCard9Name: "ロシア",
+      languageCard9Name: "ロシア語",
       languageCard9Accuracy: "96%の精度",
       languageCard10Flag: "🇮🇹",
       languageCard10Name: "イタリア語",
@@ -1653,273 +1653,273 @@ let message = {
       languageCard12Flag: "🇸🇦",
       languageCard12Name: "アラビア語",
       languageCard12Accuracy: "96%の精度",
-      moreLanguagesText: "+ 88以上の言語を95%以上の精度でサポート",
+      moreLanguagesText: "+ 95%以上の精度で対応する88以上の言語",
       feature1Label: "精度",
       feature1TitlePart1: "単語レベル",
       feature1TitleHighlight: "タイムスタンプ",
-      feature1Description: "すべての単語が音声の位置と完璧に同期します。クリック可能なトランスクリプトを作成したり、正確な字幕を生成したり、録音中の正確な瞬間にジャンプしたりできます。プロが信頼する100ミリ秒の精度。",
+      feature1Description: "すべての単語が音声の位置と完全に同期しています。クリック可能な文字起こしを作成し、正確な字幕を生成したり、録音の正確な瞬間にジャンプしたりできます。プロが信頼する100msの精度。",
       feature1Point1Icon: "✓",
-      feature1Point1Text: "100ミリ秒のタイムスタンプ精度",
+      feature1Point1Text: "100msのタイムスタンプ精度",
       feature1Point2Icon: "✓",
-      feature1Point2Text: "ビデオ編集に最適",
+      feature1Point2Text: "動画編集に最適",
       feature1Point3Icon: "✓",
-      feature1Point3Text: "クリック可能なインタラクティブなトランスクリプト",
+      feature1Point3Text: "クリック可能なインタラクティブな文字起こし",
       feature1Point4Icon: "✓",
       feature1Point4Text: "フレーム精度の字幕",
       transcriptLine1Timestamp: "00:12.450",
       transcriptLine1Speaker: "スピーカー1",
-      transcriptLine1Text: "本日のポッドキャストエピソードへようこそ。",
+      transcriptLine1Text: "今日のポッドキャストエピソードへようこそ。",
       transcriptLine2Timestamp: "00:15.230",
       transcriptLine2Speaker: "スピーカー2",
-      transcriptLine2Text: "番組に出演させていただきありがとうございました！",
+      transcriptLine2Text: "番組に招いていただきありがとうございます！",
       transcriptLine3Timestamp: "00:17.890",
       transcriptLine3Speaker: "スピーカー1",
-      transcriptLine3Text: "それでは、本題に入りましょう...",
+      transcriptLine3Text: "メイントピックに入りましょう...",
       transcriptLine4Timestamp: "00:20.120",
       transcriptLine4Speaker: "スピーカー2",
-      transcriptLine4Text: "もちろんです。この件について話し合うのが楽しみです。",
+      transcriptLine4Text: "もちろん、この話題について話すのが楽しみです。",
       feature2Label: "スマートAI",
-      feature2TitlePart1: "ハンドル",
-      feature2TitleHighlight: "迅速な会話",
-      feature2Description: "当社のAIは、発言が重なったり、中断したり、素早い会話が交わされたりしても、話者を正確に識別します。インタビュー、ポッドキャスト、会議など、発言者が頻繁に割り込む場面に最適です。",
+      feature2TitlePart1: "処理",
+      feature2TitleHighlight: "高速な会話",
+      feature2Description: "当社のAIは、重なる発話、中断、高速なやり取りでも正確に話者を識別します。インタビュー、ポッドキャスト、話者が頻繁に割り込む会議に最適です。",
       feature2Point1Icon: "✓",
       feature2Point1Text: "最大20人の話者を識別",
       feature2Point2Icon: "✓",
-      feature2Point2Text: "中断を完璧に処理する",
+      feature2Point2Text: "中断を完璧に処理",
       feature2Point3Icon: "✓",
-      feature2Point3Text: "重複した音声にも対応",
+      feature2Point3Text: "重なる発話に対応",
       feature2Point4Icon: "✓",
-      feature2Point4Text: "クロストークの精度を維持",
+      feature2Point4Text: "クロストークでも精度を維持",
       feature2VisualNumber: "20",
-      feature2VisualTitle: "講演者を特定",
-      feature2VisualSubtext: "速い会話でも",
+      feature2VisualTitle: "識別された話者",
+      feature2VisualSubtext: "速い会話の中でも",
       feature3Label: "読みやすさ",
       feature3TitlePart1: "完璧に",
-      feature3TitleHighlight: "書式設定されたテキスト",
-      feature3Description: "もうテキストの壁は不要です。AIが段落、文、句読点を適切な場所に自動で追加します。その結果、読みやすく、簡単にスキャンできるトランスクリプトが完成します。",
+      feature3TitleHighlight: "フォーマットされたテキスト",
+      feature3Description: "テキストの壁とはお別れ。AIが自動的に段落、文、句読点を適切な位置に追加します。結果？読みやすくスキャンしやすい文字起こしです。",
       feature3Point1Icon: "✓",
-      feature3Point1Text: "スマートな段落区切り",
+      feature3Point1Text: "スマートな段落分け",
       feature3Point2Icon: "✓",
       feature3Point2Text: "正確な句読点",
       feature3Point3Icon: "✓",
-      feature3Point3Text: "適切な大文字表記",
+      feature3Point3Text: "適切な大文字使用",
       feature3Point4Icon: "✓",
-      feature3Point4Text: "クリーンでスキャン可能な出力",
-      formattingTitle: "ビフォー＆アフター",
-      formattingBeforeLabel: "❌ その他:",
-      formattingBeforeText: "今日は私たちが取り組んでいる新機能についてお話します。きっと気に入っていただけると思います。ユーザーから長い間要望されていた機能で、ようやく完成しました。",
-      formattingAfterLabel: "✓ ネバーキャップ:",
-      formattingAfterText: "今日は、私たちが取り組んでいる新機能についてお話したいと思います。きっと気に入っていただけると思います。ユーザーの皆様から長い間ご要望をいただいていた機能ですが、ついに実現しました。",
-      comparisonSubtitle: "正確さ",
+      feature3Point4Text: "クリーンでスキャンしやすい出力",
+      formattingTitle: "Before & After",
+      formattingBeforeLabel: "❌ 他社製品:",
+      formattingBeforeText: "so today were going to talk about the new features weve been working on i think youll really like them theyve been requested by users for a long time and we finally got them done",
+      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterText: "So today, we're going to talk about the new features we've been working on. I think you'll really like them. They've been requested by users for a long time, and we finally got them done.",
+      comparisonSubtitle: "正確性",
       comparisonSectionTitle: "比較",
-      comparisonDes: "競合他社と比べてどうなっているかご覧ください",
-      tableHeader1: "特徴",
-      tableHeader2: "ネバーキャップ",
-      tableHeader3: "オッター.ai",
-      tableHeader4: "説明",
+      comparisonDes: "競合他社との比較を見る",
+      tableHeader1: "機能",
+      tableHeader2: "NeverCap",
+      tableHeader3: "Otter.ai",
+      tableHeader4: "Descript",
       tableHeader5: "Rev",
-      tableRow1Feature: "精度（クリアな音声）",
+      tableRow1Feature: "正確性（クリアオーディオ）",
       tableRow1NeverCap: "96%",
       tableRow1Otter: "95%",
       tableRow1Descript: "94%",
       tableRow1Rev: "94%",
-      tableRow2Feature: "単語レベルのタイムスタンプ",
+      tableRow2Feature: "単語レベルタイムスタンプ",
       tableRow2NeverCap: "✓",
       tableRow2Otter: "✓",
       tableRow2Descript: "✓",
       tableRow2Rev: "✕",
       tableRow3Feature: "話者識別",
-      tableRow3NeverCap: "20人の講演者",
-      tableRow3Otter: "16人のスピーカー",
-      tableRow3Descript: "10人の講演者",
+      tableRow3NeverCap: "20話者",
+      tableRow3Otter: "16話者",
+      tableRow3Descript: "10話者",
       tableRow3Rev: "✕",
-      tableRow4Feature: "クロストークを処理",
+      tableRow4Feature: "クロストーク対応",
       tableRow4NeverCap: "✓",
-      tableRow4Otter: "限定",
-      tableRow4Descript: "限定",
+      tableRow4Otter: "制限あり",
+      tableRow4Descript: "制限あり",
       tableRow4Rev: "✕",
       tableRow5Feature: "スマートフォーマット",
       tableRow5NeverCap: "✓",
       tableRow5Otter: "✓",
       tableRow5Descript: "✓",
       tableRow5Rev: "基本",
-      tableRow6Feature: "12言語、96%",
+      tableRow6Feature: "12言語で96%の精度",
       tableRow6NeverCap: "✓",
       tableRow6Otter: "✕",
       tableRow6Descript: "✕",
       tableRow6Rev: "✕",
-      ctaTitle: "96%の精度を体験",
-      ctaSubtitle: "最も難しいオーディオをアップロードして違いを確認してください",
-      finalCta: "今すぐ精度をテストする→",
-        languageSectionTitlePart2: "12の主要言語"
+      ctaTitle: "96%の精度を体感",
+      ctaSubtitle: "難しい音声をアップロードして違いを確認",
+      finalCta: "今すぐ精度をテスト →",
+        languageSectionTitlePart2: "（12の主要言語）"
     }
   },
   Pricing: {
     Hero: {
-      "title": "シンプルで透明な価格設定",
-      "highlighted_text": "隠しキャップなし",
-      "description": "ニーズに合ったプランをお選びください。いつでもアップグレードまたはダウングレードできます。契約も不要で、突然のトラブルもありません。"
+      "title": "シンプルで透明な料金体系",
+      "highlighted_text": "隠れた制限なし",
+      "description": "ニーズに合ったプランを選択。いつでもアップグレード/ダウングレード可能。契約縛りなし、予期せぬ請求なし。"
     },
     Cards: {
-      "title": "シンプルで透明な価格設定。",
-      "highlighted_text": "隠しキャップはありません。",
-      "description": "ニーズに合ったプランをお選びください。いつでもアップグレードまたはダウングレードできます。契約も不要で、突然のトラブルもありません。",
+      "title": "シンプルで透明な料金体系。",
+      "highlighted_text": "隠れた制限なし。",
+      "description": "ニーズに合ったプランを選択。いつでもアップグレード/ダウングレード可能。契約縛りなし、予期せぬ請求なし。",
       "plans": [
             {
               "name": "無料",
-              "price": "0ドル",
+              "price": "$0",
               "period": "月",
-              "discount": "当社のサービスを試すのに最適です",
+              "discount": "サービスお試しに最適",
               "limits": {
-                "title": "1日の制限",
+                "title": "1日あたりの制限",
                 "items": [
-                  "1日3ファイル（合計約90分/日）",
-                  "ファイルあたり最大30分（≤250 MB）",
-                  "一度に1つのファイルをアップロードします",
-                  "標準優先キュー"
+                  "3ファイル/日 (合計約90分/日)",
+                  "ファイルあたり最大30分 (≤250 MB)",
+                  "1回に1ファイルをアップロード",
+                  "標準優先度キュー"
                 ]
               },
               "features": {
-                "title": "特徴",
+                "title": "機能",
                 "items": [
-                  "100以上の言語",
-                  "スピーカーラベル",
+                  "100+言語対応",
+                  "話者ラベル",
                   "翻訳",
-                  "すべてのエクスポート形式"
+                  "全エクスポート形式"
                 ]
               },
               "cta": {
-                "text": "無料で始めましょう。クレジットカードは不要です。",
+                "text": "無料で開始。クレジットカード不要。",
                 "button": "無料で始める"
               }
             },
             {
-              "name": "プロマンスリー",
-              "price": "17.99ドル",
+              "name": "プロ月額",
+              "price": "$17.99",
               "period": "月",
-              "discount": "最初の1ヶ月は9.99ドル",
+              "discount": "初月$9.99",
               "limits": {
-                "title": "月間上限なし",
+                "title": "月間制限なし",
                 "items": [
-                  "合計通話時間無制限",
-                  "最大10時間 / 1ファイルあたり5GB",
-                  "一度に50個のファイルをアップロード",
+                  "無制限の合計分数",
+                  "ファイルあたり最大10時間/5GB",
+                  "一度に50ファイルをアップロード",
                   "優先キュー"
                 ]
               },
               "features": {
-                "title": "無料のすべてに加えて",
+                "title": "無料プランの全機能に加え",
                 "items": [
                   "単語レベルのタイムスタンプ",
                   "高度な話者識別",
-                  "書式設定された段落と句読点",
+                  "整形された段落＆句読点",
                   "優先サポート"
                 ]
               },
               "cta": {
-                "text": "通話時間無制限。優先速度。一括アップロード。",
+                "text": "無制限の分数。優先処理。一括アップロード。",
                 "button": "プロになる"
               },
-              "badge": "最も人気のある"
+              "badge": "最も人気"
             },
             {
               "name": "プロ年間",
-              "price": "8.99ドル",
+              "price": "$8.99",
               "period": "月",
-              "discount": "年間請求額 $107.88",
+              "discount": "年額 $107.88",
               "limits": {
-                "title": "プロ月額プランと同じ",
+                "title": "Pro Monthlyと同じ",
                 "items": [
-                  "合計通話時間無制限",
-                  "最大10時間 / 1ファイルあたり5GB",
-                  "一度に50個のファイルをアップロード",
+                  "無制限の合計分数",
+                  "ファイルあたり最大10時間 / 5 GB",
+                  "一度に50ファイルをアップロード",
                   "優先キュー"
                 ]
               },
               "features": {
-                "title": "無料のすべてに加えて",
+                "title": "Freeプランのすべてに加えて",
                 "items": [
                   "単語レベルのタイムスタンプ",
                   "高度な話者識別",
-                  "書式設定された段落と句読点",
+                  "フォーマットされた段落 & 句読点",
                   "優先サポート"
                 ]
               },
               "cta": {
-                "text": "通話時間無制限。優先速度。一括アップロード。",
-                "button": "プロになる"
+                "text": "無制限の分数。優先処理速度。一括アップロード。",
+                "button": "Go Pro"
               },
-              "badge": "ベストバリュー - 50%割引"
+              "badge": "ベストバリュー - 50%オフ"
             }
           ],
-      "disclaimer": "「無制限」とは、月間利用制限や人為的な速度低下がないことを意味します。不正な自動化や再配布にはフェアユースが適用されます。"
+      "disclaimer": "「無制限」とは月間制限や人為的な速度低下がないことを意味します。悪用や再配布にはフェアユースが適用されます。"
     },
     ComparisonTable: {
       "header": {
-        "title": "比較する",
+        "title": "比較",
         "highlighted_text": "すべての機能",
-        "subtitle": "各プランで何が得られるか、正確にご確認ください。隠れた制限はありません。"
+        "subtitle": "各プランで得られるものを正確に確認。隠れた制限はありません。"
       },
       "plans": [
-              "特徴",
-              "無料",
-              "プロマンスリー",
-              "プロ年間"
+              "機能",
+              "Free",
+              "Pro Monthly",
+              "Pro Annual"
             ],
       "features": [
             {
               "name": "価格",
               "values": [
-                "月額0ドル",
+                "$0/月",
                 {
-                  "main": "月額17.99ドル",
-                  "note": "最初の月は9.99ドル"
+                  "main": "$17.99/月",
+                  "note": "初月 $9.99"
                 },
                 {
-                  "main": "月額8.99ドル",
-                  "note": "年間107.88ドル請求"
+                  "main": "$8.99/月",
+                  "note": "年額 $107.88"
                 }
               ]
             },
             {
               "name": "月間分数",
-              "values": ["約2,700（1日90件）", "無制限", "無制限"]
+              "values": ["~2,700 (90/日)", "無制限", "無制限"]
             },
             {
-              "name": "最大ファイル継続時間",
+              "name": "最大ファイル時間",
               "values": ["30分", "10時間", "10時間"]
             },
             {
               "name": "最大ファイルサイズ",
-              "values": ["250MB", "5GB", "5GB"]
+              "values": ["250 MB", "5 GB", "5 GB"]
             },
             {
               "name": "一括アップロード",
-              "values": ["1 ファイル", "50ファイル", "50ファイル"]
+              "values": ["1ファイル", "50ファイル", "50ファイル"]
             },
             {
               "name": "処理速度",
-              "values": ["標準", "優先度", "優先度"]
+              "values": ["標準", "優先", "優先"]
             },
             {
-              "name": "サポートされている言語",
+              "name": "対応言語",
               "values": ["100以上の言語", "100以上の言語", "100以上の言語"]
             },
             {
               "name": "翻訳",
-              "values": ["真実", "真実", "真実"]
+              "values": ["true", "true", "true"]
             },
             {
               "name": "話者識別",
-              "values": ["基本", "上級（20名）", "上級（20名）"]
+              "values": ["基本", "高度（20話者）", "高度（20話者）"]
             },
             {
               "name": "単語レベルのタイムスタンプ",
-              "values": ["間違い", "真実", "真実"]
+              "values": ["false", "true", "true"]
             },
             {
-              "name": "書式設定された段落",
-              "values": ["間違い", "真実", "真実"]
+              "name": "フォーマット済み段落",
+              "values": ["false", "true", "true"]
             },
             {
               "name": "エクスポート形式",
@@ -1930,8 +1930,8 @@ let message = {
               "values": ["メール", "優先メール", "優先メール"]
             },
             {
-              "name": "データ保持",
-              "values": ["30日間", "永遠に", "永遠に"]
+              "name": "データ保持期間",
+              "values": ["30日間", "永久", "永久"]
             }
           ]
     },
@@ -1940,68 +1940,68 @@ let message = {
       "titleHighligt": "質問",
       "items": [
             {
-              "q": "無制限ポリシー",
+              "q": "unlimited_policy",
               "question": "本当に無制限ですか？",
-              "answer": "はい！Proプランには月間通信時間制限はありません。唯一の制限は技術的なもので、ファイル再生時間は最大10時間、ファイルサイズは5GBです。必要な数のファイルを処理できます。"
+              "answer": "はい！Proプランには月間の制限時間がありません。唯一の制限は技術的なものです：最大10時間のファイル長と5GBのファイルサイズです。必要なだけファイルを処理できます。"
             },
             {
-              "q": "計画変更",
+              "q": "plan_change",
               "question": "いつでもプランを変更できますか？",
-              "answer": "もちろんです！ダッシュボードからいつでもサブスクリプションをキャンセルできます。必要に応じていつでもアップグレードまたはダウングレードできます。"
+              "answer": "もちろんです！ダッシュボードからいつでもサブスクリプションをキャンセルできます。必要に応じてアップグレードまたはダウングレードしてください。"
             },
             {
-              "q": "支払い方法",
-              "question": "どのような支払い方法が受け付けられますか?",
-              "answer": "安全で手間のかからないお支払いのために、すべての主要なクレジットカード、デビットカード、PayPal をご利用いただけます。"
+              "q": "payment_methods",
+              "question": "どのような支払い方法を受け付けていますか？",
+              "answer": "主要なクレジットカード、デビットカード、およびPayPalでの安全で簡単な支払いを受け付けています。"
             },
             {
-              "q": "無料トライアル",
+              "q": "free_trial",
               "question": "Proの無料トライアルはありますか？",
-              "answer": "はい！Proを7日間無料でお試しいただけます。クレジットカードは不要です。さらに、ご登録いただくと最初の1ヶ月が45%オフになります。"
+              "answer": "はい！クレジットカード不要で7日間無料でProをお試しください。さらに、初月は45%オフでご利用いただけます。"
             },
             {
-              "q": "ファイル保持",
-              "question": "私のファイルはどれくらいの期間保存されますか?",
-              "answer": "無料プラン：30日間。プロプラン：永久！トランスクリプトはアカウントでいつでもご利用いただけます。"
+              "q": "file_retention",
+              "question": "ファイルはどのくらいの期間保持されますか？",
+              "answer": "無料プラン：30日間。Proプラン：永久！書き起こしは常にアカウントで利用可能です。"
             },
             {
-              "q": "データセキュリティ",
-              "question": "データのセキュリティはどうですか?",
-              "answer": "SOC 2認証を取得しており、256ビット暗号化を採用しています。お客様のコンテンツをモデルの学習に使用しません。お客様のデータはお客様のものです。"
+              "q": "data_security",
+              "question": "データセキュリティについては？",
+              "answer": "当社はSOC 2認証を取得し、256ビット暗号化を使用しています。お客様のコンテンツをモデルのトレーニングに使用することはありません。データはすべてお客様のものです。"
             }
           ]
     },
     CTA: {
-      "title": "無制限に使う準備はできましたか?",
-      "subtitle": "50,000人以上のプロフェッショナルが制限なく文字起こしを行います",
-      "button": "NeverCapを無料でお試しください→",
-      "disclaimer": "クレジットカードは不要です。数秒で文字起こしを開始できます。"
+      "title": "無制限プランをご利用になりませんか？",
+      "subtitle": "50,000人以上のプロフェッショナルが制限なく文字起こしを利用中",
+      "button": "NeverCapを無料で試す →",
+      "disclaimer": "クレジットカード不要 • 数秒で文字起こしを開始"
     }
   },
   UseCases: {
     AllUseCases: {
-      builtFor: "のために作られた",
+      builtFor: "対象",
       heavyUsers: "ヘビーユーザー",
-      whoActuallyNeed: "無制限を本当に必要とする人",
-      heroSubtitle: "何年ものバックログを抱えるポッドキャスターから、数百件のインタビューを抱える研究者まで。プロフェッショナルがNeverCapを活用して、アップロード制限や時間制限から解放される方法をご覧ください。",
+      whoActuallyNeed: "真に無制限を必要とする方々へ",
+      heroSubtitle: "何年分ものバックログを持つポッドキャスターから数百のインタビューを抱える研究者まで。プロフェッショナルがNeverCapでアップロード制限や時間制約から解放される方法をご覧ください。",
       podcasters: {
         title: "ポッドキャスター",
-        pain: "「どのエピソードをトランスクリプトにするか決めるのはやめましょう」",
-        description: "ポッドキャストアーカイブ全体を一度にアップロード。番組ノートの作成、SEO対策、コンテンツの再利用など、再生時間を気にすることなく様々なことができます。",
+        pain: '"文字起こしが必要なエピソードを選ぶのはもう終わり"',
+        description: "ポッドキャストの全アーカイブを一括アップロード。番組ノートの自動作成、SEO対策、コンテンツの再利用が時間を気にせず行えます。",
         benefits: {
-          benefit1: "3話だけではなく全エピソードをアップロードする",
-          benefit2: "SEOに適した番組ノートを生成する",
-          benefit3: "検索可能なアーカイブを作成する",
-          benefit4: "ブログコンテンツへの再利用"
+          benefit1: "3エピソードだけではなく全エピソードをアップロード",
+          benefit2: "SEOに最適化された番組ノートを生成",
+          benefit3: "検索可能なアーカイブを作成",
+          benefit4: "ブログコンテンツとして再利用"
         },
         stats: {
           stat1: {
-            number: "150以上",
+            number: "150+",
             label: "エピソード"
           },
           stat2: {
             number: "200時間",
-            label: "保存されました"
+            label: "節約"
           },
           stat3: {
             number: "3倍",
@@ -2010,23 +2010,23 @@ let message = {
         }
       },
       journalists: {
-        title: "ジャーナリストと作家",
-        pain: "「締め切りのプレッシャーとアップロード制限が重なる」",
-        description: "締め切りまでにすべてのインタビューを一括アップロード。トランスクリプトを瞬時に検索できるので、重要な発言を見逃すことはありません。",
+        title: "ジャーナリスト & ライター",
+        pain: '"締切プレッシャーとアップロード制限の狭間で"',
+        description: "締切前にインタビューを一括アップロード。文字起こしを即時検索し、重要な引用を見逃しません。",
         benefits: {
-          benefit1: "締め切り前に一括アップロード",
-          benefit2: "すべてのインタビューを一度に検索",
-          benefit3: "タイムスタンプ付きの正確な見積もり",
-          benefit4: "アクセントと言語を扱う"
+          benefit1: "締切前に一括アップロード",
+          benefit2: "全インタビューを一括検索",
+          benefit3: "タイムスタンプ付き正確な引用",
+          benefit4: "アクセントと言語に対応"
         },
         stats: {
           stat1: {
-            number: "30歳以上",
+            number: "30+",
             label: "インタビュー/月"
           },
           stat2: {
             number: "96%",
-            label: "正確さ"
+            label: "正確性"
           },
           stat3: {
             number: "5分",
@@ -2035,22 +2035,22 @@ let message = {
         }
       },
       contentCreators: {
-        title: "コンテンツクリエイター",
-        pain: "「アクセシビリティは高価であってはならない」",
-        description: "YouTubeチャンネル全体にキャプションを追加。複数の言語で字幕を生成し、動画のSEOを瞬時に向上させます。",
+        title: "コンテンツクリエーター",
+        pain: '"アクセシビリティは高額である必要はない"',
+        description: "YouTubeチャンネル全体に字幕を追加。多言語字幕を生成し、動画SEOを即時改善。",
         benefits: {
-          benefit1: "すべての動画に一度にキャプションを付ける",
+          benefit1: "全動画に一括で字幕追加",
           benefit2: "249言語翻訳",
-          benefit3: "YouTube対応のSRTファイル",
-          benefit4: "動画のSEOランキングを向上"
+          benefit3: "YouTube対応SRTファイル",
+          benefit4: "動画SEOランキング向上"
         },
         stats: {
           stat1: {
-            number: "100以上",
-            label: "ビデオ"
+            number: "100+",
+            label: "動画"
           },
           stat2: {
-            number: "100以上",
+            number: "100+",
             label: "言語"
           },
           stat3: {
@@ -2060,23 +2060,23 @@ let message = {
         }
       },
       researchers: {
-        title: "研究者および学者",
-        pain: "「定性データは順番待ちすべきではない」",
-        description: "調査研究全体を一度に処理します。フォーカスグループ、インタビュー、パネルディスカッションなど、あらゆる場面で完璧な発言者識別が可能です。",
+        title: "研究者 & アカデミック",
+        pain: '"定性データを待たせるべきではない"',
+        description: "研究データを一括処理。フォーカスグループ、インタビュー、パネルディスカッションを完璧な話者識別で処理。",
         benefits: {
-          benefit1: "フォーカスグループを一括処理する",
-          benefit2: "20人の話者識別",
-          benefit3: "分析ソフトウェアへのエクスポート",
+          benefit1: "フォーカスグループを一括処理",
+          benefit2: "20話者識別",
+          benefit3: "分析ソフトへエクスポート",
           benefit4: "GDPR準拠のセキュリティ"
         },
         stats: {
           stat1: {
-            number: "100以上",
-            label: "勉強"
+            number: "100+",
+            label: "研究"
           },
           stat2: {
             number: "96%",
-            label: "グループ精度"
+            label: "グループ正確性"
           },
           stat3: {
             number: "GDPR",
@@ -2086,13 +2086,13 @@ let message = {
       },
       businessTeams: {
         title: "ビジネスチーム",
-        pain: "「会議の記録は簡単に行えるべきだ」",
-        description: "会議を直接録音するか、音声ファイルをアップロードして即座に文字起こしできます。無制限の会話から検索可能なアーカイブを作成すれば、重要な議論を二度と失うことがなくなります。",
+        pain: "「会議の録音は簡単であるべき」",
+        description: "直接会議を録音するか、音声ファイルをアップロードして即座に文字起こし。無制限の会話から検索可能なアーカイブを作成し、重要な議論を二度と失わない。",
         benefits: {
-          benefit1: "直接音声録音と文字起こし",
-          benefit2: "無制限の会議録画",
+          benefit1: "直接音声録音 & 文字起こし",
+          benefit2: "無制限の会議録音",
           benefit3: "検索可能な会議アーカイブ",
-          benefit4: "オーディオファイルを即座にアップロード"
+          benefit4: "音声ファイルを即座にアップロード"
         },
         stats: {
           stat1: {
@@ -2100,23 +2100,23 @@ let message = {
             label: "録音"
           },
           stat2: {
-            number: "インスタント",
+            number: "即時",
             label: "アップロード"
           },
           stat3: {
-            number: "20歳以上",
-            label: "講演者"
+            number: "20+",
+            label: "スピーカー"
           }
         }
       },
       educators: {
         title: "教育者",
-        pain: "「YouTube動画には即時の文字起こしが必要」",
-        description: "YouTubeリンクを貼り付けるだけで、すぐにトランスクリプトと自動生成された字幕が表示されます。あらゆる教育ビデオを、アクセスしやすく検索可能なコンテンツに変換できます。",
+        pain: "「YouTube動画には即時文字起こしが必要」",
+        description: "YouTubeリンクを貼り付けるだけで即座に文字起こしと自動生成キャプションを取得。教育動画をアクセス可能で検索可能なコンテンツに変換。",
         benefits: {
-          benefit1: "直接YouTubeリンクの転記",
-          benefit2: "動画のキャプションを自動生成",
-          benefit3: "コース全体を書き起こす",
+          benefit1: "直接YouTubeリンク文字起こし",
+          benefit2: "動画キャプションを自動生成",
+          benefit3: "コース全体を文字起こし",
           benefit4: "検索可能な講義アーカイブ"
         },
         stats: {
@@ -2125,11 +2125,11 @@ let message = {
             label: "YouTube貼り付け"
           },
           stat2: {
-            number: "オート",
+            number: "自動",
             label: "キャプション"
           },
           stat3: {
-            number: "100以上",
+            number: "100+",
             label: "言語"
           }
         }
@@ -2137,192 +2137,192 @@ let message = {
       quotes: {
         title: "実際のユーザー、",
         titleHighlight: "真の自由",
-        subtitle: "人工的な制限から解放された専門家の話を聞く",
+        subtitle: "人工的な制限から解放されたプロフェッショナルの声",
         testimonials: {
           mike: {
-            textBefore: "「私は",
-            highlight: "3年間のエピソード",
-            textAfter: "書き起こされていないまま。オッターは3つ選んでくれと言った。3つだ。NeverCap週末に全150話をアップロードさせてくれ。",
+            textBefore: "「3年分のエピソードが文字起こしされずに放置されていました。Otterは3つだけ選ぶよう要求。たった3つ。NeverCapなら150エピソード全部を週末にアップロードできました。」",
+            highlight: "3年分のエピソード",
+            textAfter: "文字起こしされずに放置。Otterは3つだけ選ぶよう要求。3つだけ。NeverCapなら150エピソード全部を週末にアップロードできた。",
             name: "マイク・ロドリゲス",
             role: "ポッドキャストホスト"
           },
           jessica: {
-            textBefore: "「フリーランスのジャーナリストとして、私はトリントの",
-            highlight: "月額100ドル",
-            textAfter: "しかし、Otter の月間 10 ファイル制限では作業できません。NeverCap が私のキャリアを救ってくれました。",
+            textBefore: "「フリーランスのジャーナリストとして、Trintの$100/月は払えません。でもOtterの月10ファイル制限も仕事になりません。NeverCapが私のキャリアを救いました。」",
+            highlight: "$100/月",
+            textAfter: "、しかしOtterの月10ファイル制限も仕事にならない。NeverCapが私のキャリアを救った。",
             name: "ジェシカ・パーク",
             role: "フリーランスジャーナリスト"
           },
           sarah: {
-            textBefore: "「私たちの研究チームは",
+            textBefore: "「私たちの研究チームは200時間のフォーカスグループ録音を持っていました。月ごとの制限ではなく、週末ですべて処理できました。」",
             highlight: "200時間",
-            textAfter: "フォーカスグループの録音を数分間かけて処理しました。毎月の録音時間を節約するのではなく、週末にまとめて処理しました。」",
+            textAfter: "のフォーカスグループ録音。月ごとの制限ではなく、週末ですべて処理。",
             name: "サラ・チェン博士",
-            role: "主任研究員"
+            role: "主任研究者"
           },
           carlos: {
-            textBefore: "「私はスペイン語で教育コンテンツを作っています。NeverCapは完璧に書き起こし、",
-            highlight: "英語に翻訳する",
-            textAfter: "より広いリーチのために。限界はなく、成長あるのみです。",
+            textBefore: "「私はスペイン語で教育コンテンツを作成しています。NeverCapは完璧に文字起こしし、より広い範囲に届けるために英語に翻訳。制限なく、ただ成長。」",
+            highlight: "英語に翻訳",
+            textAfter: "してより広い範囲に。制限なく、ただ成長。",
             name: "カルロス・マルティネス",
-            role: "YouTube教育者"
+            role: "YouTube Educator → YouTubeエデュケーター"
           }
         }
       },
       industries: {
-        title: "信頼される",
-        titleHighlight: "産業",
-        subtitle: "世界中のプロフェッショナルが真の無制限に切り替えています",
+        title: "Trusted Across → 信頼されている",
+        titleHighlight: "Industries → 業界",
+        subtitle: "Professionals everywhere are switching to truly unlimited → プロフェッショナルが真の無制限に切り替えています",
         list: {
-          media: "メディアと出版",
-          education: "教育",
-          healthcare: "健康管理",
-          technology: "テクノロジー",
-          finance: "ファイナンス",
-          legal: "法律上の"
+          media: "Media & Publishing → メディア＆出版",
+          education: "Education → 教育",
+          healthcare: "Healthcare → ヘルスケア",
+          technology: "Technology → テクノロジー",
+          finance: "Finance → 金融",
+          legal: "Legal → 法律"
         }
       },
       cta: {
-        title: "あなたのユースケースも無制限に",
-        subtitle: "時間を数えるのをやめて創造を始めた5万人以上のプロフェッショナルに加わりましょう",
-        button: "無限の旅を始めましょう →"
+        title: "Your Use Case Needs Unlimited Too → あなたの用途も無制限が必要です",
+        subtitle: "Join 50,000+ professionals who stopped counting minutes and started creating → 時間を数えるのをやめ、創造を始めた50,000人以上のプロフェッショナルに参加しましょう",
+        button: "Start Your Unlimited Journey → → 無制限の旅を始めましょう →"
       }
     },
     Podcasters: {
-      badge: "🎙️ ポッドキャスター向けに構築",
-      heroTitle: "あなたの",
-      heroTitleHighlight: "ポッドキャストアーカイブ全体",
-      heroSubtitle: "過去の全作品をアップロード。各エピソードのショーノートを作成。どのエピソードを書き起こすか選ぶ必要はもうありません。一度に50エピソードを処理でき、月間回数は無制限です。",
-      ctaPrimary: "無料で文字起こしを始める",
-      ctaSecondary: "仕組みを見る",
-      trustBadge1: "🎙️ 10,000人以上のポッドキャスター",
-      trustBadge2: "∞ 無制限のエピソード",
-      trustBadge3: "📝 SEO 対応のトランスクリプト",
+      badge: "Built for Podcasters → ポッドキャスター向けに構築",
+      heroTitle: "Transcribe Your → 書き起こす",
+      heroTitleHighlight: "Entire Podcast Archive → ポッドキャストアーカイブ全体",
+      heroSubtitle: "Upload your entire back catalog. Create show notes for every episode. No more choosing which episodes to audio transcribe. → 過去の全エピソードをアップロード。各エピソードのショーノートを作成。書き起こすエピソードを選ぶ必要はありません。",
+      ctaPrimary: "Start Transcribing Free → 無料で書き起こしを開始",
+      ctaSecondary: "See How It Works → 仕組みを見る",
+      trustBadge1: "10,000+ Podcasters → 10,000人以上のポッドキャスター",
+      trustBadge2: "Unlimited Episodes → 無制限のエピソード",
+      trustBadge3: "SEO-Ready Transcripts → SEO対応の書き起こし",
       stats: {
         stat1: {
-          number: "∞",
-          label: "月間エピソード数"
+          number: "∞ → ∞",
+          label: "Episodes/Month → エピソード/月"
         },
         stat2: {
-          number: "50",
-          label: "一括アップロード"
+          number: "50 → 50",
+          label: "Batch Upload → 一括アップロード"
         },
         stat3: {
-          number: "10時間",
-          label: "エピソードの最大長さ"
+          number: "10hrs → 10時間",
+          label: "Max Episode Length → 最大エピソード長"
         },
         stat4: {
-          number: "96%",
-          label: "正確さ"
+          number: "96% → 96%",
+          label: "Accuracy → 精度"
         }
       },
-      problemTitle: "その",
-      problemTitleHighlight: "ポッドキャストの書き起こし問題",
-      problemSubtitle: "他のサービスでは、どのエピソードを「書き起こす価値がある」かを選択する必要がある",
+      problemTitle: "The → その",
+      problemTitleHighlight: "Podcast Transcription Problem → ポッドキャスト書き起こしの問題",
+      problemSubtitle: 'Other services make you choose which episodes are "worth" transcribing → 他のサービスでは「価値がある」エピソードを選ばせます',
       problems: {
         problem1: {
-          title: "アップロード制限によりアーカイブが削除される",
-          description: "Otterでは生涯3回まで無料でインポートでき、Proプランでは毎月10回までインポートできます。3年間分のエピソードをどうやって書き起こすのですか？"
+          title: "Upload Limits Kill Archives → アップロード制限がアーカイブを台無しに",
+          description: "Otter gives you 3 lifetime imports on free, 10 per month on Pro. How do you transcribe 3 years of episodes? → Otterは無料で3回、Proで月10回のインポート。3年分のエピソードをどう書き起こしますか？"
         },
         problem2: {
-          title: "SEOの機会を逃す",
-          description: "書き起こされていないエピソードはすべてSEOトラフィックの損失となります。しかし、Descriptでは月間30時間までしか利用できません。"
+          title: "Missing SEO Opportunities → SEO機会の喪失",
+          description: "Every untranscribed episode is lost SEO traffic. But Descript limits you to 30 hours/month at best. → 書き起こされないエピソードはSEOトラフィックを失います。Descriptは最大30時間/月に制限。"
         },
         problem3: {
-          title: "成長とともにコストが爆発的に増加",
-          description: "ポッドキャストが成長するにつれて、文字起こしのコストが急騰します。1 時間あたり 2 ドルの超過料金により、スケーリングが不可能になります。"
+          title: "Costs Explode with Growth → 成長と共にコストが爆発",
+          description: "As your podcast grows, transcription costs skyrocket. $2/hour overage fees make scaling impossible. → ポッドキャストが成長すると書き起こしコストが急騰。$2/時間の超過料金で拡張が不可能に。"
         }
       },
-      solutionTitle: "その",
-      solutionTitleHighlight: "NeverCap 解決策",
-      solutionDescription: "真の無制限のトランスクリプション。アーカイブ全体をアップロード。すべての新しいエピソードをトランスクリプション。大規模な番組ノート作成。上限も制限もなく、成長し続けるだけです。",
-      workflowTitle: "ポッドキャストのワークフロー",
-      workflowTitleHighlight: "簡略化",
-      workflowSubtitle: "録画からSEOに最適化された番組ノートまでわずか数分で",
+      solutionTitle: "The → その",
+      solutionTitleHighlight: "NeverCap Solution → NeverCapソリューション",
+      solutionDescription: "True unlimited transcription. Upload your entire archive. Transcribe every new episode. Generate show notes at scale. No caps, no limits, just growth. → 真の無制限書き起こし。アーカイブ全体をアップロード。新しいエピソードをすべて書き起こし。大規模にショーノートを生成。上限なし、制限なし、成長のみ。",
+      workflowTitle: "Your Podcast Workflow, → あなたのポッドキャストワークフロー、",
+      workflowTitleHighlight: "Simplified → シンプル化",
+      workflowSubtitle: "From recording to SEO-optimized show notes in minutes → 録音からSEO最適化されたショーノートまで数分で",
       workflow: {
         step1: {
-          title: "エピソードをアップロード",
-          description: "一度に 50 エピソードをドロップします。MP3、MP4、WAV すべて対応しています。"
+          title: "Upload Episodes → エピソードをアップロード",
+          description: "Drop 50 episodes at once. MP3, MP4, WAV - we handle them all. → 一度に50エピソードをドロップ。MP3、MP4、WAV - すべて対応。"
         },
         step2: {
-          title: "AIによる文字起こし",
-          description: "話者識別精度96%。インタビューに最適です。"
+          title: "AI Transcribes → AIが書き起こし",
+          description: "96% accuracy with speaker identification. Perfect for interviews. → 話者識別付き96%精度。インタビューに最適。"
         },
         step3: {
-          title: "スマートフォーマット",
-          description: "AIが段落、文、句読点を自動的に追加します。"
+          title: "Smart Formatting → スマートフォーマット",
+          description: "AIが自動的に段落、文章、句読点を追加"
         },
         step4: {
-          title: "公開とランク付け",
-          description: "ウェブサイトにエクスポートして、SEOトラフィックの増加を確認しましょう。"
+          title: "公開 & ランク付け",
+          description: "ウェブサイトにエクスポート。SEOトラフィックの成長を実感"
         }
       },
-      featuresTitle: "ポッドキャスター特集",
-      featuresTitleHighlight: "実際に必要",
-      featuresSubtitle: "ポッドキャスターによるポッドキャスターのためのプラットフォーム",
+      featuresTitle: "ポッドキャスター向け機能",
+      featuresTitleHighlight: "本当に必要なもの",
+      featuresSubtitle: "ポッドキャスターによる、ポッドキャスターのための製品",
       features: {
         feature1: {
-          title: "複数スピーカー検出",
-          description: "最大20人のスピーカーを自動的に識別し、ラベル付けします。パネルディスカッション、インタビュー、共同司会番組などに最適です。"
+          title: "複数話者検出",
+          description: "最大20人の話者を自動識別・ラベル付け。パネルディスカッション、インタビュー、共同ホスト番組に最適"
         },
         feature2: {
           title: "タイムスタンプ章",
-          description: "YouTubeの説明にクリック可能なタイムスタンプを生成。リスナーがお気に入りのセグメントに瞬時にジャンプできるようにします。"
+          description: "YouTube説明文用のクリック可能なタイムスタンプを生成。リスナーがお気に入りの部分に即座に移動可能"
         },
         feature3: {
           title: "スマートフォーマット",
-          description: "段落、文、句読点を自動で追加。読みやすく、明瞭なトランスクリプトを作成。ポストプロダクションにかかる時間を節約できます。"
+          description: "段落、文章、句読点を自動追加。クリーンで読みやすい文字起こし。ポストプロダクションの時間を節約"
         },
         feature4: {
           title: "SEO最適化",
-          description: "検索エンジン向けにフォーマットされたトランスクリプト。ポッドキャストの発見可能性を高め、新しい視聴者にリーチしましょう。"
+          description: "検索エンジン向けにフォーマットされた文字起こし。ポッドキャストの発見性を向上させ新規リスナーを獲得"
         },
         feature5: {
-          title: "100以上の言語",
-          description: "あらゆる言語で文字起こし。249以上の言語に翻訳。世界中のユーザーに簡単にリーチ。"
+          title: "100+言語対応",
+          description: "あらゆる言語で文字起こし可能。249+言語に翻訳。グローバルな視聴者に簡単にリーチ"
         },
         feature6: {
           title: "バッチ処理",
-          description: "寝る前に50エピソードをアップロード。朝起きたらトランスクリプトを完成させ、アーカイブ全体を一晩で処理。"
+          description: "就寝前に50エピソードをアップロード。起床時には完成した文字起こしが。一晩でアーカイブ全体を処理"
         }
       },
-      testimonialsTitle: "ポッドキャスター",
-      testimonialsTitleHighlight: "スイッチ",
-      testimonialsSubtitle: "本物のポッドキャスターによる本物の物語",
+      testimonialsTitle: "切り替えた",
+      testimonialsTitleHighlight: "ポッドキャスターたち",
+      testimonialsSubtitle: "実際のポッドキャスターからのリアルストーリー",
       testimonials: {
         mike: {
-          text: "ポッドキャストを3年間続けてきましたが、全てを手作業で文字起こしするのはまるでバカみたいでした。一度に6つのエピソードをアップロードしたら、私と共同司会者の音声が完璧に分離されました。台無しになったと思っていたコーヒーショップのエピソードも、見事に文字起こしされました。もう二度と、こんなことを自分で入力する時代は終わります。",
+          text: '"3年間ポッドキャストを続け、バカみたいに全て手作業で文字起こししていました。6エピソードを一度にアップロードしたら、共同ホストと完璧に分離されました。台無しだと思ったカフェの回？クリアな文字起こしが。二度と自分で打ち直すことはありません"',
           name: "マイク・ロドリゲス",
-          role: "「The Daily Grind」ポッドキャストのホスト"
+          role: '"The Daily Grind"ポッドキャストホスト'
         },
         sarah: {
-          text: "Otterでは、ファイルのインポートが月に10件までに制限されていました。150エピソードのバックログがあります。NeverCapを使えば、すべてを3回に分けてアップロードできます。古いエピソードにトランスクリプトを追加してから、オーガニックトラフィックが300%増加しました。これは文字通り元が取れます。",
+          text: '"Otterは月10ファイルのインポート制限がありました。150エピソードが未処理でした。NeverCapでは3回のバッチで全てをアップロードできました。古いエピソードに文字起こしを追加してから、オーガニックトラフィックが300%増加。文字通り元が取れます"',
           name: "サラ・チェン",
-          role: "「Tech Talks Today」のクリエイター"
+          role: '"Tech Talks Today"クリエイター'
         }
       },
-      comparisonTitle: "ポッドキャスターが選ぶ理由",
-      comparisonTitleHighlight: "NeverCap",
-      comparisonSubtitle: "競合他社と比べてどうなっているかご覧ください",
+      comparisonTitle: "ポッドキャスターが選ぶ",
+      comparisonTitleHighlight: "NeverCapの理由",
+      comparisonSubtitle: "競合他社との比較",
       comparison: {
         headers: {
-          feature: "特徴",
+          feature: "機能",
           nevercap: "NeverCap",
-          otter: "Otter.ai プロ",
-          descript: "作成者を説明する"
+          otter: "Otter.ai Pro",
+          descript: "Descript Creator"
         },
         rows: {
           monthlyLimit: {
             feature: "月間エピソード制限",
             nevercap: "無制限",
-            otter: "約13話（1200分）",
-            descript: "約30話（30時間）"
+            otter: "~13エピソード (1200分)",
+            descript: "~30エピソード (30時間)"
           },
           uploadLimit: {
             feature: "ファイルアップロード制限",
             nevercap: "無制限",
-            otter: "月額10",
-            descript: "一度に1つずつ"
+            otter: "月10回",
+            descript: "1回1ファイル"
           },
           batchProcessing: {
             feature: "バッチ処理",
@@ -2331,16 +2331,16 @@ let message = {
             descript: "✕"
           },
           maxLength: {
-            feature: "エピソードの最大長さ",
+            feature: "最大エピソード長",
             nevercap: "10時間",
             otter: "90分",
             descript: "無制限"
           },
           speakerDetection: {
-            feature: "スピーカー検出",
-            nevercap: "20人の講演者",
-            otter: "16人のスピーカー",
-            descript: "10人の講演者"
+            feature: "話者検出",
+            nevercap: "20話者",
+            otter: "16話者",
+            descript: "10話者"
           },
           smartFormatting: {
             feature: "スマートフォーマット",
@@ -2350,124 +2350,124 @@ let message = {
           },
           price: {
             feature: "価格",
-            nevercap: "月額17.99ドル",
-            otter: "月額16.99ドル",
-            descript: "月額30ドル"
+            nevercap: "$17.99/月",
+            otter: "$16.99/月",
+            descript: "$30/月"
           }
         }
       },
-      ctaTitle: "すべてのエピソードを書き起こし始める",
-      ctaSubtitle: "制限を気にしない10,000人以上のポッドキャスターに参加しましょう",
+      ctaTitle: "すべてのエピソードを文字起こし開始",
+      ctaSubtitle: "制限を気にしない10,000人以上のポッドキャスターに参加",
       ctaButton: "最初の50エピソードを無料でアップロード →",
-      ctaDisclaimer: "クレジットカード不要 • 無制限のエピソードを処理可能 • いつでもキャンセル可能"
+      ctaDisclaimer: "クレジットカード不要 • 無制限のエピソード処理 • いつでもキャンセル可能"
     },
     Journalists: {
       hero: {
-        badge: "📰 ジャーナリストとライター向け",
-        title: "すべてのインタビューを書き起こします。",
-        titleHighlight: "決して引用を見逃さないでください。",
-        subtitle: "どのインタビューを文字起こしの対象にするか選ぶのはもう終わりです。すべての録音を一度にアップロードし、瞬時に検索。アップロードの心配をすることなく、締め切りに間に合います。",
+        badge: "ジャーナリスト & ライター向け",
+        title: "すべてのインタビューを文字起こし。",
+        titleHighlight: "重要な引用を見逃さない。",
+        subtitle: "どのインタビューを文字起こしするか選ぶのをやめましょう。すべての録音を一度にアップロードし、即座に検索して、アップロードの不安なく締め切りに間に合わせます。",
         ctaPrimary: "無制限アップロードを開始 →",
-        ctaSecondary: "仕組みを見る",
+        ctaSecondary: "使い方を見る",
         stats: {
           uploads: {
             number: "∞",
-            label: "ファイルのアップロード"
+            label: "ファイルアップロード"
           },
           accuracy: {
             number: "96%",
-            label: "正確さ"
+            label: "精度"
           },
           speed: {
             number: "5分",
-            label: "1時間あたり"
+            label: "毎時"
           }
         },
         dashboard: {
           title: "インタビューキュー",
-          status: "• すべての処理",
+          status: "• すべて処理中",
           interviews: {
             cityCouncil: {
               title: "市議会会議",
               duration: "2時間15分 • アップロード中...",
-              action: "処理"
+              action: "処理中"
             },
             expertInterview: {
-              title: "専門家インタビュー - 陳博士",
-              duration: "45分 • 書き起こし中...",
-              action: "96%完了"
+              title: "専門家インタビュー - Dr. Chen",
+              duration: "45分 • 文字起こし中...",
+              action: "96% 完了"
             },
             pressConference: {
               title: "記者会見",
               duration: "1時間30分 • 準備完了",
-              action: "表示→"
+              action: "表示 →"
             },
             phoneInterview: {
-              title: "電話インタビュー - 出典",
+              title: "電話インタビュー - 情報源",
               duration: "35分 • 準備完了",
-              action: "表示→"
+              action: "表示 →"
             }
           }
         }
       },
       problem: {
-        title: "その",
+        title: "The",
         titleHighlight: "ジャーナリストの文字起こし問題",
-        subtitle: "他のサービスでは、どのインタビューを書き起こす価値があるかを選択する必要があります",
+        subtitle: "他のサービスでは、どのインタビューが文字起こしする「価値」があるか選ばせます",
         problems: {
           uploadLimits: {
-            title: "アップロード制限で捜査が失敗に終わる",
-            description: "OtterのProプランでは、月に10件のファイルインポートが可能です。3週間分の捜査インタビューをどのように書き起こすのでしょうか？"
+            title: "アップロード制限が調査を台無しにする",
+            description: "OtterのProプランでは月10ファイルのインポートしかできません。3週間分の調査インタビューをどう文字起こししますか？"
           },
           missingQuotes: {
-            title: "重要な引用が欠落している",
-            description: "書き起こされていないインタビューには、記事の重要な引用が含まれている可能性があります。しかし、Trintでは月間最大50時間までしか利用できません。"
+            title: "重要な引用を見逃す",
+            description: "文字起こしされていないインタビューには、記事のキークォートが含まれている可能性があります。しかしTrintでは最大でも月50時間までです。"
           },
           costExplosion: {
-            title: "期限が迫るにつれコストが爆発的に増加",
-            description: "調査が深まるにつれて、文字起こしのコストが急騰します。月額 100 ドルの超過料金により、最新ニュースの配信は不可能になります。"
+            title: "締め切りでコストが急騰",
+            description: "調査が進むにつれ、文字起こしコストが急騰。月$100の超過料金で速報が不可能に。"
           }
         },
         solution: {
-          title: "その",
-          titleHighlight: "NeverCap 解決策",
-          description: "真の無制限の文字起こし。調査内容を全てアップロード。あらゆるインタビューを書き起こし。すべての引用を瞬時に検索。上限も制限もなく、ジャーナリズムそのもの。"
+          title: "The",
+          titleHighlight: "NeverCapソリューション",
+          description: "真の無制限文字起こし。調査全体をアップロード。すべてのインタビューを文字化け。引用を即時検索。制限なし、上限なし、ジャーナリズムそのまま。"
         }
       },
       solution: {
-        title: "ついに、",
-        titleHighlight: "真の自由",
-        titleSuffix: "ジャーナリスト向け",
-        subtitle: "すべてをアップロード。すべてを書き起こし。すべてを検索。",
+        title: "1",
+        titleHighlight: "ジャーナリスト向け",
+        titleSuffix: "最高のインタビュー文字起こしソフトウェア",
+        subtitle: "締切が迫り正確性が命の時に重要な真の利点",
         solutions: {
           unlimitedUploads: {
-            label: "無制限のアップロード",
-            title: "調査全体を一括アップロード",
-            description: "どのインタビューを書き起こすか選ぶ必要はもうありません。50個のファイルを一度にアップロード。数ヶ月分の録音を一晩で処理。調査内容をすべて書き起こします。",
+            label: "無制限ボリューム",
+            title: "すべてのインタビューに無制限ボリューム",
+            description: "時間制限のあるソフトと異なり、短い会話から数時間の議論まで文字起こし可能。締切間際にクレジット切れを心配する必要はありません。",
             points: {
-              simultaneousUpload: "50個のファイルを同時にアップロード",
-              noLimits: "月間アップロード制限なし",
-              processWhileWrite: "書きながら処理する",
-              longRecordings: "10時間の録音をサポート"
+              simultaneousUpload: "月間時間制限なし",
+              noLimits: "10時間インタビュー対応",
+              processWhileWrite: "調査全体を一括処理",
+              longRecordings: "10時間録音対応"
             },
             visual: {
-              number: "50",
-              label: "ファイルを一度に"
+              number: "∞",
+              label: "制限なし。永遠に。"
             }
           },
           instantSearch: {
-            label: "インスタント検索",
-            title: "数秒であらゆる引用を見つける",
-            description: "すべてのトランスクリプトを瞬時に検索。3か月前の完璧な引用文もすぐに見つけられます。メモに残した重要な発言を、もう見失うことはありません。",
+            label: "ライトニングスピード",
+            title: "ニュースサイクルに合わせた速度",
+            description: "インタビュー文字起こしが数日ではなく数分で完了。これまで以上に速く記事を仕上げられます。コーヒーを飲んでいる間にAIが数時間の音声を処理。",
             points: {
-              searchAll: "すべてのインタビューを検索",
-              wordTimestamps: "単語レベルのタイムスタンプ",
-              jumpToMoments: "正確な瞬間にジャンプ",
+              searchAll: "1時間インタビューで5分の処理時間",
+              wordTimestamps: "緊急記事の優先処理",
+              jumpToMoments: "リアルタイム進捗追跡",
               exportCitations: "引用付きでエクスポート"
             },
             searchDemo: {
-              placeholder: "気候政策声明",
-              resultsText: "4つのインタビューで発見:",
+              placeholder: "5分",
+              resultsText: "1時間の音声あたり",
               results: {
                 mayorInterview: "「…私たちの気候政策は変革をもたらすでしょう…」",
                 expertPanel: "「...政策声明は明確に示しています...」"
@@ -2475,88 +2475,102 @@ let message = {
             }
           },
           professionalAccuracy: {
-            label: "プロフェッショナルな正確さ",
-            title: "96%の精度で見積もることができます",
-            description: "正確な書き起こしで、そのまま引用できます。アクセント、専門用語、早口の会話にも対応。読みやすい完璧なフォーマットでお届けします。",
+            label: "引用可能な精度",
+            title: "そのまま引用できる正確さ",
+            description: "当社AIは高精度の文字起こしを提供し、掲載する引用が正確で信頼性あることを保証。編集者が信頼するプロ仕様の文字起こし。",
             points: {
-              accuracyGuarantee: "96%の精度保証",
-              handlesAccents: "アクセントや方言に対応",
-              smartPunctuation: "スマートな句読点と段落",
+              accuracyGuarantee: "96%精度保証",
+              handlesAccents: "専門用語対応",
+              smartPunctuation: "完璧な話者識別",
               speakerIdentification: "話者識別"
             },
             visual: {
               accuracy: "96%",
-              label: "精度率",
+              label: "掲載可能な精度",
               transcript: {
                 speaker1: "「調査の結果、財務報告書に重大な矛盾が明らかになった。」",
                 speaker2: "「それらの具体的な矛盾点について詳しく説明していただけますか？」"
               }
             }
-          }
+          },
+            ironclad: {
+                  label: "情報源保護",
+                  title: "鉄壁の情報源保護",
+                  description: "機密インタビューデータと秘密情報源を保護する堅牢なセキュリティ機能を提供。銀行レベルの暗号化で調査を安全に保管。",
+                  points: {
+                    accuracyGuarantee: "エンドツーエンド暗号化",
+                    handlesAccents: "自動ファイル削除オプション",
+                    smartPunctuation: "GDPR & プライバシー準拠"
+                  },
+                  visual: {
+                    accuracy: "🔒",
+                    label: "最高レベルのセキュリティ"
+                  }
+                }
         }
       },
       features: {
-        title: "すべてが",
-        titleHighlight: "ジャーナリストのニーズ",
-        subtitle: "ワークフローを尊重するプロフェッショナルツール",
+        title: "ジャーナリストに必要な",
+        titleHighlight: "すべてを備えて",
+        subtitle: "ワークフローを尊重するプロ仕様ツール",
         featuresList: {
           languages: {
-            title: "100以上の言語",
-            description: "世界中の 12 の主要言語でソースにインタビューし、96% の精度を実現。"
+            title: "100+言語",
+            description: "主要12言語で96%の精度でグローバルな情報源とインタビュー可能"
           },
           exportFormats: {
             title: "エクスポート形式",
-            description: "Word、PDF、SRT、TXT。あらゆるワークフローに対応します。"
+            description: "Word、PDF、SRT、TXT。あらゆるワークフローに対応。"
           },
           sourceProtection: {
-            title: "ソース保護",
-            description: "銀行レベルの暗号化。情報源の機密性は維持されます。"
+            title: "情報源保護",
+            description: "銀行レベルの暗号化。情報源は秘匿されたまま。"
           },
           timestamps: {
             title: "タイムスタンプ",
-            description: "引用をクリックすると、正確な音声の瞬間にジャンプします。"
+            description: "引用をクリックすると該当の音声部分にジャンプ"
           },
           teamSharing: {
             title: "チーム共有",
-            description: "編集者と共同作業を行い、トランスクリプトを安全に共有します。"
+            description: "編集者と共同作業。文字起こしを安全に共有"
           },
           mobileReady: {
             title: "モバイル対応",
-            description: "スマートフォンからアップロード。どこからでもトランスクリプトを確認できます。"
+            description: "スマホからアップロード。どこでも文字起こしを確認"
           },
           smartFormatting: {
             title: "スマートフォーマット",
-            description: "読みやすいトランスクリプトを作成するための段落と句読点の自動設定。"
+            description: "読みやすい文字起こしのための自動段落・句読点"
           },
           batchProcessing: {
             title: "バッチ処理",
-            description: "一度に50個のファイルをアップロード。あなたが寝ている間に一晩中処理します。"
+            description: "50ファイルを一括アップロード。睡眠中に処理"
           }
         }
       },
       testimonials: {
         jessica: {
-          quote: "アップロード制限のせいで、3年間分のインタビューが書き起こされずに放置されていました。NeverCapのおかげで週末で全て処理できました。画期的です。",
+          quote: "アップロード制限のため3年分のインタビューが未文字起こしでした。NeverCapで週末1回で全て処理できました。革命的な変化です。",
           name: "ジェシカ・パーク",
           role: "フリーランスジャーナリスト、元Otterユーザー"
         }
       },
       cta: {
-        title: "転記を開始",
+        title: "文字起こしを開始",
         titleHighlight: "制限なし",
-        subtitle: "アップロード数を数えるのをやめ、ストーリーに焦点を当て始めた何千人ものジャーナリストに加わりましょう",
-        ctaPrimary: "無制限に無料でお試しください→",
-        ctaSecondary: "価格を見る"
+        subtitle: "アップロード回数を気にせず記事に集中する何千ものジャーナリストに参加",
+        ctaPrimary: "無制限を無料で試す →",
+        ctaSecondary: "料金を見る"
       }
     },
     ContentCreators: {
       hero: {
-        badge: "📹 コンテンツクリエイター向け",
-        title: "キャプション",
-        titleHighlight: "チャンネル全体",
-        titleSuffix: "分を数えずに",
-        subtitle: "字幕をつけるべき動画を選ぶのはもう終わり。YouTubeライブラリ全体を処理して、100以上の言語で字幕を生成し、あらゆるプラットフォームから動画を直接取得できます。月額利用制限やアップロード制限はなく、純粋にクリエイティブな自由を追求できます。",
-        ctaPrimary: "無制限の字幕作成を開始 →",
+        badge: "コンテンツクリエイター向け",
+        title: "YouTube動画の文字起こし、",
+        titleHighlight: "無制限に",
+        titleSuffix: "1",
+        subtitle: "YouTube動画の文字起こし、TikTok動画の再利用向け文字起こし、Facebook動画をテキスト化する方法など、当社プラットフォームでシームレスに処理。100+言語で字幕生成、月間制限なし - 純粋な創造の自由を。",
+        ctaPrimary: "無制限キャプション開始 →",
         ctaSecondary: "仕組みを見る",
         stats: {
           videos: {
@@ -2564,80 +2578,82 @@ let message = {
             label: "動画/月"
           },
           languages: {
-            number: "100以上",
+            number: "100+",
             label: "言語"
           },
           accuracy: {
             number: "96%",
-            label: "正確さ"
+            label: "正確性"
           },
           platforms: {
-            number: "10歳以上",
+            number: "10+",
             label: "プラットフォーム"
           }
         }
       },
       platforms: {
-        title: "あらゆるプラットフォームから取得して書き起こす",
+        title: "あらゆるプラットフォームから取得＆文字起こし",
         platformNames: {
-          youtube: "ユーチューブ",
-          facebook: "フェイスブック",
-          twitter: "X（ツイッター）",
-          dropbox: "ドロップボックス",
-          googleDrive: "Googleドライブ",
-          vimeo: "ヴィメオ",
-          tiktok: "ティックトック",
-          instagram: "インスタグラム"
-        }
-      },
+          youtube: "YouTube",
+          facebook: "Facebook",
+          twitter: "X (Twitter)",
+          dropbox: "Dropbox",
+          googleDrive: "Google Drive",
+          vimeo: "Vimeo",
+          tiktok: "TikTok",
+          instagram: "Instagram"
+        },
+          titleMax: "あらゆるプラットフォームから",
+          titleMaxHighlight: "動画を文字起こし"
+    },
       features: {
-        title: "必要なものすべて",
-        titleHighlight: "コンテンツのスケール",
-        subtitle: "プロフェッショナルな制限のないプロフェッショナルツール",
+        title: "コンテンツを拡張する",
+        titleHighlight: "ために必要な全て",
+        subtitle: "プロ仕様のツールにプロの制限なし",
         oneClickImport: {
           label: "ワンクリックインポート",
-          title: "リンクを貼り付けます。",
-          titleHighlight: "トランスクリプトを取得します。",
-          description: "ダウンロードと再アップロードはもう不要です。YouTube、TikTok、Instagramのリンクを貼り付けるだけで、すぐにトランスクリプトを作成できます。チャンネル全体のバックログを週末で処理できます。",
+          title: "YouTube、TikTok &",
+          titleHighlight: "Instagram動画をリンク貼り付けで文字起こし",
+          description: "当社のツールは動画コンテンツの文字起こしを簡単にします。Instagram動画の文字起こしにはリンクを貼るだけ。Vimeo動画の文字起こしも同様です。週末1つでチャンネル全体のバックログを処理できます。",
           points: {
-            directYoutube: "直接YouTubeリンクの転記",
-            multiplePlatforms: "10以上のプラットフォームから取得",
-            batchPlaylists: "プレイリスト全体をバッチ処理する",
+            directYoutube: "YouTubeリンク直接文字起こし",
+            multiplePlatforms: "10+プラットフォームから取得",
+            batchPlaylists: "プレイリスト一括処理",
             autoSync: "チャンネルと自動同期"
           },
           demo: {
-            instruction: "ビデオの URL を貼り付けます:",
+            instruction: "動画URLを貼り付け：",
             url: "https://youtube.com/watch?v=...",
-            status: "取得と転記中..."
+            status: "取得＆文字起こし中..."
           }
         },
         globalReach: {
-          label: "グローバルリーチ",
-          title: "100以上の言語。",
-          titleHighlight: "制限ゼロ。",
-          description: "100以上の言語への自動翻訳で、世界中の視聴者にリーチしましょう。複数言語の字幕を同時に生成できます。追加料金や月間翻訳数の上限はありません。",
+          label: "グローバル対応",
+          title: "100+言語",
+          titleHighlight: "制限なし",
+          description: "100+言語への自動翻訳で全世界の視聴者にリーチ。複数言語の字幕を同時生成。追加料金なし、翻訳数の月間制限なし。",
           points: {
             highAccuracy: "主要12言語で96%の精度",
-            unlimitedTranslations: "無制限の翻訳が含まれています",
+            unlimitedTranslations: "無制限翻訳付き",
             multicultural: "多文化コンテンツに最適",
-            autoDetect: "ソース言語を自動検出"
+            autoDetect: "ソース言語自動検出"
           },
           visual: {
-            number: "100以上",
-            title: "サポートされている言語",
-            subtitle: "一度翻訳すれば、すべての人に届く"
+            number: "100+",
+            title: "対応言語",
+            subtitle: "一度翻訳で全員に届ける"
           }
         },
         flexibleExport: {
           label: "柔軟なエクスポート",
-          title: "あらゆるフォーマット",
-          titleHighlight: "必要なもの",
-          description: "ワークフローに最適な形式でエクスポートできます。YouTube用のSRTファイルから、ウェブプレーヤー用のVTT、スクリプト用の編集可能なドキュメントまで、あらゆるプランで無制限にエクスポートできます。",
+          title: "あらゆる形式",
+          titleHighlight: "が必要",
+          description: "ワークフローに合った形式でエクスポート。YouTube用SRTからWebプレーヤー用VTT、編集可能な脚本用ドキュメントまで。全エクスポート無制限、全プランに含まれます。",
           points: {
-            videoFormats: "ビデオプラットフォーム向けSRTとVTT",
-            editingFormats: "編集用のDOCXとPDF",
-            dataAnalysis: "データ分析のためのCSV",
-            simpleScripts: "シンプルなスクリプト用のTXT"
+            videoFormats: "動画プラットフォーム用SRT＆VTT",
+            editingFormats: "編集用DOCX＆PDF",
+            dataAnalysis: "データ分析用CSV",
+            simpleScripts: "シンプルな脚本用TXT"
           },
           formats: {
             srt: "SRT",
@@ -2651,435 +2667,469 @@ let message = {
       },
       workflow: {
         title: "アップロードから",
-        titleHighlight: "出版",
-        titleSuffix: "数分で",
-        subtitle: "コンテンツライブラリ全体にキャプションを付ける最も速い方法",
+        titleHighlight: "公開まで",
+        titleSuffix: "わずか数分",
+        subtitle: "コンテンツライブラリ全体に最速で字幕を追加",
         steps: {
           pasteLinks: {
-            title: "リンクを貼り付ける",
-            description: "YouTube、TikTok、その他の動画リンクをドロップします。または、ファイルを直接アップロードします。"
+            title: "リンク貼り付け",
+            description: "YouTube、TikTok、任意の動画リンクをドロップ。または直接ファイルをアップロード。"
           },
           autoTranscribe: {
-            title: "自動転記",
-            description: "AI処理は96%の精度で、アクセントや複数の話者にも対応します。"
+            title: "自動文字起こし",
+            description: "AIが96%の精度で処理。アクセントや複数話者にも対応。"
           },
           editTranslate: {
-            title: "編集と翻訳",
-            description: "完璧なキャプションを作成。100以上の言語に瞬時に翻訳。"
+            title: "編集＆翻訳",
+            description: "字幕を完璧に。100+言語に即時翻訳。"
           },
           exportPublish: {
-            title: "エクスポートと公開",
-            description: "あらゆる形式でダウンロード。プラットフォームにアップロード。完了！"
+            title: "エクスポート＆公開",
+            description: "任意の形式でダウンロード。プラットフォームにアップロード。完了！"
           }
         }
       },
       testimonials: {
-        title: "クリエイターとは",
-        titleHighlight: "毎日切り替え",
-        subtitle: "制限された計画から無制限の自由へ",
+        title: "クリエイターが",
+        titleHighlight: "日々乗り換え",
+        subtitle: "制限付きプランから無制限の自由へ",
         carlos: {
-          textBefore: "私はスペイン語で教育コンテンツを作っています。NeverCapは完璧に書き起こし、",
-          textAfter: "より広いリーチのために。限界はなく、成長あるのみです。多言語字幕を追加してから、チャンネルの視聴回数が3倍に増加しました。",
-          highlight: "英語に翻訳する",
+          textBefore: "私はスペイン語で教育コンテンツを作成しています。NeverCapは完璧に文字起こしし、",
+          textAfter: "より広範なリーチを実現。制限なし、成長のみ。多言語字幕追加後、チャンネル視聴回数は3倍に増加しました。",
+          highlight: "英語に翻訳",
           name: "カルロス・マルティネス",
-          role: "YouTube 教育者 • 登録者数 25 万人"
+          role: "YouTube教育者 • 25万人の登録者"
         },
         sarah: {
-          textBefore: "月額30ドルで",
-          textAfter: "500本以上の動画が溜まっています。NeverCap 週末で全て処理できます。キャプションによるSEO効果は、最初の1ヶ月で元が取れました。",
+          textBefore: "Descriptは$30/月を請求していました",
+          textAfter: "。500本以上の動画が未処理でした。NeverCapで週末1回ですべて処理できました。字幕によるSEO効果で最初の月で元が取れました。",
           highlight: "30時間",
           name: "サラ・リー",
-          role: "ライフスタイルVlogger • 登録者数18万人"
+          role: "ライフスタイルブロガー • 18万人の登録者"
         },
         jake: {
-          textBefore: "その",
-          textAfter: "この機能は画期的です。もう何もダウンロードする必要はありません。貼り付けて書き起こすだけで完了です。TikTok用のポッドキャストクリップの編集が、これまでになく簡単になりました。",
-          highlight: "YouTubeの直接取得",
+          textBefore: "この",
+          textAfter: "機能は革命的です。もう何もダウンロードする必要がありません。貼り付けて、文字起こしして、完了。TikTok用のポッドキャストクリップの処理がこれまでになく簡単になりました。",
+          highlight: "YouTube直接取得",
           name: "ジェイク・ウィルソン",
           role: "ポッドキャストホスト • トップ1%クリエイター"
         },
         yuki: {
-          textBefore: "5言語でコンテンツを作成しています。その他のサービスは有料です",
-          textAfter: "NeverCapのおかげで翻訳は無限に広がります。適切なネイティブ字幕を使い始めてから、海外の視聴者が400%増加しました。",
-          highlight: "翻訳あたり",
-          name: "田中佑紀",
-          role: "ゲームクリエイター • 登録者数50万人"
+          textBefore: "私は5ヶ国語でコンテンツを作成しています。他のサービスは",
+          textAfter: "を請求します。NeverCapは無制限の翻訳を提供します。適切なネイティブ字幕を使い始めてから、国際的な視聴者が400%増加しました。",
+          highlight: "翻訳ごと",
+          name: "田中ユキ",
+          role: "ゲームクリエイター • 50万人の登録者"
         }
       },
       cta: {
-        title: "あなたのチャンネル全体に字幕を付けて、今日お届けします。",
-        subtitle: "時間を数えるのをやめて創作を始めた5万人以上のクリエイターに加わりましょう",
-        button: "無制限の字幕作成を始める →"
-      }
+        title: "あなたのチャンネル全体に。今日すぐ字幕を。",
+        subtitle: "分数を数えるのをやめて制作を始めた50,000人以上のクリエイターに参加しましょう",
+        button: "無制限字幕作成を開始 →"
+      },
+        FAQSection: {
+              "title": "文字起こしの疑問、",
+              "titleHighlight": "解決します",
+              subtitle: "様々なプラットフォームの動画を文字起こしするために知っておくべきすべて",
+              "questions": [
+                {
+                  "question": "Q: NeverCapでYouTube動画を文字起こしするには？",
+                  "answer": "簡単です。文字起こししたいYouTube動画を見つけ、URLをコピーして私たちのアプリに貼り付けるだけです。AIが自動的に動画を取得し、数分で全文の文字起こしを提供します。"
+                },
+                {
+                  "question": "Q: Facebook動画をテキストに文字起こしする最良の方法は？",
+                  "answer": "最も簡単な方法は直接リンクを使うことです。Facebook動画のURLをコピーすれば、私たちのプラットフォームが残りを処理し、最大96%の精度で音声をテキストに変換します。手動での文字起こしから解放されます。"
+                },
+                {
+                  "question": "Q: TikTokやInstagramの動画も文字起こしできますか？",
+                  "answer": "もちろんです。TikTokとInstagramの動画両方の文字起こしをサポートしています。ショートフォーム動画コンテンツをブログ記事や記事、テキストベースのSNS投稿に再利用したいコンテンツクリエイターに最適です。"
+                },
+                {
+                  "question": "Q: Vimeo動画をテキストに文字起こしするには？",
+                  "answer": "Vimeo動画の文字起こしも他のプラットフォームと同様に簡単です。Vimeo動画のURLをコピーしてNeverCapに貼り付けるだけです。AIが動画を処理し、複数形式でダウンロード可能な正確な文字起こしを生成します。"
+                }
+              ]
+            }
     },
     Researchers: {
-      heroBadge: "学術的卓越性のために構築",
-      heroTitle1: "すべてのインタビューを書き起こします。",
-      heroTitle2: "すべてのデータを分析します。",
-      heroSubtitle: "どのフォーカスグループを書き起こすか選ぶのはもう終わりです。20人の参加者が互いに話し合っている場合でも、96%の精度と完璧な話者識別で、すべての定性データを処理します。",
-      heroCtaPrimary: "無料でお試しください - クレジットカード不要",
+      heroBadge: "学術研究のための設計",
+      heroTitle1: "すべてのインタビューを文字起こし。",
+      heroTitle2: "すべてのデータを分析。",
+      heroSubtitle: "文字起こしするフォーカスグループを選ぶ必要はもうありません。20人の参加者が同時に話していても、96%の精度で完璧な話者識別を行い、すべての定性データを処理できます。",
+      heroCtaPrimary: "無料で試す - クレジットカード不要",
       heroCtaSecondary: "仕組みを見る",
-      statsInterviewHours: "面接時間",
-      statsAccuracy: "正確さ",
-      statsSpeakersId: "スピーカーID",
+      statsInterviewHours: "インタビュー時間",
+      statsAccuracy: "精度",
+      statsSpeakersId: "話者識別",
       statsCompliant: "準拠",
-      problemTitle: "研究転写の問題",
-      problemSubtitle: "他のサービスでは、どのデータを転写する価値があるかを選択する必要があります",
-      problemCard1Title: "アップロード制限が研究を台無しにする",
-      problemCard1Desc: "Otterは生涯3回インポートできます。200時間分のフォーカスグループをどうやって書き起こすのですか？",
-      problemCard2Title: "重要なデータが欠落している",
-      problemCard2Desc: "書き起こされていないインタビューには、どれも画期的な洞察が含まれている可能性があります。しかし、Revは1分あたり最低2ドルを請求します。",
+      problemTitle: "この",
+      problemSubtitle: "他のサービスでは「価値ある」データだけを選ばせます",
+      problemCard1Title: "アップロード制限が研究を殺す",
+      problemCard1Desc: "Otterは生涯3回のインポートしか許可しません。200時間のフォーカスグループをどう文字起こししますか？",
+      problemCard2Title: "重要なデータが見逃される",
+      problemCard2Desc: "文字起こしされていないインタビューには画期的な知見が含まれている可能性があります。しかしRevは最低$2/分を請求します。",
       problemCard3Title: "助成金が消える",
-      problemCard3Desc: "データセットが大きくなるにつれて、転写コストが急増します。フォーカス グループごとに 500 ドルではスケーリングが不可能になります。",
+      problemCard3Desc: "データセットが増えるほど、文字起こしコストが急増します。フォーカスグループごとに500ドルでは拡張が不可能です。",
       solutionTitle: "NeverCapソリューション",
-      solutionDesc: "真の無制限の文字起こし。研究全体をアップロード。すべてのインタビューを文字起こし。すべてのデータを分析。制限なし、無制限。研究だけに集中できます。",
+      solutionDesc: "真の無制限文字起こし。研究全体をアップロード。すべてのインタビューを文字起こし。全データを分析。制限なし、上限なし、ただの研究。",
       feature1Label: "制限なし",
-      feature1Title: "研究全体を一度に処理",
-      feature1Desc: "今夜、200時間分のインタビューを全てアップロードしましょう。朝起きたら、検索可能な完全なトランスクリプトが完成しています。月間制限も、ファイルごとの制限も、「フェアユース」のナンセンスもありません。",
-      feature1Point1: "50個のファイルを同時に一括アップロード",
-      feature1Point2: "縦断的研究を完全に処理する",
-      feature1Point3: "トランスクリプトの保存制限なし",
-      feature1Point4: "NVivo、MAXQDA、Atlas.ti へのエクスポート",
-      feature1Visual1: "無制限の時間",
+      feature1Title: "研究全体を一括処理",
+      feature1Desc: "今夜中に200時間分のインタビューを全てアップロード。朝には完全で検索可能な文字起こしデータが完成。月間制限なし、ファイルごとの制限なし、「公平利用」などの制約もなし。",
+      feature1Point1: "50ファイルを同時に一括アップロード",
+      feature1Point2: "縦断研究を完全に処理",
+      feature1Point3: "文字起こしデータの保存制限なし",
+      feature1Point4: "NVivo、MAXQDA、Atlas.tiへエクスポート",
+      feature1Visual1: "無制限時間",
       feature1Visual2: "10時間でも10,000時間でも同じ価格",
       feature2Label: "スマートAI",
-      feature2Title: "フォーカスグループを毎回成功させる",
-      feature2Desc: "当社のAIは、最大20人の話者を、たとえ互いの発言を遮ったり、遮ったり、あるいは全員が同時に発言したりした場合でも追跡します。すべての音声が正確にキャプチャされ、ラベル付けされます。",
-      feature2Point1: "20人の話者識別",
-      feature2Point2: "クロストークと中断を処理",
-      feature2Point3: "名前を変更できるスピーカーラベル",
-      feature2Point4: "すべての単語にタイムスタンプ",
+      feature2Title: "毎回完璧なフォーカスグループ対応",
+      feature2Desc: "最大20人の話者を追跡。同時発話、割り込み、一斉発言も正確にキャプチャし、正しくラベル付け。",
+      feature2Point1: "20話者識別",
+      feature2Point2: "クロストーク＆割り込み対応",
+      feature2Point3: "名前変更可能な話者ラベル",
+      feature2Point4: "単語ごとのタイムスタンプ",
       conversationParticipant1: "参加者1",
-      conversationText1: "私たちが直面する主な障壁は間違いなく治療費です...",
+      conversationText1: "私たちが直面する主な障壁は、間違いなく治療費です...",
       conversationParticipant2: "参加者2",
-      conversationText2: "確かにそうですが、アクセスについては付け加えておきます。",
+      conversationText2: "確かに、でもアクセスの問題も—",
       conversationParticipant3: "参加者3",
-      conversationText3: "— 邪魔して申し訳ないのですが、輸送も大きな問題です。",
-      conversationText4: "はい！まさにそれを言おうとしていました。",
+      conversationText3: "—割り込んで申し訳ないですが、交通手段も大きな問題です。",
+      conversationText4: "はい！まさに私が言おうとしていたことです。",
       conversationParticipant4: "参加者4",
-      conversationText5: "田舎では、コスト、アクセス、輸送の 3 つすべてが重要です。",
+      conversationText5: "地方では、費用、アクセス、交通手段の3つ全てが問題です。",
       feature3Label: "精度",
       feature3Title: "96%の精度を維持",
-      feature3Desc: "専門用語、訛りの強いアクセント、分野特有の用語をプロのように巧みに扱います。論文出版、査読、そして博士論文審査委員会にも十分対応できるほど正確です。",
-      feature3Point1: "医学・科学用語",
-      feature3Point2: "100以上の言語と方言",
-      feature3Point3: "逐語的読み取りモードとクリーン読み取りモード",
-      feature3Point4: "あらゆる形式で編集およびエクスポート",
-      feature3Visual1: "研究レベルの精度",
-      feature3Visual2: "5万人以上の研究者から信頼されています",
-      feature4Label: "安全",
+      feature3Desc: "専門用語、強い訛り、分野特有の用語もプロ並みに処理。論文発表、査読、学位審査にも十分な精度。",
+      feature3Point1: "医療＆科学用語",
+      feature3Point2: "100以上の言語＆方言",
+      feature3Point3: "逐語録＆クリーンリードモード",
+      feature3Point4: "任意の形式で編集・エクスポート",
+      feature3Visual1: "研究級の精度",
+      feature3Visual2: "50,000人以上の研究者に信頼",
+      feature4Label: "セキュリティ",
       feature4Title: "IRB対応セキュリティ",
-      feature4Desc: "機密性の高い研究データは、エンタープライズ グレードのセキュリティで保護されます。GDPR 準拠、HIPAA 対応オプション、IRB 要件の完全な監査証跡を備えています。",
-      feature4Point1: "エンドツーエンドの暗号化",
-      feature4Point2: "GDPRおよびCCPA準拠",
+      feature4Desc: "企業級セキュリティで研究データを保護。GDPR準拠、HIPAA対応オプション、IRB要件の完全な監査証跡。",
+      feature4Point1: "エンドツーエンド暗号化",
+      feature4Point2: "GDPR＆CCPA準拠",
       feature4Point3: "自動削除ポリシー",
       feature4Point4: "安全なチームコラボレーション",
-      useCasesTitle: "あらゆる研究方法に最適",
-      useCasesSubtitle: "民族誌学から臨床試験へ",
+      useCasesTitle: "最適な",
+      useCasesSubtitle: "民族誌から臨床試験まで",
       useCase1Title: "フォーカスグループ",
-      useCase1Desc: "8～20人の参加者による重複発言にも対応。白熱した議論の最中でも、完璧な発言者識別を実現します。定性分析ソフトウェアに直接エクスポートできます。",
-      useCase2Title: "詳細なインタビュー",
-      useCase2Desc: "数百件の個別インタビューを同時に処理します。データセット全体の一貫性を維持し、すべてのトランスクリプトを瞬時に検索できます。",
+      useCase1Desc: "8-20人の重複発話を処理。白熱した議論中も完璧な話者識別。定性分析ソフトに直接エクスポート可能。",
+      useCase2Title: "詳細インタビュー",
+      useCase2Desc: "数百件の1対1インタビューを同時処理。データセット全体の一貫性を維持。すべての文字起こしを即時検索。",
       useCase3Title: "臨床研究",
-      useCase3Desc: "患者面談のためのHIPAA準拠オプション。正確な医療用語の書き起こし。機密性の高い医療データの安全な取り扱い。",
+      useCase3Desc: "HIPAA準拠の患者インタビューオプション。正確な医療用語の文字起こし。機密性の高い健康データの安全な取り扱い。",
       useCase4Title: "民族誌研究",
-      useCase4Desc: "自然な環境でのフィールドレコーディング。背景ノイズや複数の話者にも対応。100以上の言語と方言に対応。",
+      useCase4Desc: "自然な環境でのフィールド録音。背景ノイズや複数話者に対応。100以上の言語と方言をサポート。",
       useCase5Title: "オーラルヒストリープロジェクト",
-      useCase5Desc: "アーカイブ全体を無制限に保存。検索可能な歴史記録を作成。縦断的研究や世代研究に最適です。",
-      useCase6Title: "論文研究",
-      useCase6Desc: "学生に優しい価格設定と充実した機能。データセット全体を低コストで処理。バッチ処理で厳しい納期にも対応。",
-      testimonialTitle: "一流の研究者から信頼されています",
-      testimonialText: "私たちの研究チームは、地域保健調査から200時間分のフォーカスグループの録音データを持っていました。他のサービスでは、コストの問題から、どのセッションを書き起こすかを選択するよう求められました。NeverCapのおかげで、週末かけて全てを処理することができました。20人の話者識別機能は、全員が同時に話すような、最も混乱した議論の時でさえ、実際に機能しました。このツールは、定性データの扱い方を根本から変えました。",
-      testimonialAuthorName: "サラ・チェン博士",
-      testimonialAuthorRole: "公衆衛生研究所主任研究員",
-      ctaTitle: "分析するデータの選択をやめる",
-      ctaSubtitle: "あらゆるものを書き写す5万人以上の研究者に加わろう",
-      ctaButton: "NeverCapを無料でお試しください"
+      useCase5Desc: "アーカイブ全体を無制限に保存。検索可能な歴史的記録を作成。縦断的・世代間研究に最適。",
+      useCase6Title: "学位論文研究",
+      useCase6Desc: "学生向け価格で全機能利用。データセット全体を手頃に処理。バッチ処理で締め切りに間に合う。",
+      testimonialTitle: "信頼されている",
+      testimonialText: "私たちの研究チームは地域保健調査から200時間のフォーカスグループ録音を保有していました。他のサービスではコストのためセッションを選んで文字起こしするよう求められました。NeverCapでは週末ですべてを処理できました。20人の話者識別は、全員が同時に話す混乱した議論でも機能しました。このツールは定性データの扱い方を根本的に変えました。",
+      testimonialAuthorName: "Sarah Chen博士",
+      testimonialAuthorRole: "主任研究者、公衆衛生研究所",
+      ctaTitle: "分析データを選ぶ必要はもうありません",
+      ctaSubtitle: "すべてを文字起こしする50,000人以上の研究者に参加",
+      ctaButton: "NeverCapを無料で試す",
+        problemTitle2: "研究文字起こしの問題",
+        title: "The",
+        useCasesTitle2: "あらゆる研究方法",
+        testimonialTitle2: "トップ研究者たち"
     },
     BusinessTeams: {
       heroBadge: "ビジネスチーム向け",
-      heroTitle1: "会議の録音が作成されました",
-      heroTitle2: "楽々と",
-      heroSubtitle: "ブラウザで直接会議を録音したり、音声ファイルを即座にアップロードしたりできます。無制限の会話から検索可能なアーカイブを作成できます。真の無制限の文字起こし機能で、重要な議論を二度と見逃すことはありません。",
-      heroCtaPrimary: "今すぐ録画を開始 →",
-      heroCtaSecondary: "仕組みを見る",
+      heroTitle1: "会議録音",
+      heroTitle2: "簡単に実現",
+      heroSubtitle: "ブラウザで直接会議を録音または音声ファイルを即時アップロード。無制限の会話から検索可能なアーカイブを構築。本当に無制限の文字起こしで重要な議論を失うことはありません。",
+      heroCtaPrimary: "今すぐ録音開始 →",
+      heroCtaSecondary: "動作を確認",
       recordingStatus: "録音中...",
-      statsMeetingMinutes: "会議議事録",
-      statsLiveRecording: "ライブ録音",
-      statsSpeakerID: "スピーカーID",
-      statsInstantUpload: "即時アップロードと処理",
-      featuresTitle: "チームが知識を獲得するために必要なものすべて",
-      featuresSubtitle: "ライブ録画から即時アップロードまで、あらゆる摩擦点を排除しました",
-      feature1Title: "ブラウザで直接録画",
-      feature1Desc: "ダウンロードもプラグインも不要。ワンクリックですぐに録音を開始できます。完璧な音質、自動話者検出機能、そして話すと同時にリアルタイムで文字起こしされます。",
-      feature1Benefit1: "ワンクリックで録画開始",
-      feature1Benefit2: "ソフトウェアのインストールは不要",
-      feature1Benefit3: "どのデバイスでも動作します",
-      feature1Benefit4: "リアルタイム転写",
-      feature1Visual1: "クリック＆録画",
-      feature1Visual2: "セットアップ不要",
-      feature2Title: "あらゆるオーディオファイルを即座にアップロード",
-      feature2Desc: "Zoom、Teams、またはスマートフォンから録画した動画はお持ちですか？すぐにアップロードできます。主要な音声・動画形式に対応しています。複数のファイルを同時に処理しても、待ち時間はありません。",
-      feature2Benefit1: "サポート: MP3、MP4、M4A、MOV、AAC、WAV、OGG、OPUS、MPEG、WMA、WMV、FLAC",
-      feature2Benefit2: "一括アップロード機能",
-      feature2Benefit3: "10時間のファイルをサポート",
-      feature2Benefit4: "作業しながら処理する",
-      feature2Visual1: "ファイルのドラッグ＆ドロップ",
-      feature3Title: "チームコラボレーションのために構築",
-      feature3Desc: "議事録をチームメンバーと瞬時に共有。録音を一緒に聴いたり、議事録を複数の形式でエクスポートしたり、検索可能な会議アーカイブで全員の意見を共有したりできます。",
-      feature3Benefit1: "誰とでもトランスクリプトを共有",
+      statsMeetingMinutes: "議事録",
+      statsLiveRecording: "録音",
+      statsSpeakerID: "話者識別",
+      statsInstantUpload: "アップロード＆処理",
+      featuresTitle: "あらゆるビジネス向け文字起こし",
+      featuresSubtitle: "ライブ録音から即時アップロードまで、すべての煩わしさを排除",
+      feature1Title: "ブラウザで直接録音",
+      feature1Desc: "ダウンロード不要、プラグイン不要。ワンクリックで即時録音開始。完璧な音質、自動話者検出。",
+      feature1Benefit1: "ワンクリック録音開始",
+      feature1Benefit2: "ソフトウェアインストール不要",
+      feature1Benefit3: "あらゆるデバイスで動作",
+      feature1Benefit4: "リアルタイム文字起こし",
+      feature1Visual1: "クリック＆録音",
+      feature1Visual2: "設定不要",
+      feature2Title: "音声ファイルを即時アップロード",
+      feature2Desc: "Zoom、Teams、またはスマホの録音がありますか？即時アップロード。主要な音声・動画形式をすべてサポート。待ち時間なく複数ファイルを同時処理。",
+      feature2Benefit1: "サポート形式: MP3, MP4, M4A, MOV, AAC, WAV, OGG, OPUS, MPEG, WMA, WMV, FLAC",
+      feature2Benefit2: "一括アップロード可能",
+      feature2Benefit3: "10時間ファイル対応",
+      feature2Benefit4: "作業しながら処理",
+      feature2Visual1: "ファイルをドラッグ＆ドロップ",
+      feature3Title: "チームコラボレーション向け設計",
+      feature3Desc: "文字起こしをチームと即時共有。録音を一緒に聴き、複数形式で書き起こしをエクスポート、検索可能な会議アーカイブで全員の認識を統一。",
+      feature3Benefit1: "誰とでも文字起こしを共有",
       feature3Benefit2: "オリジナル録音を聴く",
-      feature3Benefit3: "複数の形式でトランスクリプトをエクスポートする",
+      feature3Benefit3: "複数形式で文字起こしをエクスポート",
       feature3Benefit4: "チーム全体で検索可能なアーカイブ",
       feature3Visual1: "チームメンバー",
       feature3Visual2: "無制限のコラボレーション",
-      feature4Title: "あらゆる会話を即座に見つける",
-      feature4Desc: "すべての会議を一括検索。前四半期の重要な決定事項や、数か月前のクライアントからの要望など、あらゆる情報を検索できます。AIを活用した検索機能は、キーワードだけでなく、文脈も理解します。",
-      feature4Benefit1: "すべての会議を一度に検索",
-      feature4Benefit2: "AIは文脈を理解する",
-      feature4Benefit3: "講演者または日付でフィルタリング",
-      feature4SearchPlaceholder: "🔍 検索: 「第4四半期の収益目標」",
-      feature4SearchResults: "3 回の会議で見つかりました:",
-      feature4Meeting1: "販売計画 - 10月15日",
-      feature4Meeting1Text: "「第4四半期の目標は200万ドルに設定されました...」",
-      feature4Meeting2: "取締役会 - 10月20日",
-      feature4Meeting2Text: "「…第 4 四半期の収益予測…」",
-      workflowTitle: "記録から実用的な洞察へ",
-      workflowSubtitle: "あらゆる重要な瞬間を捉えるシームレスなワークフロー",
-      workflowStep1Title: "記録またはアップロード",
-      workflowStep1Desc: "ライブ録音を開始するか、既存のオーディオファイルをアップロードします",
-      workflowStep2Title: "自動転記",
-      workflowStep2Desc: "AIが数分で96%の精度で文字起こし",
+      feature4Title: "会話を即座に見つける",
+      feature4Desc: "全ての会議を一括検索。前四半期の重要な決定や数ヶ月前のクライアント要件も発見。AI検索はキーワードだけでなく文脈も理解。",
+      feature4Benefit1: "全ての会議を一括検索",
+      feature4Benefit2: "AIが文脈を理解",
+      feature4Benefit3: "発言者や日付でフィルター",
+      feature4SearchPlaceholder: "🔍 検索: '第4四半期の収益目標'",
+      feature4SearchResults: "3つの会議で発見:",
+      feature4Meeting1: "営業計画 - 10月15日",
+      feature4Meeting1Text: '"...第4四半期の目標を200万ドルに設定..."',
+      feature4Meeting2: "取締役会議 - 10月20日",
+      feature4Meeting2Text: '"...第4四半期の収益予測..."',
+      workflowTitle: "Zoom録音を",
+      workflowSubtitle: "重要な瞬間をすべて記録するシームレスなワークフロー",
+      workflowStep1Title: "録音またはアップロード",
+      workflowStep1Desc: "ライブ録音を開始、またはZoom、Google Meet、Microsoft Teamsから会議録画をダウンロード",
+      workflowStep2Title: "自動文字起こし",
+      workflowStep2Desc: "当社のAIが96%の精度で数分内に録音をテキスト化",
       workflowStep3Title: "コラボレーション",
-      workflowStep3Desc: "共有、コメント、アクションアイテムの抽出",
-      workflowStep4Title: "検索と分析",
-      workflowStep4Desc: "すべての会議から洞察を得る",
-      testimonialsTitle: "チームの愛NeverCap",
-      testimonialsSubtitle: "企業が会議文化をどのように変革しているかをご覧ください",
-      testimonial1Text: "「重要な詳細を見逃すことがなくなりました。そして、すべての会話を検索可能なアーカイブに保管できるようになりました。直接録音機能のおかげで、重要な議論を決して忘れることはありません。」",
-      testimonial1AuthorName: "ジェームズ・キム",
-      testimonial1AuthorRole: "テックコープ プロダクトマネージャー",
-      testimonial2Text: "「Otterでは、ファイルのアップロードが月に10件までに制限されていました。今では、クライアントとの通話をすべて瞬時にアップロードできます。営業チームのフォローアップにとって、画期的な出来事です。」",
-      testimonial2AuthorName: "サラ・ロドリゲス",
-      testimonial2AuthorRole: "ConsultPro セールスディレクター",
-      testimonial3Text: "「数か月にわたる会議を検索できる機能のおかげで、監査中に助かりました。すべての決定と承認を数秒で見つけることができました。」",
-      testimonial3AuthorName: "マーク・リュー",
-      testimonial3AuthorRole: "ファイナンスハブ COO",
-      ctaTitle: "重要な会話を見逃さないようにしましょう",
-      ctaSubtitle: "無制限の文字起こしであらゆる会議を録画する何千ものチームに参加しましょう",
-      ctaButton: "無料で録音を始める →"
+      workflowStep3Desc: "共有、コメント、アクション項目の抽出",
+      workflowStep4Title: "検索＆分析",
+      workflowStep4Desc: "全ての会議から洞察を発見",
+      testimonialsTitle: "チームに愛される",
+      testimonialsSubtitle: "企業が会議文化を変える様子をご覧ください",
+      testimonial1Text: '"重要な詳細を見逃していた状態から、全ての会話が検索可能なアーカイブに。直接録音機能で重要な議論を逃しません"',
+      testimonial1AuthorName: "James Kim",
+      testimonial1AuthorRole: "プロダクトマネージャー、TechCorp",
+      testimonial2Text: '"Otterでは月10ファイルのアップロード制限がありました。今では全てのクライアント通話を即座にアップロード。営業チームのフォローアップに革命的な変化です"',
+      testimonial2AuthorName: "Sarah Rodriguez",
+      testimonial2AuthorRole: "セールスディレクター、ConsultPro",
+      testimonial3Text: '"数ヶ月分の会議を横断検索できる機能が監査で役立ちました。全ての決定と承認を数秒で発見"',
+      testimonial3AuthorName: "Mark Liu",
+      testimonial3AuthorRole: "COO、FinanceHub",
+      ctaTitle: "重要な会話を失うのを止めよう",
+      ctaSubtitle: "無制限の文字起こしで全ての会議を記録する数千のチームに参加",
+      ctaButton: "無料で録音を開始 →",
+        featuresTitle2: "会議",
+        workflowTitle2: "テキストに変換する方法",
+        testimonialsTitle2: "NeverCap"
     },
     Educators: {
-      heroBadge: "教育者と教師向け",
-      heroTitle1: "あらゆる教育ビデオを",
-      heroTitle2: "アクセシブルコンテンツ",
-      heroSubtitle: "YouTubeリンクを貼り付けるだけで、自動生成された字幕付きのトランスクリプトがすぐに作成されます。講義、チュートリアル、教育ビデオを、すべての学生が学習できる、検索可能でアクセスしやすいコンテンツに変換します。",
-      heroCtaPrimary: "無料でお試しください - クレジットカード不要",
+      heroBadge: "教育関係者向け",
+      heroTitle1: "学びを",
+      heroTitle2: "全ての人にアクセシブルに",
+      heroSubtitle: "YouTubeリンクを貼るだけで自動生成キャプション付きの即時文字起こしを取得。講義、チュートリアル、教育動画を検索可能でアクセシブルな教材に変換",
+      heroCtaPrimary: "無料で試す - クレジットカード不要",
       heroCtaSecondary: "デモを見る",
-      stats1Number: "1クリック",
-      stats1Label: "YouTubeの文字起こし",
-      stats2Number: "100以上",
-      stats2Label: "サポートされている言語",
+      stats1Number: "ワンクリック",
+      stats1Label: "YouTube文字起こし",
+      stats2Number: "100+",
+      stats2Label: "対応言語",
       stats3Number: "∞",
-      stats3Label: "無制限のビデオ",
+      stats3Label: "無制限の動画",
       stats4Number: "96%",
-      stats4Label: "精度率",
-      featuresTitle: "教育者がビデオ文字起こしに必要なものすべて",
-      featuresSubtitle: "YouTubeの講義から録画された授業まで、すべてのコンテンツにアクセスできるようにします",
-      feature1Title: "インスタントYouTubeとプラットフォームリンク",
-      feature1Desc: "動画リンクを貼り付けるだけで、すぐにトランスクリプトを作成できます。YouTube、Vimeo、Facebook、X（Twitter）、TikTok、Instagram、Dropbox、Google Driveなど、様々なプラットフォームに対応しています。ダウンロードも待ち時間も不要です。",
-      feature1Point1: "直接リンクの転写 - ダウンロードは不要",
-      feature1Point2: "すべての主要プラットフォームをサポート",
-      feature1Point3: "プレイリスト全体を一度に処理する",
-      feature1Point4: "プライベート動画でも使用可能（許可あり）",
-      feature2Title: "キャプションと字幕の自動生成",
-      feature2Desc: "あらゆる教育ビデオに正確な字幕を瞬時に作成できます。聴覚障害のある生徒、非ネイティブスピーカー、読み上げながら学習したい生徒など、誰もがコンテンツを利用できるように支援します。",
+      stats4Label: "正確率",
+      featuresTitle: "教育者に必要なすべて",
+      featuresSubtitle: "YouTube講義から録画授業まで、すべてのコンテンツをアクセシブルに",
+      feature1Title: "即時YouTube＆プラットフォームリンク",
+      feature1Desc: "動画リンクを貼るだけで即時文字起こし。YouTube、Vimeo、Facebook、X（Twitter）、TikTok、Instagram、Dropbox、Google Driveなどに対応。ダウンロード不要、待ち時間なし。",
+      feature1Point1: "直接リンク文字起こし - ダウンロード不要",
+      feature1Point2: "主要プラットフォームすべてに対応",
+      feature1Point3: "プレイリスト全体を一括処理",
+      feature1Point4: "非公開動画にも対応（許可あり）",
+      feature2Title: "自動キャプション＆字幕生成",
+      feature2Desc: "教育動画の正確なキャプションを即時作成。聴覚障害者、非ネイティブスピーカー、読みながら学びたい学生にもアクセシブルに。",
       feature2Point1: "SRT、VTT、TXTエクスポート形式",
-      feature2Point2: "完璧な同期を実現するワードレベルのタイムスタンプ",
-      feature2Point3: "キャプションを簡単に編集、カスタマイズ",
-      feature2Point4: "YouTubeに直接アップロードする",
+      feature2Point2: "単語レベルタイムスタンプで完璧な同期",
+      feature2Point3: "キャプションを簡単に編集・カスタマイズ",
+      feature2Point4: "YouTubeに直接アップロード",
       feature2Visual1: "言語翻訳",
-      feature2Visual2: "コンテンツを世界中からアクセス可能にする",
-      feature3Title: "コースとカテゴリー別に整理",
-      feature3Desc: "フォルダを作成して、コース、科目、学期ごとに成績証明書を整理しましょう。すべての教育コンテンツをきちんと分類し、簡単に検索できるようにしましょう。アクセスしやすいコース教材の包括的なライブラリを構築しましょう。",
-      feature3Point1: "無制限のフォルダとサブフォルダを作成",
-      feature3Point2: "トピックや難易度で動画にタグを付ける",
-      feature3Point3: "複数のトランスクリプトを一括整理",
-      feature3Point4: "すべてのコンテンツを瞬時に検索",
-      feature3VisualTitle: "コースライブラリ",
+      feature2Visual2: "コンテンツをグローバルにアクセシブルに",
+      feature3Title: "コース＆カテゴリ別に整理",
+      feature3Desc: "コース、科目、学期別にフォルダを作成。教育コンテンツを整理し検索可能に。アクセシブルな教材ライブラリを構築。",
+      feature3Point1: "無制限のフォルダとサブフォルダ作成",
+      feature3Point2: "トピックや難易度で動画にタグ付け",
+      feature3Point3: "複数文字起こしを一括整理",
+      feature3Point4: "すべてのコンテンツを即時検索",
+      feature3VisualTitle: "あなたのコースライブラリ",
       feature3Folder1: "数学101",
       feature3Folder2: "物理学講義",
-      feature3Folder3: "生物学実験ビデオ",
+      feature3Folder3: "生物学実験動画",
       feature3Folder4: "歴史ドキュメンタリー",
-      feature3Folder5: "言語学習",
-      feature4Title: "必要な形式でエクスポート",
-      feature4Desc: "トランスクリプトはTXT、DOCX、またはPDF形式でダウンロードできます。学習ガイド、講義ノート、またはアクセスしやすいコース教材の作成に最適です。学生と共有したり、学習管理システムに統合したりできます。",
-      feature4Point1: "簡単なテキスト編集用のTXT",
-      feature4Point2: "フォーマットされた文書用のDOCX",
-      feature4Point3: "PDFで簡単に共有、印刷",
-      feature4Point4: "複数のファイルを一括エクスポート",
-      workflowTitle: "仕組み",
-      workflowSubtitle: "数分でビデオリンクからアクセス可能なトランスクリプトを作成",
-      workflowStep1Title: "リンクを貼り付け",
-      workflowStep1Desc: "教育ビデオのURLをコピーして貼り付けます",
-      workflowStep2Title: "自動転記",
-      workflowStep2Desc: "AIは96%の精度で文字起こしを行う",
-      workflowStep3Title: "キャプションを生成する",
-      workflowStep3Desc: "完璧に同期した字幕を自動作成",
-      workflowStep4Title: "共有とエクスポート",
-      workflowStep4Desc: "ダウンロードまたは生徒と共有する",
-      useCasesTitle: "あらゆる教育ニーズに最適",
-      useCasesSubtitle: "教育者が学習を強化するためにNeverCapをどのように活用しているかをご覧ください",
-      useCase1Title: "録画された講義",
-      useCase1Text: "録画された講義を学期全体にわたって書き起こします。学生は特定のトピックを検索したり、主要な概念を復習したりすることができ、重要な情報を見逃すことはありません。",
+      feature3Folder5: "語学学習",
+      feature4Title: "AI音声ファイルから学習ガイドへ",
+      feature4Desc: "録音を共有するだけでは終わらせない。講義や音声ファイルを自動で文字起こしし、要約と重要概念を含む詳細な学習ガイドに。TXT、DOCX、PDF形式でエクスポート。",
+      feature4Point1: "シンプルなテキスト編集用TXT",
+      feature4Point2: "フォーマット済み文書用DOCX",
+      feature4Point3: "共有・印刷用PDF",
+      feature4Point4: "複数ファイルを一括エクスポート",
+      workflowTitle: "仕組み:",
+      workflowSubtitle: "動画リンクから数分でアクセシブルな文字起こしと教材を作成",
+      workflowStep1Title: "講義をアップロード",
+      workflowStep1Desc: "音声/動画ファイル（MP3、MP4、WAV）をアップロード、またはYouTubeリンクを貼り付け",
+      workflowStep2Title: "AI文字起こし",
+      workflowStep2Desc: "AIが音声を文字起こし、話者を分離し、重要トピックを識別",
+      workflowStep3Title: "キャプション生成",
+      workflowStep3Desc: "完璧に同期した字幕を自動生成",
+      workflowStep4Title: "学習ガイドをエクスポート",
+      workflowStep4Desc: "テキストや要約をダウンロード、またはエクスポートして最終的な学習ガイドを作成",
+      useCasesTitle: "あらゆる",
+      useCasesSubtitle: "教育者がNeverCapを使って学習を強化する方法を見る",
+      useCase1Title: "録画講義",
+      useCase1Text: "録画された講義の学期全体を文字起こし。学生は特定のトピックを検索し、重要な概念を復習し、重要な情報を見逃すことはありません。",
       useCase2Title: "オンラインコース",
-      useCase2Text: "100以上の言語に翻訳されたオンラインコースを、世界中の学生が受講できるようにしましょう。受講者数と満足度を向上させましょう。",
+      useCase2Text: "100以上の言語翻訳で留学生にもアクセス可能なオンラインコースを提供。登録者数と満足度を向上。",
       useCase3Title: "学習教材",
-      useCase3Text: "ビデオチュートリアルを読みやすい学習ガイドに変換します。読書を好む学生や、コンテンツを素早く復習したい学生に最適です。",
-      useCase4Title: "アクセシビリティコンプライアンス",
-      useCase4Text: "すべての動画コンテンツに字幕とトランスクリプトを提供することで、アクセシビリティ要件を満たします。すべての学生が平等にアクセスできるようにします。",
+      useCase3Text: "AIを使用してビデオチュートリアルや講義から音声ファイルを学習ガイドに文字起こし。読むことを好む学生や検索可能なテキストで素早く復習が必要な学生に最適。",
+      useCase4Title: "アクセシビリティ対応",
+      useCase4Text: "すべての動画コンテンツに字幕と文字起こしを提供してアクセシビリティ要件を満たす。すべての学生に平等なアクセスを保証。",
       useCase5Title: "反転授業",
-      useCase5Text: "授業前に、録画されたビデオ講義を共有できます。学生は自分のペースで復習し、ディスカッションに備えて準備することができます。",
-      useCase6Title: "研究と引用",
-      useCase6Text: "タイムスタンプを付けることで、学生が動画ソースを正確に引用できるようになります。研究プロジェクトや学術論文に最適です。",
-      testimonialTitle: "50,000人以上の教育者に信頼されています",
-      testimonialSubtitle: "世界中の教師がNeverCapを選ぶ理由をご覧ください",
-      testimonialText: "「NeverCapを使って、YouTubeの数学チュートリアルチャンネル全体の文字起こしをしています。以前は他のサービスでは数週間かかっていたのが、今では数時間で完了します。リンクを直接貼り付けてすぐに文字起こしを作成できるため、わかりやすいコンテンツの作成方法が一変しました。特に海外の生徒たちは、多言語字幕をとても気に入っています！」",
+      useCase5Text: "授業前に文字起こし付きのビデオ講義を共有。学生は自分のペースで復習し、ディスカッションに備えることができます。",
+      useCase6Title: "研究＆引用",
+      useCase6Text: "タイムスタンプ付きでビデオソースを正確に引用できるよう学生を支援。研究プロジェクトや学術論文に最適。",
+      testimonialTitle: "信頼されている",
+      testimonialSubtitle: "世界中の教師がNeverCapを選ぶ理由を見る",
+      testimonialText: "「数学チュートリアルのYouTubeチャンネル全体をNeverCapで文字起こししています。以前は他のサービスで数週間かかっていた作業が、今では数時間で完了します。リンクを直接貼り付けて即座に文字起こしを得られる機能は、アクセシブルなコンテンツ作成の方法を変えました。特に留学生は多言語字幕を気に入っています！」",
       testimonialAuthorName: "カレン・ミッチェル教授",
       testimonialAuthorRole: "数学教授、オンライン教育者",
-      ctaTitle: "すべての教育コンテンツをアクセス可能にする",
-      ctaSubtitle: "無制限のトランスクリプションを利用中の何千人もの教育者に加わりましょう",
-      ctaButton: "NeverCapを無料でお試しください"
+      ctaTitle: "すべての教育コンテンツをアクセシブルに",
+      ctaSubtitle: "本当に無制限の文字起こしを利用する何千人もの教育者に参加",
+      ctaButton: "NeverCapを無料で試す",
+        featuresTitle2: "動画文字起こし",
+        grid: "音声ファイルから学習ガイドへ",
+        useCasesTitle2: "教育ニーズに最適",
+        testimonialTitle2: "50,000人以上の教育者"
     }
   },
   Resources: {
     YouTubeToMP4: {
       part1: {
         "title": "YouTube動画をMP4でダウンロード",
-        "placeholder": "ここでYouTubeリンクを検索するか貼り付けてください",
+        "placeholder": "YouTubeのリンクを検索またはここに貼り付け",
         "clear_icon": "入力をクリア",
         "Download": "ダウンロード",
-        "loading_text": "ダウンロードへのリンクを処理しています。このページから移動しないでください。",
+        "loading_text": "ダウンロードリンクを処理中。ページを開いたままにしてください。",
         "howToDownload": "ダウンロード方法は？",
         "tutorial": "チュートリアルを見る"
       },
       part2: {
-        "title": "YouTube動画をダウンロード可能なMP4ファイルに変換する3つの簡単な手順をご紹介します",
+        "title": "YouTube動画をダウンロード可能なMP4ファイルに変換する3つの簡単な手順",
         "steps": [
                 {
-                  title: "URLをコピーする",
-                  content: "対象の YouTube 動画を開き、ブラウザのアドレスバーからリンクをコピーします。"
+                  title: "URLをコピー",
+                  content: "対象のYouTube動画を開き、ブラウザのアドレスバーからリンクをコピーします。"
                 },
                 {
-                  title: "リンクを貼り付ける",
-                  content: "ビデオ ダウンローダー ツールに移動し、入力フィールドに URL を貼り付けます。"
+                  title: "リンクを貼り付け",
+                  content: "動画ダウンロードツールに移動し、URLを入力欄に貼り付けます。"
                 },
                 {
                   title: "MP4をダウンロード",
-                  content: "処理が完了したら、ダウンロード ボタンを押して MP4 ファイルを保存します。"
+                  content: "処理が完了したら、ダウンロードボタンをクリックしてMP4ファイルを保存します。"
                 }
               ]
       },
       part3: {
         content: [
-                "YouTube 動画をオフラインで視聴する必要があると思ったことはありませんか?",
-                "地下鉄で通勤中、飛行機で移動中、重要なチュートリアルを勉強中、スキルアップのためのコンテンツを深く掘り下げているとき、あるいは重要な動画素材をアーカイブしているときなど、信頼できるオフラインアクセスはよくある悩みの種です。そんな時こそ、当社のダウンローダーが威力を発揮します。",
-                "このダウンローダーを使えば、YouTube動画をMP4形式に素早く簡単に変換してダウンロードできます。デバイスに保存して、いつでも視聴できます。",
-                "プロセスは高速、シンプル、そして手間がかかりません。ダウンロード後は、インターネット接続なしで、いつでもどこでもお気に入りの動画をお楽しみいただけます。"
+                "YouTube動画をオフラインで視聴する必要に迫られたことはありませんか？",
+                "通勤中の地下鉄や飛行機の中、重要なチュートリアルの学習、スキル向上コンテンツの閲覧、重要な動画素材のアーカイブなど、信頼性のあるオフラインアクセスは共通の悩みです。そこで私たちのダウンローダーが活躍します。",
+                "このダウンローダーを使えば、YouTube動画を簡単かつ迅速にMP4形式に変換してダウンロードできます。デバイスに保存して、いつでも視聴可能です。",
+                "プロセスは高速でシンプル、面倒な手間はありません。ダウンロード後は、インターネットがなくても、いつでもどこでもお気に入りの動画を楽しめます。"
               ]
       },
       part4: {
-        content: ["ダウンロードの5つの主なメリットは次のとおりです", "YouTube動画をMP4ファイルとして"],
+        content: ["YouTube動画をMP4ファイルとしてダウンロードする5つの主な利点", "YouTube動画をMP4ファイルとして"],
         list: [
                 {
-                  title: "データコストを節約:",
-                  content: "通常、YouTubeで動画を視聴すると、かなりのモバイルデータが消費されます。ダウンロードしてオフラインで視聴すれば、こうした無駄なコストを回避できます。"
+                  title: "データ通信量の節約:",
+                  content: "通常、YouTubeで動画を視聴すると多くのモバイルデータを消費します。オフライン視聴用にダウンロードすれば、これらの不要なコストを回避できます。"
                 },
                 {
                   title: "いつでもどこでも視聴可能:",
-                  content: "インターネット接続が不安定な場合でも、動画をシームレスにお楽しみいただけます。バッファリングの心配はもう必要ありません。"
+                  content: "インターネット接続が不安定な場合でも、スムーズに動画を楽しめます。バッファリングの心配はもうありません。"
                 },
                 {
-                  title: "簡単なアーカイブと保存:",
-                  content: "ビデオを MP4 として保存すると、特に本当に価値がある、または重要だと思うコンテンツの個人コレクションを簡単に構築できます。"
+                  title: "簡単なアーカイブ＆保存:",
+                  content: "動画をMP4として保存すれば、特に価値があるまたは重要なコンテンツを簡単に個人コレクションとして構築できます。"
                 },
                 {
-                  title: "よりシンプルな共有:",
-                  content: "MP4ファイルを共有するのは、リンクを送るよりもはるかに便利です。WhatsAppやInstagramなどのアプリから動画ファイルを直接送信できるので、YouTubeを開く手間が省けます。"
+                  title: "シンプルな共有:",
+                  content: "MP4ファイルを共有するのは、リンクを送るよりもはるかに便利です。WhatsAppやInstagramなどのアプリを通じて直接動画ファイルを送信でき、YouTubeを開く手間が省けます。"
                 },
                 {
-                  title: "すぐに視聴、共有できる瞬間:",
-                  content: "お気に入りの動画を近くにいる友人や家族に見せたいと思いませんか？MP4をダウンロードしておけば、読み込みを待つことなく、すぐにみんなでスムーズに視聴できます。"
+                  title: "即時視聴、共有の瞬間:",
+                  content: "お気に入りの動画を近くの友人や家族に見せたいですか？MP4をダウンロードしておけば、読み込みを待つことなく、すぐに全員でスムーズに視聴できます。"
                 }
               ]
       },
       part5: {
-        title: "当社のダウンローダーが優れている理由",
+        title: "私たちのダウンローダーが選ばれる理由",
         cards: [
                 {
-                  title: "ワンクリックのシンプルさ",
+                  title: "ワンクリックの簡単操作",
                   content: "簡単なセットアップと直感的な操作。"
                 },
                 {
                   title: "超高速、無制限",
-                  content: "最高速度で変換およびダウンロードします。制限や制約はありません。"
+                  content: "最速で変換・ダウンロード — 制限なし。"
                 },
                 {
-                  title: "即座に変換",
-                  content: "待つことなく、ファイルを即座に処理します。"
+                  title: "その場で変換",
+                  content: "ファイルを即座に処理、待ち時間なし。"
                 },
                 {
-                  title: "広告ゼロ、邪魔ゼロ",
-                  content: "ポップアップ、バナー、中断のないクリーンなインターフェースで、シームレスなビデオ変換をお楽しみください。"
+                  title: "広告なし、邪魔なし",
+                  content: "ポップアップ、バナー、中断のないクリーンなインターフェースで、シームレスな動画変換を楽しめます。"
                 },
                 {
                   icon: "5",
-                  color: "#ディー5FF",
+                  color: "#DEE5FF",
                   title: "オリジナル品質保証",
-                  content: "ダウンロードすると、ソース ビデオのフル解像度が維持され、毎回ピクセル単位で完璧に再生されます。"
+                  content: "ダウンロードした動画は、ソース動画の完全な解像度を保持し、毎回ピクセルパーフェクトな再生を実現します。"
                 },
                 {
                   icon: "6",
                   color: "#DEF6EE",
-                  title: "どこでも使える",
-                  content: "あらゆるブラウザ、あらゆるデバイスと完全に互換性があります。"
+                  title: "どこでも利用可能",
+                  content: "あらゆるブラウザ、あらゆるデバイスで完全互換。"
                 }
               ]
       },
       part6: {
-        title: ["YouTube動画のダウンロードを最大化", "ダウンローダーで"],
+        title: ["YouTube動画ダウンロードを最大化", "ダウンローダーで"],
         content: [
-                "簡単な YouTube から MP4 への変換: 高速、シンプル、無料。",
-                "それが私たちの強みです。ユーザーフレンドリーなインターフェースは、誰でも簡単に使えるように設計されており、技術的なスキルは必要ありません。経験レベルに関わらず、動画を瞬時に変換できます。サインアップも不要。必要なものをすぐに手に入れることができます。",
-                "ご安心ください。ダウンロードした MP4 では、YouTube で視聴したときとまったく同じオリジナルのビデオ品質と鮮明さが維持されます。",
-                "どこでも使えます。主要なプラットフォームとデバイスに完全対応。Windows、macOS、Linux、Android、iOS、スマートフォン、タブレット、デスクトップなど、どのデバイスでもシームレスに動画をダウンロードできます。"
+                "簡単なYouTubeからMP4への変換: 高速、シンプル、無料。",
+                "それが私たちの得意とするところです。ユーザーフレンドリーなインターフェースは誰にでも設計されています — 技術スキルは不要です。経験レベルに関係なく、即座に動画を変換できます。登録不要: 必要なものをすぐに入手できます。",
+                "ご安心ください — ダウンロードしたMP4は、YouTubeで視聴した時と同じオリジナルの画質とクリアさを維持します。",
+                "どこでも動作します。すべての主要プラットフォームとデバイスで完全互換です。Windows、macOS、Linux、Android、iOS — スマートフォン、タブレット、デスクトップを使用している場合でも、シームレスに動画をダウンロードできます。"
               ]
       },
       part7: {
-        title: "YouTube動画のダウンロードに関する重要な質問",
+        title: "YouTube動画ダウンロードに関する主要な質問",
         list: [
                 {
-                  question: "著作権で保護されている YouTube 動画をダウンロードできますか?",
-                  answer: "著作権者の許可なく著作権で保護された YouTube 動画をダウンロードすることは違法です。"
+                  question: "著作権のあるYouTube動画をダウンロードできますか？",
+                  answer: "著作権者の許可なく著作権のあるYouTube動画をダウンロードすることは違法です。"
                 },
                 {
-                  question: "このダウンロードツールは安全ですか?",
-                  answer: "はい、安全で信頼できます。ユーザーから個人情報を一切要求せず、強力なウイルス対策を講じています。インターネットからファイルをダウンロードする際は、常にご注意ください。疑わしいリンクをクリックしたり、疑わしいファイルをダウンロードしたりしないでください。"
+                  question: "このダウンロードツールは安全ですか？",
+                  answer: "はい、安全で信頼できます。ユーザーから個人情報を要求することはなく、ウイルス対策も徹底しています。インターネットからファイルをダウンロードする際は常に注意を払うよう心がけてください: 不審なリンクをクリックしたり、疑わしいファイルをダウンロードしたりしないでください。"
                 },
                 {
-                  question: "YouTube から MP4 へのダウンロードはどの言語をサポートしていますか?",
-                  answer: "当社のサービスは、すべての一般的な言語での YouTube 動画のダウンロードをサポートしています。"
+                  question: "YouTubeからMP4へのダウンロードはどの言語に対応していますか？",
+                  answer: "当社のサービスは、すべての主要言語のYouTube動画のダウンロードをサポートしています。"
                 },
                 {
-                  question: "YouTube 動画のダウンロードにかかる時間に影響する要因は何ですか?",
-                  answer: "可能な限り高速なダウンロードを保証しておりますが、ダウンロード時間はビデオの長さやインターネット接続速度などの要因によっても左右されます。"
+                  question: "YouTube動画のダウンロード時間に影響する要因は何ですか？",
+                  answer: "当社は可能な限り最速のダウンロード体験を保証しますが、ダウンロード時間は動画の長さやインターネット接続速度などの要因にも影響されます。"
                 },
                 {
-                  question: "スマートフォンでMP4動画をダウンロードするとどこに保存されますか？"
+                  question: "スマートフォンでMP4動画をダウンロードした場合、どこに保存されますか？"
                 },
                 {
-                  question: "YouTube ビデオを MP4 としてダウンロードすると、ビデオの品質が低下しますか?",
-                  answer: "いいえ。当社のツールを使用してYouTube動画をMP4形式でダウンロードすると、元の動画の画質が維持されます。変換プロセスでは元の画質が維持されるため、YouTubeと同じ視聴体験が得られます。"
+                  question: "YouTube動画をMP4としてダウンロードすると画質は低下しますか？",
+                  answer: "いいえ。当社のツールを使用してYouTube動画をMP4としてダウンロードしても、オリジナルの画質は維持されます。変換プロセスでソース品質が保持され、YouTubeと同じ視聴体験が得られます。"
                 }
               ]
       }
@@ -3087,230 +3137,230 @@ let message = {
   },
   About: {
     Hero: {
-      "badge": "🚀 業界をリードするAIテクノロジー",
-      "title": "について",
+      "badge": "業界をリードするAI技術",
+      "title": "会社概要",
       "highlighted_text": "NeverCap",
-      "description": "私たちの使命は、最も正確な音声・動画の文字起こしサービスを提供することです。業界をリードするAI技術を活用し、96%以上の文字起こし精度を実現しています。主要言語の一部では、技術的な最適化により99%の精度を達成することも可能です。"
+      "description": "当社の使命は、最も正確な音声・動画文字起こしサービスを提供することです。業界をリードするAI技術を活用し、96%以上の文字起こし精度を実現。主要言語では技術的最適化により99%の精度に達することもあります。"
     },
     Stats: {
-      "title": "私たちの",
-      "highlighted_text": "インパクト",
-      "subtitle": "最先端のAI技術でグローバルコミュニケーションを強化",
+      "title": "当社の",
+      "highlighted_text": "実績",
+      "subtitle": "最先端AI技術でグローバルコミュニケーションを支援",
       "metrics": [
             {
-              "value": "96%以上",
-              "label": "精度率",
-              "description": "高度なAIによる業界トップクラスの転写精度"
+              "value": "96%+",
+              "label": "文字起こし精度",
+              "description": "先進AIによる業界最高レベルの文字起こし精度"
             },
             {
-              "value": "100以上",
-              "label": "サポートされている言語",
-              "description": "グローバルコンテンツの音声認識"
+              "value": "100+",
+              "label": "対応言語",
+              "description": "グローバルコンテンツに対応した音声認識"
             },
             {
               "value": "249+",
               "label": "翻訳言語",
-              "description": "転写されたテキストをほぼすべての言語に翻訳します"
+              "description": "文字起こししたテキストをほぼすべての言語に翻訳"
             }
           ]
     },
     Mission: {
-      "title": "選ぶ理由",
-      "highlighted_text": "NeverCap",
-      "subtitle": "私たちは言語の壁を打ち破り、誰もがコンテンツにアクセスできるようにすることを信じています",
+      "title": "選ばれる",
+      "highlighted_text": "理由",
+      "subtitle": "言語の壁を取り払い、すべての人にコンテンツを届けることを信じています",
       "features": [
             {
               "icon": "🎯",
-              "title": "比類のない精度",
-              "description": "当社の AI モデルは継続的に改良されており、96% を超える文字起こし精度を実現しています。一部の主要言語では、高度な最適化により最大 99% の精度に達します。"
+              "title": "圧倒的な精度",
+              "description": "当社のAIモデルは継続的に改良され、96%を超える文字起こし精度を実現。主要言語では高度な最適化により99%の精度に達します。"
             },
             {
               "icon": "🌍",
-              "title": "グローバル言語サポート",
-              "description": "100 以上の言語に対応した音声認識機能と 249 以上の言語への翻訳機能をサポートし、コンテンツを真にグローバルなものにします。"
+              "title": "グローバル言語対応",
+              "description": "100以上の言語の音声認識と249以上の言語への翻訳機能をサポートし、コンテンツを真にグローバルにします。"
             },
             {
               "icon": "⚡",
               "title": "超高速処理",
-              "description": "数時間におよぶ音声・動画コンテンツを、数時間ではなく数分で処理できます。最適化されたAIパイプラインにより、品質を損なうことなく迅速に文字起こしを作成できます。"
+              "description": "数時間分の音声・動画コンテンツを数分で処理。最適化されたAIパイプラインで、品質を損なうことなく迅速に文字起こしを提供します。"
             },
             {
               "icon": "🔒",
-              "title": "エンタープライズグレードのセキュリティ",
-              "description": "お客様のデータセキュリティは私たちの最優先事項です。業界標準の暗号化技術を使用し、世界的なプライバシー規制を遵守することで、お客様のコンテンツを安全かつ機密に保ちます。"
+              "title": "企業レベルのセキュリティ",
+              "description": "データセキュリティを最優先。業界標準の暗号化を使用し、グローバルなプライバシー規制に準拠してコンテンツを安全に保護します。"
             }
           ]
     },
     Company: {
       "title": "会社",
       "highlighted_text": "情報",
-      "subtitle": "ご質問やサポートについてはお気軽にお問い合わせください",
+      "subtitle": "ご質問やサポートはお気軽にお問い合わせください",
       "details": [
             {
               "label": "会社名",
-              "value": "スクライブファイAI株式会社"
+              "value": "SCRIBIFY AI INC"
             },
             {
-              "label": "本部",
-              "value": ["30 N グールド ストリート スイート R", "ワイオミング州シェリダン 82801", "アメリカ合衆国"]
+              "label": "本社所在地",
+              "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "アメリカ合衆国"]
             },
             {
               "label": "お問い合わせ",
-              "value": ["メール", "24時間365日サポート"]
+              "value": ["メール", "24時間365日サポート対応"]
             }
           ]
     },
     CTA: {
-      "title": "違いを体験する準備はできていますか?",
-      "subtitle": "何千人もの専門家がNeverCapに文字起こしの依頼をしています",
-      "button": "NeverCapを無料でお試しください→",
-      "disclaimer": "クレジットカードは不要です。数秒で文字起こしを開始できます。"
+      "title": "その違いを体感しませんか？",
+      "subtitle": "文字起こしのニーズにNeverCapを信頼する数千のプロフェッショナルに参加しましょう",
+      "button": "NeverCapを無料で試す →",
+      "disclaimer": "クレジットカード不要 • 数秒で文字起こしを開始"
     }
   },
   Privacy: {
     title: "プライバシー",
     titleGradient: "ポリシー",
-    subtitle: "個人情報の収集、使用、保護方法について",
-    "lastUpdated": "最終更新日: {日付}",
+    subtitle: "個人情報の収集、利用、保護方法について",
+    "lastUpdated": "最終更新日: {date}",
     "lastUpdatedDate": "2025年7月21日",
     "privacyPolicyTitle": "プライバシーポリシー",
-    "policyDescription": "本ポリシーは、NeverCap（以下「NeverCap」、「当社」、「私たち」）が、お客様が当社のサービス、ウェブサイト（https://www.nevercap.ai/）、およびソフトウェア（総称して「サービス」）を使用する際に、お客様の個人情報を収集、使用、開示する方法について説明します。",
-    "policyAgreement": "本プライバシーポリシーをよくお読みになり、内容をご理解ください。当社のサービスをご利用いただくことで、お客様は本プライバシーポリシーに同意されたものとみなされます。本ポリシーに従って当社がお客様の個人情報を利用することに同意されない場合は、直ちに当社のサービスのご利用を中止してください。",
-    "policyOverview": "本ポリシーでは、当社が収集するデータの種類とその理由、お客様のデータの取り扱い方法、そしてお客様のデータに関する権利についてご説明します。当社はお客様のデータを販売することはありません。",
+    "policyDescription": "本ポリシーは、NeverCap（以下「NeverCap」「当社」「私たち」）が、当社のサービス、ウェブサイト（https://www.nevercap.ai/）、ソフトウェア（総称して「サービス」）を利用する際に、個人情報をどのように収集、利用、開示するかを説明します。",
+    "policyAgreement": "本プライバシーポリシーをよくお読みいただき、内容を理解してください。当社のサービスを利用することで、本プライバシーポリシーに同意したものとみなされます。本ポリシーに沿った個人データの利用に同意できない場合は、直ちにサービスの利用を中止してください。",
+    "policyOverview": "本ポリシーでは、収集するデータとその目的、データの取り扱い方法、データに関するお客様の権利について説明します。当社はお客様のデータを販売しません。",
     "scopeTitle": "1. 本プライバシーポリシーの適用範囲",
-    "scopeDescription": "本プライバシーポリシーは、本サービスのユーザーに関する情報の収集および処理にのみ適用されます。本プライバシーポリシーは、当社にリンクされている第三者が運営するサービス、ウェブサイト、またはソフトウェア（当社がリンクを提供しているか、他のユーザーがリンクを共有しているかを問わず）には適用されません。また、第三者のコンテンツ、データ、アプリケーション、または資料にも適用されません。第三者のウェブサイトまたはソフトウェアに情報を提供する前に、当該ウェブサイトまたはソフトウェアのプライバシーポリシーを確認することをお勧めします。",
-    "collectionTitle": "2. 収集する情報とその理由",
-    "collectionPrinciple": "私たちの指針は、必要なものだけを収集することです。具体的には以下のようになります。",
-    "identityTitle": "2.1 アイデンティティとアクセス",
-    "identityDescription": "当社の製品にご登録いただく際、お名前やメールアドレスなどの個人情報をご提供いただきます。これは、製品の基本的な機能を提供するため、また製品のアップデートやその他の重要な情報をお送りするためです。",
+    "scopeDescription": "本プライバシーポリシーは、当社がサービスのユーザーに関する情報を収集・処理する場合にのみ適用されます。当社にリンクされている第三者が運営するサービス、ウェブサイト、ソフトウェア（当社がリンクを提供したか他のユーザーが共有したかを問わず）や、第三者のコンテンツ、データ、アプリケーション、資料には適用されません。第三者のウェブサイトやソフトウェアに情報を提供する前に、そのプライバシーポリシーを確認することをお勧めします。",
+    "collectionTitle": "2. 収集する情報とその目的",
+    "collectionPrinciple": "当社の基本方針は、必要な情報のみを収集することです。具体的には以下の通りです：",
+    "identityTitle": "2.1 本人確認とアクセス",
+    "identityDescription": "製品に登録する際、氏名やメールアドレスなどの本人確認情報を求めます。これは製品の基本的な機能を提供し、製品の更新情報やその他の重要な情報をお送りするためです。",
     "billingTitle": "2.2 請求情報",
-    "billingDescription": "有料製品にご登録いただく場合、お支払い情報と請求先住所のご入力をお願いしております。お支払い情報は当社の決済代行業者に直接送信され、当社のサーバーには送信されません。",
-    "productInteractionsTitle": "2.3 製品の相互作用",
-    "productInteractionsDescription": "お客様がアップロード、受信、または製品アカウントで保持するコンテンツは、当社のサーバーに保存されます。お客様がこれらのコンテンツを削除しない限り、お客様のアカウントがアクティブである限り、当社はこれらのコンテンツを保管することがあります。",
-    "websiteInteractionsTitle": "2.4 ウェブサイトのインタラクション",
-    "websiteInteractionsDescription": "当社は、コンバージョン率のテストや新製品デザインの実験など、分析および統計目的でお客様の閲覧アクティビティに関する情報を収集します。収集する情報には、ブラウザとオペレーティングシステムのバージョン、IPアドレス、アクセスしたウェブページとその読み込み時間、当社へのアクセス元となるウェブサイトなどが含まれます。アカウントをお持ちでサインインしている場合、これらのウェブ分析データは、アカウントが無効になるまで、お客様のIPアドレスとユーザーアカウントに関連付けられます。",
-    "cookiesTitle": "2.5 クッキー",
-    "cookiesDescription1": "当社では、特定の設定を保存し、お客様が当社アプリケーションをより簡単に使用できるようにし、A/B テストを実行し、一部の分析をサポートするために、永続的なファーストパーティ Cookie と一部のサードパーティ Cookie も使用します。",
-    "cookiesDescription2": "Cookieとは、ブラウザに保存されるテキストファイルです。ログイン情報やサイトの設定を記憶するのに役立ちます。また、ブラウザの種類、オペレーティングシステム、アクセスしたウェブページ、アクセス時間、閲覧したコンテンツ、その他のクリックストリームデータなどの情報も収集する場合があります。ブラウザの設定でCookieの保存期間を調整したり、個々のCookieを許可またはブロックしたりできますが、Cookieを無効にすると、アプリが動作しなくなり、サービスの他の機能も正常に動作しなくなる可能性があります。",
-    "correspondenceTitle": "2.6 自発的な通信",
-    "correspondenceDescription": "お客様が質問やサポートの依頼をメールで当社に送信した場合、当社はお客様のメールアドレスを含むその通信を保存します。これは、お客様が将来当社に連絡を取った場合に参照できる過去の通信履歴となるためです。",
-    "accessTitle": "3. お客様の情報にアクセスまたは共有する場合",
-    "accessDescription1": "お客様がリクエストした製品またはサービスを提供するため。当社は、アプリケーションの運用とお客様へのサービス提供を支援するために、サードパーティのサブプロセッサーを利用しています。これには、クラウドプロバイダーやアナリティクスプロバイダーが含まれます。",
-    "accessDescription2": "不正使用に関する調査、防止、または措置を講じるため。不正使用の可能性を調査する際にお客様のアカウントにアクセスすることは、最終手段です。当社は、お客様と問題を報告していただいた方々のプライバシーと安全を守るため、プロセス全体を通して責任のバランスをとるよう最善を尽くします。お客様が当社の製品を制限された目的で使用していることが発覚した場合、必要に応じて適切な当局への通報を含む、必要な措置を講じます。",
-    "accessDescription3": "適用法に基づいて要求される場合。",
-    "dataRequests": "ユーザーデータに関する要請。当社は、法的手続きにより強制される場合、または緊急要請があった場合など限られた状況を除き、政府によるユーザーデータに関する要請には応じないことを方針としています。ただし、米国の法執行機関が、データ共有を要求する必要な令状、刑事召喚状、または裁判所命令を保有している場合は、当社はこれに従わなければなりません。同様に、米国外の政府機関からの要請については、相互司法援助条約または協定に定められた手続きを通じて米国政府から強制された場合に限り対応します。当社は、法的に禁止されている場合を除き、また一部の緊急事態を除き、データを共有する前に影響を受けるユーザーに通知することを方針としています。",
-    "preservationRequests": "保存要求。同様に、当社のポリシーでは、米国連邦通信保存法（18 USC Section 2703(f)）または民事訴訟における米国召喚状によって強制される場合にのみ、データ保存要求に応じます。当社は、法律で義務付けられている場合、または当社が控訴しないことを選択した裁判所命令によって強制される場合を除き、保存データを共有しません。さらに、必要な保存期間の満了前に適切な令状、裁判所命令、または召喚状を受領しない限り、保存期間終了時に保存されている顧客データのコピーを破棄します。",
-    "taxAudits": "税務当局による監査を受けた場合、請求関連情報の開示を求められることがあります。その場合、請求先住所や免税情報など、必要最小限の情報のみを開示いたします。",
+    "billingDescription": "有料製品に登録する場合、支払い情報と請求先住所の提供を求めます。支払い情報は当社のサーバーを経由せず、直接決済プロセッサーに送信されます。",
+    "productInteractionsTitle": "2.3 製品とのやり取り",
+    "productInteractionsDescription": "お客様が製品アカウントでアップロード、受信、または保持するコンテンツを当社のサーバーに保存します。お客様がこのコンテンツを削除しない限り、アカウントが有効な間は保持する場合があります。",
+    "websiteInteractionsTitle": "2.4 ウェブサイトとのやり取り",
+    "websiteInteractionsDescription": "コンバージョン率のテストや新製品デザインの実験などの分析・統計目的で、閲覧活動に関する情報を収集します。これには、ブラウザやOSのバージョン、IPアドレス、訪問したウェブページとその読み込み時間、参照元サイトなどが含まれます。アカウントがありログインしている場合、これらのウェブ分析データはIPアドレスとユーザーアカウントに紐付けられ、アカウントが無効になるまで保持されます。",
+    "cookiesTitle": "2.5 Cookie",
+    "cookiesDescription1": "また、特定の設定を保存し、アプリケーションの利用を容易にし、A/Bテストを実施し、分析をサポートするために、永続的なファーストパーティCookieと一部のサードパーティCookieを使用します。",
+    "cookiesDescription2": "Cookieはブラウザに保存されるテキストデータです。ログイン情報やサイト設定を記憶するのに役立ちます。また、ブラウザの種類、OS、訪問したウェブページ、訪問時間、閲覧したコンテンツ、その他のクリックストリームデータなどの情報を収集する場合があります。ブラウザ設定でCookieの保持期間を調整したり個別のCookieを許可・ブロックできますが、Cookieを無効にするとアプリが動作しなくなるなど、サービスの一部が正常に機能しない場合があります。",
+    "correspondenceTitle": "2.6 任意の連絡",
+    "correspondenceDescription": "質問やヘルプを求めてメールを送信いただいた場合、今後の参照用として、メールアドレスを含むその通信記録を保持します。",
+    "accessTitle": "3. 情報へのアクセスまたは共有する場合",
+    "accessDescription1": "お客様が要求した製品やサービスを提供するため。当社はアプリケーションの運営とサービスの提供を支援するため、いくつかのサードパーティサブプロセッサーを使用します。これにはクラウドプロバイダーや分析プロバイダーが含まれます。",
+    "accessDescription2": "不正使用を調査、防止、または対応するため。潜在的な不正使用を調査する際に顧客アカウントにアクセスするのは最終手段です。当社は顧客と問題を報告する方々のプライバシーと安全を保護したいと考えており、その責任をプロセス全体でバランスよく果たすよう最善を尽くします。制限された目的で製品を利用していることが判明した場合、必要に応じて適切な当局への通知を含む対応を取ります。",
+    "accessDescription3": "適用される法律で要求される場合。",
+    "dataRequests": "ユーザーデータの要求。当社の方針は、法的手続きによって強制されない限り、または緊急要請の限られた状況を除き、政府からのユーザーデータ要求に応じないことです。ただし、米国法執行当局がデータ共有を要求する必要な令状、刑事召喚状、または裁判所命令を有している場合は、従わなければなりません。同様に、米国外の政府当局からの要求には、米国政府が相互法律援助条約または協定に基づく手続きを通じて強制する場合にのみ応じます。当社の方針は、法律で禁止されていない限り、および緊急の場合を除き、データを共有する前に影響を受けるユーザーに通知することです。",
+    "preservationRequests": "データ保存の要求。同様に、当社の方針は、米国連邦保存通信法（18 U.S.C. Section 2703(f)）または民事事件の適切な米国召喚状によって強制される場合にのみ、データ保存要求に従うことです。保存されたデータは、法律で要求されるか、控訴しないことを選択した裁判所命令によって強制されない限り共有しません。さらに、必要な保存期間が満了する前に適切な令状、裁判所命令、または召喚状を受領しない限り、保存期間の終了時に顧客データの保存コピーを破棄します。",
+    "taxAudits": "税務当局による監査を受ける場合、請求関連情報の共有を求められることがあります。その場合、請求先住所や免税情報など、最小限必要な情報のみを共有します。",
     "securityTitle": "4. データの保護方法",
-    "securityDescription": "すべてのデータは、当社のサーバーからブラウザに送信される際に SSL/TLS によって暗号化されます。",
-    "deletionTitle": "5. コンテンツを削除するとどうなるか",
-    "deletionDescription": "コンテンツを削除すると、直ちにアクセスできなくなります。",
-    "locationTitle": "6. サイトとデータの場所",
-    "locationDescription": "当社の製品およびその他のウェブプロパティは米国で運営されています。欧州連合（EU）、英国、または米国以外の地域にお住まいの場合、お客様が当社に提供した情報は米国に転送され、米国で保管されることにご注意ください。当社のウェブサイトまたはサービスをご利用いただくこと、および／または当社に個人情報をご提供いただくことにより、お客様はこの転送に同意したものとみなされます。",
+    "securityDescription": "すべてのデータは、サーバーからブラウザへ送信される際にSSL/TLSで暗号化されます。",
+    "deletionTitle": "5. コンテンツを削除した場合の処理",
+    "deletionDescription": "コンテンツを削除すると、即座にアクセスできなくなります。",
+    "locationTitle": "6. サイトとデータの所在地",
+    "locationDescription": "当社の製品およびその他のウェブプロパティは米国で運営されています。欧州連合、英国、または米国外に所在する場合、当社に提供する情報は米国に転送・保存されることにご注意ください。当社のウェブサイトまたはサービスを利用し、かつ/または個人情報を提供することで、この転送に同意したものとみなされます。",
     "childrenTitle": "7. 子供のプライバシー",
-    "childrenDescription": "本サービスは子供向けではなく、13歳未満のお子様から故意に個人情報を収集することはありません。13歳未満の方は、本サービスを通じて個人情報を送信しないでください。お子様が本ポリシーに違反して個人情報を提供したと思われる場合は、下記までご連絡ください。",
-    "updatesTitle": "8. 本プライバシーポリシーの更新",
-    "updatesDescription": "当社は、関連規制の遵守および新たな慣行の反映のため、必要に応じて本ポリシーを更新することがあります。本ポリシーに重大な変更があった場合は、このページ上部の日付を更新します。",
+    "childrenDescription": "本サービスは子供を対象としておらず、13歳未満の子供から故意に個人情報を収集することはありません。13歳未満の場合は、本サービスを通じて個人情報を送信しないでください。子供が本ポリシーに違反して個人情報を提供したと信じる場合は、以下に記載の方法で当社に連絡してください。",
+    "updatesTitle": "8. プライバシーポリシーの更新",
+    "updatesDescription": "関連規制に準拠し、新しい慣行を反映するため、必要に応じて本ポリシーを更新する場合があります。ポリシーに重要な変更を加える際は、常に本ページ上部の日付を更新します。",
     "contactTitle": "9. お問い合わせ",
-    "contactDescription": "当社のプライバシーポリシーに関してご質問、ご意見、苦情がございましたら、当社までご連絡ください。当社は、お客様の苦情にできるだけ早く対応するよう努めます。",
+    "contactDescription": "プライバシーポリシーに関するご質問、コメント、苦情がある場合は、当社までご連絡ください。できるだけ早く対応いたします。",
     "websiteUrl": "https://www.nevercap.ai/",
     "neverCap": "NeverCap"
   },
   TermsOfUse: {
     title: "利用規約",
     titleGradient: "サービス",
-    subtitle: "当社のサービスをご利用になる前に、これらの規約をよくお読みください。",
-    "lastUpdated": "最終更新日: {日付}",
+    subtitle: "当社のサービスをご利用になる前に、これらの利用規約をよくお読みください",
+    "lastUpdated": "最終更新日: {date}",
     "lastUpdatedDate": "2025年7月21日",
     "termsOfServiceTitle": "利用規約",
-    "thankYou": "弊社製品をご利用いただきありがとうございます！",
-    "companyDefinition": "この文書で「会社」、「当社」、「当社の」または「弊社」と記載されている場合、それはNeverCapを指します。",
-    "servicesDefinition": "「サービス」とは、Web ブラウザー、デスクトップ アプリケーション、モバイル アプリケーション、またはその他の形式で提供される、NeverCap によって作成および保守されるあらゆる製品を指します。",
-    "termsUpdate": "当社は今後、本利用規約を更新する場合があります。これらの変更は通常、関連ポリシーの拡張版へのリンクを提供することで、本利用規約の一部を明確化するために行われます。ポリシーに重大な変更を加える場合は、このページ上部の日付を更新し、アカウント所有者に通知するための適切な措置を講じます。",
-    "acceptanceTitle": "1. 契約の承諾",
-    "acceptanceDescription1": "お客様は、本サービスをご利用いただくことにより、本契約に同意したものとみなされ、これによりお客様とNeverCapとの間の拘束力のある契約が成立します。お客様は、本規約に法的に同意できること、および拘束力のある契約を締結できる法定年齢に達していることを表明するものとします。NeverCapによる本契約の承諾は、お客様が本契約のすべての条件に同意することを明示的に条件とします。",
-    "eligibilityRequirement": "本サービスは 18 歳未満の方を対象としておらず、18 歳未満の方はご利用いただけません。本サービスを利用することにより、お客様は前述の資格要件を満たしていることを表明し、保証するものとします。",
-    "userResponsibility": "「お客様」、「お客様の」、「お客様自身」という用語には、お客様の従業員、代理人、事業代表者、およびお客様のアカウント（以下に定義）を通じて本サービスへのアクセスを提供するその他の個人も含まれます。お客様は、お客様のアカウントを通じて本サービスにアクセスするすべての人が本規約を理解し、遵守することを保証する責任を負います。",
-    "termsRevision": "NeverCapは、独自の裁量により、本利用規約を随時改訂および更新する権利を留保します。すべての変更は、掲載された時点から直ちに有効となります。改訂された利用規約の掲載後も引き続き本サービスをご利用いただく場合、お客様は変更内容を承諾し、同意したものとみなされます。変更内容はお客様にとって拘束力を持つため、変更内容をご確認いただくため、このページを定期的にご確認ください。",
+    "thankYou": "当社製品をご利用いただきありがとうございます！",
+    "companyDefinition": "本ドキュメントにおいて「Company」「we」「our」「us」とは、NeverCapを指します。",
+    "servicesDefinition": "「Services」とは、NeverCapが作成・維持する製品全般を指し、Webブラウザ、デスクトップアプリケーション、モバイルアプリケーション、その他の形式で提供されるものを含みます。",
+    "termsUpdate": "当社は将来これらの利用規約を更新する場合があります。通常、変更は関連ポリシーへのリンクを追加することで規約を明確化するものです。重要な変更を行う際は、このページ上部の日付を更新し、適切な方法でアカウント保有者に通知します。",
+    "acceptanceTitle": "1. 本契約の承諾",
+    "acceptanceDescription1": "当社のサービスを利用することで、本契約に同意したものとみなされ、あなたとNeverCapの間で拘束力のある契約が成立します。あなたはこれらの規約を法的に受け入れる資格があり、契約を締結する法的年齢に達していることを表明します。NeverCapの承諾は、本契約の全条件に対するあなたの同意を明示的な条件とします。",
+    "eligibilityRequirement": "本サービスは18歳未満の方による利用を意図しておらず、使用を認めていません。サービスを利用することで、あなたはこの資格要件を満たしていることを表明・保証します。",
+    "userResponsibility": "「you」「your」「yourself」には、あなたの従業員、代理人、業務代表者、およびあなたのアカウントを通じてサービスにアクセスする他の個人も含まれます。あなたのアカウントを通じてサービスにアクセスするすべての人がこれらの規約を理解し遵守する責任はあなたにあります。",
+    "termsRevision": "NeverCapは単独の裁量でこれらの規約を随時改訂・更新する権利を留保します。変更は投稿された時点で直ちに有効となります。改訂後の規約の投稿後もサービスを利用し続けることで、あなたは変更に同意したものとみなされます。変更内容を確認するため、随時このページをチェックしてください。",
     "servicesTitle": "2. NeverCapのサービス",
-    "servicesDescription1": "当社のサービスにより、ユーザーは音声会話を文字に変換し、検索、翻訳、他のユーザーと共有できるようになります。",
-    "servicesOptions": "お客様は、本サービスの無料版（以下「無料サービス」といいます）を使用するか、料金の支払いが必要となる可能性のあるサブスクリプションベースの有料版（以下「有料サービス」といいます）を使用するかを選択できます。",
-    "servicesAccess": "当社は、お客様に本サービスをご提供いたします。本サービスへのアクセスに必要なすべての手配は、お客様の責任となります。",
-    "accountTermsTitle": "3. アカウント規約",
-    "accountSecurity": "アカウントのセキュリティ維持はお客様の責任となります。当社は、お客様がこのセキュリティ義務を遵守しなかったことに起因する損失または損害について、一切責任を負いません。",
-    "lawfulUse": "違法、非倫理的、または不道徳な目的で本サービスを使用することはできません。",
-    "contentResponsibility": "お客様は、お客様のアカウントで投稿されたすべてのコンテンツおよび発生するすべてのアクティビティについて責任を負います。これには、(a) お客様のログイン認証情報にアクセスできる、または (b) お客様のアカウントで独自のログイン情報を持つ他のユーザーが投稿したコンテンツも含まれます。",
-    "humanRequirement": 'あなたは人間でなければなりません。\"ボット\"やその他の自動化された方法によって登録されたアカウントは許可されません。',
-    "paymentTitle": "4. 支払い、払い戻し、プラン変更",
-    "freeTrial": "無料トライアルを提供している有料サービスについては、お申し込み時にトライアル期間をご案内いたします。トライアル期間終了後、サービスを継続してご利用いただくには、前払いで料金をお支払いいただく必要があります。お支払いいただけない場合、これらのサービスは終了となります。",
-    "upgradePolicy": "無料プランから有料プランにアップグレードする場合、カードに即時請求され、請求サイクルはアップグレードの日から開始されます。",
-    "taxes": "すべての料金には、税務当局が課す税金、賦課金、関税は含まれません。必要な場合、当社は税務当局に代わってこれらの税金を徴収し、税務当局に納付します。それ以外の場合、すべての税金、賦課金、関税のお支払いはお客様の責任となります。",
-    "refunds": "ご購入いただいた商品は返金不可です。有料サービスは、アカウントにログインすることでいつでもキャンセルできます。有料サブスクリプションの場合、別途記載がない限り、現在の有料期間の終了時にキャンセルが有効になります。",
-    "cancellationTitle": "5. キャンセルと終了",
-    "cancellationPolicy": "お支払い済みの期間が終了する前にサービスをキャンセルされた場合、キャンセルは直ちに有効となり、再度請求されることはありません。未使用期間については、前回の請求サイクルで自動的に日割り計算は行われません。",
-    "terminationRights": "当社は、お客様のアカウントをいつでもいかなる理由においても停止または終了し、現在および将来の当社サービスの利用を一切拒否する権利を有します。停止とは、お客様がアカウントまたはアカウント内のコンテンツにアクセスできなくなることを意味します。また、アカウントの終了は、お客様のアカウントまたはアカウントへのアクセスの削除、およびアカウント内のすべてのコンテンツの没収および放棄につながります。当社はまた、いつでもいかなる理由においても、いかなる者に対してもサービスの利用を拒否する権利を留保します。この条項を設けているのは、統計的に、当社のサービスに存在する数十万ものアカウントのうち、少なくとも1つは不正行為を行っているアカウントが存在するためです。",
-    "abusePolicy": "会社の従業員または役員に対する口頭、身体、書面またはその他の虐待（虐待または報復の脅迫を含む）は、即時アカウント終了につながる可能性があります。",
+    "servicesDescription1": "当社のサービスは、音声会話を検索可能・翻訳可能・共有可能な文字起こしテキストに変換できます。",
+    "servicesOptions": "無料版サービス（「Free Services」）または有料版サービス（「Paid Services」）のいずれかを選択できます。",
+    "servicesAccess": "当社はサービスを提供します。サービスにアクセスするための必要な手配はあなたの責任です。",
+    "accountTermsTitle": "3. アカウント条件",
+    "accountSecurity": "アカウントのセキュリティを維持する責任はあなたにあります。会社はこの義務不履行によるいかなる損失・損害についても責任を負いません。",
+    "lawfulUse": "サービスを違法、非倫理的、不道徳な目的で使用してはなりません。",
+    "contentResponsibility": "あなたのアカウント下で投稿されるすべてのコンテンツと発生する活動について責任を負います。これには、(a)あなたのログイン資格情報にアクセスできる他人、または(b)あなたのアカウント下で独自のログインを持つ他人による投稿も含まれます。",
+    "humanRequirement": "あなたは人間でなければなりません。「ボット」やその他の自動化手段によるアカウント登録は禁止されています。",
+    "paymentTitle": "4. 支払い、返金、プラン変更",
+    "freeTrial": "無料トライアルを提供する有料サービスの場合、登録時にトライアル期間を説明します。トライアル期間後は、サービスを継続利用するために事前支払いが必要です。支払わない場合、これらのサービスは終了します。",
+    "upgradePolicy": "無料プランから有料プランにアップグレードする場合、即時にカードに課金され、課金サイクルはアップグレード日から開始します。",
+    "taxes": "すべての料金には、税務当局が課す税金、課徴金、関税は含まれていません。必要な場合、当社は税務当局に代わってこれらの税金を徴収・納付します。それ以外の場合、すべての税金、課徴金、関税の支払いはあなたの責任です。",
+    "refunds": "すべての購入は返金不可です。いつでもアカウントにログインして有料サービスをキャンセルできます。有料サブスクリプションの場合、特に記載がない限り、キャンセルは現在の有料期間終了時に有効になります。",
+    "cancellationTitle": "5. 解約と終了",
+    "cancellationPolicy": "有料期間終了前にサービスを解約した場合、解約は即時有効となり、再課金は行われません。最終課金サイクルの未使用期間について自動的に按分返金は行いません。",
+    "terminationRights": "当社はいつでもいかなる理由でも、あなたのアカウントを停止または終了し、サービスの現在および将来の利用を拒否する権利を有します。停止とはアカウントまたはアカウント内コンテンツにアクセスできなくなることを意味します。終了とはさらにアカウントまたはアカウントアクセスの削除、およびアカウント内コンテンツの没収・放棄を伴います。また、いつでもいかなる理由でもサービスの利用を拒否する権利を留保します。",
+    "abusePolicy": "会社の従業員または役員に対する口頭、身体的、書面その他の虐待（虐待または報復の脅迫を含む）は、アカウント即時終了の原因となります。",
     "submissionsTitle": "6. 提出物",
-    "submissionsDescription": "お客様は、お客様から当社に提供される本サイトに関する質問、コメント、提案、アイデア、フィードバック、その他の情報（以下「投稿」）は機密情報ではなく、当社の独占的財産となることを承認し、同意するものとします。当社は、すべての知的財産権を含む独占的権利を所有し、お客様への謝辞または補償なしに、商業目的か否かを問わず、あらゆる合法的な目的でこれらの投稿を無制限に使用および配布する権利を有します。お客様は、かかる投稿に対するすべての著作者人格権を放棄し、かかる投稿がお客様自身のオリジナルであること、またはかかる投稿を送信する権利を有していることを保証します。お客様は、お客様の投稿におけるいかなる所有権の侵害または不正流用または疑惑に関しても、当社に対していかなる請求権も行使できないことに同意するものとします。",
+    "submissionsDescription": "あなたが当社に提供するサイトに関する質問、コメント、提案、アイデア、フィードバックその他の情報（「提出物」）は非機密扱いとなり、当社の独占的財産となることに同意します。当社はこれらの提出物に対し、すべての知的財産権を含む独占的権利を有し、いかなる合法的目的（商業的その他）に対しても、あなたへの承認または補償なしに、無制限に使用・頒布する権利を有します。あなたはこれらの提出物に関するすべての著作者人格権を放棄し、提出物がオリジナルであるか、または提出する権利を有していることを保証します。提出物の所有権に関する侵害または横領の主張に対し、当社に責任を問わないことに同意します。",
     "uptimeTitle": "7. 稼働時間とセキュリティ",
-    "serviceAvailability": "本サービスのご利用は、お客様ご自身の責任において行っていただきます。当社は、本サービスを「現状有姿」かつ「利用可能な範囲で」提供します。ほとんどのサービスにおいてサービスレベル契約は提供しておりませんが、アプリケーションの稼働率向上には注力しております。",
-    "throttlingPolicy": "稀に、ユーザーのアクティビティが他のユーザーにとって本サービスの安定性とパフォーマンスに悪影響を及ぼしていると確認された場合、当社はアカウントへのアクセスを一時的に制限または抑制する権利を留保します。極めて重大な場合を除き、措置を講じる前に、解決策を見つけるためにお客様にご連絡いたします。",
-    "dataSecurity": "当社では、バックアップ、冗長化、暗号化など、お客様のデータの保護とセキュリティ確保のために様々な対策を講じています。パブリックインターネットを介したデータ転送には、暗号化を徹底しています。",
-    "thirdPartyVendors": "当社は、サービスを実行するために必要なハードウェア、ソフトウェア、ネットワーク、ストレージ、および関連テクノロジーを提供するために、サードパーティのベンダーおよびホスティング パートナーを利用します。",
+    "serviceAvailability": "サービスの利用はあなたの自己責任です。当社はサービスを「現状有姿」で提供します。ほとんどのサービスについてサービスレベル契約は提供しませんが、アプリケーションの稼働時間を重視しています。",
+    "throttlingPolicy": "ユーザーの活動が他のユーザーに対するサービスの安定性とパフォーマンスに悪影響を及ぼすことが確認された稀な場合、アカウントアクセスを一時的に制限する権利を留保します。最も重大な場合を除き、措置を講じる前に解決策を見つけるためあなたに連絡します。",
+    "dataSecurity": "バックアップ、冗長化、暗号化を通じてデータの保護とセキュリティ確保に努めています。公共インターネット上のデータ伝送には暗号化を義務付けています。",
+    "thirdPartyVendors": "サービス運営に必要なハードウェア、ソフトウェア、ネットワーク、ストレージ、関連技術を提供するため、第三者ベンダーとホスティングパートナーを利用しています。",
     "siteManagementTitle": "8. サイト管理",
-    "siteManagementDescription": "当社は以下の権利を留保しますが、義務を負うものではありません。(1)本利用規約の違反についてサイトを監視すること。(2)当社の独自の裁量により、法律または本利用規約に違反していると判断した人物に対して、当該ユーザーを法執行機関に通報することを含め、適切な法的措置を講じること。(3)当社の独自の裁量により、かつ無制限に、ユーザーの投稿またはその一部の拒否、アクセス制限、利用制限、または無効化(技術的に可能な範囲で)を行うこと。(4)当社の独自の裁量により、かつ無制限に、通知または責任を負うことなく、サイズが大きすぎる、または当社のシステムに何らかの負担をかけるすべてのファイルおよびコンテンツをサイトから削除または無効化すること。(5)当社の権利と財産を保護し、サイトの適切な機能を促進するように設計された方法でサイトを管理すること。",
-    "copyrightTitle": "9. 著作権とコンテンツの所有権",
-    "copyrightCompliance": "サービスに投稿されるすべてのコンテンツは、米国著作権法に準拠する必要があります。",
-    "ipRights": "当社は、お客様が本サービスに提供する素材について、知的財産権を主張しません。アップロードされた素材はすべてお客様の所有物となります。",
-    "contentModeration": "当社はコンテンツを事前に審査しませんが、当社の独自の裁量により、本サービスを通じて利用可能なコンテンツを拒否または削除する権利（義務ではありません）を留保します。",
-    "trademarkProtection": "本サービスの名称、外観、操作感に関する著作権は、当社に帰属します。無断複写・転載を禁じます。HTML、CSS、JavaScript、またはビジュアルデザイン要素のいかなる部分も、当社からの書面による明示的な許可なく複製、複写、または再利用することはできません。当社のロゴまたは本サービスのロゴをプロモーション目的で使用する場合は、必ず許可を申請してください。ロゴの使用に関するリクエストは、メールにてご連絡ください。本利用規約に違反した場合、当社はこの許可を取り消す権利を留保します。",
-    "prohibitedExploitation": "お客様は、当社の明示的な書面による許可なく、本サービスの一部、本サービスの使用、または本サービスへのアクセスを複製、複写、コピー、販売、再販または利用しないことに同意するものとします。",
-    "impersonationProhibition": "他のウェブサイトが本サービスまたは当社と関連していると誤解させるような改変を行ってはなりません。",
-    "dmcaPolicy": "当社は他者の知的財産権を尊重します。本サイト上または本サイトを通じて入手可能な資料が、お客様が所有または管理する著作権を侵害していると思われる場合は、直ちに当社までご連絡ください。通知のコピーは、通知に記載された資料を投稿または保存した方に送付されます。通知において重大な虚偽の記載があった場合、適用法に基づき損害賠償責任を負う可能性があることにご注意ください。したがって、本サイトに掲載されている資料または本サイトからリンクされている資料がお客様の著作権を侵害しているかどうか確信が持てない場合は、まず弁護士に相談することを検討してください。",
+    "siteManagementDescription": "当社は以下の権利を留保します（義務ではありません）：(1)サイト上で本利用規約に違反する行為を監視する、(2)法律または本利用規約に違反した者に対して適切な法的措置を講じる（法執行機関への報告を含む）、(3)技術的に可能な範囲であなたの投稿またはその一部を拒否、アクセス制限、利用制限、無効化する、(4)過大なサイズまたはシステムに負担をかけるファイルやコンテンツをサイトから削除または無効化する、(5)当社の権利と財産を保護しサイトの適切な機能を促進する方法でサイトを管理する。",
+    "copyrightTitle": "9. 著作権とコンテンツ所有権",
+    "copyrightCompliance": "サービスに投稿されるすべてのコンテンツは米国著作権法に準拠しなければなりません。",
+    "ipRights": "あなたがサービスに提供する素材に対する知的財産権を主張しません。アップロードされたすべての素材はあなたのものです。",
+    "contentModeration": "コンテンツを事前に審査しませんが、サービス経由で利用可能なコンテンツを拒否または削除する権利を留保します。",
+    "trademarkProtection": "サービスの名称、外観、操作性は会社の著作権©です。すべての権利を留保します。会社の明示的な書面による許可なしに、HTML、CSS、JavaScript、または視覚的デザイン要素の一部を複製、コピー、再利用してはなりません。宣伝目的で会社のロゴまたはサービスロゴを使用するには許可を求めてください。ロゴ使用のリクエストはメールでお送りください。本利用規約に違反した場合、この許可を取り消す権利を留保します。",
+    "prohibitedExploitation": "会社の明示的な書面による許可なしに、サービスの一部、サービスの利用、またはサービスへのアクセスを複製、複写、コピー、販売、転売、または悪用しないことに同意します。",
+    "impersonationProhibition": "他のウェブサイトを改変し、サービスまたは会社と関連があると誤解させるような行為をしてはなりません。",
+    "dmcaPolicy": "他人の知的財産権を尊重します。サイト上またはサイト経由で利用可能な素材があなたの著作権を侵害していると考える場合は、直ちに当社に連絡してください。通知の写しは、通知の対象となった素材を投稿または保存した人物に送信されます。適用される法律に従い、通知に重大な虚偽記載があった場合、あなたは損害賠償責任を負う可能性があることに注意してください。したがって、サイト上またはサイトにリンクされた素材が著作権を侵害しているか確信が持てない場合は、まず弁護士に相談することを検討してください。",
     "prohibitedActivitiesTitle": "10. 禁止行為",
-    "generalProhibition": "当社が本サイトを提供する目的以外で、本サイトにアクセスしたり、本サイトを利用したりすることはできません。また、当社が明示的に推奨または承認した場合を除き、本サイトを商業目的に利用することはできません。",
-    "userObligations": "本サイトのユーザーとして、お客様は以下の行為を行わないことに同意するものとします。",
-    "dataScraping": "当社の書面による許可なく、サイトからデータまたはその他のコンテンツを体系的に取得し、直接的または間接的にコレクション、コンパイル、データベース、またはディレクトリを作成またはコンパイルすること。",
-    "fraud": "特に、ユーザーのパスワードなどのアカウントの機密情報を入手しようとして、当社および他のユーザーを騙したり、詐欺行為を働いたり、誤解させたりしないでください。",
-    "securityInterference": "コンテンツの使用またはコピーを防止または制限する機能、またはサイトおよび/またはそこに含まれるコンテンツの使用に制限を課す機能を含む、サイトのセキュリティ関連機能を回避、無効化、またはその他の方法で妨害すること。",
-    "defamation": "当社および/または本サイトを誹謗、中傷、またはその他の形で害する行為。",
-    "harassment": "本サイトから取得した情報を、他人に嫌がらせ、虐待、または危害を加える目的で使用すること。",
-    "supportAbuse": "当社のサポート サービスを不適切に使用したり、不正使用や不正行為に関する虚偽の報告を提出したりすること。",
-    "legalCompliance": "適用される法律または規制に反する方法で本サイトを使用する。",
-    "framingProhibition": "当サイトを無許可でフレーミングしたりリンクしたりすること。",
-    "malware": "ウイルス、トロイの木馬、または過度な大文字の使用やスパム（繰り返しテキストの継続的な投稿）など、サイトの継続的な使用や享受を妨害したり、サイトの使用、特徴、機能、操作、保守を変更、損なう、中断する、変更する、改ざんする、またはその他の素材をアップロードまたは送信する（またはアップロードまたは送信しようとする）。",
-    "automation": "スクリプトを使用してコメントやメッセージを送信したり、データマイニング、ロボット、または同様のデータ収集および抽出ツールを使用するなど、システムを自動的に使用すること。",
-    "copyrightRemoval": "あらゆるコンテンツから著作権またはその他の所有権に関する通知を削除します。",
-    "impersonation": "別のユーザーまたは人物になりすますこと、または別のユーザーのユーザー名を使用することを試みること。",
-    "spyware": 'クリア グラフィック インターチェンジ フォーマット (\"gif\")、1×1 ピクセル、Web バグ、Cookie、またはその他の同様のデバイス (\"スパイウェア\"または\"受動収集メカニズム\"または\"PCMS\"と呼ばれることもある) を含むがこれらに限定されない、受動的または能動的な情報収集または送信メカニズムとして機能する素材をアップロードまたは送信する (またはアップロードまたは送信しようとする)。',
-    "disruption": "本サイトまたは本サイトに接続されたネットワークもしくはサービスに干渉、混乱、または過度の負担をかけること。",
-    "employeeHarassment": "当サイトの一部をお客様に提供することに携わっている当社の従業員または代理人に対して、嫌がらせ、迷惑、威嚇、または脅迫を行うこと。",
-    "accessCircumvention": "本サイトまたは本サイトの一部へのアクセスを防止または制限するために設計された本サイトのあらゆる対策を回避しようとすること。",
-    "codeCopying": "Flash、PHP、HTML、JavaScript、その他のコードを含むがこれらに限定されない、サイトのソフトウェアをコピーまたは改変すること。",
-    "reverseEngineering": "適用法によって許可されている場合を除き、本サイトを構成する、または何らかの形で本サイトの一部を構成するソフトウェアを解読、逆コンパイル、逆アセンブル、またはリバース エンジニアリングすること。",
-    "bots": "標準的な検索エンジンまたはインターネット ブラウザの使用の結果である場合を除き、サイトにアクセスするスパイダー、ロボット、チート ユーティリティ、スクレーパー、オフライン リーダーなどを含むがこれらに限定されない自動化システムを使用、起動、開発、配布したり、許可されていないスクリプトやその他のソフトウェアを使用または起動したりしないでください。",
-    "buyingAgents": "本サイトでの購入には、購入代理店または購買代理店をご利用ください。",
-    "unauthorizedUse": "迷惑メールを送信する目的で電子的手段またはその他の手段によりユーザーのユーザー名や電子メールアドレスを収集すること、または自動化された手段や虚偽の口実によりユーザーアカウントを作成することなど、本サイトを不正に使用すること。",
-    "competition": "当社と競合する取り組みの一環として本サイトを使用したり、収益を生み出す取り組みや営利事業のために本サイトおよび/またはコンテンツを使用したりしないでください。",
-    "advertising": "商品やサービスの宣伝や販売の申し出のために本サイトを使用する。",
-    "profileTransfer": "プロフィールを販売または譲渡する。",
+    "generalProhibition": "当サイトは、当方が提供する目的以外でのアクセスまたは使用は禁止されています。当サイトは、当方が特に承認または認可した場合を除き、いかなる商業目的にも使用できません。",
+    "userObligations": "当サイトのユーザーとして、以下をしないことに同意します：",
+    "dataScraping": "当方の書面による許可なしに、体系的にデータやコンテンツを取得し、直接または間接的にコレクション、データベース、ディレクトリを作成または編成しないこと。",
+    "fraud": "当方や他のユーザーを騙したり、誤解させたり、特にユーザーパスワードなどの機密アカウント情報を入手しようと試みないこと。",
+    "securityInterference": "当サイトのセキュリティ関連機能（コンテンツの使用やコピーを防止・制限する機能、サイトおよびコンテンツの使用制限を強制する機能など）を回避、無効化、または妨害しないこと。",
+    "defamation": "当方や当サイトを中傷、傷つけ、または害する行為をしないこと。",
+    "harassment": "当サイトから得た情報を使用して、他人を嫌がらせ、虐待、または危害を加えないこと。",
+    "supportAbuse": "サポートサービスを不正に使用したり、虐待や不正行為の虚偽の報告を提出しないこと。",
+    "legalCompliance": "適用される法律や規制に反する方法で当サイトを使用しないこと。",
+    "framingProhibition": "当サイトへの無許可のフレーミングやリンクを行わないこと。",
+    "malware": "ウイルス、トロイの木馬、その他の有害な素材（大文字の乱用やスパムを含む）をアップロードまたは送信（試みを含む）しないこと。これらは他のユーザーのサイト利用を妨げたり、サイトの機能や運用を損なう可能性があります。",
+    "automation": "スクリプトを使用してコメントやメッセージを送信するなど、システムの自動使用を行わないこと。データマイニング、ロボット、類似のデータ収集・抽出ツールも使用禁止です。",
+    "copyrightRemoval": "コンテンツから著作権やその他の所有権表示を削除しないこと。",
+    "impersonation": "他のユーザーや人物になりすましたり、他のユーザーのユーザー名を使用しないこと。",
+    "spyware": "パッシブまたはアクティブな情報収集・送信メカニズム（GIF、1×1ピクセル、ウェブバグ、クッキーなど）をアップロードまたは送信（試みを含む）しないこと。",
+    "disruption": "当サイトや関連ネットワーク・サービスに過度の負荷をかけたり、妨害しないこと。",
+    "employeeHarassment": "当サイトの提供に関わる従業員や代理人を嫌がらせ、悩ませ、脅迫しないこと。",
+    "accessCircumvention": "当サイトへのアクセスを防止または制限する対策を回避しようとしないこと。",
+    "codeCopying": "Flash、PHP、HTML、JavaScriptなどの当サイトのソフトウェアをコピーまたは改変しないこと。",
+    "reverseEngineering": "適用される法律で許可されている場合を除き、当サイトのソフトウェアを逆アセンブル、逆コンパイル、またはリバースエンジニアリングしないこと。",
+    "bots": "標準的な検索エンジンやブラウザの使用結果を除き、スパイダー、ロボット、チートツールなど、当サイトにアクセスする自動システムを使用、起動、開発、または配布しないこと。",
+    "buyingAgents": "購入エージェントを使用して当サイトで購入しないこと。",
+    "unauthorizedUse": "ユーザー名やメールアドレスを収集してスパムを送信するなど、当サイトを不正使用しないこと。",
+    "competition": "当サイトやコンテンツを、当方と競合する目的や収益化事業に使用しないこと。",
+    "advertising": "当サイトで商品やサービスの広告や販売を行わないこと。",
+    "profileTransfer": "プロフィールを売買または譲渡しないこと。",
     "featuresTitle": "11. 機能とバグ",
-    "featuresDescription": "当社は、自らの経験と、貴重な時間とフィードバックを共有していただいたお客様の経験に基づき、サービスを慎重に設計しております。しかしながら、すべての人にご満足いただけるサービスは存在しません。また、当社のサービスがお客様の特定のご要望やご期待を満たすことを保証するものではありません。",
-    "bugsDescription": "すべての機能は出荷前にテストを実施しています。他のソフトウェアと同様に、当社のサービスにもバグは避けられません。報告されたバグは追跡し、特にセキュリティやプライバシーに関連するバグについては対応いたします。報告されたバグがすべて修正されるわけではなく、完全にエラーのないサービスを保証するものでもありません。",
-    "correctionsTitle": "12. 訂正",
-    "informationAccuracy": "当サイトには、説明、価格、在庫状況、その他様々な情報を含む、誤植、不正確な記述、または記載漏れを含む情報が含まれている場合があります。当社は、事前の通知なく、いつでも誤植、不正確な記述、または記載漏れを修正し、当サイトの情報を変更または更新する権利を留保します。",
-    "siteAvailability": "当社は、本サイトが常時利用可能であることを保証するものではありません。ハードウェア、ソフトウェア、その他の問題が発生した場合、または本サイトに関連するメンテナンス作業が必要になった場合、中断、遅延、またはエラーが発生する可能性があります。当社は、お客様への通知なく、いつでも、いかなる理由においても、本サイトを変更、改訂、更新、一時停止、中止、またはその他の方法で修正する権利を留保します。お客様は、本サイトのダウンタイムまたは中止中にお客様が本サイトにアクセスまたは使用できないことに起因する損失、損害、または不都合について、当社は一切の責任を負わないことに同意するものとします。本利用規約のいかなる条項も、当社に本サイトの維持およびサポート、または本サイトに関連する修正、更新、リリースの提供を義務付けるものと解釈されるものではありません。",
+    "featuresDescription": "当社は、自社の経験や顧客のフィードバックを基にサービスを慎重に設計しています。ただし、すべての人に満足されるサービスは存在しません。当社は、サービスが特定の要件や期待を満たすことを保証しません。",
+    "bugsDescription": "すべての機能はリリース前にテストされますが、ソフトウェアには必ずバグが含まれます。セキュリティやプライバシー関連のバグを優先的に対処しますが、すべてのバグが修正されるわけではなく、完全にエラーのないサービスを保証しません。",
+    "correctionsTitle": "12. 修正",
+    "informationAccuracy": "当サイトには誤字、誤り、省略（説明、価格、在庫など）が含まれる場合があります。当社は予告なくこれらを修正または更新する権利を留保します。",
+    "siteAvailability": "当サイトの常時利用を保証しません。ハードウェア・ソフトウェアの問題やメンテナンスにより中断や遅延が発生する可能性があります。当社は予告なくサイトを変更、更新、停止する権利を有し、ダウンタイムによる利用不能について一切の責任を負いません。",
     "userDataTitle": "13. ユーザーデータ",
-    "userDataDescription": "当社は、本サイトのパフォーマンス管理を目的として、お客様が本サイトに送信する特定のデータ、およびお客様による本サイトのご利用に関連するデータを保管します。当社は定期的にデータのバックアップを実施していますが、お客様が送信するデータ、または本サイトを利用して行った活動に関連するすべてのデータについては、お客様が単独で責任を負うものとします。お客様は、当社がかかるデータの紛失または破損について一切の責任を負わないことに同意するとともに、かかるデータの紛失または破損に起因して当社に対して提起する一切の訴訟権を放棄するものとします。",
+    "userDataDescription": "当社はサイト運営のためにユーザーが送信したデータを保持します。定期的なバックアップを行いますが、データの送信やサイト利用に関連するすべてのデータについてユーザーが単独で責任を負います。データの損失や破損について当社は責任を負わず、ユーザーはこれに対する法的措置を放棄します。",
     "privacyPolicyTitle": "14. プライバシーポリシー",
-    "privacyPolicyDescription": "当社はデータのプライバシーとセキュリティを重視しています。プライバシーポリシーをご確認ください。本サイトをご利用いただくことで、お客様は本利用規約に含まれる当社のプライバシーポリシーに同意するものとします。本サイトは米国でホストされています。個人データの収集、使用、開示に関する法律やその他の要件が米国の適用法と異なる世界の他の地域から本サイトにアクセスする場合、本サイトの継続的な利用を通じて、お客様のデータは米国に転送され、米国でのデータの転送および処理に同意したものとみなされます。",
+    "privacyPolicyDescription": "データのプライバシーとセキュリティを重視しています。プライバシーポリシーをご確認ください。当サイトの利用により、プライバシーポリシーに拘束されることに同意したものとみなします。当サイトは米国でホストされており、他の地域からアクセスする場合、データは米国に転送・処理されることに同意するものとします。",
     "liabilityTitle": "15. 責任",
-    "liabilityIntroduction": "当社は本規約全体を通じて責任について言及していますが、すべてを 1 つのセクションにまとめると次のようになります。",
-    "liabilityWaiver": "お客様は、当社が、法律上または衡平法上、お客様または第三者に対して、次のものから生じる直接的、間接的、付随的、逸失利益、特別、結果的、懲罰的または模範的な損害（逸失利益、のれん、使用、データまたはその他の無形損失の損害（当社が当該損害の可能性を知らされていた場合であっても）を含むがこれに限定されない）について責任を負わないことを明示的に理解し、同意するものとします。(1) サービスの使用または使用不能。(2) コンテンツおよび資料のエラー、間違い、または不正確さ。(3) お客様によるサイトへのアクセスおよび使用から生じる、いかなる性質の人身傷害または財産損害。(4) サービスを通じてまたはサービスから購入または取得した商品、データ、情報またはサービス、受信したメッセージ、または行った取引から生じる代替の商品およびサービスの調達費用。(5) 当社のセキュア サーバーおよび/またはそこに保存されているすべての個人情報および/または財務情報への不正アクセスや使用。 (6) サイトへの、またはサイトからの送信の中断または停止。(7) 第三者によってサイトに、またはサイトを通じて送信されるバグ、ウイルス、トロイの木馬など、および/または。(8) コンテンツおよび資料の誤りまたは脱落、またはサイトを通じて投稿、送信、またはその他の方法で利用可能になったコンテンツの使用の結果として発生した損失または損害。(9) サービスにおける第三者の声明または行為。(10) 契約違反、不法行為（積極的または消極的な過失を含む）、またはその他の責任理論に基づくかどうかにかかわらず、この利用規約またはサービスに関連するその他の事項。",
-    "miscellaneousTitle": "16. その他",
-    "miscellaneousDescription": "本利用規約および当社が本サイト上または本サイトに関して掲載するポリシーまたは運用規則は、お客様と当社との間の完全な合意および理解を構成するものとします。当社が本利用規約の権利または条項を行使または執行しなかった場合でも、当該権利または条項を放棄したものとみなされることはありません。本利用規約は、法律で認められる最大限の範囲で適用されます。当社は、いつでも当社の権利および義務の一部または全部を他者に譲渡することができます。当社は、当社の合理的な支配を超える事由により生じた損失、損害、遅延、または不履行について、一切の責任を負いません。本利用規約のいずれかの条項または条項の一部が違法、無効、または執行不能であると判断された場合、当該条項または条項の一部は本利用規約から分離可能とみなされ、残りの条項の有効性および執行可能性に影響を与えません。本利用規約または本サイトの利用の結果として、お客様と当社との間に合弁事業、パートナーシップ、雇用または代理関係が成立することはありません。お客様は、本利用規約が当社によって作成されたことを理由として、当社に不利に解釈されないことに同意するものとします。お客様は、本利用規約が電子形式であること、および本利用規約の当事者による署名がないことを理由として有する一切の抗弁権を放棄するものとします。",
+    "liabilityIntroduction": "本規約全体にわたる責任事項を以下にまとめます：",
+    "liabilityWaiver": "当社は、サービスの利用不能、コンテンツの誤り、人身・財産損害、代替品の調達費用、サーバーへの不正アクセス、伝送の中断、ウイルス感染、コンテンツの誤り・欠落、第三者の行為、その他本規約またはサービスに関連する一切の損害（利益、のれん、データなどの無形損失を含む）について、契約違反、不法行為（過失の有無を問わず）、その他の責任理論に基づき、直接的・間接的・特別・懲罰的・結果的損害賠償責任を負いません。",
+    "miscellaneousTitle": "16. 雑則",
+    "miscellaneousDescription": "本規約と当サイトに掲載されたポリシーは、ユーザーと当社間の完全な合意を構成します。権利や条項の不行使はその放棄を意味しません。本規約は法律の許す最大限の範囲で適用されます。当社は権利・義務を第三者に譲渡できます。合理的な支配不能な原因による損失・損害について責任を負いません。本規約の一部が無効でも、残りの条項は有効です。本規約により共同事業、雇用、代理関係は生じません。電子形式や署名不足を理由に本規約を争うことはできません。",
     "contactTitle": "17. お問い合わせ",
-    "contactDescription": "利用規約についてご質問がある場合は、お問い合わせください。",
+    "contactDescription": "本規約に関する質問はお問い合わせください。",
     "neverCap": "NeverCap",
     "site": "サイト",
     "services": "サービス"
