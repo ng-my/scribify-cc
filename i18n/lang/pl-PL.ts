@@ -197,7 +197,7 @@ let message = {
         },
         speaker: {
           content:
-            "W przypadku rozpoznawania mówców pliki są ograniczone do 3 godzin. Proszę odznaczyć '{text}'."
+            "W celu identyfikacji mówcy pliki są ograniczone do 3 godzin. Odznacz pole '{text}'."
         }
       }
     },
@@ -206,7 +206,7 @@ let message = {
         dialogTitle: "Transkrybuj media online",
         title: "Wklej linki",
         label:
-          "Wklej link do wideo lub audio z: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram i innych platform...",
+          "Wklej link do wideo lub pliku audio z: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram i innych platform...",
         confirm: "Dodaj",
         cancel: "Anuluj",
         // Wprowadź poprawny link
@@ -215,8 +215,8 @@ let message = {
         linkName: "Link"
       },
       file: {
-        orTitle: "Transkrybuj media online",
-        dialogTitle: "Transkrybuj pliki",
+        orTitle: "Transkrybuj z adresu URL",
+        dialogTitle: "Prześlij pliki do transkrypcji",
         tip1: "Przeciągnij pliki tutaj lub kliknij, aby przeglądać",
         tip2: "Kliknij, aby przeglądać",
         or: "lub",
@@ -236,7 +236,7 @@ let message = {
       confirm: "Transkrybuj",
       return: "Powrót",
       addMore: "Dodaj więcej",
-      language: "Język mediów",
+      language: "Wybierz język",
       failed: "Nieudane",
       tooLarge: "Plik przekracza limit (5 GB).",
       linkUpload: "Przesyłanie",
@@ -252,8 +252,8 @@ let message = {
         noData: "Brak danych"
       },
       maxFileNum: "Liczba plików nie może przekroczyć {num}.",
-      speaker: "Rozpoznaj mówców",
-      speakerLabel: "Automatycznie wykryj, kto mówi",
+      speaker: "Zidentyfikuj mówców",
+      speakerLabel: "Automatycznie wykrywa, kto mówi",
       guest: {
         transcribe: "Rozpisać",
         file: "Plik",
@@ -658,7 +658,7 @@ let message = {
     uploadWithinHours: "Przesyłanie w ciągu 10 godzin",
     yourSubscription: "Twoja subskrypcja zostanie anulowana {time}.",
     save: "Oszczędzać",
-      freeversion2: "Plan Bezpłatny"
+      freeversion2: "Darmowy Plan"
 },
   // Mapa języków
   LanguageMap: {
@@ -1099,7 +1099,7 @@ let message = {
       try_now: "Wypróbuj Teraz",
       no_signup: "Bez Rejestracji",
       experience_unltd: "Doświadcz naprawdę nielimitowanej transkrypcji",
-      upload_50: "Prześlij do 50 plików naraz, właśnie tutaj",
+      upload_50: "Prześlij do 50 plików naraz, właśnie tutaj.",
       no_limits: "Zaawansowane",
       no_surprises: "Transkrypcja AI",
       transparency: "Koniec z Ukrytymi Limitami, Koniec z Niespodziankami - Podczas gdy inni cicho zmniejszają Twoje minuty lub chowają limity w drobnym druku, my wierzymy w radykalną przejrzystość",
@@ -2307,8 +2307,7 @@ let message = {
             points: {
               searchAll: "5-minutowe przetwarzanie dla 1-godzinnych wywiadów",
               wordTimestamps: "Priorytetowe przetwarzanie pilnych materiałów",
-              jumpToMoments: "Śledzenie postępów w czasie rzeczywistym",
-              exportCitations: "Eksportuj z cytatami"
+              jumpToMoments: "Śledzenie postępów w czasie rzeczywistym"
             },
             searchDemo: {
               placeholder: "5min",
@@ -2326,8 +2325,7 @@ let message = {
             points: {
               accuracyGuarantee: "Gwarancja 96% dokładności",
               handlesAccents: "Obsługa terminologii technicznej",
-              smartPunctuation: "Idealna identyfikacja mówców",
-              speakerIdentification: "Identyfikacja mówcy"
+              smartPunctuation: "Idealna identyfikacja mówców"
             },
             visual: {
               accuracy: "96%",
@@ -2577,23 +2575,23 @@ let message = {
               "titleHighlight": "Odpowiedzi",
               subtitle: "Wszystko, co musisz wiedzieć o transkrybowaniu filmów z różnych platform",
               "questions": [
-                {
-                  "question": "P: Jak przetranskrybować film z YouTube za pomocą NeverCap?",
-                  "answer": "To proste. Znajdź film YouTube, który chcesz transkrybować, skopiuj jego URL i wklej do naszej aplikacji. Nasze AI automatycznie pobierze film i dostarczy pełną transkrypcję tekstową w kilka minut."
-                },
-                {
-                  "question": "P: Jaki jest najlepszy sposób na transkrypcję filmu z Facebooka?",
-                  "answer": "Najłatwiej użyć bezpośredniego linku. Skopiuj URL filmu z Facebooka, a nasza platforma zajmie się resztą, konwertując mowę na tekst z dokładnością do 96%, oszczędzając Ci ręcznej transkrypcji."
-                },
-                {
-                  "question": "P: Czy mogę transkrybować filmy z TikTok i Instagrama?",
-                  "answer": "Oczywiście. Obsługujemy transkrypcję filmów z TikTok i Instagrama. To idealne rozwiązanie dla twórców, którzy chcą wykorzystać swoje krótkie filmy w postach na blogu, artykułach lub tekstowych aktualizacjach w mediach społecznościowych."
-                },
-                {
-                  "question": "P: Jak przetranskrybować film z Vimeo?",
-                  "answer": "Transkrypcja filmów z Vimeo jest tak samo prosta jak z innych platform. Po prostu skopiuj URL filmu Vimeo i wklej go do NeverCap. Nasze AI przetworzy film i wygeneruje dokładną transkrypcję tekstową, którą możesz pobrać w wielu formatach."
-                }
-              ]
+                    {
+                      "question": "P: Jak przetranskrybować film z YouTube za pomocą NeverCap?",
+                      "answer": "To proste. Znajdź film YouTube, który chcesz transkrybować, skopiuj jego URL i wklej do naszej aplikacji. Nasze AI automatycznie pobierze film i dostarczy pełną transkrypcję tekstową w kilka minut."
+                    },
+                    {
+                      "question": "P: Jaki jest najlepszy sposób na transkrypcję filmu z Facebooka?",
+                      "answer": "Najłatwiej użyć bezpośredniego linku. Skopiuj URL filmu z Facebooka, a nasza platforma zajmie się resztą, konwertując mowę na tekst z dokładnością do 96%, oszczędzając Ci ręcznej transkrypcji."
+                    },
+                    {
+                      "question": "P: Czy mogę transkrybować filmy z TikTok i Instagrama?",
+                      "answer": "Oczywiście. Obsługujemy transkrypcję filmów z TikTok i Instagrama. To idealne rozwiązanie dla twórców, którzy chcą wykorzystać swoje krótkie filmy w postach na blogu, artykułach lub tekstowych aktualizacjach w mediach społecznościowych."
+                    },
+                    {
+                      "question": "P: Jak przetranskrybować film z Vimeo?",
+                      "answer": "Transkrypcja filmów z Vimeo jest tak samo prosta jak z innych platform. Po prostu skopiuj URL filmu Vimeo i wklej go do NeverCap. Nasze AI przetworzy film i wygeneruje dokładną transkrypcję tekstową, którą możesz pobrać w wielu formatach."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2682,7 +2680,19 @@ let message = {
         problemTitle2: "transkrypcji badań",
         title: "The",
         useCasesTitle2: "Każdej metody badawczej",
-        testimonialTitle2: "Wiodących Badaczy"
+        testimonialTitle2: "Wiodących Badaczy",
+        feature1TitleHl: "Całe badanie",
+        feature1TitlePost: "Za jednym razem",
+        feature2TitleHl: "Grupy fokusowe",
+        feature2TitlePost: "Za każdym razem",
+        feature3TitleHl: "96% dokładność",
+        feature4TitleHl: "Bezpieczeństwo",
+        testimonialText2Hl: "200 godzin",
+        testimonialText3: "nagrań grup fokusowych z naszego badania zdrowia społeczności. Inne usługi kazały nam wybierać, które sesje przetranskrybować ze względu na koszty. NeverCap pozwolił nam przetworzyć",
+        testimonialText4Hl: "wszystko w jeden weekend",
+        testimonialText5: ". Rozpoznawanie 20 mówców faktycznie działało—nawet podczas naszych najbardziej chaotycznych dyskusji, gdy wszyscy mówili jednocześnie. To narzędzie",
+        testimonialText6Hl: "całkowicie zmieniło",
+        testimonialText7: "sposób, w jaki zarządzamy danymi jakościowymi."
     },
     BusinessTeams: {
       heroBadge: "Dla Zespołów Biznesowych",
@@ -3051,7 +3061,7 @@ let message = {
             },
             {
               "label": "Kontakt",
-              "value": ["email", "Wsparcie dostępne 24/7"]
+              "value": ["Email", "Wsparcie dostępne 24/7"]
             }
           ]
     },

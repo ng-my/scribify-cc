@@ -10,7 +10,7 @@
           <h1>
             {{ $t("TermsOfUse.title") }}
             <span class="gradient-text">
-              {{ $t("TermsOfUse.title") }}
+              {{ $t("TermsOfUse.titleGradient") }}
             </span>
           </h1>
           <p class="hero-subtitle">
@@ -24,7 +24,7 @@
     <div class="terms-container">
       <div class="terms-card">
         <div class="last-updated">
-          {{ $t("TermsOfUse.lastUpdated", { date: $t("lastUpdatedDate") }) }}
+          {{ $t("TermsOfUse.lastUpdated", { date: $t("TermsOfUse.lastUpdatedDate") }) }}
         </div>
 
         <div class="terms-content">

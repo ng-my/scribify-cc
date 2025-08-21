@@ -208,7 +208,7 @@ let message = {
         dialogTitle: "Online media transcriberen",
         title: "Links plakken",
         label:
-          "Plak je video- of audiolink van: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram en meer platforms...",
+          "Plak uw video- of audiolink van: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram en meer platforms...",
         confirm: "Toevoegen",
         cancel: "Annuleren",
         // Voer de juiste link in
@@ -217,8 +217,8 @@ let message = {
         linkName: "Link"
       },
       file: {
-        orTitle: "Online media transcriberen",
-        dialogTitle: "Bestanden transcriberen",
+        orTitle: "Transcriberen van URL",
+        dialogTitle: "Upload bestanden om te transcriberen",
         tip1: "Sleep bestanden hierheen of klik om te bladeren",
         tip2: "Klik om te bladeren",
         or: "of",
@@ -238,7 +238,7 @@ let message = {
       confirm: "Transcriberen",
       return: "Terug",
       addMore: "Meer toevoegen",
-      language: "Mediataal",
+      language: "Selecteer taal",
       failed: "Mislukt",
       tooLarge: "Het bestand overschrijdt de limiet (5 GB).",
       linkUpload: "Uploaden",
@@ -662,7 +662,7 @@ let message = {
     uploadWithinHours: "10-uur uploads",
     yourSubscription: "Uw abonnement wordt op {time} geannuleerd.",
     save: "Besparen",
-      freeversion2: "Gratis Plan"
+      freeversion2: "Gratis Abonnement"
 },
   // Taalkaart
   LanguageMap: {
@@ -1105,7 +1105,7 @@ let message = {
       try_now: "Probeer Nu",
       no_signup: "Geen Aanmelding Nodig",
       experience_unltd: "Ervaar echt onbeperkte transcriptie",
-      upload_50: "Upload hier tot 50 bestanden tegelijk",
+      upload_50: "Upload hier tot 50 bestanden tegelijk.",
       no_limits: "Geavanceerd",
       no_surprises: "AI-transcriptie",
       transparency: "Geen Verborgen Limieten, Geen Verrassingen - Terwijl anderen stilletjes je minuten verminderen of limieten verbergen in de kleine lettertjes, geloven wij in radicale transparantie",
@@ -1454,45 +1454,6 @@ let message = {
       heroBadgeText: "9. 96% Nauwkeurigheid.",
       heroTitleLine1: "10. Elk Woord Telt.",
       heroTitleHighlight: "11. Toonaangevende nauwkeurigheid in 12 hoofdta",
-      "heroSubtitle": "Industrieleidende nauwkeurigheid in 12 belangrijke talen. Woordniveau timestamps voor perfecte synchronisatie. Intelligente spreker herkenning voor snelle gesprekken. Professionele opmaak voor duidelijke leesbaarheid.",
-      "primaryCta": "Test nauwkeurigheid →",
-      "secondaryCta": "Bekijk talen",
-      "statCard1Percentage": "96%",
-      "statCard1DescriptionLine1": "Nauwkeurigheid dekking",
-      "statCard1DescriptionLine2": "12 belangrijkste talen",
-      "statCard2Percentage": "95%+",
-      "statCard2DescriptionLine1": "Dialecten & accenten",
-      "statCard2DescriptionLine2": "herkenningsnauwkeurigheid",
-      "statCard3Percentage": "100ms",
-      "statCard3DescriptionLine1": "Woordniveau",
-      "statCard3DescriptionLine2": "timestamp precisie",
-      "languageSectionTitlePart1": "96% nauwkeurigheid",
-      "languageSubtitle": "Professioneel niveau transcriptie voor wereldwijde content",
-      "languageCard1Flag": "🇺🇸",
-      "languageCard1Name": "Engels",
-      "languageCard1Accuracy": "96% nauwkeurigheid",
-      "languageCard2Flag": "🇪🇸",
-      "languageCard2Name": "Spaans",
-      "languageCard2Accuracy": "96% nauwkeurigheid",
-      "languageCard3Flag": "🇨🇳",
-      "languageCard3Name": "Mandarijn",
-      "languageCard3Accuracy": "96% nauwkeurigheid",
-      "languageCard4Flag": "🇫🇷",
-      "languageCard4Name": "Frans",
-      "languageCard4Accuracy": "96% nauwkeurigheid",
-      "languageCard5Flag": "🇩🇪",
-      "languageCard5Name": "Duits",
-      "languageCard5Accuracy": "96% nauwkeurigheid",
-      "languageCard6Flag": "🇯🇵",
-      "languageCard6Name": "Japans",
-      "languageCard6Accuracy": "96% nauwkeurigheid",
-      "languageCard7Flag": "🇰🇷",
-      "languageCard7Name": "Koreaans",
-      "languageCard7Accuracy": "96% nauwkeurigheid",
-      "languageCard8Flag": "🇵🇹",
-      "languageCard8Name": "Portugees",
-      "languageCard8Accuracy": "96% nauwkeurigheid",
-      "languageCard9Flag": "🇷🇺",
       languageCard9Name: "Russisch",
       languageCard9Accuracy: "96% Nauwkeurigheid",
       languageCard10Flag: "🇮🇹",
@@ -1602,7 +1563,46 @@ let message = {
       ctaTitle: "Ervaar 96% Nauwkeurigheid",
       ctaSubtitle: "Upload uw meest uitdagende audio en zie het verschil",
       finalCta: "Test Onze Nauwkeurigheid Nu →",
-      languageSectionTitlePart2: "over 12 belangrijke talen"
+      languageSectionTitlePart2: "over 12 belangrijke talen",
+        heroSubtitle: "Toonaangevende nauwkeurigheid in 12 hoofdtalen. Woordniveau timestamps voor perfecte synchronisatie. Slimme sprekerherkenning die snelle gesprekken aankan. Professionele opmaak die echt leesbaar is.",
+        primaryCta: "Test Onze Nauwkeurigheid →",
+        secondaryCta: "Bekijk Talen",
+        statCard1Percentage: "96%",
+        statCard1DescriptionLine1: "Nauwkeurigheid in",
+        statCard1DescriptionLine2: "12 Hoofdtalen",
+        statCard2Percentage: "95%+",
+        statCard2DescriptionLine1: "Nauwkeurigheid met",
+        statCard2DescriptionLine2: "Accenten & Dialecten",
+        statCard3Percentage: "100ms",
+        statCard3DescriptionLine1: "Woordniveau",
+        statCard3DescriptionLine2: "Timestamp Precisie",
+        languageSectionTitlePart1: "96% Nauwkeurigheid",
+        languageSubtitle: "Professionele transcriptie voor wereldwijde content",
+        languageCard1Flag: "🇺🇸",
+        languageCard1Name: "Engels",
+        languageCard1Accuracy: "96% Nauwkeurigheid",
+        languageCard2Flag: "🇪🇸",
+        languageCard2Name: "Spaans",
+        languageCard2Accuracy: "96% Nauwkeurigheid",
+        languageCard3Flag: "🇨🇳",
+        languageCard3Name: "Mandarijn",
+        languageCard3Accuracy: "96% Nauwkeurigheid",
+        languageCard4Flag: "🇫🇷",
+        languageCard4Name: "Frans",
+        languageCard4Accuracy: "96% Nauwkeurigheid",
+        languageCard5Flag: "🇩🇪",
+        languageCard5Name: "Duits",
+        languageCard5Accuracy: "96% Nauwkeurigheid",
+        languageCard6Flag: "🇯🇵",
+        languageCard6Name: "Japans",
+        languageCard6Accuracy: "96% Nauwkeurigheid",
+        languageCard7Flag: "🇰🇷",
+        languageCard7Name: "Koreaans",
+        languageCard7Accuracy: "96% Nauwkeurigheid",
+        languageCard8Flag: "🇵🇹",
+        languageCard8Name: "Portugees",
+        languageCard8Accuracy: "96% Nauwkeurigheid",
+        languageCard9Flag: "🇷🇺"
     }
   },
   Pricing: {
@@ -2313,8 +2313,7 @@ let message = {
             points: {
               searchAll: "5-minuten levertijd voor 1-uurs interviews",
               wordTimestamps: "Prioritaire verwerking voor urgente verhalen",
-              jumpToMoments: "Real-time voortgangsvolging",
-              exportCitations: "Exporteren met citaten"
+              jumpToMoments: "Real-time voortgangsvolging"
             },
             searchDemo: {
               placeholder: "5min",
@@ -2332,8 +2331,7 @@ let message = {
             points: {
               accuracyGuarantee: "96% nauwkeurigheidsgarantie",
               handlesAccents: "Verwerkt technische terminologie",
-              smartPunctuation: "Perfecte sprekerherkenning",
-              speakerIdentification: "Sprekeridentificatie"
+              smartPunctuation: "Perfecte sprekerherkenning"
             },
             visual: {
               accuracy: "96%",
@@ -2583,23 +2581,23 @@ let message = {
               "titleHighlight": "Beantwoord",
               subtitle: "Alles wat je moet weten over het transcriberen van video's van verschillende platforms",
               "questions": [
-                {
-                  "question": "V: Hoe transcribeer ik een YouTube-video met NeverCap?",
-                  "answer": "Het is simpel. Zoek de YouTube-video die je wilt transcriberen, kopieer de URL en plak deze in onze app. Onze AI haalt de video automatisch op en geeft binnen enkele minuten een volledige teksttranscriptie."
-                },
-                {
-                  "question": "V: Wat is de beste manier om een Facebook-video naar tekst te transcriberen?",
-                  "answer": "De makkelijkste manier is een directe link. Kopieer de URL van de Facebook-video en ons platform doet de rest, met een nauwkeurigheid van 96%, zodat je niet handmatig hoeft te transcriberen."
-                },
-                {
-                  "question": "V: Kan ik TikTok- en Instagram-video's transcriberen?",
-                  "answer": "Absoluut. We ondersteunen transcriptie voor zowel TikTok- als Instagram-video's. Perfect voor creators die hun korte video's willen hergebruiken in blogs, artikelen of tekstupdates op sociale media."
-                },
-                {
-                  "question": "V: Hoe transcribeer ik een Vimeo-video naar tekst?",
-                  "answer": "Vimeo-video's transcriberen is net zo makkelijk als op andere platforms. Kopieer de Vimeo-URL en plak deze in NeverCap. Onze AI verwerkt de video en genereert een nauwkeurige teksttranscriptie die je in meerdere formaten kunt downloaden."
-                }
-              ]
+                    {
+                      "question": "V: Hoe transcribeer ik een YouTube-video met NeverCap?",
+                      "answer": "Het is simpel. Zoek de YouTube-video die je wilt transcriberen, kopieer de URL en plak deze in onze app. Onze AI haalt de video automatisch op en geeft binnen enkele minuten een volledige teksttranscriptie."
+                    },
+                    {
+                      "question": "V: Wat is de beste manier om een Facebook-video naar tekst te transcriberen?",
+                      "answer": "De makkelijkste manier is een directe link. Kopieer de URL van de Facebook-video en ons platform doet de rest, met een nauwkeurigheid van 96%, zodat je niet handmatig hoeft te transcriberen."
+                    },
+                    {
+                      "question": "V: Kan ik TikTok- en Instagram-video's transcriberen?",
+                      "answer": "Absoluut. We ondersteunen transcriptie voor zowel TikTok- als Instagram-video's. Perfect voor creators die hun korte video's willen hergebruiken in blogs, artikelen of tekstupdates op sociale media."
+                    },
+                    {
+                      "question": "V: Hoe transcribeer ik een Vimeo-video naar tekst?",
+                      "answer": "Vimeo-video's transcriberen is net zo makkelijk als op andere platforms. Kopieer de Vimeo-URL en plak deze in NeverCap. Onze AI verwerkt de video en genereert een nauwkeurige teksttranscriptie die je in meerdere formaten kunt downloaden."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2688,7 +2686,19 @@ let message = {
         problemTitle2: "Onderzoekstranscriptieprobleem",
         title: "The",
         useCasesTitle2: "Elke Onderzoeksmethode",
-        testimonialTitle2: "Toonaangevende Onderzoekers"
+        testimonialTitle2: "Toonaangevende Onderzoekers",
+        feature1TitleHl: "Volledige Studie",
+        feature1TitlePost: "in Één Keer",
+        feature2TitleHl: "Focusgroepen",
+        feature2TitlePost: "Elke Keer",
+        feature3TitleHl: "96% Nauwkeurigheid",
+        feature4TitleHl: "Beveiliging",
+        testimonialText2Hl: "200 uur",
+        testimonialText3: "aan focusgroepopnames van ons gemeenschapsgezondheidsonderzoek. Andere diensten wilden dat we sessies selecteerden vanwege de kosten. NeverCap liet ons",
+        testimonialText4Hl: "alles verwerken in een weekend",
+        testimonialText5: ". De 20-sprekerherkenning werkte echt—zelfs tijdens onze rommeligste discussies waar iedereen door elkaar praatte. Deze tool heeft",
+        testimonialText6Hl: "volledig veranderd",
+        testimonialText7: "hoe we kwalitatieve gegevens verwerken."
     },
     BusinessTeams: {
       heroBadge: "Voor Bedrijfsteams",
@@ -3057,7 +3067,7 @@ let message = {
             },
             {
               "label": "Contacteer Ons",
-              "value": ["e-mail", "Ondersteuning 24/7 beschikbaar"]
+              "value": ["E-mail", "Ondersteuning 24/7 beschikbaar"]
             }
           ]
     },

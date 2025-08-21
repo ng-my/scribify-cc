@@ -200,7 +200,7 @@ let message = {
         },
         speaker: {
           content:
-            "Für die Sprecheridentifikation sind Dateien auf 3 Stunden begrenzt. Bitte deaktivieren Sie '{text}'."
+            "Für die Sprechererkennung sind Dateien auf 3 Stunden begrenzt. Bitte deaktivieren Sie '{text}'."
         }
       }
     },
@@ -209,7 +209,7 @@ let message = {
         dialogTitle: "Online-Medien transcribieren",
         title: "Links einfügen",
         label:
-          "Fügen Sie Ihren Video- oder Audio-Link von YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram und weiteren Plattformen ein...",
+          "Fügen Sie Ihren Video- oder Audio-Link ein von: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram und weiteren Plattformen...",
         confirm: "Hinzufügen",
         cancel: "Abbrechen",
         // Bitte geben Sie eine gültige URL ein
@@ -218,10 +218,10 @@ let message = {
         linkName: "Link"
       },
       file: {
-        orTitle: "Online-Medien transcribieren",
-        dialogTitle: "Dateien transcribieren",
-        tip1: "Dateien hierher ziehen oder klicken zum Durchsuchen",
-        tip2: "Klicken zum Durchsuchen",
+        orTitle: "Von URL transkribieren",
+        dialogTitle: "Hochladen von Dateien zum Transkribieren",
+        tip1: "Ziehen Sie Dateien hierher oder klicken Sie, um sie zu durchsuchen",
+        tip2: "Klicken Sie hier, um zu blättern",
         or: "oder",
         supported: "Unterstützte Formate"
       },
@@ -239,7 +239,7 @@ let message = {
       confirm: "Transcribieren",
       return: "Zurück",
       addMore: "Mehr hinzufügen",
-      language: "Mediensprache",
+      language: "Sprache auswählen",
       failed: "Fehlgeschlagen",
       tooLarge: "Die Datei überschreitet das Limit (5 GB).",
       linkUpload: "Hochladen",
@@ -257,7 +257,7 @@ let message = {
       maxFileNum: "Die Anzahl der Dateien darf {num} nicht überschreiten.",
       speaker: "Sprecher identifizieren",
       speakerLabel:
-        "Automatisch erkennen, wer spricht",
+        "Sprecher automatisch erkennen",
       guest: {
         transcribe: "Transkribieren",
         file: "Datei",
@@ -669,7 +669,7 @@ let message = {
     uploadWithinHours: "10-Stunden-Uploads",
     yourSubscription: "Ihr Abonnement wird am {time} gekündigt.",
     save: "Sparen",
-      freeversion2: "Kostenloser Plan"
+      freeversion2: "Kostenloser Tarif"
 },
   // 语言对应关系
   LanguageMap: {
@@ -1110,7 +1110,7 @@ let message = {
       try_now: "Jetzt testen",
       no_signup: "Keine Anmeldung erforderlich",
       experience_unltd: "Erleben Sie wirklich unbegrenzte Transkription",
-      upload_50: "Laden Sie hier bis zu 50 Dateien gleichzeitig hoch",
+      upload_50: "Laden Sie hier bis zu 50 Dateien gleichzeitig hoch.",
       no_limits: "Erweitert",
       no_surprises: "KI-Transkription",
       transparency: "Keine versteckten Limits, keine Überraschungen - Während andere stillschweigend Ihre Minuten reduzieren oder Obergrenzen im Kleingedruckten verstecken, setzen wir auf radikale Transparenz",
@@ -2318,8 +2318,7 @@ let message = {
             points: {
               searchAll: "5-minütige Bearbeitung für 1-Stunden-Interviews",
               wordTimestamps: "Priorisierte Bearbeitung für dringende Geschichten",
-              jumpToMoments: "Echtzeit-Fortschrittsverfolgung",
-              exportCitations: "Export mit Zitaten"
+              jumpToMoments: "Echtzeit-Fortschrittsverfolgung"
             },
             searchDemo: {
               placeholder: "5min",
@@ -2337,8 +2336,7 @@ let message = {
             points: {
               accuracyGuarantee: "96% Genauigkeitsgarantie",
               handlesAccents: "Verarbeitet Fachbegriffe",
-              smartPunctuation: "Perfekte Sprechererkennung",
-              speakerIdentification: "Sprecheridentifikation"
+              smartPunctuation: "Perfekte Sprechererkennung"
             },
             visual: {
               accuracy: "96%",
@@ -2588,23 +2586,23 @@ let message = {
               "titleHighlight": "Beantwortet",
               subtitle: "Alles, was du über das Transkribieren von Videos von verschiedenen Plattformen wissen musst",
               "questions": [
-                {
-                  "question": "F: Wie transkribiere ich ein YouTube-Video mit NeverCap?",
-                  "answer": "Ganz einfach: Finde das YouTube-Video, kopiere die URL und füge sie in unsere App ein. Unsere KI holt das Video automatisch und liefert in Minuten eine vollständige Texttranskription."
-                },
-                {
-                  "question": "F: Wie transkribiere ich ein Facebook-Video am besten?",
-                  "answer": "Am einfachsten mit einem Direktlink. Kopiere die Facebook-Video-URL und unsere Plattform übernimmt den Rest – mit bis zu 96% Genauigkeit und ohne manuelle Transkription."
-                },
-                {
-                  "question": "F: Kann ich TikTok- und Instagram-Videos transkribieren?",
-                  "answer": "Absolut. Wir unterstützen Transkriptionen für beide Plattformen. Perfekt für Creator, die Short-Form-Videos in Blogposts, Artikel oder Text-Updates umwandeln möchten."
-                },
-                {
-                  "question": "F: Wie transkribiere ich ein Vimeo-Video?",
-                  "answer": "So einfach wie bei anderen Plattformen: Vimeo-URL kopieren, in NeverCap einfügen. Unsere KI erstellt eine präzise Transkription in verschiedenen Download-Formaten."
-                }
-              ]
+                    {
+                      "question": "F: Wie transkribiere ich ein YouTube-Video mit NeverCap?",
+                      "answer": "Ganz einfach: Finde das YouTube-Video, kopiere die URL und füge sie in unsere App ein. Unsere KI holt das Video automatisch und liefert in Minuten eine vollständige Texttranskription."
+                    },
+                    {
+                      "question": "F: Wie transkribiere ich ein Facebook-Video am besten?",
+                      "answer": "Am einfachsten mit einem Direktlink. Kopiere die Facebook-Video-URL und unsere Plattform übernimmt den Rest – mit bis zu 96% Genauigkeit und ohne manuelle Transkription."
+                    },
+                    {
+                      "question": "F: Kann ich TikTok- und Instagram-Videos transkribieren?",
+                      "answer": "Absolut. Wir unterstützen Transkriptionen für beide Plattformen. Perfekt für Creator, die Short-Form-Videos in Blogposts, Artikel oder Text-Updates umwandeln möchten."
+                    },
+                    {
+                      "question": "F: Wie transkribiere ich ein Vimeo-Video?",
+                      "answer": "So einfach wie bei anderen Plattformen: Vimeo-URL kopieren, in NeverCap einfügen. Unsere KI erstellt eine präzise Transkription in verschiedenen Download-Formaten."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2693,7 +2691,19 @@ let message = {
         problemTitle2: "Forschungs-Transkriptionsproblem",
         title: "Die",
         useCasesTitle2: "Jede Forschungsmethode",
-        testimonialTitle2: "Führenden Forschern"
+        testimonialTitle2: "Führenden Forschern",
+        feature1TitleHl: "Komplette Studie",
+        feature1TitlePost: "in einem Durchgang",
+        feature2TitleHl: "Fokusgruppen",
+        feature2TitlePost: "Jedes Mal",
+        feature3TitleHl: "96% Genauigkeit",
+        feature4TitleHl: "Sicherheit",
+        testimonialText2Hl: "200 Stunden",
+        testimonialText3: "von Fokusgruppenaufnahmen aus unserer Gemeindegesundheitsstudie. Andere Dienste wollten, dass wir aufgrund der Kosten auswählen, welche Sitzungen transkribiert werden. NeverCap ermöglichte uns die Verarbeitung",
+        testimonialText4Hl: "alles an einem Wochenende",
+        testimonialText5: ". Die 20-Sprecher-Identifikation funktionierte tatsächlich – selbst während unserer chaotischsten Diskussionen, bei denen alle gleichzeitig sprachen. Dieses Tool hat",
+        testimonialText6Hl: "völlig verändert",
+        testimonialText7: "wie wir qualitative Daten verarbeiten."
     },
     BusinessTeams: {
       heroBadge: "Für Geschäftsteams",

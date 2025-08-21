@@ -197,7 +197,7 @@ let message = {
         },
         speaker: {
           content:
-            "Konuşmacı tanımlama için dosyalar 3 saat ile sınırlıdır. Lütfen '{text}' seçeneğinin işaretini kaldırın."
+            "Konuşmacı tanımlama için dosyalar 3 saat ile sınırlıdır. Lütfen '{text}' seçeneğini kaldırın."
         }
       }
     },
@@ -214,8 +214,8 @@ let message = {
         linkName: "Bağlantı"
       },
       file: {
-        orTitle: "Çevrimiçi Medyayı Yazıya Dök",
-        dialogTitle: "Dosyayı Yazıya Dök",
+        orTitle: "URL'den transkript et",
+        dialogTitle: "Transkribe Edilecek Dosyaları Yükle",
         tip1: "Dosyaları buraya sürükleyin veya göz atmak için tıklayın",
         tip2: "Göz atmak için tıklayın",
         or: "veya",
@@ -235,7 +235,7 @@ let message = {
       confirm: "Yazıya Dök",
       return: "Geri Dön",
       addMore: "Daha Fazla Ekle",
-      language: "Medya dili",
+      language: "Dil Seçin",
       failed: "Başarısız",
       tooLarge: "Dosya sınırı aşıyor (5 GB).",
       linkUpload: "Yükleniyor",
@@ -252,7 +252,7 @@ let message = {
       },
       maxFileNum: "Dosya sayısı {num} adedi geçemez.",
       speaker: "Konuşmacıları Tanımla",
-      speakerLabel: "Kimin konuştuğunu otomatik olarak algıla",
+      speakerLabel: "Konuşan kişiyi otomatik algıla",
       guest: {
         transcribe: "Uyarlamak",
         file: "Dosya",
@@ -1094,7 +1094,7 @@ let message = {
       try_now: "Hemen Dene",
       no_signup: "Kayıt Gerekmez",
       experience_unltd: "Gerçekten sınırsız transkripsiyonu deneyimleyin",
-      upload_50: "Aynı anda 50 dosyaya kadar buradan yükleyin",
+      upload_50: "Aynı anda 50 dosyaya kadar buradan yükleyin.",
       no_limits: "Gelişmiş",
       no_surprises: "AI Transkripsiyon",
       transparency: "Gizli Sınırlar Yok, Sürprizler Yok - Diğerleri dakikalarınızı sessizce azaltırken veya küçük yazılarda sınırlar saklarken, biz radikal şeffaflığa inanıyoruz",
@@ -2302,8 +2302,7 @@ let message = {
             points: {
               searchAll: "1 saatlik röportajlar için 5 dakikada teslim",
               wordTimestamps: "Acil hikayeler için öncelikli işleme",
-              jumpToMoments: "Gerçek zamanlı ilerleme takibi",
-              exportCitations: "Alıntılarla dışa aktar"
+              jumpToMoments: "Gerçek zamanlı ilerleme takibi"
             },
             searchDemo: {
               placeholder: "5dk",
@@ -2321,8 +2320,7 @@ let message = {
             points: {
               accuracyGuarantee: "%96 doğruluk garantisi",
               handlesAccents: "Teknik terminolojiyi işler",
-              smartPunctuation: "Mükemmel konuşmacı tanımlama",
-              speakerIdentification: "Konuşmacı tanımlama"
+              smartPunctuation: "Mükemmel konuşmacı tanımlama"
             },
             visual: {
               accuracy: "%96",
@@ -2548,7 +2546,7 @@ let message = {
           role: "Lifestyle Vlogger • 180K Abone"
         },
         jake: {
-          textBefore: `The `,
+          textBefore: "The ",
           textAfter: "özelliği oyunun kurallarını değiştirdi. Artık hiçbir şey indirmiyorum. Sadece yapıştır, dökümle, tamam. Podcast kliplerimi TikTok için işlemek hiç bu kadar kolay olmamıştı.",
           highlight: "doğrudan YouTube alımı",
           name: "Jake Wilson",
@@ -2572,23 +2570,23 @@ let message = {
               "titleHighlight": "Cevaplandı",
               subtitle: "Farklı platformlardaki videoları dökümlemek hakkında bilmeniz gereken her şey",
               "questions": [
-                {
-                  "question": "S: NeverCap ile bir YouTube videosunu nasıl dökümlerim?",
-                  "answer": "Çok basit. Dökümlemek istediğiniz YouTube videosunu bulun, URL'sini kopyalayın ve uygulamamıza yapıştırın. Yapay zekamız videoyu otomatik olarak alacak ve dakikalar içinde tam metin dökümü sağlayacaktır."
-                },
-                {
-                  "question": "S: Bir Facebook videosunu metne dökümlemenin en iyi yolu nedir?",
-                  "answer": "En kolay yöntem doğrudan bağlantı kullanmaktır. Facebook videosunun URL'sini kopyalayın, platformumuz gerisini halledecek ve konuşmayı %96 doğrulukla metne çevirerek manuel dökümden kurtaracaktır."
-                },
-                {
-                  "question": "S: TikTok ve Instagram videolarını dökümleyebilir miyim?",
-                  "answer": "Kesinlikle. Hem TikTok hem de Instagram videoları için dökümleme desteği sunuyoruz. Bu, kısa form video içeriklerini blog yazılarına, makalelere veya metin tabanlı sosyal medya güncellemelerine dönüştürmek isteyen içerik üreticileri için mükemmel."
-                },
-                {
-                  "question": "S: Bir Vimeo videosunu metne nasıl dökümlerim?",
-                  "answer": "Vimeo videolarını dökümlemek diğer platformlardaki kadar kolay. Basitçe Vimeo video URL'sini kopyalayın ve NeverCap'a yapıştırın. Yapay zekamız videoyu işleyecek ve çoklu formatlarda indirebileceğiniz doğru metin dökümü oluşturacaktır."
-                }
-              ]
+                    {
+                      "question": "S: NeverCap ile bir YouTube videosunu nasıl dökümlerim?",
+                      "answer": "Çok basit. Dökümlemek istediğiniz YouTube videosunu bulun, URL'sini kopyalayın ve uygulamamıza yapıştırın. Yapay zekamız videoyu otomatik olarak alacak ve dakikalar içinde tam metin dökümü sağlayacaktır."
+                    },
+                    {
+                      "question": "S: Bir Facebook videosunu metne dökümlemenin en iyi yolu nedir?",
+                      "answer": "En kolay yöntem doğrudan bağlantı kullanmaktır. Facebook videosunun URL'sini kopyalayın, platformumuz gerisini halledecek ve konuşmayı %96 doğrulukla metne çevirerek manuel dökümden kurtaracaktır."
+                    },
+                    {
+                      "question": "S: TikTok ve Instagram videolarını dökümleyebilir miyim?",
+                      "answer": "Kesinlikle. Hem TikTok hem de Instagram videoları için dökümleme desteği sunuyoruz. Bu, kısa form video içeriklerini blog yazılarına, makalelere veya metin tabanlı sosyal medya güncellemelerine dönüştürmek isteyen içerik üreticileri için mükemmel."
+                    },
+                    {
+                      "question": "S: Bir Vimeo videosunu metne nasıl dökümlerim?",
+                      "answer": "Vimeo videolarını dökümlemek diğer platformlardaki kadar kolay. Basitçe Vimeo video URL'sini kopyalayın ve NeverCap'a yapıştırın. Yapay zekamız videoyu işleyecek ve çoklu formatlarda indirebileceğiniz doğru metin dökümü oluşturacaktır."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2677,7 +2675,19 @@ let message = {
         problemTitle2: "Araştırma Dökümleme Sorunu",
         title: "The",
         useCasesTitle2: "Her Araştırma Yöntemi",
-        testimonialTitle2: "Önde Gelen Araştırmacılar"
+        testimonialTitle2: "Önde Gelen Araştırmacılar",
+        feature1TitleHl: "Tüm Çalışma",
+        feature1TitlePost: "Tek Seferde",
+        feature2TitleHl: "Odak Grupları",
+        feature2TitlePost: "Her Seferinde",
+        feature3TitleHl: "%96 Doğruluk",
+        feature4TitleHl: "Güvenlik",
+        testimonialText2Hl: "200 saat",
+        testimonialText3: "toplum sağlığı çalışmamızdan odak grup kayıtları. Diğer hizmetler maliyet nedeniyle hangi oturumları transkribe edeceğimizi seçmemizi istedi. NeverCap sayesinde",
+        testimonialText4Hl: "her şeyi bir hafta sonunda işledik",
+        testimonialText5: "20 konuşmacı tanımlama özelliği gerçekten işe yaradı - herkesin aynı anda konuştuğu en karmaşık tartışmalarımızda bile. Bu araç",
+        testimonialText6Hl: "tamamen değiştirdi",
+        testimonialText7: "nitel verileri nasıl ele aldığımızı."
     },
     BusinessTeams: {
       heroBadge: "İş Ekipleri İçin",
@@ -3046,7 +3056,7 @@ let message = {
             },
             {
               "label": "Bize Ulaşın",
-              "value": ["e-posta", "7/24 destek mevcut"]
+              "value": ["E-posta", "7/24 destek mevcut"]
             }
           ]
     },
@@ -3108,42 +3118,42 @@ let message = {
   },
   TermsOfUse: {
     title: "Kullanım Koşulları",
-    titleGradient: "1. Hizmet",
-    subtitle: "2. Hizmetlerimizi kullanmadan önce lütfen bu şartları dikkatlice okuyun",
-    "lastUpdated": "3. Son güncelleme: {date}",
-    "lastUpdatedDate": "4. 21 Temmuz 2025",
-    "termsOfServiceTitle": "5. Hizmet Şartları",
-    "thankYou": "6. Ürünlerimizi kullandığınız için teşekkür ederiz!",
-    "companyDefinition": `7. Bu belgede \"Şirket\", \"biz\", \"bizim\" veya \"bize\" dediğimizde, NeverCap'i kastediyoruz.`,
-    "servicesDefinition": '8. \"Hizmetler\" dediğimizde, NeverCap tarafından oluşturulan ve sürdürülen, bir web tarayıcısı, masaüstü uygulaması, mobil uygulama veya başka bir formatta sunulan herhangi bir ürünü kastediyoruz.',
-    "termsUpdate": "9. Bu Hizmet Şartlarını gelecekte güncelleyebiliriz. Genellikle bu değişiklikler, ilgili genişletilmiş bir politikaya bağlantı vererek bazı şartları netleştirmek içindir. Politikalarımızda önemli bir değişiklik yaptığımızda, bu sayfanın üstündeki tarihi yenileyeceğiz ve hesap sahiplerini bilgilendirmek için uygun adımları atacağız.",
-    "acceptanceTitle": "10. 1. Sözleşmeyi Kabul",
-    "acceptanceDescription1": "11. Hizmetlerimizi kullanarak, bu Sözleşmeyi kabul ettiğinizi ve böylece sizinle NeverCap arasında bağlayıcı bir sözleşme oluştuğunu belirtmiş olursunuz. Bu Şartları kabul etme hukuki yeteneğinizin olduğunu beyan eder ve bağlayıcı bir sözleşme oluşturmak için yasal yaşta olduğunuzu teyit edersiniz. NeverCap'in kabulü, bu Sözleşmenin tüm şart ve koşullarını kabul etmenize açıkça bağlıdır.",
-    "eligibilityRequirement": "12. Hizmetler, 18 yaşın altındaki kişiler için tasarlanmamıştır ve kullanılmamalıdır. Hizmetleri kullanarak, yukarıdaki uygunluk şartını karşıladığınızı beyan ve taahhüt edersiniz.",
-    "userResponsibility": '13. \"Siz\", \"sizin\", \"kendiniz\" terimleri, çalışanlarınızı, temsilcilerinizi, iş ilişkilerinizi ve Hesabınız (aşağıda tanımlandığı gibi) üzerinden Hizmetlere erişim sağladığınız diğer kişileri de kapsar. Hesabınız üzerinden Hizmetlere erişen tüm kişilerin bu Şartları bildiğinden ve bunlara uyduğundan emin olmak sizin sorumluluğunuzdadır.',
-    "termsRevision": "14. NeverCap, bu Şartları kendi takdirine bağlı olarak zaman zaman gözden geçirme ve güncelleme hakkını saklı tutar. Tüm değişiklikler yayınlandığında derhal yürürlüğe girer. Değiştirilmiş Şartların yayınlanmasının ardından Hizmetleri kullanmaya devam etmeniz, değişiklikleri kabul ettiğiniz ve bunlarla bağlı olduğunuz anlamına gelir. Değişikliklerden haberdar olmak için bu sayfayı zaman zaman kontrol etmeniz beklenir, çünkü bunlar sizi bağlar.",
-    "servicesTitle": "15. 2. NeverCap'in Hizmetleri",
-    "servicesDescription1": "16. Hizmetlerimiz, kullanıcıların sesli konuşmaları aranabilir, çevrilebilir ve başkalarıyla paylaşılabilir metinlere dönüştürmesini sağlar.",
-    "servicesOptions": '17. Hizmetlerin ücretsiz sürümünü (\"Ücretsiz Hizmetler\") veya ücret ödemeniz gerekebilen abonelik tabanlı ücretli sürümünü (\"Ücretli Hizmetler\") kullanmayı seçebilirsiniz.',
-    "servicesAccess": "18. Hizmetleri size sunacağız. Hizmetlere erişebilmeniz için gerekli tüm düzenlemeleri yapmak sizin sorumluluğunuzdadır.",
-    "accountTermsTitle": "19. 3. Hesap Şartları",
-    "accountSecurity": "20. Hesabınızın güvenliğini sağlamak sizin sorumluluğunuzdadır. Şirket, bu güvenlik yükümlülüğünü yerine getirmemenizden kaynaklanan herhangi bir kayıp veya hasardan sorumlu tutulamaz ve tutulmayacaktır.",
-    "lawfulUse": "21. Hizmetleri yasa dışı, etik dışı veya ahlak dışı herhangi bir amaç için kullanamazsınız.",
-    "contentResponsibility": "22. Hesabınız altında gönderilen tüm içeriklerden ve gerçekleşen faaliyetlerden siz sorumlusunuz. Bu, şu kişiler tarafından gönderilen içerikleri de kapsar: (a) giriş bilgilerinize erişimi olanlar; veya (b) hesabınız altında kendi giriş bilgileri olanlar.",
-    "humanRequirement": '23. Bir insan olmalısınız. \"Botlar\" veya diğer otomatik yöntemlerle kayıt olan hesaplara izin verilmez.',
-    "paymentTitle": "24. 4. Ödeme, İadeler ve Plan Değişiklikleri",
-    "freeTrial": "25. Ücretsiz deneme sunan ücretli Hizmetler için, kayıt olduğunuzda deneme süresinin uzunluğunu açıklarız. Deneme süresinden sonra, Hizmeti kullanmaya devam etmek için önceden ödeme yapmanız gerekir. Ödeme yapmazsanız, bu hizmetler sona erer.",
-    "upgradePolicy": "26. Ücretsiz bir plandan ücretli bir plana geçiş yapıyorsanız, kartınızı hemen tahsil ederiz ve fatura döngünüz yükseltme gününde başlar.",
-    "taxes": "27. Tüm ücretler, vergi otoriteleri tarafından uygulanan vergiler, harçlar veya resimler hariçtir. Gerektiğinde, bu vergileri vergi otoritesi adına tahsil edip vergi otoritelerine ödeyeceğiz. Aksi takdirde, tüm vergiler, harçlar veya resimlerin ödemesinden siz sorumlusunuz.",
-    "refunds": "28. Tüm satın alımlar iade edilemez. Hesabınıza giriş yaparak ücretli hizmetleri istediğiniz zaman iptal edebilirsiniz. Ücretli abonelikler için, aksi belirtilmedikçe iptaliniz mevcut ücretli dönemin sonunda geçerli olacaktır.",
-    "cancellationTitle": "29. 5. İptal ve Fesih",
-    "cancellationPolicy": "30. Ödenmiş sürenin bitiminden önce Hizmeti iptal ederseniz, iptaliniz derhal geçerli olacak ve tekrar ücretlendirilmeyeceksiniz. Son fatura döngüsündeki kullanılmayan süreyi otomatik olarak orantılı olarak iade etmeyiz.",
-    "terminationRights": "31. Herhangi bir nedenle ve herhangi bir zamanda hesabınızı askıya alma veya sonlandırma ve Hizmetlerimizin şu anki veya gelecekteki kullanımını reddetme hakkımız vardır. Askıya alma, hesaba veya hesaptaki herhangi bir içeriğe erişemeyeceğiniz anlamına gelir. Sonlandırma, ayrıca hesabınızın veya hesabınıza erişiminizin silinmesine ve hesabınızdaki tüm içeriğin kaybına ve feragat edilmesine yol açar. Ayrıca, herhangi bir nedenle ve herhangi bir zamanda herhangi bir kişinin Hizmetleri kullanmasını reddetme hakkını saklı tutarız. Bu maddeyi istatistiksel olarak, Hizmetlerimizdeki yüz binlerce hesaptan en az birinin kötü niyetli bir şey yapması nedeniyle ekliyoruz.",
-    "abusePolicy": "32. Şirket çalışanına veya yetkilisine sözlü, fiziksel, yazılı veya başka türlü kötü muamele (kö",
+    titleGradient: "Hizmet",
+    subtitle: "Hizmetlerimizi kullanmadan önce lütfen bu şartları dikkatlice okuyun",
+    "lastUpdated": "Son güncelleme: {date}",
+    "lastUpdatedDate": "21 Temmuz 2025",
+    "termsOfServiceTitle": "Hizmet Şartları",
+    "thankYou": "Ürünlerimizi kullandığınız için teşekkür ederiz!",
+    "companyDefinition": `Bu belgede \"Şirket\", \"biz\", \"bizim\" veya \"bize\" dediğimizde, NeverCap'i kastediyoruz.`,
+    "servicesDefinition": '\"Hizmetler\" dediğimizde, NeverCap tarafından oluşturulan ve sürdürülen, bir web tarayıcısı, masaüstü uygulaması, mobil uygulama veya başka bir formatta sunulan herhangi bir ürünü kastediyoruz.',
+    "termsUpdate": "Bu Hizmet Şartlarını gelecekte güncelleyebiliriz. Genellikle bu değişiklikler, ilgili genişletilmiş bir politikaya bağlantı vererek bazı şartları netleştirmek içindir. Politikalarımızda önemli bir değişiklik yaptığımızda, bu sayfanın üstündeki tarihi yenileyeceğiz ve hesap sahiplerini bilgilendirmek için uygun adımları atacağız.",
+    "acceptanceTitle": "1. Sözleşmeyi Kabul",
+    "acceptanceDescription1": "Hizmetlerimizi kullanarak, bu Sözleşmeyi kabul ettiğinizi ve böylece sizinle NeverCap arasında bağlayıcı bir sözleşme oluştuğunu belirtmiş olursunuz. Bu Şartları kabul etme hukuki yeteneğinizin olduğunu beyan eder ve bağlayıcı bir sözleşme oluşturmak için yasal yaşta olduğunuzu teyit edersiniz. NeverCap'in kabulü, bu Sözleşmenin tüm şart ve koşullarını kabul etmenize açıkça bağlıdır.",
+    "eligibilityRequirement": "Hizmetler, 18 yaşın altındaki kişiler için tasarlanmamıştır ve kullanılmamalıdır. Hizmetleri kullanarak, yukarıdaki uygunluk şartını karşıladığınızı beyan ve taahhüt edersiniz.",
+    "userResponsibility": '\"Siz\", \"sizin\", \"kendiniz\" terimleri, çalışanlarınızı, temsilcilerinizi, iş ilişkilerinizi ve Hesabınız (aşağıda tanımlandığı gibi) üzerinden Hizmetlere erişim sağladığınız diğer kişileri de kapsar. Hesabınız üzerinden Hizmetlere erişen tüm kişilerin bu Şartları bildiğinden ve bunlara uyduğundan emin olmak sizin sorumluluğunuzdadır.',
+    "termsRevision": "NeverCap, bu Şartları kendi takdirine bağlı olarak zaman zaman gözden geçirme ve güncelleme hakkını saklı tutar. Tüm değişiklikler yayınlandığında derhal yürürlüğe girer. Değiştirilmiş Şartların yayınlanmasının ardından Hizmetleri kullanmaya devam etmeniz, değişiklikleri kabul ettiğiniz ve bunlarla bağlı olduğunuz anlamına gelir. Değişikliklerden haberdar olmak için bu sayfayı zaman zaman kontrol etmeniz beklenir, çünkü bunlar sizi bağlar.",
+    "servicesTitle": "2. NeverCap'in Hizmetleri",
+    "servicesDescription1": "Hizmetlerimiz, kullanıcıların sesli konuşmaları aranabilir, çevrilebilir ve başkalarıyla paylaşılabilir metinlere dönüştürmesini sağlar.",
+    "servicesOptions": 'Hizmetlerin ücretsiz sürümünü (\"Ücretsiz Hizmetler\") veya ücret ödemeniz gerekebilen abonelik tabanlı ücretli sürümünü (\"Ücretli Hizmetler\") kullanmayı seçebilirsiniz.',
+    "servicesAccess": "Hizmetleri size sunacağız. Hizmetlere erişebilmeniz için gerekli tüm düzenlemeleri yapmak sizin sorumluluğunuzdadır.",
+    "accountTermsTitle": "3. Hesap Şartları",
+    "accountSecurity": "Hesabınızın güvenliğini sağlamak sizin sorumluluğunuzdadır. Şirket, bu güvenlik yükümlülüğünü yerine getirmemenizden kaynaklanan herhangi bir kayıp veya hasardan sorumlu tutulamaz ve tutulmayacaktır.",
+    "lawfulUse": "Hizmetleri yasa dışı, etik dışı veya ahlak dışı herhangi bir amaç için kullanamazsınız.",
+    "contentResponsibility": "Hesabınız altında gönderilen tüm içeriklerden ve gerçekleşen faaliyetlerden siz sorumlusunuz. Bu, şu kişiler tarafından gönderilen içerikleri de kapsar: (a) giriş bilgilerinize erişimi olanlar; veya (b) hesabınız altında kendi giriş bilgileri olanlar.",
+    "humanRequirement": 'Bir insan olmalısınız. \"Botlar\" veya diğer otomatik yöntemlerle kayıt olan hesaplara izin verilmez.',
+    "paymentTitle": "4. Ödeme, İadeler ve Plan Değişiklikleri",
+    "freeTrial": "Ücretsiz deneme sunan ücretli Hizmetler için, kayıt olduğunuzda deneme süresinin uzunluğunu açıklarız. Deneme süresinden sonra, Hizmeti kullanmaya devam etmek için önceden ödeme yapmanız gerekir. Ödeme yapmazsanız, bu hizmetler sona erer.",
+    "upgradePolicy": "Ücretsiz bir plandan ücretli bir plana geçiş yapıyorsanız, kartınızı hemen tahsil ederiz ve fatura döngünüz yükseltme gününde başlar.",
+    "taxes": "Tüm ücretler, vergi otoriteleri tarafından uygulanan vergiler, harçlar veya resimler hariçtir. Gerektiğinde, bu vergileri vergi otoritesi adına tahsil edip vergi otoritelerine ödeyeceğiz. Aksi takdirde, tüm vergiler, harçlar veya resimlerin ödemesinden siz sorumlusunuz.",
+    "refunds": "Tüm satın alımlar iade edilemez. Hesabınıza giriş yaparak ücretli hizmetleri istediğiniz zaman iptal edebilirsiniz. Ücretli abonelikler için, aksi belirtilmedikçe iptaliniz mevcut ücretli dönemin sonunda geçerli olacaktır.",
+    "cancellationTitle": "5. İptal ve Fesih",
+    "cancellationPolicy": "Ödenmiş sürenin bitiminden önce Hizmeti iptal ederseniz, iptaliniz derhal geçerli olacak ve tekrar ücretlendirilmeyeceksiniz. Son fatura döngüsündeki kullanılmayan süreyi otomatik olarak orantılı olarak iade etmeyiz.",
+    "terminationRights": "Herhangi bir nedenle ve herhangi bir zamanda hesabınızı askıya alma veya sonlandırma ve Hizmetlerimizin şu anki veya gelecekteki kullanımını reddetme hakkımız vardır. Askıya alma, hesaba veya hesaptaki herhangi bir içeriğe erişemeyeceğiniz anlamına gelir. Sonlandırma, ayrıca hesabınızın veya hesabınıza erişiminizin silinmesine ve hesabınızdaki tüm içeriğin kaybına ve feragat edilmesine yol açar. Ayrıca, herhangi bir nedenle ve herhangi bir zamanda herhangi bir kişinin Hizmetleri kullanmasını reddetme hakkını saklı tutarız. Bu maddeyi istatistiksel olarak, Hizmetlerimizdeki yüz binlerce hesaptan en az birinin kötü niyetli bir şey yapması nedeniyle ekliyoruz.",
+    "abusePolicy": "Şirket çalışanına veya yetkilisine sözlü, fiziksel, yazılı veya başka türlü kötü muamele (kö",
     "submissionsTitle": "6. Gönderimler",
-    "submissionsDescription": "Site ile ilgili herhangi bir soru, yorum, öneri, fikir, geri bildirim veya diğer bilgilerin (\"Gönderimler\") tarafınızca bize sağlanmasının gizli olmadığını ve bunların münhasır mülkiyetimiz haline geleceğini kabul ve beyan edersiniz. Tüm fikri mülkiyet hakları dahil olmak üzere münhasır haklara sahip olacağız ve bu Gönderimleri herhangi bir yasal amaç için, ticari veya başka türlü, size herhangi bir bildirim veya tazminat ödemeksizin sınırsız kullanma ve yayma hakkına sahip olacağız. Bu Gönderimlerle ilgili tüm manevi haklarınızdan feragat edersiniz ve bu Gönderimlerin size özgü olduğunu veya bu tür Gönderimleri yapma hakkınızın bulunduğunu garanti edersiniz. Gönderimlerinizdeki herhangi bir mülkiyet hakkının iddia edilen veya fiili ihlali veya kötüye kullanımı nedeniyle bize karşı herhangi bir başvuru yapılmayacağını kabul edersiniz.",
+    "submissionsDescription": 'Site ile ilgili herhangi bir soru, yorum, öneri, fikir, geri bildirim veya diğer bilgilerin (\"Gönderimler\") tarafınızca bize sağlanmasının gizli olmadığını ve bunların münhasır mülkiyetimiz haline geleceğini kabul ve beyan edersiniz. Tüm fikri mülkiyet hakları dahil olmak üzere münhasır haklara sahip olacağız ve bu Gönderimleri herhangi bir yasal amaç için, ticari veya başka türlü, size herhangi bir bildirim veya tazminat ödemeksizin sınırsız kullanma ve yayma hakkına sahip olacağız. Bu Gönderimlerle ilgili tüm manevi haklarınızdan feragat edersiniz ve bu Gönderimlerin size özgü olduğunu veya bu tür Gönderimleri yapma hakkınızın bulunduğunu garanti edersiniz. Gönderimlerinizdeki herhangi bir mülkiyet hakkının iddia edilen veya fiili ihlali veya kötüye kullanımı nedeniyle bize karşı herhangi bir başvuru yapılmayacağını kabul edersiniz.',
     "uptimeTitle": "7. Çalışma Süresi ve Güvenlik",
-    "serviceAvailability": "Hizmetleri kullanmanız tamamen kendi riskinizde olmaktadır. Bu Hizmetleri \"olduğu gibi\" ve \"mevcut olduğu şekilde\" sunuyoruz. Hizmetlerimizin çoğu için hizmet düzeyi anlaşmaları sunmuyoruz, ancak uygulamalarımızın çalışma süresini ciddiye alıyoruz.",
+    "serviceAvailability": 'Hizmetleri kullanmanız tamamen kendi riskinizde olmaktadır. Bu Hizmetleri \"olduğu gibi\" ve \"mevcut olduğu şekilde\" sunuyoruz. Hizmetlerimizin çoğu için hizmet düzeyi anlaşmaları sunmuyoruz, ancak uygulamalarımızın çalışma süresini ciddiye alıyoruz.',
     "throttlingPolicy": "Bir kullanıcının faaliyetinin diğer kullanıcılar için Hizmetin kararlılığını ve performansını olumsuz etkilediğinin doğrulandığı nadir durumlarda hesap erişimini geçici olarak kısıtlama veya sınırlama hakkını saklı tutarız. En kritik durumlar dışında, önlem almadan önce çözüm bulmak için sizinle iletişime geçeceğiz.",
     "dataSecurity": "Verilerinizi yedekler, yedeklilikler ve şifreleme yoluyla korumak ve güvence altına almak için birçok önlem alırız. Genel İnternet üzerinden veri aktarımı için şifrelemeyi zorunlu kılarız.",
     "thirdPartyVendors": "Hizmetleri çalıştırmak için gerekli donanım, yazılım, ağ, depolama ve ilgili teknolojiyi sağlamak amacıyla üçüncü taraf satıcılar ve barındırma ortakları kullanırız.",

@@ -196,7 +196,7 @@ let message = {
         },
         speaker: {
           content:
-            "For taleridentifikasjon er filer begrenset til 3 timer. Fjern avhukingen for '{text}'."
+            "For talergjenkjenning er filer begrenset til 3 timer. Fjern krysset i '{text}'."
         }
       }
     },
@@ -205,7 +205,7 @@ let message = {
         dialogTitle: "Transkriber et nettmedium",
         title: "Lim inn lenker",
         label:
-          "Lim inn din video- eller lydlenke fra: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram og flere plattformer...",
+          "Lim inn videolenken eller lydlenken din fra: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram og flere plattformer...",
         confirm: "Legg til",
         cancel: "Avbryt",
         // 请输入正确的链接
@@ -214,10 +214,10 @@ let message = {
         linkName: "Lenke"
       },
       file: {
-        orTitle: "Transkriber et nettmedium",
-        dialogTitle: "Transkriber filer",
-        tip1: "Dra filer hit eller klikk for å bla",
-        tip2: "Klikk for å bla",
+        orTitle: "Transkriber fra URL",
+        dialogTitle: "Last opp filer for transkribering",
+        tip1: "Dra filer hit eller klikk for å bla gjennom",
+        tip2: "Klikk for å bla gjennom",
         or: "eller",
         supported: "Støttede formater"
       },
@@ -235,7 +235,7 @@ let message = {
       confirm: "Transkriber",
       return: "Tilbake",
       addMore: "Legg til mer",
-      language: "Mediaspråk",
+      language: "Velg språk",
       failed: "Mislykket",
       tooLarge: "Filen overskrider grensen (5 GB).",
       linkUpload: "Laster opp",
@@ -251,7 +251,7 @@ let message = {
         noData: "Ingen data"
       },
       maxFileNum: "Antall filer kan ikke overstige {num}.",
-      speaker: "Identifiser talere",
+      speaker: "Gjenkjenn talere",
       speakerLabel:
         "Oppdager automatisk hvem som snakker",
       guest: {
@@ -1098,7 +1098,7 @@ let message = {
       try_now: "Prøv Nå",
       no_signup: "Ingen Registrering Kreves",
       experience_unltd: "Opplev virkelig ubegrenset transkripsjon",
-      upload_50: "Last opp inntil 50 filer samtidig, her",
+      upload_50: "Last opp inntil 50 filer samtidig, her.",
       no_limits: "Avansert",
       no_surprises: "AI-transkripsjon",
       transparency: "Ikke mer Skjulte Grenser, Ikke mer Overraskelser – Mens andre stille reduserer minuttene dine eller gjemmer tak i småskriften, tror vi på radikal åpenhet",
@@ -2306,8 +2306,7 @@ let message = {
             points: {
               searchAll: "5-minutters levering for 1-times intervjuer",
               wordTimestamps: "Prioriter behandling for hastende saker",
-              jumpToMoments: "Sporing av fremdrift i sanntid",
-              exportCitations: "Eksporter med sitater"
+              jumpToMoments: "Sporing av fremdrift i sanntid"
             },
             searchDemo: {
               placeholder: "5min",
@@ -2325,8 +2324,7 @@ let message = {
             points: {
               accuracyGuarantee: "96% nøyaktighetsgaranti",
               handlesAccents: "Håndterer teknisk terminologi",
-              smartPunctuation: "Perfekt taleridentifikasjon",
-              speakerIdentification: "Høyttaleridentifikasjon"
+              smartPunctuation: "Perfekt taleridentifikasjon"
             },
             visual: {
               accuracy: "96%",
@@ -2576,23 +2574,23 @@ let message = {
               "titleHighlight": "besvart",
               subtitle: "Alt du trenger å vite om å transkribere videoer fra forskjellige plattformer",
               "questions": [
-                {
-                  "question": "Q: Hvordan transkriberer jeg en YouTube-video med NeverCap?",
-                  "answer": "Det er enkelt. Finn YouTube-videoen du vil transkribere, kopier URL-en, og lim den inn i appen vår. AI-en vår henter automatisk videoen og gir en full teksttranskripsjon på minutter."
-                },
-                {
-                  "question": "Q: Hva er den beste måten å transkribere en Facebook-video til tekst?",
-                  "answer": "Den enkleste måten er å bruke en direkte lenke. Kopier URL-en til Facebook-videoen, og plattformen vår håndterer resten, konverterer talen til tekst med opptil 96 % nøyaktighet, og sparer deg for manuell transkribering."
-                },
-                {
-                  "question": "Q: Kan jeg transkribere TikTok- og Instagram-videoer?",
-                  "answer": "Absolutt. Vi støtter transkribering for både TikTok- og Instagram-videoer. Dette er perfekt for innholdsskapere som vil gjenbruke korte videoer til blogginnlegg, artikler eller tekstbaserte sosiale medieoppdateringer."
-                },
-                {
-                  "question": "Q: Hvordan transkriberer jeg en Vimeo-video til tekst?",
-                  "answer": "Å transkribere Vimeo-videoer er like enkelt som på andre plattformer. Bare kopier Vimeo-videoens URL og lim den inn i NeverCap. AI-en vår prosesserer videoen og genererer en nøyaktig teksttranskripsjon som du kan laste ned i flere formater."
-                }
-              ]
+                    {
+                      "question": "Q: Hvordan transkriberer jeg en YouTube-video med NeverCap?",
+                      "answer": "Det er enkelt. Finn YouTube-videoen du vil transkribere, kopier URL-en, og lim den inn i appen vår. AI-en vår henter automatisk videoen og gir en full teksttranskripsjon på minutter."
+                    },
+                    {
+                      "question": "Q: Hva er den beste måten å transkribere en Facebook-video til tekst?",
+                      "answer": "Den enkleste måten er å bruke en direkte lenke. Kopier URL-en til Facebook-videoen, og plattformen vår håndterer resten, konverterer talen til tekst med opptil 96 % nøyaktighet, og sparer deg for manuell transkribering."
+                    },
+                    {
+                      "question": "Q: Kan jeg transkribere TikTok- og Instagram-videoer?",
+                      "answer": "Absolutt. Vi støtter transkribering for både TikTok- og Instagram-videoer. Dette er perfekt for innholdsskapere som vil gjenbruke korte videoer til blogginnlegg, artikler eller tekstbaserte sosiale medieoppdateringer."
+                    },
+                    {
+                      "question": "Q: Hvordan transkriberer jeg en Vimeo-video til tekst?",
+                      "answer": "Å transkribere Vimeo-videoer er like enkelt som på andre plattformer. Bare kopier Vimeo-videoens URL og lim den inn i NeverCap. AI-en vår prosesserer videoen og genererer en nøyaktig teksttranskripsjon som du kan laste ned i flere formater."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2681,7 +2679,19 @@ let message = {
         problemTitle2: "Forsknings-transkriberingsproblemet",
         title: "The",
         useCasesTitle2: "Enhver Forskningsmetode",
-        testimonialTitle2: "Ledende forskere"
+        testimonialTitle2: "Ledende forskere",
+        feature1TitleHl: "Hele studien",
+        feature1TitlePost: "i ett strøk",
+        feature2TitleHl: "Fokusgrupper",
+        feature2TitlePost: "hver gang",
+        feature3TitleHl: "96 % nøyaktighet",
+        feature4TitleHl: "sikkerhet",
+        testimonialText2Hl: "200 timer",
+        testimonialText3: "av fokusgruppeopptak fra vårt helseundersøkelse. Andre tjenester ville at vi skulle velge hvilke økter som skulle transkriberes på grunn av kostnaden. NeverCap lot oss prosessere",
+        testimonialText4Hl: "alt i løpet av en helg",
+        testimonialText5: ". Gjenkjennelsen av 20 talere fungerte faktisk – selv under våre rotete diskusjoner der alle snakket samtidig. Dette verktøyet har",
+        testimonialText6Hl: "fullstendig endret",
+        testimonialText7: "hvordan vi håndterer kvalitative data."
     },
     BusinessTeams: {
       heroBadge: "For bedriftslag",
@@ -3050,7 +3060,7 @@ let message = {
             },
             {
               "label": "Kontakt oss",
-              "value": ["e-post", "Støtte tilgjengelig 24/7"]
+              "value": ["E-post", "Støtte tilgjengelig 24/7"]
             }
           ]
     },

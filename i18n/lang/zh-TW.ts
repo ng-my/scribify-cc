@@ -185,7 +185,7 @@ let message = {
           confirm: "知道了"
         },
         speaker: {
-          content: "說話者辨識功能限制檔案長度為 3 小時。請取消勾選「{text}」。"
+          content: "為了進行講者辨識，檔案長度限制為 3 小時。請取消勾選'{text}'。"
         }
       }
     },
@@ -194,19 +194,19 @@ let message = {
         dialogTitle: "轉錄線上媒體",
         title: "貼上連結",
         label:
-          "貼上您的影片或音訊連結，來源包括：YouTube、Facebook、X、Dropbox、Google Drive、Vimeo、TikTok、Instagram 等平台...",
+          "貼上您的影片或音訊連結（支援 YouTube、Facebook、X、Dropbox、Google Drive、Vimeo、TikTok、Instagram 等平台...）",
         confirm: "新增",
         cancel: "取消",
         errorTitle: "您輸入的連結地址不正確。請檢查後重試。",
         linkName: "連結"
       },
       file: {
-        orTitle: "轉錄線上媒體",
-        dialogTitle: "轉錄檔案",
-        tip1: "拖曳檔案至此或點擊瀏覽",
+        orTitle: "從 URL 轉錄",
+        dialogTitle: "上傳檔案進行轉錄",
+        tip1: "將文件拖曳到此處或按一下以瀏覽",
         tip2: "點擊瀏覽",
         or: "或",
-        supported: "支援格式"
+        supported: "支援的格式"
       },
       del: {
         title: "警告",
@@ -221,7 +221,7 @@ let message = {
       confirm: "轉錄",
       return: "返回",
       addMore: "添加更多",
-      language: "媒體語言",
+      language: "選擇語言",
       failed: "失敗",
       tooLarge: "檔案超出限制（5GB）。",
       linkUpload: "上傳中",
@@ -237,8 +237,8 @@ let message = {
         noData: "無數據"
       },
       maxFileNum: "檔案數量不能超過 {num}。",
-      speaker: "辨識說話者",
-      speakerLabel: "自動偵測誰在說話",
+      speaker: "辨識講者",
+      speakerLabel: "自動辨識說話者",
       guest: {
         transcribe: "轉錄",
         file: "文件",
@@ -1054,7 +1054,7 @@ let message = {
       try_now: "立即試用",
       no_signup: "無需註冊",
       experience_unltd: "體驗真正無限的轉錄",
-      upload_50: "立即在此一次上傳多達50個檔案",
+      upload_50: "立即在此一次上傳多達50個檔案。",
       no_limits: "進階",
       no_surprises: "AI轉錄",
       transparency: "不再有隱藏限制，不再有意外 - 當其他服務悄悄減少您的分鐘數或將限制藏在細則中時，我們相信徹底透明",
@@ -2262,8 +2262,7 @@ let message = {
             points: {
               searchAll: "1小時訪談5分鐘完成",
               wordTimestamps: "緊急報導優先處理",
-              jumpToMoments: "即時進度追蹤",
-              exportCitations: "導出引文"
+              jumpToMoments: "即時進度追蹤"
             },
             searchDemo: {
               placeholder: "5分鐘",
@@ -2281,8 +2280,7 @@ let message = {
             points: {
               accuracyGuarantee: "96%準確度保證",
               handlesAccents: "處理專業術語",
-              smartPunctuation: "完美的說話者辨識",
-              speakerIdentification: "說話者識別"
+              smartPunctuation: "完美的說話者辨識"
             },
             visual: {
               accuracy: "96%",
@@ -2532,23 +2530,23 @@ let message = {
               "titleHighlight": "解答",
               subtitle: "關於從不同平台轉錄影片您需要知道的一切",
               "questions": [
-                {
-                  "question": "問：如何使用NeverCap轉錄YouTube影片？",
-                  "answer": "很簡單。只需找到您想轉錄的YouTube影片，複製其URL，並貼到我們的應用程式中。我們的AI將自動獲取影片並在幾分鐘內提供完整文字轉錄。"
-                },
-                {
-                  "question": "問：將Facebook影片轉錄為文字的最佳方法是什麼？",
-                  "answer": "最簡單的方法是使用直接連結。複製Facebook影片的URL，我們的平台將處理其餘部分，以高達96%的準確率將語音轉換為文字，省去手動轉錄的麻煩。"
-                },
-                {
-                  "question": "問：我可以轉錄TikTok和Instagram影片嗎？",
-                  "answer": "當然可以。我們支援TikTok和Instagram影片的轉錄。這對於想將短影片內容改編成部落格文章、文章或文字社交媒體更新的內容創作者來說非常完美。"
-                },
-                {
-                  "question": "問：如何將Vimeo影片轉錄為文字？",
-                  "answer": "轉錄Vimeo影片和其他平台一樣簡單。只需複製Vimeo影片URL並貼到NeverCap中。我們的AI將處理影片並生成準確的文字轉錄，您可以下載多種格式。"
-                }
-              ]
+                    {
+                      "question": "問：如何使用NeverCap轉錄YouTube影片？",
+                      "answer": "很簡單。只需找到您想轉錄的YouTube影片，複製其URL，並貼到我們的應用程式中。我們的AI將自動獲取影片並在幾分鐘內提供完整文字轉錄。"
+                    },
+                    {
+                      "question": "問：將Facebook影片轉錄為文字的最佳方法是什麼？",
+                      "answer": "最簡單的方法是使用直接連結。複製Facebook影片的URL，我們的平台將處理其餘部分，以高達96%的準確率將語音轉換為文字，省去手動轉錄的麻煩。"
+                    },
+                    {
+                      "question": "問：我可以轉錄TikTok和Instagram影片嗎？",
+                      "answer": "當然可以。我們支援TikTok和Instagram影片的轉錄。這對於想將短影片內容改編成部落格文章、文章或文字社交媒體更新的內容創作者來說非常完美。"
+                    },
+                    {
+                      "question": "問：如何將Vimeo影片轉錄為文字？",
+                      "answer": "轉錄Vimeo影片和其他平台一樣簡單。只需複製Vimeo影片URL並貼到NeverCap中。我們的AI將處理影片並生成準確的文字轉錄，您可以下載多種格式。"
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2637,7 +2635,19 @@ let message = {
         problemTitle2: "研究轉錄問題",
         title: "The",
         useCasesTitle2: "每種研究方法",
-        testimonialTitle2: "領先研究人員的信賴"
+        testimonialTitle2: "領先研究人員的信賴",
+        feature1TitleHl: "完整研究",
+        feature1TitlePost: "一次完成",
+        feature2TitleHl: "焦點團體",
+        feature2TitlePost: "每次皆然",
+        feature3TitleHl: "96%準確率",
+        feature4TitleHl: "安全性",
+        testimonialText2Hl: "200小時",
+        testimonialText3: "來自我們社區健康研究的焦點團體錄音。其他服務因為成本要求我們挑選要轉錄的時段。NeverCap讓我們在",
+        testimonialText4Hl: "一個週末處理全部內容",
+        testimonialText5: "。20人聲辨識功能確實有效——即使在最混亂、所有人同時發言的討論中也奏效。這個工具",
+        testimonialText6Hl: "徹底改變了",
+        testimonialText7: "我們處理質性資料的方式。"
     },
     BusinessTeams: {
       heroBadge: "適用於商業團隊",
@@ -3067,8 +3077,8 @@ let message = {
     "neverCap": "NeverCap"
   },
   TermsOfUse: {
-    title: "服務條款",
-    titleGradient: "服務",
+    title: "服務",
+    titleGradient: "條款",
     subtitle: "使用我們的服務前，請仔細閱讀這些條款",
     "lastUpdated": "最後更新：{date}",
     "lastUpdatedDate": "2025年7月21日",

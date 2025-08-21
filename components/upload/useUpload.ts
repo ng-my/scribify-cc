@@ -190,13 +190,6 @@ export const useUpload = () => {
   const initUpload = async (file: UploadFile) => {
     if (!validateFile(file)) return;
 
-    setTimeout(() => {
-      file.progress = Math.max(
-        Number(Math.floor(Math.random() * 5) + 1),
-        file.progress
-      );
-    }, 1000);
-
     file.status = "hashing";
 
     // 创建Web Worker处理大文件计算
@@ -220,14 +213,23 @@ export const useUpload = () => {
         file.status = "error";
         file.errorText = t("FileUploadAndRecording.upload.hashErr");
       } else {
+        if (!auth) {
+          setTimeout(() => {
+            const maxFileSize = 5 * 1024 * 1024 * 1024; // 5GB
+            const sizeRatio = Math.min(file.file.size / maxFileSize, 1);
+
+            // 动态值直接在1-8区间，小文件8，大文件1
+            const dynamicIncrement = 8 - (sizeRatio * 7);
+
+            file.progress = Math.max(
+              Number(parseInt(String(Math.random() * dynamicIncrement)) + 1), // 1到dynamicIncrement之间
+              file.progress
+            );
+          }, 1000);
+        }
+
         await initCosInstance(file);
 
-        setTimeout(() => {
-          file.progress = Math.max(
-            Number(Math.floor(Math.random() * 10) + 5),
-            file.progress
-          );
-        }, 1000);
 
         file.key = `${file.allowedPath!}${hash}/${file.name || "filename"}`;
 

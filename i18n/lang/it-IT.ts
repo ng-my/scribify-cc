@@ -195,7 +195,7 @@ let message = {
         },
         speaker: {
           content:
-            "Per l'identificazione del relatore, i file sono limitati a 3 ore. Deseleziona '{text}'."
+            "Per l'identificazione del parlante, i file sono limitati a 3 ore. Deseleziona '{text}'."
         }
       }
     },
@@ -204,7 +204,7 @@ let message = {
         dialogTitle: "Trascrivi un media online",
         title: "Incolla link",
         label:
-          "Incolla il tuo link video o audio da: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram e altre piattaforme...",
+          "Incolla il link del tuo video o audio da: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram e altre piattaforme...",
         confirm: "Aggiungi",
         cancel: "Annulla",
         // Inserisci un link corretto
@@ -212,10 +212,10 @@ let message = {
         linkName: "Link"
       },
       file: {
-        orTitle: "Trascrivi un media online",
-        dialogTitle: "Trascrivi file",
-        tip1: "Trascina i file qui o fai clic per sfogliare",
-        tip2: "Fai clic per sfogliare",
+        orTitle: "Trascrivi dall'URL",
+        dialogTitle: "Carica i file da trascrivere",
+        tip1: "Trascina i file qui o fai clic per sfogliarli",
+        tip2: "Clicca per sfogliare",
         or: "o",
         supported: "Formati supportati"
       },
@@ -233,7 +233,7 @@ let message = {
       confirm: "Trascrivi",
       return: "Torna indietro",
       addMore: "Aggiungi altri",
-      language: "Lingua del media",
+      language: "Seleziona la lingua",
       failed: "Fallito",
       tooLarge: "Il file supera il limite (5 GB).",
       linkUpload: "Caricamento",
@@ -249,7 +249,7 @@ let message = {
         noData: "Nessun dato"
       },
       maxFileNum: "Il numero di file non può superare {num}.",
-      speaker: "Identifica relatori",
+      speaker: "Identifica Parlanti",
       speakerLabel:
         "Rileva automaticamente chi sta parlando",
       guest: {
@@ -1099,7 +1099,7 @@ let message = {
       try_now: "Provalo Ora",
       no_signup: "Nessuna Registrazione Richiesta",
       experience_unltd: "Sperimenta una trascrizione davvero illimitata",
-      upload_50: "Carica fino a 50 file alla volta, proprio qui",
+      upload_50: "Carica fino a 50 file alla volta, proprio qui.",
       no_limits: "Avanzato",
       no_surprises: "Trascrizione AI",
       transparency: "Basta Limiti Nascosti, Basta Sorprese - Mentre altri riducono silenziosamente i tuoi minuti o nascondono limiti nel testo piccolo, noi crediamo nella trasparenza radicale",
@@ -2307,8 +2307,7 @@ let message = {
             points: {
               searchAll: "5 minuti per interviste di 1 ora",
               wordTimestamps: "Elaborazione prioritaria per storie urgenti",
-              jumpToMoments: "Monitoraggio progresso in tempo reale",
-              exportCitations: "Esporta con citazioni"
+              jumpToMoments: "Monitoraggio progresso in tempo reale"
             },
             searchDemo: {
               placeholder: "5min",
@@ -2326,8 +2325,7 @@ let message = {
             points: {
               accuracyGuarantee: "Garanzia 96% di accuratezza",
               handlesAccents: "Gestione terminologia tecnica",
-              smartPunctuation: "Identificazione perfetta del parlante",
-              speakerIdentification: "Identificazione dell'oratore"
+              smartPunctuation: "Identificazione perfetta del parlante"
             },
             visual: {
               accuracy: "96%",
@@ -2577,23 +2575,23 @@ let message = {
               "titleHighlight": "Risposte",
               subtitle: "Tutto ciò che devi sapere sulla trascrizione di video da diverse piattaforme",
               "questions": [
-                {
-                  "question": "D: Come trascrivo un video YouTube con NeverCap?",
-                  "answer": "È semplice. Trova il video YouTube che vuoi trascrivere, copia il suo URL e incollalo nella nostra app. La nostra IA recupererà automaticamente il video e fornirà una trascrizione completa in pochi minuti."
-                },
-                {
-                  "question": "D: Qual è il modo migliore per trascrivere un video Facebook in testo?",
-                  "answer": "Il modo più semplice è usare un link diretto. Copia l'URL del video Facebook e la nostra piattaforma farà il resto, convertendo il parlato in testo con una precisione fino al 96%, risparmiandoti la trascrizione manuale."
-                },
-                {
-                  "question": "D: Posso trascrivere video TikTok e Instagram?",
-                  "answer": "Assolutamente. Supportiamo la trascrizione per video TikTok e Instagram. È perfetto per i creatori di contenuti che vogliono riutilizzare i loro video brevi in post per blog, articoli o aggiornamenti social basati su testo."
-                },
-                {
-                  "question": "D: Come trascrivo un video Vimeo in testo?",
-                  "answer": "Trascrivere video Vimeo è facile come su qualsiasi altra piattaforma. Basta copiare l'URL del video Vimeo e incollarlo in NeverCap. La nostra IA elaborerà il video e genererà una trascrizione accurata che puoi scaricare in più formati."
-                }
-              ]
+                    {
+                      "question": "D: Come trascrivo un video YouTube con NeverCap?",
+                      "answer": "È semplice. Trova il video YouTube che vuoi trascrivere, copia il suo URL e incollalo nella nostra app. La nostra IA recupererà automaticamente il video e fornirà una trascrizione completa in pochi minuti."
+                    },
+                    {
+                      "question": "D: Qual è il modo migliore per trascrivere un video Facebook in testo?",
+                      "answer": "Il modo più semplice è usare un link diretto. Copia l'URL del video Facebook e la nostra piattaforma farà il resto, convertendo il parlato in testo con una precisione fino al 96%, risparmiandoti la trascrizione manuale."
+                    },
+                    {
+                      "question": "D: Posso trascrivere video TikTok e Instagram?",
+                      "answer": "Assolutamente. Supportiamo la trascrizione per video TikTok e Instagram. È perfetto per i creatori di contenuti che vogliono riutilizzare i loro video brevi in post per blog, articoli o aggiornamenti social basati su testo."
+                    },
+                    {
+                      "question": "D: Come trascrivo un video Vimeo in testo?",
+                      "answer": "Trascrivere video Vimeo è facile come su qualsiasi altra piattaforma. Basta copiare l'URL del video Vimeo e incollarlo in NeverCap. La nostra IA elaborerà il video e genererà una trascrizione accurata che puoi scaricare in più formati."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2682,7 +2680,19 @@ let message = {
         problemTitle2: "Problema della Trascrizione nella Ricerca",
         title: "The",
         useCasesTitle2: "Ogni Metodo di Ricerca",
-        testimonialTitle2: "Ricercatori Leader"
+        testimonialTitle2: "Ricercatori Leader",
+        feature1TitleHl: "Intero studio",
+        feature1TitlePost: "in una volta sola",
+        feature2TitleHl: "Focus group",
+        feature2TitlePost: "Ogni volta",
+        feature3TitleHl: "96% precisione",
+        feature4TitleHl: "Sicurezza",
+        testimonialText2Hl: "200 ore",
+        testimonialText3: "di registrazioni di focus group dal nostro studio sulla salute comunitaria. Altri servizi ci chiedevano di selezionare quali sessioni trascrivere a causa dei costi. NeverCap ci ha permesso di elaborare",
+        testimonialText4Hl: "tutto in un weekend",
+        testimonialText5: ". L'identificazione dei 20 parlanti ha funzionato davvero—anche durante le nostre discussioni più caotiche con tutti che parlavano contemporaneamente. Questo strumento ha",
+        testimonialText6Hl: "cambiato completamente",
+        testimonialText7: "il modo in cui gestiamo i dati qualitativi."
     },
     BusinessTeams: {
       heroBadge: "Per Team Aziendali",
@@ -3051,7 +3061,7 @@ let message = {
             },
             {
               "label": "Contattaci",
-              "value": ["email", "Supporto disponibile 24/7"]
+              "value": ["Email", "Supporto disponibile 24/7"]
             }
           ]
     },
@@ -3063,8 +3073,8 @@ let message = {
     }
   },
   Privacy: {
-    title: "Privacy",
-    titleGradient: "Normativa",
+    title: "Informativa sulla",
+    titleGradient: "Privacy",
     subtitle: "Scopri come raccogliamo, utilizziamo e proteggiamo le tue informazioni personali",
     "lastUpdated": "Ultimo aggiornamento: {date}",
     "lastUpdatedDate": "21 luglio 2025",

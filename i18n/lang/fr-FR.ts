@@ -218,9 +218,9 @@ let message = {
         linkName: "Lien"
       },
       file: {
-        orTitle: "Transcrire un média en ligne",
-        dialogTitle: "Transcrire les fichiers",
-        tip1: "Déposez les fichiers ici ou cliquez pour parcourir",
+        orTitle: "Transcrire à partir de l'URL",
+        dialogTitle: "Télécharger des fichiers à transcrire",
+        tip1: "Faites glisser les fichiers ici ou cliquez pour parcourir",
         tip2: "Cliquez pour parcourir",
         or: "ou",
         supported: "Formats pris en charge"
@@ -239,7 +239,7 @@ let message = {
       confirm: "Transcrire",
       return: "Retour",
       addMore: "Ajouter plus",
-      language: "Langue du média",
+      language: "Sélectionner la langue",
       failed: "Échoué",
       tooLarge: "Le fichier dépasse la limite (5 Go).",
       linkUpload: "Téléchargement",
@@ -256,8 +256,7 @@ let message = {
       },
       maxFileNum: "Le nombre de fichiers ne peut pas dépasser {num}.",
       speaker: "Identifier les intervenants",
-      speakerLabel:
-        "Détecter automatiquement qui parle",
+      speakerLabel: "Détection automatique de l'interlocuteur",
       guest: {
         transcribe: "Transcrire",
         file: "Déposer",
@@ -667,7 +666,7 @@ let message = {
     uploadWithinHours: "Téléchargements de 10 heures",
     yourSubscription: "Votre abonnement sera annulé le {time}.",
     save: "Économiser",
-      freeversion2: "Plan gratuit"
+      freeversion2: "Plan Gratuit"
 },
   // 语言对应关系
   LanguageMap: {
@@ -1113,7 +1112,7 @@ let message = {
       try_now: "Essayez Maintenant",
       no_signup: "Inscription Non Requise",
       experience_unltd: "Vivez une transcription vraiment illimitée",
-      upload_50: "Téléchargez jusqu'à 50 fichiers à la fois, directement ici",
+      upload_50: "Téléchargez jusqu'à 50 fichiers à la fois, directement ici.",
       no_limits: "Avancé",
       no_surprises: "Transcription IA",
       transparency: "Plus de Limites Cachées, Plus de Surprises - Alors que d'autres réduisent discrètement vos minutes ou cachent des plafonds dans les petits caractères, nous croyons en une transparence radicale",
@@ -2321,8 +2320,7 @@ let message = {
             points: {
               searchAll: "Transcription en 5 minutes pour 1 heure d'interview",
               wordTimestamps: "Traitement prioritaire pour les urgences",
-              jumpToMoments: "Suivi de progression en temps réel",
-              exportCitations: "Exporter avec des citations"
+              jumpToMoments: "Suivi de progression en temps réel"
             },
             searchDemo: {
               placeholder: "5min",
@@ -2340,8 +2338,7 @@ let message = {
             points: {
               accuracyGuarantee: "Garantie de 96% de précision",
               handlesAccents: "Gère la terminologie technique",
-              smartPunctuation: "Identification parfaite des intervenants",
-              speakerIdentification: "Identification du locuteur"
+              smartPunctuation: "Identification parfaite des intervenants"
             },
             visual: {
               accuracy: "96%",
@@ -2591,23 +2588,23 @@ let message = {
               "titleHighlight": "Répondues",
               subtitle: "Tout ce que vous devez savoir sur la transcription de vidéos depuis différentes plateformes",
               "questions": [
-                {
-                  "question": "Q : Comment transcrire une vidéo YouTube avec NeverCap ?",
-                  "answer": "C'est simple. Trouvez la vidéo YouTube à transcrire, copiez son URL et collez-la dans notre app. Notre IA récupérera automatiquement la vidéo et fournira une transcription texte complète en quelques minutes."
-                },
-                {
-                  "question": "Q : Quelle est la meilleure façon de transcrire une vidéo Facebook en texte ?",
-                  "answer": "Le plus simple est d'utiliser un lien direct. Copiez l'URL de la vidéo Facebook, et notre plateforme s'occupe du reste, convertissant la parole en texte avec jusqu'à 96% de précision, vous évitant la transcription manuelle."
-                },
-                {
-                  "question": "Q : Puis-je transcrire des vidéos TikTok et Instagram ?",
-                  "answer": "Absolument. Nous prenons en charge la transcription pour TikTok et Instagram. Idéal pour les créateurs qui veulent réutiliser leur contenu vidéo court en articles de blog, posts ou mises à jour réseaux sociaux textuelles."
-                },
-                {
-                  "question": "Q : Comment transcrire une vidéo Vimeo en texte ?",
-                  "answer": "Transcrire des vidéos Vimeo est aussi simple que sur toute autre plateforme. Copiez simplement l'URL Vimeo et collez-la dans NeverCap. Notre IA traitera la vidéo et générera une transcription texte précise téléchargeable en multiples formats."
-                }
-              ]
+                    {
+                      "question": "Q : Comment transcrire une vidéo YouTube avec NeverCap ?",
+                      "answer": "C'est simple. Trouvez la vidéo YouTube à transcrire, copiez son URL et collez-la dans notre app. Notre IA récupérera automatiquement la vidéo et fournira une transcription texte complète en quelques minutes."
+                    },
+                    {
+                      "question": "Q : Quelle est la meilleure façon de transcrire une vidéo Facebook en texte ?",
+                      "answer": "Le plus simple est d'utiliser un lien direct. Copiez l'URL de la vidéo Facebook, et notre plateforme s'occupe du reste, convertissant la parole en texte avec jusqu'à 96% de précision, vous évitant la transcription manuelle."
+                    },
+                    {
+                      "question": "Q : Puis-je transcrire des vidéos TikTok et Instagram ?",
+                      "answer": "Absolument. Nous prenons en charge la transcription pour TikTok et Instagram. Idéal pour les créateurs qui veulent réutiliser leur contenu vidéo court en articles de blog, posts ou mises à jour réseaux sociaux textuelles."
+                    },
+                    {
+                      "question": "Q : Comment transcrire une vidéo Vimeo en texte ?",
+                      "answer": "Transcrire des vidéos Vimeo est aussi simple que sur toute autre plateforme. Copiez simplement l'URL Vimeo et collez-la dans NeverCap. Notre IA traitera la vidéo et générera une transcription texte précise téléchargeable en multiples formats."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2696,7 +2693,19 @@ let message = {
         problemTitle2: "Problème de transcription recherche",
         title: "The",
         useCasesTitle2: "Toutes les méthodes de recherche",
-        testimonialTitle2: "Chercheurs de Premier Plan"
+        testimonialTitle2: "Chercheurs de Premier Plan",
+        feature1TitleHl: "Étude complète",
+        feature1TitlePost: "en une fois",
+        feature2TitleHl: "Groupes de discussion",
+        feature2TitlePost: "À chaque fois",
+        feature3TitleHl: "96% de précision",
+        feature4TitleHl: "Sécurité",
+        testimonialText2Hl: "200 heures",
+        testimonialText3: "d'enregistrements de groupes de discussion issus de notre étude sur la santé communautaire. D'autres services nous demandaient de choisir quelles sessions transcrire à cause du coût. NeverCap nous a permis de traiter",
+        testimonialText4Hl: "tout en un week-end",
+        testimonialText5: ". L'identification des 20 intervenants a vraiment fonctionné, même lors de nos discussions les plus confuses où tout le monde parlait en même temps. Cet outil a",
+        testimonialText6Hl: "complètement changé",
+        testimonialText7: "notre manière de gérer les données qualitatives."
     },
     BusinessTeams: {
       heroBadge: "Pour les Équipes Professionnelles",
@@ -3065,7 +3074,7 @@ let message = {
             },
             {
               "label": "Contactez-nous",
-              "value": ["email", "Assistance disponible 24h/24 et 7j/7"]
+              "value": ["Email", "Assistance disponible 24h/24 et 7j/7"]
             }
           ]
     },
@@ -3077,8 +3086,8 @@ let message = {
     }
   },
   Privacy: {
-    title: "Confidentialité",
-    titleGradient: "Politique",
+    title: "Politique de",
+    titleGradient: "Confidentialité",
     subtitle: "Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles",
     "lastUpdated": "Dernière mise à jour : {date}",
     "lastUpdatedDate": "21 juillet 2025",
@@ -3126,8 +3135,8 @@ let message = {
     "neverCap": "NeverCap"
   },
   TermsOfUse: {
-    title: "Conditions d'",
-    titleGradient: "Service",
+    title: "Conditions",
+    titleGradient: "D'Utilisation",
     subtitle: "Veuillez lire attentivement ces conditions avant d'utiliser nos services",
     "lastUpdated": "Dernière mise à jour : {date}",
     "lastUpdatedDate": "21 juillet 2025",

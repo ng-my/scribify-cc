@@ -441,7 +441,7 @@
                 border-radius: 12px;
               "
             >
-              <h3 style="margin-bottom: 20px; color: var(--dark)">
+              <h3 style="margin-bottom: 20px; color: var(--dark);font-weight: bold" class="text-[1.17em]">
                 {{ t("Features.Accuracy.formattingTitle") }}
               </h3>
               <div style="margin-bottom: 20px">
@@ -491,7 +491,7 @@
           <h2 class="section-title">
             {{ t("Features.Accuracy.comparisonSubtitle") }}
             <span class="gradient-text">
-              {{ t("Features.Accuracy.comparisonSubtitle") }}
+              {{ t("Features.Accuracy.comparisonSectionTitle") }}
             </span>
           </h2>
           <p class="section-subtitle">

@@ -196,7 +196,7 @@ let message = {
         },
         speaker: {
           content:
-            "Para identificação de locutores, os arquivos estão limitados a 3 horas. Por favor, desmarque '{text}'."
+            "Para identificação de locutor, arquivos estão limitados a 3 horas. Por favor, desmarque '{text}'."
         }
       }
     },
@@ -205,7 +205,7 @@ let message = {
         dialogTitle: "Transcrever uma mídia online",
         title: "Colar links",
         label:
-          "Cole seu link de vídeo ou áudio do: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram e outras plataformas...",
+          "Cole o link de seu vídeo ou áudio de: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram e outras plataformas...",
         confirm: "Adicionar",
         cancel: "Cancelar",
         // 请输入正确的链接
@@ -214,10 +214,10 @@ let message = {
         linkName: "Link"
       },
       file: {
-        orTitle: "Transcrever uma mídia online",
-        dialogTitle: "Transcrever arquivos",
-        tip1: "Arraste arquivos aqui ou clique para procurar",
-        tip2: "Clique para procurar",
+        orTitle: "Transcrever da URL",
+        dialogTitle: "Carregar arquivos para transcrever",
+        tip1: "Arraste os arquivos aqui ou clique para navegar",
+        tip2: "Clique para navegar",
         or: "ou",
         supported: "Formatos suportados"
       },
@@ -235,7 +235,7 @@ let message = {
       confirm: "Transcrever",
       return: "Voltar",
       addMore: "Adicionar mais",
-      language: "Idioma do media",
+      language: "Selecione o idioma",
       failed: "Falhou",
       tooLarge: "O ficheiro excede o limite (5 GB).",
       linkUpload: "A carregar",
@@ -252,8 +252,7 @@ let message = {
       },
       maxFileNum: "O número de arquivos não pode exceder {num}.",
       speaker: "Identificar Locutores",
-      speakerLabel:
-        "Detectar automaticamente quem está falando",
+      speakerLabel: "Detectar automaticamente quem está falando",
       guest: {
         transcribe: "Transcrever",
         file: "Arquivo",
@@ -1102,7 +1101,7 @@ let message = {
       try_now: "Experimente Agora",
       no_signup: "Sem Cadastro Necessário",
       experience_unltd: "Experimente transcrição verdadeiramente ilimitada",
-      upload_50: "Faça upload de até 50 arquivos de uma vez, aqui mesmo",
+      upload_50: "Faça upload de até 50 arquivos de uma vez, aqui mesmo.",
       no_limits: "Avançado",
       no_surprises: "Transcrição por IA",
       transparency: "Chega de Limites Ocultos, Chega de Surpresas - Enquanto outros reduzem seus minutos silenciosamente ou escondem limites em letras miúdas, nós acreditamos em transparência radical",
@@ -2310,8 +2309,7 @@ let message = {
             points: {
               searchAll: "Processamento de 5 minutos para entrevistas de 1 hora",
               wordTimestamps: "Processamento prioritário para matérias urgentes",
-              jumpToMoments: "Acompanhamento em tempo real",
-              exportCitations: "Exportar com citações"
+              jumpToMoments: "Acompanhamento em tempo real"
             },
             searchDemo: {
               placeholder: "5min",
@@ -2329,8 +2327,7 @@ let message = {
             points: {
               accuracyGuarantee: "Garantia de 96% de precisão",
               handlesAccents: "Lida com terminologia técnica",
-              smartPunctuation: "Identificação perfeita de falantes",
-              speakerIdentification: "Identificação do falante"
+              smartPunctuation: "Identificação perfeita de falantes"
             },
             visual: {
               accuracy: "96%",
@@ -2580,23 +2577,23 @@ let message = {
               "titleHighlight": "Respondidas",
               subtitle: "Tudo que você precisa saber sobre transcrever vídeos de diferentes plataformas",
               "questions": [
-                {
-                  "question": "P: Como transcrevo um vídeo do YouTube com o NeverCap?",
-                  "answer": "É simples. Encontre o vídeo do YouTube que deseja transcrever, copie a URL e cole em nosso app. Nossa IA buscará o vídeo automaticamente e fornecerá uma transcrição completa em minutos."
-                },
-                {
-                  "question": "P: Qual é a melhor forma de transcrever um vídeo do Facebook para texto?",
-                  "answer": "A forma mais fácil é usar um link direto. Copie a URL do vídeo do Facebook e nossa plataforma fará o resto, convertendo a fala em texto com até 96% de precisão, poupando você da transcrição manual."
-                },
-                {
-                  "question": "P: Posso transcrever vídeos do TikTok e Instagram?",
-                  "answer": "Com certeza. Suportamos transcrição para vídeos do TikTok e Instagram. Perfeito para criadores que querem reaproveitar conteúdo de vídeos curtos em posts de blog, artigos ou atualizações em redes sociais baseadas em texto."
-                },
-                {
-                  "question": "P: Como transcrevo um vídeo do Vimeo para texto?",
-                  "answer": "Transcrever vídeos do Vimeo é tão fácil quanto em outras plataformas. Simplesmente copie a URL do vídeo do Vimeo e cole no NeverCap. Nossa IA processará o vídeo e gerará uma transcrição precisa que você pode baixar em múltiplos formatos."
-                }
-              ]
+                    {
+                      "question": "P: Como transcrevo um vídeo do YouTube com o NeverCap?",
+                      "answer": "É simples. Encontre o vídeo do YouTube que deseja transcrever, copie a URL e cole em nosso app. Nossa IA buscará o vídeo automaticamente e fornecerá uma transcrição completa em minutos."
+                    },
+                    {
+                      "question": "P: Qual é a melhor forma de transcrever um vídeo do Facebook para texto?",
+                      "answer": "A forma mais fácil é usar um link direto. Copie a URL do vídeo do Facebook e nossa plataforma fará o resto, convertendo a fala em texto com até 96% de precisão, poupando você da transcrição manual."
+                    },
+                    {
+                      "question": "P: Posso transcrever vídeos do TikTok e Instagram?",
+                      "answer": "Com certeza. Suportamos transcrição para vídeos do TikTok e Instagram. Perfeito para criadores que querem reaproveitar conteúdo de vídeos curtos em posts de blog, artigos ou atualizações em redes sociais baseadas em texto."
+                    },
+                    {
+                      "question": "P: Como transcrevo um vídeo do Vimeo para texto?",
+                      "answer": "Transcrever vídeos do Vimeo é tão fácil quanto em outras plataformas. Simplesmente copie a URL do vídeo do Vimeo e cole no NeverCap. Nossa IA processará o vídeo e gerará uma transcrição precisa que você pode baixar em múltiplos formatos."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2685,7 +2682,19 @@ let message = {
         problemTitle2: "Problema de Transcrição em Pesquisas",
         title: "A",
         useCasesTitle2: "Todo Método de Pesquisa",
-        testimonialTitle2: "Pesquisadores Líderes"
+        testimonialTitle2: "Pesquisadores Líderes",
+        feature1TitleHl: "Estudo Completo",
+        feature1TitlePost: "de Uma Só Vez",
+        feature2TitleHl: "Grupos Focais",
+        feature2TitlePost: "Sempre",
+        feature3TitleHl: "96% de Precisão",
+        feature4TitleHl: "Segurança",
+        testimonialText2Hl: "200 horas",
+        testimonialText3: "de gravações de grupos focais do nosso estudo de saúde comunitária. Outros serviços queriam que escolhêssemos quais sessões transcrever devido ao custo. O NeverCap nos permitiu processar",
+        testimonialText4Hl: "tudo em um fim de semana",
+        testimonialText5: ". A identificação de 20 falantes realmente funcionou—mesmo nas discussões mais caóticas onde todos falavam ao mesmo tempo. Esta ferramenta",
+        testimonialText6Hl: "mudou completamente",
+        testimonialText7: "como lidamos com dados qualitativos."
     },
     BusinessTeams: {
       heroBadge: "Para Equipes de Negócios",
@@ -3054,7 +3063,7 @@ let message = {
             },
             {
               "label": "Contate-nos",
-              "value": ["email", "Suporte disponível 24/7"]
+              "value": ["Email", "Suporte disponível 24/7"]
             }
           ]
     },
@@ -3066,8 +3075,8 @@ let message = {
     }
   },
   Privacy: {
-    title: "Privacidade",
-    titleGradient: "Política",
+    title: "Política de",
+    titleGradient: "Privacidade",
     subtitle: "Saiba como coletamos, usamos e protegemos suas informações pessoais",
     "lastUpdated": "Última atualização: {date}",
     "lastUpdatedDate": "21 de julho de 2025",

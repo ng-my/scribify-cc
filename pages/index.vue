@@ -376,7 +376,7 @@
         </div>
         <div style="max-width: 800px; margin: 0 auto">
           <details
-            v-for="(faq, index) of 8"
+            v-for="(faq, index) of 9"
             :key="index"
             style="
               background: white;
@@ -1136,6 +1136,9 @@ details summary::after {
   font-size: 24px;
   color: var(--primary);
   transition: transform 0.3s;
+}
+details summary:hover {
+  color: var(--primary);
 }
 
 details[open] summary::after {

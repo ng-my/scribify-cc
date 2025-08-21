@@ -194,7 +194,7 @@ let message = {
         },
         speaker: {
           content:
-            "화자 식별을 위해 파일은 3시간으로 제한됩니다. '{text}' 선택을 해제해 주세요."
+            "발화자 인식을 위해 파일은 3시간以内로 제한됩니다. '{text}' 선택을 해제해 주세요."
         }
       }
     },
@@ -203,7 +203,7 @@ let message = {
         dialogTitle: "온라인 미디어 트랜스크립션",
         title: "링크 붙여넣기",
         label:
-          "YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram 등의 플랫폼에서 비디오 또는 오디오 링크 붙여넣기...",
+          "YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram 등 다양한 플랫폼의 동영상 또는 오디오 링크를 붙여넣기...",
         confirm: "추가",
         cancel: "취소",
         // 올바른 링크를 입력하세요
@@ -212,12 +212,12 @@ let message = {
         linkName: "링크"
       },
       file: {
-        orTitle: "온라인 미디어 트랜스크립션",
-        dialogTitle: "파일 트랜스크립션",
-        tip1: "파일을 여기로 드래그하거나 클릭하여 탐색",
-        tip2: "클릭하여 탐색",
+        orTitle: "URL에서 필사",
+        dialogTitle: "필사할 파일 업로드",
+        tip1: "파일을 여기로 끌어다 놓거나 클릭하여 찾아보세요",
+        tip2: "클릭하여 탐색하세요",
         or: "또는",
-        supported: "지원 형식"
+        supported: "지원되는 형식"
       },
       del: {
         title: "경고",
@@ -233,7 +233,7 @@ let message = {
       confirm: "트랜스크립션",
       return: "돌아가기",
       addMore: "더 추가",
-      language: "미디어 언어",
+      language: "언어 선택",
       failed: "실패",
       tooLarge: "파일이 제한을 초과했습니다(5GB).",
       linkUpload: "업로드 중",
@@ -249,8 +249,8 @@ let message = {
         noData: "데이터 없음"
       },
       maxFileNum: "파일 수는 {num}개를 초과할 수 없습니다.",
-      speaker: "화자 식별",
-      speakerLabel: "누가 말하고 있는지 자동 감지",
+      speaker: "발화자 인식",
+      speakerLabel: "발화자 자동 인식",
       guest: {
         transcribe: "고쳐 쓰다",
         file: "파일",
@@ -1087,7 +1087,7 @@ let message = {
       try_now: "지금 시도하기",
       no_signup: "가입 불필요",
       experience_unltd: "진정한 무제한 음성 인식 경험",
-      upload_50: "여기서 한 번에 최대 50개의 파일 업로드",
+      upload_50: "여기서 한 번에 최대 50개의 파일 업로드.",
       no_limits: "고급",
       no_surprises: "AI 음성 인식",
       transparency: "더 이상 숨겨진 제한과 놀라움 없음 - 다른 곳에서는 몰래 시간을 줄이거나 세밀한 글씨로 제한을 숨기지만, 우리는 철저한 투명성을 믿습니다.",
@@ -2295,8 +2295,7 @@ let message = {
             points: {
               searchAll: "1시간 인터뷰 5분 내 결과 제공",
               wordTimestamps: "긴급 기사 우선 처리",
-              jumpToMoments: "실시간 진행 상황 추적",
-              exportCitations: "인용문과 함께 내보내기"
+              jumpToMoments: "실시간 진행 상황 추적"
             },
             searchDemo: {
               placeholder: "5분",
@@ -2314,8 +2313,7 @@ let message = {
             points: {
               accuracyGuarantee: "96% 정확도 보장",
               handlesAccents: "전문 용어 처리",
-              smartPunctuation: "완벽한 화자 식별",
-              speakerIdentification: "스피커 식별"
+              smartPunctuation: "완벽한 화자 식별"
             },
             visual: {
               accuracy: "96%",
@@ -2565,23 +2563,23 @@ let message = {
               "titleHighlight": "답변됨",
               subtitle: "다양한 플랫폼의 비디오를 변환하는 데 필요한 모든 정보",
               "questions": [
-                {
-                  "question": "Q: NeverCap으로 YouTube 비디오를 어떻게 변환하나요?",
-                  "answer": "간단합니다. 변환하려는 YouTube 비디오를 찾아 URL을 복사하고 저희 앱에 붙여넣기만 하면 됩니다. 저희 AI가 자동으로 비디오를 가져와 몇 분 안에 전체 텍스트 변환본을 제공할 거예요."
-                },
-                {
-                  "question": "Q: Facebook 비디오를 텍스트로 변환하는 가장 좋은 방법은 무엇인가요?",
-                  "answer": "가장 쉬운 방법은 직접 링크를 사용하는 것입니다. Facebook 비디오의 URL을 복사하면 저희 플랫폼이 나머지를 처리해 음성을 텍스트로 최대 96% 정확도로 변환해줍니다. 수동 변환에서 벗어나세요."
-                },
-                {
-                  "question": "Q: TikTok 및 Instagram 비디오도 변환할 수 있나요?",
-                  "answer": "물론이죠. TikTok 및 Instagram 비디오 변환을 모두 지원합니다. 짧은 형식의 비디오 콘텐츠를 블로그 글, 기사 또는 텍스트 기반 소셜 미디어 업데이트로 재활용하려는 콘텐츠 크리에이터에게 완벽합니다."
-                },
-                {
-                  "question": "Q: Vimeo 비디오를 텍스트로 어떻게 변환하나요?",
-                  "answer": "Vimeo 비디오 변환은 다른 플랫폼만큼 쉽습니다. Vimeo 비디오 URL을 복사해 NeverCap에 붙여넣기만 하면 됩니다. 저희 AI가 비디오를 처리하고 여러 형식으로 다운로드할 수 있는 정확한 텍스트 변환본을 생성할 거예요."
-                }
-              ]
+                    {
+                      "question": "Q: NeverCap으로 YouTube 비디오를 어떻게 변환하나요?",
+                      "answer": "간단합니다. 변환하려는 YouTube 비디오를 찾아 URL을 복사하고 저희 앱에 붙여넣기만 하면 됩니다. 저희 AI가 자동으로 비디오를 가져와 몇 분 안에 전체 텍스트 변환본을 제공할 거예요."
+                    },
+                    {
+                      "question": "Q: Facebook 비디오를 텍스트로 변환하는 가장 좋은 방법은 무엇인가요?",
+                      "answer": "가장 쉬운 방법은 직접 링크를 사용하는 것입니다. Facebook 비디오의 URL을 복사하면 저희 플랫폼이 나머지를 처리해 음성을 텍스트로 최대 96% 정확도로 변환해줍니다. 수동 변환에서 벗어나세요."
+                    },
+                    {
+                      "question": "Q: TikTok 및 Instagram 비디오도 변환할 수 있나요?",
+                      "answer": "물론이죠. TikTok 및 Instagram 비디오 변환을 모두 지원합니다. 짧은 형식의 비디오 콘텐츠를 블로그 글, 기사 또는 텍스트 기반 소셜 미디어 업데이트로 재활용하려는 콘텐츠 크리에이터에게 완벽합니다."
+                    },
+                    {
+                      "question": "Q: Vimeo 비디오를 텍스트로 어떻게 변환하나요?",
+                      "answer": "Vimeo 비디오 변환은 다른 플랫폼만큼 쉽습니다. Vimeo 비디오 URL을 복사해 NeverCap에 붙여넣기만 하면 됩니다. 저희 AI가 비디오를 처리하고 여러 형식으로 다운로드할 수 있는 정확한 텍스트 변환본을 생성할 거예요."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2670,7 +2668,19 @@ let message = {
         problemTitle2: "연구 변환 문제",
         title: "이것",
         useCasesTitle2: "모든 연구 방법",
-        testimonialTitle2: "선도적인 연구자들"
+        testimonialTitle2: "선도적인 연구자들",
+        feature1TitleHl: "전체 연구",
+        feature1TitlePost: "한 번에",
+        feature2TitleHl: "포커스 그룹",
+        feature2TitlePost: "매번",
+        feature3TitleHl: "96% 정확도",
+        feature4TitleHl: "보안",
+        testimonialText2Hl: "200시간",
+        testimonialText3: "우리의 지역사회 건강 연구에서 나온 포커스 그룹 녹음입니다. 다른 서비스는 비용 때문에 어떤 세션을 기록할지 선택하라고 했습니다. NeverCap을 사용하면",
+        testimonialText4Hl: "주말 동안 모든 것을 처리할 수 있었습니다",
+        testimonialText5: ". 20명 스피커 식별 기능이 실제로 작동했습니다—심지어 모두가 동시에 말하는 가장 혼란스러운 토론 중에도 말이죠. 이 도구는",
+        testimonialText6Hl: "완전히 변화시켰습니다",
+        testimonialText7: "우리가 질적 데이터를 처리하는 방식을."
     },
     BusinessTeams: {
       heroBadge: "비즈니스 팀을 위한",
@@ -3052,7 +3062,7 @@ let message = {
   },
   Privacy: {
     title: "개인정보",
-    titleGradient: "처리방침",
+    titleGradient: "보호정책",
     subtitle: "당사가 개인정보를 수집, 사용, 보호하는 방법 알아보기",
     "lastUpdated": "최종 업데이트: {date}",
     "lastUpdatedDate": "2025년 7월 21일",
@@ -3100,8 +3110,8 @@ let message = {
     "neverCap": "NeverCap"
   },
   TermsOfUse: {
-    title: "이용약관",
-    titleGradient: "서비스",
+    title: "서비스",
+    titleGradient: "약관",
     subtitle: "서비스 이용 전 아래 약관을 주의 깊게 읽어주세요",
     "lastUpdated": "마지막 업데이트: {date}",
     "lastUpdatedDate": "2025년 7월 21일",

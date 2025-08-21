@@ -114,12 +114,12 @@ let message = {
         linkName: "Link"
       },
       file: {
-        orTitle: "Transcribe an online media",
-        dialogTitle: "Transcribe Files",
+        orTitle: "Transcribe from URL",
+        dialogTitle: "Upload Files to Transcribe",
         tip1: "Drag files here or click to browse",
         tip2: "Click to browse",
         or: "or",
-        supported: 'Supported formats'
+        supported: "Supported formats"
       },
       del: {
         title: "Warning",
@@ -135,7 +135,7 @@ let message = {
       confirm: "Transcribe",
       return: "Return",
       addMore: "Add more",
-      language: "Media Language",
+      language: "Select Language",
       failed: "Failed",
       tooLarge: "The file exceeds the limit (5G).",
       linkUpload: "Uploading",
@@ -576,7 +576,7 @@ let message = {
       try_now: "Try It Now",
       no_signup: "No Sign-up Required",
       experience_unltd: "Experience truly unlimited transcription",
-      upload_50: "Upload up to 50 files at once, right here",
+      upload_50: "Upload up to 50 files at once, right here.",
       no_limits: "Advanced",
       no_surprises: "AI Transcription",
       features: 'Features',
@@ -2728,7 +2728,7 @@ let message = {
         },
         {
           "label": "Contact Us",
-          "value": ['email', "Support available 24/7"]
+          "value": ['Email', "Support available 24/7"]
         }
       ]
     },

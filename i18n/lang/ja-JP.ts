@@ -188,7 +188,7 @@ let message = {
         },
         speaker: {
           content:
-            "話者識別の場合、ファイルは3時間までに制限されています。'{text}'のチェックを外してください。"
+            "話者認識のため、ファイルは3時間までに制限されます。'{text}'のチェックを外してください。"
         }
       }
     },
@@ -197,7 +197,7 @@ let message = {
         dialogTitle: "オンラインメディアの文字起こし",
         title: "リンクを貼り付け",
         label:
-          "YouTube、Facebook、X、Dropbox、Google Drive、Vimeo、TikTok、Instagramなどのプラットフォームから動画またはオーディオリンクを貼り付け...",
+          "YouTube、Facebook、X、Dropbox、Google Drive、Vimeo、TikTok、Instagramなどのプラットフォームから動画・音声リンクを貼り付け...",
         confirm: "追加",
         cancel: "キャンセル",
         errorTitle:
@@ -205,12 +205,12 @@ let message = {
         linkName: "リンク"
       },
       file: {
-        orTitle: "オンラインメディアの文字起こし",
-        dialogTitle: "ファイルの文字起こし",
-        tip1: "ファイルをここにドラッグまたはクリックして参照",
-        tip2: "クリックして参照",
+        orTitle: "URLから転記",
+        dialogTitle: "転記するファイルをアップロードする",
+        tip1: "ファイルをここにドラッグするかクリックして参照してください",
+        tip2: "クリックして閲覧",
         or: "または",
-        supported: "対応フォーマット"
+        supported: "サポートされている形式"
       },
       del: {
         title: "警告",
@@ -226,7 +226,7 @@ let message = {
       confirm: "文字起こし",
       return: "戻る",
       addMore: "さらに追加",
-      language: "メディア言語",
+      language: "言語を選択",
       failed: "失敗",
       tooLarge: "ファイルが制限を超えています（5GB）。",
       linkUpload: "アップロード中",
@@ -244,7 +244,7 @@ let message = {
       maxFileNum: "ファイル数は{num}を超えることはできません。",
       speaker: "話者を識別",
       speakerLabel:
-        "自動的に話者を検出",
+        "自動的に話者を識別",
       guest: {
         transcribe: "転写",
         file: "ファイル",
@@ -1254,7 +1254,7 @@ let message = {
       try_now: "今すぐ試す",
       no_signup: "登録不要",
       experience_unltd: "真の無制限文字起こしを体験",
-      upload_50: "ここで最大50ファイルを一度にアップロード",
+      upload_50: "ここで最大50ファイルを一度にアップロード。",
       no_limits: "高度な",
       no_surprises: "AI文字起こし",
       transparency: "隠れた制限もサプライズもなし - 他社が細則で分数を減らしたり制限を隠す中、私たちは徹底的な透明性を信じています",
@@ -2462,8 +2462,7 @@ let message = {
             points: {
               searchAll: "1時間インタビューで5分の処理時間",
               wordTimestamps: "緊急記事の優先処理",
-              jumpToMoments: "リアルタイム進捗追跡",
-              exportCitations: "引用付きでエクスポート"
+              jumpToMoments: "リアルタイム進捗追跡"
             },
             searchDemo: {
               placeholder: "5分",
@@ -2481,8 +2480,7 @@ let message = {
             points: {
               accuracyGuarantee: "96%精度保証",
               handlesAccents: "専門用語対応",
-              smartPunctuation: "完璧な話者識別",
-              speakerIdentification: "話者識別"
+              smartPunctuation: "完璧な話者識別"
             },
             visual: {
               accuracy: "96%",
@@ -2732,23 +2730,23 @@ let message = {
               "titleHighlight": "解決します",
               subtitle: "様々なプラットフォームの動画を文字起こしするために知っておくべきすべて",
               "questions": [
-                {
-                  "question": "Q: NeverCapでYouTube動画を文字起こしするには？",
-                  "answer": "簡単です。文字起こししたいYouTube動画を見つけ、URLをコピーして私たちのアプリに貼り付けるだけです。AIが自動的に動画を取得し、数分で全文の文字起こしを提供します。"
-                },
-                {
-                  "question": "Q: Facebook動画をテキストに文字起こしする最良の方法は？",
-                  "answer": "最も簡単な方法は直接リンクを使うことです。Facebook動画のURLをコピーすれば、私たちのプラットフォームが残りを処理し、最大96%の精度で音声をテキストに変換します。手動での文字起こしから解放されます。"
-                },
-                {
-                  "question": "Q: TikTokやInstagramの動画も文字起こしできますか？",
-                  "answer": "もちろんです。TikTokとInstagramの動画両方の文字起こしをサポートしています。ショートフォーム動画コンテンツをブログ記事や記事、テキストベースのSNS投稿に再利用したいコンテンツクリエイターに最適です。"
-                },
-                {
-                  "question": "Q: Vimeo動画をテキストに文字起こしするには？",
-                  "answer": "Vimeo動画の文字起こしも他のプラットフォームと同様に簡単です。Vimeo動画のURLをコピーしてNeverCapに貼り付けるだけです。AIが動画を処理し、複数形式でダウンロード可能な正確な文字起こしを生成します。"
-                }
-              ]
+                    {
+                      "question": "Q: NeverCapでYouTube動画を文字起こしするには？",
+                      "answer": "簡単です。文字起こししたいYouTube動画を見つけ、URLをコピーして私たちのアプリに貼り付けるだけです。AIが自動的に動画を取得し、数分で全文の文字起こしを提供します。"
+                    },
+                    {
+                      "question": "Q: Facebook動画をテキストに文字起こしする最良の方法は？",
+                      "answer": "最も簡単な方法は直接リンクを使うことです。Facebook動画のURLをコピーすれば、私たちのプラットフォームが残りを処理し、最大96%の精度で音声をテキストに変換します。手動での文字起こしから解放されます。"
+                    },
+                    {
+                      "question": "Q: TikTokやInstagramの動画も文字起こしできますか？",
+                      "answer": "もちろんです。TikTokとInstagramの動画両方の文字起こしをサポートしています。ショートフォーム動画コンテンツをブログ記事や記事、テキストベースのSNS投稿に再利用したいコンテンツクリエイターに最適です。"
+                    },
+                    {
+                      "question": "Q: Vimeo動画をテキストに文字起こしするには？",
+                      "answer": "Vimeo動画の文字起こしも他のプラットフォームと同様に簡単です。Vimeo動画のURLをコピーしてNeverCapに貼り付けるだけです。AIが動画を処理し、複数形式でダウンロード可能な正確な文字起こしを生成します。"
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2837,7 +2835,19 @@ let message = {
         problemTitle2: "研究文字起こしの問題",
         title: "The",
         useCasesTitle2: "あらゆる研究方法",
-        testimonialTitle2: "トップ研究者たち"
+        testimonialTitle2: "トップ研究者たち",
+        feature1TitleHl: "完全な研究",
+        feature1TitlePost: "一気に",
+        feature2TitleHl: "フォーカスグループ",
+        feature2TitlePost: "毎回",
+        feature3TitleHl: "96%の精度",
+        feature4TitleHl: "セキュリティ",
+        testimonialText2Hl: "200時間",
+        testimonialText3: "私たちの地域健康研究からのフォーカスグループ録音。他のサービスではコストのためどのセッションを文字起こしするか選ばねばなりませんでした。NeverCapなら",
+        testimonialText4Hl: "週末だけで全て処理可能",
+        testimonialText5: "。20人の話者識別は実際に機能しました—全員が同時に話すような最も混乱した議論でも。このツールは",
+        testimonialText6Hl: "完全に変えた",
+        testimonialText7: "私たちの定性データの扱い方を。"
     },
     BusinessTeams: {
       heroBadge: "ビジネスチーム向け",

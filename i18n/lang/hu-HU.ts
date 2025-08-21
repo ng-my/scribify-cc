@@ -196,7 +196,7 @@ let message = {
         },
         speaker: {
           content:
-            "A beszélőazonosításhoz a fájlok maximális hossza 3 óra. Kérjük, törölje a jelölést a(z) '{text}' lehetőségből."
+            "A beszélőazonosításhoz a fájlok maximális hossza 3 óra. Kérjük, távolítsa el a pipát a(z) '{text}' lehetőségről."
         }
       }
     },
@@ -205,7 +205,7 @@ let message = {
         dialogTitle: "Online média átírása",
         title: "Linkek beillesztése",
         label:
-          "Illessze be videó- vagy audiolinkjét innen: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram és további platformok...",
+          "Illessze be videó vagy hang linkjét innen: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram és egyéb platformok...",
         confirm: "Hozzáadás",
         cancel: "Mégse",
         // 请输入正确的链接
@@ -214,10 +214,10 @@ let message = {
         linkName: "Link"
       },
       file: {
-        orTitle: "Online média átírása",
-        dialogTitle: "Fájlok átírása",
-        tip1: "Húzza ide a fájlokat vagy kattintson a tallózáshoz",
-        tip2: "Kattintson a tallózáshoz",
+        orTitle: "Átírás URL-ből",
+        dialogTitle: "Fájlok feltöltése átíráshoz",
+        tip1: "Húzd ide a fájlokat, vagy kattints a böngészéshez",
+        tip2: "Kattintson a böngészéshez",
         or: "vagy",
         supported: "Támogatott formátumok"
       },
@@ -234,7 +234,7 @@ let message = {
       confirm: "Átírás",
       return: "Vissza",
       addMore: "További hozzáadása",
-      language: "Média nyelve",
+      language: "Nyelv kiválasztása",
       failed: "Sikertelen",
       tooLarge: "A fájl meghaladja a korlátot (5 GB).",
       linkUpload: "Feltöltés",
@@ -252,7 +252,7 @@ let message = {
       maxFileNum: "A fájlok száma nem haladhatja meg a {num} darabot.",
       speaker: "Beszélők azonosítása",
       speakerLabel:
-        "Automatikus beszélőfelismerés",
+        "Automatikusan felismeri, ki beszél",
       guest: {
         transcribe: "Lemásol",
         file: "Fájl",
@@ -656,7 +656,7 @@ let message = {
     uploadWithinHours: "10 órás feltöltések",
     yourSubscription: "Az előfizetése {time} törlésre kerül.",
     save: "Megtakarítás",
-      freeversion2: "Ingyenes Plan"
+      freeversion2: "Ingyenes Csomag"
 },
   // 语言对应关系
   LanguageMap: {
@@ -1096,7 +1096,7 @@ let message = {
       try_now: "Próbáld Most",
       no_signup: "Nincs Regisztráció Szükséges",
       experience_unltd: "Tapasztald meg a valóban korlátlan átírást",
-      upload_50: "Tölts fel egyszerre akár 50 fájlt, itt és most",
+      upload_50: "Tölts fel egyszerre akár 50 fájlt, itt és most.",
       no_limits: "Haladó",
       no_surprises: "AI Átirat",
       transparency: "Nincs Több Rejtett Korlát, Nincs Több Meglepetés - Míg mások csendben csökkentik a perceidet vagy rejtik a korlátokat, mi hiszünk a radikális átláthatóságban",
@@ -2305,8 +2305,7 @@ let message = {
             points: {
               searchAll: "5 perces visszafordítás 1 órás interjúkhoz",
               wordTimestamps: "Prioritásos feldolgozás sürgős történetekhez",
-              jumpToMoments: "Valós idejű előrehaladás követése",
-              exportCitations: "Exportálás hivatkozásokkal"
+              jumpToMoments: "Valós idejű előrehaladás követése"
             },
             searchDemo: {
               placeholder: "5perc",
@@ -2324,8 +2323,7 @@ let message = {
             points: {
               accuracyGuarantee: "96%-os pontossági garancia",
               handlesAccents: "Kezeli a szakmai terminológiát",
-              smartPunctuation: "Tökéletes beszélő azonosítás",
-              speakerIdentification: "Hangszóró azonosítása"
+              smartPunctuation: "Tökéletes beszélő azonosítás"
             },
             visual: {
               accuracy: "96%",
@@ -2575,23 +2573,23 @@ let message = {
               "titleHighlight": "Megválaszolva",
               subtitle: "Minden, amit tudnod kell a videók átírásáról különböző platformokról",
               "questions": [
-                {
-                  "question": "K: Hogyan íratok át YouTube videót a NeverCap-pel?",
-                  "answer": "Egyszerű. Keress meg egy YouTube videót, másold az URL-jét, és illeszd be az alkalmazásunkba. Az MI percek alatt letölti a videót és teljes szöveges átírást készít."
-                },
-                {
-                  "question": "K: Mi a legjobb módja egy Facebook videó szöveggé történő átírásának?",
-                  "answer": "A legegyszerűbb mód a közvetlen link használata. Másold a Facebook videó URL-jét, a platformunk pedig 96%-os pontossággal átalakítja a beszédet szöveggé, megkímélve a kézi átírástól."
-                },
-                {
-                  "question": "K: Átírhatok TikTok és Instagram videókat?",
-                  "answer": "Természetesen. Támogatjuk a TikTok és Instagram videók átírását. Ideális tartalomkészítőknek, akik rövid videóikat blogbejegyzésekbe, cikkekbe vagy szöveges közösségi média posztokká szeretnék átalakítani."
-                },
-                {
-                  "question": "K: Hogyan írok át Vimeo videót szöveggé?",
-                  "answer": "A Vimeo videók átírása ugyanolyan egyszerű, mint bármely más platformon. Másold a Vimeo videó URL-jét és illeszd be a NeverCap-be. Az MI feldolgozza a videót és pontos szöveges átírást készít, amelyet több formátumban letölthetsz."
-                }
-              ]
+                    {
+                      "question": "K: Hogyan íratok át YouTube videót a NeverCap-pel?",
+                      "answer": "Egyszerű. Keress meg egy YouTube videót, másold az URL-jét, és illeszd be az alkalmazásunkba. Az MI percek alatt letölti a videót és teljes szöveges átírást készít."
+                    },
+                    {
+                      "question": "K: Mi a legjobb módja egy Facebook videó szöveggé történő átírásának?",
+                      "answer": "A legegyszerűbb mód a közvetlen link használata. Másold a Facebook videó URL-jét, a platformunk pedig 96%-os pontossággal átalakítja a beszédet szöveggé, megkímélve a kézi átírástól."
+                    },
+                    {
+                      "question": "K: Átírhatok TikTok és Instagram videókat?",
+                      "answer": "Természetesen. Támogatjuk a TikTok és Instagram videók átírását. Ideális tartalomkészítőknek, akik rövid videóikat blogbejegyzésekbe, cikkekbe vagy szöveges közösségi média posztokká szeretnék átalakítani."
+                    },
+                    {
+                      "question": "K: Hogyan írok át Vimeo videót szöveggé?",
+                      "answer": "A Vimeo videók átírása ugyanolyan egyszerű, mint bármely más platformon. Másold a Vimeo videó URL-jét és illeszd be a NeverCap-be. Az MI feldolgozza a videót és pontos szöveges átírást készít, amelyet több formátumban letölthetsz."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2680,7 +2678,19 @@ let message = {
         problemTitle2: "Kutatási Átírási Probléma",
         title: "A",
         useCasesTitle2: "Minden Kutatási Módszerhez",
-        testimonialTitle2: "Vezető Kutatók"
+        testimonialTitle2: "Vezető Kutatók",
+        feature1TitleHl: "Teljes Tanulmány",
+        feature1TitlePost: "Egyetlen alkalommal",
+        feature2TitleHl: "Fókuszcsoportok",
+        feature2TitlePost: "Minden alkalommal",
+        feature3TitleHl: "96%-os pontosság",
+        feature4TitleHl: "Biztonság",
+        testimonialText2Hl: "200 óra",
+        testimonialText3: "fókuszcsoport-felvétele a közösségi egészségtanulmányunkból. Más szolgáltatások a költségek miatt arra kértek, hogy válasszuk ki, mely üléseket írjuk át. A NeverCap lehetővé tette számunkra, hogy feldolgozzuk",
+        testimonialText4Hl: "mindezt egy hétvégén",
+        testimonialText5: ". A 20 beszélő azonosítója tényleg működött – még a legzűrösebb vitáink során is, amikor mindenki egyszerre beszélt. Ez az eszköz",
+        testimonialText6Hl: "teljesen megváltoztatta",
+        testimonialText7: "a kvalitatív adataink kezelésének módját."
     },
     BusinessTeams: {
       heroBadge: "Üzleti Csapatoknak",
@@ -3049,7 +3059,7 @@ let message = {
             },
             {
               "label": "Lépjen kapcsolatba velünk",
-              "value": ["email", "0-24-es támogatás"]
+              "value": ["Email", "0-24-es támogatás"]
             }
           ]
     },
@@ -3061,7 +3071,7 @@ let message = {
     }
   },
   Privacy: {
-    title: "Adatvédelem",
+    title: "Adatvédelmi",
     titleGradient: "Szabályzat",
     subtitle: "Tudj meg többet arról, hogyan gyűjtjük, használjuk és védjük a személyes adataidat",
     "lastUpdated": "Utoljára frissítve: {date}",
@@ -3110,96 +3120,96 @@ let message = {
     "neverCap": "NeverCap"
   },
   TermsOfUse: {
-    title: "Felhasználási",
-    titleGradient: "1. Szolgáltatás",
-    subtitle: "2. Kérjük, olvassa el figyelmesen ezeket a feltételeket a szolgáltatásaink használata előtt",
-    "lastUpdated": "3. Utoljára frissítve: {date}",
-    "lastUpdatedDate": "4. 2025. július 21.",
-    "termsOfServiceTitle": "5. Szolgáltatási Feltételek",
-    "thankYou": "6. Köszönjük, hogy termékeinket használja!",
-    "companyDefinition": '7. Amikor ebben a dokumentumban a "Vállalat", "mi", "a mi" vagy "nekünk" kifejezéseket használjuk, a NeverCap-ra utalunk.',
-    "servicesDefinition": '8. A "Szolgáltatások" alatt minden olyan terméket értünk, amelyet a NeverCap készített és karbantart, függetlenül attól, hogy webböngészőben, asztali alkalmazásban, mobilalkalmazásban vagy más formátumban kerül kiszállításra.',
-    "termsUpdate": "9. A jövőben frissíthetjük ezeket a Szolgáltatási Feltételeket. Általában ezek a változtatások azért történnek, hogy egyes feltételeket pontosítsunk egy kapcsolódó, bővebb szabályzatra hivatkozva. Mindig, amikor jelentős változtatást eszközölünk szabályzatainkban, frissítjük az oldal tetején látható dátumot, és megteszünk minden szükséges lépést a fióktulajdonosok értesítésére.",
-    "acceptanceTitle": "10. 1. A Megállapodás Elfogadása",
-    "acceptanceDescription1": "11. A Szolgáltatások használatával Ön elfogadja ezt a Megállapodást, amely ezáltal kötelező szerződéssé válik Ön és a NeverCap között. Kijelenti, hogy jogilag képes elfogadni ezeket a Feltételeket, és megerősíti, hogy elérte a szerződőképességet. A NeverCap elfogadása kifejezetten függ Önnek a Megállapodás minden feltételével való egyetértésétől.",
-    "eligibilityRequirement": "12. A Szolgáltatások nem szándékoznak, és nem használhatók 18 év alatti személyek által. A Szolgáltatások használatával Ön kijelenti és garantálja, hogy megfelel a fenti jogosultsági követelménynek.",
-    "userResponsibility": '13. A "te", "a te", "önmagad" kifejezések magukban foglalják alkalmazottaidat, ügynökeidet, üzleti képviselőidet és minden olyan egyént, aki hozzáférést kap a Szolgáltatásokhoz a Fiókod (lásd alább) révén. Felelős vagy annak biztosításáért, hogy minden olyan személy, aki a fiókod révén hozzáfér a Szolgáltatásokhoz, tisztában legyen ezekkel a Feltételekkel és betartsa azokat.',
-    "termsRevision": "14. A NeverCap fenntartja a jogot, hogy saját belátása szerint időről időre felülvizsgálja és frissítse ezeket a Feltételeket. Minden változtatás azonnal hatályba lép a közzététel pillanatában. A Szolgáltatások további használata a módosított Feltételek közzététele után azt jelenti, hogy elfogadja és egyetért a változtatásokkal. Várható, hogy időről időre ellenőrzi ezt az oldalt, hogy tisztában legyen a változtatásokkal, mivel ezek kötelezőek Önre.",
-    "servicesTitle": "15. 2. A NeverCap Szolgáltatásai",
-    "servicesDescription1": "16. Szolgáltatásaink lehetővé teszik a felhasználók számára, hogy hangbeszélgetéseket átalakítsanak átírt szöveggé, amely kereshető, lefordítható és megosztható másokkal.",
-    "servicesOptions": '17. Dönthet úgy, hogy a Szolgáltatások ingyenes verzióját ("Ingyenes Szolgáltatások") vagy az előfizetéses fizetős verzióját használja, amelyért díjat kell fizetnie ("Fizetős Szolgáltatások").',
-    "servicesAccess": "18. Biztosítjuk Önnek a Szolgáltatások elérhetőségét. Az Ön felelőssége, hogy minden szükséges intézkedést megtegyen a Szolgáltatásokhoz való hozzáférés érdekében.",
-    "accountTermsTitle": "19. 3. Fiók Feltételek",
-    "accountSecurity": "20. Az Ön felelőssége a fiókja biztonságának fenntartása. A Vállalat nem vállal felelősséget semmilyen veszteségért vagy kárért, amely a biztonsági kötelezettség betartásának elmulasztásából ered.",
-    "lawfulUse": "21. A Szolgáltatásokat nem használhatja semmilyen törvénytelen, etikátlan vagy erkölcstelen célra.",
-    "contentResponsibility": "22. Felelős minden olyan tartalomért és tevékenységért, amely a fiókja alatt történik. Ez magában foglalja a mások által közzétett tartalmakat is, akik vagy: (a) hozzáférnek a bejelentkezési adataihoz; vagy (b) saját bejelentkezéssel rendelkeznek a fiókja alatt.",
-    "humanRequirement": '23. Emberi lénynek kell lennie. A "botok" vagy más automatizált módszerek által regisztrált fiókok nem engedélyezettek.',
-    "paymentTitle": "24. 4. Fizetés, Visszatérítés és Csomagváltás",
-    "freeTrial": "25. Azoknál a fizetős Szolgáltatásoknál, amelyek ingyenes próbaidőszakot kínálnak, a próbaidő hosszát a regisztrációkor közöljük. A próbaidőszak lejárta után előre kell fizetnie a Szolgáltatás további használatáért. Ha nem fizet, ezek a szolgáltatások megszűnnek.",
-    "upgradePolicy": "26. Ha ingyenes csomagról frissít fizetős csomagra, a kártyáját azonnal terheljük, és a számlázási ciklus a frissítés napján kezdődik.",
-    "taxes": "27. Minden díj kizárja a adóhatóságok által kiszabott adókat, illetékeket vagy vámokat. Ha szükséges, mi gyűjtjük be ezeket az adókat az adóhatóság nevében, és továbbítjuk azokat. Ellenkező esetben Ön felelős minden adó, illeték vagy vám megfizetéséért.",
-    "refunds": "28. Minden vásárlás visszatérítés nélküli. Bármikor lemondhat bármely fizetős szolgáltatást a fiókjába való bejelentkezéssel. A fizetős előfizetések esetében a lemondás az aktuális fizetési időszak végén lép hatályba, kivéve, ha másként nincs jelölve.",
-    "cancellationTitle": "29. 5. Lemondás és Megszüntetés",
-    "cancellationPolicy": "30. Ha a Szolgáltatást bármely fizetett időszak vége előtt lemondja, a lemondás azonnal hatályba lép, és nem számítunk fel további díjat. Az utolsó számlázási ciklusban fel nem használt időt nem arányosítjuk vissza automatikusan.",
-    "terminationRights": "31. Fenntartjuk a jogot, hogy bármikor bármilyen okból felfüggesszük vagy megszüntessük a fiókját, és megtagadjuk a Szolgáltatások jelenlegi vagy jövőbeli használatát. A felfüggesztés azt jelenti, hogy nem fog tudni hozzáférni a fiókjához vagy annak tartalmához. A megszüntetés továbbá a fiók törlését vagy a hozzáférés megszüntetését, valamint a fiókban lévő összes tartalom elvesztését és feladását eredményezi. Fenntartjuk a jogot, hogy bármikor bármilyen okból megtagadjuk a Szolgáltatások használatát bárki számára. Ezt a záradékot azért tartalmazza, mert statisztikailag nézve a Szolgáltatásokon lévő több százezer fiók közül legalább egy mindig valami aljas tevékenységet folytat.",
-    "abusePolicy": "32. A Vállalat alkalmazottjának vagy tisztségviselőjének verbális, fizikai, írásbeli vagy más visszaélése (beleértve a visszaélés vagy megtorlás fenyegetését) azonnali fiók megszüntetéshez vezethet.",
-    "submissionsTitle": "33. 6. Beküldések",
-    "submissionsDescription": '34. Elismeri és elfogadja, hogy minden olyan kérdés, megjegyzés, javaslat, ötlet, visszajelzés vagy egyéb információ ("Beküldések"), amelyet Ön nekünk nyújt a Weboldallal kapcsolatban, nem bizalmas, és kizárólagos tulajdonunkká válik. Kizárólagos jogokat birtokolunk, beleértve minden szellemi tulajdonjogot, és jogunkban áll ezeket a Beküldéseket korlátozás nélkül felhasználni és terjeszteni bármilyen törvényes célra, kereskedelmi vagy egyéb célból, elismerés vagy kompenzáció nélkül. Ezzel lemond minden erkölcsi jogáról az ilyen Beküldésekhez kapcsolódóan, és garantálja, hogy az ilyen Beküldések eredeti munkái, vagy jogosult ilyen Beküldések benyújtására. Elfogadja, hogy nem áll módunkban felelősséget vállalni semmilyen állítólagos vagy tényleges jogsértésért vagy tulajdonjog-visszaélésért, amely a Beküldéseivel kapcsolatos.',
-    "uptimeTitle": "35. 7. Üzemidő és Biztonság",
-    "serviceAvailability": '36. A Szolgáltatások használata kizárólag az Ön kockázatára történik. A Szolgáltatásokat "ahogy vannak" és "ahogy elérhetők" alapján nyújtjuk. A legtöbb Szolgáltatásunkhoz nem kínálunk szolgáltatási szintű megállapodásokat, de komolyan vesszük alkalmazásaink üzemidejét.',
-    "throttlingPolicy": "37. Fenntartjuk a jogot, hogy ritka esetekben, amikor egy felhasználó tevékenysége igazoltan negatívan befolyásolja a Szolgáltatás stabilitását és teljesítményét más felhasználók számára, ideiglenesen korlátozzuk vagy szabályozzuk a fiókhoz való hozzáférést. A legkritikusabb esetek kivételével mindig felvesszük Önnel a kapcsolatot, hogy megoldást találjunk, mielőtt intézkednénk.",
-    "dataSecurity": "38. Számos intézkedést teszünk az adatai védelme és biztonságának érdekében biztonsági mentésekkel, redundanciákkal és titkosítással. Kötelezővé tesszük az adattitkosítást a nyilvános interneten történő adatátvitel során.",
-    "thirdPartyVendors": "39. Harmadik féltől származó szállítókat és hosztelési partnereket használunk a Szolgáltatások működtetéséhez szükséges hardver, szoftver, hálózat, tárhely és kapcsolódó technológia biztosítására.",
-    "siteManagementTitle": "40. 8. Weboldal Kezelése",
-    "siteManagementDescription": "41. Fenntartjuk a jogot, de nem a kötelezettséget, hogy: (1) figyeljük a Weboldalt a Szolgáltatási Feltételek megsértése szempontjából; (2) megfelelő jogi lépéseket tegyünk bárki ellen, aki véleményünk szerint megszegi a törvényt vagy a Szolgáltatási Feltételeket, beleértve, de nem kizárólagosan, az ilyen felhasználó bejelentését a hatóságoknak; (3) saját belátásunk szerint és korlátozás nélkül megtagadjuk, korlátozzuk a hozzáférést, csökkentjük az elérhetőséget vagy letiltjuk (a technológiailag lehetséges mértékben) bármely Ön által nyújtott Hozzájárulást vagy annak bármely részét; (4) saját belátásunk szerint és korlátozás, értesítés vagy felelősségvállalás nélkül eltávolítsuk a Weboldalról vagy más módon letiltsuk mindazon fájlokat és tartalmakat, amelyek mérete túlzott vagy bármilyen módon terhelik rendszerünket; és (5) egyébként a Weboldalt úgy kezeljük, hogy védjük jogainkat és tulajdonunkat, és elősegítsük a Weboldal megfelelő működését.",
-    "copyrightTitle": "42. 9. Szerzői Jog és Tartalom Tulajdonjoga",
-    "copyrightCompliance": "43. A Szolgáltatásokon közzétett összes tartalomnak meg kell felelnie az USA szerzői jogi törvényeinek.",
-    "ipRights": "44. Nem igényelünk szellemi tulajdonjogot az Ön által a Szolgáltatásokhoz nyújtott anyagok felett. Az összes feltöltött anyag Öné marad.",
-    "contentModeration": "45. Nem végezünk előzetes tartalomellenőrzést, de fenntartjuk a jogot (de nem a kötelezettséget), hogy saját belátásunk szerint megtagadjunk vagy eltávolítsunk bármilyen, a Szolgáltatáson keresztül elérhető tartalmat.",
-    "trademarkProtection": "46. A Szolgáltatások nevei, megjelenése és hangulata a Vállalat szerzői jogi védelme alatt áll (copyright©). Minden jog fenntartva. A HTML, CSS, JavaScript vagy vizuális tervezési elemek bármely részének megkettőzése, másolása vagy újrafelhasználása csak a Vállalat írásos engedélyével lehetséges. Engedélyt kell kérnie a Vállalat logójának vagy bármely Szolgáltatás logójának promóciós célú használatához. Kérjük, küldjön e-mailt a logóhasználati kérelmekről. Fenntartjuk a jogot, hogy visszavonjuk ezt az engedélyt, ha megszegi ezeket a Szolgáltatási Feltételeket.",
-    "prohibitedExploitation": "47. Ön vállalja, hogy nem sokszorosítja, megkettőzi, másolja, eladja, továbbértékesíti vagy kihasználja a Szolgáltatások bármely részét, a Szolgáltatások használatát vagy hozzáférését a Vállalat írásos engedélye nélkül.",
-    "impersonationProhibition": "48. Nem módosíthat más weboldalt úgy, hogy hamisan azt sugallja, hogy kapcsolatban áll a Szolgáltatásokkal vagy a Vállalattal.",
-    "dmcaPolicy": "49. Tiszteljük mások szellemi tulajdonjogait. Ha úgy véli, hogy a Weboldalon vagy azon keresztül elérhető bármely anyag megsérti Ön által birtokolt vagy ellenőrzött szerző",
+    title: "Szolgáltatási",
+    titleGradient: "Feltételek",
+    subtitle: "Kérjük, olvassa el figyelmesen ezeket a feltételeket a szolgáltatásaink használata előtt",
+    "lastUpdated": "Utoljára frissítve: {date}",
+    "lastUpdatedDate": "2025. július 21.",
+    "termsOfServiceTitle": "Szolgáltatási Feltételek",
+    "thankYou": "Köszönjük, hogy termékeinket használja!",
+    "companyDefinition": 'Amikor ebben a dokumentumban a "Vállalat", "mi", "a mi" vagy "nekünk" kifejezéseket használjuk, a NeverCap-ra utalunk.',
+    "servicesDefinition": 'A "Szolgáltatások" alatt minden olyan terméket értünk, amelyet a NeverCap készített és karbantart, függetlenül attól, hogy webböngészőben, asztali alkalmazásban, mobilalkalmazásban vagy más formátumban kerül kiszállításra.',
+    "termsUpdate": "A jövőben frissíthetjük ezeket a Szolgáltatási Feltételeket. Általában ezek a változtatások azért történnek, hogy egyes feltételeket pontosítsunk egy kapcsolódó, bővebb szabályzatra hivatkozva. Mindig, amikor jelentős változtatást eszközölünk szabályzatainkban, frissítjük az oldal tetején látható dátumot, és megteszünk minden szükséges lépést a fióktulajdonosok értesítésére.",
+    "acceptanceTitle": "1. A Megállapodás Elfogadása",
+    "acceptanceDescription1": "A Szolgáltatások használatával Ön elfogadja ezt a Megállapodást, amely ezáltal kötelező szerződéssé válik Ön és a NeverCap között. Kijelenti, hogy jogilag képes elfogadni ezeket a Feltételeket, és megerősíti, hogy elérte a szerződőképességet. A NeverCap elfogadása kifejezetten függ Önnek a Megállapodás minden feltételével való egyetértésétől.",
+    "eligibilityRequirement": "A Szolgáltatások nem szándékoznak, és nem használhatók 18 év alatti személyek által. A Szolgáltatások használatával Ön kijelenti és garantálja, hogy megfelel a fenti jogosultsági követelménynek.",
+    "userResponsibility": 'A "te", "a te", "önmagad" kifejezések magukban foglalják alkalmazottaidat, ügynökeidat, üzleti képviselőidet és minden olyan egyént, aki hozzáférést kap a Szolgáltatásokhoz a Fiókod (lásd alább) révén. Felelős vagy annak biztosításáért, hogy minden olyan személy, aki a fiókod révén hozzáfér a Szolgáltatásokhoz, tisztában legyen ezekkel a Feltételekkel és betartsa azokat.',
+    "termsRevision": "A NeverCap fenntartja a jogot, hogy saját belátása szerint időről időre felülvizsgálja és frissítse ezeket a Feltételeket. Minden változtatás azonnal hatályba lép a közzététel pillanatában. A Szolgáltatások további használata a módosított Feltételek közzététele után azt jelenti, hogy elfogadja és egyetért a változtatásokkal. Várható, hogy időről időre ellenőrzi ezt az oldalt, hogy tisztában legyen a változtatásokkal, mivel ezek kötelezőek Önre.",
+    "servicesTitle": "2. A NeverCap Szolgáltatásai",
+    "servicesDescription1": "Szolgáltatásaink lehetővé teszik a felhasználók számára, hogy hangbeszélgetéseket átalakítsanak átírt szöveggé, amely kereshető, lefordítható és megosztható másokkal.",
+    "servicesOptions": 'Dönthet úgy, hogy a Szolgáltatások ingyenes verzióját ("Ingyenes Szolgáltatások") vagy az előfizetéses fizetős verzióját használja, amelyért díjat kell fizetnie ("Fizetős Szolgáltatások").',
+    "servicesAccess": "Biztosítjuk Önnek a Szolgáltatások elérhetőségét. Az Ön felelőssége, hogy minden szükséges intézkedést megtegyen a Szolgáltatásokhoz való hozzáférés érdekében.",
+    "accountTermsTitle": "3. Fiók Feltételek",
+    "accountSecurity": "Az Ön felelőssége a fiókja biztonságának fenntartása. A Vállalat nem vállal felelősséget semmilyen veszteségért vagy kárért, amely a biztonsági kötelezettség betartásának elmulasztásából ered.",
+    "lawfulUse": "A Szolgáltatásokat nem használhatja semmilyen törvénytelen, etikátlan vagy erkölcstelen célra.",
+    "contentResponsibility": "Felelős minden olyan tartalomért és tevékenységért, amely a fiókja alatt történik. Ez magában foglalja a mások által közzétett tartalmakat is, akik vagy: (a) hozzáférnek a bejelentkezési adataihoz; vagy (b) saját bejelentkezéssel rendelkeznek a fiókja alatt.",
+    "humanRequirement": 'Emberi lénynek kell lennie. A "botok" vagy más automatizált módszerek által regisztrált fiókok nem engedélyezettek.',
+    "paymentTitle": "4. Fizetés, Visszatérítés és Csomagváltás",
+    "freeTrial": "Azoknál a fizetős Szolgáltatásoknál, amelyek ingyenes próbaidőszakot kínálnak, a próbaidő hosszát a regisztrációkor közöljük. A próbaidőszak lejárta után előre kell fizetnie a Szolgáltatás további használatáért. Ha nem fizet, ezek a szolgáltatások megszűnnek.",
+    "upgradePolicy": "Ha ingyenes csomagról frissít fizetős csomagra, a kártyáját azonnal terheljük, és a számlázási ciklus a frissítés napján kezdődik.",
+    "taxes": "Minden díj kizárja a adóhatóságok által kiszabott adókat, illetékeket vagy vámokat. Ha szükséges, mi gyűjtjük be ezeket az adókat az adóhatóság nevében, és továbbítjuk azokat. Ellenkező esetben Ön felelős minden adó, illeték vagy vám megfizetéséért.",
+    "refunds": "Minden vásárlás visszatérítés nélküli. Bármikor lemondhat bármely fizetős szolgáltatást a fiókjába való bejelentkezéssel. A fizetős előfizetések esetében a lemondás az aktuális fizetési időszak végén lép hatályba, kivéve, ha másként nincs jelölve.",
+    "cancellationTitle": "5. Lemondás és Megszüntetés",
+    "cancellationPolicy": "Ha a Szolgáltatást bármely fizetett időszak vége előtt lemondja, a lemondás azonnal hatályba lép, és nem számítunk fel további díjat. Az utolsó számlázási ciklusban fel nem használt időt nem arányosítjuk vissza automatikusan.",
+    "terminationRights": "Fenntartjuk a jogot, hogy bármikor bármilyen okból felfüggesszük vagy megszüntessük a fiókját, és megtagadjuk a Szolgáltatások jelenlegi vagy jövőbeli használatát. A felfüggesztés azt jelenti, hogy nem fog tudni hozzáférni a fiókjához vagy annak tartalmához. A megszüntetés továbbá a fiók törlését vagy a hozzáférés megszüntetését, valamint a fiókban lévő összes tartalom elvesztését és feladását eredményezi. Fenntartjuk a jogot, hogy bármikor bármilyen okból megtagadjuk a Szolgáltatások használatát bárki számára. Ezt a záradékot azért tartalmazza, mert statisztikailag nézve a Szolgáltatásokon lévő több százezer fiók közül legalább egy mindig valami aljas tevékenységet folytat.",
+    "abusePolicy": "A Vállalat alkalmazottjának vagy tisztségviselőjének verbális, fizikai, írásbeli vagy más visszaélése (beleértve a visszaélés vagy megtorlás fenyegetését) azonnali fiók megszüntetéshez vezethet.",
+    "submissionsTitle": "6. Beküldések",
+    "submissionsDescription": 'Elismeri és elfogadja, hogy minden olyan kérdés, megjegyzés, javaslat, ötlet, visszajelzés vagy egyéb információ ("Beküldések"), amelyet Ön nekünk nyújt a Weboldallal kapcsolatban, nem bizalmas, és kizárólagos tulajdonunkká válik. Kizárólagos jogokat birtokolunk, beleértve minden szellemi tulajdonjogot, és jogunkban áll ezeket a Beküldéseket korlátozás nélkül felhasználni és terjeszteni bármilyen törvényes célra, kereskedelmi vagy egyéb célból, elismerés vagy kompenzáció nélkül. Ezzel lemond minden erkölcsi jogáról az ilyen Beküldésekhez kapcsolódóan, és garantálja, hogy az ilyen Beküldések eredeti munkái, vagy jogosult ilyen Beküldések benyújtására. Elfogadja, hogy nem áll módunkban felelősséget vállalni semmilyen állítólagos vagy tényleges jogsértésért vagy tulajdonjog-visszaélésért, amely a Beküldéseivel kapcsolatos.',
+    "uptimeTitle": "7. Üzemidő és Biztonság",
+    "serviceAvailability": 'A Szolgáltatások használata kizárólag az Ön kockázatára történik. A Szolgáltatásokat "ahogy vannak" és "ahogy elérhetők" alapon nyújtjuk. A legtöbb Szolgáltatásunkhoz nem kínálunk szolgáltatási szintű megállapodásokat, de komolyan vesszük alkalmazásaink üzemidejét.',
+    "throttlingPolicy": "Fenntartjuk a jogot, hogy ritka esetekben, amikor egy felhasználó tevékenysége igazoltan negatívan befolyásolja a Szolgáltatás stabilitását és teljesítményét más felhasználók számára, ideiglenesen korlátozzuk vagy szabályozzuk a fiókhoz való hozzáférést. A legkritikusabb esetek kivételével mindig felvesszük Önnel a kapcsolatot, hogy megoldást találjunk, mielőtt intézkednénk.",
+    "dataSecurity": "Számos intézkedést teszünk az adatai védelme és biztonságának érdekében biztonsági mentésekkel, redundanciákkal és titkosítással. Kötelezővé tesszük az adattitkosítást a nyilvános interneten történő adatátvitel során.",
+    "thirdPartyVendors": "Harmadik féltől származó szállítókat és hosztelési partnereket használunk a Szolgáltatások működtetéséhez szükséges hardver, szoftver, hálózat, tárhely és kapcsolódó technológia biztosítására.",
+    "siteManagementTitle": "8. Weboldal Kezelése",
+    "siteManagementDescription": "Fenntartjuk a jogot, de nem a kötelezettséget, hogy: (1) figyeljük a Weboldalt a Szolgáltatási Feltételek megsértése szempontjából; (2) megfelelő jogi lépéseket tegyünk bárki ellen, aki véleményünk szerint megszegi a törvényt vagy a Szolgáltatási Feltételeket, beleértve, de nem kizárólagosan, az ilyen felhasználó bejelentését a hatóságoknak; (3) saját belátásunk szerint és korlátozás nélkül megtagadjuk, korlátozzuk a hozzáférést, csökkentjük az elérhetőséget vagy letiltjuk (a technológiailag lehetséges mértékben) bármely Ön által nyújtott Hozzájárulást vagy annak bármely részét; (4) saját belátásunk szerint és korlátozás, értesítés vagy felelősségvállalás nélkül eltávolítsuk a Weboldalról vagy más módon letiltsuk mindazon fájlokat és tartalmakat, amelyek mérete túlzott vagy bármilyen módon terhelik rendszerünket; és (5) egyébként a Weboldalt úgy kezeljük, hogy védjük jogainkat és tulajdonunkat, és elősegítsük a Weboldal megfelelő működését.",
+    "copyrightTitle": "9. Szerzői Jog és Tartalom Tulajdonjoga",
+    "copyrightCompliance": "A Szolgáltatásokon közzétett összes tartalomnak meg kell felelnie az USA szerzői jogi törvényeinek.",
+    "ipRights": "Nem igényelünk szellemi tulajdonjogot az Ön által a Szolgáltatásokhoz nyújtott anyagok felett. Az összes feltöltött anyag Öné marad.",
+    "contentModeration": "Nem végezünk előzetes tartalomellenőrzést, de fenntartjuk a jogot (de nem a kötelezettséget), hogy saját belátásunk szerint megtagadjunk vagy eltávolítsunk bármilyen, a Szolgáltatáson keresztül elérhető tartalmat.",
+    "trademarkProtection": "A Szolgáltatások nevei, megjelenése és hangulata a Vállalat szerzői jogi védelme alatt áll (copyright©). Minden jog fenntartva. A HTML, CSS, JavaScript vagy vizuális tervezési elemek bármely részének megkettőzése, másolása vagy újrafelhasználása csak a Vállalat írásos engedélyével lehetséges. Engedélyt kell kérnie a Vállalat logójának vagy bármely Szolgáltatás logójának promóciós célú használatához. Kérjük, küldjön e-mailt a logóhasználati kérelmekről. Fenntartjuk a jogot, hogy visszavonjuk ezt az engedélyt, ha megszegi ezeket a Szolgáltatási Feltételeket.",
+    "prohibitedExploitation": "Ön vállalja, hogy nem sokszorosítja, megkettőzi, másolja, eladja, továbbértékesíti vagy kihasználja a Szolgáltatások bármely részét, a Szolgáltatások használatát vagy hozzáférését a Vállalat írásos engedélye nélkül.",
+    "impersonationProhibition": "Nem módosíthat más weboldalt úgy, hogy hamisan azt sugallja, hogy kapcsolatban áll a Szolgáltatásokkal vagy a Vállalattal.",
+    "dmcaPolicy": "Tiszteljük mások szellemi tulajdonjogait. Ha úgy véli, hogy a Weboldalon vagy azon keresztül elérhető bármely anyag megsérti Ön által birtokolt vagy ellenőrzött szerző",
     "prohibitedActivitiesTitle": "10. Tiltott tevékenységek",
-    "generalProhibition": "1. A webhelyet csak arra a célra szabad elérnie vagy használnia, amelyre mi elérhetővé tesszük. A webhely nem használható olyan kereskedelmi vállalkozásokhoz kapcsolódóan, amelyeket kifejezetten nem támogatunk vagy nem hagyunk jóvá.",
-    "userObligations": "2. A webhely felhasználójaként Ön vállalja, hogy nem fog:",
-    "dataScraping": "3. Rendszeresen adatokat vagy egyéb tartalmakat kinyerni a webhelyről gyűjtemény, összeállítás, adatbázis vagy könyvtár létrehozására vagy összeállítására, közvetlenül vagy közvetve, írásos engedélyünk nélkül.",
-    "fraud": "4. Megtéveszteni, becsapni vagy félrevezetni minket és más felhasználókat, különösen érzékeny fiókinformációk (például felhasználói jelszavak) megszerzésére tett kísérletek során.",
-    "securityInterference": "5. Megkerülni, letiltani vagy egyéb módon beleavatkozni a webhely biztonsági funkcióiba, beleértve azokat a funkciókat, amelyek megakadályozzák vagy korlátozzák bármely tartalom használatát vagy másolását, vagy korlátozzák a webhely és/vagy a benne foglalt tartalom használatát.",
-    "defamation": "6. Megszégyeníteni, befeketíteni vagy egyéb módon károsítani minket és/vagy a webhelyet a mi véleményünk szerint.",
-    "harassment": "7. Bármilyen, a webhelyről szerzett információt zaklatásra, bántalmazásra vagy más személy megkárosítására használni.",
-    "supportAbuse": "8. Támogatási szolgáltatásainkat helytelenül használni vagy hamis visszaélések vagy helytelen magatartás jelentését benyújtani.",
-    "legalCompliance": "9. A webhelyet bármilyen alkalmazandó törvénynek vagy rendeletnek ellentmondó módon használni.",
-    "framingProhibition": "10. Engedély nélkül keretbe foglalni vagy hivatkozni a webhelyre.",
-    "malware": "11. Feltölteni vagy továbbítani (vagy megkísérelni feltölteni vagy továbbítani) vírusokat, trójai lovakat vagy más anyagot, beleértve a nagybetűk túlzott használatát és spammelést (ismétlődő szöveg folyamatos közzététele), amely zavarja bármely fél akadálytalan használatát és élvezetét a webhelyen, vagy módosítja, károsítja, megzavarja, megváltoztatja vagy befolyásolja a webhely használatát, funkcióit, működését vagy karbantartását.",
-    "automation": "12. Rendszer automatizált használatát folytatni, például szkriptek használatával megjegyzéseket vagy üzeneteket küldeni, vagy bármilyen adatbányászatot, robotokat vagy hasonló adatgyűjtő és -kinyerő eszközöket használni.",
-    "copyrightRemoval": "13. A szerzői jogi vagy egyéb tulajdonjogi nyilatkozatot törölni bármely tartalomból.",
-    "impersonation": "14. Megkísérelni másik felhasználót vagy személyt utánzani, vagy másik felhasználó felhasználónevét használni.",
-    "spyware": '15. Feltölteni vagy továbbítani (vagy megkísérelni feltölteni vagy továbbítani) olyan anyagot, amely passzív vagy aktív információgyűjtő vagy -továbbító mechanizmusként működik, beleértve, de nem kizárólagosan, tiszta grafikus csereformátumokat (\"gif\"), 1×1 pixeleket, webhibákat, sütiket vagy más hasonló eszközöket (amelyeket néha \"kémprogramoknak\" vagy \"passzív gyűjtő mechanizmusoknak\" vagy \"pcms\"-nek neveznek).',
-    "disruption": "16. Zavarni, megzavarni vagy indokolatlan terhet jelenteni a webhelyen vagy a hozzá kapcsolódó hálózatokon vagy szolgáltatásokon.",
-    "employeeHarassment": "17. Zaklatni, bosszantani, megfélemlíteni vagy fenyegetni bármely munkatársunkat vagy ügynökünket, aki a webhely bármely részét Önnek nyújtja.",
-    "accessCircumvention": "18. Megkísérelni megkerülni a webhelyen található, a hozzáférés megakadályozására vagy korlátozására szolgáló intézkedéseket, vagy a webhely bármely részét.",
-    "codeCopying": "19. Másolni vagy módosítani a webhely szoftverét, beleértve, de nem kizárólagosan a Flash, PHP, HTML, JavaScript vagy más kódot.",
-    "reverseEngineering": "20. Az alkalmazandó jogszabályokban meghatározott kivételektől eltekintve visszafejteni, dekompilálni, szétszedni vagy reverse engineerelni a webhely részét képező vagy annak bármely részét alkotó szoftvereket.",
-    "bots": "21. A szabványos keresőmotor vagy internetböngésző használatából eredő kivételektől eltekintve használni, indítani, fejleszteni vagy terjeszteni bármilyen automatizált rendszert, beleértve, de nem kizárólagosan pókokat, robotokat, csaló segédprogramokat, adatkaparókat vagy offline olvasókat, amelyek hozzáférnek a webhelyhez, vagy bármilyen jogosulatlan szkriptet vagy más szoftvert használni vagy indítani.",
-    "buyingAgents": "22. Vásárlási ügynököt vagy beszerzési ügynököt használni vásárlások végrehajtására a webhelyen.",
-    "unauthorizedUse": "23. A webhely jogosulatlan használatát folytatni, beleértve felhasználónevek és/vagy e-mail címek gyűjtését elektronikus vagy más eszközökkel kéretlen e-mailek küldése céljából, vagy felhasználói fiókok létrehozását automatizált eszközökkel vagy hamis indokokkal.",
-    "competition": "24. A webhelyet bármilyen versenyre való törekvés részeként használni velünk szemben, vagy a webhelyet és/vagy a tartalmat bármilyen bevételszerző vállalkozás vagy kereskedelmi vállalkozás céljára használni.",
-    "advertising": "25. A webhelyet áruk vagy szolgáltatások hirdetésére vagy értékesítésére felkínálására használni.",
-    "profileTransfer": "26. Profilját eladni vagy más módon átruházni.",
-    "featuresTitle": "27. 11. Funkciók és hibák",
-    "featuresDescription": "28. Szolgáltatásainkat gondosan tervezzük saját tapasztalataink és azoknak az ügyfeleknek a tapasztalatai alapján, akik időt és visszajelzést osztanak meg velünk. Azonban nincs olyan szolgáltatás, amely mindenkinek tetszik. Nem garantáljuk, hogy szolgáltatásaink megfelelnek az Ön konkrét követelményeinek vagy elvárásainak.",
-    "bugsDescription": "29. Az összes funkciónkat teszteljük a kiadásuk előtt. Mint minden szoftvernél, szolgáltatásainkban elkerülhetetlenül előfordulnak hibák. Nyomon követjük a nekünk bejelentett hibákat és dolgozunk rajtuk, különösen a biztonsággal vagy adatvédelemmel kapcsolatosakon. Nem minden bejelentett hibát javítunk ki, és nem garantáljuk a teljesen hibamentes szolgáltatásokat.",
-    "correctionsTitle": "30. 12. Javítások",
-    "informationAccuracy": "31. Előfordulhat, hogy a webhelyen található információk tartalmaznak nyomdai hibákat, pontatlanságokat vagy hiányosságokat, beleértve leírásokat, árazást, rendelkezésre állást és különféle egyéb információkat. Fenntartjuk a jogot, hogy bármilyen hibát, pontatlanságot vagy hiányosságot kijavítsunk, és a webhelyen található információkat bármikor megváltoztassuk vagy frissítsük, előzetes értesítés nélkül.",
-    "siteAvailability": "32. Nem garantáljuk, hogy a webhely mindig elérhető lesz. Hardveres, szoftveres vagy egyéb problémákat tapasztalhatunk, vagy karbantartást kell végeznünk a webhellyel kapcsolatban, ami megszakításokat, késéseket vagy hibákat okozhat. Fenntartjuk a jogot, hogy a webhelyet bármikor vagy bármilyen okból megváltoztassuk, felülvizsgáljuk, frissítsük, felfüggesszük, megszüntessük vagy egyéb módon módosítsuk, értesítés nélkül. Ön elfogadja, hogy semmilyen felelősséget nem vállalunk azért, ha a webhely elérhetetlensége vagy megszüntetése miatt nem tudja elérni vagy használni a webhelyet, és ezért kárt vagy kellemetlenséget szenved. A Szolgáltatási Feltételek semmilyen rendelkezése nem értelmezhető úgy, hogy kötelez bennünket a webhely fenntartására és támogatására, vagy az ahhoz kapcsolódó javítások, frissítések vagy kiadások szolgáltatására.",
-    "userDataTitle": "33. 13. Felhasználói adatok",
-    "userDataDescription": "34. Bizonyos adatokat, amelyeket Ön továbbít a webhelyre, a webhely teljesítményének kezelése, valamint a webhely használatával kapcsolatos adatok céljából tárolunk. Bár rendszeresen biztonsági másolatot készítünk az adatokról, Ön kizárólagos felelőssége minden olyan adatért, amelyet Ön továbbít, vagy amely bármely, a webhely használatával végzett tevékenységéhez kapcsolódik. Ön elfogadja, hogy semmilyen felelősséget nem vállalunk az ilyen adatok elvesztéséért vagy sérüléséért, és ezzel lemond minden olyan jogáról, amely az ilyen adatok elvesztése vagy sérülése miatt ellenünk érvényesíthető.",
-    "privacyPolicyTitle": "35. 14. Adatvédelmi irányelv",
-    "privacyPolicyDescription": "36. Fontosnak tartjuk az adatvédelmet és -biztonságot. Kérjük, tekintse át Adatvédelmi irányelvünket. A webhely használatával Ön elfogadja, hogy köteles betartani Adatvédelmi irányelvünket, amely részét képezi ezeknek a Szolgáltatási Feltételeknek. Tájékoztatjuk, hogy a webhely az Egyesült Államokban található. Ha olyan világrégióból éri el a webhelyet, ahol a személyes adatok gyűjtésére, használatára vagy nyilvánosságra hozatalára vonatkozó törvények vagy egyéb követelmények eltérnek az Egyesült Államokban alkalmazandóktól, akkor a webhely további használatával Ön az adatait az Egyesült Államokba helyezi át, és hozzájárul, hogy adatait az Egyesült Államokban tárolják és dolgozzák fel.",
-    "liabilityTitle": "37. 15. Felelősség",
-    "liabilityIntroduction": "38. A felelősséget ezekben a Feltételekben többször is említjük, de itt összefoglaljuk egyetlen szakaszban:",
-    "liabilityWaiver": "39. Ön kifejezetten megérti és elfogadja, hogy a Vállalat semmilyen jogi vagy egyéb felelősséggel nem tartozik Ön vagy bármely harmadik fél felé közvetlen, közvetett, véletlen, elvesztett nyereség, különleges, következményes, büntető vagy példaként szolgáló károkért, beleértve, de nem kizárólagosan a nyereség, jóindulat, használat, adatok vagy egyéb immateriális veszteségek miatti károkat (még akkor is, ha a Vállalatot értesítették az ilyen károk lehetőségéről), amelyek a következőkből erednek: (1) a Szolgáltatások használata vagy az azok használatának képtelensége; (2) a tartalom és anyagok hibái, tévedései vagy pontatlanságai; (3) bármilyen természetű személyi sérülés vagy vagyoni kár, amely a webhely eléréséből és használatából ered; (4) a pótlólagos áruk és szolgáltatások beszerzésének költsége, amely a Szolgáltatásokon keresztül vásárolt vagy beszerzett árukból, adatokból, információk",
+    "generalProhibition": "A webhelyet csak arra a célra szabad elérnie vagy használnia, amelyre mi elérhetővé tesszük. A webhely nem használható olyan kereskedelmi vállalkozásokhoz kapcsolódóan, amelyeket kifejezetten nem támogatunk vagy nem hagyunk jóvá.",
+    "userObligations": "A webhely felhasználójaként Ön vállalja, hogy nem fog:",
+    "dataScraping": "Rendszeresen adatokat vagy egyéb tartalmakat kinyerni a webhelyről gyűjtemény, összeállítás, adatbázis vagy könyvtár létrehozására vagy összeállítására, közvetlenül vagy közvetve, írásos engedélyünk nélkül.",
+    "fraud": "Megtéveszteni, becsapni vagy félrevezetni minket és más felhasználókat, különösen érzékeny fiókinformációk (például felhasználói jelszavak) megszerzésére tett kísérletek során.",
+    "securityInterference": "Megkerülni, letiltani vagy egyéb módon beleavatkozni a webhely biztonsági funkcióiba, beleértve azokat a funkciókat, amelyek megakadályozzák vagy korlátozzák bármely tartalom használatát vagy másolását, vagy korlátozzák a webhely és/vagy a benne foglalt tartalom használatát.",
+    "defamation": "Megszégyeníteni, befeketíteni vagy egyéb módon károsítani minket és/vagy a webhelyet a mi véleményünk szerint.",
+    "harassment": "Bármilyen, a webhelyről szerzett információt zaklatásra, bántalmazásra vagy más személy megkárosítására használni.",
+    "supportAbuse": "Támogatási szolgáltatásainkat helytelenül használni vagy hamis visszaélések vagy helytelen magatartás jelentését benyújtani.",
+    "legalCompliance": "A webhelyet bármilyen alkalmazandó törvénynek vagy rendeletnek ellentmondó módon használni.",
+    "framingProhibition": "Engedély nélkül keretbe foglalni vagy hivatkozni a webhelyre.",
+    "malware": "Feltölteni vagy továbbítani (vagy megkísérelni feltölteni vagy továbbítani) vírusokat, trójai lovakat vagy más anyagot, beleértve a nagybetűk túlzott használatát és spammelést (ismétlődő szöveg folyamatos közzététele), amely zavarja bármely fél akadálytalan használatát és élvezetét a webhelyen, vagy módosítja, károsítja, megzavarja, megváltoztatja vagy befolyásolja a webhely használatát, funkcióit, működését vagy karbantartását.",
+    "automation": "Rendszer automatizált használatát folytatni, például szkriptek használatával megjegyzéseket vagy üzeneteket küldeni, vagy bármilyen adatbányászatot, robotokat vagy hasonló adatgyűjtő és -kinyerő eszközöket használni.",
+    "copyrightRemoval": "A szerzői jogi vagy egyéb tulajdonjogi nyilatkozatot törölni bármely tartalomból.",
+    "impersonation": "Megkísérelni másik felhasználót vagy személyt utánzani, vagy másik felhasználó felhasználónevét használni.",
+    "spyware": 'Feltölteni vagy továbbítani (vagy megkísérelni feltölteni vagy továbbítani) olyan anyagot, amely passzív vagy aktív információgyűjtő vagy -továbbító mechanizmusként működik, beleértve, de nem kizárólagosan, tiszta grafikus csereformátumokat (\"gif\"), 1×1 pixeleket, webhibákat, sütiket vagy más hasonló eszközöket (amelyeket néha \"kémprogramoknak\" vagy \"passzív gyűjtő mechanizmusoknak\" vagy \"pcms\"-nek neveznek).',
+    "disruption": "Zavarni, megzavarni vagy indokolatlan terhet jelenteni a webhelyen vagy a hozzá kapcsolódó hálózatokon vagy szolgáltatásokon.",
+    "employeeHarassment": "Zaklatni, bosszantani, megfélemlíteni vagy fenyegetni bármely munkatársunkat vagy ügynökünket, aki a webhely bármely részét Önnek nyújtja.",
+    "accessCircumvention": "Megkísérelni megkerülni a webhelyen található, a hozzáférés megakadályozására vagy korlátozására szolgáló intézkedéseket, vagy a webhely bármely részét.",
+    "codeCopying": "Másolni vagy módosítani a webhely szoftverét, beleértve, de nem kizárólagosan a Flash, PHP, HTML, JavaScript vagy más kódot.",
+    "reverseEngineering": "Az alkalmazandó jogszabályokban meghatározott kivételektől eltekintve visszafejteni, dekompilálni, szétszedni vagy reverse engineerelni a webhely részét képező vagy annak bármely részét alkotó szoftvereket.",
+    "bots": "A szabványos keresőmotor vagy internetböngésző használatából eredő kivételektől eltekintve használni, indítani, fejleszteni vagy terjeszteni bármilyen automatizált rendszert, beleértve, de nem kizárólagosan pókokat, robotokat, csaló segédprogramokat, adatkaparókat vagy offline olvasókat, amelyek hozzáférnek a webhelyhez, vagy bármilyen jogosulatlan szkriptet vagy más szoftvert használni vagy indítani.",
+    "buyingAgents": "Vásárlási ügynököt vagy beszerzési ügynököt használni vásárlások végrehajtására a webhelyen.",
+    "unauthorizedUse": "A webhely jogosulatlan használatát folytatni, beleértve felhasználónevek és/vagy e-mail címek gyűjtését elektronikus vagy más eszközökkel kéretlen e-mailek küldése céljából, vagy felhasználói fiókok létrehozását automatizált eszközökkel vagy hamis indokokkal.",
+    "competition": "A webhelyet bármilyen versenyre való törekvés részeként használni velünk szemben, vagy a webhelyet és/vagy a tartalmat bármilyen bevételszerző vállalkozás vagy kereskedelmi vállalkozás céljára használni.",
+    "advertising": "A webhelyet áruk vagy szolgáltatások hirdetésére vagy értékesítésére felkínálására használni.",
+    "profileTransfer": "Profilját eladni vagy más módon átruházni.",
+    "featuresTitle": "11. Funkciók és hibák",
+    "featuresDescription": "Szolgáltatásainkat gondosan tervezzük saját tapasztalataink és azoknak az ügyfeleknek a tapasztalatai alapján, akik időt és visszajelzést osztanak meg velünk. Azonban nincs olyan szolgáltatás, amely mindenkinek tetszik. Nem garantáljuk, hogy szolgáltatásaink megfelelnek az Ön konkrét követelményeinek vagy elvárásainak.",
+    "bugsDescription": "Az összes funkciónkat teszteljük a kiadásuk előtt. Mint minden szoftvernél, szolgáltatásainkban elkerülhetetlenül előfordulnak hibák. Nyomon követjük a nekünk bejelentett hibákat és dolgozunk rajtuk, különösen a biztonsággal vagy adatvédelemmel kapcsolatosakon. Nem minden bejelentett hibát javítunk ki, és nem garantáljuk a teljesen hibamentes szolgáltatásokat.",
+    "correctionsTitle": "12. Javítások",
+    "informationAccuracy": "Előfordulhat, hogy a webhelyen található információk tartalmaznak nyomdai hibákat, pontatlanságokat vagy hiányosságokat, beleértve leírásokat, árazást, rendelkezésre állást és különféle egyéb információkat. Fenntartjuk a jogot, hogy bármilyen hibát, pontatlanságot vagy hiányosságot kijavítsunk, és a webhelyen található információkat bármikor megváltoztassuk vagy frissítsük, előzetes értesítés nélkül.",
+    "siteAvailability": "Nem garantáljuk, hogy a webhely mindig elérhető lesz. Hardveres, szoftveres vagy egyéb problémákat tapasztalhatunk, vagy karbantartást kell végeznünk a webhellyel kapcsolatban, ami megszakításokat, késéseket vagy hibákat okozhat. Fenntartjuk a jogot, hogy a webhelyet bármikor vagy bármilyen okból megváltoztassuk, felülvizsgáljuk, frissítsük, felfüggesszük, megszüntessük vagy egyéb módon módosítsuk, értesítés nélkül. Ön elfogadja, hogy semmilyen felelősséget nem vállalunk azért, ha a webhely elérhetetlensége vagy megszüntetése miatt nem tudja elérni vagy használni a webhelyet, és ezért kárt vagy kellemetlenséget szenved. A Szolgáltatási Feltételek semmilyen rendelkezése nem értelmezhető úgy, hogy kötelez bennünket a webhely fenntartására és támogatására, vagy az ahhoz kapcsolódó javítások, frissítések vagy kiadások szolgáltatására.",
+    "userDataTitle": "13. Felhasználói adatok",
+    "userDataDescription": "Bizonyos adatokat, amelyeket Ön továbbít a webhelyre, a webhely teljesítményének kezelése, valamint a webhely használatával kapcsolatos adatok céljából tárolunk. Bár rendszeresen biztonsági másolatot készítünk az adatokról, Ön kizárólagos felelőssége minden olyan adatért, amelyet Ön továbbít, vagy amely bármely, a webhely használatával végzett tevékenységéhez kapcsolódik. Ön elfogadja, hogy semmilyen felelősséget nem vállalunk az ilyen adatok elvesztéséért vagy sérüléséért, és ezzel lemond minden olyan jogáról, amely az ilyen adatok elvesztése vagy sérülése miatt ellenünk érvenyesíthető.",
+    "privacyPolicyTitle": "14. Adatvédelmi irányelv",
+    "privacyPolicyDescription": "Fontosnak tartjuk az adatvédelmet és -biztonságot. Kérjük, tekintse át Adatvédelmi irányelvünket. A webhely használatával Ön elfogadja, hogy köteles betartani Adatvédelmi irányelvünket, amely részét képezi ezeknek a Szolgáltatási Feltételeknek. Tájékoztatjuk, hogy a webhely az Egyesült Államokban található. Ha olyan világrégióból éri el a webhelyet, ahol a személyes adatok gyűjtésére, használatára vagy nyilvánosságra hozatalára vonatkozó törvények vagy egyéb követelmények eltérnek az Egyesült Államokban alkalmazandóktól, akkor a webhely további használatával Ön az adatait az Egyesült Államokba helyezi át, és hozzájárul, hogy adatait az Egyesült Államokban tárolják és dolgozzák fel.",
+    "liabilityTitle": "15. Felelősség",
+    "liabilityIntroduction": "A felelősséget ezekben a Feltételekben többször is említjük, de itt összefoglaljuk egyetlen szakaszban:",
+    "liabilityWaiver": "Ön kifejezetten megérti és elfogadja, hogy a Vállalat semmilyen jogi vagy egyéb felelősséggel nem tartozik Ön vagy bármely harmadik fél felé közvetlen, közvetett, véletlen, elvesztett nyereség, különleges, következményes, büntető vagy példaként szolgáló károkért, beleértve, de nem kizárólagosan a nyereség, jóindulat, használat, adatok vagy egyéb immateriális veszteségek miatti károkat (még akkor is, ha a Vállalatot értesítették az ilyen károk lehetőségéről), amelyek a következőkből erednek: (1) a Szolgáltatások használata vagy az azok használatának képtelensége; (2) a tartalom és anyagok hibái, tévedései vagy pontatlanságai; (3) bármilyen természetű személyi sérülés vagy vagyoni kár, amely a webhely eléréséből és használatából ered; (4) a pótlólagos áruk és szolgáltatások beszerzésének költsége, amely a Szolgáltatásokon keresztül vásárolt vagy beszerzett árukból, adatokból, információk",
     "miscellaneousTitle": "16. Egyéb rendelkezések",
     "miscellaneousDescription": "Ezek a Felhasználási Feltételek és bármely általunk a Weboldalon vagy a Weboldallal kapcsolatban közzétett szabályzatok vagy üzemeltetési szabályok képezik a teljes megállapodást és egyetértést Ön és közöttünk. Az, hogy nem gyakoroljuk vagy érvényesítjük ezen Felhasználási Feltételek bármely jogát vagy rendelkezését, nem jelenti ezen jog vagy rendelkezés lemondását. Ezek a Felhasználási Feltételek a jogszabályok által megengedett legteljesebb mértékben érvényesülnek. Jogainkat és kötelezettségeinket bármikor átruházhatjuk másokra, részben vagy egészben. Nem vagyunk felelősek vagy kötelezettek bármilyen veszteségért, kárért, késedelemért vagy mulasztásért, amely ésszerű kontrollon kívüli okból ered. Ha ezen Felhasználási Feltételek bármely rendelkezése vagy rendelkezésének része jogszerűtlennek, semmisnek vagy végrehajthatatlannak minősül, az adott rendelkezés vagy rendelkezésrész elválaszthatónak tekintendő ezektől a Felhasználási Feltételektől, és nem érinti a fennmaradó rendelkezések érvényességét és végrehajthatóságát. Ezen Felhasználási Feltételek vagy a Weboldal használata következtében nem jön létre közös vállalkozás, partnerség, munkavállalói vagy képviseleti viszony Ön és közöttünk. Ön beleegyezik abba, hogy ezeket a Felhasználási Feltételeket nem lehet ellenünk értelmezni azon okból, hogy mi fogalmaztuk meg őket. Ezennel lemond minden olyan védekezésről, amellyel rendelkezhet ezen Felhasználási Feltételek elektronikus formája és a felek általi aláírás hiánya miatt.",
     "contactTitle": "17. Kapcsolat",

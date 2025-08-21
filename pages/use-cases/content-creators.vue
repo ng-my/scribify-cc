@@ -1074,4 +1074,7 @@ details summary::after {
 details[open] summary::after {
   transform: rotate(45deg);
 }
+details summary:hover {
+  color: var(--primary);
+}
 </style>

@@ -203,7 +203,7 @@ let message = {
         dialogTitle: "Transskriber en online medie",
         title: "Indsæt links",
         label:
-          "Indsæt dit video- eller lydlink fra: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram og flere platforme...",
+          "Indsæt dit video- eller audiolink fra: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram og flere platforme...",
         confirm: "Tilføj",
         cancel: "Annuller",
         // 请输入正确的链接
@@ -212,9 +212,9 @@ let message = {
         linkName: "Link"
       },
       file: {
-        orTitle: "Transskriber en online medie",
-        dialogTitle: "Transskriber filer",
-        tip1: "Træk filer hertil eller klik for at gennemse",
+        orTitle: "Transskriber fra URL",
+        dialogTitle: "Upload filer til transskribering",
+        tip1: "Træk filer hertil, eller klik for at gennemse",
         tip2: "Klik for at gennemse",
         or: "eller",
         supported: "Understøttede formater"
@@ -233,7 +233,7 @@ let message = {
       confirm: "Transskriber",
       return: "Tilbage",
       addMore: "Tilføj flere",
-      language: "Mediesprog",
+      language: "Vælg sprog",
       failed: "Mislykket",
       tooLarge: "Filen overskrider grænsen (5 GB).",
       linkUpload: "Uploader",
@@ -1094,7 +1094,7 @@ let message = {
       try_now: "Prøv Det Nu",
       no_signup: "Ingen Registrering Kræves",
       experience_unltd: "Oplev virkelig ubegrænset transskription",
-      upload_50: "Upload op til 50 filer ad gangen, lige her",
+      upload_50: "Upload op til 50 filer ad gangen, lige her.",
       no_limits: "Avanceret",
       no_surprises: "AI-transskription",
       transparency: "Ingen Skjulte Begrænsninger, Ingen Overraskelser - Mens andre stille reducerer dine minutter eller skjuler grænser i småt, tror vi på radikal gennemsigtighed",
@@ -2302,8 +2302,7 @@ let message = {
             points: {
               searchAll: "5-minutters behandlingstid for 1-times interviews",
               wordTimestamps: "Prioriteret behandling af presserende historier",
-              jumpToMoments: "Realtids sporing af fremskridt",
-              exportCitations: "Eksportér med citater"
+              jumpToMoments: "Realtids sporing af fremskridt"
             },
             searchDemo: {
               placeholder: "5 min",
@@ -2321,8 +2320,7 @@ let message = {
             points: {
               accuracyGuarantee: "96% nøjagtighedsgaranti",
               handlesAccents: "Håndterer teknisk terminologi",
-              smartPunctuation: "Perfekt taleridentifikation",
-              speakerIdentification: "Taleridentifikation"
+              smartPunctuation: "Perfekt taleridentifikation"
             },
             visual: {
               accuracy: "96%",
@@ -2572,23 +2570,23 @@ let message = {
               "titleHighlight": "Besvaret",
               subtitle: "Alt hvad du behøver at vide om at transskribere videoer fra forskellige platforme",
               "questions": [
-                {
-                  "question": "Q: Hvordan transskriberer jeg en YouTube-video med NeverCap?",
-                  "answer": "Det er enkelt. Find bare den YouTube-video, du vil transskribere, kopier dens URL, og indsæt den i vores app. Vores AI vil automatisk hente videoen og levere en fuld teksttransskription på få minutter."
-                },
-                {
-                  "question": "Q: Hvad er den bedste måde at transskribere en Facebook-video til tekst?",
-                  "answer": "Den nemmeste måde er at bruge et direkte link. Kopier URL'en for Facebook-videoen, og vores platform håndterer resten, konverterer talen til tekst med op til 96% nøjagtighed og sparer dig for manuel transskription."
-                },
-                {
-                  "question": "Q: Kan jeg transskribere TikTok- og Instagram-videoer?",
-                  "answer": "Absolut. Vi understøtter transskription for både TikTok- og Instagram-videoer. Dette er perfekt til indholdsskabere, der vil genbruge deres kortformatsvideoindhold til blogindlæg, artikler eller tekstbaserede sociale medieopdateringer."
-                },
-                {
-                  "question": "Q: Hvordan transskriberer jeg en Vimeo-video til tekst?",
-                  "answer": "Transskription af Vimeo-videoer er lige så nemt som på enhver anden platform. Bare kopier Vimeo-videoens URL og indsæt den i NeverCap. Vores AI behandler videoen og genererer en præcis teksttransskription, som du kan downloade i flere formater."
-                }
-              ]
+                    {
+                      "question": "Q: Hvordan transskriberer jeg en YouTube-video med NeverCap?",
+                      "answer": "Det er enkelt. Find bare den YouTube-video, du vil transskribere, kopier dens URL, og indsæt den i vores app. Vores AI vil automatisk hente videoen og levere en fuld teksttransskription på få minutter."
+                    },
+                    {
+                      "question": "Q: Hvad er den bedste måde at transskribere en Facebook-video til tekst?",
+                      "answer": "Den nemmeste måde er at bruge et direkte link. Kopier URL'en for Facebook-videoen, og vores platform håndterer resten, konverterer talen til tekst med op til 96% nøjagtighed og sparer dig for manuel transskription."
+                    },
+                    {
+                      "question": "Q: Kan jeg transskribere TikTok- og Instagram-videoer?",
+                      "answer": "Absolut. Vi understøtter transskription for både TikTok- og Instagram-videoer. Dette er perfekt til indholdsskabere, der vil genbruge deres kortformatsvideoindhold til blogindlæg, artikler eller tekstbaserede sociale medieopdateringer."
+                    },
+                    {
+                      "question": "Q: Hvordan transskriberer jeg en Vimeo-video til tekst?",
+                      "answer": "Transskription af Vimeo-videoer er lige så nemt som på enhver anden platform. Bare kopier Vimeo-videoens URL og indsæt den i NeverCap. Vores AI behandler videoen og genererer en præcis teksttransskription, som du kan downloade i flere formater."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2677,7 +2675,19 @@ let message = {
         problemTitle2: "ForskningsTransskriptionsProblemet",
         title: "The",
         useCasesTitle2: "Enhver Forskningsmetode",
-        testimonialTitle2: "Førende Forskere"
+        testimonialTitle2: "Førende Forskere",
+        feature1TitleHl: "Hele Undersøgelsen",
+        feature1TitlePost: "i én omgang",
+        feature2TitleHl: "Fokusgrupper",
+        feature2TitlePost: "Hver Gang",
+        feature3TitleHl: "96% Nøjagtighed",
+        feature4TitleHl: "Sikkerhed",
+        testimonialText2Hl: "200 timer",
+        testimonialText3: "af fokusgruppeoptagelser fra vores samfundssundhedsundersøgelse. Andre tjenester bad os vælge hvilke sessioner der skulle transskriberes på grund af omkostningerne. NeverCap lod os behandle",
+        testimonialText4Hl: "alt i løbet af en weekend",
+        testimonialText5: ". 20-talshøjttaleridentifikationen fungerede faktisk - selv under vores mest rodede diskussioner hvor alle talte på én gang. Dette værktøj har",
+        testimonialText6Hl: "helt ændret",
+        testimonialText7: "hvordan vi håndterer kvalitative data."
     },
     BusinessTeams: {
       heroBadge: "Til Forretningshold",
@@ -3046,7 +3056,7 @@ let message = {
             },
             {
               "label": "Kontakt os",
-              "value": ["email", "Support tilgængelig 24/7"]
+              "value": ["Email", "Support tilgængelig 24/7"]
             }
           ]
     },

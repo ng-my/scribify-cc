@@ -197,7 +197,7 @@ let message = {
         },
         speaker: {
           content:
-            "Puhujien tunnistuksessa tiedostojen enimmäiskesto on 3 tuntia. Poista valinta kohdasta '{text}'."
+            "Puhujien tunnistuksessa tiedostojen pituus on rajoitettu 3 tuntiin. Poista valinta kohdasta '{text}'."
         }
       }
     },
@@ -206,7 +206,7 @@ let message = {
         dialogTitle: "Tekstitä verkkomedia",
         title: "Liitä linkit",
         label:
-          "Liitä videolinkkisi tai äänilinkkisi palveluista: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram ja muut...",
+          "Liitä videon tai äänen linkki esimerkiksi osoitteesta: YouTube, Facebook, X, Dropbox, Google Drive, Vimeo, TikTok, Instagram tai muilta alustoilta...",
         confirm: "Lisää",
         cancel: "Peruuta",
         errorTitle:
@@ -214,12 +214,12 @@ let message = {
         linkName: "Linkki"
       },
       file: {
-        orTitle: "Tekstitä verkkomedia",
-        dialogTitle: "Tekstitä tiedostoja",
+        orTitle: "Transkriptio URL-osoitteesta",
+        dialogTitle: "Lataa tiedostot litteroitavaksi",
         tip1: "Vedä tiedostot tähän tai napsauta selataksesi",
-        tip2: "Napsauta selataksesi",
+        tip2: "Klikkaa selataksesi",
         or: "tai",
-        supported: "Tuetut tiedostomuodot"
+        supported: "Tuetut muodot"
       },
       del: {
         title: "Varoitus",
@@ -235,7 +235,7 @@ let message = {
       confirm: "Tekstitä",
       return: "Palaa",
       addMore: "Lisää lisää",
-      language: "Median kieli",
+      language: "Valitse kieli",
       failed: "Epäonnistui",
       tooLarge: "Tiedosto ylittää rajan (5 Gt).",
       linkUpload: "Ladataan",
@@ -252,7 +252,7 @@ let message = {
       },
       maxFileNum: "Tiedostojen määrä ei voi ylittää {num}.",
       speaker: "Tunnista puhujat",
-      speakerLabel: "Havaise puhuja automaattisesti",
+      speakerLabel: "Tunnista puhuja automaattisesti",
       guest: {
         transcribe: "Litteroi",
         file: "Tiedosto",
@@ -1094,7 +1094,7 @@ let message = {
       try_now: "Kokeile nyt",
       no_signup: "Ei rekisteröitymistä vaadita",
       experience_unltd: "Koe todella rajaton tekstitys",
-      upload_50: "Lähetä jopa 50 tiedostoa kerralla, tästä",
+      upload_50: "Lähetä jopa 50 tiedostoa kerralla, tästä.",
       no_limits: "Edistynyt",
       no_surprises: "Tekoälytekstitys",
       transparency: "Ei enää piilotettuja rajoja, ei enää yllätyksiä - Kun toiset hiljaa vähentävät minuuttejasi tai piilottavat rajat pienellä präntillä, uskomme radikaaliin läpinäkyvyyteen",
@@ -2302,8 +2302,7 @@ let message = {
             points: {
               searchAll: "5 minuutin käsittelyaika 1 tunnin haastatteluille",
               wordTimestamps: "Etusijakäsittely kiireellisille tarinoille",
-              jumpToMoments: "Reaaliaikainen edistymisen seuranta",
-              exportCitations: "Vie viittausten kanssa"
+              jumpToMoments: "Reaaliaikainen edistymisen seuranta"
             },
             searchDemo: {
               placeholder: "5min",
@@ -2321,8 +2320,7 @@ let message = {
             points: {
               accuracyGuarantee: "96 % tarkkuustakuu",
               handlesAccents: "Käsittelee teknistä terminologiaa",
-              smartPunctuation: "Täydellinen puhujan tunnistus",
-              speakerIdentification: "Kaiuttimen tunnistus"
+              smartPunctuation: "Täydellinen puhujan tunnistus"
             },
             visual: {
               accuracy: "96 %",
@@ -2572,23 +2570,23 @@ let message = {
               "titleHighlight": "Vastattu",
               subtitle: "Kaikki mitä sinun tulee tietää videoiden transkriptiosta eri alustoilla",
               "questions": [
-                {
-                  "question": "K: Miten transkriboin YouTube-videon NeverCapilla?",
-                  "answer": "Se on helppoa. Etsi vain haluamasi YouTube-video, kopioi sen URL ja liitä se sovellukseemme. Tekoälymme hakee videon automaattisesti ja tarjoaa täyden tekstityksen minuuteissa."
-                },
-                {
-                  "question": "K: Mikä on paras tapa transkriboida Facebook-video tekstiksi?",
-                  "answer": "Helpoin tapa on käyttää suoraa linkkiä. Kopioi Facebook-videon URL ja alustamme hoitaa loput, muuntaen puheen tekstiksi jopa 96 % tarkkuudella, säästäen sinut manuaaliselta transkriptiolta."
-                },
-                {
-                  "question": "K: Voinko transkriboida TikTok- ja Instagram-videoita?",
-                  "answer": "Totta kai. Tukemme sekä TikTok- että Instagram-videoiden transkriptiota. Tämä on täydellistä sisällöntuottajille, jotka haluavat muokata lyhytmuotoista videosisältöään blogikirjoituksiksi, artikkeleiksi tai tekstipohjaisiksi some-päivityksiksi."
-                },
-                {
-                  "question": "K: Miten transkriboin Vimeo-videon tekstiksi?",
-                  "answer": "Vimeo-videoiden transkriptio on yhtä helppoa kuin muidenkin alustojen. Kopioi vain Vimeo-videon URL ja liitä se NeverCapiin. Tekoälymme käsittelee videon ja luo tarkan tekstityksen, jonka voit ladata useassa eri muodossa."
-                }
-              ]
+                    {
+                      "question": "K: Miten transkriboin YouTube-videon NeverCapilla?",
+                      "answer": "Se on helppoa. Etsi vain haluamasi YouTube-video, kopioi sen URL ja liitä se sovellukseemme. Tekoälymme hakee videon automaattisesti ja tarjoaa täyden tekstityksen minuuteissa."
+                    },
+                    {
+                      "question": "K: Mikä on paras tapa transkriboida Facebook-video tekstiksi?",
+                      "answer": "Helpoin tapa on käyttää suoraa linkkiä. Kopioi Facebook-videon URL ja alustamme hoitaa loput, muuntaen puheen tekstiksi jopa 96 % tarkkuudella, säästäen sinut manuaaliselta transkriptiolta."
+                    },
+                    {
+                      "question": "K: Voinko transkriboida TikTok- ja Instagram-videoita?",
+                      "answer": "Totta kai. Tukemme sekä TikTok- että Instagram-videoiden transkriptiota. Tämä on täydellistä sisällöntuottajille, jotka haluavat muokata lyhytmuotoista videosisältöään blogikirjoituksiksi, artikkeleiksi tai tekstipohjaisiksi some-päivityksiksi."
+                    },
+                    {
+                      "question": "K: Miten transkriboin Vimeo-videon tekstiksi?",
+                      "answer": "Vimeo-videoiden transkriptio on yhtä helppoa kuin muidenkin alustojen. Kopioi vain Vimeo-videon URL ja liitä se NeverCapiin. Tekoälymme käsittelee videon ja luo tarkan tekstityksen, jonka voit ladata useassa eri muodossa."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2677,7 +2675,19 @@ let message = {
         problemTitle2: "Tutkimustranskription ongelma",
         title: "The",
         useCasesTitle2: "Jokaiseen tutkimusmenetelmään",
-        testimonialTitle2: "Johtavat tutkijat"
+        testimonialTitle2: "Johtavat tutkijat",
+        feature1TitleHl: "Koko tutkimus",
+        feature1TitlePost: "Kerralla",
+        feature2TitleHl: "Fokusryhmät",
+        feature2TitlePost: "Joka kerta",
+        feature3TitleHl: "96 % tarkkuus",
+        feature4TitleHl: "Turvallisuus",
+        testimonialText2Hl: "200 tuntia",
+        testimonialText3: "fokusryhmän äänitteitä yhteisöterveystutkimuksestamme. Muut palvelut halusivat meidän valikoida mitkä istunnot litteroidaan kustannusten vuoksi. NeverCap antoi meidän käsitellä",
+        testimonialText4Hl: "kaiken viikonloppuna",
+        testimonialText5: ". 20 puhujan tunnistus toimi todella - jopa sekavimmissa keskusteluissamme, kun kaikki puhuivat yhtä aikaa. Tämä työkalu on",
+        testimonialText6Hl: "täysin muuttanut",
+        testimonialText7: "miten käsittelemme laadullista dataa."
     },
     BusinessTeams: {
       heroBadge: "Liiketiimeille",
@@ -3046,7 +3056,7 @@ let message = {
             },
             {
               "label": "Ota yhteyttä",
-              "value": ["sähköposti", "Tuki saatavilla 24/7"]
+              "value": ["Sähköposti", "Tuki saatavilla 24/7"]
             }
           ]
     },

@@ -8,7 +8,7 @@
       @close="handleClose"
       class="customer-dialog-link"
       append-to-body
-      :title="t('FileUploadAndRecording.upload.link.dialogTitle')"
+      :title="t('FileUploadAndRecording.upload.file.orTitle')"
     >
       <upload-link
         v-model:link="link"

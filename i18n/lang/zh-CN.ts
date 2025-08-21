@@ -185,7 +185,7 @@ let message = {
           confirm: "知道了"
         },
         speaker: {
-          content: "发言人识别功能限制文件时长为 3 小时。请取消勾选“{text}”。"
+          content: "说话人识别功能限制为3小时内的文件。请取消勾选'{text}'。"
         }
       }
     },
@@ -194,16 +194,16 @@ let message = {
         dialogTitle: "转录在线媒体",
         title: "粘贴链接",
         label:
-          "粘贴来自 YouTube、Facebook、X、Dropbox、Google Drive、Vimeo、TikTok、Instagram 等平台的视频或音频链接...",
+          "粘贴视频或音频链接，支持：YouTube、Facebook、X、Dropbox、Google Drive、Vimeo、TikTok、Instagram 等平台...",
         confirm: "添加",
         cancel: "取消",
         errorTitle: "您输入的链接地址不正确。请检查后重试。",
         linkName: "链接"
       },
       file: {
-        orTitle: "转录在线媒体",
-        dialogTitle: "转录文件",
-        tip1: "拖拽文件到此处或点击浏览",
+        orTitle: "从 URL 转录",
+        dialogTitle: "上传文件进行转录",
+        tip1: "将文件拖到此处或单击以浏览",
         tip2: "点击浏览",
         or: "或",
         supported: "支持的格式"
@@ -221,7 +221,7 @@ let message = {
       confirm: "转录",
       return: "返回",
       addMore: "添加更多",
-      language: "媒体语言",
+      language: "选择语言",
       failed: "失败",
       tooLarge: "文件超出限制（5GB）。",
       linkUpload: "上传中",
@@ -237,8 +237,8 @@ let message = {
         noData: "无数据"
       },
       maxFileNum: "文件数量不能超过 {num}。",
-      speaker: "识别发言人",
-      speakerLabel: "自动检测谁在说话",
+      speaker: "识别说话人",
+      speakerLabel: "自动识别说话人",
       guest: {
         transcribe: "转录",
         file: "文件",
@@ -635,8 +635,8 @@ let message = {
     uploadWithinHours: "10小时上传",
     yourSubscription: "您的订阅将于{time}取消",
     save: "节省",
-    freeversion2: "免费套餐"
-  },
+      freeversion2: "免费计划"
+},
   // 语言对应关系
   LanguageMap: {
     sysLanguagesMap: {
@@ -1015,20 +1015,20 @@ let message = {
     Company: "公司",
     featureMenus: ["无限转录", "批量上传", "96%准确率"],
     useCaseMenus: [
-      "所有使用场景",
-      "播客主",
-      "记者",
-      "内容创作者",
-      "研究人员",
-      "企业团队",
-      "教育工作者"
-    ],
+          "所有使用场景",
+          "播客主",
+          "记者",
+          "内容创作者",
+          "研究人员",
+          "企业团队",
+          "教育工作者"
+        ],
     companyMenus: [
-      "关于",
-      "定价",
-      "隐私",
-      "条款"
-    ]
+          "关于",
+          "定价",
+          "隐私",
+          "条款"
+        ]
   },
   Index: {
     Hero: {
@@ -1053,7 +1053,7 @@ let message = {
       try_now: "立即试用",
       no_signup: "无需注册",
       experience_unltd: "体验真正的无限转录",
-      upload_50: "立即上传最多50个文件",
+      upload_50: "立即上传最多50个文件。",
       no_limits: "高级",
       no_surprises: "AI转录",
       transparency: "再无隐藏限制，再无意外 - 当其他服务悄悄缩减您的时长或将限制藏在细则中时，我们坚持彻底透明",
@@ -1129,52 +1129,52 @@ let message = {
       "title": "常见",
       "titleHighlight": "问题",
       "questions": [
-        {
-          "q": "AI转录",
-          "question": "什么是AI转录？如何运作？",
-          "answer": "AI转录是通过先进人工智能将音频自动转换为文本的过程。在NeverCap，您只需上传文件，我们的AI就能以高达96%的准确率转录内容。我们的服务可将视频文件（如MP4、MOV）和音频文件（如MP3、WAV）转换为可读可编辑的文本，包含说话人标签和时间戳。"
-        },
-        {
-          "q": "unlimited_policy",
-          "question": "真的无限量吗？有什么限制？",
-          "answer": "是的，真正无限量！无月度时长限制，无超额费用。仅有的技术限制是：单个文件最长10小时或5GB大小，可同时处理50个文件。但您整个月都可以上传任意批次的文件。"
-        },
-        {
-          "q": "accuracy",
-          "question": "转录准确率如何？",
-          "answer": "我们保证清晰音频96%的准确率。我们的AI经过数百万小时多样化内容训练，能出色处理口音、专业术语和多说话人场景。针对复杂音频，智能增强功能可提升效果。"
-        },
-        {
-          "q": "languages",
-          "question": "支持哪些语言？",
-          "answer": "我们支持100多种语言的转录，包括英语、西班牙语、普通话、印地语、阿拉伯语、法语等。此外，您可将转录文本翻译成249种语言，完美适配全球内容。"
-        },
-        {
-          "q": "speed",
-          "question": "转录速度多快？",
-          "answer": "闪电速度！1小时音频文件通常在5分钟内完成。通过批量处理，可同时上传50个文件并行处理。多数用户睡醒就发现整个资料库已完成转录。"
-        },
-        {
-          "q": "cancellation",
-          "question": "可以随时取消吗？",
-          "answer": "当然！无合约绑定，无取消费用。您可以在控制面板随时升级、降级或取消订阅。取消后仍可访问服务至当前结算周期结束。"
-        },
-        {
-          "q": "security",
-          "question": "我的数据安全吗？",
-          "answer": "安全是我们的首要任务。我们通过SOC 2认证，对所有数据采用256位加密，绝不使用您的内容训练模型。您可以随时删除文件，我们会在30天后自动清除。符合GDPR和CCPA标准。"
-        },
-        {
-          "q": "export_formats",
-          "question": "支持哪些导出格式？",
-          "answer": "可按需下载转录文本：PDF、Word (DOCX)、Excel、CSV、SRT字幕、纯文本(TXT)和VTT字幕。完美适配任何工作流程。"
-        },
-        {
-          "q": "file_formats",
-          "question": "支持上传哪些音视频格式？",
-          "answer": "支持几乎所有常见音视频格式：MP3、MP4、M4A、MOV、AAC、WAV、OGG、OPUS、MPEG、WMA、WMV等。只要您能播放，我们就能转录。"
-        }
-      ]
+            {
+              "q": "AI转录",
+              "question": "什么是AI转录？如何运作？",
+              "answer": "AI转录是通过先进人工智能将音频自动转换为文本的过程。在NeverCap，您只需上传文件，我们的AI就能以高达96%的准确率转录内容。我们的服务可将视频文件（如MP4、MOV）和音频文件（如MP3、WAV）转换为可读可编辑的文本，包含说话人标签和时间戳。"
+            },
+            {
+              "q": "unlimited_policy",
+              "question": "真的无限量吗？有什么限制？",
+              "answer": "是的，真正无限量！无月度时长限制，无超额费用。仅有的技术限制是：单个文件最长10小时或5GB大小，可同时处理50个文件。但您整个月都可以上传任意批次的文件。"
+            },
+            {
+              "q": "accuracy",
+              "question": "转录准确率如何？",
+              "answer": "我们保证清晰音频96%的准确率。我们的AI经过数百万小时多样化内容训练，能出色处理口音、专业术语和多说话人场景。针对复杂音频，智能增强功能可提升效果。"
+            },
+            {
+              "q": "languages",
+              "question": "支持哪些语言？",
+              "answer": "我们支持100多种语言的转录，包括英语、西班牙语、普通话、印地语、阿拉伯语、法语等。此外，您可将转录文本翻译成249种语言，完美适配全球内容。"
+            },
+            {
+              "q": "speed",
+              "question": "转录速度多快？",
+              "answer": "闪电速度！1小时音频文件通常在5分钟内完成。通过批量处理，可同时上传50个文件并行处理。多数用户睡醒就发现整个资料库已完成转录。"
+            },
+            {
+              "q": "cancellation",
+              "question": "可以随时取消吗？",
+              "answer": "当然！无合约绑定，无取消费用。您可以在控制面板随时升级、降级或取消订阅。取消后仍可访问服务至当前结算周期结束。"
+            },
+            {
+              "q": "security",
+              "question": "我的数据安全吗？",
+              "answer": "安全是我们的首要任务。我们通过SOC 2认证，对所有数据采用256位加密，绝不使用您的内容训练模型。您可以随时删除文件，我们会在30天后自动清除。符合GDPR和CCPA标准。"
+            },
+            {
+              "q": "export_formats",
+              "question": "支持哪些导出格式？",
+              "answer": "可按需下载转录文本：PDF、Word (DOCX)、Excel、CSV、SRT字幕、纯文本(TXT)和VTT字幕。完美适配任何工作流程。"
+            },
+            {
+              "q": "file_formats",
+              "question": "支持上传哪些音视频格式？",
+              "answer": "支持几乎所有常见音视频格式：MP3、MP4、M4A、MOV、AAC、WAV、OGG、OPUS、MPEG、WMA、WMV等。只要您能播放，我们就能转录。"
+            }
+          ]
     },
     CTASection: {
       "title": "准备好突破限制了吗？",
@@ -1564,93 +1564,93 @@ let message = {
       "highlighted_text": "无隐藏限制。",
       "description": "选择适合您的方案。随时升级或降级。无合约，无隐形消费。",
       "plans": [
-        {
-          "name": "免费版",
-          "price": "$0",
-          "period": "每月",
-          "discount": "适合试用我们的服务",
-          "limits": {
-            "title": "每日限制",
-            "items": [
-              "3个文件/天（≈90分钟总时长/天）",
-              "每个文件最长30分钟（≤250 MB）",
-              "每次上传1个文件",
-              "标准优先级队列"
-            ]
-          },
-          "features": {
-            "title": "功能",
-            "items": [
-              "100+种语言",
-              "说话人标签",
-              "翻译",
-              "所有导出格式"
-            ]
-          },
-          "cta": {
-            "text": "免费开始。无需信用卡。",
-            "button": "免费开始"
-          }
-        },
-        {
-          "name": "专业月付",
-          "price": "$17.99",
-          "period": "每月",
-          "discount": "首月仅$9.99",
-          "limits": {
-            "title": "无月度上限",
-            "items": [
-              "无限总时长",
-              "每个文件最长10小时/5 GB",
-              "一次上传50个文件",
-              "优先队列"
-            ]
-          },
-          "features": {
-            "title": "包含免费版所有功能，另加",
-            "items": [
-              "单词级时间戳",
-              "高级说话人识别",
-              "格式化段落与标点",
-              "优先支持"
-            ]
-          },
-          "cta": {
-            "text": "无限时长。优先处理。批量上传。",
-            "button": "升级专业版"
-          },
-          "badge": "最受欢迎"
-        },
-        {
-          "name": "专业年付",
-          "price": "$8.99",
-          "period": "月",
-          "discount": "年付 $107.88",
-          "limits": {
-            "title": "与Pro月付版相同",
-            "items": [
-              "总时长无限制",
-              "单个文件最长10小时/5GB",
-              "批量上传50个文件",
-              "优先队列"
-            ]
-          },
-          "features": {
-            "title": "免费版功能外，另含",
-            "items": [
-              "单词级时间戳",
-              "高级发言人识别",
-              "格式化段落与标点",
-              "优先支持"
-            ]
-          },
-          "cta": {
-            "text": "无限时长。优先处理。批量上传。",
-            "button": "升级Pro"
-          },
-          "badge": "最佳性价比 - 立省50%"
-        }
-      ],
+            {
+              "name": "免费版",
+              "price": "$0",
+              "period": "每月",
+              "discount": "适合试用我们的服务",
+              "limits": {
+                "title": "每日限制",
+                "items": [
+                  "3个文件/天（≈90分钟总时长/天）",
+                  "每个文件最长30分钟（≤250 MB）",
+                  "每次上传1个文件",
+                  "标准优先级队列"
+                ]
+              },
+              "features": {
+                "title": "功能",
+                "items": [
+                  "100+种语言",
+                  "说话人标签",
+                  "翻译",
+                  "所有导出格式"
+                ]
+              },
+              "cta": {
+                "text": "免费开始。无需信用卡。",
+                "button": "免费开始"
+              }
+            },
+            {
+              "name": "专业月付",
+              "price": "$17.99",
+              "period": "每月",
+              "discount": "首月仅$9.99",
+              "limits": {
+                "title": "无月度上限",
+                "items": [
+                  "无限总时长",
+                  "每个文件最长10小时/5 GB",
+                  "一次上传50个文件",
+                  "优先队列"
+                ]
+              },
+              "features": {
+                "title": "包含免费版所有功能，另加",
+                "items": [
+                  "单词级时间戳",
+                  "高级说话人识别",
+                  "格式化段落与标点",
+                  "优先支持"
+                ]
+              },
+              "cta": {
+                "text": "无限时长。优先处理。批量上传。",
+                "button": "升级专业版"
+              },
+              "badge": "最受欢迎"
+            },
+            {
+              "name": "专业年付",
+              "price": "$8.99",
+              "period": "月",
+              "discount": "年付 $107.88",
+              "limits": {
+                "title": "与Pro月付版相同",
+                "items": [
+                  "总时长无限制",
+                  "单个文件最长10小时/5GB",
+                  "批量上传50个文件",
+                  "优先队列"
+                ]
+              },
+              "features": {
+                "title": "免费版功能外，另含",
+                "items": [
+                  "单词级时间戳",
+                  "高级发言人识别",
+                  "格式化段落与标点",
+                  "优先支持"
+                ]
+              },
+              "cta": {
+                "text": "无限时长。优先处理。批量上传。",
+                "button": "升级Pro"
+              },
+              "badge": "最佳性价比 - 立省50%"
+            }
+          ],
       "disclaimer": '"无限"指无月度上限且无人工降速。合理使用政策适用于滥用自动化或转售行为。'
     },
     ComparisonTable: {
@@ -1660,115 +1660,115 @@ let message = {
         "subtitle": "清晰了解各套餐内容。绝无隐藏限制。"
       },
       "plans": [
-        "功能",
-        "免费版",
-        "Pro月付版",
-        "Pro年付版"
-      ],
+              "功能",
+              "免费版",
+              "Pro月付版",
+              "Pro年付版"
+            ],
       "features": [
-        {
-          "name": "价格",
-          "values": [
-            "$0/月",
             {
-              "main": "$17.99/月",
-              "note": "首月$9.99"
+              "name": "价格",
+              "values": [
+                "$0/月",
+                {
+                  "main": "$17.99/月",
+                  "note": "首月$9.99"
+                },
+                {
+                  "main": "$8.99/月",
+                  "note": "年付$107.88"
+                }
+              ]
             },
             {
-              "main": "$8.99/月",
-              "note": "年付$107.88"
+              "name": "月度时长",
+              "values": ["~2,700分钟(90/天)", "无限制", "无限制"]
+            },
+            {
+              "name": "最大文件时长",
+              "values": ["30分钟", "10小时", "10小时"]
+            },
+            {
+              "name": "最大文件大小",
+              "values": ["250 MB", "5 GB", "5 GB"]
+            },
+            {
+              "name": "批量上传",
+              "values": ["1个文件", "50个文件", "50个文件"]
+            },
+            {
+              "name": "处理速度",
+              "values": ["标准", "优先", "优先"]
+            },
+            {
+              "name": "支持语言",
+              "values": ["100+ 种语言", "100+ 种语言", "100+ 种语言"]
+            },
+            {
+              "name": "翻译",
+              "values": ["true", "true", "true"]
+            },
+            {
+              "name": "说话人识别",
+              "values": ["基础版", "高级版（20 位说话人）", "高级版（20 位说话人）"]
+            },
+            {
+              "name": "词级时间戳",
+              "values": ["false", "true", "true"]
+            },
+            {
+              "name": "格式化段落",
+              "values": ["false", "true", "true"]
+            },
+            {
+              "name": "导出格式",
+              "values": ["所有格式", "所有格式", "所有格式"]
+            },
+            {
+              "name": "支持",
+              "values": ["电子邮件", "优先电子邮件", "优先电子邮件"]
+            },
+            {
+              "name": "数据保留",
+              "values": ["30 天", "永久", "永久"]
             }
           ]
-        },
-        {
-          "name": "月度时长",
-          "values": ["~2,700分钟(90/天)", "无限制", "无限制"]
-        },
-        {
-          "name": "最大文件时长",
-          "values": ["30分钟", "10小时", "10小时"]
-        },
-        {
-          "name": "最大文件大小",
-          "values": ["250 MB", "5 GB", "5 GB"]
-        },
-        {
-          "name": "批量上传",
-          "values": ["1个文件", "50个文件", "50个文件"]
-        },
-        {
-          "name": "处理速度",
-          "values": ["标准", "优先", "优先"]
-        },
-        {
-          "name": "支持语言",
-          "values": ["100+ 种语言", "100+ 种语言", "100+ 种语言"]
-        },
-        {
-          "name": "翻译",
-          "values": ["true", "true", "true"]
-        },
-        {
-          "name": "说话人识别",
-          "values": ["基础版", "高级版（20 位说话人）", "高级版（20 位说话人）"]
-        },
-        {
-          "name": "词级时间戳",
-          "values": ["false", "true", "true"]
-        },
-        {
-          "name": "格式化段落",
-          "values": ["false", "true", "true"]
-        },
-        {
-          "name": "导出格式",
-          "values": ["所有格式", "所有格式", "所有格式"]
-        },
-        {
-          "name": "支持",
-          "values": ["电子邮件", "优先电子邮件", "优先电子邮件"]
-        },
-        {
-          "name": "数据保留",
-          "values": ["30 天", "永久", "永久"]
-        }
-      ]
     },
     FAQ: {
       "title": "常见问题",
       "titleHighligt": "问题",
       "items": [
-        {
-          "q": "unlimited_policy",
-          "question": "真的是无限制吗？",
-          "answer": "是的！Pro 计划没有每月分钟数限制。唯一限制是技术性的：文件最长 10 小时，最大 5GB。您可以处理任意数量的文件。"
-        },
-        {
-          "q": "plan_change",
-          "question": "我可以随时更改计划吗？",
-          "answer": "当然！您可以在仪表盘中随时取消订阅。按需升级或降级。"
-        },
-        {
-          "q": "payment_methods",
-          "question": "你们接受哪些支付方式？",
-          "answer": "我们接受所有主流信用卡、借记卡和 PayPal，支付安全无忧。"
-        },
-        {
-          "q": "free_trial",
-          "question": "Pro 有免费试用吗？",
-          "answer": "有！免费试用 Pro 7 天，无需信用卡。订阅首月还可享 45% 折扣。"
-        },
-        {
-          "q": "file_retention",
-          "question": "我的文件会保留多久？",
-          "answer": "免费计划：30 天。Pro 计划：永久！您的转录文本始终保存在账户中。"
-        },
-        {
-          "q": "data_security",
-          "question": "数据安全性如何？",
-          "answer": "我们通过SOC 2认证，采用256位加密技术。绝不使用您的内容训练AI模型。您的数据始终属于您。"
-        }
-      ]
+            {
+              "q": "unlimited_policy",
+              "question": "真的是无限制吗？",
+              "answer": "是的！Pro 计划没有每月分钟数限制。唯一限制是技术性的：文件最长 10 小时，最大 5GB。您可以处理任意数量的文件。"
+            },
+            {
+              "q": "plan_change",
+              "question": "我可以随时更改计划吗？",
+              "answer": "当然！您可以在仪表盘中随时取消订阅。按需升级或降级。"
+            },
+            {
+              "q": "payment_methods",
+              "question": "你们接受哪些支付方式？",
+              "answer": "我们接受所有主流信用卡、借记卡和 PayPal，支付安全无忧。"
+            },
+            {
+              "q": "free_trial",
+              "question": "Pro 有免费试用吗？",
+              "answer": "有！免费试用 Pro 7 天，无需信用卡。订阅首月还可享 45% 折扣。"
+            },
+            {
+              "q": "file_retention",
+              "question": "我的文件会保留多久？",
+              "answer": "免费计划：30 天。Pro 计划：永久！您的转录文本始终保存在账户中。"
+            },
+            {
+              "q": "data_security",
+              "question": "数据安全性如何？",
+              "answer": "我们通过SOC 2认证，采用256位加密技术。绝不使用您的内容训练AI模型。您的数据始终属于您。"
+            }
+          ]
     },
     CTA: {
       "title": "准备开启无限畅用？",
@@ -2261,8 +2261,7 @@ let message = {
             points: {
               searchAll: "1小时访谈5分钟完成",
               wordTimestamps: "紧急报道优先处理",
-              jumpToMoments: "实时进度追踪",
-              exportCitations: "导出引文"
+              jumpToMoments: "实时进度追踪"
             },
             searchDemo: {
               placeholder: "5分钟",
@@ -2280,8 +2279,7 @@ let message = {
             points: {
               accuracyGuarantee: "96%准确率保证",
               handlesAccents: "处理专业术语",
-              smartPunctuation: "完美的说话人识别",
-              speakerIdentification: "说话人识别"
+              smartPunctuation: "完美的说话人识别"
             },
             visual: {
               accuracy: "96%",
@@ -2526,29 +2524,29 @@ let message = {
         subtitle: "加入5万+创作者行列，告别计时，专注创作",
         button: "开始无限字幕 →"
       },
-      FAQSection: {
-        "title": "您的转录问题，",
-        "titleHighlight": "解答",
-        subtitle: "关于不同平台视频转录您需要知道的一切",
-        "questions": [
-          {
-            "question": "问：如何使用NeverCap转录YouTube视频？",
-            "answer": "很简单。找到要转录的YouTube视频，复制其URL并粘贴到我们的应用中。我们的AI将自动获取视频并在几分钟内提供完整文本转录。"
-          },
-          {
-            "question": "问：将Facebook视频转录为文本的最佳方式是什么？",
-            "answer": "最简单的方法是使用直接链接。复制Facebook视频的URL，我们的平台将处理其余工作，以高达96%的准确率将语音转换为文本，免去手动转录的麻烦。"
-          },
-          {
-            "question": "问：可以转录TikTok和Instagram视频吗？",
-            "answer": "当然可以。我们支持TikTok和Instagram视频转录。非常适合希望将短视频内容转化为博客文章、文章或文本社交媒体更新的内容创作者。"
-          },
-          {
-            "question": "问：如何将Vimeo视频转录为文本？",
-            "answer": "转录Vimeo视频与其他平台一样简单。只需复制Vimeo视频URL并粘贴到NeverCap中。我们的AI将处理视频并生成准确的文本转录，您可以下载多种格式。"
-          }
-        ]
-      }
+        FAQSection: {
+              "title": "您的转录问题，",
+              "titleHighlight": "解答",
+              subtitle: "关于不同平台视频转录您需要知道的一切",
+              "questions": [
+                    {
+                      "question": "问：如何使用NeverCap转录YouTube视频？",
+                      "answer": "很简单。找到要转录的YouTube视频，复制其URL并粘贴到我们的应用中。我们的AI将自动获取视频并在几分钟内提供完整文本转录。"
+                    },
+                    {
+                      "question": "问：将Facebook视频转录为文本的最佳方式是什么？",
+                      "answer": "最简单的方法是使用直接链接。复制Facebook视频的URL，我们的平台将处理其余工作，以高达96%的准确率将语音转换为文本，免去手动转录的麻烦。"
+                    },
+                    {
+                      "question": "问：可以转录TikTok和Instagram视频吗？",
+                      "answer": "当然可以。我们支持TikTok和Instagram视频转录。非常适合希望将短视频内容转化为博客文章、文章或文本社交媒体更新的内容创作者。"
+                    },
+                    {
+                      "question": "问：如何将Vimeo视频转录为文本？",
+                      "answer": "转录Vimeo视频与其他平台一样简单。只需复制Vimeo视频URL并粘贴到NeverCap中。我们的AI将处理视频并生成准确的文本转录，您可以下载多种格式。"
+                    }
+                  ]
+            }
     },
     Researchers: {
       heroBadge: "为学术卓越而打造",
@@ -2636,7 +2634,19 @@ let message = {
       problemTitle2: "研究转录问题",
       title: "The",
       useCasesTitle2: "所有研究方法",
-      testimonialTitle2: "领先研究人员"
+      testimonialTitle2: "领先研究人员",
+        feature1TitleHl: "完整研究",
+        feature1TitlePost: "一气呵成",
+        feature2TitleHl: "焦点小组",
+        feature2TitlePost: "次次精准",
+        feature3TitleHl: "96%准确率",
+        feature4TitleHl: "安全保障",
+        testimonialText2Hl: "200小时",
+        testimonialText3: "来自我们社区健康研究的焦点小组录音。其他服务因成本要求我们挑选转录片段，而NeverCap让我们能处理",
+        testimonialText4Hl: "所有内容仅需一个周末",
+        testimonialText5: "。20人语音识别真实有效——即使在最混乱的多人同时发言场景。该工具已",
+        testimonialText6Hl: "彻底改变",
+        testimonialText7: "我们处理质性数据的方式。"
     },
     BusinessTeams: {
       heroBadge: "面向商业团队",
@@ -2815,122 +2825,122 @@ let message = {
       part2: {
         "title": "只需3个简单步骤，将YouTube视频转换为可下载的MP4文件",
         "steps": [
-          {
-            title: "复制URL",
-            content: "打开目标YouTube视频，然后从浏览器地址栏复制链接。"
-          },
-          {
-            title: "粘贴链接",
-            content: "前往视频下载工具，将URL粘贴到输入框中。"
-          },
-          {
-            title: "下载MP4",
-            content: "处理完成后，点击下载按钮保存MP4文件。"
-          }
-        ]
+                {
+                  title: "复制URL",
+                  content: "打开目标YouTube视频，然后从浏览器地址栏复制链接。"
+                },
+                {
+                  title: "粘贴链接",
+                  content: "前往视频下载工具，将URL粘贴到输入框中。"
+                },
+                {
+                  title: "下载MP4",
+                  content: "处理完成后，点击下载按钮保存MP4文件。"
+                }
+              ]
       },
       part3: {
         content: [
-          "是否曾需要离线观看YouTube视频？",
-          "无论您是在地铁通勤、飞机上飞行、学习重要教程、深入技能提升内容，还是存档重要视频素材——可靠的离线访问是普遍的需求。这正是我们的下载器的优势所在。",
-          "下载器可让您快速轻松地将YouTube视频转换为MP4格式并下载。保存到设备后，随时观看。",
-          "过程快速、简单且无忧。下载后，随时随地享受您喜爱的视频——无需互联网。"
-        ]
+                "是否曾需要离线观看YouTube视频？",
+                "无论您是在地铁通勤、飞机上飞行、学习重要教程、深入技能提升内容，还是存档重要视频素材——可靠的离线访问是普遍的需求。这正是我们的下载器的优势所在。",
+                "下载器可让您快速轻松地将YouTube视频转换为MP4格式并下载。保存到设备后，随时观看。",
+                "过程快速、简单且无忧。下载后，随时随地享受您喜爱的视频——无需互联网。"
+              ]
       },
       part4: {
         content: ["以下是下载YouTube视频为MP4文件的5大优势", "YouTube视频下载为MP4文件"],
         list: [
-          {
-            title: "节省数据费用：",
-            content: "通常，在YouTube上观看视频会消耗大量移动数据。通过下载离线观看，您可以避免这些不必要的费用。"
-          },
-          {
-            title: "随时随地观看：",
-            content: "即使网络不稳定，也能无缝享受视频。不再担心缓冲问题。"
-          },
-          {
-            title: "轻松存档与保存：",
-            content: "将视频保存为MP4格式，便于建立个人收藏，尤其是对您认为真正有价值或重要的内容。"
-          },
-          {
-            title: "分享更简单：",
-            content: "分享MP4文件比发送链接方便得多。您可以直接通过WhatsApp或Instagram等应用发送视频文件，省去打开YouTube的额外步骤。"
-          },
-          {
-            title: "即时观看，共享时刻：",
-            content: "想兴奋地向附近的朋友或家人展示喜爱的视频？下载MP4后，你们可以立即流畅地一起观看，无需尴尬地等待加载。"
-          }
-        ]
+                {
+                  title: "节省数据费用：",
+                  content: "通常，在YouTube上观看视频会消耗大量移动数据。通过下载离线观看，您可以避免这些不必要的费用。"
+                },
+                {
+                  title: "随时随地观看：",
+                  content: "即使网络不稳定，也能无缝享受视频。不再担心缓冲问题。"
+                },
+                {
+                  title: "轻松存档与保存：",
+                  content: "将视频保存为MP4格式，便于建立个人收藏，尤其是对您认为真正有价值或重要的内容。"
+                },
+                {
+                  title: "分享更简单：",
+                  content: "分享MP4文件比发送链接方便得多。您可以直接通过WhatsApp或Instagram等应用发送视频文件，省去打开YouTube的额外步骤。"
+                },
+                {
+                  title: "即时观看，共享时刻：",
+                  content: "想兴奋地向附近的朋友或家人展示喜爱的视频？下载MP4后，你们可以立即流畅地一起观看，无需尴尬地等待加载。"
+                }
+              ]
       },
       part5: {
         title: "为何我们的下载器脱颖而出",
         cards: [
-          {
-            title: "一键操作，简单易用",
-            content: "轻松设置，直观操作。"
-          },
-          {
-            title: "极速下载，无限畅享",
-            content: "以最快速度转换和下载——无上限，无限制。"
-          },
-          {
-            title: "即时转换",
-            content: "立即处理文件，无需等待。"
-          },
-          {
-            title: "零广告，零干扰",
-            content: "享受无弹窗、无横幅、无中断的简洁界面——仅需无缝视频转换。"
-          },
-          {
-            icon: "5",
-            color: "#DEE5FF",
-            title: "保证原始画质",
-            content: "您的下载文件保留源视频的完整分辨率，每次播放都像素完美。"
-          },
-          {
-            icon: "6",
-            color: "#DEF6EE",
-            title: "随处可用",
-            content: "完全兼容任何浏览器，任何设备。"
-          }
-        ]
+                {
+                  title: "一键操作，简单易用",
+                  content: "轻松设置，直观操作。"
+                },
+                {
+                  title: "极速下载，无限畅享",
+                  content: "以最快速度转换和下载——无上限，无限制。"
+                },
+                {
+                  title: "即时转换",
+                  content: "立即处理文件，无需等待。"
+                },
+                {
+                  title: "零广告，零干扰",
+                  content: "享受无弹窗、无横幅、无中断的简洁界面——仅需无缝视频转换。"
+                },
+                {
+                  icon: "5",
+                  color: "#DEE5FF",
+                  title: "保证原始画质",
+                  content: "您的下载文件保留源视频的完整分辨率，每次播放都像素完美。"
+                },
+                {
+                  icon: "6",
+                  color: "#DEF6EE",
+                  title: "随处可用",
+                  content: "完全兼容任何浏览器，任何设备。"
+                }
+              ]
       },
       part6: {
         title: ["最大化您的YouTube视频下载体验", "使用我们的下载器"],
         content: [
-          "轻松将YouTube转换为MP4：快速、简单且免费。",
-          "这正是我们的优势所在。我们的用户友好界面为所有人设计——无需技术技能。无论您的经验水平如何，都能即时转换视频。无需注册：立即获取所需内容。",
-          "请放心——您下载的MP4文件保持与YouTube上观看时相同的原始画质和清晰度。",
-          "随您所用，随处可用。完全兼容所有主流平台和设备。无论您使用Windows、macOS、Linux、Android还是iOS——无论是智能手机、平板还是台式机——都能无缝下载视频。"
-        ]
+                "轻松将YouTube转换为MP4：快速、简单且免费。",
+                "这正是我们的优势所在。我们的用户友好界面为所有人设计——无需技术技能。无论您的经验水平如何，都能即时转换视频。无需注册：立即获取所需内容。",
+                "请放心——您下载的MP4文件保持与YouTube上观看时相同的原始画质和清晰度。",
+                "随您所用，随处可用。完全兼容所有主流平台和设备。无论您使用Windows、macOS、Linux、Android还是iOS——无论是智能手机、平板还是台式机——都能无缝下载视频。"
+              ]
       },
       part7: {
         title: "下载YouTube视频的关键问题",
         list: [
-          {
-            question: "如果YouTube视频受版权保护，我还能下载吗？",
-            answer: "未经版权所有者许可下载受版权保护的YouTube视频是违法的。"
-          },
-          {
-            question: "这个下载工具安全吗？",
-            answer: "是的，它安全可靠。我们不会要求用户提供任何个人信息，并采取强力措施防范病毒。我们提醒您始终谨慎下载网络文件：避免点击可疑链接或下载可疑文件。"
-          },
-          {
-            question: "YouTube转MP4下载支持哪些语言？",
-            answer: "我们的服务支持下载所有流行语言的YouTube视频。"
-          },
-          {
-            question: "哪些因素会影响下载YouTube视频所需的时间？",
-            answer: "虽然我们确保最快的下载体验，但下载时间也受视频长度和您的网络连接速度等因素影响。"
-          },
-          {
-            question: "使用智能手机下载MP4视频时，文件保存在哪里？"
-          },
-          {
-            question: "将YouTube视频下载为MP4会降低画质吗？",
-            answer: "不会。使用我们的工具将YouTube视频下载为MP4会保留原始画质。转换过程保持源画质，确保您获得与YouTube相同的观看体验。"
-          }
-        ]
+                {
+                  question: "如果YouTube视频受版权保护，我还能下载吗？",
+                  answer: "未经版权所有者许可下载受版权保护的YouTube视频是违法的。"
+                },
+                {
+                  question: "这个下载工具安全吗？",
+                  answer: "是的，它安全可靠。我们不会要求用户提供任何个人信息，并采取强力措施防范病毒。我们提醒您始终谨慎下载网络文件：避免点击可疑链接或下载可疑文件。"
+                },
+                {
+                  question: "YouTube转MP4下载支持哪些语言？",
+                  answer: "我们的服务支持下载所有流行语言的YouTube视频。"
+                },
+                {
+                  question: "哪些因素会影响下载YouTube视频所需的时间？",
+                  answer: "虽然我们确保最快的下载体验，但下载时间也受视频长度和您的网络连接速度等因素影响。"
+                },
+                {
+                  question: "使用智能手机下载MP4视频时，文件保存在哪里？"
+                },
+                {
+                  question: "将YouTube视频下载为MP4会降低画质吗？",
+                  answer: "不会。使用我们的工具将YouTube视频下载为MP4会保留原始画质。转换过程保持源画质，确保您获得与YouTube相同的观看体验。"
+                }
+              ]
       }
     }
   },
@@ -2946,68 +2956,68 @@ let message = {
       "highlighted_text": "影响力",
       "subtitle": "用尖端AI技术赋能全球沟通",
       "metrics": [
-        {
-          "value": "96%+",
-          "label": "准确率",
-          "description": "先进AI带来的行业顶尖转录精度"
-        },
-        {
-          "value": "100+",
-          "label": "支持语言",
-          "description": "面向全球内容的语音识别"
-        },
-        {
-          "value": "249+",
-          "label": "翻译语种",
-          "description": "将转录文本翻译成几乎所有语言"
-        }
-      ]
+            {
+              "value": "96%+",
+              "label": "准确率",
+              "description": "先进AI带来的行业顶尖转录精度"
+            },
+            {
+              "value": "100+",
+              "label": "支持语言",
+              "description": "面向全球内容的语音识别"
+            },
+            {
+              "value": "249+",
+              "label": "翻译语种",
+              "description": "将转录文本翻译成几乎所有语言"
+            }
+          ]
     },
     Mission: {
       "title": "为何选择",
       "highlighted_text": "NeverCap",
       "subtitle": "我们致力于打破语言壁垒，让内容触达每个人",
       "features": [
-        {
-          "icon": "🎯",
-          "title": "无与伦比的准确度",
-          "description": "我们的AI模型持续优化，提供超96%的转录准确率，主要语言通过高级优化可达99%。"
-        },
-        {
-          "icon": "🌍",
-          "title": "全球语言支持",
-          "description": "支持100+种语言的语音识别和249+种语言的翻译能力，让您的内容真正全球化。"
-        },
-        {
-          "icon": "⚡",
-          "title": "闪电般快速处理",
-          "description": "数分钟即可处理数小时的音视频内容。优化的AI流程确保您在保持质量的同时快速获取转录稿。"
-        },
-        {
-          "icon": "🔒",
-          "title": "企业级安全",
-          "description": "数据安全是我们的首要任务。采用行业标准加密技术，遵守全球隐私法规，确保您的内容安全保密。"
-        }
-      ]
+            {
+              "icon": "🎯",
+              "title": "无与伦比的准确度",
+              "description": "我们的AI模型持续优化，提供超96%的转录准确率，主要语言通过高级优化可达99%。"
+            },
+            {
+              "icon": "🌍",
+              "title": "全球语言支持",
+              "description": "支持100+种语言的语音识别和249+种语言的翻译能力，让您的内容真正全球化。"
+            },
+            {
+              "icon": "⚡",
+              "title": "闪电般快速处理",
+              "description": "数分钟即可处理数小时的音视频内容。优化的AI流程确保您在保持质量的同时快速获取转录稿。"
+            },
+            {
+              "icon": "🔒",
+              "title": "企业级安全",
+              "description": "数据安全是我们的首要任务。采用行业标准加密技术，遵守全球隐私法规，确保您的内容安全保密。"
+            }
+          ]
     },
     Company: {
       "title": "公司",
       "highlighted_text": "信息",
       "subtitle": "如有任何问题或需要支持，请随时联系我们",
       "details": [
-        {
-          "label": "公司名称",
-          "value": "SCRIBIFY AI INC"
-        },
-        {
-          "label": "总部",
-          "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "美国"]
-        },
-        {
-          "label": "联系我们",
-          "value": ["电子邮件", "提供24/7全天候支持"]
-        }
-      ]
+            {
+              "label": "公司名称",
+              "value": "SCRIBIFY AI INC"
+            },
+            {
+              "label": "总部",
+              "value": ["30 N Gould St Ste R", "Sheridan, WY 82801", "美国"]
+            },
+            {
+              "label": "联系我们",
+              "value": ["电子邮件", "提供24/7全天候支持"]
+            }
+          ]
     },
     CTA: {
       "title": "准备好体验与众不同？",
@@ -3066,8 +3076,8 @@ let message = {
     "neverCap": "NeverCap"
   },
   TermsOfUse: {
-    title: "服务条款",
-    titleGradient: "服务",
+    title: "服务",
+    titleGradient: "条款",
     subtitle: "使用服务前请仔细阅读这些条款",
     "lastUpdated": "最后更新：{date}",
     "lastUpdatedDate": "2025年7月21日",

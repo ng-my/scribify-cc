@@ -212,8 +212,8 @@ let message = {
         linkName: "Länk"
       },
       file: {
-        orTitle: "Transkribera online-medier",
-        dialogTitle: "Transkribera fil",
+        orTitle: "Transkribera från URL",
+        dialogTitle: "Ladda upp filer för transkribering",
         tip1: "Dra filer hit eller klicka för att bläddra",
         tip2: "Klicka för att bläddra",
         or: "eller",
@@ -233,7 +233,7 @@ let message = {
       confirm: "Transkribera",
       return: "Återgå",
       addMore: "Lägg till fler",
-      language: "Mediaspråk",
+      language: "Välj språk",
       failed: "Misslyckades",
       tooLarge: "Filen överskrider gränsen (5 GB).",
       linkUpload: "Laddar upp",
@@ -250,7 +250,7 @@ let message = {
       },
       maxFileNum: "Antalet filer kan inte överstiga {num}.",
       speaker: "Identifiera talare",
-      speakerLabel: "Upptäck automatiskt vem som talar",
+      speakerLabel: "Identifiera automatiskt vem som talar",
       guest: {
         transcribe: "Transkribera",
         file: "Fil",
@@ -1094,7 +1094,7 @@ let message = {
       try_now: "Prova Nu",
       no_signup: "Ingen Registrering Krävs",
       experience_unltd: "Upplev verkligen obegränsad avskrift",
-      upload_50: "Ladda upp upp till 50 filer samtidigt, precis här",
+      upload_50: "Ladda upp upp till 50 filer samtidigt, precis här.",
       no_limits: "Avancerat",
       no_surprises: "AI-avskrift",
       transparency: "Inga Fler Dolda Begränsningar, Inga Fler Överraskningar - Medan andra tyst minskar dina minuter eller gömmer tak i finstilt text, tror vi på radikal transparens",
@@ -2302,8 +2302,7 @@ let message = {
             points: {
               searchAll: "5-minuters leverans för 1-timmarsintervjuer",
               wordTimestamps: "Prioriterad bearbetning för brådskande berättelser",
-              jumpToMoments: "Realtidsuppföljning av framsteg",
-              exportCitations: "Exportera med citat"
+              jumpToMoments: "Realtidsuppföljning av framsteg"
             },
             searchDemo: {
               placeholder: "5min",
@@ -2321,8 +2320,7 @@ let message = {
             points: {
               accuracyGuarantee: "96% noggrannhetsgaranti",
               handlesAccents: "Hanterar teknisk terminologi",
-              smartPunctuation: "Perfekt talaridentifiering",
-              speakerIdentification: "Talaridentifiering"
+              smartPunctuation: "Perfekt talaridentifiering"
             },
             visual: {
               accuracy: "96%",
@@ -2572,23 +2570,23 @@ let message = {
               "titleHighlight": "Besvarade",
               subtitle: "Allt du behöver veta om att transkribera videor från olika plattformar",
               "questions": [
-                {
-                  "question": "F: Hur transkriberar jag en YouTube-video med NeverCap?",
-                  "answer": "Det är enkelt. Hitta bara YouTube-videon du vill transkribera, kopiera dess URL och klistra in den i vår app. Vår AI hämtar videon automatiskt och ger en fullständig texttranskription på några minuter."
-                },
-                {
-                  "question": "F: Vad är det bästa sättet att transkribera en Facebook-video till text?",
-                  "answer": "Det enklaste sättet är att använda en direktlänk. Kopiera URL:en till Facebook-videon, och vår plattform hanterar resten, konverterar tal till text med upp till 96% noggrannhet och sparar dig från manuell transkribering."
-                },
-                {
-                  "question": "F: Kan jag transkribera TikTok- och Instagram-videor?",
-                  "answer": "Absolut. Vi stöder transkribering för både TikTok- och Instagram-videor. Detta är perfekt för innehållsskapare som vill återanvända sitt kortformade videomaterial till blogginlägg, artiklar eller textbaserade sociala medieuppdateringar."
-                },
-                {
-                  "question": "F: Hur transkriberar jag en Vimeo-video till text?",
-                  "answer": "Att transkribera Vimeo-videor är lika enkelt som på andra plattformar. Kopiera bara Vimeo-videons URL och klistra in den i NeverCap. Vår AI bearbetar videon och genererar en korrekt texttranskription som du kan ladda ner i flera format."
-                }
-              ]
+                    {
+                      "question": "F: Hur transkriberar jag en YouTube-video med NeverCap?",
+                      "answer": "Det är enkelt. Hitta bara YouTube-videon du vill transkribera, kopiera dess URL och klistra in den i vår app. Vår AI hämtar videon automatiskt och ger en fullständig texttranskription på några minuter."
+                    },
+                    {
+                      "question": "F: Vad är det bästa sättet att transkribera en Facebook-video till text?",
+                      "answer": "Det enklaste sättet är att använda en direktlänk. Kopiera URL:en till Facebook-videon, och vår plattform hanterar resten, konverterar tal till text med upp till 96% noggrannhet och sparar dig från manuell transkribering."
+                    },
+                    {
+                      "question": "F: Kan jag transkribera TikTok- och Instagram-videor?",
+                      "answer": "Absolut. Vi stöder transkribering för både TikTok- och Instagram-videor. Detta är perfekt för innehållsskapare som vill återanvända sitt kortformade videomaterial till blogginlägg, artiklar eller textbaserade sociala medieuppdateringar."
+                    },
+                    {
+                      "question": "F: Hur transkriberar jag en Vimeo-video till text?",
+                      "answer": "Att transkribera Vimeo-videor är lika enkelt som på andra plattformar. Kopiera bara Vimeo-videons URL och klistra in den i NeverCap. Vår AI bearbetar videon och genererar en korrekt texttranskription som du kan ladda ner i flera format."
+                    }
+                  ]
             }
     },
     Researchers: {
@@ -2677,7 +2675,19 @@ let message = {
         problemTitle2: "Forskningsavskrivningsproblemet",
         title: "The",
         useCasesTitle2: "Varje Forskningsmetod",
-        testimonialTitle2: "Ledande forskare"
+        testimonialTitle2: "Ledande forskare",
+        feature1TitleHl: "Hela studien",
+        feature1TitlePost: "på en gång",
+        feature2TitleHl: "Fokusgrupper",
+        feature2TitlePost: "varje gång",
+        feature3TitleHl: "96 % noggrannhet",
+        feature4TitleHl: "Säkerhet",
+        testimonialText2Hl: "200 timmar",
+        testimonialText3: "av fokusgruppinspelningar från vår hälsostudie i samhället. Andra tjänster ville att vi skulle välja vilka sessioner som skulle avskrivas på grund av kostnaden. NeverCap lät oss behandla",
+        testimonialText4Hl: "allt på en helg",
+        testimonialText5: ". Identifieringen av 20 talare fungerade faktiskt – till och med under våra rörigaste diskussioner där alla pratade samtidigt. Det här verktyget har",
+        testimonialText6Hl: "helt förändrat",
+        testimonialText7: "hur vi hanterar kvalitativa data."
     },
     BusinessTeams: {
       heroBadge: "För företagsteam",
@@ -3046,7 +3056,7 @@ let message = {
             },
             {
               "label": "Kontakta oss",
-              "value": ["e-post", "Support dygnet runt"]
+              "value": ["E-post", "Support dygnet runt"]
             }
           ]
     },
