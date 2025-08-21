@@ -21,7 +21,8 @@
                 -webkit-text-fill-color: transparent;
               "
               >{{ $i("ContentCreators.hero.titleHighlight") }}</span
-            ><br />{{ $i("ContentCreators.hero.titleSuffix") }}
+            ><br />
+            <!-- {{ $i("ContentCreators.hero.titleSuffix") }} -->
           </h1>
 
           <p class="hero-subtitle">

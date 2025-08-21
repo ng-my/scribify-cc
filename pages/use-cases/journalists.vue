@@ -287,7 +287,7 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">
-            {{ $i("Journalists.solution.title") }}
+            <!-- {{ $i("Journalists.solution.title") }} -->
             <span class="gradient-text">{{
               $i("Journalists.solution.titleHighlight")
             }}</span>
@@ -1066,12 +1066,14 @@ const signup = () => {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .feature-description {
   font-size: 14px;
   color: var(--gray);
   line-height: 1.5;
+  text-align: center;
 }
 
 /* Testimonial Section */

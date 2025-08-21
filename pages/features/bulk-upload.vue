@@ -658,7 +658,7 @@ const handleClick = () => {
 }
 
 .limit-card.nevercap:hover {
-  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.1);
+  // box-shadow: 0 20px 40px rgba(16, 185, 129, 0.1);
 }
 
 .service-logo {

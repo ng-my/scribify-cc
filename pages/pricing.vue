@@ -20,7 +20,7 @@
     </section>
 
     <!-- Pricing Cards -->
-    <PricingCards></PricingCards>
+    <PricingCards style="padding-bottom: 70px"></PricingCards>
 
     <!-- Comparison Table -->
     <PricingComparisonTable></PricingComparisonTable>
@@ -28,7 +28,7 @@
     <!-- FAQ Section -->
     <section class="faq-section">
       <div class="container">
-        <div class="section-header text-center font-bold text-[42px] mb-[50px]">
+        <div class="section-header">
           <h2 class="section-title">
             {{ $t("Pricing.FAQ.title") }}
             <span class="gradient-text">
