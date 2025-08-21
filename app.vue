@@ -22,6 +22,7 @@ import { useScrollTitle } from "./utils/useScrollTitle";
 import { message as en_US } from "~/i18n/lang/en-US"; // 英语（美国）
 import { runI18nCheck } from "~/i18n/check.js";
 import { useCrossDomainCookie } from "~/hooks/useCrossDomainCookie";
+import { usePageJump } from "~/composables/usePageJump";
 useScrollTitle();
 const { jumpPage } = usePageJump();
 const route = useRoute();

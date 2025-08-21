@@ -274,9 +274,7 @@
         <div class="testimonials-grid">
           <div class="testimonial-card">
             <span class="quote-icon">"</span>
-            <p class="testimonial-text">
-              "{{ $i("Testimonials.Mike.text") }}"
-            </p>
+            <p class="testimonial-text">"{{ $i("Testimonials.Mike.text") }}"</p>
             <div class="testimonial-author">
               <div class="author-avatar">
                 <el-avatar

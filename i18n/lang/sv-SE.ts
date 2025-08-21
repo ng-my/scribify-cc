@@ -1687,7 +1687,7 @@ let message = {
               },
               "cta": {
                 "text": "Obegränsade minuter. Prioriterad hastighet. Massuppladdningar.",
-                "button": "Bli Pro"
+                "button": "Gå Pro"
               },
               "badge": "Bästa värde - "
             }

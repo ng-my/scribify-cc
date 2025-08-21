@@ -1026,7 +1026,7 @@ let message = {
     Educators: "מחנכים",
     Resources: "משאבים",
     YouTubetoMP4: "YouTube ל-MP4",
-    StartFreeTrial: "נסה בחינם"
+    StartFreeTrial: "נסו בחינם"
   },
   Footer: {
     des: "שירות התמלול הבינה מלאכותית הראשון בעולם באמת בלתי מוגבל. אין הגבלות, אין מגבלות, רק חופש ליצור.",
@@ -3096,8 +3096,8 @@ let message = {
     "neverCap": "NeverCap"
   },
   TermsOfUse: {
-    title: "השירות",
-    titleGradient: "תנאי",
+    title: "תנאי",
+    titleGradient: "השירות",
     subtitle: "אנא קרא את התנאים הללו בעיון לפני השימוש בשירותים שלנו",
     "lastUpdated": "עודכן לאחרונה: {date}",
     "lastUpdatedDate": "21 ביולי 2025",

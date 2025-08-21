@@ -2775,7 +2775,7 @@ let message = {
       heroTitle1: "Rendi l'apprendimento",
       heroTitle2: "Accessibile a tutti",
       heroSubtitle: "Basta incollare link YouTube per ottenere trascrizioni istantanee con sottotitoli generati automaticamente. Trasforma lezioni, tutorial e video educativi in contenuti ricercabili e accessibili da cui ogni studente può imparare.",
-      heroCtaPrimary: "Prova gratis - Senza carta di credito",
+      heroCtaPrimary: "Provalo Gratis - Senza carta di credito",
       heroCtaSecondary: "Guarda demo",
       stats1Number: "1-Click",
       stats1Label: "Trascrizione YouTube",

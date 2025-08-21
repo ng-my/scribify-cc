@@ -1627,7 +1627,7 @@ let message = {
               "period": "月",
               "discount": "年付 $107.88",
               "limits": {
-                "title": "与Pro月付版相同",
+                "title": "与月度专业版相同",
                 "items": [
                   "总时长无限制",
                   "单个文件最长10小时/5GB",
@@ -1646,7 +1646,7 @@ let message = {
               },
               "cta": {
                 "text": "无限时长。优先处理。批量上传。",
-                "button": "升级Pro"
+                "button": "升级专业版"
               },
               "badge": "最佳性价比 - "
             }

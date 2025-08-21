@@ -1661,7 +1661,7 @@ let message = {
               "period": "월",
               "discount": "연간 결제 $107.88",
               "limits": {
-                "title": "Pro 월간과 동일",
+                "title": "월간 프로와 동일",
                 "items": [
                   "무제한 총 분량",
                   "파일당 최대 10시간 / 5GB",
@@ -1680,7 +1680,7 @@ let message = {
               },
               "cta": {
                 "text": "무제한 분량. 우선 처리 속도. 일괄 업로드.",
-                "button": "Pro로 업그레이드"
+                "button": "프로로 전환"
               },
               "badge": "최고의 가치 - "
             }
@@ -2763,7 +2763,7 @@ let message = {
       heroTitle1: "학습을",
       heroTitle2: "모두에게 접근 가능하게",
       heroSubtitle: "YouTube 링크를 붙여넣기만 하면 자동 생성 자막과 함께 즉시 대본을 얻을 수 있습니다. 강의, 튜토리얼, 교육용 동영상을 모든 학생이 학습할 수 있는 검색 가능한 콘텐츠로 변환하세요.",
-      heroCtaPrimary: "무료로 사용해 보기 - 신용카드 불필요",
+      heroCtaPrimary: "무료로 사용해보기 - 신용카드 불필요",
       heroCtaSecondary: "데모 보기",
       stats1Number: "1-클릭",
       stats1Label: "YouTube 변환",

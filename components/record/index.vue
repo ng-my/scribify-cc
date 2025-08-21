@@ -11,15 +11,15 @@
         class="md:px-13 record-content flex w-[36.875rem] justify-center px-4 py-4 sm:px-10"
       >
         <div class="flex w-full flex-col items-center">
-          <div class="recording flex items-center text-xl">
+          <div class="recording flex items-center text-base mb-2">
             <img
               class="me-2.5 w-[15px]"
               src="/assets/images/home/recording.svg"
               alt=""
             />
-            <span class="text-[20px] font-medium">{{ t("FolderPage.buttons.recording") }}</span>
+            <span class="text-base font-medium">{{ t("FolderPage.buttons.recording") }}</span>
           </div>
-          <div class="mb-4 text-base">{{ formattedTime }}</div>
+          <div class="mb-3 text-2xl tracking-wider">{{ formattedTime }}</div>
 
           <div class="mb-6 h-5 w-full overflow-hidden" ref="container"></div>
 
@@ -409,7 +409,6 @@ watchEffect(async () => {
 }
 
 .recording {
-  @apply mb-1;
 }
 
 :deep(.customer-button) {

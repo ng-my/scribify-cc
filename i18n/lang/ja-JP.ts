@@ -3277,8 +3277,8 @@ let message = {
     "neverCap": "NeverCap"
   },
   TermsOfUse: {
-    title: "利用規約",
-    titleGradient: "サービス",
+    title: "利用",
+    titleGradient: "規約",
     subtitle: "当社のサービスをご利用になる前に、これらの利用規約をよくお読みください",
     "lastUpdated": "最終更新日: {date}",
     "lastUpdatedDate": "2025年7月21日",

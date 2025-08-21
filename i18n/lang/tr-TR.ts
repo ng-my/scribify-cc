@@ -254,7 +254,7 @@ let message = {
       speaker: "Konuşmacıları Tanımla",
       speakerLabel: "Konuşan kişiyi otomatik algıla",
       guest: {
-        transcribe: "Uyarlamak",
+        transcribe: "Yazıya Dök",
         file: "Dosya",
         audio: "Ses / Video Dosyası",
         Uploading: "Yükleniyor..."
@@ -3117,8 +3117,8 @@ let message = {
     "neverCap": "NeverCap"
   },
   TermsOfUse: {
-    title: "Kullanım Koşulları",
-    titleGradient: "Hizmet",
+    title: "Kullanım",
+    titleGradient: "Koşulları",
     subtitle: "Hizmetlerimizi kullanmadan önce lütfen bu şartları dikkatlice okuyun",
     "lastUpdated": "Son güncelleme: {date}",
     "lastUpdatedDate": "21 Temmuz 2025",
