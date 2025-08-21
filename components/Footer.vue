@@ -74,11 +74,16 @@
 <script setup lang="ts">
 /* Footer 组件 */
 const sociaIconList = ref([
-  { id: 2, img: "x", title: "𝕏", url: "https://x.com/scribify_ai" },
-  { id: 4, img: "y", url: "https://www.youtube.com/@aiscribify" },
+  { id: 1, img: "x", title: "𝕏", url: "https://x.com/scribify_ai" },
+  { id: 2, img: "y", url: "https://www.youtube.com/@aiscribify" },
   { id: 3, img: "o", url: "https://www.instagram.com/scribifyai/" },
-  { id: 1, img: "p", url: "https://www.producthunt.com/@scribify" }
-  // { id: 5, img: "i", url: "https://www.linkedin.com/in/scribify-marcus" }
+  {
+    id: 4,
+    img: "t",
+    url: "https://www.tiktok.com/@scribify.ai?is_from_webapp=1&sender_device=pc"
+  }
+  // { id: 5, img: "p", url: "https://www.producthunt.com/@scribify" }
+  // { id: 6, img: "i", url: "https://www.linkedin.com/in/scribify-marcus" }
 ]);
 let featureMenus = ref([
   {

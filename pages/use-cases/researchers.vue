@@ -171,7 +171,9 @@
               t("UseCases.Researchers.feature1Label")
             }}</span>
             <h2 class="feature-title">
-              {{ t("UseCases.Researchers.feature1Title") }}
+              {{ t("UseCases.Researchers.feature1Title") }}<span class="gradient-text">
+                  {{ t("UseCases.Researchers.feature1TitleHl") }}
+              </span>{{ t("UseCases.Researchers.feature1TitlePost") }}
             </h2>
             <p class="feature-description">
               {{ t("UseCases.Researchers.feature1Desc") }}
@@ -230,7 +232,9 @@
               t("UseCases.Researchers.feature2Label")
             }}</span>
             <h2 class="feature-title">
-              {{ t("UseCases.Researchers.feature2Title") }}
+              {{ t("UseCases.Researchers.feature2Title") }}<span class="gradient-text">
+                 {{ t("UseCases.Researchers.feature2TitleHl") }}
+              </span>{{ t("UseCases.Researchers.feature2TitlePost") }}
             </h2>
             <p class="feature-description">
               {{ t("UseCases.Researchers.feature2Desc") }}
@@ -330,7 +334,9 @@
               t("UseCases.Researchers.feature3Label")
             }}</span>
             <h2 class="feature-title">
-              {{ t("UseCases.Researchers.feature3Title") }}
+              <span class="gradient-text">
+                 {{ t("UseCases.Researchers.feature3TitleHl") }}
+              </span>{{ t("UseCases.Researchers.feature3Title") }}
             </h2>
             <p class="feature-description">
               {{ t("UseCases.Researchers.feature3Desc") }}
@@ -386,7 +392,9 @@
               t("UseCases.Researchers.feature4Label")
             }}</span>
             <h2 class="feature-title">
-              {{ t("UseCases.Researchers.feature4Title") }}
+              {{ t("UseCases.Researchers.feature4Title") }}<span class="gradient-text">
+                 {{ t("UseCases.Researchers.feature4TitleHl") }}
+              </span>
             </h2>
             <p class="feature-description">
               {{ t("UseCases.Researchers.feature4Desc") }}
@@ -603,7 +611,13 @@
         <div class="testimonial-card">
           <span class="quote-icon">"</span>
           <p class="testimonial-text">
-            {{ t("UseCases.Researchers.testimonialText") }}
+            "{{ t("UseCases.Researchers.testimonialText") }}<span class="highlight">
+            {{ t("UseCases.Researchers.testimonialText2Hl") }}</span>
+            {{ t("UseCases.Researchers.testimonialText3") }}<span class="highlight">
+            {{ t("UseCases.Researchers.testimonialText4Hl") }}</span>
+            {{ t("UseCases.Researchers.testimonialText5") }}<span class="highlight">
+            {{ t("UseCases.Researchers.testimonialText6Hl") }}</span>
+            {{ t("UseCases.Researchers.testimonialText7") }}"
           </p>
           <div class="testimonial-author">
             <el-avatar
@@ -656,7 +670,7 @@ const handleJump = (path: string) => {
   $mitt.emit("goToEvent", { path: "/" });
 };
 </script>
-
+<style lang="scss" scoped src="./common.scss"></style>
 <style scoped lang="scss">
 .btn-ghost {
   background: transparent;

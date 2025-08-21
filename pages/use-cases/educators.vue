@@ -25,7 +25,7 @@
             {{ t("UseCases.Educators.heroSubtitle") }}
           </p>
           <div class="hero-cta">
-            <a @click="handleJump('/start')" class="btn-primary">{{
+            <a href="javascript:void(0)" @click="handleJump" class="btn-primary">{{
               t("UseCases.Educators.heroCtaPrimary")
             }}</a>
             <a class="btn-secondary" @click="showDownload">{{
@@ -725,8 +725,8 @@ const ctaData = ref({
   subtitle: t("UseCases.Educators.ctaSubtitle"),
   button: t("UseCases.Educators.ctaButton")
 });
-const handleJump = (path: string) => {
-  $mitt.emit("goToEvent", { path: "/" });
+const handleJump = () => {
+  $mitt.emit("goToEvent", { path: "/user/signup" });
 };
 
 const showHowToDownload = ref(false);

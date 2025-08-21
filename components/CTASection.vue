@@ -8,7 +8,7 @@
         <p class="cta-subtitle">
           {{ data.subtitle }}
         </p>
-        <span @click="handleClick" class="btn-white">
+        <span @click="handleClick" class="btn-white cursor-pointer">
           {{ data.button }}
         </span>
         <p
@@ -43,7 +43,7 @@ const props = defineProps({
 const $i = useI18nModule("Index");
 const { $mitt } = useNuxtApp();
 const handleClick = () => {
-  $mitt.emit("goToEvent", { path: "/user/login" });
+  $mitt.emit("goToEvent", { path: "/user/signup" });
 };
 </script>
 

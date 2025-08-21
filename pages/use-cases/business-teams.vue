@@ -42,7 +42,7 @@
 
             <div class="hero-cta">
               <a
-                @click="handleJump('/start')"
+                href="javascript:void(0)" @click="signup"
                 class="btn-primary mb-[20px] me-[10px] !px-[50px]"
               >
                 {{ t("UseCases.BusinessTeams.heroCtaPrimary") }}
@@ -686,8 +686,8 @@ const ctaData = ref({
   button: t("UseCases.BusinessTeams.ctaButton")
 });
 const { $mitt } = useNuxtApp();
-const handleJump = (path: string) => {
-  $mitt.emit("goToEvent", { path: "/" });
+const signup = () => {
+  $mitt.emit("goToEvent", { path: "/user/signup" });
 };
 </script>
 

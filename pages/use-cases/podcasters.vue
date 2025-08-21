@@ -605,7 +605,7 @@ const $i = useI18nModule("UseCases");
 const { t } = useI18n();
 const ctaData = ref({
   title: $i("Podcasters.ctaTitle"),
-  subtitle: $i("Podcasters.ctaTitle"),
+  subtitle: $i("Podcasters.ctaSubtitle"),
   button: $i("Podcasters.ctaButton"),
   disclaimer: $i("Podcasters.ctaDisclaimer")
 });

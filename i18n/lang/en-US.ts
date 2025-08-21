@@ -1533,7 +1533,7 @@ let message = {
       heroTitle: "Transcribe Your",
       heroTitleHighlight: "Entire Podcast Archive",
       heroSubtitle:
-        "Upload your entire back catalog. Create show notes for every episode. No more choosing which episodes to audio transcribe.",
+        "Upload your entire back catalog. Create show notes for every episode. No more choosing which episodes to transcribe. Process 50 episodes at once, unlimited times per month.",
       ctaPrimary: "Start Transcribing Free",
       ctaSecondary: "See How It Works",
       trustBadge1: "10,000+ Podcasters",
@@ -2144,7 +2144,9 @@ let message = {
 
       // Features Section
       feature1Label: "No Limits",
-      feature1Title: "Process Your Entire Study in One Go",
+      feature1TitleHl: "Entire Study ",
+      feature1Title: "Process Your",
+      feature1TitlePost: " in One Go",
       feature1Desc:
         'Upload all 200 hours of interviews tonight. Wake up to complete, searchable transcripts. No monthly caps, no per-file limits, no "fair use" BS.',
       feature1Point1: "Batch upload 50 files simultaneously",
@@ -2155,7 +2157,9 @@ let message = {
       feature1Visual2: "Same price whether 10 or 10,000 hours",
 
       feature2Label: "Smart AI",
-      feature2Title: "Nails Focus Groups Every Time",
+      feature2TitleHl: "Focus Groups",
+      feature2Title: "Nails",
+      feature2TitlePost: " Every Time",
       feature2Desc:
         "Our AI tracks up to 20 speakers even when they're talking over each other, cutting each other off, or all chiming in at once. Every voice gets captured and labeled correctly.",
       feature2Point1: "20-speaker identification",
@@ -2177,7 +2181,8 @@ let message = {
         "In rural areas, it's all three: cost, access, AND transport.",
 
       feature3Label: "Precision",
-      feature3Title: "96% Accuracy That Holds Up",
+      feature3TitleHl: "96% Accuracy ",
+      feature3Title: "That Holds Up",
       feature3Desc:
         "Handles technical jargon, thick accents, and field-specific terminology like a pro. Accurate enough for publication, peer review, and your dissertation committee.",
       feature3Point1: "Medical & scientific terminology",
@@ -2188,7 +2193,8 @@ let message = {
       feature3Visual2: "Trusted by 50,000+ researchers",
 
       feature4Label: "Security",
-      feature4Title: "IRB-Ready Security",
+      feature4TitleHl: " Security",
+      feature4Title: "IRB-Ready",
       feature4Desc:
         "Your sensitive research data is protected with enterprise-grade security. GDPR compliant, HIPAA-ready options, and full audit trails for IRB requirements.",
       feature4Point1: "End-to-end encryption",
@@ -2228,8 +2234,14 @@ let message = {
       // Testimonial Section
       testimonialTitle: "Trusted by",
       testimonialTitle2: "Leading Researchers",
-      testimonialText:
-        "Our research team had 200 hours of focus group recordings from our community health study. Other services wanted us to pick and choose which sessions to transcribe because of the cost. NeverCap let us process everything over a weekend. The 20-speaker identification actually worked—even during our messiest discussions where everyone was talking at once. This tool has completely changed how we handle qualitative data.",
+      testimonialText: 'Our research team had ',
+      testimonialText2Hl: '200 hours',
+      testimonialText3: ' of focus group recordings from our community health study. Other services wanted us to pick and choose which sessions to transcribe because of the cost. NeverCap let us process ',
+      testimonialText4Hl: 'everything over a weekend',
+      testimonialText5: '. The 20-speaker identification actually worked—even during our messiest discussions where everyone was talking at once. This tool has ',
+      testimonialText6Hl: 'completely changed',
+      testimonialText7: ' how we handle qualitative data.',
+
       testimonialAuthorName: "Dr. Sarah Chen",
       testimonialAuthorRole: "Lead Researcher, Public Health Institute",
 
