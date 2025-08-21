@@ -28,7 +28,7 @@
     <!-- FAQ Section -->
     <section class="faq-section">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header text-center font-bold text-[42px] mb-[50px]">
           <h2 class="section-title">
             {{ $t("Pricing.FAQ.title") }}
             <span class="gradient-text">
