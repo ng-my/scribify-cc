@@ -1004,7 +1004,7 @@ h1 {
 }
 
 .use-case-icon {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .use-case-title {
