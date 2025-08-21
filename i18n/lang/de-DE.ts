@@ -1705,7 +1705,7 @@ let message = {
                 "text": "Unbegrenzte Minuten. Prioritäts-Geschwindigkeit. Stapel-Uploads.",
                 "button": "Pro werden"
               },
-              "badge": "Bestes Angebot - 50% sparen"
+              "badge": "Bestes Angebot - "
             }
           ],
       "disclaimer": '"Unbegrenzt" bedeutet keine monatliche Obergrenze und keine künstliche Verlangsamung. Fair-Use gilt bei missbräuchlicher Automatisierung oder Weiterverteilung.'

@@ -1689,7 +1689,7 @@ let message = {
                 "text": "Ubegrænsede minutter. Prioriteret hastighed. Batch-upload.",
                 "button": "Gå Pro"
               },
-              "badge": "Bedste værdi - Spar 50%"
+              "badge": "Bedste værdi - "
             }
           ],
       "disclaimer": '"Ubegrænset" betyder ingen månedlig grænse og ingen kunstig nedbremsning. Fair-use gælder for misbrug af automatisering eller redistribution.'

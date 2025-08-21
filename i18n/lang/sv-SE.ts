@@ -1689,7 +1689,7 @@ let message = {
                 "text": "Obegränsade minuter. Prioriterad hastighet. Massuppladdningar.",
                 "button": "Bli Pro"
               },
-              "badge": "Bästa värde - Spara 50%"
+              "badge": "Bästa värde - "
             }
           ],
       "disclaimer": '\"Obegränsat\" innebär ingen månatlig tak och ingen artificell nedgång. Skäligt bruk gäller för missbruk av automatisering eller vidaredistribution.'

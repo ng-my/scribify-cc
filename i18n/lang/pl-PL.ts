@@ -1694,7 +1694,7 @@ let message = {
                 "text": "Nielimitowane minuty. Priorytetowa prędkość. Zbiorcze przesyłanie.",
                 "button": "Przejdź na Pro"
               },
-              "badge": "Najlepsza wartość – oszczędź 50%"
+              "badge": "Najlepsza wartość – "
             }
           ],
       "disclaimer": "„Nielimitowane” oznacza brak miesięcznego limitu i sztucznego spowalniania. Zasady uczciwego użytkowania dotyczą nadużywania automatyzacji lub redystrybucji."

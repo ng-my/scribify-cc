@@ -1693,7 +1693,7 @@ let message = {
                 "text": "Ubegrensede minutter. Prioritert hastighet. Masseopplasting.",
                 "button": "Bli Pro"
               },
-              "badge": "Beste verdi - Spar 50%"
+              "badge": "Beste verdi - "
             }
           ],
       "disclaimer": '"Ubegrenset" betyr ingen månedlig grense og ingen kunstig nedetid. Rettferdig bruk gjelder for misbruk av automatisering eller redistribusjon.'

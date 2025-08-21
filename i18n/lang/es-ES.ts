@@ -1698,7 +1698,7 @@ let message = {
                 "text": "Minutos ilimitados. Velocidad prioritaria. Subidas masivas.",
                 "button": "Hazte Pro"
               },
-              "badge": "Mejor valor - Ahorra 50%"
+              "badge": "Mejor valor - "
             }
           ],
       "disclaimer": '"Ilimitado" significa sin límite mensual ni ralentización artificial. Se aplica uso justo para automatización abusiva o redistribución.'

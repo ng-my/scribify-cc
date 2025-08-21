@@ -1707,7 +1707,7 @@ let message = {
                 "text": "Minutes illimitées. Vitesse prioritaire. Téléversements groupés.",
                 "button": "Passer Pro"
               },
-              "badge": "Meilleur rapport qualité-prix - Économisez 50%"
+              "badge": "Meilleur rapport qualité-prix - "
             }
           ],
       "disclaimer": `"Illimité" signifie pas de plafond mensuel ni de ralentissement artificiel. L'usage équitable s'applique à l'automatisation abusive ou la redistribution.`

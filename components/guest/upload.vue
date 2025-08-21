@@ -1,14 +1,18 @@
 <template>
   <div class="upload w-full text-black">
-    <div class="title flex w-full justify-center">{{ t('FileUploadAndRecording.upload.guest.transcribe') }}</div>
+    <div class="title flex w-full justify-center">
+      {{ t("FileUploadAndRecording.upload.guest.transcribe") }}
+    </div>
     <div class="mb-4 flex w-full justify-between">
       <span class="text-lg font-medium">{{
-        tableData.length ? t('FileUploadAndRecording.upload.guest.file') : t('FileUploadAndRecording.upload.guest.audio')
+        tableData.length
+          ? t("FileUploadAndRecording.upload.guest.file")
+          : t("FileUploadAndRecording.upload.guest.audio")
       }}</span>
       <div class="flex" v-show="!tableData.length">
         <div @click="openRecord" class="img-button cursor-pointer">
           <img
-            class="h-auto w-[0.9375rem] no-drag"
+            class="no-drag h-auto w-[0.9375rem]"
             src="/assets/images/index_black/record.svg"
             alt=""
           />
@@ -16,7 +20,7 @@
 
         <div @click="showLinkDialog = true" class="img-button cursor-pointer">
           <img
-            class="h-auto w-[1.125rem] cursor-pointer no-drag"
+            class="no-drag h-auto w-[1.125rem] cursor-pointer"
             src="/assets/images/index_black/url.svg"
             alt=""
           />
@@ -103,7 +107,7 @@
     <div class="mt-5">
       <lang-choose-input
         :popperStyle="{
-          borderRadius: '0.5rem',
+          borderRadius: '0.5rem'
         }"
         v-model:lang="lang"
       />
@@ -115,9 +119,10 @@
       </div>
       <client-only>
         <el-checkbox v-model="diarizeEnabled">
-          <span class="max-w-full whitespace-normal break-words text-base font-normal">{{
-            t("FileUploadAndRecording.upload.speakerLabel")
-          }}</span>
+          <span
+            class="max-w-full whitespace-normal break-words text-base font-normal"
+            >{{ t("FileUploadAndRecording.upload.speakerLabel") }}</span
+          >
         </el-checkbox>
       </client-only>
     </div>
@@ -130,7 +135,11 @@
       :loading="transcribing"
     >
       <!--      <span class="iconfont icon-bianji me-2.5"></span>-->
-      {{ isUploading ? t('FileUploadAndRecording.upload.guest.Uploading') : t('FileUploadAndRecording.upload.guest.transcribe') }}
+      {{
+        isUploading
+          ? t("FileUploadAndRecording.upload.guest.Uploading")
+          : t("FileUploadAndRecording.upload.guest.transcribe")
+      }}
     </el-button>
   </div>
   <upload-dialog-link
@@ -356,7 +365,9 @@ const handleTranscribe = async () => {
       handleJumpHome();
     }
   } finally {
-    transcribing.value = false;
+    setTimeout(() => {
+      transcribing.value = false;
+    }, 800);
   }
 };
 
@@ -416,14 +427,14 @@ const handleCloseDialog = () => {
 <style lang="scss" scoped>
 :deep(.el-checkbox__label) {
   padding-left: 0;
-  @apply ps-2
+  @apply ps-2;
 }
 
 .upload {
   max-width: 48.75rem; // 780px ÷ 16
   max-height: 37.875rem; // 606px ÷ 16
   background: #fff;
-  box-shadow: 0 2px 3.625px 0 rgba(0,0,0,0.03);
+  box-shadow: 0 2px 3.625px 0 rgba(0, 0, 0, 0.03);
   border-radius: 1rem; // 8px ÷ 16
   @apply p-4 sm:p-[2.1875rem] sm:pt-[1.875rem];
 
@@ -436,7 +447,7 @@ const handleCloseDialog = () => {
 
   :deep(.upload-file) {
     .icon-shangchuan {
-      color: #6367F1;
+      color: #6367f1;
       margin-bottom: 1.25rem; // 20px ÷ 16
       font-size: 1.375rem; // 22px ÷ 16
     }
@@ -457,9 +468,9 @@ const handleCloseDialog = () => {
     .el-upload-dragger {
       max-width: 44.375rem; // 710px ÷ 16
       height: 11rem; // 176px ÷ 16
-      background: #F9FAFC;
+      background: #f9fafc;
       border-radius: 0.5rem; // 8px ÷ 16
-      border: 0.125rem dashed #E2E4E6; // 1px ÷ 16
+      border: 0.125rem dashed #e2e4e6; // 1px ÷ 16
       @apply pb-2 pt-8 sm:pb-0 sm:pt-10;
     }
   }
@@ -497,7 +508,6 @@ const handleCloseDialog = () => {
 
 :deep(.el-input),
 :deep(.el-textarea) {
-
   ::placeholder {
   }
 }
@@ -507,7 +517,7 @@ const handleCloseDialog = () => {
 }
 
 .button {
-  background: linear-gradient( 90deg, #3470FF 0%, #9534E6 100%) !important;
+  background: linear-gradient(90deg, #3470ff 0%, #9534e6 100%) !important;
   height: 2.75rem !important; // 44px ÷ 16
   display: flex;
   justify-content: center;
@@ -544,7 +554,7 @@ const handleCloseDialog = () => {
 }
 
 :deep(.el-progress__text) {
-  @apply me-3 !text-sm text-black;
+  @apply me-3 !text-sm text-white;
 }
 
 :deep(.el-checkbox__label) {
@@ -577,12 +587,12 @@ const handleCloseDialog = () => {
 }
 
 :deep(.el-input__wrapper.is-focus) {
-  box-shadow: 0 0 0 1px #6367F1 inset;
+  box-shadow: 0 0 0 1px #6367f1 inset;
 }
 
 :deep(.is-checked .el-checkbox__inner) {
-  background: #6367F1;
-  border-color: #6367F1;
+  background: #6367f1;
+  border-color: #6367f1;
 }
 
 :deep(.link-label) {
@@ -599,9 +609,9 @@ const handleCloseDialog = () => {
 .img-button {
   width: 2.875rem;
   height: 2rem;
-  background: #F9FAFC;
+  background: #f9fafc;
   border-radius: 0.4375rem;
-  border: 2px solid #E2E4E6;
+  border: 2px solid #e2e4e6;
   margin-left: 0.5rem;
   display: flex;
   align-items: center;
@@ -676,12 +686,11 @@ const handleCloseDialog = () => {
     }
   }
 
-
   .el-button {
     height: 44px;
     min-width: 188px;
     border-radius: 10px;
-    border: 1px solid #E2E4E6;
+    border: 1px solid #e2e4e6;
     color: black;
     font-size: 18px;
 
@@ -691,11 +700,11 @@ const handleCloseDialog = () => {
   }
 
   .el-button--primary {
-    background: #6367F1;
+    background: #6367f1;
     color: white;
 
     &:hover {
-      background: #6367F1;
+      background: #6367f1;
     }
   }
 

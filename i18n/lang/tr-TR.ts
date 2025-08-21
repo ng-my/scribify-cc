@@ -1689,7 +1689,7 @@ let message = {
                 "text": "Sınırsız dakika. Öncelikli hız. Toplu yükleme.",
                 "button": "Pro'ya Geç"
               },
-              "badge": "En İyi Değer - %50 Tasarruf Edin"
+              "badge": "En İyi Değer - "
             }
           ],
       "disclaimer": '\"Sınırsız\" aylık sınır ve yapay yavaşlatma olmadığı anlamına gelir. Adil kullanım, kötüye kullanım veya yeniden dağıtım için geçerlidir.'

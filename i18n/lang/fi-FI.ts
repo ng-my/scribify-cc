@@ -1689,7 +1689,7 @@ let message = {
                 "text": "Rajattomat minuutit. Etusijanopeus. Joukkolataukset.",
                 "button": "Siirry Pro"
               },
-              "badge": "Paras arvo - Säästä 50%"
+              "badge": "Paras arvo - "
             }
           ],
       "disclaimer": '\"Rajaton\" tarkoittaa ei kuukausirajoitusta eikä keinotekoista hidastamista. Kohtuullinen käyttö koskee väärinkäyttöä tai uudelleenjakelua.'

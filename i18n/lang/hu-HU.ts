@@ -1691,7 +1691,7 @@ let message = {
                 "text": "Korlátlan percek. Prioritásos sebesség. Csomagos feltöltés.",
                 "button": "Go Pro"
               },
-              "badge": "Legjobb érték - 50% megtakarítás"
+              "badge": "Legjobb érték - "
             }
           ],
       "disclaimer": 'A "korlátlan" azt jelenti, hogy nincs havi limit és mesterséges lassítás. A tisztességes felhasználás vonatkozik az visszaélő automatizálásra vagy terjesztésre.'

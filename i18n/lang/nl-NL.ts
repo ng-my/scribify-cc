@@ -1700,7 +1700,7 @@ let message = {
                 "text": "Onbeperkte minuten. Prioritaire snelheid. Batch-uploads.",
                 "button": "Ga Pro"
               },
-              "badge": "Beste Waarde - Bespaar 50%"
+              "badge": "Beste Waarde - "
             }
           ],
       "disclaimer": '"Onbeperkt" betekent geen maandelijkse limiet en geen kunstmatige vertraging. Redelijk gebruik is van toepassing op misbruik van automatisering of herdistributie.'

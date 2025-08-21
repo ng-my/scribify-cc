@@ -14,7 +14,7 @@
         </template>
         <template v-else-if="i == 2">
           <div class="value-badge">
-            {{ $i("plans[" + i + "].badge") }}
+            {{ $i("plans[" + i + "].badge") }}<span>Save 50%</span>
           </div>
         </template>
 
@@ -171,6 +171,7 @@ const handleClick = (type: Number) => {
   border-radius: 20px;
   font-size: 12px;
   font-weight: 600;
+  text-align: center;
 }
 
 .plan-name {

@@ -1229,7 +1229,7 @@ let message = {
             "text": "Unlimited minutes. Priority speed. Batch uploads.",
             "button": "Go Pro"
           },
-          "badge": "Best Value - Save 50%",
+          "badge": "Best Value - ",
         }
       ],
       "disclaimer": "\"Unlimited\" means no monthly cap and no artificial slowdown. Fair-use applies to abusive automation or redistribution."

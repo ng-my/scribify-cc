@@ -1694,7 +1694,7 @@ let message = {
                 "text": "Minuti illimitati. Velocità prioritaria. Caricamenti multipli.",
                 "button": "Scegli Pro"
               },
-              "badge": "Miglior rapporto qualità-prezzo - Risparmia 50%"
+              "badge": "Miglior rapporto qualità-prezzo - "
             }
           ],
       "disclaimer": '\"Illimitato\" significa nessun limite mensile e nessun rallentamento artificiale. Si applica il fair-use per automazione abusiva o ridistribuzione.'

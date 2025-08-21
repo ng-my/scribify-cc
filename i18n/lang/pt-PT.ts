@@ -1696,7 +1696,7 @@ let message = {
                 "text": "Minutos ilimitados. Velocidade prioritária. Envios em lote.",
                 "button": "Assine Pro"
               },
-              "badge": "Melhor Custo-Benefício - Economize 50%"
+              "badge": "Melhor Custo-Benefício - "
             }
           ],
       "disclaimer": '\"Ilimitado\" significa sem limite mensal e sem lentidão artificial. Uso justo aplica-se a automação abusiva ou redistribuição.'
