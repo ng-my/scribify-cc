@@ -29,7 +29,7 @@
         </p>
 
         <div class="hero-cta">
-          <a @click="handleJump('/start')" class="btn-primary">{{
+          <a @click="handleJump" class="btn-primary">{{
             t("UseCases.Researchers.heroCtaPrimary")
           }}</a>
           <a href="#features" class="btn-secondary">{{
@@ -666,8 +666,8 @@ const ctaData = ref({
   button: t("UseCases.Researchers.ctaButton")
 });
 const { $mitt } = useNuxtApp();
-const handleJump = (path: string) => {
-  $mitt.emit("goToEvent", { path: "/" });
+const handleJump = () => {
+  $mitt.emit("goToEvent", { path: "/user/signup" });
 };
 </script>
 <style lang="scss" scoped src="./common.scss"></style>
