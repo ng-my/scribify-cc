@@ -1092,7 +1092,7 @@ let message = {
       badge: "Keine „Shrinkflation“ mehr – tatsächlich unbegrenzt",
       h1: "Zahlen Sie nicht mehr für Limits:",
       gradient: "Wirklich unbegrenzte KI-Transkription",
-      subtitle: "Laden Sie Ihr gesamtes Podcast-Archiv hoch. Transkribieren Sie alle Ihre Interviews. Verarbeiten Sie 50 Dateien gleichzeitig. Keine monatlichen Limits, keine Upload-Limits. Endlich Transkription, die sich Ihren tatsächlichen Bedürfnissen anpasst.",
+      subtitle: "Unsere KI transkribiert Videos und konvertiert Audio in Text. Dabei verarbeitet sie 50 Dateien gleichzeitig, ohne monatliche Obergrenzen. Transkription, die wirklich mit Ihnen skaliert.",
       FreeTrial: "Kostenlos testen – Keine Kreditkarte erforderlich",
       HowWorks: "So funktioniert es",
       Unlimited: "Unbegrenzte Datei-Uploads",
@@ -1111,33 +1111,34 @@ let message = {
       no_signup: "Keine Anmeldung erforderlich",
       experience_unltd: "Erleben Sie wirklich unbegrenzte Transkription",
       upload_50: "Laden Sie hier bis zu 50 Dateien gleichzeitig hoch",
-      no_limits: "Keine versteckten Grenzen mehr",
-      no_surprises: "Keine Überraschungen mehr",
-      transparency: "Während andere stillschweigend Ihre Minuten reduzieren oder Obergrenzen im Kleingedruckten verstecken, glauben wir an radikale Transparenz",
+      no_limits: "Fortschrittlich",
+      no_surprises: "KI-Transkription",
+      transparency: "Keine versteckten Limits mehr, keine Überraschungen mehr – Während andere Ihre Minuten heimlich reduzieren oder Obergrenzen im Kleingedruckten verstecken, glauben wir an radikale Transparenz",
       feat_unltd: "Tatsächlich unbegrenzt",
-      feat_unltd_desc: "Keine versteckten „Fair Use“-Richtlinien. Keine als „unbegrenzt“ getarnten Speicherbeschränkungen. Laden Sie Ihr gesamtes Archiv hoch und transkribieren Sie alles. Wir meinen es ernst.",
+      feat_unltd_desc: "Keine versteckten „Fair Use“-Richtlinien. Keine als „unbegrenzt“ getarnten Speicherbeschränkungen. Laden Sie Ihr gesamtes Archiv hoch und transkribieren Sie alles für Ihre Audio-Transkriptionsanforderungen. Wir meinen es ernst.",
       feat_bulk: "Freiheit beim Massen-Upload",
       feat_bulk_desc: "Keine Lust mehr auf „3 Importe im Laufe der Zeit“ oder „10 Dateien pro Monat“? Laden Sie 50 Dateien gleichzeitig hoch, so oft Sie möchten. Perfekt für die Bearbeitung von Rückständen.",
       feat_batch: "Stapelverarbeitung",
       feat_batch_desc: "Verarbeiten Sie Ihre gesamte Podcast-Saison über Nacht. Laden Sie 50 Interviews auf einmal hoch. Lassen Sie unsere KI arbeiten, während Sie schlafen. Wachen Sie mit fertigen Transkripten auf.",
       feat_accuracy: "96 % Genauigkeit",
-      feat_accuracy_desc: "Branchenführende KI mit intelligenter Zeichensetzung, Sprecherdiarisierung für bis zu 20 Sprecher und einwandfreier Verarbeitung von Akzenten und Fachbegriffen.",
+      feat_accuracy_desc: "Unsere branchenführende KI transkribiert Audio mit intelligenter Zeichensetzung, Sprecherdiarisierung für bis zu 20 Sprecher und verarbeitet Akzente und Fachbegriffe einwandfrei.",
       feat_langs: "Über 100 Sprachen",
-      feat_langs_desc: "Transkribieren Sie in über 100 Sprachen, übersetzen Sie in über 249 Sprachen. Keine zusätzlichen Gebühren für verschiedene Sprachen. Globaler Inhalt, ein einfacher Preis.",
+      feat_langs_desc: "Transkribieren Sie Video und Audio in über 100 Sprachen und übersetzen Sie in über 249 Sprachen. Keine zusätzlichen Kosten für verschiedene Sprachen. Globale Inhalte, ein einfacher Preis.",
       feat_pro: "Professionelle Funktionen",
-      feat_pro_desc: "Zeitstempel auf Wortebene für eine präzise Audio-/Videopositionierung, genaue Sprecheridentifizierung auch bei schnellen Gesprächswechseln und perfekt formatierter Text mit Absätzen, Sätzen und Satzzeichen für einfaches Lesen."
+      feat_pro_desc: "Zeitstempel auf Wortebene für eine präzise Audio-/Videopositionierung, genaue Sprecheridentifizierung auch bei schnellen Gesprächswechseln und perfekt formatierter Text mit Absätzen, Sätzen und Satzzeichen für einfaches Lesen.",
+        features: "Merkmale"
     },
     UseCases: {
-      built_for: "Gebaut für",
-      "heavy_users": "Vielnutzer wie Sie",
-      "join_users": "Schließen Sie sich YouTubern, Content-Erstellern und Podcastern an, die von „Shrinkflation“-Diensten gewechselt sind",
+      built_for: "Schüttgut",
+      "heavy_users": "Audio- und Videotranskription",
+      "join_users": "Entwickelt für Vielnutzer wie Sie – Schließen Sie sich YouTubern, Content-Erstellern und Podcastern an, die von „Shrinkflation“-Diensten umgestiegen sind",
       "podcasters": {
         "title": "Podcaster",
         "des": "Laden Sie Ihren gesamten Backkatalog hoch. Erstellen Sie Shownotes für jede Episode. Sie müssen nicht mehr auswählen, welche Episoden transkribiert werden sollen."
       },
       "content_creators": {
         "title": "Inhaltsersteller",
-        "des": "Verwandeln Sie Ihre Videobibliothek in durchsuchbaren Text. Erstellen Sie Untertitel für alles. Kein Minutenzählen, nur kreativ sein."
+        "des": "Verwandeln Sie Ihre Videobibliothek in durchsuchbaren Text, indem Sie unseren Service zur automatischen Transkription von Videodateien nutzen. Erstellen Sie Untertitel für alles. Kein Minutenzählen, nur kreativ sein."
       },
       "journalists": {
         "title": "Journalisten",
@@ -1149,7 +1150,7 @@ let message = {
       },
       business_teams: {
         title: "Geschäftsteams",
-        des: "Zeichnen Sie jeden Anruf auf, ohne sich um Limits sorgen zu müssen. Erhalten Sie KI-Einblicke in alle Gespräche, nicht nur in einige wenige."
+        des: "Zeichnen Sie jeden Anruf auf, ohne sich um Limits Gedanken machen zu müssen. Erhalten Sie KI-Einblicke in alle Gespräche, nicht nur in einige wenige."
       },
       educators: {
         title: "Pädagogen",
@@ -1185,6 +1186,11 @@ let message = {
       "title": "Häufig gestellte Fragen",
       "titleHighlight": "Fragen",
       "questions": [
+            {
+              "q": "KI-Transkription",
+              "question": "Was ist KI-Transkription und wie funktioniert sie?",
+              "answer": "KI-Transkription ist die automatische Umwandlung von Audio in Text mithilfe fortschrittlicher künstlicher Intelligenz. Bei NeverCap laden Sie einfach Ihre Dateien hoch, und unsere KI transkribiert den Inhalt mit einer Genauigkeit von bis zu 96 %. Unser Service ist darauf ausgelegt, Videodateien (wie MP4, MOV) und Audiodateien (wie MP3, WAV) in lesbaren, bearbeitbaren Text zu transkribieren, komplett mit Sprecherbezeichnungen und Zeitstempeln."
+            },
             {
               "q": "unbegrenzte_Richtlinie",
               "question": "Ist es wirklich unbegrenzt? Wo ist der Haken?",
@@ -1231,7 +1237,7 @@ let message = {
       "title": "Bereit, sich von Grenzen zu befreien?",
       "subtitle": "Schließen Sie sich über 50.000 Fachleuten an, die auf wirklich unbegrenzte Transkription umgestiegen sind",
       "button": "Testen Sie NeverCap kostenlos",
-      "disclaimer": "Für den kostenlosen Plan ist keine Kreditkarte erforderlich. • Sie können jederzeit ein Upgrade für unbegrenzten Zugriff durchführen."
+      "disclaimer": "Für den kostenlosen Plan ist keine Kreditkarte erforderlich • Upgraden Sie jederzeit für unbegrenzten Zugriff"
     }
   },
   Features: {
@@ -1465,7 +1471,7 @@ let message = {
       statCard3Percentage: "100 ms",
       statCard3DescriptionLine1: "Wortebene",
       statCard3DescriptionLine2: "Zeitstempelgenauigkeit",
-      languageSectionTitlePart1: "96 % Genauigkeit in 12 Hauptsprachen",
+      languageSectionTitlePart1: "96 % Genauigkeit",
       languageSubtitle: "Professionelle Transkription für globale Inhalte",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "Englisch",
@@ -1531,7 +1537,7 @@ let message = {
       feature2Label: "Intelligente KI",
       feature2TitlePart1: "Griffe",
       feature2TitleHighlight: "Schnelle Gespräche",
-      feature2Description: "Unsere KI identifiziert Sprecher präzise, selbst bei sich überschneidenden Redebeiträgen, Unterbrechungen und schnellen Gesprächen. Perfekt für Interviews, Podcasts und Meetings, bei denen Sprecher häufig unterbrechen.",
+      feature2Description: "Unsere KI identifiziert Sprecher präzise, selbst bei sich überschneidenden Redebeiträgen, Unterbrechungen und schnellen Gesprächen. Perfekt für Interviews, Podcasts und Meetings, bei denen Sprecher häufig dazwischenreden.",
       feature2Point1Icon: "✓",
       feature2Point1Text: "Identifiziert bis zu 20 Sprecher",
       feature2Point2Icon: "✓",
@@ -1558,7 +1564,7 @@ let message = {
       formattingTitle: "Vorher & Nachher",
       formattingBeforeLabel: "❌ Andere:",
       formattingBeforeText: "also heute werden wir über die neuen Funktionen sprechen, an denen wir gearbeitet haben. Ich denke, sie werden Ihnen wirklich gefallen. Sie wurden von den Benutzern schon lange gefordert und wir haben sie endlich fertiggestellt.",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ Niemals verschließen:",
       formattingAfterText: "Heute sprechen wir über die neuen Funktionen, an denen wir gearbeitet haben. Ich denke, sie werden euch gefallen. Die Nutzer haben sich die Funktionen schon lange gewünscht, und jetzt haben wir sie endlich umgesetzt.",
       comparisonSubtitle: "Genauigkeit",
       comparisonSectionTitle: "Vergleich",
@@ -1600,7 +1606,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "Erleben Sie 96 % Genauigkeit",
       ctaSubtitle: "Laden Sie Ihr anspruchsvollstes Audio hoch und sehen Sie den Unterschied",
-      finalCta: "Testen Sie jetzt unsere Genauigkeit →"
+      finalCta: "Testen Sie jetzt unsere Genauigkeit →",
+        languageSectionTitlePart2: "in 12 Hauptsprachen"
     }
   },
   Pricing: {
@@ -1705,7 +1712,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "Alle Funktionen vergleichen",
+        "title": "Vergleichen",
         "highlighted_text": "Alle Funktionen",
         "subtitle": "Sehen Sie genau, was Sie mit jedem Plan erhalten. Keine versteckten Einschränkungen."
       },
@@ -1721,7 +1728,7 @@ let message = {
               "values": [
                 "0 $/Monat",
                 {
-                  "main": "17,99 $/Monat",
+                  "main": "17,99 $/Monat",
                   "note": "9,99 $ im ersten Monat"
                 },
                 {

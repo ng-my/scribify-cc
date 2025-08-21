@@ -1236,7 +1236,7 @@ let message = {
       badge: "「シュリンクフレーション」はもう終わり - 実際には無制限",
       h1: "制限料金の支払いはもうやめましょう:",
       gradient: "真に無制限のAI文字起こし",
-      subtitle: "ポッドキャストアーカイブ全体をアップロード。すべてのインタビューを文字起こし。50ファイルを一括処理。月間上限やアップロード制限なし。ニーズに合わせて拡張可能な文字起こしサービスがついに登場。",
+      subtitle: "当社のAIは、動画を文字起こしし、音声をテキストに変換します。月額利用制限なしで、一度に50ファイルまで処理できます。お客様のニーズに合わせて拡張可能な文字起こしサービスです。",
       FreeTrial: "無料でお試しください - クレジットカード不要",
       HowWorks: "仕組みを見る",
       Unlimited: "無制限のファイルアップロード",
@@ -1255,33 +1255,34 @@ let message = {
       no_signup: "サインアップ不要",
       experience_unltd: "真に無制限のトランスクリプションを体験",
       upload_50: "一度に最大50個のファイルをアップロードできます。",
-      no_limits: "隠れた制限はもうない",
-      no_surprises: "もう驚きはない",
-      transparency: "他社が静かに通話時間を減らしたり、細かい文字で上限を隠したりする一方で、当社は徹底した透明性を信じています",
+      no_limits: "高度な",
+      no_surprises: "AIによる文字起こし",
+      transparency: "隠れた制限はもうありません。驚きもありません。他社では通話時間をひっそりと減らしたり、細かい文字で上限を隠したりしますが、当社は徹底した透明性を信じています。",
       feat_unltd: "実際には無制限",
-      feat_unltd_desc: "利用規約に「フェアユースポリシー」は不要。「無制限」と偽ってストレージ容量の上限を設定することもありません。アーカイブ全体をアップロードし、すべてを文字起こしできます。本気です。",
+      feat_unltd_desc: "利用規約に「フェアユースポリシー」は不要。「無制限」と偽装したストレージ容量の上限もありません。アーカイブ全体をアップロードし、あらゆる音声文字変換ニーズに合わせて文字起こしできます。本気です。",
       feat_bulk: "一括アップロードの自由",
       feat_bulk_desc: "「生涯3回のインポート」や「毎月10ファイル」といった制限にうんざりしていませんか？必要な回数だけ、一度に50ファイルをアップロードできます。バックログ処理に最適です。",
       feat_batch: "バッチ処理",
       feat_batch_desc: "ポッドキャストシーズン全体を一晩で処理。50件のインタビューを一度にアップロード。あなたが寝ている間にAIが作業。朝起きたら完成したトランスクリプトが届いています。",
       feat_accuracy: "96%の精度",
-      feat_accuracy_desc: "業界をリードする AI は、スマートな句読点、最大 20 人の話者のダイアライゼーション機能を備え、アクセントや技術用語を完璧に処理します。",
+      feat_accuracy_desc: "業界をリードする当社の AI は、スマートな句読点、最大 20 人の話者の話者ダイアライゼーションを使用して音声を書き起こし、アクセントや技術用語を完璧に処理します。",
       feat_langs: "100以上の言語",
-      feat_langs_desc: "100以上の言語で文字起こし、249以上の言語に翻訳。言語変更による追加料金はかかりません。グローバルコンテンツ、シンプルな価格。",
+      feat_langs_desc: "100以上の言語で動画と音声を文字起こし、249以上の言語に翻訳できます。言語変更による追加料金はかかりません。グローバルコンテンツ、シンプルな価格。",
       feat_pro: "プロフェッショナル機能",
-      feat_pro_desc: "単語レベルのタイムスタンプにより、正確なオーディオ/ビデオの位置付け、急速な会話の切り替え中でも正確な話者識別、段落、文章、句読点を含む完璧にフォーマットされたテキストにより読みやすくなります。"
+      feat_pro_desc: "単語レベルのタイムスタンプにより、正確なオーディオ/ビデオの位置付け、急速な会話の切り替え中でも正確な話者識別、段落、文章、句読点を含む完璧にフォーマットされたテキストにより読みやすくなります。",
+        features: "特徴"
     },
     UseCases: {
-      built_for: "のために作られた",
-      "heavy_users": "あなたのようなヘビーユーザー",
-      "join_users": "「シュリンクフレーション」サービスから切り替えたYouTuber、コンテンツクリエイター、ポッドキャスターに加わりましょう",
+      built_for: "バルク",
+      "heavy_users": "音声とビデオの文字起こし",
+      "join_users": "あなたのようなヘビーユーザーのために構築されました - 「シュリンクフレーション」サービスから切り替えたYouTuber、コンテンツクリエイター、ポッドキャスターに参加しましょう",
       "podcasters": {
         "title": "ポッドキャスター",
         "des": "過去の番組カタログをすべてアップロード。各エピソードの番組ノートを作成。もう、どのエピソードを書き起こすか選ぶ必要はありません。"
       },
       "content_creators": {
         "title": "コンテンツクリエイター",
-        "des": "ビデオライブラリを検索可能なテキストに変換。あらゆるものにキャプションを生成。時間を数える必要はなく、ただ作成するだけです。"
+        "des": "動画ファイルを自動的に書き起こす当社のサービスで、動画ライブラリを検索可能なテキストに変換しましょう。あらゆる動画にキャプションを自動生成します。時間を数える必要はなく、作成するだけです。"
       },
       "journalists": {
         "title": "ジャーナリスト",
@@ -1303,7 +1304,7 @@ let message = {
     Testimonials: {
       title: "愛されている",
       highlighted_users: "50,000人以上のユーザー",
-      subtitle: "専門家が限られた選択肢よりもNeverCapを選ぶ理由をご覧ください",
+      subtitle: "プロフェッショナルが限られた選択肢の中からNeverCapを選ぶ理由をご覧ください",
       Mike: {
         "text": "やったー、これ本当に使えるんだ！ポッドキャストを3年間続けてるんだけど、全部手作業で文字起こししてて、まるでバカみたいだった。6エピソードを一気にアップロードしたら、私と共同司会者の音声が完璧に分離できた。台無しになったと思っていたコーヒーショップのエピソードも、こんなに鮮明な文字起こし。もう二度と自分で文字起こしすることはないわ。",
         "author": "マイク・ロドリゲス",
@@ -1329,6 +1330,11 @@ let message = {
       "title": "よくある質問",
       "titleHighlight": "質問",
       "questions": [
+            {
+              "q": "AIによる文字起こし",
+              "question": "AI トランスクリプションとは何ですか? また、どのように機能しますか?",
+              "answer": "AIトランスクリプションとは、高度な人工知能を用いて音声をテキストに自動変換するプロセスです。NeverCapでは、ファイルをアップロードするだけで、AIが最大96%の精度でコンテンツをトランスクリプションします。当社のサービスは、動画ファイル（MP4、MOVなど）と音声ファイル（MP3、WAVなど）を、発言者ラベルとタイムスタンプ付きの読みやすく編集可能なテキストにトランスクリプションするように設計されています。"
+            },
             {
               "q": "無制限ポリシー",
               "question": "本当に無制限ですか？何か落とし穴があるんですか？",
@@ -1372,7 +1378,7 @@ let message = {
           ]
     },
     CTASection: {
-      "title": "限界から解放される準備はできていますか?",
+      "title": "制限から解放される準備はできていますか?",
       "subtitle": "50,000人以上のプロフェッショナルが、本当に無制限の文字起こしサービスに切り替えました。",
       "button": "NeverCapを無料でお試しください",
       "disclaimer": "無料プランではクレジットカードは不要です。いつでもアップグレードして無制限にアクセスできます。"
@@ -1454,8 +1460,8 @@ let message = {
       feature2TableRow2Value: "10ファイル/月",
       feature2TableRow3Label: "トリント",
       feature2TableRow3Value: "月50時間上限",
-      feature2TableRow4Label: "NeverCap",
-      feature2TableRow4Value: "真の無限✓",
+      feature2TableRow4Label: "ネバーキャップ",
+      feature2TableRow4Value: "真の無制限✓",
       feature3Label: "社会的証明",
       feature3TitlePart1: "ユーザーは",
       feature3TitlePart2: "毎日切り替え",
@@ -1513,7 +1519,7 @@ let message = {
       limitCard3Number: "1",
       limitCard3DescriptionLine1: "一度に1つのファイル",
       limitCard3DescriptionLine2: "（順次アップロード）",
-      limitCard4Service: "NeverCap",
+      limitCard4Service: "ネバーキャップ",
       limitCard4Number: "∞",
       limitCard4DescriptionLine1: "無制限のアップロード",
       limitCard4DescriptionLine2: "1バッチあたり50ファイル",
@@ -1609,7 +1615,7 @@ let message = {
       statCard3Percentage: "100ミリ秒",
       statCard3DescriptionLine1: "単語レベル",
       statCard3DescriptionLine2: "タイムスタンプの精度",
-      languageSectionTitlePart1: "主要12言語で96%の精度",
+      languageSectionTitlePart1: "96%の精度",
       languageSubtitle: "グローバルコンテンツ向けのプロフェッショナルグレードの文字起こし",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "英語",
@@ -1702,13 +1708,13 @@ let message = {
       formattingTitle: "ビフォー＆アフター",
       formattingBeforeLabel: "❌ その他:",
       formattingBeforeText: "今日は私たちが取り組んでいる新機能についてお話します。きっと気に入っていただけると思います。ユーザーから長い間要望されていた機能で、ようやく完成しました。",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ ネバーキャップ:",
       formattingAfterText: "今日は、私たちが取り組んでいる新機能についてお話したいと思います。きっと気に入っていただけると思います。ユーザーの皆様から長い間ご要望をいただいていた機能ですが、ついに実現しました。",
       comparisonSubtitle: "正確さ",
       comparisonSectionTitle: "比較",
       comparisonDes: "競合他社と比べてどうなっているかご覧ください",
       tableHeader1: "特徴",
-      tableHeader2: "NeverCap",
+      tableHeader2: "ネバーキャップ",
       tableHeader3: "オッター.ai",
       tableHeader4: "説明",
       tableHeader5: "Rev",
@@ -1744,7 +1750,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "96%の精度を体験",
       ctaSubtitle: "最も難しいオーディオをアップロードして違いを確認してください",
-      finalCta: "今すぐ精度をテストする→"
+      finalCta: "今すぐ精度をテストする→",
+        languageSectionTitlePart2: "12の主要言語"
     }
   },
   Pricing: {
@@ -1849,7 +1856,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "すべての機能を比較",
+        "title": "比較する",
         "highlighted_text": "すべての機能",
         "subtitle": "各プランで何が得られるか、正確にご確認ください。隠れた制限はありません。"
       },

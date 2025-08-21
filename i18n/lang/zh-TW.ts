@@ -1036,7 +1036,7 @@ let message = {
       badge: "不再出現「縮水通膨」——實際上無限",
       h1: "停止支付限制：",
       gradient: "真正無限的人工智慧轉錄",
-      subtitle: "上傳您的整個播客存檔。轉錄所有訪談。一次處理 50 個檔案。無月上限，無上傳限制。最終，轉錄將根據您的實際需求進行擴展。",
+      subtitle: "我們的 AI 可以轉錄視訊並將音頻轉換為文本，一次可處理 50 個文件，且無月度上限。真正實現隨您擴展的轉錄服務。",
       FreeTrial: "免費試用 - 無需信用卡",
       HowWorks: "了解其工作原理",
       Unlimited: "無限文件上傳",
@@ -1055,33 +1055,34 @@ let message = {
       no_signup: "無需註冊",
       experience_unltd: "體驗真正無限的轉錄",
       upload_50: "一次最多可在此上傳 50 個文件",
-      no_limits: "不再有隱藏的限制",
-      no_surprises: "不再有驚喜",
-      transparency: "當其他人悄悄地減少你的會議記錄或隱藏小字時，我們相信徹底的透明度",
+      no_limits: "先進的",
+      no_surprises: "人工智慧轉錄",
+      transparency: "不再有隱藏的限制，不再有意外——當其他人悄悄地減少你的時間或隱藏小字的限制時，我們相信徹底的透明度",
       feat_unltd: "實際上是無限的",
-      feat_unltd_desc: "沒有隱藏在條款中的「合理使用政策」。沒有偽裝成「無限」的儲存上限。上傳您的全部檔案，轉錄所有內容。我們說到做到。",
+      feat_unltd_desc: "沒有隱藏在條款中的「合理使用政策」。沒有偽裝成「無限」的儲存上限。上傳您的全部檔案，即可轉錄所有內容，滿足您所有的音訊轉錄需求。我們說到做到。",
       feat_bulk: "批次上傳自由",
       feat_bulk_desc: "厭倦了「一次性導入 3 次」或「每月 10 個文件」？一次上傳 50 個文件，無限次上傳。非常適合處理積壓工作。",
       feat_batch: "批次處理",
       feat_batch_desc: "一夜之間即可處理完整季播客。一次上傳 50 則訪談。讓我們的 AI 在您睡眠時為您服務。醒來即可查看完整的轉錄稿。",
       feat_accuracy: "準確率高達 96%",
-      feat_accuracy_desc: "業界領先的人工智慧，具有智慧標點符號、最多 20 位說話者的說話者分類功能，並能完美處理口音和技術術語。",
+      feat_accuracy_desc: "我們業界領先的人工智慧 (AI) 可以使用智慧標點符號、最多 20 位說話者的說話者日記功能來轉錄音頻，並能完美處理口音和技術術語。",
       feat_langs: "100多種語言",
-      feat_langs_desc: "轉錄至 100 多種語言，翻譯至 249 多種語言。不同語言無需額外付費。全球內容，一口價。",
+      feat_langs_desc: "將視訊和音訊轉錄為 100 多種語言，並翻譯成 249 多種語言。不同語言無需額外付費。全球內容，一口價。",
       feat_pro: "專業功能",
-      feat_pro_desc: "單字級時間戳可實現精確的音訊/視訊定位，即使在快速對話切換期間也能準確識別說話人，並且段落、句子和標點符號的格式完美的文本可輕鬆閱讀。"
+      feat_pro_desc: "單字級時間戳可實現精確的音訊/視訊定位，即使在快速對話切換期間也能準確識別說話人，並且段落、句子和標點符號的格式完美的文本可輕鬆閱讀。",
+        features: "特徵"
     },
     UseCases: {
-      built_for: "專為",
-      "heavy_users": "像你一樣的重度用戶",
-      "join_users": "加入從「縮水膨脹」服務轉向的 YouTube 用戶、內容創作者和播客行列",
+      built_for: "大部分",
+      "heavy_users": "音訊和視訊轉錄",
+      "join_users": "專為像您一樣的重度用戶打造 - 加入從「縮水型」服務轉換過來的 YouTube 用戶、內容創作者和播客",
       "podcasters": {
         "title": "podcast",
         "des": "上傳您所有的往期節目。為每一集創建節目筆記。無需再選擇轉錄哪一集。"
       },
       "content_creators": {
         "title": "內容創作者",
-        "des": "將您的影片庫轉換為可搜尋的文字。為所有內容產生字幕。無需計算時間，只需建立即可。"
+        "des": "使用我們的服務自動轉錄影片文件，將您的影片庫轉換為可搜尋的文字。為所有內容產生字幕。無需計算時間，直接建立即可。"
       },
       "journalists": {
         "title": "記者",
@@ -1103,7 +1104,7 @@ let message = {
     Testimonials: {
       title: "深受喜愛",
       highlighted_users: "50,000+ 位用戶",
-      subtitle: "了解為什麼專業人士選擇NeverCap而不是有限的替代方案",
+      subtitle: "了解專業人士為何選擇 NeverCap 而非其他有限的替代方案",
       Mike: {
         "text": "我的天，這玩意兒居然真的管用！我做了三年播客，以前總是像個傻瓜一樣手動抄錄所有內容。一次上傳了六集，結果我和我的搭檔主持人的對話竟然完美地分開了。我以為咖啡店那集被毀了？結果現在的抄寫清晰極了。我再也不用自己打字了。",
         "author": "麥克羅德里格斯",
@@ -1129,6 +1130,11 @@ let message = {
       "title": "常見問題",
       "titleHighlight": "問題",
       "questions": [
+            {
+              "q": "人工智慧轉錄",
+              "question": "什麼是 AI 轉錄以及它是如何運作的？",
+              "answer": "AI 轉錄是利用先進的人工智慧技術自動將音訊轉換為文字的過程。在 NeverCap，您只需上傳文件，我們的 AI 即可轉錄，準確率高達 96%。我們的服務旨在將視訊檔案（例如 MP4、MOV）和音訊檔案（例如 MP3、WAV）轉錄為可讀、可編輯的文本，並附帶說話者標籤和時間戳。"
+            },
             {
               "q": "無限策略",
               "question": "真的是無限量嗎？有什麼陷阱嗎？",
@@ -1174,7 +1180,7 @@ let message = {
     CTASection: {
       "title": "準備好打破限制了嗎？",
       "subtitle": "加入 50,000 多名已轉向真正無限轉錄的專業人士",
-      "button": "免費試用NeverCap",
+      "button": "免費試用 NeverCap",
       "disclaimer": "免費方案無需信用卡 • 隨時升級即可無限訪問"
     }
   },
@@ -1284,7 +1290,7 @@ let message = {
       trustBadge4Label: "批次上傳",
       ctaTitle: "停止購買虛假無限流量",
       ctaSubtitle: "加入數千名轉向真正無限轉錄的用戶",
-      finalCta: "免費試用NeverCap"
+      finalCta: "免費試用 NeverCap"
     },
     BulkUpload: {
       heroBadgeIcon: "📁",
@@ -1372,12 +1378,12 @@ let message = {
       feature3Point3Text: "全天候隨時上傳",
       feature3VisualNumber: "24/7",
       feature3VisualTitle: "時刻準備著",
-      feature3VisualSubtext: "靈感迸發時隨時上傳",
+      feature3VisualSubtext: "靈感迸發時立即上傳",
       useCasesTitlePart1: "非常適合",
       useCasesTitleHighlight: "重度上傳者",
       useCasesSubtitle: "大量上傳挽救局面的真實場景",
       useCase1Title: "播客檔案",
-      useCase1Description: "一次上傳三年的劇集。為所有過往劇集建立文字記錄。為每集產生 SEO 內容。",
+      useCase1Description: "一次上傳三年的劇集。為所有過往作品建立文字記錄。為每集產生 SEO 內容。",
       useCase2Title: "課程創建",
       useCase2Description: "同時處理所有講座影片。建立學生可存取的文字記錄。建立可搜尋的課程資料。",
       useCase3Title: "面試積壓",
@@ -1409,7 +1415,7 @@ let message = {
       statCard3Percentage: "100毫秒",
       statCard3DescriptionLine1: "詞級",
       statCard3DescriptionLine2: "時間戳精度",
-      languageSectionTitlePart1: "12 種主要語言準確率達 96%",
+      languageSectionTitlePart1: "準確率高達 96%",
       languageSubtitle: "全球內容的專業級轉錄",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "英語",
@@ -1475,7 +1481,7 @@ let message = {
       feature2Label: "智慧人工智慧",
       feature2TitlePart1: "手把",
       feature2TitleHighlight: "快速對話",
-      feature2Description: "即使在語音重疊、打斷以及快速來回對話中，我們的AI也能準確識別說話者。非常適合採訪、播客和會議等發言者頻繁插話的場合。",
+      feature2Description: "即使在重疊的講話、打斷以及快速的來回對話中，我們的AI也能準確識別說話者。非常適合採訪、播客和會議等發言者頻繁插話的場合。",
       feature2Point1Icon: "✓",
       feature2Point1Text: "識別最多 20 位發言者",
       feature2Point2Icon: "✓",
@@ -1502,7 +1508,7 @@ let message = {
       formattingTitle: "之前和之後",
       formattingBeforeLabel: "❌ 其他：",
       formattingBeforeText: "所以今天我們要討論我們一直在開發的新功能，我想你會非常喜歡它們，這些功能是用戶長期以來一直要求的，我們終於完成了。",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ NeverCap：",
       formattingAfterText: "所以今天，我們將討論我們正在開發的新功能。我想你們一定會喜歡它們。這些功能是用戶長期以來一直要求的，我們終於完成了。",
       comparisonSubtitle: "準確性",
       comparisonSectionTitle: "比較",
@@ -1544,7 +1550,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "體驗 96% 準確率",
       ctaSubtitle: "上傳最具挑戰性的音訊並查看差異",
-      finalCta: "立即測試我們的準確性 →"
+      finalCta: "立即測試我們的準確性 →",
+        languageSectionTitlePart2: "12種主要語言"
     }
   },
   Pricing: {
@@ -1645,11 +1652,11 @@ let message = {
               "badge": "最超值 - 省 50%"
             }
           ],
-      "disclaimer": "「無限」意味著沒有月度上限，也不會人為減慢速度。濫用自動化或重新分配服務的行為應遵循合理使用原則。"
+      "disclaimer": "「無限」意味著沒有月度上限，也不會人為減慢速度。合理使用適用於濫用自動化或重新分配的情況。"
     },
     ComparisonTable: {
       "header": {
-        "title": "比較所有功能",
+        "title": "比較",
         "highlighted_text": "所有功能",
         "subtitle": "詳細了解每個計劃的福利。無任何隱藏限制。"
       },
@@ -1767,7 +1774,7 @@ let message = {
     CTA: {
       "title": "準備好無限暢享了嗎？",
       "subtitle": "加入 50,000 多名專業人士，不受限制地進行轉錄",
-      "button": "免費試用NeverCap →",
+      "button": "免費試用 NeverCap →",
       "disclaimer": "無需信用卡 • 幾秒鐘內即可開始轉錄"
     }
   },

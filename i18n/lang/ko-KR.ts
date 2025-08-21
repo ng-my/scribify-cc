@@ -1069,7 +1069,7 @@ let message = {
       badge: '더 이상 "수축 인플레이션"은 없습니다. 사실상 무제한입니다.',
       h1: "한도에 대한 지불 중단:",
       gradient: "진정한 무제한 AI 필사",
-      subtitle: "전체 팟캐스트 아카이브를 업로드하세요. 모든 인터뷰를 녹취하세요. 최대 50개의 파일을 한 번에 처리하세요. 월별 사용량 제한이나 업로드 제한도 없습니다. 마지막으로, 실제 필요에 맞춰 확장 가능한 녹취를 제공합니다.",
+      subtitle: "AI가 비디오를 텍스트로 변환하고 오디오를 텍스트로 변환하여 월 사용량 제한 없이 최대 50개의 파일을 한 번에 처리합니다. 진정한 확장성을 제공하는 텍스트 변환 서비스입니다.",
       FreeTrial: "무료로 체험해 보세요 - 신용 카드 불필요",
       HowWorks: "작동 방식 보기",
       Unlimited: "무제한 파일 업로드",
@@ -1088,33 +1088,34 @@ let message = {
       no_signup: "가입 필요 없음",
       experience_unltd: "진정으로 무한한 필사를 경험하세요",
       upload_50: "최대 50개의 파일을 한 번에 업로드하세요.",
-      no_limits: "더 이상 숨겨진 한계는 없습니다",
-      no_surprises: "더 이상 놀라움은 없다",
-      transparency: "다른 사람들이 조용히 통화 시간을 줄이거나 작은 글씨로 상한선을 숨기는 반면, 우리는 급진적인 투명성을 믿습니다.",
+      no_limits: "고급의",
+      no_surprises: "AI 전사",
+      transparency: "더 이상 숨겨진 한계도, 더 이상 놀라움도 없습니다. 다른 회사들이 조용히 통화 시간을 줄이거나 작은 글씨로 상한선을 숨기는 동안 우리는 급진적인 투명성을 믿습니다.",
       feat_unltd: "실제로 무제한",
-      feat_unltd_desc: '약관에 묻힌 "공정 사용 정책"도 없고, "무제한"이라는 명목으로 저장 용량 제한도 없습니다. 전체 아카이브를 업로드하고, 모든 것을 기록하세요. 진심입니다.',
+      feat_unltd_desc: '약관에 묻힌 "공정 사용 정책"도 없고, "무제한"이라는 명목으로 저장 용량 제한도 없습니다. 전체 아카이브를 업로드하고, 모든 오디오 녹취 요구에 맞춰 모든 것을 녹취하세요. 진심입니다.',
       feat_bulk: "대량 업로드 자유",
       feat_bulk_desc: '"평생 가져오기 3회"나 "매달 파일 10개"에 지치셨나요? 50개의 파일을 필요한 만큼 한 번에 업로드하세요. 잔여 파일 처리에 안성맞춤입니다.',
       feat_batch: "일괄 처리",
       feat_batch_desc: "팟캐스트 시즌 전체를 하룻밤 사이에 처리하세요. 50개의 인터뷰를 한 번에 업로드하세요. 자는 동안 AI가 작업하게 하세요. 아침에 일어나면 완성된 대본을 확인하세요.",
       feat_accuracy: "96% 정확도",
-      feat_accuracy_desc: "스마트 구두점, 최대 20명의 화자에 대한 화자 일기 기능을 갖춘 업계 최고의 AI로, 악센트와 기술 용어를 완벽하게 처리합니다.",
+      feat_accuracy_desc: "업계를 선도하는 당사의 AI는 최대 20명의 화자에 대한 스마트 구두점, 화자 일기를 사용하여 오디오를 기록하고, 악센트와 기술 용어를 완벽하게 처리합니다.",
       feat_langs: "100개 이상의 언어",
-      feat_langs_desc: "100개 이상의 언어로 텍스트 변환하고, 249개 이상의 언어로 번역하세요. 다른 언어에 대한 추가 요금은 없습니다. 글로벌 콘텐츠를 하나의 가격으로 간편하게 이용하세요.",
+      feat_langs_desc: "100개 이상의 언어로 비디오와 오디오를 텍스트로 변환하고, 249개 이상의 언어로 번역하세요. 다른 언어도 추가 요금 없이 이용 가능합니다. 글로벌 콘텐츠를 단일 가격으로 간편하게 만나보세요.",
       feat_pro: "전문적인 기능",
-      feat_pro_desc: "정확한 오디오/비디오 위치 지정을 위한 단어 수준 타임스탬프, 빠른 대화 전환 중에도 정확한 화자 식별, 쉽게 읽을 수 있도록 단락, 문장, 구두점이 포함된 완벽한 형식의 텍스트."
+      feat_pro_desc: "정확한 오디오/비디오 위치 지정을 위한 단어 수준 타임스탬프, 빠른 대화 전환 중에도 정확한 화자 식별, 쉽게 읽을 수 있도록 단락, 문장, 구두점이 포함된 완벽한 형식의 텍스트.",
+        features: "특징"
     },
     UseCases: {
-      built_for: "을 위해 만들어졌습니다",
-      "heavy_users": "당신과 같은 헤비 유저",
-      "join_users": '"shrinkflation" 서비스에서 전환한 YouTuber, 콘텐츠 제작자 및 팟캐스터와 함께하세요.',
+      built_for: "대부분",
+      "heavy_users": "오디오 및 비디오 필사",
+      "join_users": '여러분과 같은 헤비 유저를 위해 제작되었습니다. "shrinkflation" 서비스에서 전환한 YouTuber, 콘텐츠 제작자 및 팟캐스터와 함께하세요.',
       "podcasters": {
         "title": "팟캐스터",
         "des": "전체 백 카탈로그를 업로드하세요. 모든 에피소드에 대한 쇼 노트를 만드세요. 더 이상 어떤 에피소드를 녹취할지 고민할 필요가 없습니다."
       },
       "content_creators": {
         "title": "콘텐츠 제작자",
-        "des": "비디오 라이브러리를 검색 가능한 텍스트로 변환하세요. 모든 항목에 자막을 생성하세요. 시간을 세지 않고, 그냥 만들어 보세요."
+        "des": "비디오 파일을 자동으로 텍스트로 변환하는 서비스를 사용하여 비디오 라이브러리를 검색 가능한 텍스트로 바꿔보세요. 모든 항목에 자막을 생성하세요. 시간을 세지 않고, 바로 만들어 보세요."
       },
       "journalists": {
         "title": "언론인들",
@@ -1122,7 +1123,7 @@ let message = {
       },
       researchers: {
         title: "연구원들",
-        des: "수 시간 분량의 포커스 그룹과 인터뷰를 녹취하세요. 전체 연구 내용을 한 번에 업로드하세요. 정확한 화자 식별 정보를 얻으세요."
+        des: "수 시간에 달하는 포커스 그룹과 인터뷰 내용을 녹취하세요. 전체 연구 내용을 한 번에 업로드하세요. 정확한 화자 식별 정보를 얻으세요."
       },
       business_teams: {
         title: "비즈니스 팀",
@@ -1136,7 +1137,7 @@ let message = {
     Testimonials: {
       title: "사랑받는",
       highlighted_users: "50,000명 이상의 사용자",
-      subtitle: "전문가들이 제한된 대안보다 NeverCap를 선택하는 이유를 알아보세요",
+      subtitle: "전문가들이 제한된 대안보다 NeverCap을 선택하는 이유를 알아보세요",
       Mike: {
         "text": "와, 이거 진짜 잘 되네! 3년 동안 팟캐스트를 하면서 모든 걸 바보처럼 직접 녹취하고 있었네. 에피소드 6개를 한꺼번에 업로드했더니 나와 공동 진행자가 완벽하게 분리됐어. 망가졌다고 생각했던 커피숍 에피소드는? 정말 깔끔하게 녹취됐네. 다시는 이런 걸 직접 타이핑하는 일은 없을 거야.",
         "author": "마이크 로드리게스",
@@ -1162,6 +1163,11 @@ let message = {
       "title": "자주 묻는 질문",
       "titleHighlight": "질문",
       "questions": [
+            {
+              "q": "AI 전사",
+              "question": "AI 필사란 무엇이고 어떻게 작동하나요?",
+              "answer": "AI 텍스트 변환은 고급 인공지능을 사용하여 오디오를 텍스트로 자동 변환하는 과정입니다. NeverCap에서는 파일을 업로드하기만 하면 AI가 최대 96%의 정확도로 콘텐츠를 텍스트로 변환합니다. 저희 서비스는 비디오 파일(MP4, MOV 등)과 오디오 파일(MP3, WAV 등)을 읽고 편집 가능한 텍스트로 변환하도록 설계되었으며, 화자 라벨과 타임스탬프도 함께 제공됩니다."
+            },
             {
               "q": "무제한 정책",
               "question": "정말 무제한인가요? 조건이 뭔가요?",
@@ -1207,7 +1213,7 @@ let message = {
     CTASection: {
       "title": "한계를 벗어나 자유로워질 준비가 되셨나요?",
       "subtitle": "진정한 무제한 필사 기능으로 전환한 50,000명 이상의 전문가와 함께하세요.",
-      "button": "NeverCap 무료로 체험해보세요",
+      "button": "NeverCap 무료 체험하기",
       "disclaimer": "무료 플랜에는 신용 카드가 필요하지 않습니다. • 무제한 액세스를 위해 언제든지 업그레이드하세요."
     }
   },
@@ -1287,7 +1293,7 @@ let message = {
       feature2TableRow2Value: "10개 파일/월",
       feature2TableRow3Label: "트린트",
       feature2TableRow3Value: "월 50시간 상한",
-      feature2TableRow4Label: "NeverCap",
+      feature2TableRow4Label: "네버캡",
       feature2TableRow4Value: "진정한 무제한 ✓",
       feature3Label: "사회적 증명",
       feature3TitlePart1: "사용자는",
@@ -1317,7 +1323,7 @@ let message = {
       trustBadge4Label: "일괄 업로드",
       ctaTitle: "가짜 무제한 요금 지불 중단",
       ctaSubtitle: "진정으로 무제한적인 필사본으로 전환한 수천 명의 사람들과 함께하세요",
-      finalCta: "NeverCap 무료로 체험해보세요"
+      finalCta: "NeverCap 무료 체험하기"
     },
     BulkUpload: {
       heroBadgeIcon: "📁",
@@ -1327,7 +1333,7 @@ let message = {
       heroSubtitle: "Otter는 평생 가져오기를 3회 제공합니다. 3회. 평생 동안. 필요할 때마다 한 번에 최대 50개의 파일을 무제한으로 업로드할 수 있습니다.",
       primaryCta: "대량 업로드 시작 →",
       secondaryCta: "한계를 보세요",
-      redditQuote: '"3년 치 팟캐스트 에피소드를 녹취해야 하는데, 오터는 평생 수입이 3개라고 하네요. 3개라니. 정말 모욕적이네요."',
+      redditQuote: '"3년 치 팟캐스트 에피소드를 녹취해야 하는데, 오터는 평생 수입이 3개라고 하더라고요. 3개라니. 정말 모욕적이네요."',
       redditAuthorIcon: "📍",
       redditAuthorText: "r/podcasting으로 인한 실제 좌절",
       comparisonSectionTitlePart1: "그만큼",
@@ -1346,7 +1352,7 @@ let message = {
       limitCard3Number: "1",
       limitCard3DescriptionLine1: "한 번에 파일",
       limitCard3DescriptionLine2: "(순차적 업로드)",
-      limitCard4Service: "NeverCap",
+      limitCard4Service: "네버캡",
       limitCard4Number: "무한대",
       limitCard4DescriptionLine1: "무제한 업로드",
       limitCard4DescriptionLine2: "배치당 50개 파일",
@@ -1442,7 +1448,7 @@ let message = {
       statCard3Percentage: "100ms",
       statCard3DescriptionLine1: "단어 수준",
       statCard3DescriptionLine2: "타임스탬프 정밀도",
-      languageSectionTitlePart1: "12개 주요 언어에서 96% 정확도",
+      languageSectionTitlePart1: "96% 정확도",
       languageSubtitle: "글로벌 콘텐츠를 위한 전문가급 필사",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "영어",
@@ -1535,13 +1541,13 @@ let message = {
       formattingTitle: "이전과 이후",
       formattingBeforeLabel: "❌ 기타:",
       formattingBeforeText: "그래서 오늘은 우리가 작업해 온 새로운 기능에 대해 이야기하려고 합니다. 여러분이 정말 좋아할 것 같아요. 오랫동안 사용자들이 요청해 온 기능이 마침내 완성되었습니다.",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ 네버캡:",
       formattingAfterText: "오늘은 저희가 작업해 온 새로운 기능들에 대해 이야기해 보겠습니다. 분명 마음에 드실 거예요. 오랫동안 사용자분들이 요청해 오셨던 기능들을 드디어 완성해 냈거든요.",
       comparisonSubtitle: "정확성",
       comparisonSectionTitle: "비교",
       comparisonDes: "우리가 경쟁자들과 어떻게 비교되는지 확인하세요",
       tableHeader1: "특징",
-      tableHeader2: "NeverCap",
+      tableHeader2: "네버캡",
       tableHeader3: "오터.에이아이",
       tableHeader4: "설명",
       tableHeader5: "회전",
@@ -1577,7 +1583,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "96%의 정확도를 경험하세요",
       ctaSubtitle: "가장 어려운 오디오를 업로드하고 차이점을 확인하세요",
-      finalCta: "지금 바로 정확도를 테스트해 보세요 →"
+      finalCta: "지금 바로 정확도를 테스트해 보세요 →",
+        languageSectionTitlePart2: "12개 주요 언어로"
     }
   },
   Pricing: {
@@ -1682,7 +1689,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "모든 기능 비교",
+        "title": "비교하다",
         "highlighted_text": "모든 기능",
         "subtitle": "각 플랜의 혜택을 정확히 확인하세요. 숨겨진 제한은 없습니다."
       },
@@ -1778,7 +1785,7 @@ let message = {
             {
               "q": "결제 방법",
               "question": "어떤 결제 방법을 사용하실 수 있나요?",
-              "answer": "당사는 안전하고 편리한 결제를 위해 모든 주요 신용카드, 직불카드, PayPal을 수락합니다."
+              "answer": "당사는 안전하고 편리한 결제를 위해 모든 주요 신용카드, 직불카드, PayPal을 허용합니다."
             },
             {
               "q": "무료 체험",
@@ -1793,14 +1800,14 @@ let message = {
             {
               "q": "데이터 보안",
               "question": "데이터 보안은 어떻습니까?",
-              "answer": "저희는 SOC 2 인증을 받았으며 256비트 암호화를 사용합니다. 고객님의 콘텐츠는 모델 학습에 절대 사용되지 않습니다. 고객님의 데이터는 고객님의 것입니다."
+              "answer": "저희는 SOC 2 인증을 받았으며 256비트 암호화를 사용합니다. 고객님의 콘텐츠를 모델 학습에 절대 사용하지 않습니다. 고객님의 데이터는 고객님의 것입니다."
             }
           ]
     },
     CTA: {
       "title": "무제한으로 즐길 준비가 되셨나요?",
       "subtitle": "제한 없이 필사하는 50,000명 이상의 전문가와 함께하세요",
-      "button": "NeverCap 무료로 체험해 보세요 →",
+      "button": "NeverCap 무료 체험 →",
       "disclaimer": "신용 카드 필요 없음 • 몇 초 안에 필사 시작"
     }
   },

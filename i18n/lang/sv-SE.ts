@@ -1076,7 +1076,7 @@ let message = {
       badge: 'Ingen mer "krympningsinflation" - faktiskt obegränsad',
       h1: "Sluta betala för gränser:",
       gradient: "Verkligen obegränsad AI-transkription",
-      subtitle: "Ladda upp hela ditt podcastarkiv. Transkribera alla dina intervjuer. Bearbeta 50 filer samtidigt. Inga månadstak, inga uppladdningsgränser. Äntligen, transkribering som kan anpassas till dina faktiska behov.",
+      subtitle: "Vår AI transkriberar video och konverterar ljud till text och bearbetar 50 filer samtidigt utan månadstak. Transkribering som verkligen skalar med dig.",
       FreeTrial: "Prova gratis - Inget kreditkort",
       HowWorks: "Se hur det fungerar",
       Unlimited: "Obegränsade filuppladdningar",
@@ -1095,33 +1095,34 @@ let message = {
       no_signup: "Ingen registrering krävs",
       experience_unltd: "Upplev verkligt obegränsad transkription",
       upload_50: "Ladda upp upp till 50 filer samtidigt, här",
-      no_limits: "Inga fler dolda gränser",
-      no_surprises: "Inga fler överraskningar",
-      transparency: "Medan andra i tysthet minskar dina minuter eller döljer tak i finstilt, tror vi på radikal transparens",
+      no_limits: "Avancerad",
+      no_surprises: "AI-transkription",
+      transparency: "Inga fler dolda gränser, inga fler överraskningar - Medan andra i tysthet minskar dina minuter eller döljer tak i det finstilta, tror vi på radikal transparens",
       feat_unltd: "Egentligen obegränsat",
-      feat_unltd_desc: 'Ingen "policy för rättvis användning" begravd i termer. Inga lagringstak förklädda som "obegränsade". Ladda upp hela ditt arkiv, transkribera allt. Vi menar det.',
+      feat_unltd_desc: 'Ingen "policy för rättvis användning" begravd i termer. Inga lagringstak förklädda som "obegränsade". Ladda upp hela ditt arkiv, transkribera allt för alla dina ljudtranskriberingsbehov. Vi menar det.',
       feat_bulk: "Frihet i massuppladdning",
       feat_bulk_desc: 'Trött på "3 livstidsimporter" eller "10 filer per månad"? Ladda upp 50 filer samtidigt, så många gånger du behöver. Perfekt för att bearbeta eftersläpningar.',
       feat_batch: "Batchbearbetning",
       feat_batch_desc: "Bearbeta hela din poddsäsong över en natt. Ladda upp 50 intervjuer samtidigt. Låt vår AI arbeta medan du sover. Vakna upp till färdiga transkriptioner.",
       feat_accuracy: "96 % noggrannhet",
-      feat_accuracy_desc: "Branschledande AI med smart interpunktion, talardagbok för upp till 20 talare och hanterar accenter och tekniska termer felfritt.",
+      feat_accuracy_desc: "Vår branschledande AI transkriberar ljud med smart interpunktion, högtalardagbok för upp till 20 högtalare och hanterar accenter och tekniska termer felfritt.",
       feat_langs: "100+ språk",
-      feat_langs_desc: "Transkribera till fler än 100 språk, översätt till fler än 249. Inga extra avgifter för olika språk. Globalt innehåll, ett enkelt pris.",
+      feat_langs_desc: "Transkribera video och ljud på över 100 språk, översätt till över 249 språk. Inga extra avgifter för olika språk. Globalt innehåll, ett enkelt pris.",
       feat_pro: "Professionella funktioner",
-      feat_pro_desc: "Tidsstämplar på ordnivå för exakt positionering av ljud/video, korrekt talaridentifiering även vid snabba samtalsväxlingar och perfekt formaterad text med stycken, meningar och interpunktion för enkel läsning."
+      feat_pro_desc: "Tidsstämplar på ordnivå för exakt positionering av ljud/video, korrekt talaridentifiering även vid snabba samtalsväxlingar och perfekt formaterad text med stycken, meningar och interpunktion för enkel läsning.",
+        features: "Drag"
     },
     UseCases: {
-      built_for: "Byggd för",
-      "heavy_users": "Storanvändare som du",
-      "join_users": 'Följ YouTubers, innehållsskapare och poddare som bytte från "shrinkflation"-tjänster',
+      built_for: "Bulk",
+      "heavy_users": "Ljud- och videotranskription",
+      "join_users": 'Byggt för flitiga användare som du – Gå med i YouTubers, innehållsskapare och poddare som bytte från "shrinkflation"-tjänster',
       "podcasters": {
         "title": "Poddare",
         "des": "Ladda upp hela din bakkatalog. Skapa programanteckningar för varje avsnitt. Du slipper välja vilka avsnitt som ska transkriberas."
       },
       "content_creators": {
         "title": "Innehållsskapare",
-        "des": "Förvandla ditt videobibliotek till sökbar text. Generera textning för allt. Ingen minuträkning, bara skapande."
+        "des": "Förvandla ditt videobibliotek till sökbar text genom att använda vår tjänst för att transkribera videofiler automatiskt. Generera textning för allt. Ingen minuträkning, bara skapande."
       },
       "journalists": {
         "title": "Journalister",
@@ -1170,6 +1171,11 @@ let message = {
       "titleHighlight": "Frågor",
       "questions": [
             {
+              "q": "AI-transkription",
+              "question": "Vad är AI-transkription och hur fungerar det?",
+              "answer": "AI-transkription är processen att automatiskt konvertera ljud till text med hjälp av avancerad artificiell intelligens. På NeverCap laddar du helt enkelt upp dina filer, och vår AI transkriberar innehållet med upp till 96 % noggrannhet. Vår tjänst är utformad för att transkribera videofiler (som MP4, MOV) och ljudfiler (som MP3, WAV) till läsbar, redigerbar text, komplett med talaretiketter och tidsstämplar."
+            },
+            {
               "q": "obegränsad_policy",
               "question": "Är det verkligen obegränsat? Vad är haken?",
               "answer": "Ja, det är verkligen obegränsat! Inga månatliga minutersgränser, inga avgifter för överanvändning. De enda begränsningarna är tekniska: enskilda filer kan vara upp till 10 timmar långa eller 5 GB stora, och du kan bearbeta 50 filer samtidigt. Men du kan ladda upp så många batcher du vill, hela månaden lång."
@@ -1214,7 +1220,7 @@ let message = {
     CTASection: {
       "title": "Redo att bryta dig fri från begränsningar?",
       "subtitle": "Gå med i fler än 50 000 yrkesverksamma som har bytt till verkligt obegränsad transkription",
-      "button": "Prova NeverCap Gratis",
+      "button": "Prova NeverCap gratis",
       "disclaimer": "Inget kreditkort krävs för gratisplanen • Uppgradera när som helst för obegränsad åtkomst"
     }
   },
@@ -1324,7 +1330,7 @@ let message = {
       trustBadge4Label: "Batchuppladdning",
       ctaTitle: "Sluta betala för Fake Unlimited",
       ctaSubtitle: "Gå med tusentals som bytte till verkligt obegränsad transkription",
-      finalCta: "Prova NeverCap Gratis"
+      finalCta: "Prova NeverCap gratis"
     },
     BulkUpload: {
       heroBadgeIcon: "📁",
@@ -1449,7 +1455,7 @@ let message = {
       statCard3Percentage: "100 ms",
       statCard3DescriptionLine1: "Ordnivå",
       statCard3DescriptionLine2: "Tidsstämpelns precision",
-      languageSectionTitlePart1: "96 % noggrannhet på 12 huvudspråk",
+      languageSectionTitlePart1: "96 % noggrannhet",
       languageSubtitle: "Professionell transkription för globalt innehåll",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "Engelska",
@@ -1542,7 +1548,7 @@ let message = {
       formattingTitle: "Före och efter",
       formattingBeforeLabel: "❌ Andra:",
       formattingBeforeText: "Så idag ska vi prata om de nya funktionerna vi har arbetat med. Jag tror att ni verkligen kommer att gilla dem. De har efterfrågats av användare länge och vi har äntligen fått dem klara.",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ AldrigTillFörsäljning:",
       formattingAfterText: "Så idag ska vi prata om de nya funktionerna vi har arbetat med. Jag tror att ni verkligen kommer att gilla dem. De har efterfrågats av användare länge, och vi har äntligen fått dem färdiga.",
       comparisonSubtitle: "Noggrannhet",
       comparisonSectionTitle: "Jämförelse",
@@ -1584,7 +1590,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "Upplev 96 % noggrannhet",
       ctaSubtitle: "Ladda upp ditt mest utmanande ljud och se skillnaden",
-      finalCta: "Testa vår noggrannhet nu →"
+      finalCta: "Testa vår noggrannhet nu →",
+        languageSectionTitlePart2: "på 12 huvudspråk"
     }
   },
   Pricing: {
@@ -1689,7 +1696,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "Jämför alla funktioner",
+        "title": "Jämföra",
         "highlighted_text": "Alla funktioner",
         "subtitle": "Se exakt vad du får med varje abonnemang. Inga dolda begränsningar."
       },
@@ -1806,8 +1813,8 @@ let message = {
     },
     CTA: {
       "title": "Redo att gå obegränsat?",
-      "subtitle": "Gå med 50 000+ professionella som transkriberar utan begränsningar",
-      "button": "Prova NeverCap Gratis →",
+      "subtitle": "Gå med 50 000+ yrkesverksamma som transkriberar utan begränsningar",
+      "button": "Testa NeverCap gratis →",
       "disclaimer": "Inget kreditkort krävs • Börja transkribera på några sekunder"
     }
   },

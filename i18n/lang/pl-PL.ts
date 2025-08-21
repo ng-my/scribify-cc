@@ -1081,7 +1081,7 @@ let message = {
       badge: "Koniec z „shrinkflacją” – naprawdę nieograniczone możliwości",
       h1: "Przestań płacić za limity:",
       gradient: "Naprawdę nieograniczona transkrypcja AI",
-      subtitle: "Prześlij całe swoje archiwum podcastów. Transkrybuj wszystkie swoje wywiady. Przetwarzaj 50 plików jednocześnie. Bez miesięcznych limitów i limitów przesyłania. Wreszcie transkrypcja skalowana do Twoich rzeczywistych potrzeb.",
+      subtitle: "Nasza sztuczna inteligencja transkrybuje wideo i konwertuje dźwięk na tekst, przetwarzając 50 plików jednocześnie bez miesięcznych limitów. Transkrypcja, która naprawdę skaluje się wraz z Tobą.",
       FreeTrial: "Wypróbuj za darmo – bez karty kredytowej",
       HowWorks: "Zobacz jak to działa",
       Unlimited: "Nieograniczone przesyłanie plików",
@@ -1100,33 +1100,34 @@ let message = {
       no_signup: "Nie jest wymagana rejestracja",
       experience_unltd: "Doświadcz naprawdę nieograniczonej transkrypcji",
       upload_50: "Prześlij do 50 plików na raz, właśnie tutaj",
-      no_limits: "Koniec z ukrytymi ograniczeniami",
-      no_surprises: "Koniec z niespodziankami",
-      transparency: "Podczas gdy inni po cichu skracają minuty lub ukrywają limity drobnym drukiem, my wierzymy w radykalną przejrzystość",
+      no_limits: "Zaawansowany",
+      no_surprises: "Transkrypcja AI",
+      transparency: "Koniec z ukrytymi limitami, koniec z niespodziankami – podczas gdy inni po cichu skracają minuty lub ukrywają limity drobnym drukiem, my wierzymy w radykalną przejrzystość",
       feat_unltd: "Naprawdę nieograniczone",
-      feat_unltd_desc: "Żadnych „zasad dozwolonego użytku” ukrytych w terminologii. Żadnych limitów pamięci podszywających się pod „nieograniczony”. Prześlij całe swoje archiwum, przepisz wszystko. Mówimy serio.",
+      feat_unltd_desc: "Żadnych „zasad dozwolonego użytku” ukrytych w terminologii. Żadnych limitów pamięci podszywających się pod „nieograniczony”. Prześlij całe swoje archiwum, transkrybuj wszystko, czego potrzebujesz do transkrypcji audio. Mówimy poważnie.",
       feat_bulk: "Wolność przesyłania zbiorczego",
       feat_bulk_desc: "Masz dość „3 importów na raz” lub „10 plików miesięcznie”? Prześlij 50 plików jednocześnie, tyle razy, ile potrzebujesz. Idealne do przetwarzania zaległości.",
       feat_batch: "Przetwarzanie wsadowe",
       feat_batch_desc: "Przetwórz cały sezon podcastu w ciągu jednej nocy. Prześlij 50 wywiadów jednocześnie. Pozwól naszej sztucznej inteligencji pracować, gdy śpisz. Obudź się z gotowymi transkryptami.",
       feat_accuracy: "96% dokładności",
-      feat_accuracy_desc: "Wiodąca w branży sztuczna inteligencja z inteligentną interpunkcją, kalendarzem wypowiedzi nawet 20 mówców oraz bezbłędną obsługą akcentów i terminologii technicznej.",
+      feat_accuracy_desc: "Nasza wiodąca w branży sztuczna inteligencja transkrybuje dźwięk, uwzględniając inteligentną interpunkcję, tworzy listy mówców nawet do 20 osób oraz bezbłędnie obsługuje akcenty i terminologię techniczną.",
       feat_langs: "Ponad 100 języków",
-      feat_langs_desc: "Transkrybuj w ponad 100 językach, tłumacz na ponad 249. Bez dodatkowych opłat za różne języki. Globalna zawartość, jedna prosta cena.",
+      feat_langs_desc: "Transkrybuj wideo i audio w ponad 100 językach, tłumacz na ponad 249. Bez dodatkowych opłat za różne języki. Globalna zawartość, jedna prosta cena.",
       feat_pro: "Funkcje profesjonalne",
-      feat_pro_desc: "Znaczniki czasu na poziomie słów umożliwiają precyzyjne pozycjonowanie dźwięku/obrazu, dokładną identyfikację mówcy nawet podczas szybkich zmian tematu rozmowy, a także idealnie sformatowany tekst z akapitami, zdaniami i interpunkcją, ułatwiający czytanie."
+      feat_pro_desc: "Znaczniki czasu na poziomie słów umożliwiają precyzyjne pozycjonowanie dźwięku/obrazu, dokładną identyfikację mówcy nawet podczas szybkich zmian tematu rozmowy, a także idealnie sformatowany tekst z akapitami, zdaniami i interpunkcją, ułatwiający czytanie.",
+        features: "Cechy"
     },
     UseCases: {
-      built_for: "Zbudowany dla",
-      "heavy_users": "Intensywni użytkownicy tacy jak Ty",
-      "join_users": "Dołącz do youtuberów, twórców treści i podcasterów, którzy zrezygnowali z usług „shrinkflation”",
+      built_for: "Cielsko",
+      "heavy_users": "Transkrypcja audio i wideo",
+      "join_users": "Stworzone dla intensywnych użytkowników takich jak Ty – Dołącz do YouTuberów, twórców treści i podcasterów, którzy przeszli z usług „shrinkflation”",
       "podcasters": {
         "title": "Podcasterzy",
         "des": "Prześlij cały swój katalog archiwalny. Twórz notatki do każdego odcinka. Koniec z wybieraniem odcinków do transkrypcji."
       },
       "content_creators": {
         "title": "Twórcy treści",
-        "des": "Zamień swoją bibliotekę wideo w wyszukiwalny tekst. Generuj napisy do wszystkiego. Bez odliczania minut, po prostu twórz."
+        "des": "Zamień swoją bibliotekę wideo w wyszukiwalny tekst, korzystając z naszej usługi automatycznej transkrypcji plików wideo. Generuj napisy do wszystkiego. Bez odliczania minut, po prostu twórz."
       },
       "journalists": {
         "title": "Dziennikarze",
@@ -1174,6 +1175,11 @@ let message = {
       "title": "Często zadawane pytania",
       "titleHighlight": "Pytania",
       "questions": [
+            {
+              "q": "Transkrypcja AI",
+              "question": "Czym jest transkrypcja AI i jak działa?",
+              "answer": "Transkrypcja AI to proces automatycznej konwersji dźwięku na tekst z wykorzystaniem zaawansowanej sztucznej inteligencji. W NeverCap wystarczy przesłać pliki, a nasza sztuczna inteligencja przepisze je z dokładnością do 96%. Nasza usługa została zaprojektowana do transkrypcji plików wideo (takich jak MP4, MOV) i plików audio (takich jak MP3, WAV) na czytelny, edytowalny tekst, wraz z oznaczeniami mówców i znacznikami czasu."
+            },
             {
               "q": "nieograniczona_polityka",
               "question": "Czy to naprawdę jest nieograniczone? Gdzie jest haczyk?",
@@ -1299,7 +1305,7 @@ let message = {
       feature2TableRow2Value: "10 plików/miesiąc",
       feature2TableRow3Label: "Trint",
       feature2TableRow3Value: "Limit 50 godzin/miesiąc",
-      feature2TableRow4Label: "NeverCap",
+      feature2TableRow4Label: "Nigdy nie zamykaj",
       feature2TableRow4Value: "Naprawdę nieograniczone ✓",
       feature3Label: "Dowód społeczny",
       feature3TitlePart1: "Użytkownicy są",
@@ -1358,7 +1364,7 @@ let message = {
       limitCard3Number: "1",
       limitCard3DescriptionLine1: "Plik na raz",
       limitCard3DescriptionLine2: "(Sekwencyjne przesyłanie)",
-      limitCard4Service: "NeverCap",
+      limitCard4Service: "Nigdy nie zamykaj",
       limitCard4Number: "∞",
       limitCard4DescriptionLine1: "Nieograniczone przesyłanie",
       limitCard4DescriptionLine2: "50 plików na partię",
@@ -1454,7 +1460,7 @@ let message = {
       statCard3Percentage: "100 ms",
       statCard3DescriptionLine1: "Poziom słowa",
       statCard3DescriptionLine2: "Precyzja znacznika czasu",
-      languageSectionTitlePart1: "96% dokładności w 12 głównych językach",
+      languageSectionTitlePart1: "96% dokładności",
       languageSubtitle: "Transkrypcja na poziomie profesjonalnym dla treści globalnych",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "angielski",
@@ -1547,13 +1553,13 @@ let message = {
       formattingTitle: "Przed i po",
       formattingBeforeLabel: "❌ Inne:",
       formattingBeforeText: "Więc dzisiaj porozmawiamy o nowych funkcjach, nad którymi pracowaliśmy. Myślę, że bardzo Ci się spodobają. Użytkownicy prosili o nie od dawna i w końcu je wprowadziliśmy.",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ Nigdy nie ograniczaj:",
       formattingAfterText: "Dzisiaj porozmawiamy o nowych funkcjach, nad którymi pracowaliśmy. Myślę, że bardzo Wam się spodobają. Użytkownicy prosili o nie od dawna i w końcu je wprowadziliśmy.",
       comparisonSubtitle: "Dokładność",
       comparisonSectionTitle: "Porównanie",
       comparisonDes: "Zobacz, jak wypadamy na tle konkurencji",
       tableHeader1: "Funkcja",
-      tableHeader2: "NeverCap",
+      tableHeader2: "Nigdy nie zamykaj",
       tableHeader3: "Otter.ai",
       tableHeader4: "Opisz",
       tableHeader5: "Obrót silnika",
@@ -1589,7 +1595,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "Doświadcz 96% dokładności",
       ctaSubtitle: "Prześlij swoje najtrudniejsze nagranie audio i zobacz różnicę",
-      finalCta: "Sprawdź naszą dokładność już teraz →"
+      finalCta: "Sprawdź naszą dokładność już teraz →",
+        languageSectionTitlePart2: "w 12 głównych językach"
     }
   },
   Pricing: {
@@ -1694,7 +1701,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "Porównaj wszystkie funkcje",
+        "title": "Porównywać",
         "highlighted_text": "Wszystkie funkcje",
         "subtitle": "Zobacz dokładnie, co otrzymasz w ramach każdego planu. Bez ukrytych ograniczeń."
       },

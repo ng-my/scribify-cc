@@ -1084,7 +1084,7 @@ let message = {
       badge: 'Chega de "Shrinkflation" - Na verdade, ilimitado',
       h1: "Pare de pagar por limites:",
       gradient: "Transcrição de IA verdadeiramente ilimitada",
-      subtitle: "Carregue todo o seu arquivo de podcast. Transcreva todas as suas entrevistas. Processe 50 arquivos de uma só vez. Sem limites mensais, sem limites de upload. Finalmente, uma transcrição que se adapta às suas necessidades reais.",
+      subtitle: "Nossa IA transcreve vídeo e converte áudio em texto, processando 50 arquivos de uma só vez, sem limites mensais. Transcrição que realmente se adapta a você.",
       FreeTrial: "Experimente grátis - sem cartão de crédito",
       HowWorks: "Veja como funciona",
       Unlimited: "Uploads de arquivos ilimitados",
@@ -1103,33 +1103,34 @@ let message = {
       no_signup: "Não é necessário se inscrever",
       experience_unltd: "Experimente uma transcrição verdadeiramente ilimitada",
       upload_50: "Carregue até 50 arquivos de uma vez, aqui mesmo",
-      no_limits: "Não há mais limites ocultos",
-      no_surprises: "Sem mais surpresas",
-      transparency: "Enquanto outros reduzem discretamente seus minutos ou escondem limites em letras miúdas, nós acreditamos na transparência radical",
+      no_limits: "Avançado",
+      no_surprises: "Transcrição de IA",
+      transparency: "Sem mais limites ocultos, sem mais surpresas - Enquanto outros reduzem silenciosamente seus minutos ou escondem limites em letras miúdas, nós acreditamos na transparência radical",
       feat_unltd: "Na verdade ilimitado",
-      feat_unltd_desc: 'Nenhuma "política de uso justo" escondida em termos. Nenhum limite de armazenamento disfarçado de "ilimitado". Carregue seu arquivo inteiro, transcreva tudo. Falamos sério.',
+      feat_unltd_desc: 'Nenhuma "política de uso justo" escondida em termos. Nenhum limite de armazenamento disfarçado de "ilimitado". Carregue seu arquivo inteiro e transcreva tudo para todas as suas necessidades de transcrição de áudio. Falamos sério.',
       feat_bulk: "Liberdade de upload em massa",
       feat_bulk_desc: 'Cansado de "3 importações vitalícias" ou "10 arquivos por mês"? Envie 50 arquivos de uma só vez, quantas vezes precisar. Perfeito para processar pendências.',
       feat_batch: "Processamento em lote",
       feat_batch_desc: "Processe toda a sua temporada de podcast durante a noite. Envie 50 entrevistas de uma só vez. Deixe nossa IA trabalhar enquanto você dorme. Acorde com as transcrições completas.",
       feat_accuracy: "96% de precisão",
-      feat_accuracy_desc: "IA líder do setor com pontuação inteligente, diarização de falantes para até 20 pessoas e tratamento perfeito de acentos e termos técnicos.",
+      feat_accuracy_desc: "Nossa IA líder do setor transcreve áudio com pontuação inteligente, diarização de falantes para até 20 pessoas e lida com sotaques e termos técnicos com perfeição.",
       feat_langs: "Mais de 100 idiomas",
-      feat_langs_desc: "Transcreva em mais de 100 idiomas e traduza para mais de 249. Sem custos adicionais para idiomas diferentes. Conteúdo global, um preço único.",
+      feat_langs_desc: "Transcreva vídeos e áudios em mais de 100 idiomas e traduza para mais de 249. Sem custos adicionais para idiomas diferentes. Conteúdo global, um preço único.",
       feat_pro: "Recursos profissionais",
-      feat_pro_desc: "Carimbos de data e hora em nível de palavra para posicionamento preciso de áudio/vídeo, identificação precisa do locutor mesmo durante trocas rápidas de conversa e texto perfeitamente formatado com parágrafos, frases e pontuação para facilitar a leitura."
+      feat_pro_desc: "Carimbos de data e hora em nível de palavra para posicionamento preciso de áudio/vídeo, identificação precisa do locutor mesmo durante trocas rápidas de conversa e texto perfeitamente formatado com parágrafos, frases e pontuação para facilitar a leitura.",
+        features: "Características"
     },
     UseCases: {
-      built_for: "Construído para",
-      "heavy_users": "Usuários pesados como você",
-      "join_users": 'Junte-se aos YouTubers, criadores de conteúdo e podcasters que migraram dos serviços de "shrinkflation"',
+      built_for: "Volume",
+      "heavy_users": "Transcrição de áudio e vídeo",
+      "join_users": 'Criado para usuários pesados como você - Junte-se a YouTubers, criadores de conteúdo e podcasters que migraram dos serviços de "shrinkflation"',
       "podcasters": {
         "title": "Podcasters",
         "des": "Carregue todo o seu catálogo. Crie notas de apresentação para cada episódio. Chega de escolher quais episódios transcrever."
       },
       "content_creators": {
         "title": "Criadores de conteúdo",
-        "des": "Transforme sua videoteca em texto pesquisável. Gere legendas para tudo. Sem contar minutos, só criando."
+        "des": "Transforme sua videoteca em texto pesquisável usando nosso serviço de transcrição automática de arquivos de vídeo. Gere legendas para tudo. Sem contar minutos, apenas criando."
       },
       "journalists": {
         "title": "Jornalistas",
@@ -1178,6 +1179,11 @@ let message = {
       "titleHighlight": "Questões",
       "questions": [
             {
+              "q": "Transcrição de IA",
+              "question": "O que é transcrição de IA e como ela funciona?",
+              "answer": "A transcrição por IA é o processo de conversão automática de áudio em texto usando inteligência artificial avançada. Na NeverCap, você simplesmente carrega seus arquivos e nossa IA transcreve o conteúdo com até 96% de precisão. Nosso serviço foi desenvolvido para transcrever arquivos de vídeo (como MP4, MOV) e áudio (como MP3, WAV) em texto legível e editável, completo com rótulos de locutores e carimbos de data/hora."
+            },
+            {
               "q": "política_ilimitada",
               "question": "É realmente ilimitado? Qual é o problema?",
               "answer": "Sim, é realmente ilimitado! Sem limites mensais de minutos, sem taxas de excedente. Os únicos limites são técnicos: arquivos individuais podem ter até 10 horas de duração ou 5 GB de tamanho, e você pode processar 50 arquivos de uma vez. Mas você pode enviar quantos lotes quiser, durante todo o mês."
@@ -1221,8 +1227,8 @@ let message = {
     },
     CTASection: {
       "title": "Pronto para se libertar dos limites?",
-      "subtitle": "Junte-se a mais de 50.000 profissionais que migraram para transcrições verdadeiramente ilimitadas",
-      "button": "Experimente NeverCap grátis",
+      "subtitle": "Junte-se a mais de 50.000 profissionais que fizeram a transição para uma transcrição verdadeiramente ilimitada",
+      "button": "Experimente o NeverCap gratuitamente",
       "disclaimer": "Não é necessário cartão de crédito para o Plano Gratuito • Atualize a qualquer momento para acesso ilimitado"
     }
   },
@@ -1302,7 +1308,7 @@ let message = {
       feature2TableRow2Value: "10 arquivos/mês",
       feature2TableRow3Label: "Trint",
       feature2TableRow3Value: "Limite de 50 horas/mês",
-      feature2TableRow4Label: "NeverCap",
+      feature2TableRow4Label: "NuncaCap",
       feature2TableRow4Value: "Verdadeiramente Ilimitado ✓",
       feature3Label: "Prova Social",
       feature3TitlePart1: "Os usuários são",
@@ -1332,7 +1338,7 @@ let message = {
       trustBadge4Label: "Upload em lote",
       ctaTitle: "Pare de pagar por falsos ilimitados",
       ctaSubtitle: "Junte-se a milhares que migraram para a transcrição verdadeiramente ilimitada",
-      finalCta: "Experimente NeverCap grátis"
+      finalCta: "Experimente o NeverCap gratuitamente"
     },
     BulkUpload: {
       heroBadgeIcon: "📁",
@@ -1361,7 +1367,7 @@ let message = {
       limitCard3Number: "1",
       limitCard3DescriptionLine1: "Arquivo de cada vez",
       limitCard3DescriptionLine2: "(Upload sequencial)",
-      limitCard4Service: "NeverCap",
+      limitCard4Service: "NuncaCap",
       limitCard4Number: "∞",
       limitCard4DescriptionLine1: "Uploads ilimitados",
       limitCard4DescriptionLine2: "50 arquivos por lote",
@@ -1379,7 +1385,7 @@ let message = {
       feature1Point4Icon: "✓",
       feature1Point4Text: "5 GB por arquivo no máximo",
       uploadAnimationText1: "50 arquivos",
-      uploadAnimationText2: "Descarte e Processamento",
+      uploadAnimationText2: "Descartar e processar",
       fileBadge1: "podcast_ep_001.mp3",
       fileBadge2: "entrevista_crua.mp4",
       fileBadge3: "reunião_2024.wav",
@@ -1457,7 +1463,7 @@ let message = {
       statCard3Percentage: "100 ms",
       statCard3DescriptionLine1: "Nível de palavra",
       statCard3DescriptionLine2: "Precisão do carimbo de data/hora",
-      languageSectionTitlePart1: "96% de precisão em 12 idiomas principais",
+      languageSectionTitlePart1: "96% de precisão",
       languageSubtitle: "Transcrição de nível profissional para conteúdo global",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "Inglês",
@@ -1550,13 +1556,13 @@ let message = {
       formattingTitle: "Antes e depois",
       formattingBeforeLabel: "❌ Outros:",
       formattingBeforeText: "Então, hoje vamos falar sobre os novos recursos em que estamos trabalhando. Acho que você vai gostar muito deles. Eles foram solicitados pelos usuários por um longo tempo e finalmente os concluímos.",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ Nunca Limite:",
       formattingAfterText: "Então, hoje, vamos falar sobre os novos recursos em que estamos trabalhando. Acho que você vai gostar bastante deles. Eles eram pedidos pelos usuários há muito tempo, e finalmente os concluímos.",
       comparisonSubtitle: "Precisão",
       comparisonSectionTitle: "Comparação",
-      comparisonDes: "Veja como nos comparamos com a concorrência",
+      comparisonDes: "Veja como nos comparamos à concorrência",
       tableHeader1: "Recurso",
-      tableHeader2: "NeverCap",
+      tableHeader2: "NuncaCap",
       tableHeader3: "Lontra.ai",
       tableHeader4: "Descrição",
       tableHeader5: "Rev",
@@ -1592,7 +1598,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "Experimente 96% de precisão",
       ctaSubtitle: "Envie seu áudio mais desafiador e veja a diferença",
-      finalCta: "Teste nossa precisão agora →"
+      finalCta: "Teste nossa precisão agora →",
+        languageSectionTitlePart2: "em 12 idiomas principais"
     }
   },
   Pricing: {
@@ -1697,7 +1704,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "Comparar todos os recursos",
+        "title": "Comparar",
         "highlighted_text": "Todos os recursos",
         "subtitle": "Veja exatamente o que você ganha com cada plano. Sem limitações ocultas."
       },
@@ -1801,7 +1808,7 @@ let message = {
               "answer": "Sim! Experimente o Pro gratuitamente por 7 dias, sem precisar de cartão de crédito. E mais: ganhe 45% de desconto no primeiro mês ao assinar."
             },
             {
-              "q": "retenção de arquivo",
+              "q": "retenção_de_arquivo",
               "question": "Por quanto tempo vocês guardam meus arquivos?",
               "answer": "Plano gratuito: 30 dias. Planos Pro: para sempre! Suas transcrições estarão sempre disponíveis na sua conta."
             },
@@ -1815,7 +1822,7 @@ let message = {
     CTA: {
       "title": "Pronto para ir sem limites?",
       "subtitle": "Junte-se a mais de 50.000 profissionais que transcrevem sem limites",
-      "button": "Experimente NeverCap Grátis →",
+      "button": "Experimente o NeverCap grátis →",
       "disclaimer": "Não é necessário cartão de crédito • Comece a transcrever em segundos"
     }
   },

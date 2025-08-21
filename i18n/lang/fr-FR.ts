@@ -1095,7 +1095,7 @@ let message = {
       badge: "Plus de « shrinkflation » – en fait, il n'y a plus de limite",
       h1: "Arrêtez de payer pour les limites :",
       gradient: "Transcription IA véritablement illimitée",
-      subtitle: "Téléchargez l'intégralité de vos archives de podcasts. Transcrivez toutes vos interviews. Traitez jusqu'à 50 fichiers simultanément. Pas de limite mensuelle ni de téléchargement. Enfin une transcription qui s'adapte à vos besoins.",
+      subtitle: "Notre IA transcrit les vidéos et convertit l'audio en texte, traitant jusqu'à 50 fichiers simultanément, sans limite mensuelle. Une transcription évolutive.",
       FreeTrial: "Essayez-le gratuitement - Pas de carte de crédit",
       HowWorks: "Découvrez comment cela fonctionne",
       Unlimited: "Téléchargements de fichiers illimités",
@@ -1114,33 +1114,34 @@ let message = {
       no_signup: "Aucune inscription requise",
       experience_unltd: "Faites l'expérience d'une transcription véritablement illimitée",
       upload_50: "Téléchargez jusqu'à 50 fichiers à la fois, ici même",
-      no_limits: "Plus de limites cachées",
-      no_surprises: "Plus de surprises",
-      transparency: "Alors que d’autres réduisent discrètement vos minutes ou cachent les plafonds dans les petits caractères, nous croyons en une transparence radicale",
+      no_limits: "Avancé",
+      no_surprises: "Transcription IA",
+      transparency: "Plus de limites cachées, plus de surprises - Alors que d'autres réduisent discrètement vos minutes ou cachent des plafonds en petits caractères, nous croyons en une transparence radicale",
       feat_unltd: "En fait illimité",
-      feat_unltd_desc: "Pas de « politique d'utilisation équitable » enfouie sous des termes. Pas de limite de stockage déguisée en « illimité ». Importez l'intégralité de vos archives, transcrivez tout. Nous sommes sérieux.",
+      feat_unltd_desc: "Pas de « politique d'utilisation équitable » enfouie sous des termes. Pas de limite de stockage déguisée en « illimité ». Importez l'intégralité de vos archives et transcrivez tout pour tous vos besoins de transcription audio. Nous sommes sérieux.",
       feat_bulk: "Liberté de téléchargement en masse",
       feat_bulk_desc: "Fatigué des « 3 importations à vie » ou des « 10 fichiers par mois » ? Importez 50 fichiers simultanément, autant de fois que nécessaire. Idéal pour gérer les retards.",
       feat_batch: "Traitement par lots",
       feat_batch_desc: "Gérez toute votre saison de podcasts en une nuit. Téléchargez 50 interviews simultanément. Laissez notre IA travailler pendant votre sommeil. Réveillez-vous avec les transcriptions complètes.",
       feat_accuracy: "96% de précision",
-      feat_accuracy_desc: "IA de pointe avec ponctuation intelligente, journalisation des locuteurs jusqu'à 20 locuteurs et gestion parfaite des accents et des termes techniques.",
+      feat_accuracy_desc: "Notre IA de pointe transcrit l'audio avec une ponctuation intelligente, une journalisation des locuteurs jusqu'à 20 locuteurs et gère parfaitement les accents et les termes techniques.",
       feat_langs: "Plus de 100 langues",
-      feat_langs_desc: "Transcrivez dans plus de 100 langues et traduisez vers plus de 249 langues. Aucun frais supplémentaire pour les différentes langues. Contenu international, prix unique.",
+      feat_langs_desc: "Transcrivez des vidéos et des fichiers audio dans plus de 100 langues et traduisez-les vers plus de 249 langues. Aucun frais supplémentaire pour les différentes langues. Contenu international, prix unique.",
       feat_pro: "Fonctionnalités professionnelles",
-      feat_pro_desc: "Horodatages au niveau des mots pour un positionnement audio/vidéo précis, identification précise du locuteur même lors de changements de conversation rapides et texte parfaitement formaté avec des paragraphes, des phrases et une ponctuation pour une lecture facile."
+      feat_pro_desc: "Horodatages au niveau des mots pour un positionnement audio/vidéo précis, identification précise du locuteur même lors de changements de conversation rapides et texte parfaitement formaté avec des paragraphes, des phrases et une ponctuation pour une lecture facile.",
+        features: "Caractéristiques"
     },
     UseCases: {
-      built_for: "Conçu pour",
-      "heavy_users": "Les gros utilisateurs comme vous",
-      "join_users": "Rejoignez les YouTubeurs, les créateurs de contenu et les podcasteurs qui ont abandonné les services de « shrinkflation »",
+      built_for: "En gros",
+      "heavy_users": "Transcription audio et vidéo",
+      "join_users": "Conçu pour les utilisateurs intensifs comme vous - Rejoignez les YouTubeurs, les créateurs de contenu et les podcasteurs qui ont abandonné les services de « shrinkflation »",
       "podcasters": {
         "title": "Podcasteurs",
         "des": "Téléchargez l'intégralité de votre catalogue. Créez des notes pour chaque épisode. Plus besoin de choisir les épisodes à transcrire."
       },
       "content_creators": {
         "title": "Créateurs de contenu",
-        "des": "Transformez votre vidéothèque en texte indexé. Générez des sous-titres pour chaque vidéo. Plus besoin de compter les minutes, créez simplement."
+        "des": "Transformez votre vidéothèque en texte indexé grâce à notre service de transcription automatique de fichiers vidéo. Générez des sous-titres pour chaque vidéo. Plus besoin de compter les minutes, créez simplement."
       },
       "journalists": {
         "title": "Journalistes",
@@ -1188,6 +1189,11 @@ let message = {
       "title": "Questions fréquemment posées",
       "titleHighlight": "Questions",
       "questions": [
+            {
+              "q": "Transcription IA",
+              "question": "Qu'est-ce que la transcription IA et comment fonctionne-t-elle ?",
+              "answer": "La transcription par IA consiste à convertir automatiquement l'audio en texte grâce à une intelligence artificielle avancée. Chez NeverCap, il vous suffit de télécharger vos fichiers, et notre IA les transcrit avec une précision pouvant atteindre 96 %. Notre service est conçu pour transcrire des fichiers vidéo (MP4, MOV) et audio (MP3, WAV) en texte lisible et modifiable, avec les noms des intervenants et l'horodatage."
+            },
             {
               "q": "politique_illimitée",
               "question": "Est-ce vraiment illimité ? Quel est le piège ?",
@@ -1468,7 +1474,7 @@ let message = {
       statCard3Percentage: "100 ms",
       statCard3DescriptionLine1: "Niveau des mots",
       statCard3DescriptionLine2: "Précision de l'horodatage",
-      languageSectionTitlePart1: "96 % de précision dans 12 langues principales",
+      languageSectionTitlePart1: "96% de précision",
       languageSubtitle: "Transcription de qualité professionnelle pour le contenu mondial",
       languageCard1Flag: "🇫🇷",
       languageCard1Name: "Anglais",
@@ -1561,7 +1567,7 @@ let message = {
       formattingTitle: "Avant et après",
       formattingBeforeLabel: "❌ Autres :",
       formattingBeforeText: "Alors aujourd'hui, nous allons parler des nouvelles fonctionnalités sur lesquelles nous avons travaillé. Je pense que vous les aimerez vraiment. Elles ont été demandées par les utilisateurs depuis longtemps et nous les avons enfin réalisées.",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ NeverCap :",
       formattingAfterText: "Aujourd'hui, nous allons parler des nouvelles fonctionnalités sur lesquelles nous travaillons. Je pense que vous les apprécierez beaucoup. Elles étaient demandées par les utilisateurs depuis longtemps, et nous les avons enfin réalisées.",
       comparisonSubtitle: "Précision",
       comparisonSectionTitle: "Comparaison",
@@ -1603,7 +1609,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "Expérience de précision de 96 %",
       ctaSubtitle: "Téléchargez votre audio le plus difficile et voyez la différence",
-      finalCta: "Testez notre précision maintenant →"
+      finalCta: "Testez notre précision maintenant →",
+        languageSectionTitlePart2: "en 12 langues principales"
     }
   },
   Pricing: {
@@ -1708,7 +1715,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "Comparer toutes les fonctionnalités",
+        "title": "Comparer",
         "highlighted_text": "Toutes les fonctionnalités",
         "subtitle": "Découvrez précisément ce que vous obtenez avec chaque forfait. Aucune limitation cachée."
       },
@@ -1812,7 +1819,7 @@ let message = {
               "answer": "Oui ! Essayez Pro gratuitement pendant 7 jours, sans carte de crédit. De plus, bénéficiez de 45 % de réduction sur votre premier mois en vous abonnant."
             },
             {
-              "q": "rétention_de_fichiers",
+              "q": "rétention de fichiers",
               "question": "Combien de temps conservez-vous mes fichiers ?",
               "answer": "Formule gratuite : 30 jours. Formules Pro : illimitées ! Vos relevés de notes sont toujours disponibles sur votre compte."
             },

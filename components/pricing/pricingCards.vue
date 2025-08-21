@@ -174,7 +174,7 @@ const handleClick = (type: Number) => {
 
 .plan-name {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 20px;
   color: var(--dark);
 }

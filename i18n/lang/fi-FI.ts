@@ -1076,7 +1076,7 @@ let message = {
       badge: 'Ei enää "kutistumista" - Itse asiassa rajattomasti',
       h1: "Lopeta rajojen maksaminen:",
       gradient: "Todella rajaton tekoälyn transkriptio",
-      subtitle: "Lataa koko podcast-arkistosi. Litteroi kaikki haastattelusi. Käsittele 50 tiedostoa kerralla. Ei kuukausittaisia ​​rajoituksia, ei lähetysrajoituksia. Vihdoinkin litterointi, joka skaalautuu todellisten tarpeidesi mukaan.",
+      subtitle: "Tekoälymme litteroi videon ja muuntaa äänen tekstiksi, käsittelemällä 50 tiedostoa kerralla ilman kuukausittaisia rajoituksia. Litterointi, joka todella skaalautuu kanssasi.",
       FreeTrial: "Kokeile ilmaiseksi – ei luottokorttia",
       HowWorks: "Katso, miten se toimii",
       Unlimited: "Rajoittamaton tiedostojen lataus",
@@ -1095,33 +1095,34 @@ let message = {
       no_signup: "Ei rekisteröitymistä vaadita",
       experience_unltd: "Koe todella rajaton transkriptio",
       upload_50: "Lataa jopa 50 tiedostoa kerralla, juuri tähän",
-      no_limits: "Ei enää piilotettuja rajoituksia",
-      no_surprises: "Ei enää yllätyksiä",
-      transparency: "Kun toiset hiljaa lyhentävät minuuttejasi tai piilottavat puheaikakattoja pienellä präntättyyn tekstiin, me uskomme radikaaliin läpinäkyvyyteen",
+      no_limits: "Edistynyt",
+      no_surprises: "Tekoälytranskriptio",
+      transparency: "Ei enää piilotettuja rajoituksia, ei enää yllätyksiä - Kun toiset hiljaa lyhentävät minuuttejasi tai piilottavat rajoituksia pienellä präntättyyn, me uskomme radikaaliin läpinäkyvyyteen",
       feat_unltd: "Oikeastaan rajaton",
-      feat_unltd_desc: 'Ei "kohtuullisen käytön käytäntöä" salassa. Ei tallennusrajoituksia, jotka on naamioitu "rajattomaksi". Lataa koko arkistosi, litteroi kaikki. Olemme tosissamme.',
+      feat_unltd_desc: 'Ei "kohtuullisen käytön käytäntöä" salassa. Ei tallennusrajoituksia, jotka naamioidaan "rajattomaksi". Lataa koko arkistosi, litteroi kaikki äänitteiden litterointitarpeesi. Olemme tosissamme.',
       feat_bulk: "Joukkolatauksen vapaus",
       feat_bulk_desc: 'Oletko kyllästynyt "kolmeen elinikäiseen tuontiin" tai "kymmeneen tiedostoon kuukaudessa"? Lataa 50 tiedostoa kerralla, niin monta kertaa kuin tarvitset. Täydellinen ratkaisu ruuhkan käsittelyyn.',
       feat_batch: "Eräkäsittely",
       feat_batch_desc: "Käsittele koko podcast-kausi yön aikana. Lataa 50 haastattelua kerralla. Anna tekoälymme työskennellä nukkuessasi. Herää valmiiden litterointien ääreen.",
       feat_accuracy: "96 % tarkkuus",
-      feat_accuracy_desc: "Alan johtava tekoäly älykkäillä välimerkeillä, jopa 20 puhujan päiväkirjatunnistuksella ja aksenttien sekä teknisten termien moitteettomalla käsittelyllä.",
+      feat_accuracy_desc: "Alan johtava tekoälymme litteroi äänen älykkäillä välimerkeillä, jopa 20 puhujan puheenvuoroilla ja käsittelee aksentit ja tekniset termit virheettömästi.",
       feat_langs: "Yli 100 kieltä",
-      feat_langs_desc: "Litteroi yli 100 kielelle, käännä yli 249 kielelle. Ei lisämaksuja eri kielistä. Maailmanlaajuista sisältöä, yksi helppo hinta.",
+      feat_langs_desc: "Litteroi videoita ja ääntä yli 100 kielelle, käännä yli 249 kielelle. Ei lisämaksuja eri kielistä. Maailmanlaajuista sisältöä, yksi helppo hinta.",
       feat_pro: "Ammattimaiset ominaisuudet",
-      feat_pro_desc: "Sanatason aikaleimat tarkkaan äänen/videon paikannukseen, tarkkaan puhujan tunnistukseen jopa nopeiden keskustelunvaihdosten aikana ja täydellisesti muotoiltuun tekstiin, jossa on kappaleita, lauseita ja välimerkkejä helppoa lukemista varten."
+      feat_pro_desc: "Sanatason aikaleimat tarkkaan äänen/videon paikannukseen, tarkkaan puhujan tunnistukseen jopa nopeiden keskustelunvaihdosten aikana ja täydellisesti muotoiltuun tekstiin, jossa on kappaleita, lauseita ja välimerkkejä helppoa lukemista varten.",
+        features: "Ominaisuudet"
     },
     UseCases: {
-      built_for: "Rakennettu",
-      "heavy_users": "Ahkerat käyttäjät kuten sinä",
-      "join_users": 'Liity YouTube-käyttäjien, sisällöntuottajien ja podcast-juontajien joukkoon, jotka vaihtoivat pois "shrinkinflaatio"-palveluista.',
+      built_for: "Irtotavarana",
+      "heavy_users": "Ääni- ja videotranskriptio",
+      "join_users": 'Rakennettu kaltaisillesi ahkerakäyttäjille - Liity YouTube-käyttäjien, sisällöntuottajien ja podcast-juontajien joukkoon, jotka vaihtoivat "kutistumisinflaatio"-palveluista',
       "podcasters": {
         "title": "Podcastien tekijät",
         "des": "Lataa koko aiempi jaksoluettelosi. Luo muistiinpanoja jokaiselle jaksolle. Ei enää tarvitse valita, mitkä jaksot litteroidaan."
       },
       "content_creators": {
         "title": "Sisällöntuottajat",
-        "des": "Muunna videokirjastosi haettavaksi tekstiksi. Luo tekstitykset kaikkeen. Ei minuuttien laskemista, vain luomista."
+        "des": "Muunna videokirjastosi haettavaksi tekstiksi käyttämällä palveluamme, joka litteroi videotiedostot automaattisesti. Luo tekstitykset kaikkeen. Ei minuuttien laskemista, vain luomista."
       },
       "journalists": {
         "title": "Toimittajat",
@@ -1143,7 +1144,7 @@ let message = {
     Testimonials: {
       title: "Rakastettu",
       highlighted_users: "Yli 50 000 käyttäjää",
-      subtitle: "Katso, miksi ammattilaiset valitsevat NeverCap:n rajoitettujen vaihtoehtojen sijaan",
+      subtitle: "Katso, miksi ammattilaiset valitsevat NeverCapin rajoitettujen vaihtoehtojen sijaan",
       Mike: {
         "text": "Voi herranjumala, tämä oikeasti toimii! Olen tehnyt podcastia kolme vuotta ja litteroin kaiken manuaalisesti kuin idiootti. Latasin kuusi jaksoa kerralla ja se erotti minut ja juontajaparini täydellisesti toisistaan. Se kahvilajakso, jonka luulin pilalle menneeksi? Kristallinkirkas litterointi. En aio enää koskaan kirjoittaa näitä itse.",
         "author": "Mike Rodriguez",
@@ -1169,6 +1170,11 @@ let message = {
       "title": "Usein kysytyt kysymykset",
       "titleHighlight": "Kysymykset",
       "questions": [
+            {
+              "q": "Tekoälytranskriptio",
+              "question": "Mitä on tekoälyn transkriptio ja miten se toimii?",
+              "answer": "Tekoälytranskriptio on prosessi, jossa ääni muunnetaan automaattisesti tekstiksi edistyneen tekoälyn avulla. NeverCapilla lataat vain tiedostosi, ja tekoälymme litteroi sisällön jopa 96 %:n tarkkuudella. Palvelumme on suunniteltu litteroimaan videotiedostoja (kuten MP4, MOV) ja äänitiedostoja (kuten MP3, WAV) luettavaan ja muokattavaan tekstiin, joka sisältää puhujatunnisteet ja aikaleimat."
+            },
             {
               "q": "rajoittamaton_käytäntö",
               "question": "Onko se todella rajaton? Mikä on juju?",
@@ -1214,7 +1220,7 @@ let message = {
     CTASection: {
       "title": "Valmis irrottautumaan rajoituksista?",
       "subtitle": "Liity yli 50 000 ammattilaisen joukkoon, jotka ovat siirtyneet aidosti rajoittamattomaan transkriptioon",
-      "button": "Kokeile NeverCap ilmaiseksi",
+      "button": "Kokeile NeverCapia ilmaiseksi",
       "disclaimer": "Ilmaisversioon ei tarvita luottokorttia • Päivitä milloin tahansa saadaksesi rajoittamattoman käyttöoikeuden"
     }
   },
@@ -1324,7 +1330,7 @@ let message = {
       trustBadge4Label: "Erälataus",
       ctaTitle: "Lopeta Fake Unlimited -palvelun maksaminen",
       ctaSubtitle: "Liity tuhansien ihmisten joukkoon, jotka ovat siirtyneet todella rajoittamattomaan transkriptioon",
-      finalCta: "Kokeile NeverCap ilmaiseksi"
+      finalCta: "Kokeile NeverCapia ilmaiseksi"
     },
     BulkUpload: {
       heroBadgeIcon: "📁",
@@ -1449,7 +1455,7 @@ let message = {
       statCard3Percentage: "100 ms",
       statCard3DescriptionLine1: "Sanataso",
       statCard3DescriptionLine2: "Aikaleiman tarkkuus",
-      languageSectionTitlePart1: "96 %:n tarkkuus 12 pääkielellä",
+      languageSectionTitlePart1: "96 % tarkkuus",
       languageSubtitle: "Ammattitason transkriptio globaalille sisällölle",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "englanti",
@@ -1542,7 +1548,7 @@ let message = {
       formattingTitle: "Ennen ja jälkeen",
       formattingBeforeLabel: "❌ Muut:",
       formattingBeforeText: "Joten tänään puhuisimme uusista ominaisuuksista, joiden parissa olemme työstäneet. Uskon, että tulette todella pitämään niistä. Käyttäjät ovat pyytäneet niitä jo pitkään, ja saimme ne vihdoin valmiiksi.",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ Älä koskaan sulje:",
       formattingAfterText: "Tänään siis puhumme uusista ominaisuuksista, joiden parissa olemme työstäneet. Uskon, että tulette todella pitämään niistä. Käyttäjät ovat pyytäneet niitä jo pitkään, ja vihdoin saimme ne valmiiksi.",
       comparisonSubtitle: "Tarkkuus",
       comparisonSectionTitle: "Vertailu",
@@ -1584,7 +1590,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "Kokemus 96 % tarkkuus",
       ctaSubtitle: "Lataa haastavin äänitiedostosi ja näe ero",
-      finalCta: "Testaa tarkkuuttamme nyt →"
+      finalCta: "Testaa tarkkuuttamme nyt →",
+        languageSectionTitlePart2: "12 pääkielellä"
     }
   },
   Pricing: {
@@ -1689,7 +1696,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "Vertaile kaikkia ominaisuuksia",
+        "title": "Vertaa",
         "highlighted_text": "Kaikki ominaisuudet",
         "subtitle": "Katso tarkalleen, mitä saat kullakin paketilla. Ei piilotettuja rajoituksia."
       },
@@ -1807,7 +1814,7 @@ let message = {
     CTA: {
       "title": "Valmiina rajattomaan käyttöön?",
       "subtitle": "Liity yli 50 000 ammattilaisen joukkoon litteroimaan ilman rajoituksia",
-      "button": "Kokeile NeverCap ilmaiseksi →",
+      "button": "Kokeile NeverCapia ilmaiseksi →",
       "disclaimer": "Luottokorttia ei tarvita • Aloita litterointi sekunneissa"
     }
   },

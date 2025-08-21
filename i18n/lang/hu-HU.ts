@@ -1078,7 +1078,7 @@ let message = {
       badge: 'Nincs több "zsugorodás" - Valójában korlátlan',
       h1: "Ne fizess többé a limitekért:",
       gradient: "Valóban korlátlan mesterséges intelligencia általi átírás",
-      subtitle: "Töltsd fel a teljes podcast-archívumodat. Írd le az összes interjúdat. Dolgozz fel egyszerre 50 fájlt. Nincs havi korlát, nincsenek feltöltési korlátok. Végre egy olyan átirat, amely a tényleges igényeidhez igazodik.",
+      subtitle: "Mesterséges intelligencia segítségével videókat ír át és hangokat szöveggé alakít, egyszerre 50 fájlt dolgoz fel havi korlátok nélkül. Átírás, amely valóban veled együtt skálázódik.",
       FreeTrial: "Próbálja ki ingyen - Nincs szükség hitelkártyára",
       HowWorks: "Nézd meg, hogyan működik",
       Unlimited: "Korlátlan fájlfeltöltés",
@@ -1097,33 +1097,34 @@ let message = {
       no_signup: "Nincs szükség regisztrációra",
       experience_unltd: "Tapasztalja meg a valóban korlátlan átírást",
       upload_50: "Tölts fel akár 50 fájlt egyszerre, itt",
-      no_limits: "Nincsenek többé rejtett korlátok",
-      no_surprises: "Nincs több meglepetés",
-      transparency: "Míg mások csendben csökkentik a perceidet, vagy apró betűs részben elrejtik a korlátokat, mi hiszünk a radikális átláthatóságban",
+      no_limits: "Fejlett",
+      no_surprises: "AI átírás",
+      transparency: "Nincsenek többé rejtett korlátok, nincsenek többé meglepetések – Míg mások csendben csökkentik a perceidet, vagy apró betűs részben elrejtik a limiteket, mi hiszünk a radikális átláthatóságban.",
       feat_unltd: "Valójában korlátlan",
-      feat_unltd_desc: "Nincsenek titokban rejtett „méltányos felhasználási szabályok”. Nincsenek „korlátlan” álcába bújtatott tárhelykorlátok. Töltsd fel a teljes archívumodat, írj le mindent. Komolyan gondoljuk.",
+      feat_unltd_desc: "Nincsenek „méltányos felhasználási szabályok” a kifejezések mögé rejtve. Nincsenek „korlátlan” álcájú tárhelykorlátok. Töltsd fel a teljes archívumodat, írj le mindent az összes hanganyag-átírási igényedhez. Komolyan gondoljuk.",
       feat_bulk: "Tömeges feltöltés szabadsága",
       feat_bulk_desc: "Elege van a „3 teljes élettartamra szóló importálásból” vagy a „havi 10 fájlból”? Töltsön fel egyszerre 50 fájlt, annyiszor, ahányszor csak szüksége van rá. Tökéletes a feladatfeladatok feldolgozásához.",
       feat_batch: "Kötegelt feldolgozás",
       feat_batch_desc: "Dolgozd fel a teljes podcast évadodat egy éjszaka alatt. Tölts fel egyszerre 50 interjút. Hagyd, hogy a mesterséges intelligencia dolgozzon, amíg alszol. Ébredj a kész átiratokra.",
       feat_accuracy: "96%-os pontosság",
-      feat_accuracy_desc: "Iparágvezető mesterséges intelligencia intelligens írásjelekkel, akár 20 beszélő naplózásával, valamint az ékezetek és a szakkifejezések hibátlan kezelésével.",
+      feat_accuracy_desc: "Iparágvezető mesterséges intelligenciánk intelligens írásjelekkel és akár 20 beszélő esetén is naplózással írja át a hangokat, és hibátlanul kezeli az ékezeteket és a szakkifejezéseket.",
       feat_langs: "100+ nyelv",
-      feat_langs_desc: "Több mint 100 nyelven írjon át, és fordítson több mint 249 nyelvre. Nincsenek felárak a különböző nyelvekért. Globális tartalom, egyetlen egyszerű ár.",
+      feat_langs_desc: "Videók és hanganyagok átírása több mint 100 nyelvre, fordítás több mint 249 nyelvre. Nincsenek felárak a különböző nyelvekért. Globális tartalom, egyetlen egyszerű ár.",
       feat_pro: "Professzionális funkciók",
-      feat_pro_desc: "Szó szintű időbélyegek a precíz audio/video pozicionáláshoz, a pontos beszélőazonosításhoz még gyors beszélgetésváltások során is, valamint tökéletesen formázott szöveg bekezdésekkel, mondatokkal és írásjelekkel a könnyű olvashatóság érdekében."
+      feat_pro_desc: "Szó szintű időbélyegek a precíz audio/video pozicionáláshoz, a pontos beszélőazonosításhoz még gyors beszélgetésváltások során is, valamint tökéletesen formázott szöveg bekezdésekkel, mondatokkal és írásjelekkel a könnyű olvashatóság érdekében.",
+        features: "Jellemzők"
     },
     UseCases: {
-      built_for: "Építve",
-      "heavy_users": "Hozzád hasonló nagy felhasználók",
-      "join_users": "Csatlakozz a YouTube-osokhoz, tartalomkészítőkhöz és podcasterekhez, akik átálltak a „zsugorodási” szolgáltatásokról",
+      built_for: "Tömeges",
+      "heavy_users": "Hang- és videóátírás",
+      "join_users": "Olyan nagyfelhasználóknak készült, mint te – Csatlakozz a YouTube-osokhoz, tartalomkészítőkhöz és podcasterekhez, akik átálltak a „zsugorodási” szolgáltatásokról.",
       "podcasters": {
         "title": "Podcasterek",
         "des": "Töltsd fel a teljes korábbi műsoraidat. Készíts műsorjegyzeteket minden epizódhoz. Nem kell többé kiválasztanod, hogy melyik epizódokat kell átírni."
       },
       "content_creators": {
         "title": "Tartalomkészítők",
-        "des": "Alakítsd át videótáradat kereshető szöveggé. Generálj feliratokat mindenhez. Nem kell perceket számolni, csak alkotni."
+        "des": "Alakítsa videokönyvtárát kereshető szöveggé szolgáltatásunk segítségével, amely automatikusan átírja a videofájlokat. Generáljon feliratokat mindenhez. Nem kell perceket számolni, csak alkotni."
       },
       "journalists": {
         "title": "Újságírók",
@@ -1145,7 +1146,7 @@ let message = {
     Testimonials: {
       title: "Szerette",
       highlighted_users: "50 000+ felhasználó",
-      subtitle: "Nézze meg, miért választják a szakemberek a NeverCap-t a korlátozott alternatívák helyett",
+      subtitle: "Nézze meg, miért választják a szakemberek a NeverCapet a korlátozott alternatívák helyett",
       Mike: {
         "text": "Basszus, ez a cucc tényleg működik! 3 éve csinálok egy podcastot, és mindent manuálisan írtam le, mint egy idióta. Egyszerre töltöttem fel 6 epizódot, és tökéletesen elkülönültem a műsorvezető társamtól. A kávézós epizód, amiről azt hittem, hogy elrontották? Kristálytiszta átirat. Soha többé nem fogom magam legépelni ezeket az anyagokat.",
         "author": "Mike Rodriguez",
@@ -1171,6 +1172,11 @@ let message = {
       "title": "Gyakran ismételt kérdések",
       "titleHighlight": "Kérdések",
       "questions": [
+            {
+              "q": "AI átírás",
+              "question": "Mi az a mesterséges intelligencia általi átírás és hogyan működik?",
+              "answer": "A mesterséges intelligencia (MI) segítségével történő átírás (AI) egy olyan folyamat, amely automatikusan szöveggé alakítja a hanganyagot. A NeverCapnél egyszerűen feltöltöd a fájljaidat, és a MI akár 96%-os pontossággal átírja a tartalmat. Szolgáltatásunk célja, hogy videofájlokat (például MP4, MOV) és hangfájlokat (például MP3, WAV) olvasható, szerkeszthető szöveggé alakítson át, előadói címkékkel és időbélyegekkel kiegészítve."
+            },
             {
               "q": "korlátlan_szabályzat",
               "question": "Tényleg korlátlan? Mi a bökkenő?",
@@ -1216,7 +1222,7 @@ let message = {
     CTASection: {
       "title": "Készen állsz megszabadulni a korlátoktól?",
       "subtitle": "Csatlakozzon több mint 50 000 szakemberhez, akik valóban korlátlan átírásra váltottak",
-      "button": "Próbálja ki az NeverCap ingyenes verziót",
+      "button": "Próbálja ki a NeverCapet ingyen",
       "disclaimer": "Az ingyenes csomaghoz nem szükséges hitelkártya • Bármikor frissíthet korlátlan hozzáférésért"
     }
   },
@@ -1296,7 +1302,7 @@ let message = {
       feature2TableRow2Value: "10 fájl/hónap",
       feature2TableRow3Label: "Trint",
       feature2TableRow3Value: "50 óra/hónap limit",
-      feature2TableRow4Label: "NeverCap",
+      feature2TableRow4Label: "SohaCap",
       feature2TableRow4Value: "Valóban korlátlan ✓",
       feature3Label: "Szociális bizonyíték",
       feature3TitlePart1: "A felhasználók",
@@ -1326,7 +1332,7 @@ let message = {
       trustBadge4Label: "Kötegelt feltöltés",
       ctaTitle: "Ne fizessen többé a Fake Unlimitedért",
       ctaSubtitle: "Csatlakozz több ezerhez, akik valóban korlátlan átírásra váltottak",
-      finalCta: "Próbálja ki az NeverCap ingyenes verziót"
+      finalCta: "Próbálja ki a NeverCapet ingyen"
     },
     BulkUpload: {
       heroBadgeIcon: "📁",
@@ -1355,7 +1361,7 @@ let message = {
       limitCard3Number: "1",
       limitCard3DescriptionLine1: "Fájl egyszerre",
       limitCard3DescriptionLine2: "(Szekvenciális feltöltés)",
-      limitCard4Service: "NeverCap",
+      limitCard4Service: "SohaCap",
       limitCard4Number: "∞",
       limitCard4DescriptionLine1: "Korlátlan feltöltés",
       limitCard4DescriptionLine2: "50 fájl kötegenként",
@@ -1451,7 +1457,7 @@ let message = {
       statCard3Percentage: "100 ms",
       statCard3DescriptionLine1: "Szó szintű",
       statCard3DescriptionLine2: "Időbélyeg pontossága",
-      languageSectionTitlePart1: "96%-os pontosság 12 fő nyelven",
+      languageSectionTitlePart1: "96%-os pontosság",
       languageSubtitle: "Professzionális szintű átírás globális tartalmakhoz",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "angol",
@@ -1544,13 +1550,13 @@ let message = {
       formattingTitle: "Előtte és utána",
       formattingBeforeLabel: "❌ Egyéb:",
       formattingBeforeText: "Szóval ma az új funkciókról fogunk beszélni, amelyeken dolgozunk. Azt hiszem, nagyon tetszeni fognak. Már régóta kérik őket a felhasználók, és végre elkészültünk velük.",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ Soha ne zárd ki:",
       formattingAfterText: "Ma tehát az új funkciókról fogunk beszélni, amelyeken dolgoztunk. Szerintem nagyon fognak tetszeni. Már régóta kérik őket a felhasználók, és végre elkészültünk velük.",
       comparisonSubtitle: "Pontosság",
       comparisonSectionTitle: "Összehasonlítás",
       comparisonDes: "Nézze meg, hogyan teljesítünk a versenytársakkal szemben",
       tableHeader1: "Jellemző",
-      tableHeader2: "NeverCap",
+      tableHeader2: "SohaCap",
       tableHeader3: "Otter.ai",
       tableHeader4: "Leírás",
       tableHeader5: "Fordulat",
@@ -1586,7 +1592,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "Tapasztalat 96%-os pontosság",
       ctaSubtitle: "Töltsd fel a legnehezebb hanganyagodat, és nézd meg a különbséget",
-      finalCta: "Teszteld a pontosságunkat most →"
+      finalCta: "Teszteld a pontosságunkat most →",
+        languageSectionTitlePart2: "12 fő nyelven"
     }
   },
   Pricing: {
@@ -1597,7 +1604,7 @@ let message = {
     },
     Cards: {
       "title": "Egyszerű, átlátható árképzés.",
-      "highlighted_text": "Nincsenek rejtett sapkák.",
+      "highlighted_text": "Nincsenek rejtett kupakok.",
       "description": "Válassza ki az igényeinek megfelelő csomagot. Bármikor válthat magasabb vagy alacsonyabb csomagra. Nincsenek szerződések, nincsenek meglepetések.",
       "plans": [
             {
@@ -1643,7 +1650,7 @@ let message = {
                 ]
               },
               "features": {
-                "title": "Minden ingyen, ráadásul",
+                "title": "Minden ingyenes, ráadásul",
                 "items": [
                   "Szó szintű időbélyegek",
                   "Speciális beszélőazonosítás",
@@ -1672,7 +1679,7 @@ let message = {
                 ]
               },
               "features": {
-                "title": "Minden ingyen, ráadásul",
+                "title": "Minden ingyenes, ráadásul",
                 "items": [
                   "Szó szintű időbélyegek",
                   "Speciális beszélőazonosítás",
@@ -1691,7 +1698,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "Összes funkció összehasonlítása",
+        "title": "Összehasonlítás",
         "highlighted_text": "Minden funkció",
         "subtitle": "Nézd meg pontosan, mit kapsz az egyes csomagokkal. Nincsenek rejtett korlátozások."
       },
@@ -1809,7 +1816,7 @@ let message = {
     CTA: {
       "title": "Készen állsz a korlátlan használatra?",
       "subtitle": "Csatlakozzon több mint 50 000, korlátlanul átíró szakemberhez",
-      "button": "Próbálja ki az NeverCap ingyenes verziót →",
+      "button": "Próbáld ki a NeverCap-et ingyen →",
       "disclaimer": "Nincs szükség hitelkártyára • Másodpercek alatt elkezdheti az átírást"
     }
   },

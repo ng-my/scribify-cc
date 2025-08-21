@@ -26,60 +26,55 @@
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              v-if="!mobileMenuOpen"
-              d="M3 12H21"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              v-if="!mobileMenuOpen"
-              d="M3 6H21"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              v-if="!mobileMenuOpen"
-              d="M3 18H21"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              v-if="mobileMenuOpen"
-              d="M18 6L6 18"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              v-if="mobileMenuOpen"
-              d="M6 6L18 18"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
+            <template v-if="mobileMenuOpen">
+              <path
+                d="M18 6L6 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M6 6L18 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </template>
+            <template v-else>
+              <path
+                d="M3 12H21"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M3 6H21"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M3 18H21"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </template>
           </svg>
         </button>
-        <div class="nav-links" :class="{ 'mobile-open': mobileMenuOpen }">
-          <template
-            v-for="(menu, index) in menuList"
-            v-if="mobileMenuOpen || isLargeScreen"
-          >
+        <div class="nav-links is-PC">
+          <template v-for="(menu, index) in menuList" v-if="isLargeScreen">
             <template v-if="menu?.children">
-              <div class="dropdown" :class="{ open: dropdownOpen[index] }">
+              <div class="dropdown">
                 <a
                   href="javascript:void(0)"
                   class="dropdown-toggle underline"
                   :class="index === acitveId ? 'menu-acitve' : ''"
-                  @click="toggleDropdown(index)"
                 >
                   {{ menu.name }}
                   <svg
                     width="100%"
-                    height="auto"
+                    height="24"
                     viewBox="0 0 36 21"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +94,69 @@
                     v-for="(child, ind) in menu.children"
                     :to="$localePath(child.link)"
                     class="underline"
-                    :class="ind === acitveIdLevel2 ? 'menu-acitve' : ''"
+                    :class="
+                      index === acitveId && ind === acitveIdLevel2
+                        ? 'menu-acitve'
+                        : ''
+                    "
+                  >
+                    {{ child.name }}
+                  </router-link>
+                </div>
+              </div>
+            </template>
+            <template v-else>
+              <router-link
+                :to="$localePath(menu.link)"
+                class="underline"
+                :class="index === acitveId ? 'menu-acitve' : ''"
+              >
+                {{ menu.name }}
+              </router-link>
+            </template>
+          </template>
+        </div>
+        <div
+          class="nav-links is-mobile"
+          :class="{ 'mobile-open': mobileMenuOpen }"
+        >
+          <template v-for="(menu, index) in menuList" v-if="mobileMenuOpen">
+            <template v-if="menu?.children">
+              <div class="dropdown" :class="{ open: dropdownOpen[index] }">
+                <a
+                  href="javascript:void(0)"
+                  class="dropdown-toggle underline"
+                  :class="index === acitveId ? 'menu-acitve' : ''"
+                  @click="toggleDropdown(index)"
+                >
+                  {{ menu.name }}
+                  <svg
+                    width="100%"
+                    height="24"
+                    viewBox="0 0 36 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="width: 12px; height: auto"
+                  >
+                    <path
+                      d="M3 3L18 18L33 3"
+                      stroke="currentColor"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
+                <div class="dropdown-content">
+                  <router-link
+                    v-for="(child, ind) in menu.children"
+                    :to="$localePath(child.link)"
+                    class="underline"
+                    :class="
+                      index === acitveId && ind === acitveIdLevel2
+                        ? 'menu-acitve'
+                        : ''
+                    "
                     @click="closeMobileMenu"
                   >
                     {{ child.name }}
@@ -153,7 +210,12 @@ const closeMobileMenu = () => {
 
 // 切换下拉菜单
 const toggleDropdown = (index: number) => {
-  dropdownOpen.value[index] = !dropdownOpen.value[index];
+  if (dropdownOpen.value[index]) {
+    dropdownOpen.value[index] = !dropdownOpen.value[index];
+  } else {
+    dropdownOpen.value = {};
+    dropdownOpen.value[index] = !dropdownOpen.value[index];
+  }
 };
 
 // 监听窗口大小变化，在大屏幕上强制关闭移动端菜单
@@ -337,8 +399,19 @@ nav {
   font-weight: 500;
 }
 
+.nav-links a:hover {
+  color: var(--primary);
+}
+
 // 响应式设计 - 移动端
 @media (max-width: 768px) {
+  .is-PC {
+    visibility: hidden !important;
+    display: none !important;
+  }
+  .is-mobile {
+    visibility: visible;
+  }
   .mobile-menu-btn {
     display: block;
   }
@@ -366,6 +439,10 @@ nav {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
+  .nav-links a:hover {
+    color: var(--gray);
+  }
+
   .dropdown {
     position: relative;
     &:not(.open) .dropdown-content {
@@ -382,7 +459,8 @@ nav {
   }
 
   .dropdown.open .dropdown-content {
-    max-height: 500px;
+    max-height: 800px;
+    display: block !important;
   }
 
   .btn-primary {
@@ -396,10 +474,13 @@ nav {
   .nav-links {
     display: flex !important;
   }
-}
-
-.nav-links a:hover {
-  color: var(--primary);
+  .is-PC {
+    visibility: visible;
+  }
+  .is-mobile {
+    visibility: hidden !important;
+    display: none !important;
+  }
 }
 
 /* Dropdown Styles */
@@ -468,6 +549,13 @@ nav {
     .index-right-wrap {
       position: absolute;
       right: 40px;
+    }
+    .dropdown-toggle svg {
+      // transition: none;
+    }
+
+    .dropdown:hover .dropdown-toggle svg {
+      transform: none;
     }
   }
 }

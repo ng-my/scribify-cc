@@ -1035,7 +1035,7 @@ let message = {
       badge: "不再出现“缩水通胀”——实际上无限",
       h1: "停止支付限制：",
       gradient: "真正无限的人工智能转录",
-      subtitle: "上传您的整个播客存档。转录所有访谈。一次处理 50 个文件。无月度上限，无上传限制。最终，转录内容可根据您的实际需求进行扩展。",
+      subtitle: "我们的 AI 可以转录视频并将音频转换为文本，一次可处理 50 个文件，且无月度上限。真正实现随您扩展的转录服务。",
       FreeTrial: "免费试用 - 无需信用卡",
       HowWorks: "了解其工作原理",
       Unlimited: "无限文件上传",
@@ -1054,33 +1054,34 @@ let message = {
       no_signup: "无需注册",
       experience_unltd: "体验真正无限的转录",
       upload_50: "一次最多可在此上传 50 个文件",
-      no_limits: "不再有隐藏的限制",
-      no_surprises: "不再有惊喜",
-      transparency: "当其他人悄悄地减少你的会议记录或隐藏小字时，我们相信彻底的透明度",
+      no_limits: "先进的",
+      no_surprises: "人工智能转录",
+      transparency: "不再有隐藏的限制，不再有意外——当其他人悄悄地减少你的时间或隐藏小字的限制时，我们相信彻底的透明度",
       feat_unltd: "实际上是无限的",
-      feat_unltd_desc: "没有隐藏在条款中的“合理使用政策”。没有伪装成“无限”的存储上限。上传您的全部档案，转录所有内容。我们说到做到。",
+      feat_unltd_desc: "没有隐藏在条款中的“合理使用政策”。没有伪装成“无限”的存储上限。上传您的全部档案，即可转录所有内容，满足您所有的音频转录需求。我们说到做到。",
       feat_bulk: "批量上传自由",
       feat_bulk_desc: "厌倦了“一次性导入 3 次”或“每月 10 个文件”？一次上传 50 个文件，无限次上传。非常适合处理积压工作。",
       feat_batch: "批处理",
-      feat_batch_desc: "一夜之间即可处理完整季播客。一次性上传 50 条访谈。即使您安睡，我们的 AI 也能为您效劳。醒来即可查看完整的转录稿。",
+      feat_batch_desc: "一夜之间即可处理完整季播客。一次性上传 50 条访谈。让我们的 AI 在您睡眠时为您服务。醒来即可查看完整的转录稿。",
       feat_accuracy: "准确率高达 96%",
-      feat_accuracy_desc: "业界领先的人工智能，具有智能标点符号、最多 20 位说话者的说话人分类功能，并能完美处理口音和技术术语。",
+      feat_accuracy_desc: "我们行业领先的人工智能 (AI) 可以使用智能标点符号、最多 20 位说话者的说话者日记功能来转录音频，并能完美处理口音和技术术语。",
       feat_langs: "100多种语言",
-      feat_langs_desc: "转录至 100 多种语言，翻译至 249 多种语言。不同语言无需额外付费。全球内容，一口价。",
+      feat_langs_desc: "将视频和音频转录为 100 多种语言，并翻译成 249 多种语言。不同语言无需额外付费。全球内容，一口价。",
       feat_pro: "专业功能",
-      feat_pro_desc: "单词级时间戳可实现精确的音频/视频定位，即使在快速对话切换期间也能准确识别说话人，并且段落、句子和标点符号的格式完美的文本可轻松阅读。"
+      feat_pro_desc: "单词级时间戳可实现精确的音频/视频定位，即使在快速对话切换期间也能准确识别说话人，并且段落、句子和标点符号的格式完美的文本可轻松阅读。",
+        features: "特征"
     },
     UseCases: {
-      built_for: "专为",
-      "heavy_users": "像你一样的重度用户",
-      "join_users": "加入从“缩水膨胀”服务转向的 YouTube 用户、内容创作者和播客行列",
+      built_for: "大部分",
+      "heavy_users": "音频和视频转录",
+      "join_users": "专为像您一样的重度用户打造 - 加入从“缩水型”服务转换过来的 YouTube 用户、内容创作者和播客",
       "podcasters": {
         "title": "播客",
         "des": "上传您所有的往期节目。为每一集创建节目笔记。无需再选择转录哪一集。"
       },
       "content_creators": {
         "title": "内容创作者",
-        "des": "将您的视频库转换为可搜索的文本。为所有内容生成字幕。无需计算时间，只需创建即可。"
+        "des": "使用我们的服务自动转录视频文件，将您的视频库转换为可搜索的文本。为所有内容生成字幕。无需计算时间，直接创建即可。"
       },
       "journalists": {
         "title": "记者",
@@ -1102,7 +1103,7 @@ let message = {
     Testimonials: {
       title: "深受喜爱",
       highlighted_users: "50,000+ 位用户",
-      subtitle: "了解为什么专业人士选择NeverCap而不是有限的替代方案",
+      subtitle: "了解专业人士为何选择 NeverCap 而非其他有限的替代方案",
       Mike: {
         "text": "我的天，这玩意儿居然真的管用！我做了三年播客，以前总是像个傻瓜一样手动抄录所有内容。一次上传了六集，结果我和我的搭档主持人的对话竟然完美地分开了。我以为咖啡店那集被毁了？结果现在的抄录清晰极了。我再也不用自己打字了。",
         "author": "迈克·罗德里格斯",
@@ -1128,6 +1129,11 @@ let message = {
       "title": "常见问题",
       "titleHighlight": "问题",
       "questions": [
+            {
+              "q": "人工智能转录",
+              "question": "什么是 AI 转录以及它是如何工作的？",
+              "answer": "AI 转录是利用先进的人工智能技术自动将音频转换为文本的过程。在 NeverCap，您只需上传文件，我们的 AI 即可将其转录，准确率高达 96%。我们的服务旨在将视频文件（例如 MP4、MOV）和音频文件（例如 MP3、WAV）转录为可读、可编辑的文本，并附带说话者标签和时间戳。"
+            },
             {
               "q": "无限策略",
               "question": "真的是无限量吗？有什么陷阱吗？",
@@ -1173,7 +1179,7 @@ let message = {
     CTASection: {
       "title": "准备好打破限制了吗？",
       "subtitle": "加入 50,000 多名已转向真正无限转录的专业人士",
-      "button": "免费试用NeverCap",
+      "button": "免费试用 NeverCap",
       "disclaimer": "免费计划无需信用卡 • 随时升级即可无限访问"
     }
   },
@@ -1283,7 +1289,7 @@ let message = {
       trustBadge4Label: "批量上传",
       ctaTitle: "停止购买虚假无限流量",
       ctaSubtitle: "加入数千名转向真正无限转录的用户",
-      finalCta: "免费试用NeverCap"
+      finalCta: "免费试用 NeverCap"
     },
     BulkUpload: {
       heroBadgeIcon: "📁",
@@ -1307,7 +1313,7 @@ let message = {
       limitCard2Service: "水獭专业版",
       limitCard2Number: "10",
       limitCard2DescriptionLine1: "每月文件数",
-      limitCard2DescriptionLine2: "（$100/年计划）",
+      limitCard2DescriptionLine2: "（每年 100 美元计划）",
       limitCard3Service: "描述",
       limitCard3Number: "1",
       limitCard3DescriptionLine1: "一次一个文件",
@@ -1371,12 +1377,12 @@ let message = {
       feature3Point3Text: "全天候随时上传",
       feature3VisualNumber: "24/7",
       feature3VisualTitle: "时刻准备着",
-      feature3VisualSubtext: "灵感迸发时随时上传",
+      feature3VisualSubtext: "灵感迸发时立即上传",
       useCasesTitlePart1: "非常适合",
       useCasesTitleHighlight: "重度上传者",
       useCasesSubtitle: "批量上传挽救局面的真实场景",
       useCase1Title: "播客档案",
-      useCase1Description: "一次性上传三年的剧集。为所有过往剧集创建文字记录。为每集生成 SEO 内容。",
+      useCase1Description: "一次性上传三年的剧集。为所有过往作品创建文字记录。为每集生成 SEO 内容。",
       useCase2Title: "课程创建",
       useCase2Description: "同时处理所有讲座视频。创建学生可访问的文字记录。构建可搜索的课程资料。",
       useCase3Title: "面试积压",
@@ -1408,7 +1414,7 @@ let message = {
       statCard3Percentage: "100毫秒",
       statCard3DescriptionLine1: "词级",
       statCard3DescriptionLine2: "时间戳精度",
-      languageSectionTitlePart1: "12 种主要语言准确率达 96%",
+      languageSectionTitlePart1: "准确率高达 96%",
       languageSubtitle: "全球内容的专业级转录",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "英语",
@@ -1474,7 +1480,7 @@ let message = {
       feature2Label: "智能人工智能",
       feature2TitlePart1: "手柄",
       feature2TitleHighlight: "快速对话",
-      feature2Description: "即使在语音重叠、打断以及快速来回对话中，我们的AI也能准确识别说话者。非常适合采访、播客和会议等发言者频繁插话的场合。",
+      feature2Description: "即使在重叠的讲话、打断以及快速的来回对话中，我们的AI也能准确识别说话者。非常适合采访、播客和会议等发言者频繁插话的场合。",
       feature2Point1Icon: "✓",
       feature2Point1Text: "识别最多 20 位发言者",
       feature2Point2Icon: "✓",
@@ -1501,7 +1507,7 @@ let message = {
       formattingTitle: "之前和之后",
       formattingBeforeLabel: "❌ 其他：",
       formattingBeforeText: "所以今天我们要讨论一下我们一直在开发的新功能，我想你会非常喜欢它们，这些功能是用户长期以来一直要求的，我们终于完成了。",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ NeverCap：",
       formattingAfterText: "所以今天，我们将讨论我们正在开发的新功能。我想你们一定会喜欢它们。这些功能是用户长期以来一直要求的，我们终于完成了。",
       comparisonSubtitle: "准确性",
       comparisonSectionTitle: "比较",
@@ -1543,7 +1549,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "体验 96% 准确率",
       ctaSubtitle: "上传最具挑战性的音频并查看差异",
-      finalCta: "立即测试我们的准确性 →"
+      finalCta: "立即测试我们的准确性 →",
+        languageSectionTitlePart2: "12种主要语言"
     }
   },
   Pricing: {
@@ -1644,11 +1651,11 @@ let message = {
               "badge": "最超值 - 节省 50%"
             }
           ],
-      "disclaimer": "“无限”意味着没有月度上限，也不会人为减慢速度。滥用自动化或重新分配服务的行为应遵循合理使用原则。"
+      "disclaimer": "“无限”意味着没有月度上限，也不会人为减慢速度。合理使用适用于滥用自动化或重新分配的情况。"
     },
     ComparisonTable: {
       "header": {
-        "title": "比较所有功能",
+        "title": "比较",
         "highlighted_text": "所有功能",
         "subtitle": "详细了解每个计划的福利。无任何隐藏限制。"
       },
@@ -1766,7 +1773,7 @@ let message = {
     CTA: {
       "title": "准备好无限畅享了吗？",
       "subtitle": "加入 50,000 多名专业人士，不受限制地进行转录",
-      "button": "免费试用NeverCap →",
+      "button": "免费试用 NeverCap →",
       "disclaimer": "无需信用卡 • 几秒钟内即可开始转录"
     }
   },

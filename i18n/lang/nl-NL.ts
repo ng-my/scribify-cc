@@ -1087,7 +1087,7 @@ let message = {
       badge: "Geen krimpflatie meer - Eigenlijk onbeperkt",
       h1: "Stop met betalen voor limieten:",
       gradient: "Echt onbeperkte AI-transcriptie",
-      subtitle: "Upload je volledige podcastarchief. Transcribeer al je interviews. Verwerk 50 bestanden tegelijk. Geen maandelijkse limieten, geen uploadlimieten. Eindelijk transcriptie die meegroeit met je werkelijke behoeften.",
+      subtitle: "Onze AI transcribeert video en zet audio om in tekst. 50 bestanden worden tegelijk verwerkt, zonder maandelijkse limieten. Transcriptie die echt met u meegroeit.",
       FreeTrial: "Probeer het gratis - Geen creditcard nodig",
       HowWorks: "Bekijk hoe het werkt",
       Unlimited: "Onbeperkt aantal bestanden uploaden",
@@ -1106,33 +1106,34 @@ let message = {
       no_signup: "Geen aanmelding vereist",
       experience_unltd: "Ervaar werkelijk onbeperkte transcriptie",
       upload_50: "Upload hier direct maximaal 50 bestanden tegelijk",
-      no_limits: "Geen verborgen grenzen meer",
-      no_surprises: "Geen verrassingen meer",
-      transparency: "Terwijl anderen stilletjes uw minuten verminderen of limieten in kleine lettertjes verbergen, geloven wij in radicale transparantie",
+      no_limits: "Geavanceerd",
+      no_surprises: "AI-transcriptie",
+      transparency: "Geen verborgen limieten meer, geen verrassingen meer - Terwijl anderen stilletjes uw minuten verminderen of limieten in kleine lettertjes verbergen, geloven wij in radicale transparantie",
       feat_unltd: "Eigenlijk onbeperkt",
-      feat_unltd_desc: 'Geen "fair use policy" verstopt in termen. Geen opslaglimieten vermomd als "onbeperkt". Upload je hele archief, transcribeer alles. We menen het.',
+      feat_unltd_desc: 'Geen "fair use policy" verstopt in termen. Geen opslaglimieten vermomd als "onbeperkt". Upload je volledige archief, transcribeer alles voor al je audiotranscribeerbehoeften. We menen het.',
       feat_bulk: "Vrijheid van bulkuploads",
       feat_bulk_desc: 'Bent u het zat om "3 keer per maand" of "10 bestanden per maand" te importeren? Upload 50 bestanden tegelijk, zo vaak als u wilt. Perfect voor het verwerken van achterstanden.',
       feat_batch: "Batchverwerking",
       feat_batch_desc: "Verwerk je hele podcastseizoen 's nachts. Upload 50 interviews tegelijk. Laat onze AI het werk doen terwijl je slaapt. Word wakker met de transcripties van je interviews.",
       feat_accuracy: "96% nauwkeurigheid",
-      feat_accuracy_desc: "Toonaangevende AI met slimme interpunctie, agenda-indeling voor maximaal 20 sprekers en feilloze verwerking van accenten en technische termen.",
+      feat_accuracy_desc: "Onze toonaangevende AI transcribeert audio met slimme interpunctie, sprekeragenda voor maximaal 20 sprekers en verwerkt accenten en technische termen feilloos.",
       feat_langs: "100+ talen",
-      feat_langs_desc: "Transcribeer in meer dan 100 talen, vertaal naar meer dan 249 talen. Geen extra kosten voor verschillende talen. Wereldwijde content, één vaste prijs.",
+      feat_langs_desc: "Transcribeer video en audio in meer dan 100 talen, vertaal naar meer dan 249 talen. Geen extra kosten voor verschillende talen. Wereldwijde content, één vaste prijs.",
       feat_pro: "Professionele functies",
-      feat_pro_desc: "Tijdstempels op woordniveau zorgen voor nauwkeurige audio-/videopositionering, nauwkeurige sprekeridentificatie, zelfs bij snelle conversatiewisselingen, en perfect opgemaakte tekst met alinea's, zinnen en leestekens voor eenvoudige leesbaarheid."
+      feat_pro_desc: "Tijdstempels op woordniveau zorgen voor nauwkeurige audio-/videopositionering, nauwkeurige sprekeridentificatie, zelfs bij snelle conversatiewisselingen, en perfect opgemaakte tekst met alinea's, zinnen en leestekens voor eenvoudige leesbaarheid.",
+        features: "Functies"
     },
     UseCases: {
-      built_for: "Gebouwd voor",
-      "heavy_users": "Zware gebruikers zoals jij",
-      "join_users": "Sluit je aan bij YouTubers, contentmakers en podcasters die zijn overgestapt van 'shrinkflation'-diensten",
+      built_for: "Grootverpakking",
+      "heavy_users": "Audio- en videotranscriptie",
+      "join_users": "Gebouwd voor intensieve gebruikers zoals jij - Sluit je aan bij YouTubers, contentmakers en podcasters die zijn overgestapt van 'shrinkflatie'-diensten",
       "podcasters": {
         "title": "Podcasters",
         "des": "Upload je volledige backcatalogus. Maak shownotities voor elke aflevering. Nooit meer kiezen welke afleveringen je wilt transcriberen."
       },
       "content_creators": {
         "title": "Contentmakers",
-        "des": "Zet je videobibliotheek om in doorzoekbare tekst. Genereer ondertiteling voor alles. Geen minuten tellen, gewoon creëren."
+        "des": "Zet je videobibliotheek om in doorzoekbare tekst door onze service te gebruiken om videobestanden automatisch te transcriberen. Genereer ondertiteling voor alles. Geen minuten tellen, gewoon creëren."
       },
       "journalists": {
         "title": "Journalisten",
@@ -1154,7 +1155,7 @@ let message = {
     Testimonials: {
       title: "Geliefd bij",
       highlighted_users: "50.000+ gebruikers",
-      subtitle: "Ontdek waarom professionals voor NeverCap kiezen in plaats van beperkte alternatieven",
+      subtitle: "Ontdek waarom professionals NeverCap verkiezen boven beperkte alternatieven",
       Mike: {
         "text": "Jeetje, dit ding werkt echt! Ik maak al 3 jaar een podcast en was als een idioot alles handmatig aan het transcriberen. Ik heb 6 afleveringen tegelijk geüpload en het hield mij en mijn co-host perfect gescheiden. De aflevering over het koffiehuis waarvan ik dacht dat die verpest was? Kristalheldere transcriptie. Ik ga dit soort dingen nooit meer zelf uittypen.",
         "author": "Mike Rodriguez",
@@ -1180,6 +1181,11 @@ let message = {
       "title": "Veelgestelde vragen",
       "titleHighlight": "Vragen",
       "questions": [
+            {
+              "q": "AI-transcriptie",
+              "question": "Wat is AI-transcriptie en hoe werkt het?",
+              "answer": "AI-transcriptie is het proces waarbij audio automatisch wordt omgezet in tekst met behulp van geavanceerde kunstmatige intelligentie. Bij NeverCap uploadt u eenvoudig uw bestanden en onze AI transcribeert de content met een nauwkeurigheid tot 96%. Onze service is ontworpen om videobestanden (zoals MP4 en MOV) en audiobestanden (zoals MP3 en WAV) te transcriberen naar leesbare, bewerkbare tekst, compleet met sprekerslabels en tijdstempels."
+            },
             {
               "q": "onbeperkt_beleid",
               "question": "Is het echt onbeperkt? Wat is het addertje onder het gras?",
@@ -1305,7 +1311,7 @@ let message = {
       feature2TableRow2Value: "10 bestanden/maand",
       feature2TableRow3Label: "Drieling",
       feature2TableRow3Value: "50 uur/maand limiet",
-      feature2TableRow4Label: "NeverCap",
+      feature2TableRow4Label: "NooitKap",
       feature2TableRow4Value: "Echt onbeperkt ✓",
       feature3Label: "Sociaal bewijs",
       feature3TitlePart1: "Gebruikers zijn",
@@ -1326,7 +1332,7 @@ let message = {
       feature3Stat4Number: "∞",
       feature3Stat4Label: "Geen verborgen kosten",
       trustBadge1Number: "∞",
-      trustBadge1Label: "Minuten/maand",
+      trustBadge1Label: "Minuten/Maand",
       trustBadge2Number: "100+",
       trustBadge2Label: "Talen",
       trustBadge3Number: "96%",
@@ -1364,7 +1370,7 @@ let message = {
       limitCard3Number: "1",
       limitCard3DescriptionLine1: "Bestand per keer",
       limitCard3DescriptionLine2: "(Sequentiële upload)",
-      limitCard4Service: "NeverCap",
+      limitCard4Service: "NooitKap",
       limitCard4Number: "∞",
       limitCard4DescriptionLine1: "Onbeperkt uploaden",
       limitCard4DescriptionLine2: "50 bestanden per batch",
@@ -1460,7 +1466,7 @@ let message = {
       statCard3Percentage: "100 ms",
       statCard3DescriptionLine1: "Woordniveau",
       statCard3DescriptionLine2: "Tijdstempelprecisie",
-      languageSectionTitlePart1: "96% nauwkeurigheid in 12 hoofdtalen",
+      languageSectionTitlePart1: "96% nauwkeurigheid",
       languageSubtitle: "Professionele transcriptie voor wereldwijde content",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "Engels",
@@ -1553,13 +1559,13 @@ let message = {
       formattingTitle: "Voor en na",
       formattingBeforeLabel: "❌ Overige:",
       formattingBeforeText: "Vandaag gaan we het dus hebben over de nieuwe functies waar we aan hebben gewerkt. Ik denk dat je ze erg leuk zult vinden. Ze zijn al lange tijd door gebruikers aangevraagd en we hebben ze eindelijk af.",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ NooitCap:",
       formattingAfterText: "Vandaag gaan we het hebben over de nieuwe functies waar we aan hebben gewerkt. Ik denk dat je ze erg leuk zult vinden. Gebruikers hebben er al lang om gevraagd en we hebben ze eindelijk afgerond.",
       comparisonSubtitle: "Nauwkeurigheid",
       comparisonSectionTitle: "Vergelijking",
       comparisonDes: "Bekijk hoe wij ons verhouden tot de concurrentie",
       tableHeader1: "Functie",
-      tableHeader2: "NeverCap",
+      tableHeader2: "NooitKap",
       tableHeader3: "Otter.ai",
       tableHeader4: "Beschrijving",
       tableHeader5: "Eerwaarde",
@@ -1595,7 +1601,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "Ervaar 96% nauwkeurigheid",
       ctaSubtitle: "Upload je meest uitdagende audio en zie het verschil",
-      finalCta: "Test nu onze nauwkeurigheid →"
+      finalCta: "Test nu onze nauwkeurigheid →",
+        languageSectionTitlePart2: "in 12 hoofdtalen"
     }
   },
   Pricing: {
@@ -1656,7 +1663,7 @@ let message = {
                 "items": [
                   "Tijdstempels op woordniveau",
                   "Geavanceerde sprekeridentificatie",
-                  "Geformatteerde alinea's en leestekens",
+                  "Geformatteerde alinea's en interpunctie",
                   "Prioritaire ondersteuning"
                 ]
               },
@@ -1685,7 +1692,7 @@ let message = {
                 "items": [
                   "Tijdstempels op woordniveau",
                   "Geavanceerde sprekeridentificatie",
-                  "Geformatteerde alinea's en leestekens",
+                  "Geformatteerde alinea's en interpunctie",
                   "Prioritaire ondersteuning"
                 ]
               },
@@ -1700,7 +1707,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "Vergelijk alle functies",
+        "title": "Vergelijken",
         "highlighted_text": "Alle functies",
         "subtitle": "Bekijk precies wat je met elk abonnement krijgt. Geen verborgen beperkingen."
       },

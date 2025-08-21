@@ -32,11 +32,11 @@
               <a
                 href="javascript:void(0)"
                 @click="signup"
-                class="btn-primary me-[10px]"
+                class="btn-primary me-[10px] !px-9"
               >
                 {{ $i("Journalists.hero.ctaPrimary") }}
               </a>
-              <a href="#solution" class="btn-secondary">
+              <a href="#solution" class="btn-secondary !px-9">
                 {{ $i("Journalists.hero.ctaSecondary") }}
               </a>
             </div>

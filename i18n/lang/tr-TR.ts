@@ -1076,7 +1076,7 @@ let message = {
       badge: 'Artık "Küçülme Enflasyonu" Yok - Aslında Sınırsız',
       h1: "Limitler İçin Ödeme Yapmayı Bırakın:",
       gradient: "Gerçekten Sınırsız Yapay Zeka Transkripsiyonu",
-      subtitle: "Tüm podcast arşivinizi yükleyin. Tüm röportajlarınızı metne dönüştürün. Tek seferde 50 dosyayı işleyin. Aylık sınır yok, yükleme limiti yok. Sonunda, gerçek ihtiyaçlarınıza göre ölçeklenen bir metne dönüştürme.",
+      subtitle: "Yapay zekamız videoları yazıya döker ve sesi metne dönüştürür; aylık bir sınırlama olmaksızın aynı anda 50 dosyayı işler. Sizinle birlikte ölçeklenen yazıya dökme.",
       FreeTrial: "Ücretsiz Deneyin - Kredi Kartı Gerekmez",
       HowWorks: "Nasıl Çalıştığını Görün",
       Unlimited: "Sınırsız Dosya Yükleme",
@@ -1095,33 +1095,34 @@ let message = {
       no_signup: "Kayıt Gerekmez",
       experience_unltd: "Gerçekten sınırsız transkripsiyonu deneyimleyin",
       upload_50: "Aynı anda 50 dosyaya kadar yüklemeyi buradan yapın",
-      no_limits: "Artık Gizli Sınır Yok",
-      no_surprises: "Artık Sürpriz Yok",
-      transparency: "Başkaları sessizce dakikalarınızı azaltırken veya küçük puntolarla üst sınırları gizlerken, biz radikal şeffaflığa inanıyoruz",
+      no_limits: "Gelişmiş",
+      no_surprises: "Yapay Zeka Transkripsiyonu",
+      transparency: "Artık Gizli Sınırlar Yok, Artık Sürprizler Yok - Başkaları dakikalarınızı sessizce azaltırken veya üst sınırları küçük puntolarla gizlerken, biz radikal şeffaflığa inanıyoruz",
       feat_unltd: "Aslında Sınırsız",
-      feat_unltd_desc: '"Adil kullanım politikası" hükümleri saklı değil. "Sınırsız" kisvesi altında depolama alanı sınırlaması yok. Tüm arşivinizi yükleyin, her şeyi yazıya dökün. Ciddiyiz.',
+      feat_unltd_desc: '"Adil kullanım politikası" diye bir şey yok. "Sınırsız" kisvesi altında gizlenmiş depolama alanı sınırlamaları yok. Tüm arşivinizi yükleyin, tüm ses yazımı ihtiyaçlarınız için her şeyi yazıya dökün. Ciddiyiz.',
       feat_bulk: "Toplu Yükleme Özgürlüğü",
       feat_bulk_desc: '"3 ömür boyu içe aktarma" veya "ayda 10 dosya"dan bıktınız mı? Tek seferde 50 dosya yükleyin, istediğiniz kadar. Birikmiş işleri işlemek için mükemmel.',
       feat_batch: "Toplu İşleme",
       feat_batch_desc: "Podcast sezonunuzun tamamını bir gecede işleyin. Tek seferde 50 röportaj yükleyin. Yapay zekamız siz uyurken çalışsın. Tamamlanmış transkriptlerle uyanın.",
       feat_accuracy: "%96 Doğruluk",
-      feat_accuracy_desc: "Akıllı noktalama, 20 konuşmacıya kadar konuşmacı günlüğü tutma ve aksanları, teknik terimleri kusursuz bir şekilde işleme gibi sektör lideri yapay zeka.",
+      feat_accuracy_desc: "Sektör lideri yapay zekamız, akıllı noktalama işaretleri, 20 konuşmacıya kadar konuşmacı günlüğü oluşturma ve aksanları, teknik terimleri kusursuz bir şekilde işleme özellikleriyle sesi yazıya döker.",
       feat_langs: "100'den fazla dil",
-      feat_langs_desc: "100'den fazla dilde yazıya dökün, 249'dan fazla dile çevirin. Farklı diller için ek ücret yok. Küresel içerik, tek bir fiyat.",
+      feat_langs_desc: "100'den fazla dilde video ve ses kaydınızı yazıya dökün, 249'dan fazla dile çevirin. Farklı diller için ek ücret yok. Küresel içerik, tek bir fiyat.",
       feat_pro: "Profesyonel Özellikler",
-      feat_pro_desc: "Hassas ses/görüntü konumlandırması için kelime düzeyinde zaman damgaları, hızlı konuşma geçişlerinde bile doğru konuşmacı tanımlaması ve kolay okuma için paragraflar, cümleler ve noktalama işaretleriyle mükemmel biçimde biçimlendirilmiş metin."
+      feat_pro_desc: "Hassas ses/görüntü konumlandırması için kelime düzeyinde zaman damgaları, hızlı konuşma geçişlerinde bile doğru konuşmacı tanımlaması ve kolay okuma için paragraflar, cümleler ve noktalama işaretleriyle mükemmel biçimde biçimlendirilmiş metin.",
+        features: "Özellikler"
     },
     UseCases: {
-      built_for: "İçin inşa edildi",
-      "heavy_users": "Sizin Gibi Ağır Kullanıcılar",
-      "join_users": `\"shrinkflation\" hizmetlerinden geçiş yapan YouTuber'lara, içerik oluşturucularına ve podcast yayıncılarına katılın`,
+      built_for: "Toplu",
+      "heavy_users": "Ses ve Video Transkripsiyonu",
+      "join_users": `Sizin Gibi Yoğun Kullanıcılar İçin Tasarlandı - "shrinkflasyon" hizmetlerinden geçiş yapan YouTuber'lara, içerik oluşturucularına ve podcast yayıncılarına katılın`,
       "podcasters": {
         "title": "Podcast yayıncıları",
         "des": "Tüm eski programlarınızı yükleyin. Her bölüm için program notları oluşturun. Artık hangi bölümlerin transkripsiyonunu yapacağınızı seçmenize gerek yok."
       },
       "content_creators": {
         "title": "İçerik Oluşturucuları",
-        "des": "Video arşivinizi aranabilir metne dönüştürün. Her şey için altyazı oluşturun. Dakikaları saymayın, sadece yaratın."
+        "des": "Video dosyalarınızı otomatik olarak yazıya dökmek için hizmetimizi kullanarak video arşivinizi aranabilir metne dönüştürün. Her şey için altyazı oluşturun. Dakikaları saymayın, sadece yaratın."
       },
       "journalists": {
         "title": "Gazeteciler",
@@ -1143,7 +1144,7 @@ let message = {
     Testimonials: {
       title: "Sevilen",
       highlighted_users: "50.000+ Kullanıcı",
-      subtitle: "Profesyonellerin neden sınırlı alternatifler yerine NeverCap'yi tercih ettiğini görün",
+      subtitle: "Profesyonellerin neden sınırlı alternatifler yerine NeverCap'i tercih ettiğini öğrenin",
       Mike: {
         "text": "Vay canına, bu şey gerçekten işe yarıyor! 3 yıldır podcast yapıyorum ve her şeyi aptal gibi elle yazıya döküyordum. Aynı anda 6 bölüm yükledim ve sunucu arkadaşımla mükemmel bir şekilde ayrıldım. Mahvolduğunu düşündüğüm kahve dükkanı bölümü mü? Kristal berraklığında bir yazı. Bir daha asla bunları kendim yazmaya gitmeyeceğim.",
         "author": "Mike Rodriguez",
@@ -1169,6 +1170,11 @@ let message = {
       "title": "Sıkça Sorulan Sorular",
       "titleHighlight": "Sorular",
       "questions": [
+            {
+              "q": "AI transkripsiyonu",
+              "question": "Yapay zeka transkripsiyonu nedir ve nasıl çalışır?",
+              "answer": "Yapay zeka transkripsiyonu, gelişmiş yapay zeka kullanılarak sesin otomatik olarak metne dönüştürülmesi işlemidir. NeverCap'te, dosyalarınızı yüklemeniz yeterlidir; yapay zekamız içeriği %96'ya varan doğrulukla transkripte eder. Hizmetimiz, video dosyalarını (MP4, MOV gibi) ve ses dosyalarını (MP3, WAV gibi) konuşmacı etiketleri ve zaman damgalarıyla birlikte okunabilir ve düzenlenebilir metne dönüştürmek üzere tasarlanmıştır."
+            },
             {
               "q": "sınırsız_politika",
               "question": "Gerçekten sınırsız mı? İşin püf noktası ne?",
@@ -1214,7 +1220,7 @@ let message = {
     CTASection: {
       "title": "Sınırlardan Kurtulmaya Hazır Mısınız?",
       "subtitle": "Gerçekten sınırsız transkripsiyona geçiş yapan 50.000'den fazla profesyonele katılın",
-      "button": "NeverCap Ücretsiz deneyin",
+      "button": "NeverCap'i Ücretsiz Deneyin",
       "disclaimer": "Ücretsiz Plan için kredi kartı gerekmez • Sınırsız erişim için istediğiniz zaman yükseltin"
     }
   },
@@ -1224,7 +1230,7 @@ let message = {
       heroBadgeText: 'Artık "Küçülme Enflasyonu" Yok',
       heroTitleLine1: "Gerçekten Sınırsız",
       heroTitleLine2: "Yapay Zeka Transkripsiyonu",
-      heroSubtitle: "Trint size aylık 50 saat, Otter ise 10 dosya sınırı koyarken, biz aslında söz verdiğimiz şeyi sunuyoruz: gizli sınırlamalar olmadan sınırsız transkripsiyon.",
+      heroSubtitle: "Trint size ayda 50 saat, Otter ise ayda 10 dosya sınırı koyarken, biz aslında söz verdiğimiz şeyi sunuyoruz: gizli sınırlamalar olmadan sınırsız transkripsiyon.",
       primaryCta: "Ücretsiz Deneyin - Kredi Kartı Gerekmez",
       secondaryCta: "Gerçeği Gör",
       comparisonBadLabel: "Başkaları Ne Yapar",
@@ -1294,7 +1300,7 @@ let message = {
       feature2TableRow2Value: "10 dosya/ay",
       feature2TableRow3Label: "Trint",
       feature2TableRow3Value: "Aylık 50 saat sınırı",
-      feature2TableRow4Label: "NeverCap",
+      feature2TableRow4Label: "AslaKapak",
       feature2TableRow4Value: "Gerçekten Sınırsız ✓",
       feature3Label: "Sosyal Kanıt",
       feature3TitlePart1: "Kullanıcılar",
@@ -1324,7 +1330,7 @@ let message = {
       trustBadge4Label: "Toplu Yükleme",
       ctaTitle: "Sahte Sınırsız İçin Ödeme Yapmayı Bırakın",
       ctaSubtitle: "Gerçekten sınırsız transkripsiyona geçen binlerce kişiye katılın",
-      finalCta: "NeverCap Ücretsiz deneyin"
+      finalCta: "NeverCap'i Ücretsiz Deneyin"
     },
     BulkUpload: {
       heroBadgeIcon: "📁",
@@ -1353,7 +1359,7 @@ let message = {
       limitCard3Number: "1",
       limitCard3DescriptionLine1: "Bir seferde dosya",
       limitCard3DescriptionLine2: "(Sıralı yükleme)",
-      limitCard4Service: "NeverCap",
+      limitCard4Service: "AslaKapak",
       limitCard4Number: "∞",
       limitCard4DescriptionLine1: "Sınırsız yükleme",
       limitCard4DescriptionLine2: "Parti başına 50 dosya",
@@ -1417,7 +1423,7 @@ let message = {
       useCasesTitleHighlight: "Ağır Yükleyiciler",
       useCasesSubtitle: "Toplu yüklemenin günü kurtardığı gerçek senaryolar",
       useCase1Title: "Podcast Arşivleri",
-      useCase1Description: "3 yıllık bölümleri tek seferde yükleyin. Tüm eski yayınlarınızın dökümlerini oluşturun. Her bölüm için SEO içeriği oluşturun.",
+      useCase1Description: "3 yıllık bölümleri tek seferde yükleyin. Tüm geçmiş bölümleriniz için metinler oluşturun. Her bölüm için SEO içeriği oluşturun.",
       useCase2Title: "Kurs Oluşturma",
       useCase2Description: "Tüm ders videolarınızı aynı anda işleyin. Öğrenciler için erişilebilir transkriptler oluşturun. Aranabilir ders materyalleri oluşturun.",
       useCase3Title: "Mülakat Beklentisi",
@@ -1425,7 +1431,7 @@ let message = {
       useCase4Title: "YouTube Kütüphanesi",
       useCase4Description: "Kanalınızın tamamı için altyazılar oluşturun. Video içeriklerinden blog yazıları oluşturun. Tüm videolarda SEO'yu iyileştirin.",
       useCase5Title: "Toplantı Arşivleri",
-      useCase5Description: "Aylarca kaydedilmiş toplantıları yükleyin. Aranabilir toplantı notları oluşturun. Önemli kararlarınızı bir daha asla kaybetmeyin.",
+      useCase5Description: "Aylarca kaydedilmiş toplantılarınızı yükleyin. Aranabilir toplantı notları oluşturun. Önemli kararlarınızı bir daha asla kaybetmeyin.",
       useCase6Title: "Araştırma Verileri",
       useCase6Description: "Odak gruplarını toplu olarak işleyin. Tüm katılımcı görüşmelerini yazıya dökün. Nitel verileri verimli bir şekilde analiz edin.",
       ctaTitle: "Daha Fazla Yükleme İçin Yalvarmayı Bırakın",
@@ -1449,7 +1455,7 @@ let message = {
       statCard3Percentage: "100 ms",
       statCard3DescriptionLine1: "Kelime Düzeyi",
       statCard3DescriptionLine2: "Zaman Damgası Hassasiyeti",
-      languageSectionTitlePart1: "12 Ana Dilde %96 Doğruluk",
+      languageSectionTitlePart1: "%96 Doğruluk",
       languageSubtitle: "Küresel içerik için profesyonel düzeyde transkripsiyon",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "İngilizce",
@@ -1505,7 +1511,7 @@ let message = {
       transcriptLine1Text: "Bugünkü podcast bölümümüze hoş geldiniz.",
       transcriptLine2Timestamp: "00:15.230",
       transcriptLine2Speaker: "Konuşmacı 2",
-      transcriptLine2Text: "Beni programa davet ettiğiniz için teşekkürler!",
+      transcriptLine2Text: "Beni programa davet ettiğiniz için teşekkür ederim!",
       transcriptLine3Timestamp: "00:17.890",
       transcriptLine3Speaker: "Konuşmacı 1",
       transcriptLine3Text: "Şimdi asıl konumuza geçelim...",
@@ -1542,13 +1548,13 @@ let message = {
       formattingTitle: "Önce ve Sonra",
       formattingBeforeLabel: "❌ Diğerleri:",
       formattingBeforeText: "Bugün üzerinde çalıştığımız yeni özellikler hakkında konuşacağız. Bunları gerçekten beğeneceğinizi düşünüyorum. Bunlar uzun zamandır kullanıcılar tarafından talep ediliyordu ve sonunda bunları tamamladık.",
-      formattingAfterLabel: "✓ NeverCap:",
+      formattingAfterLabel: "✓ AslaKapatmayın:",
       formattingAfterText: "Bugün, üzerinde çalıştığımız yeni özelliklerden bahsedeceğiz. Bunları gerçekten beğeneceğinizi düşünüyorum. Uzun zamandır kullanıcılar tarafından talep ediliyordu ve sonunda tamamladık.",
       comparisonSubtitle: "Kesinlik",
       comparisonSectionTitle: "Karşılaştırmak",
       comparisonDes: "Rekabette nasıl bir performans sergilediğimizi görün",
       tableHeader1: "Özellik",
-      tableHeader2: "NeverCap",
+      tableHeader2: "AslaKapak",
       tableHeader3: "Otter.ai",
       tableHeader4: "Açıklama",
       tableHeader5: "Rahip",
@@ -1584,7 +1590,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "%96 Doğruluk Deneyimi",
       ctaSubtitle: "En zorlu sesinizi yükleyin ve farkı görün",
-      finalCta: "Doğruluğumuzu Şimdi Test Edin →"
+      finalCta: "Doğruluğumuzu Şimdi Test Edin →",
+        languageSectionTitlePart2: "12 Ana Dilde"
     }
   },
   Pricing: {
@@ -1689,7 +1696,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "Tüm Özellikleri Karşılaştırın",
+        "title": "Karşılaştırmak",
         "highlighted_text": "Tüm Özellikler",
         "subtitle": "Her planla tam olarak ne elde edeceğinizi görün. Gizli sınırlamalar yok."
       },
@@ -1807,7 +1814,7 @@ let message = {
     CTA: {
       "title": "Sınırsızlığa Hazır Mısınız?",
       "subtitle": "Sınırsız transkripsiyon yapan 50.000'den fazla profesyonele katılın",
-      "button": "NeverCap Ücretsiz Deneyin →",
+      "button": "NeverCap'i Ücretsiz Deneyin →",
       "disclaimer": "Kredi kartı gerekmez • Saniyeler içinde yazıya dökmeye başlayın"
     }
   },

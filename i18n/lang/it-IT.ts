@@ -1081,7 +1081,7 @@ let message = {
       badge: 'Basta con la "shrinkflation" - In realtà illimitata',
       h1: "Smetti di pagare per i limiti:",
       gradient: "Trascrizione AI veramente illimitata",
-      subtitle: "Carica l'intero archivio dei tuoi podcast. Trascrivi tutte le tue interviste. Elabora 50 file contemporaneamente. Nessun limite mensile, nessun limite di caricamento. Finalmente una trascrizione che si adatta alle tue reali esigenze.",
+      subtitle: "La nostra intelligenza artificiale trascrive i video e converte l'audio in testo, elaborando 50 file contemporaneamente senza limiti mensili. Una trascrizione che si adatta davvero alle tue esigenze.",
       FreeTrial: "Provalo gratis - Nessuna carta di credito",
       HowWorks: "Guarda come funziona",
       Unlimited: "Caricamento file illimitato",
@@ -1100,33 +1100,34 @@ let message = {
       no_signup: "Nessuna registrazione richiesta",
       experience_unltd: "Prova una trascrizione davvero illimitata",
       upload_50: "Carica fino a 50 file contemporaneamente, proprio qui",
-      no_limits: "Niente più limiti nascosti",
-      no_surprises: "Niente più sorprese",
-      transparency: "Mentre altri riducono silenziosamente i tuoi minuti o nascondono i limiti in caratteri piccoli, noi crediamo nella trasparenza radicale",
+      no_limits: "Avanzato",
+      no_surprises: "Trascrizione AI",
+      transparency: "Niente più limiti nascosti, niente più sorprese: mentre altri riducono silenziosamente i tuoi minuti o nascondono i limiti in caratteri piccoli, noi crediamo nella trasparenza radicale",
       feat_unltd: "In realtà illimitato",
-      feat_unltd_desc: `Nessuna "politica di fair use" nascosta nei termini. Nessun limite di spazio di archiviazione mascherato da "illimitato". Carica l'intero archivio, trascrivi tutto. Lo diciamo sul serio.`,
+      feat_unltd_desc: `Nessuna "politica di fair use" nascosta nei termini. Nessun limite di archiviazione mascherato da "illimitato". Carica l'intero archivio, trascrivi tutto per tutte le tue esigenze di trascrizione audio. Diciamo sul serio.`,
       feat_bulk: "Libertà di caricamento in blocco",
       feat_bulk_desc: 'Stanco di "3 importazioni a vita" o "10 file al mese"? Carica 50 file contemporaneamente, tutte le volte che vuoi. Perfetto per gestire gli arretrati.',
       feat_batch: "Elaborazione batch",
       feat_batch_desc: "Elabora l'intera stagione del tuo podcast durante la notte. Carica 50 interviste contemporaneamente. Lascia che la nostra intelligenza artificiale lavori mentre dormi. Svegliati con le trascrizioni complete.",
       feat_accuracy: "Precisione del 96%",
-      feat_accuracy_desc: "Intelligenza artificiale leader del settore con punteggiatura intelligente, diarizzazione fino a 20 interlocutori e gestione impeccabile di accenti e termini tecnici.",
+      feat_accuracy_desc: "La nostra intelligenza artificiale leader del settore trascrive l'audio con punteggiatura intelligente, diarizzazione per un massimo di 20 parlanti e gestisce accenti e termini tecnici in modo impeccabile.",
       feat_langs: "Oltre 100 lingue",
-      feat_langs_desc: "Trascrivi in oltre 100 lingue, traduci in oltre 249. Nessun costo aggiuntivo per le diverse lingue. Contenuti globali, un unico prezzo semplice.",
+      feat_langs_desc: "Trascrivi video e audio in oltre 100 lingue e traduci in oltre 249. Nessun costo aggiuntivo per le diverse lingue. Contenuti globali, un unico prezzo semplice.",
       feat_pro: "Caratteristiche professionali",
-      feat_pro_desc: "Timestamp a livello di parola per un posizionamento audio/video preciso, un'identificazione accurata dell'interlocutore anche durante rapidi cambi di conversazione e un testo perfettamente formattato con paragrafi, frasi e punteggiatura per una facile lettura."
+      feat_pro_desc: "Timestamp a livello di parola per un posizionamento audio/video preciso, un'identificazione accurata dell'interlocutore anche durante rapidi cambi di conversazione e un testo perfettamente formattato con paragrafi, frasi e punteggiatura per una facile lettura.",
+        features: "Caratteristiche"
     },
     UseCases: {
-      built_for: "Costruito per",
-      "heavy_users": "Utenti assidui come te",
-      "join_users": 'Unisciti agli YouTuber, ai creatori di contenuti e ai podcaster che sono passati dai servizi di "shrinkflation"',
+      built_for: "Massa",
+      "heavy_users": "Trascrizione audio e video",
+      "join_users": 'Progettato per utenti assidui come te: unisciti agli YouTuber, ai creatori di contenuti e ai podcaster che sono passati dai servizi di "shrinkflation"',
       "podcasters": {
         "title": "Podcaster",
         "des": "Carica l'intero catalogo. Crea note di presentazione per ogni episodio. Non dovrai più scegliere quali episodi trascrivere."
       },
       "content_creators": {
         "title": "Creatori di contenuti",
-        "des": "Trasforma la tua videoteca in testo ricercabile. Genera sottotitoli per ogni contenuto. Non conteggiare i minuti, crea e basta."
+        "des": "Trasforma la tua videoteca in testo ricercabile utilizzando il nostro servizio di trascrizione automatica dei file video. Genera sottotitoli per ogni contenuto. Non conteggiare i minuti, solo creare."
       },
       "journalists": {
         "title": "giornalisti",
@@ -1160,7 +1161,7 @@ let message = {
         "role": "Insegnante online"
       },
       Jessica: {
-        "text": "Ho usato questo strumento per i miei colloqui ed è incredibilmente preciso. Ho fatto un colloquio di due ore in un inglese e uno spagnolo stentati e ha azzeccato tutto, persino i timestamp. Pagavo 200 dollari al mese al mio stagista solo per trascrivere il materiale. Questo mi fa letteralmente risparmiare ogni mese.",
+        "text": "Ho usato questo programma per i miei colloqui ed è incredibilmente preciso. Ho fatto un colloquio di due ore in un inglese e uno spagnolo stentati e ha azzeccato tutto, persino i timestamp. Pagavo 200 dollari al mese al mio stagista solo per trascrivere il materiale. Questo mi fa letteralmente risparmiare ogni mese.",
         "author": "Jessica Park",
         "role": "Giornalista freelance"
       }
@@ -1174,6 +1175,11 @@ let message = {
       "title": "Domande frequenti",
       "titleHighlight": "Domande",
       "questions": [
+            {
+              "q": "Trascrizione AI",
+              "question": "Cos'è la trascrizione AI e come funziona?",
+              "answer": "La trascrizione tramite IA è il processo di conversione automatica dell'audio in testo utilizzando un'intelligenza artificiale avanzata. Con NeverCap, basta caricare i file e la nostra IA trascrive il contenuto con una precisione fino al 96%. Il nostro servizio è progettato per trascrivere file video (come MP4, MOV) e file audio (come MP3, WAV) in testo leggibile e modificabile, completo di etichette per gli speaker e timestamp."
+            },
             {
               "q": "politica illimitata",
               "question": "È davvero illimitato? Qual è il trucco?",
@@ -1219,7 +1225,7 @@ let message = {
     CTASection: {
       "title": "Pronti a liberarvi dai limiti?",
       "subtitle": "Unisciti a oltre 50.000 professionisti che hanno effettuato il passaggio a una trascrizione davvero illimitata",
-      "button": "Prova NeverCap Gratis",
+      "button": "Prova NeverCap gratis",
       "disclaimer": "Nessuna carta di credito richiesta per il piano gratuito • Esegui l'upgrade in qualsiasi momento per un accesso illimitato"
     }
   },
@@ -1329,7 +1335,7 @@ let message = {
       trustBadge4Label: "Caricamento in batch",
       ctaTitle: "Smetti di pagare per falsi servizi illimitati",
       ctaSubtitle: "Unisciti alle migliaia di persone che sono passate a una trascrizione davvero illimitata",
-      finalCta: "Prova NeverCap Gratis"
+      finalCta: "Prova NeverCap gratis"
     },
     BulkUpload: {
       heroBadgeIcon: "📁",
@@ -1454,7 +1460,7 @@ let message = {
       statCard3Percentage: "100 ms",
       statCard3DescriptionLine1: "Livello di parola",
       statCard3DescriptionLine2: "Precisione del timestamp",
-      languageSectionTitlePart1: "Precisione del 96% in 12 lingue principali",
+      languageSectionTitlePart1: "Precisione del 96%",
       languageSubtitle: "Trascrizione di livello professionale per contenuti globali",
       languageCard1Flag: "🇺🇸",
       languageCard1Name: "Inglese",
@@ -1589,7 +1595,8 @@ let message = {
       tableRow6Rev: "✕",
       ctaTitle: "Prova una precisione del 96%",
       ctaSubtitle: "Carica il tuo audio più impegnativo e scopri la differenza",
-      finalCta: "Metti alla prova la nostra precisione ora →"
+      finalCta: "Metti alla prova la nostra precisione ora →",
+        languageSectionTitlePart2: "in 12 lingue principali"
     }
   },
   Pricing: {
@@ -1694,7 +1701,7 @@ let message = {
     },
     ComparisonTable: {
       "header": {
-        "title": "Confronta tutte le funzionalità",
+        "title": "Confrontare",
         "highlighted_text": "Tutte le funzionalità",
         "subtitle": "Scopri esattamente cosa ottieni con ogni piano. Nessuna limitazione nascosta."
       },
@@ -1812,7 +1819,7 @@ let message = {
     CTA: {
       "title": "Pronti per un'esperienza illimitata?",
       "subtitle": "Unisciti a oltre 50.000 professionisti che trascrivono senza limiti",
-      "button": "Prova NeverCap Gratis →",
+      "button": "Prova NeverCap gratis →",
       "disclaimer": "Nessuna carta di credito richiesta • Inizia a trascrivere in pochi secondi"
     }
   },
