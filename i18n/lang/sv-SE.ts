@@ -1039,12 +1039,12 @@ let message = {
     Pricing: "Prissättning",
     UseCases: "Användningsområden",
     AllUseCases: "Alla användningsområden",
-    Podcasters: "Poddare",
+    Podcasters: "Poddsändare",
     Journalists: "Journalister",
     ContentCreators: "Innehållsskapare",
     Researchers: "Forskare",
     BusinessTeams: "Affärsteam",
-    Educators: "Lärare",
+    Educators: "Utbildare",
     Resources: "Resurser",
     YouTubetoMP4: "YouTube till MP4",
     StartFreeTrial: "Prova gratis"
@@ -1605,93 +1605,93 @@ let message = {
       "highlighted_text": "Inga dolda tak.",
       "description": "Välj den plan som passar dina behov. Uppgradera eller nedgradera när som helst. Inga avtal, inga överraskningar.",
       "plans": [
-            {
-              "name": "Gratis",
-              "price": "$0",
-              "period": "månad",
-              "discount": "Perfekt för att prova vår tjänst",
-              "limits": {
-                "title": "Dagliga gränser",
-                "items": [
-                  "3 filer/dag (≈90 min totalt/dag)",
-                  "Upp till 30 min per fil (≤250 MB)",
-                  "Ladda upp 1 fil i taget",
-                  "Standardprioriteringskö"
-                ]
-              },
-              "features": {
-                "title": "Funktioner",
-                "items": [
-                  "100+ språk",
-                  "Talarmärkningar",
-                  "Översättning",
-                  "Alla exportformat"
-                ]
-              },
-              "cta": {
-                "text": "Börja gratis. Ingen kreditkort krävs.",
-                "button": "Börja Gratis"
-              }
-            },
-            {
-              "name": "Pro Månadsvis",
-              "price": "$17.99",
-              "period": "månad",
-              "discount": "$9.99 första månaden",
-              "limits": {
-                "title": "Inget månatligt tak",
-                "items": [
-                  "Obegränsade totala minuter",
-                  "Upp till 10 timmar / 5 GB per fil",
-                  "Ladda upp 50 filer samtidigt",
-                  "Prioriteringskö"
-                ]
-              },
-              "features": {
-                "title": "Allt i Gratis, plus",
-                "items": [
-                  "Tidsstämplar på ordnivå",
-                  "Avancerad talaridentifiering",
-                  "Formaterade stycken & skiljetecken",
-                  "Prioriterat stöd"
-                ]
-              },
-              "cta": {
-                "text": "Obegränsade minuter. Prioriterad hastighet. Massuppladdningar.",
-                "button": "Gå Pro"
-              },
-              "badge": "Mest Populär"
-            },
-            {
-              "name": "Pro Årlig",
-              "price": "$8.99",
-              "period": "månad",
-              "discount": "Faktureras årligen $107.88",
-              "limits": {
-                "title": "Samma som Pro Monthly",
-                "items": [
-                  "Obegränsade totala minuter",
-                  "Upp till 10 timmar / 5 GB per fil",
-                  "Ladda upp 50 filer samtidigt",
-                  "Prioriterad kö"
-                ]
-              },
-              "features": {
-                "title": "Allt i Free, plus",
-                "items": [
-                  "Tidsstämplar på ordnivå",
-                  "Avancerad talaridentifiering",
-                  "Formaterade stycken & skiljetecken",
-                  "Prioriterat stöd"
-                ]
-              },
-              "cta": {
-                "text": "Obegränsade minuter. Prioriterad hastighet. Massuppladdningar.",
-                "button": "Bli Pro"
-              },
-              "badge": "Bästa värde - "
-            }
-          ],
+        {
+          "name": "Gratis",
+          "price": "$0",
+          "period": "månad",
+          "discount": "Perfekt för att prova vår tjänst",
+          "limits": {
+            "title": "Dagliga gränser",
+            "items": [
+              "3 filer/dag (≈90 min totalt/dag)",
+              "Upp till 30 min per fil (≤250 MB)",
+              "Ladda upp 1 fil åt gången",
+              "Standardköprioritet"
+            ]
+          },
+          "features": {
+            "title": "Funktioner",
+            "items": [
+              "100+ språk",
+              "Talarmärkningar",
+              "Översättning",
+              "Alla exportformat"
+            ]
+          },
+          "cta": {
+            "text": "Börja gratis. Ingen kreditkort behövs.",
+            "button": "Nuvarande abonnemang"
+          }
+        },
+        {
+          "name": "Pro Månadsvis",
+          "price": "$17.99",
+          "period": "månad",
+          "discount": "$9.99 första månaden",
+          "limits": {
+            "title": "Ingen månatlig gräns",
+            "items": [
+              "Obegränsade totala minuter",
+              "Upp till 10 timmar / 5 GB per fil",
+              "Ladda upp 50 filer samtidigt",
+              "Prioriterad kö"
+            ]
+          },
+          "features": {
+            "title": "Allt i Gratis, plus",
+            "items": [
+              "Tidsstämplar på ordnivå",
+              "Avancerad talaridentifiering",
+              "Formaterade stycken & skiljetecken",
+              "Prioriterat stöd"
+            ]
+          },
+          "cta": {
+            "text": "Obegränsade minuter. Prioriterad hastighet. Massuppladdning.",
+            "button": "Gå Pro"
+          },
+          "badge": "Mest populär"
+        },
+        {
+          "name": "Pro Årlig",
+          "price": "$8.99",
+          "period": "månad",
+          "discount": "Faktureras årligen $107.88",
+          "limits": {
+            "title": "Samma som Pro Månadsvis",
+            "items": [
+              "Obegränsade totala minuter",
+              "Upp till 10 timmar / 5 GB per fil",
+              "Ladda upp 50 filer samtidigt",
+              "Prioriterad kö"
+            ]
+          },
+          "features": {
+            "title": "Allt i Gratis, plus",
+            "items": [
+              "Tidsstämplar på ordnivå",
+              "Avancerad talaridentifiering",
+              "Formaterade stycken & skiljetecken",
+              "Prioriterat stöd"
+            ]
+          },
+          "cta": {
+            "text": "Obegränsade minuter. Prioriterad hastighet. Massuppladdning.",
+            "button": "Gå Pro"
+          },
+          "badge": "Bästa Värde - "
+        }
+      ],
       "disclaimer": '\"Obegränsat\" innebär ingen månatlig tak och ingen artificell nedgång. Skäligt bruk gäller för missbruk av automatisering eller vidaredistribution.'
     },
     ComparisonTable: {

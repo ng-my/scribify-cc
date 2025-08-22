@@ -128,18 +128,15 @@ getLocaleOptions();
 
 // 组件挂载时的处理
 onMounted(async () => {
-  const cookie = useCrossDomainCookie('i18n_localLanguage')
+  const cookie = useCrossDomainCookie("i18n_localLanguage");
 
   if (LanguageFixRoute.value) {
-    let savedLocale =
-      activeLanguage.value ||
-      cookie.value
+    let savedLocale = activeLanguage.value || cookie.value;
     locale.value = savedLocale as LocaleKey;
     return;
   }
   // 从 URL 或 localStorage 恢复语言设置
-  let savedLocale =
-    cookie.value || activeLanguage.value;
+  let savedLocale = cookie.value || activeLanguage.value;
 
   let isSame = true;
   if (savedLocale !== activeLanguage.value) {

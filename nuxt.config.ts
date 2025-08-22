@@ -27,6 +27,10 @@ export default defineNuxtConfig({
           name: "keywords",
           content:
             "Scribify, audio to text, transcription service, speaker diarization, meeting transcription, speech to text 100+ languages, transcribe meetings with multiple speakers, best transcription service for interviews"
+        },
+        {
+          name: 'format-detection',
+          content: 'telephone=no, email=no, address=no'
         }
       ],
       link: [{ rel: "stylesheet", href: "/assets/iconfont/iconfont.css" }],

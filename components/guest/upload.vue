@@ -97,11 +97,7 @@
       />
     </div>
     <div v-else>
-      <upload-file
-        local="en-US"
-        :isMobileFromIndex="isMobileFromIndex"
-        useUploadValidate
-      />
+      <upload-file :isMobileFromIndex="isMobileFromIndex" useUploadValidate />
     </div>
 
     <div class="mt-5">
@@ -109,6 +105,7 @@
         :popperStyle="{
           borderRadius: '0.5rem'
         }"
+        customer-class="lang-choose-input-20250711-website"
         v-model:lang="lang"
       />
     </div>
@@ -176,11 +173,11 @@ import { type UploadFile, useUpload } from "~/components/upload/useUpload";
 import { useSubscript } from "~/components/layout/header/useSubscript";
 import { useVisitor } from "~/hooks/useVisitor";
 import { useLink } from "~/components/upload/dialog/useLink";
-import { message } from "~/i18n/lang/en-US";
-import Utils, { Msg, isMobile } from "~/utils/tools";
+import { Msg, isMobile } from "~/utils/tools";
 import { Loading } from "@element-plus/icons-vue";
 import SpeakerPromat from "~/components/record/dialog/speakerPromat.vue";
 import { useCrossDomainCookie } from "~/hooks/useCrossDomainCookie";
+import { importWithRetry } from "~/utils/importWithRetry";
 
 const { t } = useI18n();
 
@@ -229,7 +226,7 @@ const guestLogin = async () => {
   const token = useCrossDomainCookie("token");
   if (!token.value) {
     if (!visitorId.value) await getVisitorId();
-    const { userApi } = await import("~/api/user");
+    const { userApi } = await importWithRetry("user");
     const res = await userApi.guestLogin({
       visitorClientId: visitorId.value
     });
@@ -310,8 +307,8 @@ const handleJumpHome = () => {
   }
   setLoginData();
   setTimeout(() => {
-    $mitt.emit("goToEvent", { path: "/" });
-  });
+    $mitt.emit("goToEvent", { path: `/?wt=${Date.now()}` });
+  }, 500);
 };
 const handleTranscribe = async () => {
   if (disabled.value) return;
@@ -328,7 +325,7 @@ const handleTranscribe = async () => {
     return;
   }
   try {
-    const { useFolderApi } = await import("~/api/folder");
+    const { useFolderApi } = await importWithRetry("folder");
     const { transcribeFile, saveFileInfo } = useFolderApi;
     const fileInfo = await saveFileInfo(
       JSON.stringify(
@@ -410,12 +407,12 @@ onMounted(() => {
   isMobileFromIndex.value = isMobile();
 });
 const handleOpenDialog = () => {
-  if (Utils.isMobile()) {
+  if (isMobile()) {
     document.body.style.width = "auto";
   }
 };
 const handleCloseDialog = () => {
-  if (Utils.isMobile()) {
+  if (isMobile()) {
     document.body.style.width = "";
   }
   if (document.activeElement && document.activeElement.blur) {
@@ -554,7 +551,7 @@ const handleCloseDialog = () => {
 }
 
 :deep(.el-progress__text) {
-  @apply me-3 !text-sm text-white;
+  @apply me-3 !text-sm text-black;
 }
 
 :deep(.el-checkbox__label) {
@@ -617,43 +614,15 @@ const handleCloseDialog = () => {
   align-items: center;
   justify-content: center;
 }
+.no-drag {
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 </style>
 <style>
 .lang-choose-input-20250711-website {
-  background: #0e172b;
-  color: #fff;
-  border-color: #0e172b;
-  border-radius: 0.5rem;
-
-  .lang-item-wrap {
-    div:hover {
-      background: #1a2742;
-    }
-
-    & > div > span:first-child {
-      color: white !important;
-    }
-  }
-
-  .el-input__wrapper {
-    background: #1a2742;
-    border-color: #6a36a2;
-    color: white;
-  }
-
-  .el-input__inner {
-    color: white;
-  }
-
-  .el-input__prefix-inner {
-    .el-icon {
-      color: white !important;
-    }
-  }
-
-  .bg-boxBgColor {
-    background: #1a2742;
-  }
 }
 </style>
 <style lang="scss">

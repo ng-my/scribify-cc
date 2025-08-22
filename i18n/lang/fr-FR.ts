@@ -1623,93 +1623,93 @@ let message = {
       "highlighted_text": "Pas de limites cachées.",
       "description": "Choisissez l'offre adaptée à vos besoins. Changez à tout moment. Sans engagement ni mauvaises surprises.",
       "plans": [
-            {
-              "name": "Gratuit",
-              "price": "0 $",
-              "period": "mois",
-              "discount": "Idéal pour tester notre service",
-              "limits": {
-                "title": "Limites quotidiennes",
-                "items": [
-                  "3 fichiers/jour (≈90 min au total/jour)",
-                  "Jusqu'à 30 min par fichier (≤250 Mo)",
-                  "Téléverser 1 fichier à la fois",
-                  "File d'attente standard"
-                ]
-              },
-              "features": {
-                "title": "Fonctionnalités",
-                "items": [
-                  "100+ langues",
-                  "Étiquettes d'intervenants",
-                  "Traduction",
-                  "Tous les formats d'export"
-                ]
-              },
-              "cta": {
-                "text": "Commencez gratuitement. Sans carte bancaire.",
-                "button": "Commencer gratuitement"
-              }
-            },
-            {
-              "name": "Pro Mensuel",
-              "price": "17,99 $",
-              "period": "mois",
-              "discount": "9,99 $ pour le premier mois",
-              "limits": {
-                "title": "Aucune limite mensuelle",
-                "items": [
-                  "Minutes illimitées",
-                  "Jusqu'à 10 heures / 5 Go par fichier",
-                  "Téléverser 50 fichiers simultanément",
-                  "File d'attente prioritaire"
-                ]
-              },
-              "features": {
-                "title": "Tout ce qui est inclus dans Gratuit, plus",
-                "items": [
-                  "Horodatages mot par mot",
-                  "Identification avancée des intervenants",
-                  "Paragraphes formatés et ponctuation",
-                  "Support prioritaire"
-                ]
-              },
-              "cta": {
-                "text": "Minutes illimitées. Vitesse prioritaire. Téléversements groupés.",
-                "button": "Passer en Pro"
-              },
-              "badge": "Le plus populaire"
-            },
-            {
-              "name": "Pro Annuel",
-              "price": "8,99 $",
-              "period": "mois",
-              "discount": "Facturé 107,88 $/an",
-              "limits": {
-                "title": "Identique à Pro Mensuel",
-                "items": [
-                  "Minutes totales illimitées",
-                  "Jusqu'à 10 heures / 5 Go par fichier",
-                  "Téléverser 50 fichiers simultanément",
-                  "File prioritaire"
-                ]
-              },
-              "features": {
-                "title": "Tout ce qu'offre Free, plus",
-                "items": [
-                  "Horodatage mot par mot",
-                  "Identification avancée des locuteurs",
-                  "Paragraphes formatés et ponctuation",
-                  "Support prioritaire"
-                ]
-              },
-              "cta": {
-                "text": "Minutes illimitées. Vitesse prioritaire. Téléversements groupés.",
-                "button": "Passer Pro"
-              },
-              "badge": "Meilleur rapport qualité-prix - "
-            }
-          ],
+        {
+          "name": "Gratuit",
+          "price": "0 $",
+          "period": "mois",
+          "discount": "Parfait pour essayer notre service",
+          "limits": {
+            "title": "Limites quotidiennes",
+            "items": [
+              "3 fichiers/jour (≈90 min total/jour)",
+              "Jusqu'à 30 min par fichier (≤250 Mo)",
+              "Téléverser 1 fichier à la fois",
+              "File d'attente standard"
+            ]
+          },
+          "features": {
+            "title": "Fonctionnalités",
+            "items": [
+              "100+ langues",
+              "Étiquettes d'intervenants",
+              "Traduction",
+              "Tous les formats d'export"
+            ]
+          },
+          "cta": {
+            "text": "Commencez gratuitement. Sans carte bancaire.",
+            "button": "Offre actuelle"
+          }
+        },
+        {
+          "name": "Pro Mensuel",
+          "price": "17,99 $",
+          "period": "mois",
+          "discount": "9,99 $ pour le premier mois",
+          "limits": {
+            "title": "Aucune limite mensuelle",
+            "items": [
+              "Minutes totales illimitées",
+              "Jusqu'à 10 heures / 5 Go par fichier",
+              "Téléverser 50 fichiers simultanément",
+              "File d'attente prioritaire"
+            ]
+          },
+          "features": {
+            "title": "Tout ce qui est inclus dans Gratuit, plus",
+            "items": [
+              "Horodatages au niveau des mots",
+              "Identification avancée des intervenants",
+              "Paragraphes et ponctuation formatés",
+              "Support prioritaire"
+            ]
+          },
+          "cta": {
+            "text": "Minutes illimitées. Vitesse prioritaire. Téléversements groupés.",
+            "button": "Passer Pro"
+          },
+          "badge": "Le plus populaire"
+        },
+        {
+          "name": "Pro Annuel",
+          "price": "$8,99",
+          "period": "mois",
+          "discount": "Facturé annuellement 107,88 $",
+          "limits": {
+            "title": "Identique à Pro Mensuel",
+            "items": [
+              "Minutes totales illimitées",
+              "Jusqu'à 10 heures / 5 Go par fichier",
+              "Téléverser 50 fichiers simultanément",
+              "File d'attente prioritaire"
+            ]
+          },
+          "features": {
+            "title": "Tout ce qui est inclus dans Gratuit, plus",
+            "items": [
+              "Horodatages au niveau des mots",
+              "Identification avancée des intervenants",
+              "Paragraphes et ponctuation formatés",
+              "Support prioritaire"
+            ]
+          },
+          "cta": {
+            "text": "Minutes illimitées. Vitesse prioritaire. Téléversements groupés.",
+            "button": "Passer Pro"
+          },
+          "badge": "Meilleur Rapport Qualité-Prix - "
+        }
+      ],
       "disclaimer": `"Illimité" signifie pas de plafond mensuel ni de ralentissement artificiel. L'usage équitable s'applique à l'automatisation abusive ou la redistribution.`
     },
     ComparisonTable: {

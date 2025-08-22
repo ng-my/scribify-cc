@@ -802,6 +802,8 @@ const handleClick = () => {
   border-radius: 16px;
   text-align: center;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  max-height: 170px;
+  max-width: 220px;
 }
 
 .stat-number {

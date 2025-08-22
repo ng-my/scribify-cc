@@ -130,21 +130,11 @@ const isIndexPage = inject("isIndexPage");
 //退出登录
 const loginOut = () => {
   unref(popoverRef).hide();
-  if (!userNameEmail.value) {
-    setTimeout(() => {
-      router.push({
-        path: localePath("/")
-      });
-    }, 10);
-    userStore.setUserInfo("");
-    return;
-  }
   userStore.setUserInfo("");
-  if (isIndexPage) {
-    return;
-  }
   setTimeout(() => {
-    $mitt.emit("goToEvent", { path: "/user/login" });
+    router.push({
+      path: localePath("/")
+    });
   }, 10);
 };
 

@@ -1079,7 +1079,7 @@ let message = {
       h1: "Ne Fizess Korlátokért:",
       gradient: "Valóban Korlátlan AI Átirat",
       subtitle: "Az AI-nk videókat átír és hangot szöveggé alakít, egyszerre 50 fájlt dolgoz fel havi korlát nélkül. Átirat, amely valóban veled nő.",
-      FreeTrial: "Próbáld Ingyen - Bankkártya Nélkül",
+      FreeTrial: "Próbálja Ki Ingyen - Bankkártya Nélkül",
       HowWorks: "Nézd Meg, Hogyan Működik",
       Unlimited: "Korlátlan Fájlfeltöltés",
       NoCap: "Nincs Havi Perc Korlát",
@@ -1607,93 +1607,93 @@ let message = {
       "highlighted_text": "Nincsenek rejtett korlátok.",
       "description": "Válassza ki az Önnek megfelelő csomagot. Bármikor frissíthet vagy lemondhat. Nincsenek szerződések, nincsenek meglepetések.",
       "plans": [
-            {
-              "name": "Ingyenes",
-              "price": "$0",
-              "period": "hónap",
-              "discount": "Ideális a szolgáltatás kipróbálásához",
-              "limits": {
-                "title": "Napi korlátok",
-                "items": [
-                  "3 fájl/nap (≈90 perc összesen/nap)",
-                  "Legfeljebb 30 perc/fájl (≤250 MB)",
-                  "Egyszerre 1 fájl feltöltése",
-                  "Szabványos prioritási sorrend"
-                ]
-              },
-              "features": {
-                "title": "Funkciók",
-                "items": [
-                  "100+ nyelv",
-                  "Beszélő címkék",
-                  "Fordítás",
-                  "Minden exportformátum"
-                ]
-              },
-              "cta": {
-                "text": "Kezdje ingyen. Nincs bankkártya szükséges.",
-                "button": "Ingyenes kezdés"
-              }
-            },
-            {
-              "name": "Pro havi",
-              "price": "$17.99",
-              "period": "hónap",
-              "discount": "$9.99 az első hónapra",
-              "limits": {
-                "title": "Nincs havi korlát",
-                "items": [
-                  "Korlátlan összes perc",
-                  "Legfeljebb 10 óra / 5 GB fájlonként",
-                  "Egyszerre 50 fájl feltöltése",
-                  "Prioritási sorrend"
-                ]
-              },
-              "features": {
-                "title": "Minden, ami az Ingyenesben van, plusz",
-                "items": [
-                  "Szószintű időbélyegek",
-                  "Fejlett beszélőazonosítás",
-                  "Formázott bekezdések és írásjelek",
-                  "Prioritásos támogatás"
-                ]
-              },
-              "cta": {
-                "text": "Korlátlan percek. Prioritásos sebesség. Csoportos feltöltések.",
-                "button": "Proba választás"
-              },
-              "badge": "Legnépszerűbb"
-            },
-            {
-              "name": "Pro éves",
-              "price": "$8.99",
-              "period": "hónap",
-              "discount": "Éves számlázás $107.88",
-              "limits": {
-                "title": "Ugyanaz, mint a Pro Monthly",
-                "items": [
-                  "Korlátlan összes perc",
-                  "Legfeljebb 10 óra / 5 GB fájlonként",
-                  "50 fájl feltöltése egyszerre",
-                  "Prioritási sor"
-                ]
-              },
-              "features": {
-                "title": "Minden, ami a Free-ban van, plusz",
-                "items": [
-                  "Szószintű időbélyegek",
-                  "Fejlett beszélőazonosítás",
-                  "Formázott bekezdések és írásjelek",
-                  "Prioritásos támogatás"
-                ]
-              },
-              "cta": {
-                "text": "Korlátlan percek. Prioritásos sebesség. Csomagos feltöltés.",
-                "button": "Go Pro"
-              },
-              "badge": "Legjobb érték - "
-            }
-          ],
+        {
+          "name": "Ingyenes",
+          "price": "$0",
+          "period": "hó",
+          "discount": "Ideális a szolgáltatásunk kipróbálásához",
+          "limits": {
+            "title": "Napi korlátok",
+            "items": [
+              "3 fájl/nap (≈90 perc összesen/nap)",
+              "Legfeljebb 30 perc/fájl (≤250 MB)",
+              "Egyszerre 1 fájl feltöltése",
+              "Szabványos prioritási sorrend"
+            ]
+          },
+          "features": {
+            "title": "Funkciók",
+            "items": [
+              "100+ nyelv",
+              "Beszélő címkék",
+              "Fordítás",
+              "Minden exportformátum"
+            ]
+          },
+          "cta": {
+            "text": "Kezdés ingyen. Bankkártya nélkül.",
+            "button": "Jelenlegi csomag"
+          }
+        },
+        {
+          "name": "Pro Havi",
+          "price": "$17.99",
+          "period": "hó",
+          "discount": "$9.99 az első hónapban",
+          "limits": {
+            "title": "Nincs havi limit",
+            "items": [
+              "Korlátlan összes perc",
+              "Legfeljebb 10 óra / 5 GB fájlonként",
+              "Egyszerre 50 fájl feltöltése",
+              "Prioritási sorrend"
+            ]
+          },
+          "features": {
+            "title": "Minden, ami az Ingyenesben, plusz",
+            "items": [
+              "Szószintű időbélyegek",
+              "Fejlett beszélőazonosítás",
+              "Formázott bekezdések & központozás",
+              "Prioritásos támogatás"
+            ]
+          },
+          "cta": {
+            "text": "Korlátlan percek. Prioritásos sebesség. Csomagos feltöltés.",
+            "button": "Proba"
+          },
+          "badge": "Legnépszerűbb"
+        },
+        {
+          "name": "Pro Éves",
+          "price": "$8.99",
+          "period": "hó",
+          "discount": "Éves számlázás $107.88",
+          "limits": {
+            "title": "Ugyanaz, mint a Pro havi",
+            "items": [
+              "Korlátlan összes perc",
+              "Legfeljebb 10 óra / 5 GB fájlonként",
+              "Egyszerre 50 fájl feltöltése",
+              "Prioritási sorrend"
+            ]
+          },
+          "features": {
+            "title": "Minden, ami az Ingyenesben, plusz",
+            "items": [
+              "Szószintű időbélyegek",
+              "Fejlett beszélőazonosítás",
+              "Formázott bekezdések & központozás",
+              "Prioritásos támogatás"
+            ]
+          },
+          "cta": {
+            "text": "Korlátlan percek. Prioritásos sebesség. Csomagos feltöltés.",
+            "button": "Proba"
+          },
+          "badge": "Legjobb Érték - "
+        }
+      ],
       "disclaimer": 'A "korlátlan" azt jelenti, hogy nincs havi limit és mesterséges lassítás. A tisztességes felhasználás vonatkozik az visszaélő automatizálásra vagy terjesztésre.'
     },
     ComparisonTable: {
@@ -2597,7 +2597,7 @@ let message = {
       heroTitle1: "Írj Át Minden Interjút.",
       heroTitle2: "Elemezd Az Összes Adatodat.",
       heroSubtitle: "Ne válaszd ki, mely fókuszcsoportokat írod át. Dolgozz fel minden minőségi adatodat 96%-os pontossággal és hibátlan beszélőazonosítással – még 20 egymás szavába vágó résztvevő esetén is.",
-      heroCtaPrimary: "Próbáld Ingyen - Bankkártya Nélkül",
+      heroCtaPrimary: "Próbálja Ki Ingyen - Bankkártya Nélkül",
       heroCtaSecondary: "Nézd Meg Hogyan Működik",
       statsInterviewHours: "Interjú Órák",
       statsAccuracy: "Pontosság",
@@ -2773,7 +2773,7 @@ let message = {
       heroTitle1: "Tegyük a tanulást",
       heroTitle2: "Mindenki számára elérhetővé",
       heroSubtitle: "Egyszerűen illessz be YouTube linkeket azonnali átiratokért automatikusan generált feliratokkal. Alakítsd át az előadásokat, oktatóvideókat és oktatási anyagokat kereshető, hozzáférhető tartalommá, amelyből minden diák tanulhat.",
-      heroCtaPrimary: "Próbáld ingyen – nincs bankkártya szükséges",
+      heroCtaPrimary: "Próbálja Ki Ingyen – nincs bankkártya szükséges",
       heroCtaSecondary: "Bemutató megtekintése",
       stats1Number: "1 kattintás",
       stats1Label: "YouTube átirat",

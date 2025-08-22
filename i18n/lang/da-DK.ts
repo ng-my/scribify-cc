@@ -1047,7 +1047,7 @@ let message = {
     Educators: "Undervisere",
     Resources: "Ressourcer",
     YouTubetoMP4: "YouTube til MP4",
-    StartFreeTrial: "Prøv Det Gratis"
+    StartFreeTrial: "Prøv Gratis"
   },
   Footer: {
     des: "Verdens første virkelig ubegrænsede AI-transskriptionstjeneste. Ingen begrænsninger, ingen grænser, bare frihed til at skabe.",
@@ -1605,93 +1605,93 @@ let message = {
       "highlighted_text": "Ingen skjulte begrænsninger.",
       "description": "Vælg den plan, der passer til dine behov. Opgrader eller nedgrader når som helst. Ingen binding, ingen overraskelser.",
       "plans": [
-            {
-              "name": "Gratis",
-              "price": "$0",
-              "period": "måned",
-              "discount": "Perfekt til at prøve vores service",
-              "limits": {
-                "title": "Daglige grænser",
-                "items": [
-                  "3 filer/dag (≈90 min totalt/dag)",
-                  "Op til 30 min pr. fil (≤250 MB)",
-                  "Upload 1 fil ad gangen",
-                  "Standard prioritetskø"
-                ]
-              },
-              "features": {
-                "title": "Funktioner",
-                "items": [
-                  "100+ sprog",
-                  "Talermærkater",
-                  "Oversættelse",
-                  "Alle eksportformater"
-                ]
-              },
-              "cta": {
-                "text": "Start gratis. Ingen kreditkort.",
-                "button": "Start Gratis"
-              }
-            },
-            {
-              "name": "Pro Månedlig",
-              "price": "$17.99",
-              "period": "måned",
-              "discount": "$9.99 den første måned",
-              "limits": {
-                "title": "Ingen månedlig grænse",
-                "items": [
-                  "Ubegrænset antal minutter",
-                  "Op til 10 timer / 5 GB pr. fil",
-                  "Upload 50 filer på én gang",
-                  "Prioritetskø"
-                ]
-              },
-              "features": {
-                "title": "Alt i Gratis, plus",
-                "items": [
-                  "Tidsstempler på ordniveau",
-                  "Avanceret talergenkendelse",
-                  "Formaterede afsnit & tegnsætning",
-                  "Prioriteret support"
-                ]
-              },
-              "cta": {
-                "text": "Ubegrænsede minutter. Prioriteret hastighed. Batch-upload.",
-                "button": "Bliv Pro"
-              },
-              "badge": "Mest populære"
-            },
-            {
-              "name": "Pro Årlig",
-              "price": "$8.99",
-              "period": "måned",
-              "discount": "Årlig fakturering $107,88",
-              "limits": {
-                "title": "Samme som Pro Månedlig",
-                "items": [
-                  "Ubegrænsede samlede minutter",
-                  "Op til 10 timer / 5 GB pr. fil",
-                  "Upload 50 filer på én gang",
-                  "Prioriteret kø"
-                ]
-              },
-              "features": {
-                "title": "Alt i Free, plus",
-                "items": [
-                  "Ord-niveau tidsstempler",
-                  "Avanceret talergenkendelse",
-                  "Formaterede afsnit & tegnsætning",
-                  "Prioriteret support"
-                ]
-              },
-              "cta": {
-                "text": "Ubegrænsede minutter. Prioriteret hastighed. Batch-upload.",
-                "button": "Gå Pro"
-              },
-              "badge": "Bedste værdi - "
-            }
-          ],
+        {
+          "name": "Gratis",
+          "price": "$0",
+          "period": "måned",
+          "discount": "Perfekt til at prøve vores service",
+          "limits": {
+            "title": "Daglige begrænsninger",
+            "items": [
+              "3 filer/dag (≈90 min totalt/dag)",
+              "Op til 30 min pr. fil (≤250 MB)",
+              "Upload 1 fil ad gangen",
+              "Standard prioritetskø"
+            ]
+          },
+          "features": {
+            "title": "Funktioner",
+            "items": [
+              "100+ sprog",
+              "Talermærkater",
+              "Oversættelse",
+              "Alle eksportformater"
+            ]
+          },
+          "cta": {
+            "text": "Start gratis. Ingen kreditkort.",
+            "button": "Nuværende abonnement"
+          }
+        },
+        {
+          "name": "Pro Månedlig",
+          "price": "$17.99",
+          "period": "måned",
+          "discount": "$9.99 den første måned",
+          "limits": {
+            "title": "Ingen månedlig begrænsning",
+            "items": [
+              "Ubegrænset antal minutter",
+              "Op til 10 timer / 5 GB pr. fil",
+              "Upload 50 filer på én gang",
+              "Prioritetskø"
+            ]
+          },
+          "features": {
+            "title": "Alt i Gratis, plus",
+            "items": [
+              "Ord-niveau tidsstempler",
+              "Avanceret talergenkendelse",
+              "Formaterede afsnit & tegnsætning",
+              "Prioriteret support"
+            ]
+          },
+          "cta": {
+            "text": "Ubegrænsede minutter. Prioriteret hastighed. Batch-upload.",
+            "button": "Bliv Pro"
+          },
+          "badge": "Mest populære"
+        },
+        {
+          "name": "Pro Årlig",
+          "price": "$8,99",
+          "period": "måned",
+          "discount": "Årlig faktura $107.88",
+          "limits": {
+            "title": "Samme som Pro Månedlig",
+            "items": [
+              "Ubegrænset antal minutter",
+              "Op til 10 timer / 5 GB pr. fil",
+              "Upload 50 filer på én gang",
+              "Prioritetskø"
+            ]
+          },
+          "features": {
+            "title": "Alt i Gratis, plus",
+            "items": [
+              "Ord-niveau tidsstempler",
+              "Avanceret talergenkendelse",
+              "Formaterede afsnit & tegnsætning",
+              "Prioriteret support"
+            ]
+          },
+          "cta": {
+            "text": "Ubegrænsede minutter. Prioriteret hastighed. Batch-upload.",
+            "button": "Bliv Pro"
+          },
+          "badge": "Bedste Værdi - "
+        }
+      ],
       "disclaimer": '"Ubegrænset" betyder ingen månedlig grænse og ingen kunstig nedbremsning. Fair-use gælder for misbrug af automatisering eller redistribution.'
     },
     ComparisonTable: {

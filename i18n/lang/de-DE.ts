@@ -1621,93 +1621,93 @@ let message = {
       "highlighted_text": "Keine versteckten Limits.",
       "description": "Wählen Sie den passenden Tarif. Jederzeit upgraden oder downgraden. Keine Verträge, keine Überraschungen.",
       "plans": [
-            {
-              "name": "Kostenlos",
-              "price": "$0",
-              "period": "Monat",
-              "discount": "Ideal zum Ausprobieren",
-              "limits": {
-                "title": "Tägliche Limits",
-                "items": [
-                  "3 Dateien/Tag (≈90 Min. gesamt/Tag)",
-                  "Bis zu 30 Min. pro Datei (≤250 MB)",
-                  "1 Datei gleichzeitig hochladen",
-                  "Standard-Warteschlange"
-                ]
-              },
-              "features": {
-                "title": "Funktionen",
-                "items": [
-                  "100+ Sprachen",
-                  "Sprecherkennung",
-                  "Übersetzung",
-                  "Alle Exportformate"
-                ]
-              },
-              "cta": {
-                "text": "Kostenlos starten. Keine Kreditkarte.",
-                "button": "Kostenlos starten"
-              }
-            },
-            {
-              "name": "Pro Monatlich",
-              "price": "$17.99",
-              "period": "Monat",
-              "discount": "$9.99 im ersten Monat",
-              "limits": {
-                "title": "Kein monatliches Limit",
-                "items": [
-                  "Unbegrenzte Minuten",
-                  "Bis zu 10 Std. / 5 GB pro Datei",
-                  "50 Dateien gleichzeitig hochladen",
-                  "Priorisierte Warteschlange"
-                ]
-              },
-              "features": {
-                "title": "Alles aus Kostenlos, plus",
-                "items": [
-                  "Wortgenaue Zeitstempel",
-                  "Erweiterte Sprechererkennung",
-                  "Formatierte Absätze & Zeichensetzung",
-                  "Priorisierter Support"
-                ]
-              },
-              "cta": {
-                "text": "Unbegrenzte Minuten. Priorisierte Geschwindigkeit. Massen-Uploads.",
-                "button": "Pro wählen"
-              },
-              "badge": "Beliebteste"
-            },
-            {
-              "name": "Pro Jährlich",
-              "price": "$8.99",
-              "period": "Monat",
-              "discount": "Jährliche Zahlung $107.88",
-              "limits": {
-                "title": "Wie Pro Monatlich",
-                "items": [
-                  "Unbegrenzte Gesamtminuten",
-                  "Bis zu 10 Stunden / 5 GB pro Datei",
-                  "50 Dateien gleichzeitig hochladen",
-                  "Prioritäts-Warteschlange"
-                ]
-              },
-              "features": {
-                "title": "Alles in Free, plus",
-                "items": [
-                  "Wortgenaue Zeitstempel",
-                  "Erweiterte Sprechererkennung",
-                  "Formatierte Absätze & Zeichensetzung",
-                  "Prioritäts-Support"
-                ]
-              },
-              "cta": {
-                "text": "Unbegrenzte Minuten. Prioritäts-Geschwindigkeit. Stapel-Uploads.",
-                "button": "Pro werden"
-              },
-              "badge": "Bestes Angebot - "
-            }
-          ],
+        {
+          "name": "Kostenlos",
+          "price": "$0",
+          "period": "Monat",
+          "discount": "Ideal zum Ausprobieren unseres Dienstes",
+          "limits": {
+            "title": "Tägliche Limits",
+            "items": [
+              "3 Dateien/Tag (≈90 Min. gesamt/Tag)",
+              "Bis zu 30 Min. pro Datei (≤250 MB)",
+              "1 Datei gleichzeitig hochladen",
+              "Standard-Warteschlange"
+            ]
+          },
+          "features": {
+            "title": "Funktionen",
+            "items": [
+              "100+ Sprachen",
+              "Sprecherkennung",
+              "Übersetzung",
+              "Alle Exportformate"
+            ]
+          },
+          "cta": {
+            "text": "Kostenlos starten. Keine Kreditkarte.",
+            "button": "Aktueller Tarif"
+          }
+        },
+        {
+          "name": "Pro-Monatsabo",
+          "price": "$17,99",
+          "period": "Monat",
+          "discount": "$9,99 im ersten Monat",
+          "limits": {
+            "title": "Kein monatliches Limit",
+            "items": [
+              "Unbegrenzte Minuten gesamt",
+              "Bis zu 10 Std. / 5 GB pro Datei",
+              "50 Dateien gleichzeitig hochladen",
+              "Priorisierte Warteschlange"
+            ]
+          },
+          "features": {
+            "title": "Alles aus Kostenlos, plus",
+            "items": [
+              "Wortgenaue Zeitstempel",
+              "Erweiterte Sprechererkennung",
+              "Formatierte Absätze & Zeichensetzung",
+              "Priorisierter Support"
+            ]
+          },
+          "cta": {
+            "text": "Unbegrenzte Minuten. Priorisierte Geschwindigkeit. Stapeluploads.",
+            "button": "Pro werden"
+          },
+          "badge": "Beliebtester"
+        },
+        {
+          "name": "Pro-Jahresabo",
+          "price": "$8.99",
+          "period": "Monat",
+          "discount": "Jährliche Abrechnung $107,88",
+          "limits": {
+            "title": "Wie Pro Monatlich",
+            "items": [
+              "Unbegrenzte Minuten gesamt",
+              "Bis zu 10 Std. / 5 GB pro Datei",
+              "50 Dateien gleichzeitig hochladen",
+              "Priorisierte Warteschlange"
+            ]
+          },
+          "features": {
+            "title": "Alles aus Kostenlos, plus",
+            "items": [
+              "Wortgenaue Zeitstempel",
+              "Erweiterte Sprechererkennung",
+              "Formatierte Absätze & Zeichensetzung",
+              "Priorisierter Support"
+            ]
+          },
+          "cta": {
+            "text": "Unbegrenzte Minuten. Priorisierte Geschwindigkeit. Stapeluploads.",
+            "button": "Pro werden"
+          },
+          "badge": "Bestes Preis-Leistungs-Verhältnis - "
+        }
+      ],
       "disclaimer": '"Unbegrenzt" bedeutet keine monatliche Obergrenze und keine künstliche Verlangsamung. Fair-Use gilt bei missbräuchlicher Automatisierung oder Weiterverteilung.'
     },
     ComparisonTable: {

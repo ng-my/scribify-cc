@@ -1609,93 +1609,93 @@ let message = {
       "highlighted_text": "Ingen skjulte begrensninger.",
       "description": "Velg den planen som passer dine behov. Oppgrader eller nedgrader når som helst. Ingen bindingstid, ingen overraskelser.",
       "plans": [
-            {
-              "name": "Gratis",
-              "price": "$0",
-              "period": "måned",
-              "discount": "Perfekt for å teste tjenesten vår",
-              "limits": {
-                "title": "Daglige grenser",
-                "items": [
-                  "3 filer/dag (≈90 min totalt/dag)",
-                  "Opptil 30 min per fil (≤250 MB)",
-                  "Last opp 1 fil om gangen",
-                  "Standard prioritert kø"
-                ]
-              },
-              "features": {
-                "title": "Funksjoner",
-                "items": [
-                  "100+ språk",
-                  "Talermerker",
-                  "Oversettelse",
-                  "Alle eksportformater"
-                ]
-              },
-              "cta": {
-                "text": "Begynn gratis. Ingen kortkrav.",
-                "button": "Begynn gratis"
-              }
-            },
-            {
-              "name": "Pro Månedlig",
-              "price": "$17.99",
-              "period": "måned",
-              "discount": "$9.99 den første måneden",
-              "limits": {
-                "title": "Ingen månedlig grense",
-                "items": [
-                  "Ubegrensede minutter totalt",
-                  "Opptil 10 timer / 5 GB per fil",
-                  "Last opp 50 filer samtidig",
-                  "Prioritert kø"
-                ]
-              },
-              "features": {
-                "title": "Alt i Gratis, pluss",
-                "items": [
-                  "Ordnivå tidsstempler",
-                  "Avansert talergjenkjenning",
-                  "Formaterte avsnitt & tegnsetting",
-                  "Prioritert støtte"
-                ]
-              },
-              "cta": {
-                "text": "Ubegrensede minutter. Prioritert hastighet. Masseopplasting.",
-                "button": "Bli Pro"
-              },
-              "badge": "Mest populær"
-            },
-            {
-              "name": "Pro Årlig",
-              "price": "$8.99",
-              "period": "måned",
-              "discount": "Fakturert årlig $107.88",
-              "limits": {
-                "title": "Samme som Pro Månedlig",
-                "items": [
-                  "Ubegrensede totale minutter",
-                  "Opptil 10 timer / 5 GB per fil",
-                  "Last opp 50 filer samtidig",
-                  "Prioritert kø"
-                ]
-              },
-              "features": {
-                "title": "Alt i Free, pluss",
-                "items": [
-                  "Tidsstempler på ordnivå",
-                  "Avansert talergjenkjenning",
-                  "Formaterte avsnitt & tegnsetting",
-                  "Prioritert support"
-                ]
-              },
-              "cta": {
-                "text": "Ubegrensede minutter. Prioritert hastighet. Masseopplasting.",
-                "button": "Bli Pro"
-              },
-              "badge": "Beste verdi - "
-            }
-          ],
+        {
+          "name": "Gratis",
+          "price": "$0",
+          "period": "måned",
+          "discount": "Perfekt for å teste vår tjeneste",
+          "limits": {
+            "title": "Daglige grenser",
+            "items": [
+              "3 filer/dag (≈90 min totalt/dag)",
+              "Opptil 30 min per fil (≤250 MB)",
+              "Last opp 1 fil om gangen",
+              "Standard prioritert kø"
+            ]
+          },
+          "features": {
+            "title": "Funksjoner",
+            "items": [
+              "100+ språk",
+              "Talermerker",
+              "Oversettelse",
+              "Alle eksportformater"
+            ]
+          },
+          "cta": {
+            "text": "Start gratis. Ingen kredittkort.",
+            "button": "Gjeldende abonnement"
+          }
+        },
+        {
+          "name": "Pro Månedlig",
+          "price": "$17.99",
+          "period": "måned",
+          "discount": "$9.99 den første måneden",
+          "limits": {
+            "title": "Ingen månedlig grense",
+            "items": [
+              "Ubegrensede totalminutter",
+              "Opptil 10 timer / 5 GB per fil",
+              "Last opp 50 filer samtidig",
+              "Prioritert kø"
+            ]
+          },
+          "features": {
+            "title": "Alt i Gratis, pluss",
+            "items": [
+              "Tidsstempler på ordnivå",
+              "Avansert talergjenkjenning",
+              "Formaterte avsnitt & tegnsetting",
+              "Prioritert support"
+            ]
+          },
+          "cta": {
+            "text": "Ubegrensede minutter. Prioritert hastighet. Batch-opplasting.",
+            "button": "Bli Pro"
+          },
+          "badge": "Mest populær"
+        },
+        {
+          "name": "Pro Årlig",
+          "price": "$8.99",
+          "period": "måned",
+          "discount": "Årlig fakturering $107.88",
+          "limits": {
+            "title": "Samme som Pro Månedlig",
+            "items": [
+              "Ubegrensede totalminutter",
+              "Opptil 10 timer / 5 GB per fil",
+              "Last opp 50 filer samtidig",
+              "Prioritert kø"
+            ]
+          },
+          "features": {
+            "title": "Alt i Gratis, pluss",
+            "items": [
+              "Tidsstempler på ordnivå",
+              "Avansert talergjenkjenning",
+              "Formaterte avsnitt & tegnsetting",
+              "Prioritert support"
+            ]
+          },
+          "cta": {
+            "text": "Ubegrensede minutter. Prioritert hastighet. Batch-opplasting.",
+            "button": "Bli Pro"
+          },
+          "badge": "Best Verdi - "
+        }
+      ],
       "disclaimer": '"Ubegrenset" betyr ingen månedlig grense og ingen kunstig nedetid. Rettferdig bruk gjelder for misbruk av automatisering eller redistribusjon.'
     },
     ComparisonTable: {

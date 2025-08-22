@@ -629,7 +629,7 @@ let message = {
     password: "Salasana",
     resetPassword: "Nollaa salasana",
     logIn: "Kirjaudu sisään",
-    tryForFree: "Kokeile ilmaiseksi",
+    tryForFree: "Ilmainen kokeilu",
     notFund: "Ei löytynyt",
     couldntFind: "Emme löytäneet etsimääsi.",
     proAnnual: "Pro Vuosittain",
@@ -1032,29 +1032,29 @@ let message = {
     contactUsContent2: "."
   },
   HeadNavbar: {
-    Features: "28. Rajaton Tekstitys",
-    UnlimitedTranscription: "29. Massa-Lataus",
-    BulkUpload: "30. 96 % Tarkkuus",
-    Accuracy: "31. Hinnoittelu",
-    Pricing: "32. Käyttötapaukset",
-    UseCases: "33. Kaikki Käyttötapaukset",
-    AllUseCases: "34. Podcastaajat",
-    Podcasters: "35. Toimittajat",
-    Journalists: "36. Sisällöntuottajat",
-    ContentCreators: "37. Tutkijat",
-    Researchers: "38. Liiketiimit",
-    BusinessTeams: "39. Opettajat",
-    Educators: "40. Resurssit",
-    Resources: "41. YouTube MP4-muotoon",
-    YouTubetoMP4: "42. Kokeile Ilmaiseksi",
-    StartFreeTrial: "43. Maailman ensimmäinen todella rajaton tekoälytekstityspalvelu. Ei rajoja, ei ylärajoja, vain luovaa vapautta."
+    Features: "Rajaton Tekstitys",
+    UnlimitedTranscription: "Massa-Lataus",
+    BulkUpload: "96 % Tarkkuus",
+    Accuracy: "Hinnoittelu",
+    Pricing: "Käyttötapaukset",
+    UseCases: "Kaikki Käyttötapaukset",
+    AllUseCases: "Podcastaajat",
+    Podcasters: "Toimittajat",
+    Journalists: "Sisällöntuottajat",
+    ContentCreators: "Tutkijat",
+    Researchers: "Liiketiimit",
+    BusinessTeams: "Opettajat",
+    Educators: "Resurssit",
+    Resources: "YouTube MP4-muotoon",
+    YouTubetoMP4: "Ilmainen kokeilu",
+    StartFreeTrial: "Ilmainen kokeilu"
   },
   Footer: {
-    des: "44. Ominaisuudet",
-    Features: "45. Käyttötapaukset",
-    UseCases: "46. Yritys",
-    Company: "47. Rajaton Tekstitys",
-    featureMenus: ["48. Massa-Lataus", "49. 96 % Tarkkuus", "50. Kaikki Käyttötapaukset"],
+    des: "Ominaisuudet",
+    Features: "Käyttötapaukset",
+    UseCases: "Yritys",
+    Company: "Rajaton Tekstitys",
+    featureMenus: ["Massa-Lataus", "96 % Tarkkuus", "Kaikki Käyttötapaukset"],
     useCaseMenus: [
           "kaikki käyttöskenaariot",
           "Podcastaajat",
@@ -1077,7 +1077,7 @@ let message = {
       h1: "Lopeta rajojen maksaminen:",
       gradient: "Todella rajaton tekstitys tekoälyllä",
       subtitle: "Tekoälymme tekstittää videot ja muuntaa äänen tekstiksi, käsitellen 50 tiedostoa kerralla ilman kuukausirajoja. Tekstitys, joka skaalautuu kanssasi.",
-      FreeTrial: "Kokeile ilmaiseksi - Ei luottokorttia tarvita",
+      FreeTrial: "Ilmainen kokeilu - Ei luottokorttia tarvita",
       HowWorks: "Katso miten se toimii",
       Unlimited: "Rajaton tiedostojen lähetys",
       NoCap: "Ei kuukausittaisia minuuttirajoja",
@@ -1231,7 +1231,7 @@ let message = {
       heroTitleLine1: "Todella rajoittamaton",
       heroTitleLine2: "Älykäs tekstitys",
       heroSubtitle: "Kun Trint rajoittaa sinua 50 tuntiin ja Otter 10 tiedostoon kuukaudessa, me toimitaamme mitä lupaamme: rajaton tekstitys ilman piilorajoituksia.",
-      primaryCta: "Kokeile ilmaiseksi - Ei luottokorttia",
+      primaryCta: "Ilmainen kokeilu - Ei luottokorttia",
       secondaryCta: "Katso totuus",
       comparisonBadLabel: "Mitä muut tekevät",
       comparisonBadTitle: "Piilorajoituksia kaikkialla",
@@ -1605,93 +1605,93 @@ let message = {
       "highlighted_text": "Ei Piilotettuja Kattoja.",
       "description": "Valitse tarpeitasi vastaava suunnitelma. Päivitä tai alenna milloin tahansa. Ei sopimuksia, ei yllätyksiä.",
       "plans": [
-            {
-              "name": "Ilmainen",
-              "price": "$0",
-              "period": "kuukausi",
-              "discount": "Täydellinen palvelumme kokeilemiseen",
-              "limits": {
-                "title": "Päivittäiset Rajat",
-                "items": [
-                  "3 tiedostoa/päivä (≈90 min yhteensä/päivä)",
-                  "Enintään 30 min/tiedosto (≤250 Mt)",
-                  "Lataa 1 tiedosto kerrallaan",
-                  "Vakioprioriteettijono"
-                ]
-              },
-              "features": {
-                "title": "Ominaisuudet",
-                "items": [
-                  "100+ kieltä",
-                  "Puhujamerkinnät",
-                  "Käännös",
-                  "Kaikki vientiformaatit"
-                ]
-              },
-              "cta": {
-                "text": "Aloita ilmaiseksi. Ei luottokorttia.",
-                "button": "Aloita Ilmaiseksi"
-              }
-            },
-            {
-              "name": "Pro Kuukausi",
-              "price": "$17.99",
-              "period": "kuukausi",
-              "discount": "$9.99 ensimmäiseksi kuukaudeksi",
-              "limits": {
-                "title": "Ei Kuukausikatot",
-                "items": [
-                  "Rajoittamattomat minuutit yhteensä",
-                  "Enintään 10 tuntia / 5 Gt tiedostoa kohden",
-                  "Lataa 50 tiedostoa kerralla",
-                  "Prioriteettijono"
-                ]
-              },
-              "features": {
-                "title": "Kaikki Ilmaisessa, lisäksi",
-                "items": [
-                  "Sanatason aikaleimat",
-                  "Kehittynyt puhujien tunnistus",
-                  "Muotoillut kappaleet & välimerkit",
-                  "Prioriteettituki"
-                ]
-              },
-              "cta": {
-                "text": "Rajoittamattomat minuutit. Prioriteettinopeus. Joukkolataukset.",
-                "button": "Siirry Pro:ksi"
-              },
-              "badge": "Suosituin"
-            },
-            {
-              "name": "Pro Vuosi",
-              "price": "$8.99",
-              "period": "kuukausi",
-              "discount": "Laskutetaan vuosittain 107,88 $",
-              "limits": {
-                "title": "Sama kuin Pro Monthly",
-                "items": [
-                  "Rajattomat minuutit yhteensä",
-                  "Jopa 10 tuntia / 5 GB tiedostoa kohden",
-                  "Lataa 50 tiedostoa kerralla",
-                  "Etusijajono"
-                ]
-              },
-              "features": {
-                "title": "Kaikki mitä Free sisältää, plus",
-                "items": [
-                  "Sanatason aikaleimat",
-                  "Kehittynyt puhujan tunnistus",
-                  "Muotoillut kappaleet & välimerkit",
-                  "Etusijatuki"
-                ]
-              },
-              "cta": {
-                "text": "Rajattomat minuutit. Etusijanopeus. Joukkolataukset.",
-                "button": "Siirry Pro"
-              },
-              "badge": "Paras arvo - "
-            }
-          ],
+        {
+          "name": "Ilmainen",
+          "price": "$0",
+          "period": "kk",
+          "discount": "Erinomainen palvelumme kokeiluun",
+          "limits": {
+            "title": "Päivittäiset rajat",
+            "items": [
+              "3 tiedostoa/päivä (≈90 min yhteensä/päivä)",
+              "Enintään 30 min/tiedosto (≤250 MT)",
+              "Lataa 1 tiedosto kerrallaan",
+              "Tavallinen jonotus"
+            ]
+          },
+          "features": {
+            "title": "Ominaisuudet",
+            "items": [
+              "100+ kieltä",
+              "Puhujien tunnisteet",
+              "Käännös",
+              "Kaikki vientiformaatit"
+            ]
+          },
+          "cta": {
+            "text": "Aloita ilmaiseksi. Ei luottokorttia.",
+            "button": "Nykyinen suunnitelma"
+          }
+        },
+        {
+          "name": "Pro Kuukausittain",
+          "price": "$17.99",
+          "period": "kk",
+          "discount": "$9.99 ensimmäiseksi kuukaudeksi",
+          "limits": {
+            "title": "Ei kuukausirajaa",
+            "items": [
+              "Rajoittamattomat minuutit",
+              "Enintään 10 tuntia / 5 GT tiedostoa kohden",
+              "Lataa 50 tiedostoa kerralla",
+              "Etusijajono"
+            ]
+          },
+          "features": {
+            "title": "Kaikki Ilmaisessa, plus",
+            "items": [
+              "Sanatason aikaleimat",
+              "Kehittynyt puhujien tunnistus",
+              "Muotoillut kappaleet & välimerkit",
+              "Etusijatuki"
+            ]
+          },
+          "cta": {
+            "text": "Rajoittamattomat minuutit. Etusijanopeus. Massalataukset.",
+            "button": "Siirry Pro"
+          },
+          "badge": "Suosituin"
+        },
+        {
+          "name": "Pro Vuosittain",
+          "price": "$8.99",
+          "period": "kk",
+          "discount": "Laskutetaan vuosittain $107.88",
+          "limits": {
+            "title": "Sama kuin Pro-kuukausi",
+            "items": [
+              "Rajoittamattomat minuutit",
+              "Enintään 10 tuntia / 5 GT tiedostoa kohden",
+              "Lataa 50 tiedostoa kerralla",
+              "Etusijajono"
+            ]
+          },
+          "features": {
+            "title": "Kaikki Ilmaisessa, plus",
+            "items": [
+              "Sanatason aikaleimat",
+              "Kehittynyt puhujien tunnistus",
+              "Muotoillut kappaleet & välimerkit",
+              "Etusijatuki"
+            ]
+          },
+          "cta": {
+            "text": "Rajoittamattomat minuutit. Etusijanopeus. Massalataukset.",
+            "button": "Siirry Pro"
+          },
+          "badge": "Paras Arvo - "
+        }
+      ],
       "disclaimer": '\"Rajaton\" tarkoittaa ei kuukausirajoitusta eikä keinotekoista hidastamista. Kohtuullinen käyttö koskee väärinkäyttöä tai uudelleenjakelua.'
     },
     ComparisonTable: {
@@ -2594,7 +2594,7 @@ let message = {
       heroTitle1: "Transkriboi jokainen haastattelu.",
       heroTitle2: "Analysoi kaikki tietosi.",
       heroSubtitle: "Lopeta valitsemasta, mitkä kohderyhmät transkriboida. Käsittele kaikki laadulliset tietosi 96 % tarkkuudella ja moitteettomalla puhujien tunnistuksella – vaikka 20 osallistujaa puhuisivat päällekkäin.",
-      heroCtaPrimary: "Kokeile ilmaiseksi – ei luottokorttia",
+      heroCtaPrimary: "Ilmainen kokeilu – ei luottokorttia",
       heroCtaSecondary: "Katso miten se toimii",
       statsInterviewHours: "Haastattelutunnit",
       statsAccuracy: "Tarkkuus",
@@ -2770,7 +2770,7 @@ let message = {
       heroTitle1: "Tee Oppimisesta",
       heroTitle2: "Kaikille Saatavilla",
       heroSubtitle: "Liitä YouTube-linkit saadaksesi välittömät tekstitykset automaattisilla tekstityksillä. Muunna luennot, oppaat ja opetusvideot haettavaksi, kaikille opiskelijoille saatavilla olevaksi sisällöksi.",
-      heroCtaPrimary: "Kokeile Ilmaiseksi - Ei Luottokorttia",
+      heroCtaPrimary: "Ilmainen kokeilu - Ei Luottokorttia",
       heroCtaSecondary: "Katso Demo",
       stats1Number: "1-Napsautus",
       stats1Label: "YouTube-tekstitys",

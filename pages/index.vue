@@ -274,9 +274,7 @@
         <div class="testimonials-grid">
           <div class="testimonial-card">
             <span class="quote-icon">"</span>
-            <p class="testimonial-text">
-              "{{ $i("Testimonials.Mike.text") }}"
-            </p>
+            <p class="testimonial-text">"{{ $i("Testimonials.Mike.text") }}"</p>
             <div class="testimonial-author">
               <div class="author-avatar">
                 <el-avatar
@@ -1136,6 +1134,9 @@ details summary::after {
   font-size: 24px;
   color: var(--primary);
   transition: transform 0.3s;
+}
+[dir="rtl"] details summary::after {
+  float: left !important;
 }
 details summary:hover {
   color: var(--primary);

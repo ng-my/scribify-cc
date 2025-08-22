@@ -2145,7 +2145,7 @@ let message = {
       // Features Section
       feature1Label: "No Limits",
       feature1TitleHl: "Entire Study ",
-      feature1Title: "Process Your",
+      feature1Title: "Process Your ",
       feature1TitlePost: " in One Go",
       feature1Desc:
         'Upload all 200 hours of interviews tonight. Wake up to complete, searchable transcripts. No monthly caps, no per-file limits, no "fair use" BS.',

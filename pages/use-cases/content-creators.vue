@@ -566,14 +566,14 @@ const flexibleExportPoints = computed(() => {
 
 const platformNames = computed(() => {
   return [
-    $i("ContentCreators.platforms.platformNames.youtube"),
-    $i("ContentCreators.platforms.platformNames.facebook"),
-    $i("ContentCreators.platforms.platformNames.twitter"),
-    $i("ContentCreators.platforms.platformNames.dropbox"),
-    $i("ContentCreators.platforms.platformNames.googleDrive"),
-    $i("ContentCreators.platforms.platformNames.vimeo"),
-    $i("ContentCreators.platforms.platformNames.tiktok"),
-    $i("ContentCreators.platforms.platformNames.instagram")
+    'YouTube',
+    'Facebook',
+    'Twitter',
+    'Dropbox',
+    'Google Drive',
+    'Vimeo',
+    'TikTok',
+    'Instagram'
   ];
 });
 
@@ -1069,6 +1069,10 @@ details summary::after {
   font-size: 24px;
   color: var(--primary);
   transition: transform 0.3s;
+}
+
+[dir="rtl"] details summary::after {
+  float: left !important;
 }
 
 details[open] summary::after {
