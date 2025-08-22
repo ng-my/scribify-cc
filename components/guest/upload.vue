@@ -307,7 +307,7 @@ const handleJumpHome = () => {
   }
   setLoginData();
   setTimeout(() => {
-    $mitt.emit("goToEvent", { path: `/wt=${Date.now()}` });
+    $mitt.emit("goToEvent", { path: `/?wt=${Date.now()}` });
   }, 500);
 };
 const handleTranscribe = async () => {
