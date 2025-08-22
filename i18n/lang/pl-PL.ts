@@ -1610,93 +1610,93 @@ let message = {
       "highlighted_text": "Brak ukrytych limitów.",
       "description": "Wybierz plan dopasowany do Twoich potrzeb. Zmieniaj w każdej chwili. Brak umów, niespodzianek.",
       "plans": [
-            {
-              "name": "Darmowe",
-              "price": "$0",
-              "period": "miesiąc",
-              "discount": "Idealne do wypróbowania naszej usługi",
-              "limits": {
-                "title": "Dzienne limity",
-                "items": [
-                  "3 pliki/dzień (≈90 min łącznie/dzień)",
-                  "Do 30 min na plik (≤250 MB)",
-                  "Przesyłaj 1 plik naraz",
-                  "Standardowa kolejka priorytetowa"
-                ]
-              },
-              "features": {
-                "title": "Funkcje",
-                "items": [
-                  "100+ języków",
-                  "Etykiety mówców",
-                  "Tłumaczenie",
-                  "Wszystkie formaty eksportu"
-                ]
-              },
-              "cta": {
-                "text": "Zacznij za darmo. Bez karty kredytowej.",
-                "button": "Zacznij za darmo"
-              }
-            },
-            {
-              "name": "Pro Miesięczny",
-              "price": "$17.99",
-              "period": "miesiąc",
-              "discount": "$9.99 w pierwszym miesiącu",
-              "limits": {
-                "title": "Brak miesięcznego limitu",
-                "items": [
-                  "Nielimitowane minuty",
-                  "Do 10 godzin / 5 GB na plik",
-                  "Przesyłaj 50 plików naraz",
-                  "Kolejka priorytetowa"
-                ]
-              },
-              "features": {
-                "title": "Wszystko z wersji Free, plus",
-                "items": [
-                  "Znaczniki czasu na poziomie słów",
-                  "Zaawansowana identyfikacja mówców",
-                  "Formatowane akapity i interpunkcja",
-                  "Wsparcie priorytetowe"
-                ]
-              },
-              "cta": {
-                "text": "Nielimitowane minuty. Priorytetowa prędkość. Zbiorcze przesyłanie.",
-                "button": "Przejdź na Pro"
-              },
-              "badge": "Najpopularniejsze"
-            },
-            {
-              "name": "Pro Roczny",
-              "price": "$8.99",
-              "period": "miesiąc",
-              "discount": "Rozliczenie roczne 107,88 $",
-              "limits": {
-                "title": "Takie same jak Pro Monthly",
-                "items": [
-                  "Nielimitowane minuty łącznie",
-                  "Do 10 godzin / 5 GB na plik",
-                  "Prześlij 50 plików naraz",
-                  "Priorytetowa kolejka"
-                ]
-              },
-              "features": {
-                "title": "Wszystko z Free, plus",
-                "items": [
-                  "Znaczniki czasu na poziomie słów",
-                  "Zaawansowana identyfikacja mówców",
-                  "Formatowane akapity i interpunkcja",
-                  "Priorytetowe wsparcie"
-                ]
-              },
-              "cta": {
-                "text": "Nielimitowane minuty. Priorytetowa prędkość. Zbiorcze przesyłanie.",
-                "button": "Przejdź na Pro"
-              },
-              "badge": "Najlepsza wartość – "
-            }
-          ],
+        {
+          "name": "Darmowe",
+          "price": "$0",
+          "period": "miesiąc",
+          "discount": "Idealne do wypróbowania naszej usługi",
+          "limits": {
+            "title": "Dzienne limity",
+            "items": [
+              "3 pliki/dzień (≈90 min łącznie/dzień)",
+              "Do 30 min na plik (≤250 MB)",
+              "Prześlij 1 plik naraz",
+              "Standardowa kolejka priorytetowa"
+            ]
+          },
+          "features": {
+            "title": "Funkcje",
+            "items": [
+              "100+ języków",
+              "Etykiety mówców",
+              "Tłumaczenie",
+              "Wszystkie formaty eksportu"
+            ]
+          },
+          "cta": {
+            "text": "Zacznij za darmo. Bez karty kredytowej.",
+            "button": "Obecny plan"
+          }
+        },
+        {
+          "name": "Pro Miesięczna",
+          "price": "$17.99",
+          "period": "miesiąc",
+          "discount": "$9.99 przez pierwszy miesiąc",
+          "limits": {
+            "title": "Brak miesięcznego limitu",
+            "items": [
+              "Nielimitowane minuty łącznie",
+              "Do 10 godzin / 5 GB na plik",
+              "Prześlij 50 plików naraz",
+              "Priorytetowa kolejka"
+            ]
+          },
+          "features": {
+            "title": "Wszystko z Darmowego, plus",
+            "items": [
+              "Znaczniki czasu na poziomie słów",
+              "Zaawansowana identyfikacja mówców",
+              "Formatowane akapity i interpunkcja",
+              "Priorytetowe wsparcie"
+            ]
+          },
+          "cta": {
+            "text": "Nielimitowane minuty. Priorytetowa prędkość. Zbiorcze przesyłanie.",
+            "button": "Przejdź na Pro"
+          },
+          "badge": "Najpopularniejsze"
+        },
+        {
+          "name": "Pro Roczna",
+          "price": "$8.99",
+          "period": "miesiąc",
+          "discount": "Płatność roczna $107.88",
+          "limits": {
+            "title": "To samo co Pro Miesięczny",
+            "items": [
+              "Nielimitowane minuty łącznie",
+              "Do 10 godzin / 5 GB na plik",
+              "Prześlij 50 plików naraz",
+              "Priorytetowa kolejka"
+            ]
+          },
+          "features": {
+            "title": "Wszystko z Darmowego, plus",
+            "items": [
+              "Znaczniki czasu na poziomie słów",
+              "Zaawansowana identyfikacja mówców",
+              "Formatowane akapity i interpunkcja",
+              "Priorytetowe wsparcie"
+            ]
+          },
+          "cta": {
+            "text": "Nielimitowane minuty. Priorytetowa prędkość. Zbiorcze przesyłanie.",
+            "button": "Przejdź na Pro"
+          },
+          "badge": "Najlepsza Wartość - "
+        }
+      ],
       "disclaimer": "„Nielimitowane” oznacza brak miesięcznego limitu i sztucznego spowalniania. Zasady uczciwego użytkowania dotyczą nadużywania automatyzacji lub redystrybucji."
     },
     ComparisonTable: {

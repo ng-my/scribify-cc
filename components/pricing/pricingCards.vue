@@ -13,7 +13,7 @@
           </div>
         </template>
         <template v-else-if="i == 2">
-          <div class="value-badge">
+          <div :id="`valueBadge${i}`" class="value-badge">
             {{ $i("plans[" + i + "].badge") }}<span>Save 50%</span>
           </div>
         </template>
@@ -100,6 +100,16 @@ const { $mitt } = useNuxtApp();
 const handleClick = (type: Number) => {
   $mitt.emit("goToEvent", { path: "/user/login" });
 };
+
+onMounted(() => {
+  if (process.client) {
+    const valueBadge = document.getElementById("valueBadge2");
+    const height = valueBadge?.clientHeight;
+    if (height) {
+      valueBadge?.style.setProperty("top", -(height / 2) + "px");
+    }
+  }
+})
 </script>
 
 <style scoped lang="scss">
@@ -129,7 +139,7 @@ const handleClick = (type: Number) => {
 .pricing-card {
   background: white;
   border-radius: 20px;
-  padding: 40px;
+  padding: 38px;
   border: 1px solid var(--line-color);
   // box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
   position: relative;

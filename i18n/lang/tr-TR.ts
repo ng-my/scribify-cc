@@ -1605,93 +1605,93 @@ let message = {
       "highlighted_text": "Gizli Sınır Yok.",
       "description": "İhtiyaçlarınıza uygun planı seçin. Dilediğiniz zaman yükseltin veya düşürün. Sözleşme yok, sürpriz yok.",
       "plans": [
-            {
-              "name": "Ücretsiz",
-              "price": "$0",
-              "period": "ay",
-              "discount": "Hizmetimizi denemek için ideal",
-              "limits": {
-                "title": "Günlük Limitler",
-                "items": [
-                  "Günde 3 dosya (≈toplam 90 dk/gün)",
-                  "Dosya başına en fazla 30 dk (≤250 MB)",
-                  "Aynı anda 1 dosya yükleme",
-                  "Standart öncelik sırası"
-                ]
-              },
-              "features": {
-                "title": "Özellikler",
-                "items": [
-                  "100+ dil",
-                  "Konuşmacı etiketleri",
-                  "Çeviri",
-                  "Tüm dışa aktarma formatları"
-                ]
-              },
-              "cta": {
-                "text": "Ücretsiz başlayın. Kredi kartı gerekmez.",
-                "button": "Ücretsiz Başla"
-              }
-            },
-            {
-              "name": "Pro Aylık",
-              "price": "$17.99",
-              "period": "ay",
-              "discount": "İlk ay için $9.99",
-              "limits": {
-                "title": "Aylık Sınır Yok",
-                "items": [
-                  "Sınırsız toplam dakika",
-                  "Dosya başına en fazla 10 saat / 5 GB",
-                  "Aynı anda 50 dosya yükleme",
-                  "Öncelikli sıra"
-                ]
-              },
-              "features": {
-                "title": "Ücretsizdeki her şey, artı",
-                "items": [
-                  "Kelime düzeyinde zaman damgaları",
-                  "Gelişmiş konuşmacı tanımlama",
-                  "Biçimlendirilmiş paragraflar & noktalama",
-                  "Öncelikli destek"
-                ]
-              },
-              "cta": {
-                "text": "Sınırsız dakika. Öncelikli hız. Toplu yükleme.",
-                "button": "Pro'ya Geç"
-              },
-              "badge": "En Popüler"
-            },
-            {
-              "name": "Pro Yıllık",
-              "price": "$8.99",
-              "period": "ay",
-              "discount": "Yıllık $107.88",
-              "limits": {
-                "title": "Pro Monthly ile aynı",
-                "items": [
-                  "Sınırsız toplam dakika",
-                  "Dosya başına 10 saate kadar / 5 GB",
-                  "Aynı anda 50 dosya yükle",
-                  "Öncelikli sıra"
-                ]
-              },
-              "features": {
-                "title": "Ücretsiz planın tüm özellikleri, artı",
-                "items": [
-                  "Kelime düzeyinde zaman damgaları",
-                  "Gelişmiş konuşmacı tanımlama",
-                  "Biçimlendirilmiş paragraflar & noktalama",
-                  "Öncelikli destek"
-                ]
-              },
-              "cta": {
-                "text": "Sınırsız dakika. Öncelikli hız. Toplu yükleme.",
-                "button": "Pro'ya Geç"
-              },
-              "badge": "En İyi Değer - "
-            }
-          ],
+        {
+          "name": "Ücretsiz",
+          "price": "$0",
+          "period": "ay",
+          "discount": "Hizmetimizi denemek için ideal",
+          "limits": {
+            "title": "Günlük Limitler",
+            "items": [
+              "Günde 3 dosya (≈günde toplam 90 dk)",
+              "Dosya başına en fazla 30 dk (≤250 MB)",
+              "Aynı anda 1 dosya yükle",
+              "Standart öncelik sırası"
+            ]
+          },
+          "features": {
+            "title": "Özellikler",
+            "items": [
+              "100+ dil",
+              "Konuşmacı etiketleri",
+              "Çeviri",
+              "Tüm dışa aktarma formatları"
+            ]
+          },
+          "cta": {
+            "text": "Ücretsiz başla. Kredi kartı gerekmez.",
+            "button": "Mevcut Plan"
+          }
+        },
+        {
+          "name": "Pro Aylık",
+          "price": "$17.99",
+          "period": "ay",
+          "discount": "İlk ay için $9.99",
+          "limits": {
+            "title": "Aylık Sınır Yok",
+            "items": [
+              "Sınırsız toplam dakika",
+              "Dosya başına en fazla 10 saat / 5 GB",
+              "Aynı anda 50 dosya yükle",
+              "Öncelik sırası"
+            ]
+          },
+          "features": {
+            "title": "Ücretsiz'deki her şey, artı",
+            "items": [
+              "Kelime düzeyinde zaman damgaları",
+              "Gelişmiş konuşmacı tanımlama",
+              "Biçimlendirilmiş paragraflar & noktalama",
+              "Öncelikli destek"
+            ]
+          },
+          "cta": {
+            "text": "Sınırsız dakika. Öncelikli hız. Toplu yükleme.",
+            "button": "Pro'ya Geç"
+          },
+          "badge": "En Popüler"
+        },
+        {
+          "name": "Pro Yıllık",
+          "price": "$8.99",
+          "period": "ay",
+          "discount": "Yıllık ödeme $107.88",
+          "limits": {
+            "title": "Aylık Pro ile aynı",
+            "items": [
+              "Sınırsız toplam dakika",
+              "Dosya başına en fazla 10 saat / 5 GB",
+              "Aynı anda 50 dosya yükle",
+              "Öncelik sırası"
+            ]
+          },
+          "features": {
+            "title": "Ücretsiz'deki her şey, artı",
+            "items": [
+              "Kelime düzeyinde zaman damgaları",
+              "Gelişmiş konuşmacı tanımlama",
+              "Biçimlendirilmiş paragraflar & noktalama",
+              "Öncelikli destek"
+            ]
+          },
+          "cta": {
+            "text": "Sınırsız dakika. Öncelikli hız. Toplu yükleme.",
+            "button": "Pro'ya Geç"
+          },
+          "badge": "En İyi Değer - "
+        }
+      ],
       "disclaimer": '\"Sınırsız\" aylık sınır ve yapay yavaşlatma olmadığı anlamına gelir. Adil kullanım, kötüye kullanım veya yeniden dağıtım için geçerlidir.'
     },
     ComparisonTable: {

@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         },
         {
           name: 'format-detection',
-          content: 'telephone=no'
+          content: 'telephone=no, email=no, address=no'
         }
       ],
       link: [{ rel: "stylesheet", href: "/assets/iconfont/iconfont.css" }],

@@ -1612,93 +1612,93 @@ let message = {
       "highlighted_text": "Sem Limites Ocultos.",
       "description": "Escolha o plano que atende suas necessidades. Atualize ou reduza quando quiser. Sem contratos, sem surpresas.",
       "plans": [
-            {
-              "name": "Grátis",
-              "price": "$0",
-              "period": "mês",
-              "discount": "Perfeito para experimentar nosso serviço",
-              "limits": {
-                "title": "Limites Diários",
-                "items": [
-                  "3 arquivos/dia (≈90 min total/dia)",
-                  "Até 30 min por arquivo (≤250 MB)",
-                  "Envie 1 arquivo por vez",
-                  "Fila de prioridade padrão"
-                ]
-              },
-              "features": {
-                "title": "Recursos",
-                "items": [
-                  "100+ idiomas",
-                  "Identificação de falantes",
-                  "Tradução",
-                  "Todos os formatos de exportação"
-                ]
-              },
-              "cta": {
-                "text": "Comece grátis. Sem cartão de crédito.",
-                "button": "Começar Grátis"
-              }
-            },
-            {
-              "name": "Pro Mensal",
-              "price": "$17.99",
-              "period": "mês",
-              "discount": "$9.99 no primeiro mês",
-              "limits": {
-                "title": "Sem Limite Mensal",
-                "items": [
-                  "Minutos ilimitados no total",
-                  "Até 10 horas / 5 GB por arquivo",
-                  "Envie 50 arquivos de uma vez",
-                  "Fila prioritária"
-                ]
-              },
-              "features": {
-                "title": "Tudo do Grátis, mais",
-                "items": [
-                  "Timestamps por palavra",
-                  "Identificação avançada de falantes",
-                  "Parágrafos formatados & pontuação",
-                  "Suporte prioritário"
-                ]
-              },
-              "cta": {
-                "text": "Minutos ilimitados. Velocidade prioritária. Envios em lote.",
-                "button": "Virar Pro"
-              },
-              "badge": "Mais Popular"
-            },
-            {
-              "name": "Pro Anual",
-              "price": "$8.99",
-              "period": "mês",
-              "discount": "Cobrado anualmente $107.88",
-              "limits": {
-                "title": "Igual ao Pro Mensal",
-                "items": [
-                  "Minutos totais ilimitados",
-                  "Até 10 horas / 5 GB por arquivo",
-                  "Envie 50 arquivos de uma vez",
-                  "Fila prioritária"
-                ]
-              },
-              "features": {
-                "title": "Tudo do Free, mais",
-                "items": [
-                  "Carimbos de tempo por palavra",
-                  "Identificação avançada de falantes",
-                  "Parágrafos formatados & pontuação",
-                  "Suporte prioritário"
-                ]
-              },
-              "cta": {
-                "text": "Minutos ilimitados. Velocidade prioritária. Envios em lote.",
-                "button": "Assine Pro"
-              },
-              "badge": "Melhor Custo-Benefício - "
-            }
-          ],
+        {
+          "name": "Grátis",
+          "price": "$0",
+          "period": "mês",
+          "discount": "Perfeito para experimentar nosso serviço",
+          "limits": {
+            "title": "Limites Diários",
+            "items": [
+              "3 arquivos/dia (≈90 min total/dia)",
+              "Até 30 min por arquivo (≤250 MB)",
+              "Enviar 1 arquivo por vez",
+              "Fila de prioridade padrão"
+            ]
+          },
+          "features": {
+            "title": "Recursos",
+            "items": [
+              "100+ idiomas",
+              "Identificação de falantes",
+              "Tradução",
+              "Todos os formatos de exportação"
+            ]
+          },
+          "cta": {
+            "text": "Comece grátis. Sem cartão de crédito.",
+            "button": "Plano Atual"
+          }
+        },
+        {
+          "name": "Pro Mensal",
+          "price": "$17.99",
+          "period": "mês",
+          "discount": "$9.99 no primeiro mês",
+          "limits": {
+            "title": "Sem limite mensal",
+            "items": [
+              "Minutos ilimitados",
+              "Até 10 horas / 5 GB por arquivo",
+              "Envie 50 arquivos de uma vez",
+              "Fila prioritária"
+            ]
+          },
+          "features": {
+            "title": "Tudo do Grátis, mais",
+            "items": [
+              "Timestamps por palavra",
+              "Identificação avançada de falantes",
+              "Parágrafos e pontuação formatados",
+              "Suporte prioritário"
+            ]
+          },
+          "cta": {
+            "text": "Minutos ilimitados. Prioridade na velocidade. Envios em lote.",
+            "button": "Assinar Pro"
+          },
+          "badge": "Mais Popular"
+        },
+        {
+          "name": "Pro Anual",
+          "price": "$8,99",
+          "period": "mês",
+          "discount": "Cobrança anual $107.88",
+          "limits": {
+            "title": "Igual ao Pro Mensal",
+            "items": [
+              "Minutos ilimitados",
+              "Até 10 horas / 5 GB por arquivo",
+              "Envie 50 arquivos de uma vez",
+              "Fila prioritária"
+            ]
+          },
+          "features": {
+            "title": "Tudo do Grátis, mais",
+            "items": [
+              "Timestamps por palavra",
+              "Identificação avançada de falantes",
+              "Parágrafos e pontuação formatados",
+              "Suporte prioritário"
+            ]
+          },
+          "cta": {
+            "text": "Minutos ilimitados. Prioridade na velocidade. Envios em lote.",
+            "button": "Assinar Pro"
+          },
+          "badge": "Melhor Valor - "
+        }
+      ],
       "disclaimer": '\"Ilimitado\" significa sem limite mensal e sem lentidão artificial. Uso justo aplica-se a automação abusiva ou redistribuição.'
     },
     ComparisonTable: {

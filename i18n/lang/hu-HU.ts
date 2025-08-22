@@ -1607,93 +1607,93 @@ let message = {
       "highlighted_text": "Nincsenek rejtett korlátok.",
       "description": "Válassza ki az Önnek megfelelő csomagot. Bármikor frissíthet vagy lemondhat. Nincsenek szerződések, nincsenek meglepetések.",
       "plans": [
-            {
-              "name": "Ingyenes",
-              "price": "$0",
-              "period": "hónap",
-              "discount": "Ideális a szolgáltatás kipróbálásához",
-              "limits": {
-                "title": "Napi korlátok",
-                "items": [
-                  "3 fájl/nap (≈90 perc összesen/nap)",
-                  "Legfeljebb 30 perc/fájl (≤250 MB)",
-                  "Egyszerre 1 fájl feltöltése",
-                  "Szabványos prioritási sorrend"
-                ]
-              },
-              "features": {
-                "title": "Funkciók",
-                "items": [
-                  "100+ nyelv",
-                  "Beszélő címkék",
-                  "Fordítás",
-                  "Minden exportformátum"
-                ]
-              },
-              "cta": {
-                "text": "Kezdje ingyen. Nincs bankkártya szükséges.",
-                "button": "Ingyenes kezdés"
-              }
-            },
-            {
-              "name": "Pro havi",
-              "price": "$17.99",
-              "period": "hónap",
-              "discount": "$9.99 az első hónapra",
-              "limits": {
-                "title": "Nincs havi korlát",
-                "items": [
-                  "Korlátlan összes perc",
-                  "Legfeljebb 10 óra / 5 GB fájlonként",
-                  "Egyszerre 50 fájl feltöltése",
-                  "Prioritási sorrend"
-                ]
-              },
-              "features": {
-                "title": "Minden, ami az Ingyenesben van, plusz",
-                "items": [
-                  "Szószintű időbélyegek",
-                  "Fejlett beszélőazonosítás",
-                  "Formázott bekezdések és írásjelek",
-                  "Prioritásos támogatás"
-                ]
-              },
-              "cta": {
-                "text": "Korlátlan percek. Prioritásos sebesség. Csoportos feltöltések.",
-                "button": "Proba választás"
-              },
-              "badge": "Legnépszerűbb"
-            },
-            {
-              "name": "Pro éves",
-              "price": "$8.99",
-              "period": "hónap",
-              "discount": "Éves számlázás $107.88",
-              "limits": {
-                "title": "Ugyanaz, mint a Pro Monthly",
-                "items": [
-                  "Korlátlan összes perc",
-                  "Legfeljebb 10 óra / 5 GB fájlonként",
-                  "50 fájl feltöltése egyszerre",
-                  "Prioritási sor"
-                ]
-              },
-              "features": {
-                "title": "Minden, ami a Free-ban van, plusz",
-                "items": [
-                  "Szószintű időbélyegek",
-                  "Fejlett beszélőazonosítás",
-                  "Formázott bekezdések és írásjelek",
-                  "Prioritásos támogatás"
-                ]
-              },
-              "cta": {
-                "text": "Korlátlan percek. Prioritásos sebesség. Csomagos feltöltés.",
-                "button": "Go Pro"
-              },
-              "badge": "Legjobb érték - "
-            }
-          ],
+        {
+          "name": "Ingyenes",
+          "price": "$0",
+          "period": "hó",
+          "discount": "Ideális a szolgáltatásunk kipróbálásához",
+          "limits": {
+            "title": "Napi korlátok",
+            "items": [
+              "3 fájl/nap (≈90 perc összesen/nap)",
+              "Legfeljebb 30 perc/fájl (≤250 MB)",
+              "Egyszerre 1 fájl feltöltése",
+              "Szabványos prioritási sorrend"
+            ]
+          },
+          "features": {
+            "title": "Funkciók",
+            "items": [
+              "100+ nyelv",
+              "Beszélő címkék",
+              "Fordítás",
+              "Minden exportformátum"
+            ]
+          },
+          "cta": {
+            "text": "Kezdés ingyen. Bankkártya nélkül.",
+            "button": "Jelenlegi csomag"
+          }
+        },
+        {
+          "name": "Pro Havi",
+          "price": "$17.99",
+          "period": "hó",
+          "discount": "$9.99 az első hónapban",
+          "limits": {
+            "title": "Nincs havi limit",
+            "items": [
+              "Korlátlan összes perc",
+              "Legfeljebb 10 óra / 5 GB fájlonként",
+              "Egyszerre 50 fájl feltöltése",
+              "Prioritási sorrend"
+            ]
+          },
+          "features": {
+            "title": "Minden, ami az Ingyenesben, plusz",
+            "items": [
+              "Szószintű időbélyegek",
+              "Fejlett beszélőazonosítás",
+              "Formázott bekezdések & központozás",
+              "Prioritásos támogatás"
+            ]
+          },
+          "cta": {
+            "text": "Korlátlan percek. Prioritásos sebesség. Csomagos feltöltés.",
+            "button": "Proba"
+          },
+          "badge": "Legnépszerűbb"
+        },
+        {
+          "name": "Pro Éves",
+          "price": "$8.99",
+          "period": "hó",
+          "discount": "Éves számlázás $107.88",
+          "limits": {
+            "title": "Ugyanaz, mint a Pro havi",
+            "items": [
+              "Korlátlan összes perc",
+              "Legfeljebb 10 óra / 5 GB fájlonként",
+              "Egyszerre 50 fájl feltöltése",
+              "Prioritási sorrend"
+            ]
+          },
+          "features": {
+            "title": "Minden, ami az Ingyenesben, plusz",
+            "items": [
+              "Szószintű időbélyegek",
+              "Fejlett beszélőazonosítás",
+              "Formázott bekezdések & központozás",
+              "Prioritásos támogatás"
+            ]
+          },
+          "cta": {
+            "text": "Korlátlan percek. Prioritásos sebesség. Csomagos feltöltés.",
+            "button": "Proba"
+          },
+          "badge": "Legjobb Érték - "
+        }
+      ],
       "disclaimer": 'A "korlátlan" azt jelenti, hogy nincs havi limit és mesterséges lassítás. A tisztességes felhasználás vonatkozik az visszaélő automatizálásra vagy terjesztésre.'
     },
     ComparisonTable: {

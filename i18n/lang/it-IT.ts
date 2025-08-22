@@ -1610,93 +1610,93 @@ let message = {
       "highlighted_text": "Nessun limite nascosto.",
       "description": "Scegli il piano adatto alle tue esigenze. Aggiorna o riduci quando vuoi. Niente contratti, nessuna sorpresa.",
       "plans": [
-            {
-              "name": "Gratis",
-              "price": "$0",
-              "period": "mese",
-              "discount": "Perfetto per provare il nostro servizio",
-              "limits": {
-                "title": "Limiti giornalieri",
-                "items": [
-                  "3 file/giorno (≈90 min totali/giorno)",
-                  "Fino a 30 min per file (≤250 MB)",
-                  "Carica 1 file alla volta",
-                  "Coda prioritaria standard"
-                ]
-              },
-              "features": {
-                "title": "Funzionalità",
-                "items": [
-                  "Oltre 100 lingue",
-                  "Etichette parlante",
-                  "Traduzione",
-                  "Tutti i formati di esportazione"
-                ]
-              },
-              "cta": {
-                "text": "Inizia gratis. Nessuna carta di credito.",
-                "button": "Inizia Gratis"
-              }
-            },
-            {
-              "name": "Pro Mensile",
-              "price": "$17.99",
-              "period": "mese",
-              "discount": "$9.99 per il primo mese",
-              "limits": {
-                "title": "Nessun limite mensile",
-                "items": [
-                  "Minuti totali illimitati",
-                  "Fino a 10 ore / 5 GB per file",
-                  "Carica 50 file contemporaneamente",
-                  "Coda prioritaria"
-                ]
-              },
-              "features": {
-                "title": "Tutto incluso in Gratis, più",
-                "items": [
-                  "Timestamp a livello di parola",
-                  "Identificazione avanzata del parlante",
-                  "Paragrafi formattati e punteggiatura",
-                  "Supporto prioritario"
-                ]
-              },
-              "cta": {
-                "text": "Minuti illimitati. Velocità prioritaria. Caricamenti multipli.",
-                "button": "Diventa Pro"
-              },
-              "badge": "Più Popolare"
-            },
-            {
-              "name": "Pro Annuale",
-              "price": "$8.99",
-              "period": "mese",
-              "discount": "Fatturazione annuale $107.88",
-              "limits": {
-                "title": "Come Pro Mensile",
-                "items": [
-                  "Minuti totali illimitati",
-                  "Fino a 10 ore / 5 GB per file",
-                  "Carica 50 file contemporaneamente",
-                  "Coda prioritaria"
-                ]
-              },
-              "features": {
-                "title": "Tutto di Free, più",
-                "items": [
-                  "Timestamp a livello di parola",
-                  "Identificazione avanzata del parlante",
-                  "Paragrafi formattati & punteggiatura",
-                  "Supporto prioritario"
-                ]
-              },
-              "cta": {
-                "text": "Minuti illimitati. Velocità prioritaria. Caricamenti multipli.",
-                "button": "Scegli Pro"
-              },
-              "badge": "Miglior rapporto qualità-prezzo - "
-            }
-          ],
+        {
+          "name": "Gratis",
+          "price": "$0",
+          "period": "mese",
+          "discount": "Perfetto per provare il nostro servizio",
+          "limits": {
+            "title": "Limiti giornalieri",
+            "items": [
+              "3 file/giorno (≈90 min totali/giorno)",
+              "Fino a 30 min per file (≤250 MB)",
+              "Carica 1 file alla volta",
+              "Coda standard"
+            ]
+          },
+          "features": {
+            "title": "Funzionalità",
+            "items": [
+              "100+ lingue",
+              "Etichette parlanti",
+              "Traduzione",
+              "Tutti i formati di esportazione"
+            ]
+          },
+          "cta": {
+            "text": "Inizia gratis. Nessuna carta di credito.",
+            "button": "Piano attuale"
+          }
+        },
+        {
+          "name": "Pro Mensile",
+          "price": "$17,99",
+          "period": "mese",
+          "discount": "$9,99 per il primo mese",
+          "limits": {
+            "title": "Nessun limite mensile",
+            "items": [
+              "Minuti totali illimitati",
+              "Fino a 10 ore / 5 GB per file",
+              "Carica 50 file contemporaneamente",
+              "Coda prioritaria"
+            ]
+          },
+          "features": {
+            "title": "Tutto incluso in Gratis, più",
+            "items": [
+              "Timestamp a livello di parola",
+              "Identificazione avanzata del parlante",
+              "Paragrafi formattati e punteggiatura",
+              "Supporto prioritario"
+            ]
+          },
+          "cta": {
+            "text": "Minuti illimitati. Velocità prioritaria. Caricamenti multipli.",
+            "button": "Passa a Pro"
+          },
+          "badge": "Più popolare"
+        },
+        {
+          "name": "Pro Annuale",
+          "price": "$8.99",
+          "period": "mese",
+          "discount": "Fatturazione annuale $107,88",
+          "limits": {
+            "title": "Uguale a Pro Mensile",
+            "items": [
+              "Minuti totali illimitati",
+              "Fino a 10 ore / 5 GB per file",
+              "Carica 50 file contemporaneamente",
+              "Coda prioritaria"
+            ]
+          },
+          "features": {
+            "title": "Tutto incluso in Gratis, più",
+            "items": [
+              "Timestamp a livello di parola",
+              "Identificazione avanzata del parlante",
+              "Paragrafi formattati e punteggiatura",
+              "Supporto prioritario"
+            ]
+          },
+          "cta": {
+            "text": "Minuti illimitati. Velocità prioritaria. Caricamenti multipli.",
+            "button": "Passa a Pro"
+          },
+          "badge": "Miglior Rapporto Qualità-Prezzo - "
+        }
+      ],
       "disclaimer": '\"Illimitato\" significa nessun limite mensile e nessun rallentamento artificiale. Si applica il fair-use per automazione abusiva o ridistribuzione.'
     },
     ComparisonTable: {

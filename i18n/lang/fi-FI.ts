@@ -1605,93 +1605,93 @@ let message = {
       "highlighted_text": "Ei Piilotettuja Kattoja.",
       "description": "Valitse tarpeitasi vastaava suunnitelma. Päivitä tai alenna milloin tahansa. Ei sopimuksia, ei yllätyksiä.",
       "plans": [
-            {
-              "name": "Ilmainen",
-              "price": "$0",
-              "period": "kuukausi",
-              "discount": "Täydellinen palvelumme kokeilemiseen",
-              "limits": {
-                "title": "Päivittäiset Rajat",
-                "items": [
-                  "3 tiedostoa/päivä (≈90 min yhteensä/päivä)",
-                  "Enintään 30 min/tiedosto (≤250 Mt)",
-                  "Lataa 1 tiedosto kerrallaan",
-                  "Vakioprioriteettijono"
-                ]
-              },
-              "features": {
-                "title": "Ominaisuudet",
-                "items": [
-                  "100+ kieltä",
-                  "Puhujamerkinnät",
-                  "Käännös",
-                  "Kaikki vientiformaatit"
-                ]
-              },
-              "cta": {
-                "text": "Aloita ilmaiseksi. Ei luottokorttia.",
-                "button": "Aloita Ilmaiseksi"
-              }
-            },
-            {
-              "name": "Pro Kuukausi",
-              "price": "$17.99",
-              "period": "kuukausi",
-              "discount": "$9.99 ensimmäiseksi kuukaudeksi",
-              "limits": {
-                "title": "Ei Kuukausikatot",
-                "items": [
-                  "Rajoittamattomat minuutit yhteensä",
-                  "Enintään 10 tuntia / 5 Gt tiedostoa kohden",
-                  "Lataa 50 tiedostoa kerralla",
-                  "Prioriteettijono"
-                ]
-              },
-              "features": {
-                "title": "Kaikki Ilmaisessa, lisäksi",
-                "items": [
-                  "Sanatason aikaleimat",
-                  "Kehittynyt puhujien tunnistus",
-                  "Muotoillut kappaleet & välimerkit",
-                  "Prioriteettituki"
-                ]
-              },
-              "cta": {
-                "text": "Rajoittamattomat minuutit. Prioriteettinopeus. Joukkolataukset.",
-                "button": "Siirry Pro:ksi"
-              },
-              "badge": "Suosituin"
-            },
-            {
-              "name": "Pro Vuosi",
-              "price": "$8.99",
-              "period": "kuukausi",
-              "discount": "Laskutetaan vuosittain 107,88 $",
-              "limits": {
-                "title": "Sama kuin Pro Monthly",
-                "items": [
-                  "Rajattomat minuutit yhteensä",
-                  "Jopa 10 tuntia / 5 GB tiedostoa kohden",
-                  "Lataa 50 tiedostoa kerralla",
-                  "Etusijajono"
-                ]
-              },
-              "features": {
-                "title": "Kaikki mitä Free sisältää, plus",
-                "items": [
-                  "Sanatason aikaleimat",
-                  "Kehittynyt puhujan tunnistus",
-                  "Muotoillut kappaleet & välimerkit",
-                  "Etusijatuki"
-                ]
-              },
-              "cta": {
-                "text": "Rajattomat minuutit. Etusijanopeus. Joukkolataukset.",
-                "button": "Siirry Pro"
-              },
-              "badge": "Paras arvo - "
-            }
-          ],
+        {
+          "name": "Ilmainen",
+          "price": "$0",
+          "period": "kk",
+          "discount": "Erinomainen palvelumme kokeiluun",
+          "limits": {
+            "title": "Päivittäiset rajat",
+            "items": [
+              "3 tiedostoa/päivä (≈90 min yhteensä/päivä)",
+              "Enintään 30 min/tiedosto (≤250 MT)",
+              "Lataa 1 tiedosto kerrallaan",
+              "Tavallinen jonotus"
+            ]
+          },
+          "features": {
+            "title": "Ominaisuudet",
+            "items": [
+              "100+ kieltä",
+              "Puhujien tunnisteet",
+              "Käännös",
+              "Kaikki vientiformaatit"
+            ]
+          },
+          "cta": {
+            "text": "Aloita ilmaiseksi. Ei luottokorttia.",
+            "button": "Nykyinen suunnitelma"
+          }
+        },
+        {
+          "name": "Pro Kuukausittain",
+          "price": "$17.99",
+          "period": "kk",
+          "discount": "$9.99 ensimmäiseksi kuukaudeksi",
+          "limits": {
+            "title": "Ei kuukausirajaa",
+            "items": [
+              "Rajoittamattomat minuutit",
+              "Enintään 10 tuntia / 5 GT tiedostoa kohden",
+              "Lataa 50 tiedostoa kerralla",
+              "Etusijajono"
+            ]
+          },
+          "features": {
+            "title": "Kaikki Ilmaisessa, plus",
+            "items": [
+              "Sanatason aikaleimat",
+              "Kehittynyt puhujien tunnistus",
+              "Muotoillut kappaleet & välimerkit",
+              "Etusijatuki"
+            ]
+          },
+          "cta": {
+            "text": "Rajoittamattomat minuutit. Etusijanopeus. Massalataukset.",
+            "button": "Siirry Pro"
+          },
+          "badge": "Suosituin"
+        },
+        {
+          "name": "Pro Vuosittain",
+          "price": "$8.99",
+          "period": "kk",
+          "discount": "Laskutetaan vuosittain $107.88",
+          "limits": {
+            "title": "Sama kuin Pro-kuukausi",
+            "items": [
+              "Rajoittamattomat minuutit",
+              "Enintään 10 tuntia / 5 GT tiedostoa kohden",
+              "Lataa 50 tiedostoa kerralla",
+              "Etusijajono"
+            ]
+          },
+          "features": {
+            "title": "Kaikki Ilmaisessa, plus",
+            "items": [
+              "Sanatason aikaleimat",
+              "Kehittynyt puhujien tunnistus",
+              "Muotoillut kappaleet & välimerkit",
+              "Etusijatuki"
+            ]
+          },
+          "cta": {
+            "text": "Rajoittamattomat minuutit. Etusijanopeus. Massalataukset.",
+            "button": "Siirry Pro"
+          },
+          "badge": "Paras Arvo - "
+        }
+      ],
       "disclaimer": '\"Rajaton\" tarkoittaa ei kuukausirajoitusta eikä keinotekoista hidastamista. Kohtuullinen käyttö koskee väärinkäyttöä tai uudelleenjakelua.'
     },
     ComparisonTable: {
