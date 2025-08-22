@@ -5,10 +5,10 @@
     </div>
     <div class="mb-4 flex w-full justify-between">
       <span class="text-lg font-medium">{{
-          tableData.length
-            ? t("FileUploadAndRecording.upload.guest.file")
-            : t("FileUploadAndRecording.upload.guest.audio")
-        }}</span>
+        tableData.length
+          ? t("FileUploadAndRecording.upload.guest.file")
+          : t("FileUploadAndRecording.upload.guest.audio")
+      }}</span>
       <div class="flex" v-show="!tableData.length">
         <div @click="openRecord" class="img-button cursor-pointer">
           <img
@@ -105,6 +105,7 @@
         :popperStyle="{
           borderRadius: '0.5rem'
         }"
+        customer-class="lang-choose-input-20250711-website"
         v-model:lang="lang"
       />
     </div>
@@ -117,7 +118,7 @@
         <el-checkbox v-model="diarizeEnabled">
           <span
             class="max-w-full whitespace-normal break-words text-base font-normal"
-          >{{ t("FileUploadAndRecording.upload.speakerLabel") }}</span
+            >{{ t("FileUploadAndRecording.upload.speakerLabel") }}</span
           >
         </el-checkbox>
       </client-only>
@@ -622,40 +623,6 @@ const handleCloseDialog = () => {
 </style>
 <style>
 .lang-choose-input-20250711-website {
-  background: #0e172b;
-  color: #fff;
-  border-color: #0e172b;
-  border-radius: 0.5rem;
-
-  .lang-item-wrap {
-    div:hover {
-      background: #1a2742;
-    }
-
-    & > div > span:first-child {
-      color: white !important;
-    }
-  }
-
-  .el-input__wrapper {
-    background: #1a2742;
-    border-color: #6a36a2;
-    color: white;
-  }
-
-  .el-input__inner {
-    color: white;
-  }
-
-  .el-input__prefix-inner {
-    .el-icon {
-      color: white !important;
-    }
-  }
-
-  .bg-boxBgColor {
-    background: #1a2742;
-  }
 }
 </style>
 <style lang="scss">

@@ -37,6 +37,7 @@
         </el-input>
       </template>
       <lang-choose-v1
+        v-if="isMounted"
         ref="langChooseV1Ref"
         :modelValue="value.id"
         :recentLanguageKeys="recentLanguageKeys"
@@ -79,6 +80,11 @@ const props = defineProps({
     type: String,
     default: ""
   }
+});
+
+const isMounted = ref(false);
+onMounted(() => {
+  isMounted.value = true;
 });
 
 watchEffect(() => {
